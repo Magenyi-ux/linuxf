@@ -1,0 +1,5 @@
+{
+  "name": "West African Exam Prep AI",
+  "description": "An intelligent practice platform for JAMB, WAEC, and NECO exams using Gemini AI to generate authentic past questions and explanations.",
+  "requestFramePermissions": []
+}
