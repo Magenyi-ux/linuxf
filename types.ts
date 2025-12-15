@@ -49,6 +49,10 @@ export interface Book {
   questions: Question[];
   sources: string[];
   dateCreated: number;
+  // Progress Tracking
+  bestScore?: number;
+  lastScore?: number;
+  attempts?: number;
 }
 
 export interface UserProfile {

@@ -82,9 +82,9 @@ export const fetchExamQuestions = async (
     
     SOURCE MATERIAL:
     - You MUST use Google Search to find questions.
-    - **SEARCH QUERY**: "site:myschool.ng ${examType} ${subject} ${year} past questions"
-    - **TARGET WEBSITE**: myschool.ng/classroom
-    - Ensure questions are authentic to the exam style found on this site.
+    - **SEARCH QUERY**: "(site:myschool.ng OR site:classhall.com OR site:pass.ng OR site:learn.myschool.ng) ${examType} ${subject} ${year} past questions"
+    - **TARGET WEBSITES**: myschool.ng, classhall.com, pass.ng
+    - Ensure questions are authentic to the exam style found on these sites.
 
     OUTPUT FORMAT:
     - Return ONLY a SINGLE VALID JSON ARRAY.
@@ -147,7 +147,8 @@ export const createTutorChatSession = () => {
   return ai.chats.create({
     model: 'gemini-3-pro-preview',
     config: {
-      systemInstruction: "You are 'Professor Gemini', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO). Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams. Be concise, use local context where appropriate for Nigerian students, and always be supportive. If asked about things outside of education/exams, politely steer the conversation back to studying.",
+      tools: [{ googleSearch: {} }],
+      systemInstruction: "You are 'Professor Gemini', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO). Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams. Be concise, use local context where appropriate for Nigerian students, and always be supportive. If asked about things outside of education/exams, politely steer the conversation back to studying. You can use Google Search to find current information or check specific past question details if asked.",
     },
   });
 };

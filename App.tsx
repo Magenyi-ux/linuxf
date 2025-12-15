@@ -11,7 +11,7 @@ import {
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
-  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X
+  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy
 } from 'lucide-react';
 
 // Stream Definitions
@@ -70,6 +70,7 @@ const App: React.FC = () => {
   const [currentSources, setCurrentSources] = useState<string[]>([]);
   const [practiceMode, setPracticeMode] = useState<'STUDY' | 'TEST'>('STUDY');
   const [showLibrary, setShowLibrary] = useState(false);
+  const [activeBookId, setActiveBookId] = useState<string | null>(null);
   
   const [lastScore, setLastScore] = useState(0);
   const [lastTotal, setLastTotal] = useState(0);
@@ -77,14 +78,22 @@ const App: React.FC = () => {
   const [books, setBooks] = useState<Record<string, Book>>({}); 
 
   useEffect(() => {
-    const savedBooks = localStorage.getItem('waExamPrep_books');
-    if (savedBooks) setBooks(JSON.parse(savedBooks));
+    try {
+      const savedBooks = localStorage.getItem('waExamPrep_books');
+      if (savedBooks) setBooks(JSON.parse(savedBooks));
+    } catch (e) {
+      console.error("Failed to load books from storage", e);
+    }
   }, []);
 
   const saveBook = (book: Book) => {
-    const newBooks = { ...books, [book.id]: book };
-    setBooks(newBooks);
-    localStorage.setItem('waExamPrep_books', JSON.stringify(newBooks));
+    try {
+      const newBooks = { ...books, [book.id]: book };
+      setBooks(newBooks);
+      localStorage.setItem('waExamPrep_books', JSON.stringify(newBooks));
+    } catch (e) {
+      alert("Storage Full! Your device storage is full. Please delete some old question packs from the Library to save new ones.");
+    }
   };
 
   const deleteBook = (bookId: string) => {
@@ -133,6 +142,7 @@ const App: React.FC = () => {
      if (books[bookId]) {
          setQuestions(books[bookId].questions);
          setCurrentSources(books[bookId].sources || []);
+         setActiveBookId(bookId);
          setScreen('PRACTICE');
      }
   };
@@ -153,13 +163,15 @@ const App: React.FC = () => {
             year: year,
             questions: result.questions,
             sources: result.sources,
-            dateCreated: Date.now()
+            dateCreated: Date.now(),
+            bestScore: 0,
+            attempts: 0
         };
         
         saveBook(newBook);
         setScreen('YEAR_SELECT'); // Return to list so user can download more
      } catch (err) {
-        alert("Could not download questions. Check your internet connection.");
+        alert("Could not download questions. Check your internet connection or try again.");
         setScreen('YEAR_SELECT');
      }
   };
@@ -167,6 +179,19 @@ const App: React.FC = () => {
   const handleFinishPractice = (score: number, total: number) => {
       setLastScore(score);
       setLastTotal(total);
+
+      // If we are in a book session, update the book's stats
+      if (activeBookId && books[activeBookId]) {
+          const book = books[activeBookId];
+          const updatedBook: Book = {
+              ...book,
+              attempts: (book.attempts || 0) + 1,
+              lastScore: score,
+              bestScore: Math.max(book.bestScore || 0, score)
+          };
+          saveBook(updatedBook);
+      }
+      
       setScreen('RESULTS');
   };
 
@@ -175,6 +200,7 @@ const App: React.FC = () => {
     setSelectedExam(null);
     setSelectedStream(null);
     setSelectedSubject(null);
+    setActiveBookId(null);
   };
 
   return (
@@ -326,6 +352,7 @@ const App: React.FC = () => {
                     {years.map((year) => {
                         const bookId = getBookId(selectedExam, selectedSubject, year);
                         const isDownloaded = !!books[bookId];
+                        const book = books[bookId];
 
                         return (
                             <div key={year} className="group bg-white p-4 rounded-xl border border-gray-200 hover:border-brand-300 transition-all flex items-center justify-between">
@@ -335,8 +362,17 @@ const App: React.FC = () => {
                                     </div>
                                     <div>
                                         <div className="font-bold text-gray-900">{year} Papers</div>
-                                        <div className="text-xs text-gray-500 flex items-center gap-1">
-                                            {isDownloaded ? <span className="text-green-600 flex items-center gap-1"><WifiOff className="w-3 h-3"/> Offline Ready</span> : 'Requires Download'}
+                                        <div className="text-xs text-gray-500 flex items-center gap-2">
+                                            {isDownloaded ? (
+                                                <>
+                                                    <span className="text-green-600 flex items-center gap-1"><WifiOff className="w-3 h-3"/> Ready</span>
+                                                    {book.bestScore !== undefined && (
+                                                        <span className="text-brand-600 font-medium border-l border-gray-300 pl-2">
+                                                            Best: {book.bestScore}/{book.questions.length}
+                                                        </span>
+                                                    )}
+                                                </>
+                                            ) : 'Requires Download'}
                                         </div>
                                     </div>
                                 </div>
@@ -429,12 +465,23 @@ const App: React.FC = () => {
                         (Object.values(books) as Book[]).sort((a,b) => b.dateCreated - a.dateCreated).map((book) => (
                             <div key={book.id} className="flex items-center justify-between p-3 bg-white border border-gray-200 rounded-xl hover:border-brand-300 transition-all shadow-sm group">
                                 <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 font-bold text-xs group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors">
+                                    <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 font-bold text-xs group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors relative">
                                         {book.year.slice(2)}
+                                        {book.bestScore !== undefined && book.bestScore > (book.questions.length * 0.8) && (
+                                            <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full border-2 border-white"></div>
+                                        )}
                                     </div>
                                     <div>
                                         <div className="font-bold text-gray-900 text-sm">{book.subject}</div>
-                                        <div className="text-xs text-gray-500 font-medium">{book.examType}</div>
+                                        <div className="text-xs text-gray-500 font-medium flex items-center gap-2">
+                                            {book.examType}
+                                            {book.bestScore !== undefined && (
+                                                <span className="text-brand-600 flex items-center gap-0.5">
+                                                    <Trophy className="w-3 h-3" />
+                                                    {book.bestScore}/{book.questions.length}
+                                                </span>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="flex gap-2">
