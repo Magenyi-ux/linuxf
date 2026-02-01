@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { ScreenState, ExamType, Subject, Question, Book } from './types';
 import { ExamCard } from './components/ExamCard';
 import { LoadingScreen } from './components/LoadingScreen';
@@ -11,8 +11,13 @@ import {
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
-  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy
+  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy,
+  Cloud, CloudOff, User, LogIn, LogOut
 } from 'lucide-react';
+import { useQuery, useMutation } from "convex/react";
+import { api } from "./convex/_generated/api";
+import { useUserId } from "./hooks/useUserId";
+import { SignInButton, SignOutButton, UserButton } from "@clerk/clerk-react";
 
 // Stream Definitions
 type StreamType = 'SCIENCE' | 'ARTS' | 'COMMERCIAL';
@@ -76,6 +81,14 @@ const App: React.FC = () => {
   const [lastTotal, setLastTotal] = useState(0);
 
   const [books, setBooks] = useState<Record<string, Book>>({}); 
+  const { userId, type: userType } = useUserId();
+
+  // Convex Hooks
+  const saveBookMutation = useMutation(api.books.saveBook);
+  const saveAnswerMutation = useMutation(api.answers.saveAnswer);
+  const updateProgressMutation = useMutation(api.answers.updateProgress);
+  const storeUserMutation = useMutation(api.users.storeUser);
+  const userProgress = useQuery(api.answers.getUserProgress, userId ? { userId } : "skip");
 
   useEffect(() => {
     try {
@@ -86,15 +99,61 @@ const App: React.FC = () => {
     }
   }, []);
 
-  const saveBook = (book: Book) => {
+  // Sync User Profile
+  useEffect(() => {
+    if (userId) {
+        storeUserMutation({
+            [userType === 'clerk' ? 'tokenIdentifier' : 'deviceId']: userId
+        });
+    }
+  }, [userId, userType, storeUserMutation]);
+
+  // Cloud to Local Sync
+  useEffect(() => {
+    if (userId && userProgress && userProgress.length > 0) {
+        setBooks(prev => {
+            const newBooks = { ...prev };
+            let changed = false;
+            userProgress.forEach(p => {
+                if (newBooks[p.bookId]) {
+                    if ((newBooks[p.bookId].bestScore || 0) < p.bestScore) {
+                        newBooks[p.bookId].bestScore = p.bestScore;
+                        newBooks[p.bookId].attempts = p.attempts;
+                        changed = true;
+                    }
+                }
+            });
+            if (changed) {
+                localStorage.setItem('waExamPrep_books', JSON.stringify(newBooks));
+                return newBooks;
+            }
+            return prev;
+        });
+    }
+  }, [userId, userProgress]);
+
+  const saveBook = useCallback(async (book: Book) => {
     try {
       const newBooks = { ...books, [book.id]: book };
       setBooks(newBooks);
       localStorage.setItem('waExamPrep_books', JSON.stringify(newBooks));
+
+      // Background Sync to Convex
+      if (userId) {
+          await saveBookMutation({
+              examType: book.examType,
+              subject: book.subject,
+              year: book.year,
+              questions: book.questions,
+              sources: book.sources || [],
+              isPublic: false,
+              creatorId: userId
+          });
+      }
     } catch (e) {
-      alert("Storage Full! Your device storage is full. Please delete some old question packs from the Library to save new ones.");
+      console.error("Failed to save book", e);
     }
-  };
+  }, [books, userId, saveBookMutation]);
 
   const deleteBook = (bookId: string) => {
     const { [bookId]: removed, ...rest } = books;
@@ -168,7 +227,7 @@ const App: React.FC = () => {
             attempts: 0
         };
         
-        saveBook(newBook);
+        await saveBook(newBook);
         setScreen('YEAR_SELECT'); // Return to list so user can download more
      } catch (err) {
         alert("Could not download questions. Check your internet connection or try again.");
@@ -176,7 +235,7 @@ const App: React.FC = () => {
      }
   };
 
-  const handleFinishPractice = (score: number, total: number) => {
+  const handleFinishPractice = async (score: number, total: number) => {
       setLastScore(score);
       setLastTotal(total);
 
@@ -189,10 +248,30 @@ const App: React.FC = () => {
               lastScore: score,
               bestScore: Math.max(book.bestScore || 0, score)
           };
-          saveBook(updatedBook);
+          await saveBook(updatedBook);
+
+          if (userId) {
+              await updateProgressMutation({
+                  userId,
+                  bookId: activeBookId,
+                  score
+              });
+          }
       }
       
       setScreen('RESULTS');
+  };
+
+  const handleAnswerQuestion = async (questionId: number, selectedOption: number, isCorrect: boolean) => {
+      if (userId && activeBookId) {
+          await saveAnswerMutation({
+              userId,
+              bookId: activeBookId,
+              questionId,
+              selectedOption,
+              isCorrect
+          });
+      }
   };
 
   const resetApp = () => {
@@ -214,13 +293,43 @@ const App: React.FC = () => {
             <span className="text-lg font-bold text-gray-900">WA Exam Prep</span>
           </div>
           
-          <button 
-            onClick={() => setShowLibrary(true)}
-            className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-brand-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 transition-all"
-          >
-             <Library className="w-4 h-4" />
-             <span>{Object.keys(books).length} Packs</span>
-          </button>
+          <div className="flex items-center gap-3">
+              {/* Sync Status */}
+              <div className="hidden md:flex items-center gap-1.5 px-2 py-1 bg-gray-50 rounded-md border border-gray-100">
+                  {userId ? (
+                      <>
+                        <Cloud className="w-3.5 h-3.5 text-green-500" />
+                        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Cloud Synced</span>
+                      </>
+                  ) : (
+                      <>
+                        <CloudOff className="w-3.5 h-3.5 text-gray-300" />
+                        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Offline Mode</span>
+                      </>
+                  )}
+              </div>
+
+              <button
+                onClick={() => setShowLibrary(true)}
+                className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-brand-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 transition-all"
+              >
+                 <Library className="w-4 h-4" />
+                 <span className="hidden sm:inline">{Object.keys(books).length} Packs</span>
+              </button>
+
+              <div className="border-l border-gray-100 pl-3 ml-1">
+                  {userType === 'clerk' ? (
+                      <UserButton afterSignOutUrl="/" />
+                  ) : (
+                      <SignInButton mode="modal">
+                          <button className="flex items-center gap-2 px-3 py-1.5 bg-brand-50 text-brand-700 rounded-lg hover:bg-brand-100 transition-colors text-xs font-bold">
+                              <LogIn className="w-4 h-4" />
+                              <span>Login</span>
+                          </button>
+                      </SignInButton>
+                  )}
+              </div>
+          </div>
         </div>
       </nav>
 
@@ -236,6 +345,25 @@ const App: React.FC = () => {
                 Download authentic past questions. Get instant, teacher-like explanations. <strong>Works offline.</strong>
               </p>
             </div>
+
+            {userType === 'device' && (
+                <div className="max-w-xl mx-auto mb-10 p-4 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-between gap-4 animate-fade-in">
+                    <div className="flex items-center gap-3">
+                        <div className="bg-indigo-100 p-2 rounded-xl">
+                            <Cloud className="w-5 h-5 text-indigo-600" />
+                        </div>
+                        <div className="text-left">
+                            <p className="text-sm font-bold text-indigo-900">Sync your progress</p>
+                            <p className="text-xs text-indigo-700">Login to save your library across all your devices.</p>
+                        </div>
+                    </div>
+                    <SignInButton mode="modal">
+                        <button className="px-4 py-2 bg-white text-indigo-600 border border-indigo-200 text-xs font-bold rounded-lg hover:bg-indigo-50 transition-colors whitespace-nowrap shadow-sm">
+                            Login Now
+                        </button>
+                    </SignInButton>
+                </div>
+            )}
 
             <h2 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Select Your Exam</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -421,6 +549,7 @@ const App: React.FC = () => {
                 subject={selectedSubject}
                 mode={practiceMode}
                 onFinish={handleFinishPractice}
+                onAnswer={handleAnswerQuestion}
                 onBack={() => setScreen('YEAR_SELECT')}
             />
         )}
