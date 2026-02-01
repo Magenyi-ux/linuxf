@@ -11,11 +11,12 @@ interface PracticeSessionProps {
   subject: Subject;
   mode: 'STUDY' | 'TEST';
   onFinish: (score: number, total: number) => void;
+  onAnswer?: (questionId: number, selectedIndex: number, isCorrect: boolean) => void;
   onBack: () => void;
 }
 
 export const PracticeSession: React.FC<PracticeSessionProps> = ({ 
-  questions, sources = [], examType, subject, mode, onFinish, onBack 
+  questions, sources = [], examType, subject, mode, onFinish, onAnswer, onBack
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({}); // q.id -> optionIndex
@@ -28,10 +29,16 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   const handleOptionSelect = (optionIndex: number) => {
     if (answers[currentQuestion.id] !== undefined) return; // Prevent changing if already answered
 
+    const isCorrect = optionIndex === currentQuestion.correctOptionIndex;
+
     setAnswers(prev => ({
       ...prev,
       [currentQuestion.id]: optionIndex
     }));
+
+    if (onAnswer) {
+        onAnswer(currentQuestion.id, optionIndex, isCorrect);
+    }
 
     if (mode === 'STUDY') {
       setShowExplanation(true);
@@ -56,6 +63,11 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
       if (answers[currentQuestion.id] === undefined) {
           // Mark as skipped/revealed (-1)
           setAnswers(prev => ({...prev, [currentQuestion.id]: -1}));
+
+          if (onAnswer) {
+              onAnswer(currentQuestion.id, -1, false);
+          }
+
           setShowExplanation(true);
       } else {
           setShowExplanation(true);
