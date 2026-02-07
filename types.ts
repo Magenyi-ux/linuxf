@@ -61,4 +61,13 @@ export interface UserProfile {
   streak: number;
 }
 
-export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS';
+export interface StudyPlanTask {
+  id: string;
+  subject: Subject;
+  examType: ExamType;
+  description: string;
+  completed: boolean;
+  dueDate: number;
+}
+
+export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'STUDY_PLAN';

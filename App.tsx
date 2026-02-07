@@ -5,19 +5,19 @@ import { ExamCard } from './components/ExamCard';
 import { LoadingScreen } from './components/LoadingScreen';
 import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
+import { StudyPlanner } from './components/StudyPlanner';
 import { ChatBot } from './components/ChatBot';
+import { ConvexSync } from './components/ConvexSync';
 import { fetchExamQuestions } from './services/geminiService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
-  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy,
+  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Calendar,
   Cloud, CloudOff, User, LogIn, LogOut
 } from 'lucide-react';
-import { useQuery, useMutation } from "convex/react";
-import { api } from "./convex/_generated/api";
 import { useUserId } from "./hooks/useUserId";
-import { SignInButton, SignOutButton, UserButton } from "@clerk/clerk-react";
+import { SignInButton, UserButton } from "@clerk/clerk-react";
 
 // Stream Definitions
 type StreamType = 'SCIENCE' | 'ARTS' | 'COMMERCIAL';
@@ -66,6 +66,25 @@ const SUBJECTS_BY_STREAM: Record<StreamType, Subject[]> = {
   ]
 };
 
+const isClerkAvailable = () => {
+    const key = (import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string);
+    return key && key !== "pk_test_YW55LXN0cmluZy13aWxsLXdvcmstaWYtaXQtbG9va3MtcmVhbC0xMg";
+};
+
+const SafeSignInButton: React.FC<any> = ({ children, ...props }) => {
+  if (isClerkAvailable()) {
+    return <SignInButton {...props}>{children}</SignInButton>;
+  }
+  return <>{children}</>;
+};
+
+const SafeUserButton: React.FC<any> = (props) => {
+  if (isClerkAvailable()) {
+    return <UserButton {...props} />;
+  }
+  return <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center"><User className="w-4 h-4 text-gray-500" /></div>;
+};
+
 const App: React.FC = () => {
   const [screen, setScreen] = useState<ScreenState>('HOME');
   const [selectedExam, setSelectedExam] = useState<ExamType | null>(null);
@@ -83,13 +102,6 @@ const App: React.FC = () => {
   const [books, setBooks] = useState<Record<string, Book>>({}); 
   const { userId, type: userType } = useUserId();
 
-  // Convex Hooks
-  const saveBookMutation = useMutation(api.books.saveBook);
-  const saveAnswerMutation = useMutation(api.answers.saveAnswer);
-  const updateProgressMutation = useMutation(api.answers.updateProgress);
-  const storeUserMutation = useMutation(api.users.storeUser);
-  const userProgress = useQuery(api.answers.getUserProgress, userId ? { userId } : "skip");
-
   useEffect(() => {
     try {
       const savedBooks = localStorage.getItem('waExamPrep_books');
@@ -99,61 +111,15 @@ const App: React.FC = () => {
     }
   }, []);
 
-  // Sync User Profile
-  useEffect(() => {
-    if (userId) {
-        storeUserMutation({
-            [userType === 'clerk' ? 'tokenIdentifier' : 'deviceId']: userId
-        });
-    }
-  }, [userId, userType, storeUserMutation]);
-
-  // Cloud to Local Sync
-  useEffect(() => {
-    if (userId && userProgress && userProgress.length > 0) {
-        setBooks(prev => {
-            const newBooks = { ...prev };
-            let changed = false;
-            userProgress.forEach(p => {
-                if (newBooks[p.bookId]) {
-                    if ((newBooks[p.bookId].bestScore || 0) < p.bestScore) {
-                        newBooks[p.bookId].bestScore = p.bestScore;
-                        newBooks[p.bookId].attempts = p.attempts;
-                        changed = true;
-                    }
-                }
-            });
-            if (changed) {
-                localStorage.setItem('waExamPrep_books', JSON.stringify(newBooks));
-                return newBooks;
-            }
-            return prev;
-        });
-    }
-  }, [userId, userProgress]);
-
   const saveBook = useCallback(async (book: Book) => {
     try {
       const newBooks = { ...books, [book.id]: book };
       setBooks(newBooks);
       localStorage.setItem('waExamPrep_books', JSON.stringify(newBooks));
-
-      // Background Sync to Convex
-      if (userId) {
-          await saveBookMutation({
-              examType: book.examType,
-              subject: book.subject,
-              year: book.year,
-              questions: book.questions,
-              sources: book.sources || [],
-              isPublic: false,
-              creatorId: userId
-          });
-      }
     } catch (e) {
       console.error("Failed to save book", e);
     }
-  }, [books, userId, saveBookMutation]);
+  }, [books]);
 
   const deleteBook = (bookId: string) => {
     const { [bookId]: removed, ...rest } = books;
@@ -228,7 +194,7 @@ const App: React.FC = () => {
         };
         
         await saveBook(newBook);
-        setScreen('YEAR_SELECT'); // Return to list so user can download more
+        setScreen('YEAR_SELECT');
      } catch (err) {
         alert("Could not download questions. Check your internet connection or try again.");
         setScreen('YEAR_SELECT');
@@ -239,7 +205,6 @@ const App: React.FC = () => {
       setLastScore(score);
       setLastTotal(total);
 
-      // If we are in a book session, update the book's stats
       if (activeBookId && books[activeBookId]) {
           const book = books[activeBookId];
           const updatedBook: Book = {
@@ -249,29 +214,9 @@ const App: React.FC = () => {
               bestScore: Math.max(book.bestScore || 0, score)
           };
           await saveBook(updatedBook);
-
-          if (userId) {
-              await updateProgressMutation({
-                  userId,
-                  bookId: activeBookId,
-                  score
-              });
-          }
       }
       
       setScreen('RESULTS');
-  };
-
-  const handleAnswerQuestion = async (questionId: number, selectedOption: number, isCorrect: boolean) => {
-      if (userId && activeBookId) {
-          await saveAnswerMutation({
-              userId,
-              bookId: activeBookId,
-              questionId,
-              selectedOption,
-              isCorrect
-          });
-      }
   };
 
   const resetApp = () => {
@@ -284,6 +229,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans flex flex-col relative">
+      {isClerkAvailable() && <ConvexSync userId={userId} books={books} setBooks={setBooks} />}
       <nav className="bg-white border-b border-gray-200 h-16 sticky top-0 z-40">
         <div className="max-w-4xl mx-auto px-4 h-full flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer" onClick={resetApp}>
@@ -294,12 +240,11 @@ const App: React.FC = () => {
           </div>
           
           <div className="flex items-center gap-3">
-              {/* Sync Status */}
               <div className="hidden md:flex items-center gap-1.5 px-2 py-1 bg-gray-50 rounded-md border border-gray-100">
-                  {userId ? (
+                  {isClerkAvailable() ? (
                       <>
                         <Cloud className="w-3.5 h-3.5 text-green-500" />
-                        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Cloud Synced</span>
+                        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Cloud Sync Ready</span>
                       </>
                   ) : (
                       <>
@@ -308,6 +253,14 @@ const App: React.FC = () => {
                       </>
                   )}
               </div>
+
+              <button
+                onClick={() => setScreen('STUDY_PLAN')}
+                className={`flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg transition-all ${screen === 'STUDY_PLAN' ? 'bg-brand-50 text-brand-600' : 'text-gray-500 hover:text-brand-600 hover:bg-gray-50'}`}
+              >
+                 <Calendar className="w-4 h-4" />
+                 <span className="hidden sm:inline">Plan</span>
+              </button>
 
               <button
                 onClick={() => setShowLibrary(true)}
@@ -319,15 +272,15 @@ const App: React.FC = () => {
 
               <div className="border-l border-gray-100 pl-3 ml-1">
                   {userType === 'clerk' ? (
-                      <UserButton afterSignOutUrl="/" />
-                  ) : (
-                      <SignInButton mode="modal">
+                      <SafeUserButton afterSignOutUrl="/" />
+                  ) : userType === 'device' ? (
+                      <SafeSignInButton mode="modal">
                           <button className="flex items-center gap-2 px-3 py-1.5 bg-brand-50 text-brand-700 rounded-lg hover:bg-brand-100 transition-colors text-xs font-bold">
                               <LogIn className="w-4 h-4" />
                               <span>Login</span>
                           </button>
-                      </SignInButton>
-                  )}
+                      </SafeSignInButton>
+                  ) : null}
               </div>
           </div>
         </div>
@@ -357,11 +310,11 @@ const App: React.FC = () => {
                             <p className="text-xs text-indigo-700">Login to save your library across all your devices.</p>
                         </div>
                     </div>
-                    <SignInButton mode="modal">
+                    <SafeSignInButton mode="modal">
                         <button className="px-4 py-2 bg-white text-indigo-600 border border-indigo-200 text-xs font-bold rounded-lg hover:bg-indigo-50 transition-colors whitespace-nowrap shadow-sm">
                             Login Now
                         </button>
-                    </SignInButton>
+                    </SafeSignInButton>
                 </div>
             )}
 
@@ -549,7 +502,6 @@ const App: React.FC = () => {
                 subject={selectedSubject}
                 mode={practiceMode}
                 onFinish={handleFinishPractice}
-                onAnswer={handleAnswerQuestion}
                 onBack={() => setScreen('YEAR_SELECT')}
             />
         )}
@@ -563,6 +515,10 @@ const App: React.FC = () => {
                 onRetry={() => setScreen('PRACTICE')}
                 onHome={resetApp}
             />
+        )}
+
+        {screen === 'STUDY_PLAN' && (
+            <StudyPlanner onBack={() => setScreen('HOME')} />
         )}
       </main>
 

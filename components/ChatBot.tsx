@@ -1,9 +1,10 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, Minimize2, Loader2, Bot } from 'lucide-react';
+import { MessageCircle, X, Send, Minimize2, Loader2, Bot, Trash2 } from 'lucide-react';
 import { createTutorChatSession } from '../services/geminiService';
 import { Chat, GenerateContentResponse } from "@google/genai";
 import { MathText } from './MathText';
+import { offlineTutor } from '../services/offlineTutorService';
 
 interface Message {
   id: string;
@@ -13,13 +14,8 @@ interface Message {
 
 export const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: 'welcome',
-      role: 'model',
-      text: "Hello! I'm your AI Tutor. I can help you with JAMB, WAEC, and NECO topics. Ask me anything!"
-    }
-  ]);
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+  const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const chatSessionRef = useRef<Chat | null>(null);
@@ -30,6 +26,42 @@ export const ChatBot: React.FC = () => {
   };
 
   useEffect(() => {
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
+
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Load messages from localStorage
+    const savedMessages = localStorage.getItem('waExamPrep_chat_messages');
+    if (savedMessages) {
+      try {
+        setMessages(JSON.parse(savedMessages));
+      } catch (e) {
+        console.error("Failed to parse saved messages", e);
+      }
+    } else {
+      setMessages([
+        {
+          id: 'welcome',
+          role: 'model',
+          text: "Hello! I'm your AI Tutor. I can help you with JAMB, WAEC, and NECO topics. Ask me anything!"
+        }
+      ]);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (messages.length > 0) {
+      localStorage.setItem('waExamPrep_chat_messages', JSON.stringify(messages));
+    }
     scrollToBottom();
   }, [messages, isOpen]);
 
@@ -56,6 +88,20 @@ export const ChatBot: React.FC = () => {
     setMessages(prev => [...prev, userMessage]);
     setInputValue('');
     setIsTyping(true);
+
+    // Check Offline Status
+    if (!offlineTutor.isOnline()) {
+      setTimeout(() => {
+        const offlineResponse = offlineTutor.getOfflineResponse(userMessage.text);
+        setMessages(prev => [...prev, {
+          id: Date.now().toString(),
+          role: 'model',
+          text: offlineResponse
+        }]);
+        setIsTyping(false);
+      }, 1000);
+      return;
+    }
 
     try {
       const resultStream = await chatSessionRef.current.sendMessageStream({ 
@@ -125,17 +171,45 @@ export const ChatBot: React.FC = () => {
           <div>
             <h3 className="font-bold">AI Exam Tutor</h3>
             <div className="flex items-center gap-1 text-xs text-brand-100">
-              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-              Online
+              {isOnline ? (
+                <>
+                  <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                  Online
+                </>
+              ) : (
+                <>
+                  <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
+                  Offline
+                </>
+              )}
             </div>
           </div>
         </div>
-        <button 
-          onClick={() => setIsOpen(false)}
-          className="p-1 hover:bg-brand-500 rounded-lg transition-colors"
-        >
-          <X className="w-5 h-5" />
-        </button>
+        <div className="flex items-center gap-1">
+          <button
+            onClick={() => {
+              if (confirm("Clear chat history?")) {
+                const welcomeMsg = {
+                  id: 'welcome',
+                  role: 'model' as const,
+                  text: "Hello! I'm your AI Tutor. I can help you with JAMB, WAEC, and NECO topics. Ask me anything!"
+                };
+                setMessages([welcomeMsg]);
+                localStorage.setItem('waExamPrep_chat_messages', JSON.stringify([welcomeMsg]));
+              }
+            }}
+            className="p-1 hover:bg-brand-500 rounded-lg transition-colors mr-1"
+            title="Clear Chat"
+          >
+            <Trash2 className="w-5 h-5" />
+          </button>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="p-1 hover:bg-brand-500 rounded-lg transition-colors"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
       </div>
 
       {/* Messages */}
@@ -182,6 +256,7 @@ export const ChatBot: React.FC = () => {
             onClick={handleSend}
             disabled={!inputValue.trim() || isTyping}
             className="p-2 bg-brand-600 text-white rounded-xl hover:bg-brand-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            aria-label="Send message"
           >
             <Send className="w-5 h-5" />
           </button>
