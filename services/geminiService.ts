@@ -68,7 +68,7 @@ export const fetchExamQuestions = async (
   year: string,
   count: number = 10
 ): Promise<{ questions: Question[], sources: string[] }> => {
-  const model = "gemini-2.5-flash";
+  const model = "gemini-1.5-flash";
 
   const yearContext = year === 'Random' 
     ? "randomly selected from various past years (2010-2023)" 
@@ -145,7 +145,7 @@ export const fetchExamQuestions = async (
 
 export const createTutorChatSession = () => {
   return ai.chats.create({
-    model: 'gemini-3-pro-preview',
+    model: 'gemini-1.5-pro',
     config: {
       tools: [{ googleSearch: {} }],
       systemInstruction: "You are 'Professor Gemini', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO). Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams. Be concise, use local context where appropriate for Nigerian students, and always be supportive. If asked about things outside of education/exams, politely steer the conversation back to studying. You can use Google Search to find current information or check specific past question details if asked.",
