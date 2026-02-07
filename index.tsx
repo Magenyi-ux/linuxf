@@ -25,7 +25,9 @@ const root = ReactDOM.createRoot(rootElement);
 const DummyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => <>{children}</>;
 
 // Detect if we have a valid-ish Clerk key
-const isClerkValid = PUBLISHABLE_KEY && !PUBLISHABLE_KEY.includes("any-string-will-work");
+const isClerkValid = PUBLISHABLE_KEY &&
+                     PUBLISHABLE_KEY.startsWith("pk_") &&
+                     PUBLISHABLE_KEY !== "pk_test_YW55LXN0cmluZy13aWxsLXdvcmstaWYtaXQtbG9va3MtcmVhbC0xMg";
 
 root.render(
   <React.StrictMode>
