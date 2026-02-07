@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { ClerkProvider, useAuth } from "@clerk/clerk-react";
 import { ConvexProviderWithClerk } from "convex/react-clerk";
-import { ConvexReactClient } from "convex/react";
+import { ConvexReactClient, ConvexProvider } from "convex/react";
+import { registerSW } from 'virtual:pwa-register';
 
-// Fallback to placeholder if env vars are missing to prevent crash during initial setup
+// Register Service Worker for offline support
+registerSW({ immediate: true });
+
 const CONVEX_URL = (import.meta.env.VITE_CONVEX_URL as string) || "https://placeholder-url.convex.cloud";
 const PUBLISHABLE_KEY = (import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string) || "pk_test_YW55LXN0cmluZy13aWxsLXdvcmstaWYtaXQtbG9va3MtcmVhbC0xMg";
 
@@ -17,12 +20,25 @@ if (!rootElement) {
 }
 
 const root = ReactDOM.createRoot(rootElement);
+
+// Simple dummy provider to avoid crashing when Clerk is not configured
+const DummyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => <>{children}</>;
+
+// Detect if we have a valid-ish Clerk key
+const isClerkValid = PUBLISHABLE_KEY && !PUBLISHABLE_KEY.includes("any-string-will-work");
+
 root.render(
   <React.StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
-      <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
+    {isClerkValid ? (
+      <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
+        <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
+          <App />
+        </ConvexProviderWithClerk>
+      </ClerkProvider>
+    ) : (
+      <ConvexProvider client={convex}>
         <App />
-      </ConvexProviderWithClerk>
-    </ClerkProvider>
+      </ConvexProvider>
+    )}
   </React.StrictMode>
 );
