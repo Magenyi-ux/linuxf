@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { registerSW } from 'virtual:pwa-register';
 
-// Register Service Worker for offline support
-registerSW({ immediate: true });
+// Safely register Service Worker
+if (typeof window !== 'undefined') {
+  import('virtual:pwa-register').then(({ registerSW }) => {
+    registerSW({ immediate: true });
+  }).catch(err => {
+    console.error('Failed to register service worker:', err);
+  });
+}
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -12,7 +17,6 @@ if (!rootElement) {
 }
 
 const root = ReactDOM.createRoot(rootElement);
-
 root.render(
   <React.StrictMode>
     <App />

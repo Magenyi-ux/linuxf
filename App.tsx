@@ -13,9 +13,8 @@ import {
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
   Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Calendar,
-  CloudOff, User, LogIn
+  CloudOff, User
 } from 'lucide-react';
-import { useUserId } from "./hooks/useUserId";
 
 // Stream Definitions
 type StreamType = 'SCIENCE' | 'ARTS' | 'COMMERCIAL';
@@ -79,7 +78,6 @@ const App: React.FC = () => {
   const [lastTotal, setLastTotal] = useState(0);
 
   const [books, setBooks] = useState<Record<string, Book>>({}); 
-  const { userId } = useUserId();
 
   useEffect(() => {
     try {
@@ -464,86 +462,6 @@ const App: React.FC = () => {
             <StudyPlanner onBack={() => setScreen('HOME')} />
         )}
       </main>
-
-      {/* Library Modal */}
-      {showLibrary && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in" onClick={(e) => { if(e.target === e.currentTarget) setShowLibrary(false); }}>
-            <div className="bg-white rounded-2xl w-full max-w-md max-h-[80vh] flex flex-col shadow-2xl overflow-hidden animate-scale-in">
-                <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-gray-50">
-                    <div className="flex items-center gap-2">
-                        <Library className="w-5 h-5 text-brand-600" />
-                        <h3 className="font-bold text-gray-900">My Library</h3>
-                        <span className="bg-brand-100 text-brand-700 text-xs px-2 py-0.5 rounded-full font-bold">{Object.keys(books).length}</span>
-                    </div>
-                    <button onClick={() => setShowLibrary(false)} className="p-2 hover:bg-gray-200 rounded-full text-gray-500 transition-colors">
-                        <X className="w-5 h-5" />
-                    </button>
-                </div>
-                
-                <div className="overflow-y-auto p-4 space-y-3 flex-1 sidebar-scrollbar">
-                    {Object.keys(books).length === 0 ? (
-                        <div className="text-center text-gray-400 py-12 flex flex-col items-center">
-                            <div className="bg-gray-100 p-4 rounded-full mb-3">
-                                 <Library className="w-8 h-8 opacity-50" />
-                            </div>
-                            <p className="text-sm font-medium">Your library is empty.</p>
-                            <p className="text-xs mt-1">Download packs to study offline.</p>
-                        </div>
-                    ) : (
-                        (Object.values(books) as Book[]).sort((a,b) => b.dateCreated - a.dateCreated).map((book) => (
-                            <div key={book.id} className="flex items-center justify-between p-3 bg-white border border-gray-200 rounded-xl hover:border-brand-300 transition-all shadow-sm group">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 font-bold text-xs group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors relative">
-                                        {book.year.slice(2)}
-                                        {book.bestScore !== undefined && book.bestScore > (book.questions.length * 0.8) && (
-                                            <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full border-2 border-white"></div>
-                                        )}
-                                    </div>
-                                    <div>
-                                        <div className="font-bold text-gray-900 text-sm">{book.subject}</div>
-                                        <div className="text-xs text-gray-500 font-medium flex items-center gap-2">
-                                            {book.examType}
-                                            {book.bestScore !== undefined && (
-                                                <span className="text-brand-600 flex items-center gap-0.5">
-                                                    <Trophy className="w-3 h-3" />
-                                                    {book.bestScore}/{book.questions.length}
-                                                </span>
-                                            )}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex gap-2">
-                                    <button 
-                                        onClick={() => { handleStart(book.id); setShowLibrary(false); }} 
-                                        className="p-2 bg-brand-50 text-brand-600 rounded-lg hover:bg-brand-600 hover:text-white transition-all"
-                                        title="Start Practice"
-                                    >
-                                        <Play className="w-4 h-4 fill-current" />
-                                    </button>
-                                    <button 
-                                        onClick={() => { 
-                                            if(window.confirm(`Delete ${book.examType} ${book.subject} ${book.year}?`)) {
-                                                deleteBook(book.id);
-                                            }
-                                        }} 
-                                        className="p-2 bg-gray-50 text-gray-400 rounded-lg hover:bg-red-50 hover:text-red-500 transition-all"
-                                        title="Delete Pack"
-                                    >
-                                        <Trash2 className="w-4 h-4" />
-                                    </button>
-                                </div>
-                            </div>
-                        ))
-                    )}
-                </div>
-                 <div className="p-4 bg-gray-50 border-t border-gray-100 text-center">
-                    <button onClick={() => setShowLibrary(false)} className="text-sm font-bold text-brand-600 hover:text-brand-700">
-                        Close Library
-                    </button>
-                </div>
-            </div>
-        </div>
-      )}
 
       {/* AI Chat Bot Overlay */}
       <ChatBot />

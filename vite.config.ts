@@ -5,6 +5,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+    const geminiKey = env.GEMINI_API_KEY || '';
+
     return {
       server: {
         port: 3000,
@@ -14,13 +16,13 @@ export default defineConfig(({ mode }) => {
         react(),
         VitePWA({
           registerType: 'autoUpdate',
-          includeAssets: [], // Removed missing assets
+          includeAssets: [],
           manifest: {
             name: 'WA Exam Prep AI',
             short_name: 'WA Prep',
             description: 'West African Exam Prep with AI Tutor - Works Offline',
             theme_color: '#4f46e5',
-            icons: [] // Removed missing icons
+            icons: []
           },
           workbox: {
             globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
@@ -44,8 +46,8 @@ export default defineConfig(({ mode }) => {
         })
       ],
       define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+        'process.env.API_KEY': JSON.stringify(geminiKey),
+        'process.env.GEMINI_API_KEY': JSON.stringify(geminiKey)
       },
       resolve: {
         alias: {
