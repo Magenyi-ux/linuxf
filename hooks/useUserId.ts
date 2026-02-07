@@ -2,12 +2,19 @@
 import { useAuth } from "@clerk/clerk-react";
 import { useEffect, useState } from "react";
 
-/**
- * Robust hook for user identity.
- * It uses Clerk if available, otherwise falls back to a device-specific ID.
- */
+const isClerkAvailable = () => {
+    const key = (import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string);
+    return key && key !== "pk_test_YW55LXN0cmluZy13aWxsLXdvcmstaWYtaXQtbG9va3MtcmVhbC0xMg";
+};
+
 export const useUserId = () => {
   const [deviceId, setDeviceId] = useState<string | null>(null);
+
+  // This is the tricky part: we can only call useAuth if we are inside ClerkProvider.
+  // App.tsx ensures we only use 'clerk' type if isClerkAvailable() is true.
+  // But useUserId is called in App.tsx.
+
+  // If we are NOT inside ClerkProvider, useAuth() will throw.
 
   useEffect(() => {
     let id = localStorage.getItem("waExamPrep_deviceId");
@@ -23,14 +30,8 @@ export const useUserId = () => {
     setDeviceId(id);
   }, []);
 
-  return { userId: deviceId, isLoading: deviceId === null, type: 'device' as const };
-};
+  // For the sake of safety and simplicity in this specific app structure:
+  // We return the device ID always, and App.tsx can decide how to handle Clerk.
 
-/**
- * Extension hook for Clerk identity.
- * Should only be called inside a ClerkProvider.
- */
-export const useClerkUserId = () => {
-    const { userId, isLoaded } = useAuth();
-    return { userId, isLoaded };
+  return { userId: deviceId, isLoading: deviceId === null, type: 'device' as const };
 };
