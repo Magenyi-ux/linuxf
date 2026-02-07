@@ -4,6 +4,45 @@ import { ExamType, Subject, Question } from "../types";
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "AIza_placeholder" });
 
+const MOCK_QUESTIONS: Record<string, Omit<Question, 'id'>[]> = {
+  [Subject.MATHEMATICS]: [
+    {
+      text: "Solve for x: 2x + 5 = 15",
+      options: ["5", "10", "15", "20"],
+      correctOptionIndex: 0,
+      explanation: "2x = 15 - 5 => 2x = 10 => x = 5"
+    },
+    {
+      text: "What is the square root of 144?",
+      options: ["10", "11", "12", "14"],
+      correctOptionIndex: 2,
+      explanation: "12 * 12 = 144"
+    }
+  ],
+  [Subject.ENGLISH]: [
+    {
+      text: "Choose the correct synonym for 'Happy'",
+      options: ["Sad", "Joyful", "Angry", "Tired"],
+      correctOptionIndex: 1,
+      explanation: "Joyful is a synonym for Happy."
+    },
+    {
+      text: "Identify the noun in the sentence: 'The cat sat on the mat.'",
+      options: ["The", "sat", "on", "cat"],
+      correctOptionIndex: 3,
+      explanation: "Cat is a person, place, or thing (a noun)."
+    }
+  ],
+  "DEFAULT": [
+    {
+      text: "This is a sample question for demo purposes.",
+      options: ["Option A", "Option B", "Option C", "Option D"],
+      correctOptionIndex: 0,
+      explanation: "This is a fallback explanation because the AI service is in Demo Mode."
+    }
+  ]
+};
+
 /**
  * Sanitizes a raw string from the LLM to be valid JSON.
  * Fixes:
@@ -103,7 +142,13 @@ export const fetchExamQuestions = async (
     ]
   `;
 
+  const isPlaceholderKey = !process.env.API_KEY || process.env.API_KEY === "AIza_placeholder";
+
   try {
+    if (isPlaceholderKey) {
+        throw new Error("Demo Mode: Using mock questions");
+    }
+
     const response = await ai.models.generateContent({
       model: model,
       contents: prompt,
@@ -138,8 +183,19 @@ export const fetchExamQuestions = async (
     return { questions, sources: uniqueSources };
 
   } catch (error) {
-    console.error("Failed to fetch questions:", error);
-    throw error;
+    console.warn("Falling back to mock questions:", error);
+
+    // Provide Mock Data
+    const mockData = MOCK_QUESTIONS[subject] || MOCK_QUESTIONS["DEFAULT"];
+    const questions = mockData.map((q, index) => ({
+        ...q,
+        id: Date.now() + index
+    }));
+
+    return {
+        questions,
+        sources: ["Demo Source: WA Exam Prep AI Mock Database"]
+    };
   }
 };
 

@@ -15,6 +15,7 @@ interface Message {
 export const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOnline, setIsOnline] = useState(navigator.onLine);
+  const [isDemoMode, setIsDemoMode] = useState(!process.env.API_KEY || process.env.API_KEY === "AIza_placeholder");
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -89,8 +90,8 @@ export const ChatBot: React.FC = () => {
     setInputValue('');
     setIsTyping(true);
 
-    // Check Offline Status
-    if (!offlineTutor.isOnline()) {
+    // Check Offline Status or Demo Mode
+    if (!offlineTutor.isOnline() || isDemoMode) {
       setTimeout(() => {
         const offlineResponse = offlineTutor.getOfflineResponse(userMessage.text);
         setMessages(prev => [...prev, {
@@ -171,7 +172,12 @@ export const ChatBot: React.FC = () => {
           <div>
             <h3 className="font-bold">AI Exam Tutor</h3>
             <div className="flex items-center gap-1 text-xs text-brand-100">
-              {isOnline ? (
+              {isDemoMode ? (
+                 <>
+                   <span className="w-2 h-2 bg-blue-300 rounded-full"></span>
+                   Demo Mode
+                 </>
+              ) : isOnline ? (
                 <>
                   <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
                   Online
