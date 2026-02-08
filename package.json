@@ -9,9 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@clerk/clerk-react": "^5.60.0",
     "@google/genai": "^1.33.0",
-    "convex": "^1.31.7",
     "katex": "0.16.9",
     "lucide-react": "^0.560.0",
     "pdfjs-dist": "4.4.168",
