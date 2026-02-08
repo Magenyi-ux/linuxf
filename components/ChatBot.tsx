@@ -1,4 +1,9 @@
 
+/**
+ * ChatBot.tsx - AI Tutor Interface
+ * This component provides a floating chat interface where users can interact with
+ * an AI tutor for exam preparation assistance.
+ */
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Minimize2, Loader2, Bot, Trash2 } from 'lucide-react';
 import { createTutorChatSession } from '../services/geminiService';
@@ -6,6 +11,7 @@ import { Chat, GenerateContentResponse } from "@google/genai";
 import { MathText } from './MathText';
 import { offlineTutor } from '../services/offlineTutorService';
 
+// Definition of a chat message structure
 interface Message {
   id: string;
   role: 'user' | 'model';
@@ -13,18 +19,25 @@ interface Message {
 }
 
 export const ChatBot: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isOnline, setIsOnline] = useState(navigator.onLine);
-  const [messages, setMessages] = useState<Message[]>([]);
-  const [inputValue, setInputValue] = useState('');
-  const [isTyping, setIsTyping] = useState(false);
+  // --- State Hooks ---
+  const [isOpen, setIsOpen] = useState(false); // Controls visibility of the chat window
+  const [isOnline, setIsOnline] = useState(navigator.onLine); // Tracks internet connection
+  const [messages, setMessages] = useState<Message[]>([]); // Array of chat messages
+  const [inputValue, setInputValue] = useState(''); // Current text in the input field
+  const [isTyping, setIsTyping] = useState(false); // Indicates if AI is currently generating a response
+
+  // Refs for tracking the chat session and managing auto-scroll
   const chatSessionRef = useRef<Chat | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  /**
+   * Automatically scrolls the chat window to the bottom when new messages arrive.
+   */
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Effect to listen for online/offline events
   useEffect(() => {
     const handleOnline = () => setIsOnline(true);
     const handleOffline = () => setIsOnline(false);
@@ -38,8 +51,8 @@ export const ChatBot: React.FC = () => {
     };
   }, []);
 
+  // Effect to load chat history from local storage on component mount
   useEffect(() => {
-    // Load messages from localStorage
     const savedMessages = localStorage.getItem('waExamPrep_chat_messages');
     if (savedMessages) {
       try {
@@ -48,6 +61,7 @@ export const ChatBot: React.FC = () => {
         console.error("Failed to parse saved messages", e);
       }
     } else {
+      // Default welcome message
       setMessages([
         {
           id: 'welcome',
@@ -58,6 +72,7 @@ export const ChatBot: React.FC = () => {
     }
   }, []);
 
+  // Effect to persist messages to local storage whenever they change
   useEffect(() => {
     if (messages.length > 0) {
       localStorage.setItem('waExamPrep_chat_messages', JSON.stringify(messages));
@@ -65,17 +80,26 @@ export const ChatBot: React.FC = () => {
     scrollToBottom();
   }, [messages, isOpen]);
 
+  /**
+   * Initializes the Gemini AI chat session if it hasn't been created yet.
+   */
   const initializeChat = () => {
     if (!chatSessionRef.current) {
       chatSessionRef.current = createTutorChatSession();
     }
   };
 
+  /**
+   * Opens the chat window and ensures the AI session is initialized.
+   */
   const handleOpen = () => {
     setIsOpen(true);
     initializeChat();
   };
 
+  /**
+   * Sends the user's message to the AI and handles the response.
+   */
   const handleSend = async () => {
     if (!inputValue.trim() || !chatSessionRef.current) return;
 
@@ -85,11 +109,13 @@ export const ChatBot: React.FC = () => {
       text: inputValue
     };
 
+    // Add user message to state and clear input
     setMessages(prev => [...prev, userMessage]);
     setInputValue('');
     setIsTyping(true);
 
-    // Check Offline Status
+    // --- Offline Handling ---
+    // If the device is offline, use the local OfflineTutorService for a mock response
     if (!offlineTutor.isOnline()) {
       setTimeout(() => {
         const offlineResponse = offlineTutor.getOfflineResponse(userMessage.text);
@@ -103,7 +129,9 @@ export const ChatBot: React.FC = () => {
       return;
     }
 
+    // --- Online Handling (Gemini AI) ---
     try {
+      // Start streaming the AI's response for a better user experience
       const resultStream = await chatSessionRef.current.sendMessageStream({ 
         message: userMessage.text 
       });
@@ -111,14 +139,16 @@ export const ChatBot: React.FC = () => {
       const botMessageId = (Date.now() + 1).toString();
       let fullText = '';
       
-      // Add placeholder for streaming message
+      // Add a placeholder message for the incoming stream
       setMessages(prev => [...prev, { id: botMessageId, role: 'model', text: '' }]);
 
+      // Iterate through chunks of the streamed response
       for await (const chunk of resultStream) {
         const c = chunk as GenerateContentResponse;
         const text = c.text;
         if (text) {
           fullText += text;
+          // Update the specific message in state as more text arrives
           setMessages(prev => 
             prev.map(msg => 
               msg.id === botMessageId ? { ...msg, text: fullText } : msg
@@ -138,6 +168,9 @@ export const ChatBot: React.FC = () => {
     }
   };
 
+  /**
+   * Allows sending messages by pressing the 'Enter' key.
+   */
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
@@ -145,6 +178,7 @@ export const ChatBot: React.FC = () => {
     }
   };
 
+  // --- Render logic for closed state ---
   if (!isOpen) {
     return (
       <button
@@ -160,9 +194,10 @@ export const ChatBot: React.FC = () => {
     );
   }
 
+  // --- Render logic for open state (Chat Window) ---
   return (
     <div className="fixed bottom-4 right-4 w-full md:w-96 h-[500px] max-h-[80vh] bg-white rounded-2xl shadow-2xl flex flex-col border border-gray-200 z-50 animate-fade-in-up">
-      {/* Header */}
+      {/* Header Area */}
       <div className="bg-brand-600 p-4 rounded-t-2xl flex items-center justify-between text-white">
         <div className="flex items-center gap-2">
           <div className="bg-white/20 p-1.5 rounded-lg">
@@ -186,6 +221,7 @@ export const ChatBot: React.FC = () => {
           </div>
         </div>
         <div className="flex items-center gap-1">
+          {/* Clear History Button */}
           <button
             onClick={() => {
               if (confirm("Clear chat history?")) {
@@ -203,6 +239,7 @@ export const ChatBot: React.FC = () => {
           >
             <Trash2 className="w-5 h-5" />
           </button>
+          {/* Close Window Button */}
           <button
             onClick={() => setIsOpen(false)}
             className="p-1 hover:bg-brand-500 rounded-lg transition-colors"
@@ -212,7 +249,7 @@ export const ChatBot: React.FC = () => {
         </div>
       </div>
 
-      {/* Messages */}
+      {/* Message List Area */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50 sidebar-scrollbar">
         {messages.map((msg) => (
           <div
@@ -226,10 +263,12 @@ export const ChatBot: React.FC = () => {
                   : 'bg-white text-gray-800 border border-gray-200 rounded-tl-sm shadow-sm'
               }`}
             >
+              {/* MathText handles rendering of LaTeX math expressions */}
               <MathText text={msg.text} className={msg.role === 'user' ? 'text-white' : 'text-gray-800'} />
             </div>
           </div>
         ))}
+        {/* Typing Indicator */}
         {isTyping && (
           <div className="flex justify-start">
             <div className="bg-white border border-gray-200 p-3 rounded-2xl rounded-tl-sm shadow-sm flex items-center gap-2">
@@ -241,7 +280,7 @@ export const ChatBot: React.FC = () => {
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Input */}
+      {/* Input Form Area */}
       <div className="p-4 bg-white border-t border-gray-100 rounded-b-2xl">
         <div className="flex gap-2">
           <input

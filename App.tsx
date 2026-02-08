@@ -1,4 +1,8 @@
 
+/**
+ * App.tsx - Main Application Component
+ * This file manages the overall state, navigation, and core logic of the West African Exam Prep AI app.
+ */
 import React, { useState, useEffect, useCallback } from 'react';
 import { ScreenState, ExamType, Subject, Question, Book } from './types';
 import { ExamCard } from './components/ExamCard';
@@ -7,7 +11,8 @@ import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
 import { StudyPlanner } from './components/StudyPlanner';
 import { ChatBot } from './components/ChatBot';
-import { ConvexSync } from './components/ConvexSync';
+// Removed ConvexSync as Convex integration is being disabled for now
+// import { ConvexSync } from './components/ConvexSync';
 import { fetchExamQuestions } from './services/geminiService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
@@ -17,9 +22,12 @@ import {
   Cloud, CloudOff, User, LogIn, LogOut
 } from 'lucide-react';
 import { useUserId } from "./hooks/useUserId";
-import { SignInButton, UserButton } from "@clerk/clerk-react";
+// Removed Clerk imports
+// import { SignInButton, UserButton } from "@clerk/clerk-react";
 
-// Stream Definitions
+/**
+ * Stream Definitions - Categorizes subjects into Science, Arts, and Commercial departments.
+ */
 type StreamType = 'SCIENCE' | 'ARTS' | 'COMMERCIAL';
 
 const STREAMS: { id: StreamType; label: string; icon: React.ElementType; color: string; description: string }[] = [
@@ -46,6 +54,9 @@ const STREAMS: { id: StreamType; label: string; icon: React.ElementType; color: 
   }
 ];
 
+/**
+ * Mapping of subjects to their respective streams.
+ */
 const SUBJECTS_BY_STREAM: Record<StreamType, Subject[]> = {
   SCIENCE: [
     Subject.ENGLISH, Subject.MATHEMATICS, 
@@ -66,26 +77,33 @@ const SUBJECTS_BY_STREAM: Record<StreamType, Subject[]> = {
   ]
 };
 
+/**
+ * Helper to check if Clerk is configured.
+ * Updated to return false as we are disabling Clerk.
+ */
 const isClerkAvailable = () => {
-    const key = (import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string);
-    return key && key !== "pk_test_YW55LXN0cmluZy13aWxsLXdvcmstaWYtaXQtbG9va3MtcmVhbC0xMg";
+    return false;
 };
 
+/**
+ * Fallback Component for Sign In Button when Clerk is disabled.
+ */
 const SafeSignInButton: React.FC<any> = ({ children, ...props }) => {
-  if (isClerkAvailable()) {
-    return <SignInButton {...props}>{children}</SignInButton>;
-  }
   return <>{children}</>;
 };
 
+/**
+ * Fallback Component for User Button when Clerk is disabled.
+ */
 const SafeUserButton: React.FC<any> = (props) => {
-  if (isClerkAvailable()) {
-    return <UserButton {...props} />;
-  }
   return <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center"><User className="w-4 h-4 text-gray-500" /></div>;
 };
 
+/**
+ * Main App Component Logic
+ */
 const App: React.FC = () => {
+  // --- State Hooks ---
   const [screen, setScreen] = useState<ScreenState>('HOME');
   const [selectedExam, setSelectedExam] = useState<ExamType | null>(null);
   const [selectedStream, setSelectedStream] = useState<StreamType | null>(null);
@@ -102,6 +120,9 @@ const App: React.FC = () => {
   const [books, setBooks] = useState<Record<string, Book>>({}); 
   const { userId, type: userType } = useUserId();
 
+  // --- Effects ---
+
+  // Load saved question packs (books) from local storage on startup
   useEffect(() => {
     try {
       const savedBooks = localStorage.getItem('waExamPrep_books');
@@ -111,6 +132,9 @@ const App: React.FC = () => {
     }
   }, []);
 
+  /**
+   * Saves a question pack to state and local storage.
+   */
   const saveBook = useCallback(async (book: Book) => {
     try {
       const newBooks = { ...books, [book.id]: book };
@@ -121,33 +145,35 @@ const App: React.FC = () => {
     }
   }, [books]);
 
+  /**
+   * Deletes a question pack from state and local storage.
+   */
   const deleteBook = (bookId: string) => {
     const { [bookId]: removed, ...rest } = books;
     setBooks(rest);
     localStorage.setItem('waExamPrep_books', JSON.stringify(rest));
   };
 
+  /**
+   * Generates a unique ID for a question pack.
+   */
   const getBookId = (exam: ExamType, subject: Subject, year: string) => `${exam}-${subject}-${year}`;
 
+  /**
+   * Returns the appropriate icon for a given subject.
+   */
   const getSubjectIcon = (subject: Subject) => {
     switch (subject) {
-      // Compulsory
       case Subject.MATHEMATICS: return <Calculator className="w-5 h-5" />;
       case Subject.ENGLISH: return <BookA className="w-5 h-5" />;
-      
-      // Science
       case Subject.PHYSICS: return <Atom className="w-5 h-5" />;
       case Subject.CHEMISTRY: return <FlaskConical className="w-5 h-5" />;
       case Subject.BIOLOGY: return <Dna className="w-5 h-5" />;
       case Subject.FURTHER_MATHS: return <Calculator className="w-5 h-5 text-indigo-500" />;
       case Subject.AGRIC_SCIENCE: return <Leaf className="w-5 h-5" />;
       case Subject.GEOGRAPHY: return <Map className="w-5 h-5" />;
-      
-      // Commercial
       case Subject.ECONOMICS: return <TrendingUp className="w-5 h-5" />;
       case Subject.COMMERCE: return <Briefcase className="w-5 h-5" />;
-      
-      // Arts
       case Subject.GOVERNMENT: return <Landmark className="w-5 h-5" />;
       case Subject.LITERATURE: return <Feather className="w-5 h-5" />;
       case Subject.HISTORY: return <ScrollText className="w-5 h-5" />;
@@ -156,13 +182,16 @@ const App: React.FC = () => {
       case Subject.IRS: return <Moon className="w-5 h-5" />;
       case Subject.FRENCH: 
       case Subject.ARABIC: return <Globe className="w-5 h-5" />;
-      
       default: return <BookOpen className="w-5 h-5" />;
     }
   };
 
+  // Generate a list of available years for past questions
   const years = Array.from({ length: 15 }, (_, i) => (2024 - i).toString());
 
+  /**
+   * Starts a practice session with a selected book.
+   */
   const handleStart = (bookId: string) => {
      if (books[bookId]) {
          setQuestions(books[bookId].questions);
@@ -172,6 +201,9 @@ const App: React.FC = () => {
      }
   };
 
+  /**
+   * Downloads a question pack using the Gemini AI service.
+   */
   const handleDownload = async (year: string) => {
      if (!selectedExam || !selectedSubject) return;
      
@@ -201,6 +233,9 @@ const App: React.FC = () => {
      }
   };
 
+  /**
+   * Handles the completion of a practice session.
+   */
   const handleFinishPractice = async (score: number, total: number) => {
       setLastScore(score);
       setLastTotal(total);
@@ -219,6 +254,9 @@ const App: React.FC = () => {
       setScreen('RESULTS');
   };
 
+  /**
+   * Resets the application state to the home screen.
+   */
   const resetApp = () => {
     setScreen('HOME');
     setSelectedExam(null);
@@ -229,7 +267,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans flex flex-col relative">
-      {isClerkAvailable() && <ConvexSync userId={userId} books={books} setBooks={setBooks} />}
+      {/* Navigation Header */}
       <nav className="bg-white border-b border-gray-200 h-16 sticky top-0 z-40">
         <div className="max-w-4xl mx-auto px-4 h-full flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer" onClick={resetApp}>
@@ -240,20 +278,13 @@ const App: React.FC = () => {
           </div>
           
           <div className="flex items-center gap-3">
+              {/* Connection Status Indicator */}
               <div className="hidden md:flex items-center gap-1.5 px-2 py-1 bg-gray-50 rounded-md border border-gray-100">
-                  {isClerkAvailable() ? (
-                      <>
-                        <Cloud className="w-3.5 h-3.5 text-green-500" />
-                        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Cloud Sync Ready</span>
-                      </>
-                  ) : (
-                      <>
-                        <CloudOff className="w-3.5 h-3.5 text-gray-300" />
-                        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Offline Mode</span>
-                      </>
-                  )}
+                  <CloudOff className="w-3.5 h-3.5 text-gray-300" />
+                  <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Offline Mode</span>
               </div>
 
+              {/* Study Plan Link */}
               <button
                 onClick={() => setScreen('STUDY_PLAN')}
                 className={`flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg transition-all ${screen === 'STUDY_PLAN' ? 'bg-brand-50 text-brand-600' : 'text-gray-500 hover:text-brand-600 hover:bg-gray-50'}`}
@@ -262,6 +293,7 @@ const App: React.FC = () => {
                  <span className="hidden sm:inline">Plan</span>
               </button>
 
+              {/* Library Button */}
               <button
                 onClick={() => setShowLibrary(true)}
                 className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-brand-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 transition-all"
@@ -270,24 +302,18 @@ const App: React.FC = () => {
                  <span className="hidden sm:inline">{Object.keys(books).length} Packs</span>
               </button>
 
+              {/* User Profile / Mock Login */}
               <div className="border-l border-gray-100 pl-3 ml-1">
-                  {userType === 'clerk' ? (
-                      <SafeUserButton afterSignOutUrl="/" />
-                  ) : userType === 'device' ? (
-                      <SafeSignInButton mode="modal">
-                          <button className="flex items-center gap-2 px-3 py-1.5 bg-brand-50 text-brand-700 rounded-lg hover:bg-brand-100 transition-colors text-xs font-bold">
-                              <LogIn className="w-4 h-4" />
-                              <span>Login</span>
-                          </button>
-                      </SafeSignInButton>
-                  ) : null}
+                  <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center"><User className="w-4 h-4 text-gray-500" /></div>
               </div>
           </div>
         </div>
       </nav>
 
+      {/* Main Content Area */}
       <main className="flex-1 max-w-4xl mx-auto w-full px-4 py-8 relative">
         
+        {/* Home Screen: Exam Selection */}
         {screen === 'HOME' && (
           <div className="animate-fade-in-up">
             <div className="text-center mb-10">
@@ -298,25 +324,6 @@ const App: React.FC = () => {
                 Download authentic past questions. Get instant, teacher-like explanations. <strong>Works offline.</strong>
               </p>
             </div>
-
-            {userType === 'device' && (
-                <div className="max-w-xl mx-auto mb-10 p-4 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-between gap-4 animate-fade-in">
-                    <div className="flex items-center gap-3">
-                        <div className="bg-indigo-100 p-2 rounded-xl">
-                            <Cloud className="w-5 h-5 text-indigo-600" />
-                        </div>
-                        <div className="text-left">
-                            <p className="text-sm font-bold text-indigo-900">Sync your progress</p>
-                            <p className="text-xs text-indigo-700">Login to save your library across all your devices.</p>
-                        </div>
-                    </div>
-                    <SafeSignInButton mode="modal">
-                        <button className="px-4 py-2 bg-white text-indigo-600 border border-indigo-200 text-xs font-bold rounded-lg hover:bg-indigo-50 transition-colors whitespace-nowrap shadow-sm">
-                            Login Now
-                        </button>
-                    </SafeSignInButton>
-                </div>
-            )}
 
             <h2 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Select Your Exam</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -342,6 +349,7 @@ const App: React.FC = () => {
           </div>
         )}
 
+        {/* Stream Selection: Department selection */}
         {screen === 'STREAM_SELECT' && (
           <div className="animate-fade-in">
              <button onClick={() => setScreen('HOME')} className="mb-6 flex items-center text-gray-500 hover:text-brand-600">
@@ -368,6 +376,7 @@ const App: React.FC = () => {
           </div>
         )}
 
+        {/* Subject Selection */}
         {screen === 'SUBJECT_SELECT' && selectedStream && (
           <div className="animate-fade-in">
             <button onClick={() => setScreen('STREAM_SELECT')} className="mb-6 flex items-center text-gray-500 hover:text-brand-600">
@@ -395,6 +404,7 @@ const App: React.FC = () => {
           </div>
         )}
 
+        {/* Year Selection and Pack Management */}
         {screen === 'YEAR_SELECT' && selectedExam && selectedSubject && (
             <div className="animate-fade-in">
                 <button onClick={() => setScreen('SUBJECT_SELECT')} className="mb-6 flex items-center text-gray-500 hover:text-brand-600">
@@ -490,10 +500,12 @@ const App: React.FC = () => {
             </div>
         )}
 
+        {/* Loading Spinner during Download */}
         {screen === 'LOADING' && (
              <LoadingScreen message={`Downloading ${selectedExam} ${selectedSubject} question pack...`} />
         )}
 
+        {/* Practice Session Component */}
         {screen === 'PRACTICE' && selectedExam && selectedSubject && (
             <PracticeSession 
                 questions={questions}
@@ -506,6 +518,7 @@ const App: React.FC = () => {
             />
         )}
 
+        {/* Results Screen after Practice */}
         {screen === 'RESULTS' && selectedExam && selectedSubject && (
             <Results 
                 score={lastScore}
@@ -517,12 +530,13 @@ const App: React.FC = () => {
             />
         )}
 
+        {/* Study Planner Component */}
         {screen === 'STUDY_PLAN' && (
             <StudyPlanner onBack={() => setScreen('HOME')} />
         )}
       </main>
 
-      {/* Library Modal */}
+      {/* Library Modal: Overview of all downloaded packs */}
       {showLibrary && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in" onClick={(e) => { if(e.target === e.currentTarget) setShowLibrary(false); }}>
             <div className="bg-white rounded-2xl w-full max-w-md max-h-[80vh] flex flex-col shadow-2xl overflow-hidden animate-scale-in">
@@ -602,7 +616,7 @@ const App: React.FC = () => {
         </div>
       )}
 
-      {/* AI Chat Bot Overlay */}
+      {/* AI Chat Bot Overlay: Accessible from any screen */}
       <ChatBot />
     </div>
   );
