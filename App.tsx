@@ -11,6 +11,7 @@ import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
 import { StudyPlanner } from './components/StudyPlanner';
 import { ChatBot } from './components/ChatBot';
+import { ProfilePage } from './components/ProfilePage';
 // Removed ConvexSync as Convex integration is being disabled for now
 // import { ConvexSync } from './components/ConvexSync';
 import { fetchExamQuestions } from './services/geminiService';
@@ -283,6 +284,7 @@ const App: React.FC = () => {
     setSelectedStream(null);
     setSelectedSubject(null);
     setActiveBookId(null);
+    setSearchQuery('');
   };
 
   return (
@@ -348,7 +350,12 @@ const App: React.FC = () => {
 
               {/* User Profile / Mock Login */}
               <div className="border-l border-gray-100 pl-3 ml-1">
-                  <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center"><User className="w-4 h-4 text-gray-500" /></div>
+                  <button
+                    onClick={() => setScreen('PROFILE')}
+                    className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${screen === 'PROFILE' ? 'bg-brand-600 ring-2 ring-brand-100' : 'bg-gray-200 hover:bg-gray-300'}`}
+                  >
+                    <User className={`w-4 h-4 ${screen === 'PROFILE' ? 'text-white' : 'text-gray-500'}`} />
+                  </button>
               </div>
           </div>
         </div>
@@ -374,19 +381,19 @@ const App: React.FC = () => {
               <ExamCard 
                 type={ExamType.JAMB} 
                 description="Joint Admissions & Matriculation Board"
-                onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); }}
+                onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); setSearchQuery(''); }}
                 colorClass="bg-green-500"
               />
               <ExamCard 
                 type={ExamType.WAEC} 
                 description="West African Senior School Certificate"
-                onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); }}
+                onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); setSearchQuery(''); }}
                 colorClass="bg-yellow-500"
               />
               <ExamCard 
                 type={ExamType.NECO} 
                 description="National Examinations Council"
-                onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); }}
+                onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); setSearchQuery(''); }}
                 colorClass="bg-purple-500"
               />
             </div>
@@ -396,7 +403,7 @@ const App: React.FC = () => {
         {/* Stream Selection: Department selection */}
         {screen === 'STREAM_SELECT' && (
           <div className="animate-fade-in">
-             <button onClick={() => setScreen('HOME')} className="mb-6 flex items-center text-gray-500 hover:text-brand-600">
+             <button onClick={() => { setScreen('HOME'); setSearchQuery(''); }} className="mb-6 flex items-center text-gray-500 hover:text-brand-600">
                 <ArrowRight className="w-4 h-4 rotate-180 mr-2" /> Back
             </button>
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Select Your Department</h2>
@@ -406,7 +413,7 @@ const App: React.FC = () => {
               {STREAMS.map((stream) => (
                 <button
                   key={stream.id}
-                  onClick={() => { setSelectedStream(stream.id); setScreen('SUBJECT_SELECT'); }}
+                  onClick={() => { setSelectedStream(stream.id); setScreen('SUBJECT_SELECT'); setSearchQuery(''); }}
                   className="group p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-xl hover:border-brand-300 transition-all text-left flex flex-col"
                 >
                   <div className={`w-12 h-12 rounded-lg ${stream.color} bg-opacity-10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
@@ -423,7 +430,7 @@ const App: React.FC = () => {
         {/* Subject Selection */}
         {screen === 'SUBJECT_SELECT' && selectedStream && (
           <div className="animate-fade-in">
-            <button onClick={() => setScreen('STREAM_SELECT')} className="mb-6 flex items-center text-gray-500 hover:text-brand-600">
+            <button onClick={() => { setScreen('STREAM_SELECT'); setSearchQuery(''); }} className="mb-6 flex items-center text-gray-500 hover:text-brand-600">
                 <ArrowRight className="w-4 h-4 rotate-180 mr-2" /> Back to Departments
             </button>
             <div className="flex items-center gap-3 mb-6">
@@ -453,7 +460,7 @@ const App: React.FC = () => {
         {/* Year Selection and Pack Management */}
         {screen === 'YEAR_SELECT' && selectedExam && selectedSubject && (
             <div className="animate-fade-in">
-                <button onClick={() => setScreen('SUBJECT_SELECT')} className="mb-6 flex items-center text-gray-500 hover:text-brand-600">
+                <button onClick={() => { setScreen('SUBJECT_SELECT'); setSearchQuery(''); }} className="mb-6 flex items-center text-gray-500 hover:text-brand-600">
                     <ArrowRight className="w-4 h-4 rotate-180 mr-2" /> Change Subject
                 </button>
 
@@ -579,6 +586,11 @@ const App: React.FC = () => {
         {/* Study Planner Component */}
         {screen === 'STUDY_PLAN' && (
             <StudyPlanner onBack={() => setScreen('HOME')} />
+        )}
+
+        {/* Profile Page Component */}
+        {screen === 'PROFILE' && (
+            <ProfilePage books={books} onBack={() => setScreen('HOME')} />
         )}
       </main>
 
