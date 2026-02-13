@@ -17,7 +17,7 @@ import { fetchExamQuestions } from './services/geminiService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
-  TrendingUp, Landmark, Feather, WifiOff, Play,
+  TrendingUp, Landmark, Feather, WifiOff, Play, Search,
   Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Calendar,
   Cloud, CloudOff, User, LogIn, LogOut
 } from 'lucide-react';
@@ -113,14 +113,34 @@ const App: React.FC = () => {
   const [practiceMode, setPracticeMode] = useState<'STUDY' | 'TEST'>('STUDY');
   const [showLibrary, setShowLibrary] = useState(false);
   const [activeBookId, setActiveBookId] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
   
   const [lastScore, setLastScore] = useState(0);
   const [lastTotal, setLastTotal] = useState(0);
 
   const [books, setBooks] = useState<Record<string, Book>>({}); 
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const { userId, type: userType } = useUserId();
 
   // --- Effects ---
+
+  // Handle PWA installation prompt
+  useEffect(() => {
+    const handler = (e: any) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+    window.addEventListener('beforeinstallprompt', handler);
+    window.addEventListener('appinstalled', () => setDeferredPrompt(null));
+    return () => window.removeEventListener('beforeinstallprompt', handler);
+  }, []);
+
+  const handleInstallApp = async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    // After prompt() is called, the deferredPrompt can't be used again
+    setDeferredPrompt(null);
+  };
 
   // Load saved question packs (books) from local storage on startup
   useEffect(() => {
@@ -276,6 +296,29 @@ const App: React.FC = () => {
             </div>
             <span className="text-lg font-bold text-gray-900">WA Exam Prep</span>
           </div>
+
+          {/* Search Bar & PWA Install */}
+          <div className="hidden md:flex flex-1 max-w-sm mx-4 items-center gap-2">
+             <div className="relative flex-1">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Search subjects..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-9 pr-4 py-1.5 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all"
+                />
+             </div>
+             {deferredPrompt && (
+                <button
+                  onClick={handleInstallApp}
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-brand-600 text-white text-xs font-bold rounded-lg hover:bg-brand-700 transition-all shadow-sm whitespace-nowrap"
+                >
+                  <DownloadCloud className="w-3.5 h-3.5" />
+                  Install App
+                </button>
+             )}
+          </div>
           
           <div className="flex items-center gap-3">
               {/* Connection Status Indicator */}
@@ -283,6 +326,7 @@ const App: React.FC = () => {
                   <CloudOff className="w-3.5 h-3.5 text-gray-300" />
                   <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Offline Mode</span>
               </div>
+
 
               {/* Study Plan Link */}
               <button
@@ -388,7 +432,9 @@ const App: React.FC = () => {
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {SUBJECTS_BY_STREAM[selectedStream].map((subject) => (
+              {SUBJECTS_BY_STREAM[selectedStream]
+                .filter(s => s.toLowerCase().includes(searchQuery.toLowerCase()))
+                .map((subject) => (
                 <button
                   key={subject}
                   onClick={() => { setSelectedSubject(subject); setScreen('YEAR_SELECT'); }}
@@ -440,7 +486,7 @@ const App: React.FC = () => {
                 </div>
                 
                 <div className="space-y-3">
-                    {years.map((year) => {
+                    {years.filter(y => y.includes(searchQuery)).map((year) => {
                         const bookId = getBookId(selectedExam, selectedSubject, year);
                         const isDownloaded = !!books[bookId];
                         const book = books[bookId];
