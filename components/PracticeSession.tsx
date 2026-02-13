@@ -198,12 +198,14 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
           </div>
       )}
 
-      {/* Sources list for grounded questions */}
-      {sources.length > 0 && (
+      {/* Sources list for grounded questions - Sanitized to prevent XSS */}
+      {sources.filter(src => !src.trim().toLowerCase().startsWith('javascript:')).length > 0 && (
           <div className="mb-8 p-4 bg-gray-50 rounded-lg text-xs text-gray-500">
               <h4 className="font-semibold mb-2">Sources:</h4>
               <ul className="list-disc pl-4 space-y-1">
-                  {sources.map((src, i) => (
+                  {sources
+                    .filter(src => !src.trim().toLowerCase().startsWith('javascript:'))
+                    .map((src, i) => (
                       <li key={i}>
                           <a href={src} target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline break-all">
                               {src}
