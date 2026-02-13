@@ -4,7 +4,7 @@
  * This component provides a floating chat interface where users can interact with
  * an AI tutor for exam preparation assistance.
  */
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, memo } from 'react';
 import { MessageCircle, X, Send, Minimize2, Loader2, Bot, Trash2 } from 'lucide-react';
 import { createTutorChatSession } from '../services/geminiService';
 import { Chat, GenerateContentResponse } from "@google/genai";
@@ -17,6 +17,30 @@ interface Message {
   role: 'user' | 'model';
   text: string;
 }
+
+/**
+ * ChatMessage Component - Renders an individual message bubble.
+ * Memoized to prevent unnecessary re-renders when other messages change or
+ * during response streaming.
+ */
+const ChatMessage = memo(({ msg }: { msg: Message }) => {
+  return (
+    <div
+      className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+    >
+      <div
+        className={`max-w-[85%] p-3 rounded-2xl ${
+          msg.role === 'user'
+            ? 'bg-brand-600 text-white rounded-tr-sm'
+            : 'bg-white text-gray-800 border border-gray-200 rounded-tl-sm shadow-sm'
+        }`}
+      >
+        {/* MathText handles rendering of LaTeX math expressions */}
+        <MathText text={msg.text} className={msg.role === 'user' ? 'text-white' : 'text-gray-800'} />
+      </div>
+    </div>
+  );
+});
 
 export const ChatBot: React.FC = () => {
   // --- State Hooks ---
@@ -252,21 +276,7 @@ export const ChatBot: React.FC = () => {
       {/* Message List Area */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50 sidebar-scrollbar">
         {messages.map((msg) => (
-          <div
-            key={msg.id}
-            className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
-          >
-            <div
-              className={`max-w-[85%] p-3 rounded-2xl ${
-                msg.role === 'user'
-                  ? 'bg-brand-600 text-white rounded-tr-sm'
-                  : 'bg-white text-gray-800 border border-gray-200 rounded-tl-sm shadow-sm'
-              }`}
-            >
-              {/* MathText handles rendering of LaTeX math expressions */}
-              <MathText text={msg.text} className={msg.role === 'user' ? 'text-white' : 'text-gray-800'} />
-            </div>
-          </div>
+          <ChatMessage key={msg.id} msg={msg} />
         ))}
         {/* Typing Indicator */}
         {isTyping && (

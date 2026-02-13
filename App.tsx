@@ -99,6 +99,43 @@ const SafeUserButton: React.FC<any> = (props) => {
   return <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center"><User className="w-4 h-4 text-gray-500" /></div>;
 };
 
+// --- Static Data & Helper Functions (Moved outside App to avoid recreation on render) ---
+
+/**
+ * Generates a unique ID for a question pack.
+ */
+const getBookId = (exam: ExamType, subject: Subject, year: string) => `${exam}-${subject}-${year}`;
+
+/**
+ * Returns the appropriate icon for a given subject.
+ */
+const getSubjectIcon = (subject: Subject) => {
+  switch (subject) {
+    case Subject.MATHEMATICS: return <Calculator className="w-5 h-5" />;
+    case Subject.ENGLISH: return <BookA className="w-5 h-5" />;
+    case Subject.PHYSICS: return <Atom className="w-5 h-5" />;
+    case Subject.CHEMISTRY: return <FlaskConical className="w-5 h-5" />;
+    case Subject.BIOLOGY: return <Dna className="w-5 h-5" />;
+    case Subject.FURTHER_MATHS: return <Calculator className="w-5 h-5 text-indigo-500" />;
+    case Subject.AGRIC_SCIENCE: return <Leaf className="w-5 h-5" />;
+    case Subject.GEOGRAPHY: return <Map className="w-5 h-5" />;
+    case Subject.ECONOMICS: return <TrendingUp className="w-5 h-5" />;
+    case Subject.COMMERCE: return <Briefcase className="w-5 h-5" />;
+    case Subject.GOVERNMENT: return <Landmark className="w-5 h-5" />;
+    case Subject.LITERATURE: return <Feather className="w-5 h-5" />;
+    case Subject.HISTORY: return <ScrollText className="w-5 h-5" />;
+    case Subject.CIVIC_EDUCATION: return <Scale className="w-5 h-5" />;
+    case Subject.CRS: return <BookHeart className="w-5 h-5" />;
+    case Subject.IRS: return <Moon className="w-5 h-5" />;
+    case Subject.FRENCH:
+    case Subject.ARABIC: return <Globe className="w-5 h-5" />;
+    default: return <BookOpen className="w-5 h-5" />;
+  }
+};
+
+// Generate a list of available years for past questions
+const AVAILABLE_YEARS = Array.from({ length: 15 }, (_, i) => (2024 - i).toString());
+
 /**
  * Main App Component Logic
  */
@@ -153,41 +190,6 @@ const App: React.FC = () => {
     setBooks(rest);
     localStorage.setItem('waExamPrep_books', JSON.stringify(rest));
   };
-
-  /**
-   * Generates a unique ID for a question pack.
-   */
-  const getBookId = (exam: ExamType, subject: Subject, year: string) => `${exam}-${subject}-${year}`;
-
-  /**
-   * Returns the appropriate icon for a given subject.
-   */
-  const getSubjectIcon = (subject: Subject) => {
-    switch (subject) {
-      case Subject.MATHEMATICS: return <Calculator className="w-5 h-5" />;
-      case Subject.ENGLISH: return <BookA className="w-5 h-5" />;
-      case Subject.PHYSICS: return <Atom className="w-5 h-5" />;
-      case Subject.CHEMISTRY: return <FlaskConical className="w-5 h-5" />;
-      case Subject.BIOLOGY: return <Dna className="w-5 h-5" />;
-      case Subject.FURTHER_MATHS: return <Calculator className="w-5 h-5 text-indigo-500" />;
-      case Subject.AGRIC_SCIENCE: return <Leaf className="w-5 h-5" />;
-      case Subject.GEOGRAPHY: return <Map className="w-5 h-5" />;
-      case Subject.ECONOMICS: return <TrendingUp className="w-5 h-5" />;
-      case Subject.COMMERCE: return <Briefcase className="w-5 h-5" />;
-      case Subject.GOVERNMENT: return <Landmark className="w-5 h-5" />;
-      case Subject.LITERATURE: return <Feather className="w-5 h-5" />;
-      case Subject.HISTORY: return <ScrollText className="w-5 h-5" />;
-      case Subject.CIVIC_EDUCATION: return <Scale className="w-5 h-5" />;
-      case Subject.CRS: return <BookHeart className="w-5 h-5" />;
-      case Subject.IRS: return <Moon className="w-5 h-5" />;
-      case Subject.FRENCH: 
-      case Subject.ARABIC: return <Globe className="w-5 h-5" />;
-      default: return <BookOpen className="w-5 h-5" />;
-    }
-  };
-
-  // Generate a list of available years for past questions
-  const years = Array.from({ length: 15 }, (_, i) => (2024 - i).toString());
 
   /**
    * Starts a practice session with a selected book.
@@ -440,7 +442,7 @@ const App: React.FC = () => {
                 </div>
                 
                 <div className="space-y-3">
-                    {years.map((year) => {
+                    {AVAILABLE_YEARS.map((year) => {
                         const bookId = getBookId(selectedExam, selectedSubject, year);
                         const isDownloaded = !!books[bookId];
                         const book = books[bookId];
