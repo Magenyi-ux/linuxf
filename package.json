@@ -16,7 +16,8 @@
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-pdf": "9.1.1",
-    "recharts": "^3.5.1"
+    "recharts": "^3.5.1",
+    "workbox-window": "^7.4.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
