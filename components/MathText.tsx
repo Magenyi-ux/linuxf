@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import katex from 'katex';
 
 interface MathTextProps {
@@ -6,7 +6,18 @@ interface MathTextProps {
   className?: string;
 }
 
-export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
+/**
+ * Global cache for KaTeX rendering results to avoid redundant parsing and HTML generation.
+ * This provides a significant speedup when the same math expressions are rendered multiple times,
+ * such as during AI response streaming or in large lists.
+ */
+const katexCache = new Map<string, string>();
+
+/**
+ * MathText Component - Renders text with LaTeX math support.
+ * Optimized with React.memo and KaTeX result caching for high performance.
+ */
+export const MathText = memo(({ text, className = '' }: MathTextProps) => {
   if (!text) return null;
 
   // 1. Handle basic Markdown-style bolding (**text**)
@@ -33,10 +44,17 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
           // This is a math segment
           const math = part.slice(1, -1);
           try {
-            const html = katex.renderToString(math, {
-              throwOnError: false,
-              displayMode: false
-            });
+            // Check cache first to avoid expensive KaTeX rendering
+            let html = katexCache.get(math);
+
+            if (!html) {
+              html = katex.renderToString(math, {
+                throwOnError: false,
+                displayMode: false
+              });
+              katexCache.set(math, html);
+            }
+
             return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
           } catch (e) {
             // Fallback if KaTeX fails
@@ -49,4 +67,4 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
       })}
     </div>
   );
-};
+});
