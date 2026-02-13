@@ -38,6 +38,41 @@ export default defineConfig(({ mode }) => {
                     statuses: [0, 200]
                   }
                 }
+              },
+              {
+                urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+                handler: 'CacheFirst',
+                options: {
+                  cacheName: 'gstatic-fonts-cache',
+                  expiration: {
+                    maxEntries: 10,
+                    maxAgeSeconds: 60 * 60 * 24 * 365
+                  },
+                  cacheableResponse: {
+                    statuses: [0, 200]
+                  }
+                }
+              },
+              {
+                urlPattern: /^https:\/\/cdn\.jsdelivr\.net\/.*/i,
+                handler: 'StaleWhileRevalidate',
+                options: {
+                  cacheName: 'jsdelivr-cdn-cache'
+                }
+              },
+              {
+                urlPattern: /^https:\/\/unpkg\.com\/.*/i,
+                handler: 'StaleWhileRevalidate',
+                options: {
+                  cacheName: 'unpkg-cdn-cache'
+                }
+              },
+              {
+                urlPattern: /^https:\/\/cdn\.tailwindcss\.com\/.*/i,
+                handler: 'StaleWhileRevalidate',
+                options: {
+                  cacheName: 'tailwind-cdn-cache'
+                }
               }
             ]
           }
