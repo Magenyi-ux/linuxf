@@ -56,9 +56,18 @@ export interface Book {
 }
 
 export interface UserProfile {
+  name: string;
   level: number;
   xp: number;
   streak: number;
+  joinedDate: number;
+}
+
+export interface Countdown {
+  id: string;
+  name: string;
+  date: number; // timestamp
+  isDefault?: boolean;
 }
 
 export interface StudyPlanTask {
@@ -70,4 +79,4 @@ export interface StudyPlanTask {
   dueDate: number;
 }
 
-export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'STUDY_PLAN';
+export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'STUDY_PLAN' | 'PROFILE' | 'AUTH';

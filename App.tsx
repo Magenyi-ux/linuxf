@@ -4,13 +4,16 @@
  * This file manages the overall state, navigation, and core logic of the West African Exam Prep AI app.
  */
 import React, { useState, useEffect, useCallback } from 'react';
-import { ScreenState, ExamType, Subject, Question, Book } from './types';
+import { ScreenState, ExamType, Subject, Question, Book, UserProfile } from './types';
 import { ExamCard } from './components/ExamCard';
 import { LoadingScreen } from './components/LoadingScreen';
 import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
 import { StudyPlanner } from './components/StudyPlanner';
 import { ChatBot } from './components/ChatBot';
+import { Auth } from './components/Auth';
+import { ProfilePage } from './components/ProfilePage';
+import { CountdownMenu } from './components/CountdownMenu';
 // Removed ConvexSync as Convex integration is being disabled for now
 // import { ConvexSync } from './components/ConvexSync';
 import { fetchExamQuestions } from './services/geminiService';
@@ -19,7 +22,7 @@ import {
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
   Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Calendar,
-  Cloud, CloudOff, User, LogIn, LogOut
+  Cloud, CloudOff, User, LogIn, LogOut, Clock
 } from 'lucide-react';
 import { useUserId } from "./hooks/useUserId";
 // Removed Clerk imports
@@ -105,6 +108,8 @@ const SafeUserButton: React.FC<any> = (props) => {
 const App: React.FC = () => {
   // --- State Hooks ---
   const [screen, setScreen] = useState<ScreenState>('HOME');
+  const [user, setUser] = useState<UserProfile | null>(null);
+  const [showCountdowns, setShowCountdowns] = useState(false);
   const [selectedExam, setSelectedExam] = useState<ExamType | null>(null);
   const [selectedStream, setSelectedStream] = useState<StreamType | null>(null);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
@@ -122,13 +127,20 @@ const App: React.FC = () => {
 
   // --- Effects ---
 
-  // Load saved question packs (books) from local storage on startup
+  // Load saved question packs (books) and user from local storage on startup
   useEffect(() => {
     try {
       const savedBooks = localStorage.getItem('waExamPrep_books');
       if (savedBooks) setBooks(JSON.parse(savedBooks));
+
+      const savedUser = localStorage.getItem('waExamPrep_user');
+      if (savedUser) {
+        setUser(JSON.parse(savedUser));
+      } else {
+        setScreen('AUTH');
+      }
     } catch (e) {
-      console.error("Failed to load books from storage", e);
+      console.error("Failed to load data from storage", e);
     }
   }, []);
 
@@ -258,11 +270,21 @@ const App: React.FC = () => {
    * Resets the application state to the home screen.
    */
   const resetApp = () => {
-    setScreen('HOME');
+    if (!user) {
+        setScreen('AUTH');
+    } else {
+        setScreen('HOME');
+    }
     setSelectedExam(null);
     setSelectedStream(null);
     setSelectedSubject(null);
     setActiveBookId(null);
+  };
+
+  const handleLogout = () => {
+      localStorage.removeItem('waExamPrep_user');
+      setUser(null);
+      setScreen('AUTH');
   };
 
   return (
@@ -284,6 +306,15 @@ const App: React.FC = () => {
                   <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Offline Mode</span>
               </div>
 
+              {/* Exam Countdowns */}
+              <button
+                onClick={() => setShowCountdowns(true)}
+                className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-brand-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 transition-all"
+              >
+                 <Clock className="w-4 h-4" />
+                 <span className="hidden sm:inline">Countdowns</span>
+              </button>
+
               {/* Study Plan Link */}
               <button
                 onClick={() => setScreen('STUDY_PLAN')}
@@ -304,7 +335,18 @@ const App: React.FC = () => {
 
               {/* User Profile / Mock Login */}
               <div className="border-l border-gray-100 pl-3 ml-1">
-                  <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center"><User className="w-4 h-4 text-gray-500" /></div>
+                  <button
+                    onClick={() => setScreen('PROFILE')}
+                    className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${screen === 'PROFILE' ? 'bg-brand-100 ring-2 ring-brand-500' : 'bg-gray-100 hover:bg-gray-200'}`}
+                  >
+                    {user ? (
+                        <div className="w-full h-full rounded-full bg-brand-500 flex items-center justify-center text-white font-bold">
+                            {user.name.charAt(0).toUpperCase()}
+                        </div>
+                    ) : (
+                        <User className="w-5 h-5 text-gray-500" />
+                    )}
+                  </button>
               </div>
           </div>
         </div>
@@ -534,6 +576,16 @@ const App: React.FC = () => {
         {screen === 'STUDY_PLAN' && (
             <StudyPlanner onBack={() => setScreen('HOME')} />
         )}
+
+        {/* Auth Screen */}
+        {screen === 'AUTH' && (
+            <Auth onAuthComplete={(u) => { setUser(u); setScreen('HOME'); }} />
+        )}
+
+        {/* Profile Screen */}
+        {screen === 'PROFILE' && user && (
+            <ProfilePage user={user} onBack={() => setScreen('HOME')} onLogout={handleLogout} />
+        )}
       </main>
 
       {/* Library Modal: Overview of all downloaded packs */}
@@ -618,6 +670,9 @@ const App: React.FC = () => {
 
       {/* AI Chat Bot Overlay: Accessible from any screen */}
       <ChatBot />
+
+      {/* Countdown Menu Modal */}
+      <CountdownMenu isOpen={showCountdowns} onClose={() => setShowCountdowns(false)} />
     </div>
   );
 };
