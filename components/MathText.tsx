@@ -6,47 +6,75 @@ interface MathTextProps {
   className?: string;
 }
 
-export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
+/**
+ * Global cache to store rendered KaTeX HTML strings.
+ * This significantly improves performance by avoiding redundant calls
+ * to katex.renderToString for identical LaTeX expressions.
+ */
+const katexCache = new Map<string, string>();
+
+/**
+ * Helper to process basic Markdown-style bolding (**text**).
+ * Extracted outside the component to avoid recreation on every render cycle.
+ */
+const processBold = (input: string) => {
+  if (!input.includes('**')) return [input];
+  const parts = input.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+          return <strong key={i}>{part.slice(2, -2)}</strong>;
+      }
+      return part;
+  });
+};
+
+/**
+ * MathText Component - Renders text with LaTeX math support.
+ *
+ * PERFORMANCE OPTIMIZATIONS:
+ * 1. React.memo: Prevents re-renders if the 'text' prop hasn't changed.
+ * 2. KaTeX Cache: Uses a global Map to store and retrieve rendered HTML,
+ *    drastically reducing CPU usage during AI response streaming.
+ * 3. Hoisted Helpers: Moves processing logic outside the render loop.
+ */
+export const MathText: React.FC<MathTextProps> = React.memo(({ text, className = '' }) => {
   if (!text) return null;
 
-  // 1. Handle basic Markdown-style bolding (**text**)
-  // Note: This is a simple replacement. For full markdown, a library is better, 
-  // but we want to keep it lightweight.
-  const processBold = (input: string) => {
-    const parts = input.split(/(\*\*[^*]+\*\*)/g);
-    return parts.map((part, i) => {
-        if (part.startsWith('**') && part.endsWith('**')) {
-            return <strong key={i}>{part.slice(2, -2)}</strong>;
-        }
-        return part;
-    });
-  };
-
-  // 2. Split by LaTeX delimiters ($...$)
-  // The regex captures the content inside the $ signs
+  // Split by LaTeX delimiters ($...$)
   const parts = text.split(/(\$[^$]+\$)/g);
 
   return (
     <div className={`math-content whitespace-pre-wrap ${className}`}>
       {parts.map((part, i) => {
         if (part.startsWith('$') && part.endsWith('$')) {
-          // This is a math segment
           const math = part.slice(1, -1);
-          try {
-            const html = katex.renderToString(math, {
-              throwOnError: false,
-              displayMode: false
-            });
-            return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
-          } catch (e) {
-            // Fallback if KaTeX fails
-            return <span key={i} className="text-red-500">{part}</span>;
+
+          // Check global cache for previously rendered math
+          let html = katexCache.get(math);
+
+          if (!html) {
+            try {
+              html = katex.renderToString(math, {
+                throwOnError: false,
+                displayMode: false
+              });
+              // Store in cache for future hits
+              katexCache.set(math, html);
+            } catch (e) {
+              // Fallback to raw text if KaTeX fails
+              return <span key={i} className="text-red-500">{part}</span>;
+            }
           }
+
+          return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
         } else {
-          // This is text, process for bolding
+          // Process standard text for bolding
           return <span key={i}>{processBold(part)}</span>;
         }
       })}
     </div>
   );
-};
+});
+
+// Set display name for better debugging with React.memo
+MathText.displayName = 'MathText';
