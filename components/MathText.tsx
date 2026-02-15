@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import katex from 'katex';
 
 interface MathTextProps {
@@ -6,12 +6,24 @@ interface MathTextProps {
   className?: string;
 }
 
-export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
+/**
+ * Global cache for KaTeX rendered HTML strings.
+ * Parsing and generating HTML from LaTeX can be expensive, especially in
+ * streaming contexts like the AI Tutor chat. This cache prevents redundant work.
+ */
+const katexCache = new Map<string, string>();
+
+/**
+ * MathText Component
+ * Renders text containing LaTeX math expressions ($...$) and basic markdown bolding (**...**).
+ * Optimized with React.memo and a global KaTeX string cache.
+ */
+export const MathText: React.FC<MathTextProps> = memo(({ text, className = '' }) => {
   if (!text) return null;
 
-  // 1. Handle basic Markdown-style bolding (**text**)
-  // Note: This is a simple replacement. For full markdown, a library is better, 
-  // but we want to keep it lightweight.
+  /**
+   * Processes text for basic Markdown-style bolding.
+   */
   const processBold = (input: string) => {
     const parts = input.split(/(\*\*[^*]+\*\*)/g);
     return parts.map((part, i) => {
@@ -22,8 +34,7 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
     });
   };
 
-  // 2. Split by LaTeX delimiters ($...$)
-  // The regex captures the content inside the $ signs
+  // Split by LaTeX delimiters ($...$)
   const parts = text.split(/(\$[^$]+\$)/g);
 
   return (
@@ -32,14 +43,23 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
         if (part.startsWith('$') && part.endsWith('$')) {
           // This is a math segment
           const math = part.slice(1, -1);
+
+          // Check if we've already rendered this expression
+          const cachedHtml = katexCache.get(math);
+          if (cachedHtml) {
+            return <span key={i} dangerouslySetInnerHTML={{ __html: cachedHtml }} className="mx-1" />;
+          }
+
           try {
             const html = katex.renderToString(math, {
               throwOnError: false,
               displayMode: false
             });
+            // Cache the result for future use
+            katexCache.set(math, html);
             return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
           } catch (e) {
-            // Fallback if KaTeX fails
+            // Fallback if KaTeX rendering fails
             return <span key={i} className="text-red-500">{part}</span>;
           }
         } else {
@@ -49,4 +69,6 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
       })}
     </div>
   );
-};
+});
+
+MathText.displayName = 'MathText';
