@@ -8,6 +8,7 @@ import React, { useState } from 'react';
 import { Question, Subject, ExamType } from '../types';
 import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle } from 'lucide-react';
 import { MathText } from './MathText';
+import { sanitizeUrl } from '../lib/security';
 
 interface PracticeSessionProps {
   questions: Question[]; // Array of questions for the session
@@ -205,7 +206,12 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
               <ul className="list-disc pl-4 space-y-1">
                   {sources.map((src, i) => (
                       <li key={i}>
-                          <a href={src} target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline break-all">
+                          <a
+                            href={sanitizeUrl(src)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand-600 hover:underline break-all"
+                          >
                               {src}
                           </a>
                       </li>
