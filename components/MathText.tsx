@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import katex from 'katex';
 
 interface MathTextProps {
@@ -6,7 +6,12 @@ interface MathTextProps {
   className?: string;
 }
 
-export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
+// Global cache to store rendered KaTeX HTML strings.
+// This prevents redundant parsing and rendering of the same LaTeX expressions
+// across the entire application, significantly improving performance in math-heavy views.
+const katexCache = new Map<string, string>();
+
+export const MathText: React.FC<MathTextProps> = memo(({ text, className = '' }) => {
   if (!text) return null;
 
   // 1. Handle basic Markdown-style bolding (**text**)
@@ -32,16 +37,25 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
         if (part.startsWith('$') && part.endsWith('$')) {
           // This is a math segment
           const math = part.slice(1, -1);
-          try {
-            const html = katex.renderToString(math, {
-              throwOnError: false,
-              displayMode: false
-            });
-            return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
-          } catch (e) {
-            // Fallback if KaTeX fails
-            return <span key={i} className="text-red-500">{part}</span>;
+
+          // Check if we have already rendered this math expression
+          let html = katexCache.get(math);
+
+          if (!html) {
+            try {
+              // Perform expensive KaTeX rendering and store the result in the cache
+              html = katex.renderToString(math, {
+                throwOnError: false,
+                displayMode: false
+              });
+              katexCache.set(math, html);
+            } catch (e) {
+              // Fallback if KaTeX fails
+              return <span key={i} className="text-red-500">{part}</span>;
+            }
           }
+
+          return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
         } else {
           // This is text, process for bolding
           return <span key={i}>{processBold(part)}</span>;
@@ -49,4 +63,4 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
       })}
     </div>
   );
-};
+});
