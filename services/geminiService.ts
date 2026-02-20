@@ -72,6 +72,42 @@ export const fetchExamQuestions = async (
   year: string,
   count: number = 10
 ): Promise<{ questions: Question[], sources: string[] }> => {
+  // --- PRIORITIZE LOCAL SCRAPED DATA ---
+
+  // Filter local dataset by subject and examType
+  let localSet = fallbackQuestions.filter(q =>
+      q.subject === subject && q.examType === examType
+  );
+
+  // Apply year filter if specific year is requested
+  if (year && year !== 'Random') {
+      const yearMatches = localSet.filter(q => q.year === year);
+      if (yearMatches.length > 0) {
+          localSet = yearMatches;
+      }
+  }
+
+  // If we have enough local questions, use them immediately
+  if (localSet.length >= count) {
+      console.log(`Using primary local data for ${subject} ${examType} ${year}`);
+      const shuffled = [...localSet].sort(() => 0.5 - Math.random());
+      const selected = shuffled.slice(0, count);
+
+      return {
+          questions: selected.map(q => ({
+              id: q.id,
+              text: q.text,
+              options: q.options,
+              correctOptionIndex: q.correctOptionIndex,
+              explanation: q.explanation
+          })),
+          sources: ["https://myschool.ng/classroom/ (Local Data Store)"]
+      };
+  }
+
+  // --- FALLBACK TO AI IF LOCAL DATA IS INSUFFICIENT ---
+  console.log(`Insufficient local data for ${subject} ${examType} ${year}, calling AI...`);
+
   // Use the flash model for faster response times in question generation
   const model = "gemini-1.5-flash";
 
@@ -144,41 +180,24 @@ export const fetchExamQuestions = async (
     return { questions, sources: uniqueSources };
 
   } catch (error) {
-    console.warn("AI failed to fetch questions, using fallback data:", error);
+    console.warn("AI failed and local data was also insufficient:", error);
 
-    // Filter fallback questions by subject and examType
-    let filtered = fallbackQuestions.filter(q =>
-        q.subject === subject && q.examType === examType
-    );
-
-    // Further filter by year if specified and not 'Random'
-    if (year && year !== 'Random') {
-        const yearFiltered = filtered.filter(q => q.year === year);
-        if (yearFiltered.length > 0) {
-            filtered = yearFiltered;
-        }
-        // If no questions for that year, we still use the filtered subject/exam set
+    // If AI fails, we try to return whatever we have locally even if it's less than requested
+    if (localSet.length > 0) {
+        const shuffled = [...localSet].sort(() => 0.5 - Math.random());
+        return {
+            questions: shuffled.slice(0, count).map(q => ({
+                id: q.id,
+                text: q.text,
+                options: q.options,
+                correctOptionIndex: q.correctOptionIndex,
+                explanation: q.explanation
+            })),
+            sources: ["https://myschool.ng/classroom/ (Partial Offline Fallback)"]
+        };
     }
 
-    // Shuffle and pick 'count' questions
-    const shuffled = [...filtered].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, count);
-
-    if (selected.length === 0) {
-        console.error(`No fallback questions available for ${subject} ${examType}`);
-        throw error; // Re-throw the original AI error if even fallback fails
-    }
-
-    return {
-        questions: selected.map(q => ({
-            id: q.id,
-            text: q.text,
-            options: q.options,
-            correctOptionIndex: q.correctOptionIndex,
-            explanation: q.explanation
-        })),
-        sources: ["https://myschool.ng/classroom/ (Offline Fallback)"]
-    };
+    throw error;
   }
 };
 
