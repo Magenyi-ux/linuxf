@@ -43,18 +43,21 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
 
         if (math) {
           try {
-            const html = katex.renderToString(math, {
-              throwOnError: false,
-              displayMode
-            });
+            const html = katex.renderToString(math, { throwOnError: false, displayMode });
             return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
           } catch (e) {
             return <span key={i} className="text-red-500">{part}</span>;
           }
         } else {
-          // This is text or HTML, render it as HTML if it looks like it
           if (part.includes('<') && part.includes('>')) {
-            return <span key={i} dangerouslySetInnerHTML={{ __html: part }} />;
+            // Basic XSS protection: allow safe educational tags, strip all attributes
+            const doc = new DOMParser().parseFromString(part, 'text/html');
+            const allowed = ['P', 'BR', 'STRONG', 'EM', 'SUB', 'SUP', 'SPAN', 'DIV', 'UL', 'OL', 'LI'];
+            doc.body.querySelectorAll('*').forEach(el => {
+              if (!allowed.includes(el.tagName)) el.replaceWith(el.textContent || '');
+              else Array.from(el.attributes).forEach(a => el.removeAttribute(a.name));
+            });
+            return <span key={i} dangerouslySetInnerHTML={{ __html: doc.body.innerHTML }} />;
           }
           return <span key={i}>{processBold(part)}</span>;
         }
