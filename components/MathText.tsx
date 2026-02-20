@@ -1,29 +1,37 @@
 import React from 'react';
 import katex from 'katex';
 
+/**
+ * Global cache for KaTeX rendering results.
+ * Storing the rendered HTML strings prevents expensive re-parsing of LaTeX
+ * during AI response streaming or frequent UI updates.
+ */
+const katexCache = new Map<string, string>();
+const MAX_CACHE_SIZE = 1000;
+
+/**
+ * processBold - A lightweight utility to convert Markdown-style bolding (**text**)
+ * into <strong> elements. Defined outside the component to avoid recreation.
+ */
+const processBold = (input: string) => {
+  const parts = input.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={i}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+};
+
 interface MathTextProps {
   text: string;
   className?: string;
 }
 
-export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
+const MathTextComponent: React.FC<MathTextProps> = ({ text, className = '' }) => {
   if (!text) return null;
 
-  // 1. Handle basic Markdown-style bolding (**text**)
-  // Note: This is a simple replacement. For full markdown, a library is better, 
-  // but we want to keep it lightweight.
-  const processBold = (input: string) => {
-    const parts = input.split(/(\*\*[^*]+\*\*)/g);
-    return parts.map((part, i) => {
-        if (part.startsWith('**') && part.endsWith('**')) {
-            return <strong key={i}>{part.slice(2, -2)}</strong>;
-        }
-        return part;
-    });
-  };
-
-  // 2. Split by LaTeX delimiters ($...$, \\(...\\), or \\[...\\])
-  // The regex captures the content inside these signs
+  // Split by LaTeX delimiters ($...$, \(...\), or \[...\])
   const parts = text.split(/(\\\(.+?\\\)|\\\[.+?\\\]|\$[^$]+\$)/g);
 
   return (
@@ -32,6 +40,7 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
         let math = "";
         let displayMode = false;
 
+        // Extract math content and determine display mode based on delimiters
         if (part.startsWith('\\(') && part.endsWith('\\)')) {
           math = part.slice(2, -2);
         } else if (part.startsWith('\\[') && part.endsWith('\\]')) {
@@ -42,17 +51,28 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
         }
 
         if (math) {
-          try {
-            const html = katex.renderToString(math, {
-              throwOnError: false,
-              displayMode
-            });
-            return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
-          } catch (e) {
-            return <span key={i} className="text-red-500">{part}</span>;
+          const cacheKey = `${displayMode}:${math}`;
+          let html = katexCache.get(cacheKey);
+
+          if (!html) {
+            try {
+              html = katex.renderToString(math, {
+                throwOnError: false,
+                displayMode
+              });
+
+              // Evict cache if it grows too large (simple LRU-ish approach)
+              if (katexCache.size >= MAX_CACHE_SIZE) {
+                katexCache.clear();
+              }
+              katexCache.set(cacheKey, html);
+            } catch (e) {
+              return <span key={i} className="text-red-500">{part}</span>;
+            }
           }
+          return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
         } else {
-          // This is text or HTML, render it as HTML if it looks like it
+          // Handle HTML content or standard text with bolding
           if (part.includes('<') && part.includes('>')) {
             return <span key={i} dangerouslySetInnerHTML={{ __html: part }} />;
           }
@@ -62,3 +82,9 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
     </div>
   );
 };
+
+/**
+ * MathText is memoized to skip the entire rendering logic if the text prop remains
+ * identical, which is common during parent component re-renders.
+ */
+export const MathText = React.memo(MathTextComponent);
