@@ -23,6 +23,7 @@ export default defineConfig(({ mode }) => {
             icons: [] // Removed missing icons
           },
           workbox: {
+            maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB
             globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
             runtimeCaching: [
               {
