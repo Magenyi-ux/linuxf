@@ -6,6 +6,7 @@
  */
 import { GoogleGenAI } from "@google/genai";
 import { ExamType, Subject, Question } from "../types";
+import { fallbackQuestions } from "./fallbackData";
 
 // Initialize the Gemini AI with the API key from environment variables
 // Falls back to a placeholder if the key is missing
@@ -143,8 +144,41 @@ export const fetchExamQuestions = async (
     return { questions, sources: uniqueSources };
 
   } catch (error) {
-    console.error("Failed to fetch questions:", error);
-    throw error;
+    console.warn("AI failed to fetch questions, using fallback data:", error);
+
+    // Filter fallback questions by subject and examType
+    let filtered = fallbackQuestions.filter(q =>
+        q.subject === subject && q.examType === examType
+    );
+
+    // Further filter by year if specified and not 'Random'
+    if (year && year !== 'Random') {
+        const yearFiltered = filtered.filter(q => q.year === year);
+        if (yearFiltered.length > 0) {
+            filtered = yearFiltered;
+        }
+        // If no questions for that year, we still use the filtered subject/exam set
+    }
+
+    // Shuffle and pick 'count' questions
+    const shuffled = [...filtered].sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, count);
+
+    if (selected.length === 0) {
+        console.error(`No fallback questions available for ${subject} ${examType}`);
+        throw error; // Re-throw the original AI error if even fallback fails
+    }
+
+    return {
+        questions: selected.map(q => ({
+            id: q.id,
+            text: q.text,
+            options: q.options,
+            correctOptionIndex: q.correctOptionIndex,
+            explanation: q.explanation
+        })),
+        sources: ["https://myschool.ng/classroom/ (Offline Fallback)"]
+    };
   }
 };
 
