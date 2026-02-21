@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+services/fallbackQuestions.json
+stats.cjs
+stats.js
