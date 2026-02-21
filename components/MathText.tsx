@@ -1,6 +1,29 @@
 import React from 'react';
 import katex from 'katex';
 
+/**
+ * Sanitizes HTML string to prevent XSS while allowing safe educational tags.
+ */
+const sanitizeHtml = (html: string): string => {
+  if (typeof window === 'undefined') return html;
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+  const allowed = ['P','BR','SUB','SUP','STRONG','EM','IMG','DIV','SPAN','UL','OL','LI','B','I','U','TABLE','THEAD','TBODY','TR','TH','TD'];
+  const clean = (el: Element) => {
+    Array.from(el.children).forEach(clean);
+    [...el.attributes].forEach(a => {
+      const name = a.name.toLowerCase();
+      const allowedAttrs = ['src', 'alt', 'class', 'width', 'height', 'colspan', 'rowspan'];
+      if (name.startsWith('on') || !allowedAttrs.includes(name) || (name === 'src' && /javascript:/i.test(a.value))) el.removeAttribute(a.name);
+    });
+    if (!allowed.includes(el.tagName)) {
+      if (['SCRIPT', 'STYLE', 'IFRAME', 'NOSCRIPT'].includes(el.tagName)) el.remove();
+      else el.replaceWith(...Array.from(el.childNodes));
+    }
+  };
+  Array.from(doc.body.children).forEach(clean);
+  return doc.body.innerHTML;
+};
+
 interface MathTextProps {
   text: string;
   className?: string;
@@ -9,9 +32,6 @@ interface MathTextProps {
 export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
   if (!text) return null;
 
-  // 1. Handle basic Markdown-style bolding (**text**)
-  // Note: This is a simple replacement. For full markdown, a library is better, 
-  // but we want to keep it lightweight.
   const processBold = (input: string) => {
     const parts = input.split(/(\*\*[^*]+\*\*)/g);
     return parts.map((part, i) => {
@@ -22,8 +42,6 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
     });
   };
 
-  // 2. Split by LaTeX delimiters ($...$, \\(...\\), or \\[...\\])
-  // The regex captures the content inside these signs
   const parts = text.split(/(\\\(.+?\\\)|\\\[.+?\\\]|\$[^$]+\$)/g);
 
   return (
@@ -52,9 +70,9 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
             return <span key={i} className="text-red-500">{part}</span>;
           }
         } else {
-          // This is text or HTML, render it as HTML if it looks like it
           if (part.includes('<') && part.includes('>')) {
-            return <span key={i} dangerouslySetInnerHTML={{ __html: part }} />;
+            // SECURITY: Sanitize HTML segments to prevent XSS from AI-generated content
+            return <span key={i} dangerouslySetInnerHTML={{ __html: sanitizeHtml(part) }} />;
           }
           return <span key={i}>{processBold(part)}</span>;
         }
