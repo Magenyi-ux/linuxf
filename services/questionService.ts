@@ -1,8 +1,8 @@
 
 /**
- * geminiService.ts - Interface for Google Gemini AI
- * This service handles communication with the Gemini AI models for generating
- * exam questions and providing tutor chat sessions.
+ * questionService.ts - Primary Question Acquisition Service
+ * This service manages the retrieval of exam questions, prioritizing the local
+ * scraped dataset and falling back to Google Gemini AI when necessary.
  */
 import { GoogleGenAI } from "@google/genai";
 import { ExamType, Subject, Question } from "../types";

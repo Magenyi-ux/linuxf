@@ -16,7 +16,7 @@ import { ProfilePage } from './components/ProfilePage';
 import { CountdownMenu } from './components/CountdownMenu';
 // Removed ConvexSync as Convex integration is being disabled for now
 // import { ConvexSync } from './components/ConvexSync';
-import { fetchExamQuestions } from './services/geminiService';
+import { fetchExamQuestions } from './services/questionService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 

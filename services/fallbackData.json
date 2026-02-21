@@ -1,12 +1,4 @@
-import { Question, Subject, ExamType } from '../types';
-
-export interface FallbackQuestion extends Question {
-  subject: Subject;
-  examType: ExamType;
-  year: string;
-}
-
-export const fallbackQuestions: FallbackQuestion[] = [
+[
   {
     "id": 1771649070931,
     "text": "<p>A group of market women sell at least one of yam, plantain and maize. 12 of them sell maize, 10 sell yam and 14 sell plantain. 5 sell plantain and maize, 4 sell yam and maize, 2 sell yam and plantain only while 3 sell all the three items. How many women are in the group?</p>",
@@ -11783,4 +11775,4 @@ export const fallbackQuestions: FallbackQuestion[] = [
     "examType": "WAEC",
     "year": "1989"
   }
-];
+]

@@ -6,7 +6,7 @@
  */
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Minimize2, Loader2, Bot, Trash2 } from 'lucide-react';
-import { createTutorChatSession } from '../services/geminiService';
+import { createTutorChatSession } from '../services/questionService';
 import { Chat, GenerateContentResponse } from "@google/genai";
 import { MathText } from './MathText';
 import { offlineTutor } from '../services/offlineTutorService';
