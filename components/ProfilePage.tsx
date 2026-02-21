@@ -1,16 +1,17 @@
 
 import React, { useEffect, useState } from 'react';
 import { UserProfile, Book, StudyPlanTask } from '../types';
-import { User, Calendar, BookOpen, CheckCircle2, Trophy, ArrowLeft, LogOut, Edit2 } from 'lucide-react';
+import { User, Calendar, BookOpen, CheckCircle2, Trophy, ArrowLeft, LogOut, Edit2, Trash2, X, Save } from 'lucide-react';
 
 interface ProfilePageProps {
     user: UserProfile;
     onBack: () => void;
     onLogout: () => void;
     onUpdateUser: (user: UserProfile) => void;
+    onResetData: () => void;
 }
 
-export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onBack, onLogout, onUpdateUser }) => {
+export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onBack, onLogout, onUpdateUser, onResetData }) => {
     const [isEditing, setIsEditing] = useState(false);
     const [newName, setNewName] = useState(user.name);
     const [stats, setStats] = useState({
@@ -92,31 +93,7 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onBack, onLogout
                 <div className="pt-16 pb-8 px-8">
                     <div className="flex justify-between items-start mb-6">
                         <div>
-                            {isEditing ? (
-                                <div className="flex items-center gap-2">
-                                    <input
-                                        type="text"
-                                        value={newName}
-                                        onChange={(e) => setNewName(e.target.value)}
-                                        className="text-2xl font-black text-gray-900 border-b-2 border-brand-500 outline-none bg-transparent"
-                                        autoFocus
-                                    />
-                                    <button
-                                        onClick={handleSaveName}
-                                        className="bg-brand-600 text-white px-3 py-1 rounded-lg text-xs font-bold"
-                                    >
-                                        Save
-                                    </button>
-                                    <button
-                                        onClick={() => { setIsEditing(false); setNewName(user.name); }}
-                                        className="text-gray-400 text-xs font-bold"
-                                    >
-                                        Cancel
-                                    </button>
-                                </div>
-                            ) : (
-                                <h2 className="text-2xl font-black text-gray-900">{user.name}</h2>
-                            )}
+                            <h2 className="text-2xl font-black text-gray-900">{user.name}</h2>
                             <p className="text-gray-500 flex items-center gap-1.5 mt-1 text-sm">
                                 <Calendar className="w-4 h-4" /> Joined {new Date(user.joinedDate).toLocaleDateString()}
                             </p>
@@ -157,9 +134,65 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onBack, onLogout
                         </div>
                         <ArrowLeft className="w-5 h-5 text-gray-300 rotate-180" />
                     </button>
-                    {/* Add more settings here as needed */}
+
+                    <button
+                        onClick={() => { if(confirm('Are you sure? This will delete all downloaded packs, study tasks, and chat history.')) onResetData(); }}
+                        className="w-full flex items-center justify-between p-4 hover:bg-red-50 transition-colors text-left group"
+                    >
+                        <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 group-hover:bg-red-100 group-hover:text-red-600">
+                                <Trash2 className="w-5 h-5" />
+                            </div>
+                            <div>
+                                <div className="font-bold text-gray-900">Clear All Data</div>
+                                <div className="text-xs text-gray-500">Reset the app to factory settings</div>
+                            </div>
+                        </div>
+                        <ArrowLeft className="w-5 h-5 text-gray-300 rotate-180" />
+                    </button>
                 </div>
             </div>
+
+            {/* Edit Profile Modal */}
+            {isEditing && (
+                <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in" onClick={(e) => { if(e.target === e.currentTarget) setIsEditing(false); }}>
+                    <div className="bg-white rounded-3xl w-full max-w-md shadow-2xl overflow-hidden animate-scale-in">
+                        <div className="p-6 border-b border-gray-100 flex justify-between items-center">
+                            <h3 className="text-xl font-bold text-gray-900">Edit Profile</h3>
+                            <button onClick={() => setIsEditing(false)} className="p-2 hover:bg-gray-100 rounded-full text-gray-400 transition-colors">
+                                <X className="w-5 h-5" />
+                            </button>
+                        </div>
+                        <div className="p-8 space-y-6">
+                            <div>
+                                <label className="block text-sm font-bold text-gray-700 mb-2">Display Name</label>
+                                <input
+                                    type="text"
+                                    value={newName}
+                                    onChange={(e) => setNewName(e.target.value)}
+                                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-500 outline-none transition-all"
+                                    placeholder="Enter your name"
+                                    autoFocus
+                                />
+                            </div>
+                            <div className="flex gap-3">
+                                <button
+                                    onClick={handleSaveName}
+                                    className="flex-1 bg-brand-600 text-white py-3 rounded-xl font-bold hover:bg-brand-700 transition-all shadow-lg shadow-brand-200 flex items-center justify-center gap-2"
+                                >
+                                    <Save className="w-5 h-5" /> Save Changes
+                                </button>
+                                <button
+                                    onClick={() => setIsEditing(false)}
+                                    className="px-6 py-3 bg-white border border-gray-200 text-gray-600 rounded-xl font-bold hover:bg-gray-50 transition-all"
+                                >
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

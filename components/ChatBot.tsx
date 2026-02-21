@@ -5,7 +5,7 @@
  * an AI tutor for exam preparation assistance.
  */
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, Minimize2, Loader2, Bot, Trash2 } from 'lucide-react';
+import { MessageCircle, X, Send, Minimize2, Loader2, Bot, Trash2, Maximize2 } from 'lucide-react';
 import { createTutorChatSession } from '../services/geminiService';
 import { Chat, GenerateContentResponse } from "@google/genai";
 import { MathText } from './MathText';
@@ -239,10 +239,19 @@ export const ChatBot: React.FC = () => {
           >
             <Trash2 className="w-5 h-5" />
           </button>
-          {/* Close Window Button */}
+          {/* Minimize Button */}
           <button
             onClick={() => setIsOpen(false)}
             className="p-1 hover:bg-brand-500 rounded-lg transition-colors"
+            title="Minimize"
+          >
+            <Minimize2 className="w-5 h-5" />
+          </button>
+          {/* Close Window Button - Optional: could just keep minimize and close as same for now or keep both */}
+          <button
+            onClick={() => setIsOpen(false)}
+            className="p-1 hover:bg-brand-500 rounded-lg transition-colors"
+            title="Close"
           >
             <X className="w-5 h-5" />
           </button>
