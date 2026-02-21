@@ -79,8 +79,8 @@ const SUBJECTS_BY_STREAM: Record<StreamType, Subject[]> = {
   ],
   COMMERCIAL: [
     Subject.ENGLISH, Subject.MATHEMATICS,
-    Subject.ECONOMICS, Subject.COMMERCE, Subject.GOVERNMENT,
-    Subject.CRS, Subject.IRS
+    Subject.ECONOMICS, Subject.COMMERCE, Subject.ACCOUNTS,
+    Subject.GOVERNMENT, Subject.CRS, Subject.IRS
   ]
 };
 
@@ -208,6 +208,7 @@ const App: React.FC = () => {
       case Subject.GEOGRAPHY: return <Map className="w-5 h-5" />;
       case Subject.ECONOMICS: return <TrendingUp className="w-5 h-5" />;
       case Subject.COMMERCE: return <Briefcase className="w-5 h-5" />;
+      case Subject.ACCOUNTS: return <Landmark className="w-5 h-5" />;
       case Subject.GOVERNMENT: return <Landmark className="w-5 h-5" />;
       case Subject.LITERATURE: return <Feather className="w-5 h-5" />;
       case Subject.HISTORY: return <ScrollText className="w-5 h-5" />;
