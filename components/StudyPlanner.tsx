@@ -15,6 +15,7 @@ export const StudyPlanner: React.FC<StudyPlannerProps> = ({ onBack }) => {
   // Form states
   const [selectedBookId, setSelectedBookId] = useState('');
   const [description, setDescription] = useState('');
+  const [dueDate, setDueDate] = useState(new Date(Date.now() + 86400000).toISOString().split('T')[0]);
 
   useEffect(() => {
     // Load tasks
@@ -46,7 +47,7 @@ export const StudyPlanner: React.FC<StudyPlannerProps> = ({ onBack }) => {
       examType: book.examType,
       description: description || `Review ${book.subject} (${book.year})`,
       completed: false,
-      dueDate: Date.now() + 86400000 // Default to tomorrow
+      dueDate: new Date(dueDate).getTime()
     };
 
     saveTasks([...tasks, newTask]);
@@ -102,15 +103,27 @@ export const StudyPlanner: React.FC<StudyPlannerProps> = ({ onBack }) => {
                 <p className="text-xs text-amber-600 mt-1">Download some exam packs first!</p>
               )}
             </div>
-            <div>
-              <label className="block text-sm font-bold text-gray-700 mb-1">What's your goal?</label>
-              <input
-                type="text"
-                placeholder="e.g. Complete 50 questions"
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-                className="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:ring-2 focus:ring-brand-500"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-1">What's your goal?</label>
+                  <input
+                    type="text"
+                    placeholder="e.g. Complete 50 questions"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    className="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:ring-2 focus:ring-brand-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-1">Target Date</label>
+                  <input
+                    type="date"
+                    required
+                    value={dueDate}
+                    onChange={(e) => setDueDate(e.target.value)}
+                    className="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:ring-2 focus:ring-brand-500"
+                  />
+                </div>
             </div>
             <div className="flex gap-2">
               <button

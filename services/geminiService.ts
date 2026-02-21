@@ -185,6 +185,81 @@ export const fetchExamQuestions = async (
 /**
  * Creates a new chat session for the AI Tutor.
  */
+/**
+ * Fetches a single theory question for a specific exam and subject.
+ */
+export const fetchTheoryQuestion = async (
+    examType: ExamType,
+    subject: Subject
+): Promise<{ text: string; keywords: string[] }> => {
+    const model = ai.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    const prompt = `
+        Act as an expert SS3 Teacher in Nigeria.
+        Generate ONE challenging theory (essay) question for ${examType} ${subject}.
+        The question should require a detailed explanation.
+
+        Return ONLY a VALID JSON OBJECT:
+        {
+            "text": "Question text here...",
+            "keywords": ["keyword1", "keyword2", "keyword3"]
+        }
+    `;
+
+    try {
+        const result = await model.generateContent(prompt);
+        const text = result.response.text();
+        const data = JSON.parse(text.replace(/```json/g, '').replace(/```/g, '').trim());
+        return data;
+    } catch (error) {
+        console.error("Failed to fetch theory question", error);
+        return {
+            text: `Explain the importance of ${subject} in the development of modern West Africa.`,
+            keywords: ["development", "West Africa", "importance"]
+        };
+    }
+};
+
+/**
+ * Grades a theory answer using the AI.
+ */
+export const gradeTheoryAnswer = async (
+    question: string,
+    answer: string,
+    subject: Subject
+): Promise<{ score: number; feedback: string }> => {
+    const model = ai.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    const prompt = `
+        Act as an expert SS3 Teacher in Nigeria.
+        Grade the following student answer for a theory question in ${subject}.
+
+        QUESTION: "${question}"
+        STUDENT ANSWER: "${answer}"
+
+        Provide a score out of 10 and constructive feedback.
+
+        Return ONLY a VALID JSON OBJECT:
+        {
+            "score": 7,
+            "feedback": "Your explanation was good but you missed..."
+        }
+    `;
+
+    try {
+        const result = await model.generateContent(prompt);
+        const text = result.response.text();
+        const data = JSON.parse(text.replace(/```json/g, '').replace(/```/g, '').trim());
+        return data;
+    } catch (error) {
+        console.error("Failed to grade theory answer", error);
+        return {
+            score: 0,
+            feedback: "I couldn't grade your answer right now. Please try again later."
+        };
+    }
+};
+
 export const createTutorChatSession = () => {
   return ai.chats.create({
     // Use the pro model for complex reasoning and tutoring
