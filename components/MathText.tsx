@@ -6,24 +6,59 @@ interface MathTextProps {
   className?: string;
 }
 
-export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
+/**
+ * processBold - Converts Markdown-style bold (**text**) into <strong> elements.
+ * Moved outside component to avoid re-creation on every render.
+ */
+const processBold = (input: string) => {
+  const parts = input.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+          return <strong key={i}>{part.slice(2, -2)}</strong>;
+      }
+      return part;
+  });
+};
+
+/**
+ * katexCache - Global cache to store rendered LaTeX strings.
+ * Reduces expensive calls to katex.renderToString.
+ */
+const katexCache = new Map<string, string>();
+const MAX_CACHE_SIZE = 1000;
+
+/**
+ * renderMath - Helper to render math with caching.
+ */
+const renderMath = (math: string, displayMode: boolean) => {
+  const cacheKey = `${displayMode}:${math}`;
+  if (katexCache.has(cacheKey)) {
+    return katexCache.get(cacheKey)!;
+  }
+
+
+  const html = katex.renderToString(math, {
+    throwOnError: false,
+    displayMode
+  });
+
+  // Basic LRU-like eviction: remove the oldest entry
+  if (katexCache.size >= MAX_CACHE_SIZE) {
+    const firstKey = katexCache.keys().next().value;
+    if (firstKey) katexCache.delete(firstKey);
+  }
+  katexCache.set(cacheKey, html);
+  return html;
+};
+
+/**
+ * MathText - Component for rendering text with embedded LaTeX math.
+ * Optimized with React.memo and a global KaTeX cache.
+ */
+export const MathText: React.FC<MathTextProps> = React.memo(({ text, className = '' }) => {
   if (!text) return null;
 
-  // 1. Handle basic Markdown-style bolding (**text**)
-  // Note: This is a simple replacement. For full markdown, a library is better, 
-  // but we want to keep it lightweight.
-  const processBold = (input: string) => {
-    const parts = input.split(/(\*\*[^*]+\*\*)/g);
-    return parts.map((part, i) => {
-        if (part.startsWith('**') && part.endsWith('**')) {
-            return <strong key={i}>{part.slice(2, -2)}</strong>;
-        }
-        return part;
-    });
-  };
-
-  // 2. Split by LaTeX delimiters ($...$, \\(...\\), or \\[...\\])
-  // The regex captures the content inside these signs
+  // Split by LaTeX delimiters ($...$, \(...\), or \[...\])
   const parts = text.split(/(\\\(.+?\\\)|\\\[.+?\\\]|\$[^$]+\$)/g);
 
   return (
@@ -43,10 +78,7 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
 
         if (math) {
           try {
-            const html = katex.renderToString(math, {
-              throwOnError: false,
-              displayMode
-            });
+            const html = renderMath(math, displayMode);
             return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
           } catch (e) {
             return <span key={i} className="text-red-500">{part}</span>;
@@ -61,4 +93,4 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
       })}
     </div>
   );
-};
+});
