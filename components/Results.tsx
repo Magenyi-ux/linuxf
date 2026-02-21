@@ -9,10 +9,11 @@ interface ResultsProps {
   subject: Subject;
   examType: ExamType;
   onRetry: () => void;
+  onReview: () => void;
   onHome: () => void;
 }
 
-export const Results: React.FC<ResultsProps> = ({ score, total, subject, examType, onRetry, onHome }) => {
+export const Results: React.FC<ResultsProps> = ({ score, total, subject, examType, onRetry, onReview, onHome }) => {
   const percentage = Math.round((score / total) * 100);
   
   const data = [
@@ -90,20 +91,27 @@ export const Results: React.FC<ResultsProps> = ({ score, total, subject, examTyp
                 </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100">
+            <div className="flex flex-col sm:flex-row gap-3 pt-6 border-t border-gray-100">
                 <button 
                     onClick={onHome}
-                    className="flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-gray-200 text-gray-700 font-medium hover:bg-gray-50 transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-gray-200 text-gray-700 font-medium hover:bg-gray-50 transition-colors"
                 >
-                    <Home className="w-5 h-5" />
-                    Back to Home
+                    <Home className="w-4 h-4" />
+                    Home
+                </button>
+                <button
+                    onClick={onReview}
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition-colors"
+                >
+                    <BarChart className="w-4 h-4" />
+                    Review Answers
                 </button>
                 <button 
                     onClick={onRetry}
-                    className="flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-600 text-white font-medium hover:bg-brand-700 shadow-lg shadow-brand-500/30 transition-all"
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-brand-600 text-white font-medium hover:bg-brand-700 shadow-lg shadow-brand-500/30 transition-all"
                 >
-                    <RefreshCw className="w-5 h-5" />
-                    Practice Again
+                    <RefreshCw className="w-4 h-4" />
+                    Retry
                 </button>
             </div>
         </div>

@@ -15,7 +15,7 @@ interface PracticeSessionProps {
   examType: ExamType;
   subject: Subject;
   mode: 'STUDY' | 'TEST'; // Determines if feedback is immediate
-  onFinish: (score: number, total: number) => void; // Callback when session ends
+  onFinish: (score: number, total: number, answers: Record<number, number>) => void; // Callback when session ends
   onAnswer?: (questionId: number, selectedIndex: number, isCorrect: boolean) => void; // Optional tracking
   onBack: () => void; // Return to previous screen
 }
@@ -73,7 +73,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
       questions.forEach(q => {
         if (answers[q.id] === q.correctOptionIndex) score++;
       });
-      onFinish(score, totalQuestions);
+      onFinish(score, totalQuestions, answers);
     }
   };
 

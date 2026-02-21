@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, Star, Trophy } from 'lucide-react';
+import { Star, Trophy } from 'lucide-react';
 import { UserProfile } from '../types';
 
 interface GamificationBarProps {
@@ -31,11 +31,6 @@ export const GamificationBar: React.FC<GamificationBarProps> = ({ profile }) => 
                 <span className="text-sm font-bold text-gray-700">{profile.xp} <span className="text-xs font-normal text-gray-500">XP</span></span>
             </div>
 
-            {/* Streak */}
-            <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full border ${profile.streak > 0 ? 'bg-orange-50 border-orange-200 text-orange-600' : 'bg-gray-50 border-gray-200 text-gray-400'}`}>
-                <Flame className={`w-4 h-4 ${profile.streak > 0 ? 'fill-orange-500 text-orange-500 animate-pulse' : ''}`} />
-                <span className="text-sm font-bold">{profile.streak} Day Streak</span>
-            </div>
         </div>
     );
 };

@@ -13,6 +13,7 @@ import { StudyPlanner } from './components/StudyPlanner';
 import { ChatBot } from './components/ChatBot';
 import { Auth } from './components/Auth';
 import { ProfilePage } from './components/ProfilePage';
+import { ReviewAnswers } from './components/ReviewAnswers';
 import { CountdownMenu } from './components/CountdownMenu';
 import { GamificationBar } from './components/GamificationBar';
 import { PDFUpload } from './components/PDFUpload';
@@ -21,6 +22,7 @@ import { TheoryPractice } from './components/TheoryPractice';
 // Removed ConvexSync as Convex integration is being disabled for now
 // import { ConvexSync } from './components/ConvexSync';
 import { fetchExamQuestions } from './services/geminiService';
+import { savePDF, getAllPDFs, deletePDF } from './services/storageService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
@@ -118,6 +120,7 @@ const App: React.FC = () => {
   const [selectedStream, setSelectedStream] = useState<StreamType | null>(null);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [showSearchResults, setShowSearchResults] = useState(false);
   const [isOnline, setIsOnline] = useState(navigator.onLine);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentSources, setCurrentSources] = useState<string[]>([]);
@@ -125,10 +128,13 @@ const App: React.FC = () => {
   const [showLibrary, setShowLibrary] = useState(false);
   const [activeBookId, setActiveBookId] = useState<string | null>(null);
   const [selectedPdf, setSelectedPdf] = useState<File | null>(null);
+  const [savedPdfs, setSavedPdfs] = useState<{id: string, name: string, data: File}[]>([]);
   const [showPdfUpload, setShowPdfUpload] = useState(false);
   
   const [lastScore, setLastScore] = useState(0);
   const [lastTotal, setLastTotal] = useState(0);
+  const [lastAnswers, setLastAnswers] = useState<Record<number, number>>({});
+  const [questionCount, setQuestionCount] = useState(15);
 
   const [books, setBooks] = useState<Record<string, Book>>({}); 
   const { userId, type: userType } = useUserId();
@@ -161,6 +167,9 @@ const App: React.FC = () => {
       } else {
         setScreen('AUTH');
       }
+
+      // Load PDFs
+      getAllPDFs().then(setSavedPdfs);
     } catch (e) {
       console.error("Failed to load data from storage", e);
     }
@@ -245,7 +254,7 @@ const App: React.FC = () => {
      
      setScreen('LOADING');
      try {
-        const result = await fetchExamQuestions(selectedExam, selectedSubject, year, 15);
+        const result = await fetchExamQuestions(selectedExam, selectedSubject, year, questionCount);
         
         const newBook: Book = {
             id: bookId,
@@ -270,9 +279,10 @@ const App: React.FC = () => {
   /**
    * Handles the completion of a practice session.
    */
-  const handleFinishPractice = async (score: number, total: number) => {
+  const handleFinishPractice = async (score: number, total: number, answers: Record<number, number>) => {
       setLastScore(score);
       setLastTotal(total);
+      setLastAnswers(answers);
 
       if (activeBookId && books[activeBookId]) {
           const book = books[activeBookId];
@@ -337,6 +347,8 @@ const App: React.FC = () => {
 
   const handleResetData = () => {
       localStorage.clear();
+      // Also clear IndexedDB if possible, or just the PDFs
+      indexedDB.deleteDatabase('waExamPrep_DB');
       setUser(null);
       setBooks({});
       setScreen('AUTH');
@@ -356,17 +368,107 @@ const App: React.FC = () => {
             <span className="text-base sm:text-lg font-bold text-gray-900 inline sm:hidden">WA</span>
           </div>
 
-          <div className="flex-1 max-w-sm mx-2 sm:mx-4">
+          <div className="flex-1 max-w-sm mx-2 sm:mx-4 relative group">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Search subjects or years..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => {
+                    setSearchQuery(e.target.value);
+                    setShowSearchResults(e.target.value.length > 0);
+                }}
+                onFocus={() => { if(searchQuery) setShowSearchResults(true); }}
                 className="w-full pl-9 pr-3 py-1.5 sm:py-2 bg-gray-50 border border-gray-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all"
               />
             </div>
+
+            {/* Global Search Results Dropdown */}
+            {showSearchResults && searchQuery && (
+                <div className="absolute top-full left-0 w-full mt-2 bg-white border border-gray-100 rounded-2xl shadow-2xl z-50 overflow-hidden animate-fade-in-up max-h-[400px] overflow-y-auto">
+                    <div className="p-3 bg-gray-50 border-b border-gray-100 text-[10px] font-black text-gray-400 uppercase tracking-widest flex justify-between items-center">
+                        <span>Quick Search Results</span>
+                        <button onClick={() => setShowSearchResults(false)}><X className="w-3 h-3" /></button>
+                    </div>
+                    <div className="p-2">
+                        {(() => {
+                            const query = searchQuery.toLowerCase();
+                            const results: React.ReactNode[] = [];
+
+                            Object.values(ExamType).forEach(exam => {
+                                Object.values(Subject).forEach(sub => {
+                                    const examLower = exam.toLowerCase();
+                                    const subLower = sub.toLowerCase();
+                                    const combined = `${examLower} ${subLower}`;
+
+                                    if (subLower.includes(query) || examLower.includes(query) || combined.includes(query)) {
+                                        if (results.length < 8) {
+                                            results.push(
+                                                <button
+                                                    key={`${exam}-${sub}`}
+                                                    onClick={() => {
+                                                        setSelectedExam(exam);
+                                                        setSelectedSubject(sub);
+                                                        setScreen('YEAR_SELECT');
+                                                        setSearchQuery('');
+                                                        setShowSearchResults(false);
+                                                    }}
+                                                    className="w-full text-left p-3 hover:bg-brand-50 rounded-xl transition-colors group/item"
+                                                >
+                                                    <div className="flex items-center gap-3">
+                                                        <div className="bg-gray-100 p-2 rounded-lg group-hover/item:bg-white text-gray-500 group-hover/item:text-brand-600 transition-colors">
+                                                            {getSubjectIcon(sub)}
+                                                        </div>
+                                                        <div>
+                                                            <div className="font-bold text-gray-900 text-sm">{sub}</div>
+                                                            <div className="text-[10px] font-bold text-brand-600 uppercase">{exam} Reference Pack</div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            );
+                                        }
+                                    }
+                                });
+                            });
+
+                            // Add year results if query looks like a year
+                            const yearMatch = query.match(/\d{4}/);
+                            if (yearMatch) {
+                                const year = yearMatch[0];
+                                results.push(
+                                    <div key="year-header" className="mt-2 pt-2 border-t border-gray-50 px-3 mb-1 text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Year References</div>
+                                );
+                                Object.values(ExamType).slice(0, 3).forEach(exam => {
+                                    results.push(
+                                        <button
+                                            key={`year-${exam}-${year}`}
+                                            onClick={() => {
+                                                setSelectedExam(exam);
+                                                if(!selectedSubject) setSelectedSubject(Subject.MATHEMATICS);
+                                                setScreen('YEAR_SELECT');
+                                                setSearchQuery(year);
+                                                setShowSearchResults(false);
+                                            }}
+                                            className="w-full text-left p-3 hover:bg-gray-50 rounded-xl transition-colors"
+                                        >
+                                            <div className="flex items-center gap-3">
+                                                <div className="bg-brand-100 p-2 rounded-lg text-brand-600 font-bold text-xs">{year.slice(2)}</div>
+                                                <div>
+                                                    <div className="font-bold text-gray-900 text-sm">{year} Papers Reference</div>
+                                                    <div className="text-[10px] text-gray-500 uppercase">{exam} Question Bank</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    );
+                                });
+                            }
+
+                            return results.length > 0 ? results : <div className="p-8 text-center text-gray-400 text-sm">No references found for "{searchQuery}"</div>;
+                        })()}
+                    </div>
+                </div>
+            )}
           </div>
 
           <div className="flex items-center gap-3">
@@ -565,21 +667,38 @@ const App: React.FC = () => {
                     </button>
                 </div>
 
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
                      <h3 className="font-bold text-gray-900">Yearly Packs</h3>
-                     <div className="flex bg-gray-100 p-1 rounded-lg">
-                        <button 
-                            onClick={() => setPracticeMode('STUDY')}
-                            className={`px-3 py-1 text-xs font-bold rounded-md transition-all ${practiceMode === 'STUDY' ? 'bg-white shadow-sm text-brand-600' : 'text-gray-500'}`}
-                        >
-                            Study Mode
-                        </button>
-                        <button 
-                            onClick={() => setPracticeMode('TEST')}
-                            className={`px-3 py-1 text-xs font-bold rounded-md transition-all ${practiceMode === 'TEST' ? 'bg-white shadow-sm text-brand-600' : 'text-gray-500'}`}
-                        >
-                            Test Mode
-                        </button>
+                     <div className="flex flex-wrap items-center gap-3">
+                        <div className="flex items-center gap-2 bg-gray-100 p-1 rounded-lg">
+                            <span className="text-[10px] font-bold text-gray-400 uppercase pl-2">Questions:</span>
+                            <select
+                                value={questionCount}
+                                onChange={(e) => setQuestionCount(Number(e.target.value))}
+                                className="bg-white border-none text-xs font-bold rounded-md px-2 py-0.5 outline-none focus:ring-1 focus:ring-brand-500"
+                            >
+                                <option value={10}>10</option>
+                                <option value={15}>15</option>
+                                <option value={20}>20</option>
+                                <option value={30}>30</option>
+                                <option value={50}>50</option>
+                            </select>
+                        </div>
+
+                        <div className="flex bg-gray-100 p-1 rounded-lg">
+                            <button
+                                onClick={() => setPracticeMode('STUDY')}
+                                className={`px-3 py-1 text-xs font-bold rounded-md transition-all ${practiceMode === 'STUDY' ? 'bg-white shadow-sm text-brand-600' : 'text-gray-500'}`}
+                            >
+                                Study
+                            </button>
+                            <button
+                                onClick={() => setPracticeMode('TEST')}
+                                className={`px-3 py-1 text-xs font-bold rounded-md transition-all ${practiceMode === 'TEST' ? 'bg-white shadow-sm text-brand-600' : 'text-gray-500'}`}
+                            >
+                                Test
+                            </button>
+                        </div>
                      </div>
                 </div>
                 
@@ -679,7 +798,19 @@ const App: React.FC = () => {
                 examType={selectedExam}
                 subject={selectedSubject}
                 onRetry={() => setScreen('PRACTICE')}
+                onReview={() => setScreen('REVIEW')}
                 onHome={resetApp}
+            />
+        )}
+
+        {/* Review Answers Screen */}
+        {screen === 'REVIEW' && selectedExam && selectedSubject && (
+            <ReviewAnswers
+                questions={questions}
+                userAnswers={lastAnswers}
+                subject={selectedSubject}
+                examType={selectedExam}
+                onBack={() => setScreen('RESULTS')}
             />
         )}
 
@@ -729,7 +860,7 @@ const App: React.FC = () => {
                 </div>
                 
                 <div className="overflow-y-auto p-4 space-y-3 flex-1 sidebar-scrollbar">
-                    {Object.keys(books).length === 0 ? (
+                    {Object.keys(books).length === 0 && savedPdfs.length === 0 ? (
                         <div className="text-center text-gray-400 py-12 flex flex-col items-center">
                             <div className="bg-gray-100 p-4 rounded-full mb-3">
                                  <Library className="w-8 h-8 opacity-50" />
@@ -738,7 +869,9 @@ const App: React.FC = () => {
                             <p className="text-xs mt-1">Download packs to study offline.</p>
                         </div>
                     ) : (
-                        (Object.values(books) as Book[])
+                        <>
+                        {Object.keys(books).length > 0 && <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest px-1 mb-1">Exam Packs</div>}
+                        {(Object.values(books) as Book[])
                             .filter(b => b.subject.toLowerCase().includes(searchQuery.toLowerCase()) || b.year.includes(searchQuery))
                             .sort((a,b) => b.dateCreated - a.dateCreated).map((book) => (
                             <div key={book.id} className="flex items-center justify-between p-3 bg-white border border-gray-200 rounded-xl hover:border-brand-300 transition-all shadow-sm group">
@@ -784,6 +917,49 @@ const App: React.FC = () => {
                                 </div>
                             </div>
                         ))
+                        }
+
+                        {savedPdfs.length > 0 && (
+                            <div className="mt-6">
+                                <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest px-1 mb-1">Study Materials</div>
+                                <div className="space-y-2">
+                                    {savedPdfs.map((pdf) => (
+                                        <div key={pdf.id} className="flex items-center justify-between p-3 bg-brand-50/30 border border-brand-100 rounded-xl hover:border-brand-300 transition-all shadow-sm group">
+                                            <div className="flex items-center gap-3">
+                                                <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center text-brand-600 shadow-sm">
+                                                    <Upload className="w-5 h-5" />
+                                                </div>
+                                                <div className="flex-1 min-w-0">
+                                                    <div className="font-bold text-gray-900 text-sm truncate">{pdf.name}</div>
+                                                    <div className="text-[10px] text-gray-500 font-medium">Local PDF Material</div>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-2">
+                                                <button
+                                                    onClick={() => { setSelectedPdf(pdf.data); setScreen('PDF_VIEW'); setShowLibrary(false); }}
+                                                    className="p-2 bg-brand-100 text-brand-700 rounded-lg hover:bg-brand-600 hover:text-white transition-all"
+                                                >
+                                                    <ArrowRight className="w-4 h-4" />
+                                                </button>
+                                                <button
+                                                    onClick={async () => {
+                                                        if(confirm('Delete this study material?')) {
+                                                            await deletePDF(pdf.id);
+                                                            const updated = await getAllPDFs();
+                                                            setSavedPdfs(updated);
+                                                        }
+                                                    }}
+                                                    className="p-2 bg-white text-gray-400 rounded-lg hover:bg-red-50 hover:text-red-500 transition-all"
+                                                >
+                                                    <Trash2 className="w-4 h-4" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                        </>
                     )}
                 </div>
                  <div className="p-4 bg-gray-50 border-t border-gray-100 flex flex-col gap-2">
@@ -810,7 +986,11 @@ const App: React.FC = () => {
       {/* PDF Upload Modal */}
       {showPdfUpload && (
           <PDFUpload
-            onUpload={(file) => {
+            onUpload={async (file) => {
+                const id = Date.now().toString();
+                await savePDF(id, file);
+                const updated = await getAllPDFs();
+                setSavedPdfs(updated);
                 setSelectedPdf(file);
                 setShowPdfUpload(false);
                 setScreen('PDF_VIEW');

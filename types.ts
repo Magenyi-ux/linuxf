@@ -79,4 +79,4 @@ export interface StudyPlanTask {
   dueDate: number;
 }
 
-export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'STUDY_PLAN' | 'PROFILE' | 'AUTH' | 'PDF_VIEW' | 'THEORY';
+export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'STUDY_PLAN' | 'PROFILE' | 'AUTH' | 'PDF_VIEW' | 'THEORY' | 'REVIEW';
