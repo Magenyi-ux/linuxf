@@ -7,9 +7,12 @@ interface ProfilePageProps {
     user: UserProfile;
     onBack: () => void;
     onLogout: () => void;
+    onUpdateUser: (user: UserProfile) => void;
 }
 
-export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onBack, onLogout }) => {
+export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onBack, onLogout, onUpdateUser }) => {
+    const [isEditing, setIsEditing] = useState(false);
+    const [newName, setNewName] = useState(user.name);
     const [stats, setStats] = useState({
         packsDownloaded: 0,
         tasksCompleted: 0,
@@ -53,6 +56,14 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onBack, onLogout
         });
     }, []);
 
+    const handleSaveName = () => {
+        if (!newName.trim()) return;
+        const updatedUser = { ...user, name: newName.trim() };
+        onUpdateUser(updatedUser);
+        localStorage.setItem('waExamPrep_user', JSON.stringify(updatedUser));
+        setIsEditing(false);
+    };
+
     return (
         <div className="animate-fade-in max-w-2xl mx-auto">
             <div className="flex items-center justify-between mb-8">
@@ -81,7 +92,31 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onBack, onLogout
                 <div className="pt-16 pb-8 px-8">
                     <div className="flex justify-between items-start mb-6">
                         <div>
-                            <h2 className="text-2xl font-black text-gray-900">{user.name}</h2>
+                            {isEditing ? (
+                                <div className="flex items-center gap-2">
+                                    <input
+                                        type="text"
+                                        value={newName}
+                                        onChange={(e) => setNewName(e.target.value)}
+                                        className="text-2xl font-black text-gray-900 border-b-2 border-brand-500 outline-none bg-transparent"
+                                        autoFocus
+                                    />
+                                    <button
+                                        onClick={handleSaveName}
+                                        className="bg-brand-600 text-white px-3 py-1 rounded-lg text-xs font-bold"
+                                    >
+                                        Save
+                                    </button>
+                                    <button
+                                        onClick={() => { setIsEditing(false); setNewName(user.name); }}
+                                        className="text-gray-400 text-xs font-bold"
+                                    >
+                                        Cancel
+                                    </button>
+                                </div>
+                            ) : (
+                                <h2 className="text-2xl font-black text-gray-900">{user.name}</h2>
+                            )}
                             <p className="text-gray-500 flex items-center gap-1.5 mt-1 text-sm">
                                 <Calendar className="w-4 h-4" /> Joined {new Date(user.joinedDate).toLocaleDateString()}
                             </p>
@@ -107,7 +142,10 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onBack, onLogout
             <div className="space-y-4">
                 <h3 className="font-bold text-gray-900 ml-1">Account Settings</h3>
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm divide-y divide-gray-50">
-                    <button className="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors text-left group">
+                    <button
+                        onClick={() => setIsEditing(true)}
+                        className="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors text-left group"
+                    >
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 group-hover:bg-brand-50 group-hover:text-brand-600">
                                 <Edit2 className="w-5 h-5" />

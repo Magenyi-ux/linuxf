@@ -14,6 +14,10 @@ import { ChatBot } from './components/ChatBot';
 import { Auth } from './components/Auth';
 import { ProfilePage } from './components/ProfilePage';
 import { CountdownMenu } from './components/CountdownMenu';
+import { GamificationBar } from './components/GamificationBar';
+import { PDFUpload } from './components/PDFUpload';
+import { PDFViewer } from './components/PDFViewer';
+import { TheoryPractice } from './components/TheoryPractice';
 // Removed ConvexSync as Convex integration is being disabled for now
 // import { ConvexSync } from './components/ConvexSync';
 import { fetchExamQuestions } from './services/geminiService';
@@ -22,7 +26,7 @@ import {
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
   Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Calendar,
-  Cloud, CloudOff, User, LogIn, LogOut, Clock
+  Cloud, CloudOff, User, LogIn, LogOut, Clock, Search, Upload, MessageSquare
 } from 'lucide-react';
 import { useUserId } from "./hooks/useUserId";
 // Removed Clerk imports
@@ -113,11 +117,15 @@ const App: React.FC = () => {
   const [selectedExam, setSelectedExam] = useState<ExamType | null>(null);
   const [selectedStream, setSelectedStream] = useState<StreamType | null>(null);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentSources, setCurrentSources] = useState<string[]>([]);
   const [practiceMode, setPracticeMode] = useState<'STUDY' | 'TEST'>('STUDY');
   const [showLibrary, setShowLibrary] = useState(false);
   const [activeBookId, setActiveBookId] = useState<string | null>(null);
+  const [selectedPdf, setSelectedPdf] = useState<File | null>(null);
+  const [showPdfUpload, setShowPdfUpload] = useState(false);
   
   const [lastScore, setLastScore] = useState(0);
   const [lastTotal, setLastTotal] = useState(0);
@@ -126,6 +134,20 @@ const App: React.FC = () => {
   const { userId, type: userType } = useUserId();
 
   // --- Effects ---
+
+  // Handle Online/Offline Status
+  useEffect(() => {
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
+
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
+  }, []);
 
   // Load saved question packs (books) and user from local storage on startup
   useEffect(() => {
@@ -262,6 +284,32 @@ const App: React.FC = () => {
           };
           await saveBook(updatedBook);
       }
+
+      // Update User XP and Level
+      if (user) {
+          // Award XP: 10 XP for finishing, plus 10 XP per correct answer
+          const xpGained = 10 + (score * 10);
+          let newXp = user.xp + xpGained;
+          let newLevel = user.level;
+
+          // Level up logic: Level X requires X * 500 XP
+          while (newXp >= newLevel * 500) {
+              newXp -= (newLevel * 500);
+              newLevel++;
+          }
+
+          // Streak logic: Simple increment if last practice was not today
+          // For the MVP, we'll just increment it
+          const updatedUser = {
+              ...user,
+              xp: newXp,
+              level: newLevel,
+              streak: user.streak + 1
+          };
+
+          setUser(updatedUser);
+          localStorage.setItem('waExamPrep_user', JSON.stringify(updatedUser));
+      }
       
       setScreen('RESULTS');
   };
@@ -299,11 +347,33 @@ const App: React.FC = () => {
             <span className="text-lg font-bold text-gray-900">WA Exam Prep</span>
           </div>
           
+          <div className="flex-1 max-w-sm mx-4 hidden md:block">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <input
+                type="text"
+                placeholder="Search subjects or years..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-10 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all"
+              />
+            </div>
+          </div>
+
           <div className="flex items-center gap-3">
               {/* Connection Status Indicator */}
               <div className="hidden md:flex items-center gap-1.5 px-2 py-1 bg-gray-50 rounded-md border border-gray-100">
-                  <CloudOff className="w-3.5 h-3.5 text-gray-300" />
-                  <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Offline Mode</span>
+                  {isOnline ? (
+                      <>
+                          <Cloud className="w-3.5 h-3.5 text-green-500" />
+                          <span className="text-[10px] font-bold text-green-600 uppercase tracking-tighter">Online</span>
+                      </>
+                  ) : (
+                      <>
+                          <CloudOff className="w-3.5 h-3.5 text-gray-300" />
+                          <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Offline Mode</span>
+                      </>
+                  )}
               </div>
 
               {/* Exam Countdowns */}
@@ -351,6 +421,9 @@ const App: React.FC = () => {
           </div>
         </div>
       </nav>
+
+      {/* Gamification Bar */}
+      {user && screen !== 'AUTH' && <GamificationBar profile={user} />}
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-4xl mx-auto w-full px-4 py-8 relative">
@@ -430,7 +503,9 @@ const App: React.FC = () => {
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {SUBJECTS_BY_STREAM[selectedStream].map((subject) => (
+              {SUBJECTS_BY_STREAM[selectedStream]
+                .filter(s => s.toLowerCase().includes(searchQuery.toLowerCase()))
+                .map((subject) => (
                 <button
                   key={subject}
                   onClick={() => { setSelectedSubject(subject); setScreen('YEAR_SELECT'); }}
@@ -463,6 +538,24 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
+                <div className="mb-8">
+                    <button
+                        onClick={() => setScreen('THEORY')}
+                        className="w-full p-4 bg-gradient-to-r from-brand-600 to-indigo-600 rounded-2xl text-white flex items-center justify-between group hover:shadow-lg transition-all"
+                    >
+                        <div className="flex items-center gap-4">
+                            <div className="bg-white/20 p-2 rounded-xl">
+                                <MessageSquare className="w-6 h-6" />
+                            </div>
+                            <div className="text-left">
+                                <div className="font-bold text-lg leading-tight">Practice Theory Questions</div>
+                                <div className="text-brand-100 text-sm">Write essays and get instant AI grading</div>
+                            </div>
+                        </div>
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </button>
+                </div>
+
                 <div className="flex items-center justify-between mb-4">
                      <h3 className="font-bold text-gray-900">Yearly Packs</h3>
                      <div className="flex bg-gray-100 p-1 rounded-lg">
@@ -482,7 +575,7 @@ const App: React.FC = () => {
                 </div>
                 
                 <div className="space-y-3">
-                    {years.map((year) => {
+                    {years.filter(y => y.includes(searchQuery)).map((year) => {
                         const bookId = getBookId(selectedExam, selectedSubject, year);
                         const isDownloaded = !!books[bookId];
                         const book = books[bookId];
@@ -547,6 +640,15 @@ const App: React.FC = () => {
              <LoadingScreen message={`Downloading ${selectedExam} ${selectedSubject} question pack...`} />
         )}
 
+        {/* Theory Practice Screen */}
+        {screen === 'THEORY' && selectedExam && selectedSubject && (
+            <TheoryPractice
+                subject={selectedSubject}
+                examType={selectedExam}
+                onBack={() => setScreen('YEAR_SELECT')}
+            />
+        )}
+
         {/* Practice Session Component */}
         {screen === 'PRACTICE' && selectedExam && selectedSubject && (
             <PracticeSession 
@@ -584,7 +686,20 @@ const App: React.FC = () => {
 
         {/* Profile Screen */}
         {screen === 'PROFILE' && user && (
-            <ProfilePage user={user} onBack={() => setScreen('HOME')} onLogout={handleLogout} />
+            <ProfilePage
+                user={user}
+                onBack={() => setScreen('HOME')}
+                onLogout={handleLogout}
+                onUpdateUser={setUser}
+            />
+        )}
+
+        {/* PDF Viewer Screen */}
+        {screen === 'PDF_VIEW' && selectedPdf && (
+            <PDFViewer
+                file={selectedPdf}
+                onBack={() => setScreen('HOME')}
+            />
         )}
       </main>
 
@@ -613,7 +728,9 @@ const App: React.FC = () => {
                             <p className="text-xs mt-1">Download packs to study offline.</p>
                         </div>
                     ) : (
-                        (Object.values(books) as Book[]).sort((a,b) => b.dateCreated - a.dateCreated).map((book) => (
+                        (Object.values(books) as Book[])
+                            .filter(b => b.subject.toLowerCase().includes(searchQuery.toLowerCase()) || b.year.includes(searchQuery))
+                            .sort((a,b) => b.dateCreated - a.dateCreated).map((book) => (
                             <div key={book.id} className="flex items-center justify-between p-3 bg-white border border-gray-200 rounded-xl hover:border-brand-300 transition-all shadow-sm group">
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 font-bold text-xs group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors relative">
@@ -659,8 +776,14 @@ const App: React.FC = () => {
                         ))
                     )}
                 </div>
-                 <div className="p-4 bg-gray-50 border-t border-gray-100 text-center">
-                    <button onClick={() => setShowLibrary(false)} className="text-sm font-bold text-brand-600 hover:text-brand-700">
+                 <div className="p-4 bg-gray-50 border-t border-gray-100 flex flex-col gap-2">
+                    <button
+                        onClick={() => { setShowPdfUpload(true); setShowLibrary(false); }}
+                        className="w-full bg-brand-600 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-brand-700 transition-colors flex items-center justify-center gap-2"
+                    >
+                        <Upload className="w-4 h-4" /> Upload Study PDF
+                    </button>
+                    <button onClick={() => setShowLibrary(false)} className="text-sm font-bold text-gray-500 hover:text-gray-700 py-1">
                         Close Library
                     </button>
                 </div>
@@ -673,6 +796,18 @@ const App: React.FC = () => {
 
       {/* Countdown Menu Modal */}
       <CountdownMenu isOpen={showCountdowns} onClose={() => setShowCountdowns(false)} />
+
+      {/* PDF Upload Modal */}
+      {showPdfUpload && (
+          <PDFUpload
+            onUpload={(file) => {
+                setSelectedPdf(file);
+                setShowPdfUpload(false);
+                setScreen('PDF_VIEW');
+            }}
+            onClose={() => setShowPdfUpload(false)}
+          />
+      )}
     </div>
   );
 };
