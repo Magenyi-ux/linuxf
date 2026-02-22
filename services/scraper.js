@@ -4,12 +4,13 @@ import * as cheerio from 'cheerio';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import crypto from 'crypto';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://myschool.ng/classroom';
-const DATA_FILE = path.join(__dirname, 'fallbackQuestions.json');
+const FALLBACK_DATA_FILE = path.join(__dirname, 'fallbackData.ts');
 
 const SUBJECT_MAP = {
     'mathematics': 'Mathematics',
@@ -35,6 +36,11 @@ const SUBJECT_MAP = {
 
 async function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function getHash(text, options) {
+    const content = text + (options ? options.join('|') : '');
+    return crypto.createHash('md5').update(content).digest('hex');
 }
 
 async function imageToBase64(url) {
@@ -65,41 +71,34 @@ async function processContentWithImages($, element) {
     return element.html() ? element.html().trim() : "";
 }
 
-async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
+async function scrapeQuestions(subjectSlug, examType, year, targetCount = 100, existingHashes = new Set()) {
     let questions = [];
     let page = 1;
     const examTypeUpper = examType.toUpperCase();
     const subjectName = SUBJECT_MAP[subjectSlug] || subjectSlug;
 
-    console.log(`Starting: ${subjectName} (${examTypeUpper})`);
+    console.log(`Scraping: ${subjectName} (${examTypeUpper}) ${year}`);
 
-    while (questions.length < maxQuestions) {
-        const url = `${BASE_URL}/${subjectSlug}?exam_type=${examType.toLowerCase()}&page=${page}`;
+    while (questions.length < targetCount) {
+        const url = `${BASE_URL}/${subjectSlug}?exam_type=${examType.toLowerCase()}&exam_year=${year}&page=${page}`;
         try {
-            const response = await axios.get(url, { timeout: 10000 });
+            const response = await axios.get(url, { timeout: 15000 });
             const $ = cheerio.load(response.data);
             const questionItems = $('.question-item');
 
             if (questionItems.length === 0) break;
 
-            for (let i = 0; i < questionItems.length && questions.length < maxQuestions; i++) {
+            for (let i = 0; i < questionItems.length && questions.length < targetCount; i++) {
                 const item = $(questionItems[i]);
                 const link = item.find('a[href*="/classroom/"]').attr('href');
 
                 if (link) {
                     try {
-                        const answerResponse = await axios.get(link, { timeout: 10000 });
+                        const answerResponse = await axios.get(link, { timeout: 15000 });
                         const $ans = cheerio.load(answerResponse.data);
                         const $questionContainer = $ans('#page-content-section');
 
                         if ($questionContainer.length === 0) continue;
-
-                        let year = "Unknown";
-                        $questionContainer.find('.badge').each((idx, b) => {
-                            const t = $ans(b).text();
-                            const ym = t.match(/\d{4}/);
-                            if (ym) year = ym[0];
-                        });
 
                         const $qDesc = $ans('.question-desc').first().clone();
                         $qDesc.find('a').remove();
@@ -114,6 +113,11 @@ async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
                             options.push(optText);
                         });
 
+                        const hash = getHash(questionText, options);
+                        if (existingHashes.has(hash)) {
+                            continue;
+                        }
+
                         const correctAnsText = $ans('h5.text-success').text();
                         const correctMatch = correctAnsText.match(/Option ([A-E])/i);
                         const correctIndex = correctMatch ? correctMatch[1].toUpperCase().charCodeAt(0) - 65 : 0;
@@ -125,7 +129,7 @@ async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
                         }
 
                         if (options.length > 0 && questionText.length > 10) {
-                            questions.push({
+                            const newQuestion = {
                                 id: Date.now() + Math.floor(Math.random() * 100000),
                                 text: questionText,
                                 options,
@@ -133,54 +137,103 @@ async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
                                 explanation: explanation,
                                 subject: subjectName,
                                 examType: examTypeUpper,
-                                year: year
-                            });
+                                year: year.toString()
+                            };
+                            questions.push(newQuestion);
+                            existingHashes.add(hash);
                             process.stdout.write(`.`);
                         }
-                        await sleep(200);
+                        await sleep(100);
                     } catch (err) {
-                        // Ignore errors on single questions
+                        // Ignore
                     }
                 }
             }
-            console.log(`\n  P${page} done (${questions.length})`);
+            console.log(`\n  Page ${page} done (${questions.length} new)`);
             page++;
-            if (page > 30) break;
+            if (page > 20) break; // Safety break
         } catch (err) {
+            console.error(`Error on page ${page}: ${err.message}`);
             break;
         }
     }
     return questions;
 }
 
+function loadExistingQuestions() {
+    if (!fs.existsSync(FALLBACK_DATA_FILE)) return [];
+    const content = fs.readFileSync(FALLBACK_DATA_FILE, 'utf8');
+    const match = content.match(/=\s*\[/);
+    if (!match) return [];
+    const startIdx = match.index + match[0].indexOf('[');
+    const endIdx = content.lastIndexOf(']');
+    if (endIdx === -1) return [];
+
+    const jsonStr = content.substring(startIdx, endIdx + 1);
+    try {
+        return JSON.parse(jsonStr);
+    } catch (e) {
+        console.error("Failed to parse existing fallbackData.ts");
+        return [];
+    }
+}
+
+function saveQuestions(questions) {
+    const header = `import { Question, Subject, ExamType } from '../types';
+
+export interface FallbackQuestion extends Question {
+  subject: Subject;
+  examType: ExamType;
+  year: string;
+}
+
+export const fallbackQuestions: FallbackQuestion[] = `;
+
+    const footer = `;\n`;
+    const content = header + JSON.stringify(questions, null, 2) + footer;
+    fs.writeFileSync(FALLBACK_DATA_FILE, content);
+}
+
 async function main() {
     const subjects = Object.keys(SUBJECT_MAP);
     const examTypes = ['jamb', 'waec', 'neco'];
-    let allQuestions = [];
+    const years = ['2024', '2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016', '2015'];
 
-    if (fs.existsSync(DATA_FILE)) {
-        allQuestions = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
-    }
+    let allQuestions = loadExistingQuestions();
+    console.log(`Loaded ${allQuestions.length} existing questions.`);
 
-    // Try to get 100 for main subjects, 50 for others
-    for (const subject of subjects) {
+    const existingHashes = new Set(allQuestions.map(q => getHash(q.text, q.options)));
+
+    // Prioritize subjects with fewer questions
+    const subjectStats = subjects.map(slug => {
+        const name = SUBJECT_MAP[slug];
+        const count = allQuestions.filter(q => q.subject === name).length;
+        return { slug, name, count };
+    }).sort((a, b) => a.count - b.count);
+
+    for (const { slug: subjectSlug, name: subjectName } of subjectStats) {
         for (const exam of examTypes) {
-            const subjectName = SUBJECT_MAP[subject];
-            const existing = allQuestions.filter(q => q.subject === subjectName && q.examType === exam.toUpperCase());
-            const target = 100;
+            const examTypeUpper = exam.toUpperCase();
+            for (const year of years) {
+                const count = allQuestions.filter(q => q.subject === subjectName && q.examType === examTypeUpper && q.year === year).length;
 
-            if (existing.length >= target) {
-                console.log(`Skipping ${subjectName} ${exam.toUpperCase()} (${existing.length})`);
-                continue;
+                if (count >= 100) {
+                    console.log(`${subjectName} ${examTypeUpper} ${year}: done`);
+                    continue;
+                }
+
+                const newQuestions = await scrapeQuestions(subjectSlug, exam, year, 100 - count, existingHashes);
+                if (newQuestions.length > 0) {
+                    allQuestions = allQuestions.concat(newQuestions);
+                    saveQuestions(allQuestions);
+                    console.log(`Saved. Total questions: ${allQuestions.length}`);
+                } else {
+                    console.log(`No more questions found for ${subjectName} ${examTypeUpper} ${year}.`);
+                }
             }
-
-            const questions = await scrapeQuestions(subject, exam, target);
-            allQuestions = allQuestions.concat(questions);
-            fs.writeFileSync(DATA_FILE, JSON.stringify(allQuestions, null, 2));
-            console.log(`Total: ${allQuestions.length}`);
         }
     }
-    console.log("Finished all subjects.");
+    console.log("Scraping finished.");
 }
 
 main();

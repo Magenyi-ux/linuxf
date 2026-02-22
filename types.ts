@@ -21,6 +21,7 @@ export enum Subject {
   // Commercial
   ECONOMICS = 'Economics',
   COMMERCE = 'Commerce',
+  ACCOUNTS = 'Accounts',
 
   // Arts
   GOVERNMENT = 'Government',
