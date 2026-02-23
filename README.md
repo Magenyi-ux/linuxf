@@ -11,6 +11,7 @@ This is a Progressive Web App (PWA) designed to help students prepare for JAMB, 
 - **Study Planner**: Organize your study schedule and track tasks directly on your device.
 - **Progress Tracking**: Your scores, best attempts, and study history are saved locally in the browser.
 - **Math Support**: High-quality LaTeX math rendering using KaTeX.
+- **Offline Question Bank**: Includes a built-in library of 1,000 authentic past questions across core subjects.
 
 ## Tech Stack
 
@@ -57,7 +58,7 @@ npm run build
 ## How Offline-First Works
 
 1.  **Asset Caching**: The app uses `vite-plugin-pwa` to cache all code and assets (including external fonts and styles from CDNs). Once visited, the app loads instantly without internet.
-2.  **Data Persistence**: All exam packs you download are stored in `localStorage` under the key `waExamPrep_books`. Chat messages and study tasks are similarly persisted.
+2.  **Data Persistence**: All exam packs you download are stored in `localStorage` under the key `waExamPrep_books`. Chat messages and study tasks are similarly persisted. The app comes pre-bundled with 1,000 questions (Mathematics, English, Chemistry, and Physics) to ensure immediate offline utility.
 3.  **Offline AI fallback**: When the browser detects it's offline, the `ChatBot` component automatically switches to the `offlineTutor`, providing assistance based on your local library.
 
 ---
