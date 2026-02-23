@@ -1,11 +1,17 @@
 import React from 'react';
 import katex from 'katex';
+import DOMPurify from 'dompurify';
 
 interface MathTextProps {
   text: string;
   className?: string;
 }
 
+/**
+ * MathText Component - Renders text with LaTeX math support and HTML sanitization.
+ * This component is critical for security as it handles potentially untrusted
+ * content from AI models.
+ */
 export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
   if (!text) return null;
 
@@ -23,7 +29,6 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
   };
 
   // 2. Split by LaTeX delimiters ($...$, \\(...\\), or \\[...\\])
-  // The regex captures the content inside these signs
   const parts = text.split(/(\\\(.+?\\\)|\\\[.+?\\\]|\$[^$]+\$)/g);
 
   return (
@@ -47,14 +52,18 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
               throwOnError: false,
               displayMode
             });
-            return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
+            // Sanitize KaTeX output for defense in depth
+            const sanitizedHtml = DOMPurify.sanitize(html);
+            return <span key={i} dangerouslySetInnerHTML={{ __html: sanitizedHtml }} className="mx-1" />;
           } catch (e) {
             return <span key={i} className="text-red-500">{part}</span>;
           }
         } else {
           // This is text or HTML, render it as HTML if it looks like it
           if (part.includes('<') && part.includes('>')) {
-            return <span key={i} dangerouslySetInnerHTML={{ __html: part }} />;
+            // SECURITY: Sanitize HTML content to prevent XSS vulnerabilities from AI-generated content
+            const sanitizedHtml = DOMPurify.sanitize(part);
+            return <span key={i} dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />;
           }
           return <span key={i}>{processBold(part)}</span>;
         }
