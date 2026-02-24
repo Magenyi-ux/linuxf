@@ -1,5 +1,6 @@
 import React from 'react';
 import katex from 'katex';
+import DOMPurify from 'dompurify';
 
 interface MathTextProps {
   text: string;
@@ -47,14 +48,16 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
               throwOnError: false,
               displayMode
             });
-            return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
+            // Security: Sanitize HTML even from KaTeX to ensure no malicious injection
+            return <span key={i} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(html) }} className="mx-1" />;
           } catch (e) {
             return <span key={i} className="text-red-500">{part}</span>;
           }
         } else {
           // This is text or HTML, render it as HTML if it looks like it
           if (part.includes('<') && part.includes('>')) {
-            return <span key={i} dangerouslySetInnerHTML={{ __html: part }} />;
+            // Security: Robustly sanitize AI-generated or user-provided HTML content to prevent XSS
+            return <span key={i} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(part) }} />;
           }
           return <span key={i}>{processBold(part)}</span>;
         }
