@@ -4,12 +4,18 @@ import * as cheerio from 'cheerio';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import crypto from 'crypto';
+import { GoogleGenAI } from "@google/genai";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://myschool.ng/classroom';
-const DATA_FILE = path.join(__dirname, 'fallbackQuestions.json');
+const DATA_FILE = path.join(__dirname, 'fallbackData.ts');
+const MAX_FILE_SIZE = 28 * 1024 * 1024; // 28MB
+
+// Initialize Gemini AI
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || process.env.API_KEY || "AIza_placeholder" });
 
 const SUBJECT_MAP = {
     'mathematics': 'Mathematics',
@@ -32,6 +38,49 @@ const SUBJECT_MAP = {
     'french': 'French',
     'arabic': 'Arabic'
 };
+
+/**
+ * Generates an MD5 hash of the question text and options for deduplication.
+ */
+function getMd5(text, options) {
+    const content = text + (options ? options.join('|') : '');
+    return crypto.createHash('md5').update(content).digest('hex');
+}
+
+/**
+ * Uses Gemini AI to improve an explanation.
+ */
+async function improveExplanation(question) {
+    if (ai.apiKey === "AIza_placeholder") {
+        return question.explanation;
+    }
+
+    const prompt = `
+    Act as an expert teacher. Improve the following exam question explanation.
+    The explanation should be complete, pedagogical, and include a 'Simplified Method' section.
+
+    Question: ${question.text}
+    Options: ${question.options.join(', ')}
+    Correct Option Index: ${question.correctOptionIndex} (Option ${String.fromCharCode(65 + question.correctOptionIndex)})
+    Current Explanation: ${question.explanation}
+
+    Return ONLY the improved explanation text (can include HTML tags like <p>, <br>, <strong>).
+    Ensure it contains a section titled 'Simplified Method:'.
+    `;
+
+    try {
+        // Use the pattern found in fetchExamQuestions in geminiService.ts
+        const response = await ai.models.generateContent({
+            model: "gemini-1.5-flash",
+            contents: prompt
+        });
+        const text = response.text ? response.text.trim() : "";
+        return text || question.explanation;
+    } catch (e) {
+        console.error("Error improving explanation:", e);
+        return question.explanation;
+    }
+}
 
 async function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -65,13 +114,13 @@ async function processContentWithImages($, element) {
     return element.html() ? element.html().trim() : "";
 }
 
-async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
+async function scrapeQuestions(subjectSlug, examType, targetYear, existingHashes, maxQuestions = 100) {
     let questions = [];
     let page = 1;
     const examTypeUpper = examType.toUpperCase();
     const subjectName = SUBJECT_MAP[subjectSlug] || subjectSlug;
 
-    console.log(`Starting: ${subjectName} (${examTypeUpper})`);
+    console.log(`Searching for: ${subjectName} (${examTypeUpper}) Year ${targetYear}`);
 
     while (questions.length < maxQuestions) {
         const url = `${BASE_URL}/${subjectSlug}?exam_type=${examType.toLowerCase()}&page=${page}`;
@@ -82,7 +131,7 @@ async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
 
             if (questionItems.length === 0) break;
 
-            for (let i = 0; i < questionItems.length && questions.length < maxQuestions; i++) {
+            for (let i = 0; i < questionItems.length; i++) {
                 const item = $(questionItems[i]);
                 const link = item.find('a[href*="/classroom/"]').attr('href');
 
@@ -101,6 +150,8 @@ async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
                             if (ym) year = ym[0];
                         });
 
+                        if (year !== targetYear) continue;
+
                         const $qDesc = $ans('.question-desc').first().clone();
                         $qDesc.find('a').remove();
                         $qDesc.find('.badge').remove();
@@ -114,6 +165,9 @@ async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
                             options.push(optText);
                         });
 
+                        const hash = getMd5(questionText, options);
+                        if (existingHashes.has(hash)) continue;
+
                         const correctAnsText = $ans('h5.text-success').text();
                         const correctMatch = correctAnsText.match(/Option ([A-E])/i);
                         const correctIndex = correctMatch ? correctMatch[1].toUpperCase().charCodeAt(0) - 65 : 0;
@@ -125,7 +179,7 @@ async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
                         }
 
                         if (options.length > 0 && questionText.length > 10) {
-                            questions.push({
+                            let qObj = {
                                 id: Date.now() + Math.floor(Math.random() * 100000),
                                 text: questionText,
                                 options,
@@ -134,18 +188,26 @@ async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
                                 subject: subjectName,
                                 examType: examTypeUpper,
                                 year: year
-                            });
+                            };
+
+                            if (!explanation || explanation.length < 100 || !explanation.includes('Simplified Method')) {
+                                qObj.explanation = await improveExplanation(qObj);
+                            }
+
+                            questions.push(qObj);
+                            existingHashes.add(hash);
                             process.stdout.write(`.`);
+                            if (questions.length >= maxQuestions) break;
                         }
                         await sleep(200);
                     } catch (err) {
-                        // Ignore errors on single questions
                     }
                 }
+                if (questions.length >= maxQuestions) break;
             }
-            console.log(`\n  P${page} done (${questions.length})`);
+            console.log(`\n  P${page} checked`);
             page++;
-            if (page > 30) break;
+            if (page > 50) break;
         } catch (err) {
             break;
         }
@@ -153,34 +215,93 @@ async function scrapeQuestions(subjectSlug, examType, maxQuestions = 120) {
     return questions;
 }
 
-async function main() {
-    const subjects = Object.keys(SUBJECT_MAP);
-    const examTypes = ['jamb', 'waec', 'neco'];
-    let allQuestions = [];
-
-    if (fs.existsSync(DATA_FILE)) {
-        allQuestions = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+function readData() {
+    if (!fs.existsSync(DATA_FILE)) return [];
+    const content = fs.readFileSync(DATA_FILE, 'utf8');
+    // More robust finding of the array: find the first '[' that is followed by a '{' on a new line or same line
+    const arrayStartMatch = content.match(/=\s*\[\s*\{/);
+    if (!arrayStartMatch) return [];
+    const startIdx = arrayStartMatch.index + arrayStartMatch[0].indexOf('[');
+    const endIdx = content.lastIndexOf(']');
+    if (startIdx === -1 || endIdx === -1) return [];
+    try {
+        return JSON.parse(content.substring(startIdx, endIdx + 1));
+    } catch (e) {
+        console.error("Failed to parse data file", e);
+        return [];
     }
+}
 
-    // Try to get 100 for main subjects, 50 for others
-    for (const subject of subjects) {
-        for (const exam of examTypes) {
-            const subjectName = SUBJECT_MAP[subject];
-            const existing = allQuestions.filter(q => q.subject === subjectName && q.examType === exam.toUpperCase());
-            const target = 100;
+function writeData(questions) {
+    const header = `import { Question, Subject, ExamType } from '../types';
 
-            if (existing.length >= target) {
-                console.log(`Skipping ${subjectName} ${exam.toUpperCase()} (${existing.length})`);
-                continue;
+export interface FallbackQuestion extends Question {
+  subject: Subject;
+  examType: ExamType;
+  year: string;
+}
+
+export const fallbackQuestions: FallbackQuestion[] =
+`;
+    const footer = `;\n`;
+    const content = header + JSON.stringify(questions, null, 2) + footer;
+    fs.writeFileSync(DATA_FILE, content);
+}
+
+async function main() {
+    let allQuestions = readData();
+    console.log(`Loaded ${allQuestions.length} existing questions.`);
+
+    const existingHashes = new Set(allQuestions.map(q => getMd5(q.text, q.options)));
+
+    // First, improve existing explanations if they are poor
+    let improvedCount = 0;
+    for (let i = 0; i < allQuestions.length; i++) {
+        const q = allQuestions[i];
+        if (!q.explanation || q.explanation.length < 100 || !q.explanation.includes('Simplified Method')) {
+            console.log(`Improving explanation for existing question ${q.id} (${q.subject} ${q.year})...`);
+            q.explanation = await improveExplanation(q);
+            improvedCount++;
+            if (improvedCount % 10 === 0) {
+                writeData(allQuestions);
             }
-
-            const questions = await scrapeQuestions(subject, exam, target);
-            allQuestions = allQuestions.concat(questions);
-            fs.writeFileSync(DATA_FILE, JSON.stringify(allQuestions, null, 2));
-            console.log(`Total: ${allQuestions.length}`);
+            if (improvedCount >= 50) break;
         }
     }
-    console.log("Finished all subjects.");
+    if (improvedCount > 0) {
+        writeData(allQuestions);
+        console.log(`Improved ${improvedCount} existing explanations.`);
+    }
+
+    const subjects = Object.keys(SUBJECT_MAP);
+    const examTypes = ['jamb', 'waec', 'neco'];
+    const years = ['2021', '2020', '2019', '2018', '2017', '2016', '2015'];
+
+    for (const year of years) {
+        for (const exam of examTypes) {
+            for (const subject of subjects) {
+                if (fs.existsSync(DATA_FILE) && fs.statSync(DATA_FILE).size >= MAX_FILE_SIZE) {
+                    console.log(`Reached max file size limit of 28MB. Stopping.`);
+                    return;
+                }
+
+                const subjectName = SUBJECT_MAP[subject];
+                const existing = allQuestions.filter(q => q.subject === subjectName && q.examType === exam.toUpperCase() && q.year === year);
+
+                if (existing.length >= 100) {
+                    continue;
+                }
+
+                const newQuestions = await scrapeQuestions(subject, exam, year, existingHashes, 100 - existing.length);
+                if (newQuestions.length > 0) {
+                    allQuestions = allQuestions.concat(newQuestions);
+                    writeData(allQuestions);
+                    console.log(`\nAdded ${newQuestions.length} questions for ${subjectName} ${exam.toUpperCase()} ${year}. Total: ${allQuestions.length}`);
+                }
+            }
+        }
+    }
+    console.log("Finished.");
 }
 
 main();
