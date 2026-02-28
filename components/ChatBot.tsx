@@ -183,12 +183,15 @@ export const ChatBot: React.FC = () => {
     return (
       <button
         onClick={handleOpen}
-        className="fixed bottom-6 right-6 bg-brand-600 text-white p-4 rounded-full shadow-lg hover:bg-brand-700 transition-all hover:scale-105 z-50 flex items-center gap-2 group"
+        className="fixed bottom-24 lg:bottom-10 right-6 lg:right-10 bg-brand-600 text-white p-5 rounded-[2rem] shadow-2xl shadow-brand-500/20 hover:bg-brand-700 transition-all hover:scale-110 active:scale-95 z-50 flex items-center gap-3 group"
         aria-label="Chat with AI Tutor"
       >
-        <Bot className="w-6 h-6" />
-        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap font-bold">
-          Ask AI Tutor
+        <div className="relative">
+            <Bot className="w-6 h-6" />
+            <div className="absolute -top-1 -right-1 w-2 h-2 bg-emerald-400 rounded-full border-2 border-brand-600" />
+        </div>
+        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 whitespace-nowrap font-black uppercase tracking-widest text-xs">
+          Personal Tutor
         </span>
       </button>
     );
@@ -196,31 +199,33 @@ export const ChatBot: React.FC = () => {
 
   // --- Render logic for open state (Chat Window) ---
   return (
-    <div className="fixed bottom-4 right-4 w-full md:w-96 h-[500px] max-h-[80vh] bg-white rounded-2xl shadow-2xl flex flex-col border border-gray-200 z-50 animate-fade-in-up">
+    <div className="fixed bottom-4 right-4 w-[calc(100%-2rem)] md:w-[450px] h-[600px] max-h-[85vh] bg-white rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] flex flex-col border border-gray-100 z-50 animate-fade-in-up overflow-hidden">
       {/* Header Area */}
-      <div className="bg-brand-600 p-4 rounded-t-2xl flex items-center justify-between text-white">
-        <div className="flex items-center gap-2">
-          <div className="bg-white/20 p-1.5 rounded-lg">
-            <Bot className="w-5 h-5" />
+      <div className="bg-brand-600 p-6 flex items-center justify-between text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full translate-x-16 -translate-y-16" />
+
+        <div className="flex items-center gap-4 relative z-10">
+          <div className="bg-white/20 backdrop-blur-md p-3 rounded-2xl shadow-xl rotate-3">
+            <Bot className="w-6 h-6" />
           </div>
           <div>
-            <h3 className="font-bold">AI Exam Tutor</h3>
-            <div className="flex items-center gap-1 text-xs text-brand-100">
+            <h3 className="font-black tracking-tight text-lg">AI Exam Tutor</h3>
+            <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-brand-100">
               {isOnline ? (
                 <>
-                  <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                  Online
+                  <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
+                  Online Assistance
                 </>
               ) : (
                 <>
-                  <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
-                  Offline
+                  <div className="w-1.5 h-1.5 bg-white/40 rounded-full" />
+                  Offline Mode
                 </>
               )}
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2 relative z-10">
           {/* Clear History Button */}
           <button
             onClick={() => {
@@ -234,7 +239,7 @@ export const ChatBot: React.FC = () => {
                 localStorage.setItem('waExamPrep_chat_messages', JSON.stringify([welcomeMsg]));
               }
             }}
-            className="p-1 hover:bg-brand-500 rounded-lg transition-colors mr-1"
+            className="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center"
             title="Clear Chat"
           >
             <Trash2 className="w-5 h-5" />
@@ -242,7 +247,7 @@ export const ChatBot: React.FC = () => {
           {/* Close Window Button */}
           <button
             onClick={() => setIsOpen(false)}
-            className="p-1 hover:bg-brand-500 rounded-lg transition-colors"
+            className="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center"
           >
             <X className="w-5 h-5" />
           </button>
@@ -250,21 +255,21 @@ export const ChatBot: React.FC = () => {
       </div>
 
       {/* Message List Area */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50 sidebar-scrollbar">
+      <div className="flex-1 overflow-y-auto p-6 space-y-6 bg-surface-50/50 sidebar-scrollbar">
         {messages.map((msg) => (
           <div
             key={msg.id}
-            className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+            className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'} animate-fade-in-up`}
           >
             <div
-              className={`max-w-[85%] p-3 rounded-2xl ${
+              className={`max-w-[85%] p-5 rounded-[1.5rem] shadow-sm ${
                 msg.role === 'user'
-                  ? 'bg-brand-600 text-white rounded-tr-sm'
-                  : 'bg-white text-gray-800 border border-gray-200 rounded-tl-sm shadow-sm'
+                  ? 'bg-brand-600 text-white rounded-tr-none shadow-brand-500/10'
+                  : 'bg-white text-gray-800 border border-gray-100 rounded-tl-none'
               }`}
             >
               {/* MathText handles rendering of LaTeX math expressions */}
-              <MathText text={msg.text} className={msg.role === 'user' ? 'text-white' : 'text-gray-800'} />
+              <MathText text={msg.text} className={`text-sm font-medium leading-relaxed ${msg.role === 'user' ? 'text-white' : 'text-gray-800'}`} />
             </div>
           </div>
         ))}
@@ -281,23 +286,23 @@ export const ChatBot: React.FC = () => {
       </div>
 
       {/* Input Form Area */}
-      <div className="p-4 bg-white border-t border-gray-100 rounded-b-2xl">
-        <div className="flex gap-2">
+      <div className="p-6 bg-white border-t border-gray-50 rounded-b-[2.5rem]">
+        <div className="flex gap-3 bg-gray-50 p-2 rounded-[1.5rem] border border-gray-100 focus-within:border-brand-500 transition-all shadow-inner">
           <input
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Ask a question..."
-            className="flex-1 px-4 py-2 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 bg-gray-50 text-sm"
+            placeholder="Ask your tutor anything..."
+            className="flex-1 px-4 py-2 bg-transparent outline-none font-bold text-gray-700 text-sm placeholder:text-gray-400"
           />
           <button
             onClick={handleSend}
             disabled={!inputValue.trim() || isTyping}
-            className="p-2 bg-brand-600 text-white rounded-xl hover:bg-brand-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="w-10 h-10 bg-brand-600 text-white rounded-2xl flex items-center justify-center hover:bg-brand-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-lg shadow-brand-500/20 active:scale-90"
             aria-label="Send message"
           >
-            <Send className="w-5 h-5" />
+            <Send className="w-4 h-4" />
           </button>
         </div>
       </div>
