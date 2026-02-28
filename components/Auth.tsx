@@ -29,58 +29,62 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete }) => {
     };
 
     return (
-        <div className="max-w-md mx-auto mt-12 p-8 bg-white rounded-2xl shadow-xl border border-gray-100 animate-fade-in-up">
-            <div className="flex flex-col items-center mb-8">
-                <div className="bg-brand-600 p-4 rounded-2xl mb-4 shadow-lg">
-                    <GraduationCap className="w-10 h-10 text-white" />
+        <div className="max-w-xl mx-auto mt-12 p-12 bg-white rounded-[3rem] shadow-2xl shadow-brand-900/5 border border-gray-100 animate-fade-in-up relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-50 rounded-full translate-x-32 -translate-y-32 transition-transform duration-700 group-hover:scale-110" />
+
+            <div className="flex flex-col items-center mb-10 relative z-10">
+                <div className="bg-brand-600 p-6 rounded-[2rem] mb-6 shadow-xl shadow-brand-200 rotate-3 group-hover:rotate-0 transition-transform duration-500">
+                    <GraduationCap className="w-12 h-12 text-white" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">
-                    {isSignUp ? 'Create your Account' : 'Welcome Back'}
+                <h2 className="text-4xl font-black text-gray-900 tracking-tight text-center">
+                    {isSignUp ? 'Master your Exams' : 'Welcome Back'}
                 </h2>
-                <p className="text-gray-500 text-center mt-2">
+                <p className="text-gray-500 font-medium text-center mt-3 max-w-xs mx-auto">
                     {isSignUp
-                        ? 'Join thousands of students preparing for WAEC, JAMB & NECO.'
-                        : 'Pick up right where you left off.'}
+                        ? 'Join the community of students scoring above 300 in JAMB.'
+                        : 'Continue your journey to academic excellence.'}
                 </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-2">
-                        {isSignUp ? 'Full Name' : 'Enter your name'}
+            <form onSubmit={handleSubmit} className="space-y-8 relative z-10">
+                <div className="space-y-3">
+                    <label className="text-xs font-black text-gray-400 uppercase tracking-widest ml-1">
+                        {isSignUp ? 'Full Name' : 'Your Identity'}
                     </label>
                     <input
                         type="text"
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        placeholder="e.g. John Doe"
-                        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white outline-none transition-all"
+                        placeholder="e.g. Ebuka Chima"
+                        className="w-full px-6 py-5 bg-gray-50 border-2 border-transparent rounded-2xl focus:border-brand-500 focus:bg-white outline-none transition-all font-bold text-gray-700 shadow-inner"
                     />
                 </div>
 
                 <button
                     type="submit"
-                    className="w-full bg-brand-600 text-white py-3 rounded-xl font-bold hover:bg-brand-700 transition-all flex items-center justify-center gap-2 shadow-lg shadow-brand-200"
+                    className="w-full bg-brand-600 text-white py-5 rounded-[1.5rem] font-black uppercase tracking-[0.2em] text-sm hover:bg-brand-700 transition-all flex items-center justify-center gap-3 shadow-2xl shadow-brand-500/20 hover:scale-[1.02] active:scale-[0.98]"
                 >
-                    {isSignUp ? <UserPlus className="w-5 h-5" /> : <LogIn className="w-5 h-5" />}
-                    {isSignUp ? 'Start Learning' : 'Sign In'}
+                    {isSignUp ? <UserPlus className="w-6 h-6" /> : <LogIn className="w-6 h-6" />}
+                    {isSignUp ? 'Start Practicing' : 'Sign In Now'}
                 </button>
             </form>
 
-            <div className="mt-8 pt-6 border-t border-gray-100 text-center">
+            <div className="mt-10 pt-8 border-t border-gray-100 text-center relative z-10">
                 <button
                     onClick={() => setIsSignUp(!isSignUp)}
-                    className="text-brand-600 font-semibold hover:underline"
+                    className="text-brand-600 font-black text-xs uppercase tracking-widest hover:text-brand-700 transition-colors"
                 >
-                    {isSignUp ? 'Already have an account? Sign In' : "Don't have an account? Sign Up"}
+                    {isSignUp ? 'Already a member? Sign In' : "New here? Create Account"}
                 </button>
             </div>
 
-            <div className="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-100">
-                <p className="text-xs text-amber-700 leading-relaxed">
-                    <strong>Note:</strong> This is an offline prototype. Your data is stored locally on this device.
+            <div className="mt-8 p-6 bg-amber-50 rounded-2xl border border-amber-100 relative z-10">
+                <p className="text-[10px] text-amber-700 font-bold uppercase tracking-wider leading-relaxed flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                    Offline First App
                 </p>
+                <p className="text-xs text-amber-600/80 font-medium mt-1">Your progress is safely stored on this device.</p>
             </div>
         </div>
     );
