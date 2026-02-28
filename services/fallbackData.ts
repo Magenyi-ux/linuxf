@@ -15699,5 +15699,530 @@ export const fallbackQuestions: FallbackQuestion[] =
     "subject": "Physics",
     "examType": "JAMB",
     "year": "2001"
+  },
+  {
+    "id": 1772280622976,
+    "text": "<p>The primary role of agriculture is the provision of</p>",
+    "options": [
+      "foreign exchange earnings",
+      "raw materials for industries",
+      "food for man and his animals",
+      "employment and income for farmers"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The primary role of agriculture is the provision of food for man and his animals.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280650762,
+    "text": "<p>In subsistence agriculture</p>",
+    "options": [
+      "yields are usually high",
+      "surplus produce is small",
+      "savings are made",
+      "farm sizes are large"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Subsistence agriculture or farming is a form of farming in which nearly all the crops or livestock raised are used to maintain the farmer and farmers family, leaving little, if any, surplus for sale or trade.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280697077,
+    "text": "<p>Gestation period is defined as the time</p>",
+    "options": [
+      "of fusion of the sperm and the egg",
+      "between conception and parturition",
+      "of release of ovum from the ovary",
+      "of the birth of the young animal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Gestation period is defined as the time between conception and birth (parturition).",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280651090,
+    "text": "<p>The hormone responsible for milk let down in female farm animals is</p>",
+    "options": [
+      "testosterone",
+      "FSH",
+      "Oxytosin",
+      "androgen"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Oxytocin is a hormone that is involved in childbirth and breast-feeding.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280649156,
+    "text": "<p>The adult male cattle is called</p>",
+    "options": [
+      "bull",
+      "ram",
+      "boar",
+      "duck"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The adult male cattle is called a BULL.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280672335,
+    "text": "<p>Layer's ration contains more limestone than grower's ration because limestone</p>",
+    "options": [
+      "is difficult for the growers to digest",
+      "stimulates layer's appetite",
+      "reduces the acidity in the gut if growers",
+      "supplies sufficient minerals to layers for shell formation"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Layer's ration contains more limestone than grower's ration as limestone supplies calcium which is needed for shell formation in layers.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280667239,
+    "text": "<p>Which of the following is not a method of improving rangeland?</p>",
+    "options": [
+      "practicing continuous grazing",
+      "routine and regular weeding",
+      "routine reseeding",
+      "regular application of fertilizers"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The practice of continuous grazing is not a method of controlling rangeland.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280623718,
+    "text": "<p>Miracidium is one of the stages in the life cycle of</p>",
+    "options": [
+      "roundworm",
+      "liver fluke",
+      "tapeworm",
+      "tick"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Miracidium is the free swimming larva of trematodes (liver fluke) which emerges from an egg and penetrates the body of a snail host.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280682327,
+    "text": "<p>Which of the following is not a symptom of foot and mouth disease of cattle?</p>",
+    "options": [
+      "excessive production of saliva",
+      "sores on feet and tongue",
+      "lameness",
+      "blood stained diarrhea"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The foot and mouth disease of cattle is not characterized by blood stained diarrhea.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280679009,
+    "text": "<p>Heavy infestation of liver fluke causes poor absorption of fats in livestock by</p>",
+    "options": [
+      "blocking bile ducts thus preventing flow of bile",
+      "destroying fat-digesting enzymes",
+      "reducing ingestion of fats",
+      "inhibiting the action of digestive enzymes"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A liver fluke is a parasitic worm. After liver flukes have been ingested, they travel from the intestines to the bile ducts in the liver where they live and grow. They grow so much that they contaminate the bile and this affects fat-digesting enzymes.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280619114,
+    "text": "<p>Methods of preserving fish include the following except</p>",
+    "options": [
+      "boiling",
+      "drying",
+      "smoking",
+      "salting"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Boiling is not a method of preserving fish.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280673946,
+    "text": "<p>Which of the following fishing gears can be used for total harvesting of pond?</p>",
+    "options": [
+      "hook and line",
+      "harpoon",
+      "basket trap",
+      "dragnet"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "It is because of the way it is constructed, dragnet can be used for the total harvesting of ponds.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280674521,
+    "text": "<p>The practice of mating closely related animals is called</p>",
+    "options": [
+      "pen mating",
+      "cross breeding",
+      "outbreeding",
+      "inbreeding"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Inbreeding is the mating of organisms closely related by ancestry.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280652879,
+    "text": "<p>The natural resource utilized for production is</p>",
+    "options": [
+      "capital",
+      "management",
+      "labour",
+      "land"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Land is a natural resource utilized for production.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280698538,
+    "text": "<p>An increase in supply of agricultural produce can be caused by the following factors except</p>",
+    "options": [
+      "reduced cost of production",
+      "favourable weather conditions",
+      "reduced taxation",
+      "consumers buying less products"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Consumers buying less product will not contribute to an increase in the supply of agricultural produce.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280676291,
+    "text": "<p>Which of the following constitutes subsidy in agricultural enterprise?</p>",
+    "options": [
+      "supply of fertilizers to farmers at reduced price",
+      "borrowing of money from a thrift society",
+      "provision of money to farmers through commercial banks",
+      "provision of services through cooperative societies"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Supply of fertilizers to farmers at reduced price constitutes subsidy.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280701231,
+    "text": "<p>Records of money transactions in a farming business are termed</p>",
+    "options": [
+      "farm inputs",
+      "farm accounts",
+      "capital",
+      "farm liabilities"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Farm accounts are statements of money paid out or received for goods and services used in the running of the farming business.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280624670,
+    "text": "<p>An advantage of extensive system of rearing goats is</p>",
+    "options": [
+      "low labour requirement",
+      "easy control of disease",
+      "indiscriminate mating",
+      "exposure to adverse weather conditions"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Extensive agriculture is an agricultural production system that uses small inputs of labour, fertilizers and capital, relative to the land being farmed.<br>\nIn the case of extensive method of rearing goats, goats are allowed to graze freely on a large area of land with little labour requirement.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280696887,
+    "text": "<p>The main processes involved in the marketing of cotton include the following except</p>",
+    "options": [
+      "wedding",
+      "processing",
+      "grading",
+      "packaging"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Weeding is not involved in the packaging of cotton.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280705886,
+    "text": "<p>Which of the following agricultural extensions aims at reaching a large number of farmers at the same time?</p>",
+    "options": [
+      "mass method",
+      "group method",
+      "individual method",
+      "contact method"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Mass method aims at reaching a large number of farmers at the same time.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280700061,
+    "text": "<p>Which of the following is not an example of edaphic factors?</p>",
+    "options": [
+      "rocks",
+      "soil",
+      "topography",
+      "storm"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Storm is not an edaphic factor.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280689669,
+    "text": "<p>The practice of bee farming is called</p>",
+    "options": [
+      "Apiculture",
+      "Heliculture",
+      "Forestry",
+      "Agronomy"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Apiculture is the practice of managing honeybee colonies for farming purposes.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280659392,
+    "text": "<p>The study of insect pests of crops is called</p>",
+    "options": [
+      "entomology",
+      "pathology",
+      "agronomy",
+      "synecology"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Entomology is the study of insects.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280648016,
+    "text": "<p>Which of the following is not a characteristic of metamorphic rock?</p>",
+    "options": [
+      "they are colourless",
+      "some occur in layers",
+      "they may contain fossils",
+      "they may be hard and massive"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Metamorphic rocks have been put under great pressure, heated, squashed or stretched and fossils do not survive these extreme conditions.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280657765,
+    "text": "<p>What is the full meaning of IITA?</p>",
+    "options": [
+      "International Institute of Tropical Agriculture",
+      "International Institution of Tropical Agriculture",
+      "Institute of Investment and Trade Agriculture",
+      "Interlude Institute of Tropical Agriculture"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "IITA stands for The International Institute of Tropical Agriculture (IITA).",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280715356,
+    "text": "<p>Rocks formed by the cooling and solidification of molten rocks called magma ejected from beneath the earth's crust is</p>",
+    "options": [
+      "Igneous rock",
+      "Metamorphic rock",
+      "Caleima rock",
+      "Sedimentary rock"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Rocks formed by the cooling and solidification of molten rocks called magma ejected beneath the earth's crust are igneous rocks.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280717859,
+    "text": "<p>Which of the following is a friend of farmer</p>",
+    "options": [
+      "earthworm",
+      "aphid",
+      "grasshopper",
+      "termite"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Earthworms are referred to as farmer friend because they improve soil structure, water holding capacity and enrich soil nutrients.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280665598,
+    "text": "<p>The source of food for fishes in the river is called</p>",
+    "options": [
+      "rotten leaves",
+      "planktons",
+      "micro-organism",
+      "algae"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The source of food for fishes in the river are planktons.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280709068,
+    "text": "<p>A farmer bought a farm implement for ₦12,500 in 2007. At the end of the fourth year, he sold it for ₦4,300. The annual depreciation of the implement is</p>",
+    "options": [
+      "₦4,300",
+      "₦3,125",
+      "₦2,050",
+      "₦1,075"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Cost price in 2007 - ₦12,500<br>\nYear of usage = 4 years<br>\nSelling Price = ₦4,300<br>\n&nbsp;",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280672378,
+    "text": "<p>The average weather condition of a place, measured over a long period of time is called</p>",
+    "options": [
+      "climate",
+      "wind",
+      "rainfall",
+      "temperature"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Climate is the average weather in a given area over a long period of time.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280675315,
+    "text": "<p>Which of the following equipment is a farm implement?</p>",
+    "options": [
+      "dryer",
+      "sheller",
+      "mower",
+      "mistblower"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Farm implements are the tools used for growing and harvesting crops. Mower is not a farm implement.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280703816,
+    "text": "<p>A periodic maintenance activity carried out using a farm tractor is</p>",
+    "options": [
+      "checking of radiator water",
+      "checking of tire pressure",
+      "cleaning after use",
+      "changing of engine oil"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A periodic maintenance activity carried out on farm tractor is changing of engine oil.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280669562,
+    "text": "<p>Which of the following sources of farm power is most versatile in West Africa?</p>",
+    "options": [
+      "Biogas",
+      "animal",
+      "wind",
+      "water"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The most versatile source of farm power in West Africa is animal.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280708671,
+    "text": "<p>Farm surveying equipment include the following except</p>",
+    "options": [
+      "Abney level",
+      "Compass",
+      "Spade",
+      "Gunter's chain"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Spade is not a surveying equipment.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
+  },
+  {
+    "id": 1772280712241,
+    "text": "<p>A piece of land is said to be on lease to a farmer when the land is</p>",
+    "options": [
+      "inherited from the father",
+      "given to him as a gift",
+      "given as compensation",
+      "given for a specific period on rental basis"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A piece of land is said to be lease to a farmer when the land is given for a specific period on rental basis.",
+    "subject": "Agricultural Science",
+    "examType": "JAMB",
+    "year": "2021"
   }
 ];
