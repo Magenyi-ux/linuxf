@@ -18,16 +18,16 @@
             },
             colors: {
               brand: {
-                50: '#eff6ff',
-                100: '#dbeafe',
-                500: '#3b82f6',
-                600: '#2563eb',
-                700: '#1d4ed8',
-                900: '#1e3a8a',
+                50: '#f5f7ff',
+                100: '#ebf0ff',
+                500: '#6366f1',
+                600: '#4f46e5',
+                700: '#4338ca',
+                900: '#312e81',
               },
               accent: {
-                500: '#10b981', // Emerald
-                600: '#059669',
+                500: '#f43f5e',
+                600: '#e11d48',
               }
             }
           }
@@ -36,12 +36,15 @@
     </script>
     <style>
       body {
-        background-color: #f8fafc;
+        background-color: #fafafa;
+        background-image:
+          radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.05) 0px, transparent 50%),
+          radial-gradient(at 100% 0%, rgba(244, 63, 94, 0.05) 0px, transparent 50%);
       }
       .glass-panel {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
       }
       /* Custom Scrollbar for Sidebar */
       .sidebar-scrollbar::-webkit-scrollbar {
@@ -78,5 +81,6 @@
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
