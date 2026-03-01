@@ -56,27 +56,9 @@ export interface Book {
 }
 
 export interface UserProfile {
-  name: string;
   level: number;
   xp: number;
   streak: number;
-  joinedDate: number;
 }
 
-export interface Countdown {
-  id: string;
-  name: string;
-  date: number; // timestamp
-  isDefault?: boolean;
-}
-
-export interface StudyPlanTask {
-  id: string;
-  subject: Subject;
-  examType: ExamType;
-  description: string;
-  completed: boolean;
-  dueDate: number;
-}
-
-export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'STUDY_PLAN' | 'PROFILE' | 'AUTH' | 'PDF_VIEW' | 'THEORY';
+export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS';

@@ -1,35 +1,34 @@
 
-/**
- * geminiService.ts - Interface for Google Gemini AI
- * This service handles communication with the Gemini AI models for generating
- * exam questions and providing tutor chat sessions.
- */
 import { GoogleGenAI } from "@google/genai";
 import { ExamType, Subject, Question } from "../types";
-import { fallbackQuestions } from "./fallbackData";
 
-// Initialize the Gemini AI with the API key from environment variables
-// Falls back to a placeholder if the key is missing
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "AIza_placeholder" });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 /**
- * Sanitizes a raw string from the AI to ensure it's valid JSON.
- * AI models sometimes include extra text or formatting that can break JSON.parse().
+ * Sanitizes a raw string from the LLM to be valid JSON.
+ * Fixes:
+ * 1. Markdown code blocks (```json ... ```)
+ * 2. Double arrays (e.g. [...][...]) which cause syntax errors
+ * 3. Unescaped newlines/control characters inside strings
  */
 const cleanAndParseJson = (text: string): any[] => {
     if (!text) return [];
 
-    // 1. Remove Markdown code blocks (e.g., ```json ... ```)
+    // 1. Remove Markdown code blocks
     let cleaned = text.replace(/```json/g, '').replace(/```/g, '').trim();
 
-    // 2. Handle cases where the AI might output multiple JSON arrays back-to-back
+    // 2. Handle specific LLM artifact: Concatenated Arrays like [...][...]
+    // If we find "][" this indicates the model outputted two arrays back-to-back.
+    // We strictly want only the first one.
     const splitIndex = cleaned.indexOf('][');
     if (splitIndex !== -1) {
         console.warn("Detected double JSON array in response. Truncating to first array.");
         cleaned = cleaned.substring(0, splitIndex + 1);
     }
 
-    // 3. Fix "Bad control character" errors by replacing illegal characters with spaces
+    // 3. Fix "Bad control character" errors
+    // Replace ASCII control characters (0-31) which are illegal in JSON strings unless escaped.
+    // We replace newlines (\n), tabs (\t), etc. with a single space to preserve flow but fix syntax.
     cleaned = cleaned.replace(/[\x00-\x1F\x7F-\x9F]/g, (char) => {
          return ' ';
     });
@@ -39,7 +38,7 @@ const cleanAndParseJson = (text: string): any[] => {
     } catch (e) {
         console.warn("Primary JSON parse failed. Attempting advanced repair.", e);
         
-        // 4. Fallback: Extract the outermost array brackets if the parsing failed
+        // 4. Fallback: Extract the outermost array brackets
         const firstBracket = cleaned.indexOf('[');
         const lastBracket = cleaned.lastIndexOf(']');
         
@@ -63,23 +62,18 @@ const cleanAndParseJson = (text: string): any[] => {
     }
 };
 
-/**
- * Fetches practice questions for a specific exam, subject, and year.
- */
 export const fetchExamQuestions = async (
   examType: ExamType,
   subject: Subject,
   year: string,
   count: number = 10
 ): Promise<{ questions: Question[], sources: string[] }> => {
-  // Use the flash model for faster response times in question generation
-  const model = "gemini-1.5-flash";
+  const model = "gemini-2.5-flash";
 
   const yearContext = year === 'Random' 
     ? "randomly selected from various past years (2010-2023)" 
     : `specifically from the year ${year}`;
 
-  // Construct the prompt to guide the AI
   const prompt = `
     Act as an expert SS3 Teacher in Nigeria.
     
@@ -94,7 +88,9 @@ export const fetchExamQuestions = async (
 
     OUTPUT FORMAT:
     - Return ONLY a SINGLE VALID JSON ARRAY.
+    - **DO NOT** output the JSON array twice.
     - **DO NOT** output any conversational text or markdown.
+    - **DO NOT** include literal line breaks inside the strings.
     
     JSON STRUCTURE:
     [
@@ -108,19 +104,18 @@ export const fetchExamQuestions = async (
   `;
 
   try {
-    // Call the Gemini API
     const response = await ai.models.generateContent({
       model: model,
       contents: prompt,
       config: {
-        tools: [{ googleSearch: {} }], // Enable Google Search for grounding
-        temperature: 0.3, // Lower temperature for more consistent/factual output
+        tools: [{ googleSearch: {} }], 
+        temperature: 0.3, 
       }
     });
 
     const rawText = response.text || "[]";
     
-    // Parse the AI's response into a JS object
+    // Use the robust parser
     let data: Omit<Question, 'id'>[] = cleanAndParseJson(rawText);
 
     if (!Array.isArray(data) || data.length === 0) {
@@ -128,13 +123,12 @@ export const fetchExamQuestions = async (
         throw new Error("No questions generated. The AI response was malformed. Please try again.");
     }
 
-    // Assign unique IDs to each question
+    // Add unique IDs
     const questions = data.map((q, index) => ({ 
         ...q, 
         id: Date.now() + index 
     }));
 
-    // Extract source URLs from the AI's grounding metadata
     const sources: string[] = response.candidates?.[0]?.groundingMetadata?.groundingChunks
       ?.map((chunk: any) => chunk.web?.uri)
       .filter((uri: string) => uri) || [];
@@ -144,129 +138,16 @@ export const fetchExamQuestions = async (
     return { questions, sources: uniqueSources };
 
   } catch (error) {
-    console.warn("AI failed to fetch questions, using fallback data:", error);
-
-    // Filter fallback questions by subject and examType
-    let filtered = fallbackQuestions.filter(q =>
-        q.subject === subject && q.examType === examType
-    );
-
-    // Further filter by year if specified and not 'Random'
-    if (year && year !== 'Random') {
-        const yearFiltered = filtered.filter(q => q.year === year);
-        if (yearFiltered.length > 0) {
-            filtered = yearFiltered;
-        }
-        // If no questions for that year, we still use the filtered subject/exam set
-    }
-
-    // Shuffle and pick 'count' questions
-    const shuffled = [...filtered].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, count);
-
-    if (selected.length === 0) {
-        console.error(`No fallback questions available for ${subject} ${examType}`);
-        throw error; // Re-throw the original AI error if even fallback fails
-    }
-
-    return {
-        questions: selected.map(q => ({
-            id: q.id,
-            text: q.text,
-            options: q.options,
-            correctOptionIndex: q.correctOptionIndex,
-            explanation: q.explanation
-        })),
-        sources: ["https://myschool.ng/classroom/ (Offline Fallback)"]
-    };
+    console.error("Failed to fetch questions:", error);
+    throw error;
   }
-};
-
-/**
- * Creates a new chat session for the AI Tutor.
- */
-/**
- * Fetches a single theory question for a specific exam and subject.
- */
-export const fetchTheoryQuestion = async (
-    examType: ExamType,
-    subject: Subject
-): Promise<{ text: string; keywords: string[] }> => {
-    const model = ai.getGenerativeModel({ model: "gemini-1.5-flash" });
-
-    const prompt = `
-        Act as an expert SS3 Teacher in Nigeria.
-        Generate ONE challenging theory (essay) question for ${examType} ${subject}.
-        The question should require a detailed explanation.
-
-        Return ONLY a VALID JSON OBJECT:
-        {
-            "text": "Question text here...",
-            "keywords": ["keyword1", "keyword2", "keyword3"]
-        }
-    `;
-
-    try {
-        const result = await model.generateContent(prompt);
-        const text = result.response.text();
-        const data = JSON.parse(text.replace(/```json/g, '').replace(/```/g, '').trim());
-        return data;
-    } catch (error) {
-        console.error("Failed to fetch theory question", error);
-        return {
-            text: `Explain the importance of ${subject} in the development of modern West Africa.`,
-            keywords: ["development", "West Africa", "importance"]
-        };
-    }
-};
-
-/**
- * Grades a theory answer using the AI.
- */
-export const gradeTheoryAnswer = async (
-    question: string,
-    answer: string,
-    subject: Subject
-): Promise<{ score: number; feedback: string }> => {
-    const model = ai.getGenerativeModel({ model: "gemini-1.5-flash" });
-
-    const prompt = `
-        Act as an expert SS3 Teacher in Nigeria.
-        Grade the following student answer for a theory question in ${subject}.
-
-        QUESTION: "${question}"
-        STUDENT ANSWER: "${answer}"
-
-        Provide a score out of 10 and constructive feedback.
-
-        Return ONLY a VALID JSON OBJECT:
-        {
-            "score": 7,
-            "feedback": "Your explanation was good but you missed..."
-        }
-    `;
-
-    try {
-        const result = await model.generateContent(prompt);
-        const text = result.response.text();
-        const data = JSON.parse(text.replace(/```json/g, '').replace(/```/g, '').trim());
-        return data;
-    } catch (error) {
-        console.error("Failed to grade theory answer", error);
-        return {
-            score: 0,
-            feedback: "I couldn't grade your answer right now. Please try again later."
-        };
-    }
 };
 
 export const createTutorChatSession = () => {
   return ai.chats.create({
-    // Use the pro model for complex reasoning and tutoring
-    model: 'gemini-1.5-pro',
+    model: 'gemini-3-pro-preview',
     config: {
       tools: [{ googleSearch: {} }],
-      // System instructions define the AI's personality and goals
       systemInstruction: "You are 'Professor Gemini', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO). Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams. Be concise, use local context where appropriate for Nigerian students, and always be supportive. If asked about things outside of education/exams, politely steer the conversation back to studying. You can use Google Search to find current information or check specific past question details if asked.",
     },
   });

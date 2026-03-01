@@ -11,27 +11,30 @@ export const GamificationBar: React.FC<GamificationBarProps> = ({ profile }) => 
     const progress = Math.min((profile.xp / xpForNextLevel) * 100, 100);
 
     return (
-        <div className="bg-white rounded-2xl border border-gray-100 p-4 flex items-center justify-between gap-4 shadow-sm group hover:shadow-md transition-all duration-300">
-            {/* Level & XP Progress */}
-            <div className="flex items-center gap-3 flex-1 min-w-0" title={`Level ${profile.level}`}>
-                <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600 shadow-inner group-hover:scale-110 transition-transform">
-                    <Trophy className="w-5 h-5" />
+        <div className="bg-white border-b border-gray-200 px-4 py-2 flex items-center justify-between sm:justify-end gap-4 sm:gap-6 shadow-sm sticky top-16 z-40">
+            {/* Level */}
+            <div className="flex items-center gap-2" title={`Level ${profile.level}`}>
+                <div className="w-8 h-8 rounded-full bg-yellow-100 flex items-center justify-center border border-yellow-300">
+                    <Trophy className="w-4 h-4 text-yellow-600" />
                 </div>
-                <div className="flex flex-col flex-1 min-w-0">
-                    <div className="flex items-center justify-between mb-1.5">
-                        <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Lvl {profile.level}</span>
-                        <span className="text-[10px] font-black text-brand-600 uppercase tracking-widest">{profile.xp} XP</span>
-                    </div>
-                    <div className="w-full h-2 bg-gray-50 rounded-full overflow-hidden border border-gray-100 shadow-inner">
-                        <div className="h-full bg-gradient-to-r from-amber-400 to-amber-500 shadow-sm transition-all duration-1000" style={{ width: `${progress}%` }}></div>
+                <div className="flex flex-col">
+                    <span className="text-xs font-bold text-gray-500 uppercase">Lvl {profile.level}</span>
+                    <div className="w-20 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                        <div className="h-full bg-yellow-400" style={{ width: `${progress}%` }}></div>
                     </div>
                 </div>
             </div>
 
-            {/* Streak Indicator */}
-            <div className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border-2 transition-all ${profile.streak > 0 ? 'bg-orange-50 border-orange-100 text-orange-600' : 'bg-gray-50 border-transparent text-gray-300'}`}>
+            {/* XP */}
+            <div className="flex items-center gap-1.5">
+                <Star className="w-4 h-4 text-brand-500 fill-brand-500" />
+                <span className="text-sm font-bold text-gray-700">{profile.xp} <span className="text-xs font-normal text-gray-500">XP</span></span>
+            </div>
+
+            {/* Streak */}
+            <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full border ${profile.streak > 0 ? 'bg-orange-50 border-orange-200 text-orange-600' : 'bg-gray-50 border-gray-200 text-gray-400'}`}>
                 <Flame className={`w-4 h-4 ${profile.streak > 0 ? 'fill-orange-500 text-orange-500 animate-pulse' : ''}`} />
-                <span className="text-xs font-black uppercase tracking-tight">{profile.streak} Days</span>
+                <span className="text-sm font-bold">{profile.streak} Day Streak</span>
             </div>
         </div>
     );

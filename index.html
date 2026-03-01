@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn.jsdelivr.net unpkg.com; font-src 'self' fonts.gstatic.com cdn.jsdelivr.net; img-src 'self' data: https://*.googleusercontent.com; connect-src 'self' generativelanguage.googleapis.com; worker-src 'self' blob:;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>West African Exam Prep AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,31 +18,16 @@
             },
             colors: {
               brand: {
-                50: '#f0f7ff',
-                100: '#e0effe',
-                200: '#bae0fd',
-                300: '#7cc8fb',
-                400: '#36acf7',
-                500: '#0066ff', // Vibrant Blue
-                600: '#005ae6',
-                700: '#0047b3',
-                800: '#003a94',
-                900: '#002e75',
+                50: '#eff6ff',
+                100: '#dbeafe',
+                500: '#3b82f6',
+                600: '#2563eb',
+                700: '#1d4ed8',
+                900: '#1e3a8a',
               },
               accent: {
-                50: '#f0fdf4',
-                100: '#dcfce7',
                 500: '#10b981', // Emerald
                 600: '#059669',
-                700: '#047857',
-              },
-              surface: {
-                50: '#f8fafc',
-                100: '#f1f5f9',
-                200: '#e2e8f0',
-                300: '#cbd5e1',
-                400: '#94a3b8',
-                500: '#64748b',
               }
             }
           }
@@ -76,10 +60,23 @@
       .math-content p { margin-bottom: 0.5rem; }
       .math-content strong { font-weight: 700; color: #1f2937; }
     </style>
-  <!-- Removed importmap as it conflicts with Vite's module resolution and bundling -->
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "recharts": "https://esm.sh/recharts@^3.5.1",
+    "pdfjs-dist": "https://esm.sh/pdfjs-dist@4.4.168",
+    "react-pdf": "https://esm.sh/react-pdf@9.1.1?deps=react@19.2.3,react-dom@19.2.3,pdfjs-dist@4.4.168",
+    "katex": "https://esm.sh/katex@0.16.9"
+  }
+}
+</script>
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

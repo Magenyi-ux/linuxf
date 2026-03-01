@@ -1,64 +1,20 @@
-# West African Exam Prep AI (Offline-First)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-This is a Progressive Web App (PWA) designed to help students prepare for JAMB, WAEC, and NECO exams. It features an **offline-first** architecture, allowing students to study even without an internet connection.
+# Run and deploy your AI Studio app
 
-## Features
+This contains everything you need to run your app locally.
 
-- **Offline Study**: Download question packs while online and study them anytime, anywhere.
-- **AI Tutor**: Integrated AI tutor for explanations.
-  - **Online**: Uses Google Gemini AI for advanced tutoring and search.
-  - **Offline**: Falls back to a local `OfflineTutorService` that uses keyword matching against your downloaded materials.
-- **Study Planner**: Organize your study schedule and track tasks directly on your device.
-- **Progress Tracking**: Your scores, best attempts, and study history are saved locally in the browser.
-- **Math Support**: High-quality LaTeX math rendering using KaTeX.
+View your app in AI Studio: https://ai.studio/apps/drive/1UgOpiRKpHSlMnHZcPfXKz-8SAo38dHZJ
 
-## Tech Stack
+## Run Locally
 
-- **Language**: TypeScript
-- **Framework**: React (Vite)
-- **Offline System**: PWA with Service Workers (Workbox)
-- **Data Storage**: `localStorage` for persistent local data
-- **AI**: Google Gemini AI (Online) & Custom Offline Logic
+**Prerequisites:**  Node.js
 
-## Getting Started
 
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-### Configuration
-
-Set the `GEMINI_API_KEY` in your `.env` file to enable the AI Tutor online features:
-```bash
-GEMINI_API_KEY=your_api_key_here
-```
-
-### Running the App
-
-Run the development server:
-```bash
-npm run dev
-```
-
-Build for production (this generates the PWA service worker):
-```bash
-npm run build
-```
-
-## How Offline-First Works
-
-1.  **Asset Caching**: The app uses `vite-plugin-pwa` to cache all code and assets (including external fonts and styles from CDNs). Once visited, the app loads instantly without internet.
-2.  **Data Persistence**: All exam packs you download are stored in `localStorage` under the key `waExamPrep_books`. Chat messages and study tasks are similarly persisted.
-3.  **Offline AI fallback**: When the browser detects it's offline, the `ChatBot` component automatically switches to the `offlineTutor`, providing assistance based on your local library.
-
----
-*Note: This project previously had Convex and Clerk integrations which have been disabled in favor of a pure offline-first experience using local storage and Gemini AI.*
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
