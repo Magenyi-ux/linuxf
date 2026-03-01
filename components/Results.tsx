@@ -20,65 +20,70 @@ export const Results: React.FC<ResultsProps> = ({ score, total, subject, examTyp
     { name: 'Incorrect', value: total - score },
   ];
   
-  const COLORS = ['#10b981', '#ef4444'];
+  const COLORS = ['#6366f1', '#f43f5e'];
 
   let message = '';
   let subMessage = '';
 
   if (percentage >= 80) {
-    message = "Outstanding Performance!";
-    subMessage = "You are ready for the actual exam.";
+    message = "Elite Level Mastery!";
+    subMessage = "You're crushing this! Perfect for the big day.";
   } else if (percentage >= 50) {
-    message = "Good Effort!";
-    subMessage = "Keep practicing to improve your speed and accuracy.";
+    message = "Solid Foundation!";
+    subMessage = "Good job, but we can hit that 90%+ with more focus.";
   } else {
-    message = "Keep Studying";
-    subMessage = "Don't give up. Review the explanations and try again.";
+    message = "Mission Underway";
+    subMessage = "Growth takes time. Review the AI tips and go again.";
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-        <div className="bg-brand-600 p-8 text-center text-white relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 pattern-grid-lg"></div>
+    <div className="max-w-3xl mx-auto animate-fade-in">
+      <div className="bg-white rounded-[48px] shadow-2xl border border-gray-100 overflow-hidden relative">
+        <div className="bg-gradient-to-br from-brand-600 via-brand-700 to-accent-600 p-12 text-center text-white relative overflow-hidden">
+            <div className="absolute inset-0 bg-black/10 mix-blend-overlay"></div>
+            <div className="absolute -top-20 -left-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
             <div className="relative z-10 flex flex-col items-center">
-                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4">
-                    <Trophy className="w-10 h-10 text-yellow-300" />
+                <div className="w-24 h-24 bg-white/20 backdrop-blur-xl rounded-[32px] flex items-center justify-center mb-6 shadow-2xl border border-white/20 animate-bounce">
+                    <Trophy className="w-12 h-12 text-yellow-300 drop-shadow-lg" />
                 </div>
-                <h2 className="text-3xl font-bold mb-2">{message}</h2>
-                <p className="text-brand-100">{subMessage}</p>
+                <h2 className="text-4xl md:text-5xl font-black mb-3 tracking-tight">{message}</h2>
+                <p className="text-brand-50 text-lg font-medium opacity-90 tracking-wide">{subMessage}</p>
             </div>
         </div>
 
-        <div className="p-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
+        <div className="p-10 md:p-14">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-12">
                 <div className="flex-1 text-center md:text-left">
-                    <h3 className="text-gray-500 text-sm uppercase tracking-wide font-semibold mb-1">Subject</h3>
-                    <p className="text-xl font-bold text-gray-900 mb-4">{subject} ({examType})</p>
+                    <div className="inline-flex px-4 py-1.5 bg-gray-50 rounded-full text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4 border border-gray-100">
+                        Performance Breakdown
+                    </div>
+                    <p className="text-2xl font-black text-gray-900 mb-6">{subject} <span className="text-brand-600">({examType})</span></p>
                     
-                    <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
-                            <div className="text-2xl font-bold text-gray-900">{score}/{total}</div>
-                            <div className="text-xs text-gray-500">Total Score</div>
+                    <div className="grid grid-cols-2 gap-6">
+                        <div className="bg-gray-50 p-6 rounded-[32px] border border-gray-100 shadow-inner">
+                            <div className="text-3xl font-black text-gray-900 mb-1">{score}<span className="text-gray-300 text-xl mx-1">/</span>{total}</div>
+                            <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Score Count</div>
                         </div>
-                        <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
-                            <div className="text-2xl font-bold text-brand-600">{percentage}%</div>
-                            <div className="text-xs text-gray-500">Accuracy</div>
+                        <div className="bg-brand-50 p-6 rounded-[32px] border border-brand-100 shadow-inner">
+                            <div className="text-3xl font-black text-brand-600 mb-1">{percentage}%</div>
+                            <div className="text-[10px] font-black text-brand-400 uppercase tracking-widest">Precision</div>
                         </div>
                     </div>
                 </div>
 
-                <div className="w-48 h-48">
+                <div className="w-56 h-56 relative group">
+                    <div className="absolute inset-0 bg-brand-100 blur-3xl rounded-full scale-125 opacity-20 group-hover:opacity-40 transition-opacity"></div>
                     <ResponsiveContainer width="100%" height="100%">
                         <PieChart>
                             <Pie
                                 data={data}
                                 cx="50%"
                                 cy="50%"
-                                innerRadius={60}
-                                outerRadius={80}
-                                paddingAngle={5}
+                                innerRadius={70}
+                                outerRadius={95}
+                                paddingAngle={8}
                                 dataKey="value"
+                                stroke="none"
                             >
                                 {data.map((entry, index) => (
                                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -87,23 +92,26 @@ export const Results: React.FC<ResultsProps> = ({ score, total, subject, examTyp
                             <Tooltip />
                         </PieChart>
                     </ResponsiveContainer>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                        <BarChart className="w-8 h-8 text-brand-600/20" />
+                    </div>
                 </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100">
+            <div className="flex flex-col sm:flex-row gap-6 pt-10 border-t border-gray-100">
                 <button 
                     onClick={onHome}
-                    className="flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-gray-200 text-gray-700 font-medium hover:bg-gray-50 transition-colors"
+                    className="flex-1 flex items-center justify-center gap-3 px-8 py-5 rounded-[24px] bg-gray-50 text-gray-500 font-black tracking-widest uppercase text-xs hover:bg-gray-100 hover:text-gray-900 transition-all active:scale-95"
                 >
                     <Home className="w-5 h-5" />
-                    Back to Home
+                    Dashboard
                 </button>
                 <button 
                     onClick={onRetry}
-                    className="flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-600 text-white font-medium hover:bg-brand-700 shadow-lg shadow-brand-500/30 transition-all"
+                    className="flex-1 flex items-center justify-center gap-3 px-8 py-5 rounded-[24px] bg-brand-600 text-white font-black tracking-widest uppercase text-xs hover:bg-brand-700 shadow-[0_20px_40px_rgba(99,102,241,0.3)] transition-all active:scale-95"
                 >
                     <RefreshCw className="w-5 h-5" />
-                    Practice Again
+                    Try Again
                 </button>
             </div>
         </div>

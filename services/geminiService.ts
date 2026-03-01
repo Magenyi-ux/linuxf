@@ -2,7 +2,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { ExamType, Subject, Question } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || 'dummy_key' });
 
 /**
  * Sanitizes a raw string from the LLM to be valid JSON.
