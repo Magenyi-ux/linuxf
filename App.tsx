@@ -139,9 +139,12 @@ const App: React.FC = () => {
   const years = Array.from({ length: 15 }, (_, i) => (2024 - i).toString());
 
   const handleStart = (bookId: string) => {
-     if (books[bookId]) {
-         setQuestions(books[bookId].questions);
-         setCurrentSources(books[bookId].sources || []);
+     const book = books[bookId];
+     if (book) {
+         setQuestions(book.questions);
+         setCurrentSources(book.sources || []);
+         setSelectedExam(book.examType);
+         setSelectedSubject(book.subject);
          setActiveBookId(bookId);
          setScreen('PRACTICE');
      }
