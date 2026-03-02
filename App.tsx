@@ -136,7 +136,7 @@ const App: React.FC = () => {
     }
   };
 
-  const years = Array.from({ length: 15 }, (_, i) => (2024 - i).toString());
+  const years = Array.from({ length: 15 }, (_, i) => (2025 - i).toString());
 
   const handleStart = (bookId: string) => {
      if (books[bookId]) {

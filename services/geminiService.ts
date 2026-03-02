@@ -1,6 +1,7 @@
 
 import { GoogleGenAI } from "@google/genai";
 import { ExamType, Subject, Question } from "../types";
+import { fallbackData } from "./fallbackData";
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || 'dummy_key' });
 
@@ -68,6 +69,15 @@ export const fetchExamQuestions = async (
   year: string,
   count: number = 10
 ): Promise<{ questions: Question[], sources: string[] }> => {
+  // Check local fallback data first
+  if (fallbackData[examType]?.[subject]?.[year]) {
+      console.log(`Using local fallback data for ${examType} ${subject} ${year}`);
+      return {
+          questions: fallbackData[examType][subject][year],
+          sources: ["Local Past Questions Bank"]
+      };
+  }
+
   const model = "gemini-2.5-flash";
 
   const yearContext = year === 'Random' 
