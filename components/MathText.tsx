@@ -1,5 +1,6 @@
 import React from 'react';
 import katex from 'katex';
+import DOMPurify from 'dompurify';
 
 interface MathTextProps {
   text: string;
@@ -37,7 +38,9 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
               throwOnError: false,
               displayMode: false
             });
-            return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
+            // Sanitize KaTeX output as defense-in-depth against XSS
+            const cleanHtml = DOMPurify.sanitize(html);
+            return <span key={i} dangerouslySetInnerHTML={{ __html: cleanHtml }} className="mx-1" />;
           } catch (e) {
             // Fallback if KaTeX fails
             return <span key={i} className="text-red-500">{part}</span>;
