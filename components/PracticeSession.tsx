@@ -109,10 +109,23 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
       </div>
 
       {/* Question */}
-      <div className="mb-12 bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
-            <MathText text={currentQuestion.text} />
-        </h2>
+      <div className="mb-12 space-y-4">
+        {currentQuestion.instruction && (
+            <div className="bg-brand-50/50 p-6 rounded-[32px] border border-brand-100/50">
+                <h3 className="text-sm font-black text-brand-600 uppercase tracking-[0.2em] mb-2 flex items-center gap-2">
+                    <HelpCircle className="w-4 h-4" />
+                    Instructions
+                </h3>
+                <div className="text-lg font-bold text-gray-700 leading-relaxed italic">
+                    <MathText text={currentQuestion.instruction} />
+                </div>
+            </div>
+        )}
+        <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
+                <MathText text={currentQuestion.text} />
+            </h2>
+        </div>
       </div>
 
       {/* Options */}
