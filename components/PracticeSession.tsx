@@ -88,35 +88,39 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-6">
-      {/* Top Bar */}
-      <div className="flex items-center justify-between mb-8">
-        <button onClick={onBack} className="p-3 bg-white border border-gray-100 rounded-2xl text-gray-400 hover:text-brand-600 transition-all shadow-sm">
-            <ArrowLeft className="w-6 h-6" />
+    <div className="fixed inset-0 bg-[#fafafa] z-[60] flex flex-col animate-scale-in">
+      {/* App-style Practice Header */}
+      <header className="h-16 border-b border-gray-100 flex items-center justify-between px-6 bg-white">
+        <button onClick={onBack} className="p-2 -ml-2 hover:bg-gray-50 rounded-full transition-colors">
+            <XCircle className="w-6 h-6 text-gray-400" />
         </button>
         <div className="flex flex-col items-center">
-             <span className="text-[10px] font-black text-brand-600 tracking-[0.2em] uppercase mb-1">{mode === 'STUDY' ? 'Study Mode' : 'Practice Test'}</span>
-             <div className="bg-white px-5 py-1.5 rounded-full border border-gray-100 shadow-sm font-black text-gray-900 text-lg">
-                {currentIndex + 1} <span className="text-gray-300 mx-1">/</span> {totalQuestions}
+             <span className="text-[10px] font-black text-brand-600 tracking-widest uppercase">{mode} MODE</span>
+             <div className="font-black text-gray-900">
+                {currentIndex + 1} of {totalQuestions}
              </div>
         </div>
-        <div className="w-12"></div>
-      </div>
+        <div className="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 font-black text-xs">
+            {Math.round(progress)}%
+        </div>
+      </header>
 
-      {/* Progress Line */}
-      <div className="w-full bg-gray-100 h-3 rounded-full mb-12 shadow-inner overflow-hidden">
-        <div className="h-full bg-gradient-to-r from-brand-600 to-accent-500 rounded-full transition-all duration-500" style={{ width: `${progress}%` }}></div>
-      </div>
+      <div className="flex-1 overflow-y-auto">
+        <div className="max-w-xl mx-auto px-6 py-8">
+            {/* Progress Bar - Minimal */}
+            <div className="w-full bg-gray-100 h-1.5 rounded-full mb-8 overflow-hidden">
+                <div className="h-full bg-brand-600 transition-all duration-500" style={{ width: `${progress}%` }}></div>
+            </div>
 
-      {/* Question */}
-      <div className="mb-12 bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
-            <MathText text={currentQuestion.text} />
-        </h2>
-      </div>
+            {/* Question Card */}
+            <div className="mb-8">
+                <div className="text-xl font-bold text-gray-900 leading-relaxed bg-white p-6 rounded-[32px] border border-gray-100 shadow-sm">
+                    <MathText text={currentQuestion.text} />
+                </div>
+            </div>
 
-      {/* Options */}
-      <div className="grid grid-cols-1 gap-4 mb-12">
+            {/* Options */}
+            <div className="grid grid-cols-1 gap-3 mb-10">
         {currentQuestion.options.map((option, idx) => (
             <button
                 key={idx}
@@ -182,37 +186,36 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
           </div>
       )}
 
-      {/* Footer Actions */}
-      <div className="fixed bottom-0 left-0 w-full glass-panel border-t border-gray-100 p-6 z-40">
-          <div className="max-w-4xl mx-auto flex items-center justify-between gap-6">
+            {/* Footer Actions */}
+            <div className="h-32"></div>
+        </div>
+      </div>
+
+      <div className="bg-white border-t border-gray-100 p-6 pb-safe">
+          <div className="max-w-xl mx-auto flex items-center justify-between gap-4">
               {mode === 'STUDY' && !isAnswered ? (
                   <button 
                     onClick={handleInstantExplain}
-                    className="flex-1 py-5 bg-gray-50 text-gray-500 font-black rounded-[24px] hover:bg-brand-50 hover:text-brand-600 transition-all flex items-center justify-center gap-3"
+                    className="flex-1 py-4 bg-gray-50 text-gray-400 font-black rounded-2xl flex items-center justify-center gap-2"
                   >
-                      <HelpCircle className="w-6 h-6" />
-                      REVEAL ANSWER
+                      REVEAL
                   </button>
-              ) : (
-                  <div className="flex-1 hidden md:block"></div>
-              )}
+              ) : null}
 
-              {isAnswered ? (
-                   <button 
-                    onClick={handleNext}
-                    className="flex-1 py-5 bg-brand-600 text-white font-black rounded-[24px] hover:bg-brand-700 shadow-2xl shadow-brand-500/40 transition-all flex items-center justify-center gap-3 active:scale-95"
-                  >
-                      {currentIndex === totalQuestions - 1 ? 'COMPLETE SESSION' : 'NEXT QUESTION'}
-                      <ArrowRight className="w-6 h-6" />
-                  </button>
-              ) : (
-                  <div className="text-center text-sm text-gray-400 font-black tracking-widest uppercase w-full hidden sm:block">
-                      CHOOSE AN OPTION
-                  </div>
-              )}
+              <button
+                onClick={handleNext}
+                disabled={!isAnswered}
+                className={`flex-[2] py-4 font-black rounded-2xl transition-all flex items-center justify-center gap-2 ${
+                    isAnswered
+                    ? 'bg-brand-600 text-white shadow-lg shadow-brand-500/20'
+                    : 'bg-gray-100 text-gray-300'
+                }`}
+              >
+                  {currentIndex === totalQuestions - 1 ? 'FINISH' : 'CONTINUE'}
+                  <ArrowRight className="w-5 h-5" />
+              </button>
           </div>
       </div>
-      <div className="h-24"></div>
     </div>
   );
 };
