@@ -1,5 +1,6 @@
 import React from 'react';
 import katex from 'katex';
+import DOMPurify from 'dompurify';
 
 interface MathTextProps {
   text: string;
@@ -37,7 +38,14 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
               throwOnError: false,
               displayMode: false
             });
-            return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
+
+            // Sanitize the generated HTML to prevent XSS while allowing KaTeX's SVG-based output
+            const sanitizedHtml = DOMPurify.sanitize(html, {
+              ALLOWED_TAGS: ['svg', 'use', 'path', 'span', 'i', 'b', 'strong', 'em', 'small', 'sub', 'sup'],
+              ALLOWED_ATTR: ['style', 'd', 'viewBox', 'fill', 'class', 'aria-hidden', 'role', 'width', 'height', 'x', 'y', 'xlink:href', 'preserveAspectRatio']
+            });
+
+            return <span key={i} dangerouslySetInnerHTML={{ __html: sanitizedHtml }} className="mx-1" />;
           } catch (e) {
             // Fallback if KaTeX fails
             return <span key={i} className="text-red-500">{part}</span>;
