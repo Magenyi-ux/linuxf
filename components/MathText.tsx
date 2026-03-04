@@ -22,20 +22,24 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
     });
   };
 
-  // 2. Split by LaTeX delimiters ($...$)
-  // The regex captures the content inside the $ signs
-  const parts = text.split(/(\$[^$]+\$)/g);
+  // 2. Split by LaTeX delimiters ($...$, \(...\), \[...\])
+  const parts = text.split(/(\$[^$]+\$|\\\([^)]+\\\)|\\\[[^\]]+\\\])/g);
 
   return (
     <div className={`math-content whitespace-pre-wrap ${className}`}>
       {parts.map((part, i) => {
-        if (part.startsWith('$') && part.endsWith('$')) {
+        const isInlineMath = (part.startsWith('$') && part.endsWith('$')) || (part.startsWith('\\(') && part.endsWith('\\)'));
+        const isBlockMath = part.startsWith('\\[') && part.endsWith('\\]');
+
+        if (isInlineMath || isBlockMath) {
           // This is a math segment
-          const math = part.slice(1, -1);
+          const math = isInlineMath
+            ? (part.startsWith('$') ? part.slice(1, -1) : part.slice(2, -2))
+            : part.slice(2, -2);
           try {
             const html = katex.renderToString(math, {
               throwOnError: false,
-              displayMode: false
+              displayMode: isBlockMath
             });
             return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
           } catch (e) {
