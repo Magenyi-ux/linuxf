@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>West African Exam Prep AI</title>
+    <title>Examply - West African Exam Prep</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/react-pdf@9.1.1/dist/Page/TextLayer.css" />
     <link rel="stylesheet" href="https://unpkg.com/react-pdf@9.1.1/dist/Page/AnnotationLayer.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
@@ -14,20 +14,28 @@
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
             },
             colors: {
               brand: {
-                50: '#f5f7ff',
-                100: '#ebf0ff',
-                500: '#6366f1',
-                600: '#4f46e5',
-                700: '#4338ca',
-                900: '#312e81',
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                200: '#e2e8f0',
+                500: '#64748b',
+                600: '#475569',
+                700: '#334155',
+                900: '#0f172a',
+              },
+              primary: {
+                50: '#f5f3ff',
+                100: '#ede9fe',
+                500: '#8b5cf6',
+                600: '#7c3aed',
+                700: '#6d28d9',
               },
               accent: {
-                500: '#f43f5e',
-                600: '#e11d48',
+                500: '#0f172a',
+                600: '#020617',
               }
             }
           }
@@ -36,15 +44,11 @@
     </script>
     <style>
       body {
-        background-color: #fafafa;
-        background-image:
-          radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.05) 0px, transparent 50%),
-          radial-gradient(at 100% 0%, rgba(244, 63, 94, 0.05) 0px, transparent 50%);
+        background-color: #ffffff;
       }
       .glass-panel {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
       }
       /* Custom Scrollbar for Sidebar */
       .sidebar-scrollbar::-webkit-scrollbar {

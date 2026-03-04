@@ -27,7 +27,7 @@ export const GamificationBar: React.FC<GamificationBarProps> = ({ profile }) => 
 
             {/* XP */}
             <div className="flex items-center gap-1.5">
-                <Star className="w-4 h-4 text-brand-500 fill-brand-500" />
+                <Star className="w-4 h-4 text-primary-500 fill-primary-500" />
                 <span className="text-sm font-bold text-gray-700">{profile.xp} <span className="text-xs font-normal text-gray-500">XP</span></span>
             </div>
 
