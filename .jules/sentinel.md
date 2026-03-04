@@ -1,0 +1,4 @@
+## 2025-05-15 - [XSS Prevention in LaTeX Rendering]
+**Vulnerability:** XSS through MathText component when rendering LaTeX. The component used `dangerouslySetInnerHTML` without sanitizing the output from `katex.renderToString`. Although KaTeX itself is generally secure, it could be bypassed or used to inject content if not properly handled, especially when using vulnerable versions of KaTeX (0.16.9 and earlier).
+**Learning:** KaTeX output should always be sanitized with a tool like DOMPurify to ensure that only expected HTML/SVG tags are rendered. Configuring DOMPurify to allow specific SVG tags and attributes is crucial for maintaining KaTeX functionality.
+**Prevention:** Always use a sanitizer when using `dangerouslySetInnerHTML`. Keep dependencies like KaTeX updated to the latest versions to mitigate known vulnerabilities.

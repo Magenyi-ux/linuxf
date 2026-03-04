@@ -9,16 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-dom": "^19.2.3",
     "@google/genai": "^1.33.0",
-    "react": "^19.2.3",
+    "dompurify": "^3.2.4",
+    "katex": "0.16.21",
     "lucide-react": "^0.560.0",
-    "recharts": "^3.5.1",
     "pdfjs-dist": "4.4.168",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-pdf": "9.1.1",
-    "katex": "0.16.9"
+    "recharts": "^3.5.1"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.5",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",
