@@ -5,13 +5,12 @@ import { ExamCard } from './components/ExamCard';
 import { LoadingScreen } from './components/LoadingScreen';
 import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
-import { ChatBot } from './components/ChatBot';
 import { fetchExamQuestions } from './services/geminiService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
-  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Home, ArrowLeft
+  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Home, ArrowLeft, Search
 } from 'lucide-react';
 
 // Stream Definitions
@@ -71,9 +70,11 @@ const App: React.FC = () => {
   const [practiceMode, setPracticeMode] = useState<'STUDY' | 'TEST'>('STUDY');
   const [showLibrary, setShowLibrary] = useState(false);
   const [activeBookId, setActiveBookId] = useState<string | null>(null);
+  const [isSearching, setIsSearching] = useState(false);
   
   const [lastScore, setLastScore] = useState(0);
   const [lastTotal, setLastTotal] = useState(0);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const [books, setBooks] = useState<Record<string, Book>>({}); 
 
@@ -138,6 +139,17 @@ const App: React.FC = () => {
 
   const years = Array.from({ length: 15 }, (_, i) => (2025 - i).toString());
 
+  const allSubjectsWithExams = Object.values(ExamType).flatMap(exam =>
+    Object.values(Subject).map(subject => ({ exam, subject }))
+  );
+
+  const filteredResults = searchQuery.trim().length > 0
+    ? allSubjectsWithExams.filter(item =>
+        item.subject.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        item.exam.toLowerCase().includes(searchQuery.toLowerCase())
+      ).slice(0, 6)
+    : [];
+
   const handleStart = (bookId: string) => {
      if (books[bookId]) {
          setQuestions(books[bookId].questions);
@@ -201,45 +213,46 @@ const App: React.FC = () => {
     setSelectedStream(null);
     setSelectedSubject(null);
     setActiveBookId(null);
+    setSearchQuery('');
   };
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-gray-900 font-sans flex flex-col relative pb-24 md:pb-8">
+    <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col relative pb-24 md:pb-8">
       {/* Dynamic Header */}
       <header className="sticky top-0 z-40 w-full glass-panel border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer group" onClick={resetApp}>
-            <div className="bg-gradient-to-br from-brand-600 to-accent-500 p-2.5 rounded-2xl shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+            <div className="bg-primary-600 p-2.5 rounded-xl transition-transform">
                 <GraduationCap className="w-7 h-7 text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-black text-gray-900 leading-tight tracking-tight">EXAMLY</span>
-              <span className="text-[10px] font-bold text-accent-500 uppercase tracking-[0.2em]">Prep AI</span>
+              <span className="text-xl font-bold text-gray-900 leading-tight tracking-tight">Examply</span>
+              <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest">Mastery</span>
             </div>
           </div>
           
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8">
              <button
                 onClick={resetApp}
-                className={`text-sm font-bold transition-colors ${screen === 'HOME' ? 'text-brand-600' : 'text-gray-400 hover:text-gray-600'}`}
+                className={`text-sm font-semibold transition-colors ${screen === 'HOME' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
              >
                 Home
              </button>
              <button
                 onClick={() => setShowLibrary(true)}
-                className={`text-sm font-bold transition-colors ${showLibrary ? 'text-brand-600' : 'text-gray-400 hover:text-gray-600'}`}
+                className={`text-sm font-semibold transition-colors ${showLibrary ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
              >
-                Library
+                My Library
              </button>
           </div>
 
           <button 
             onClick={() => setShowLibrary(true)}
-            className="md:hidden p-2 bg-gray-100 rounded-xl relative"
+            className="md:hidden p-2.5 bg-gray-50 rounded-xl relative border border-gray-100"
           >
              <Library className="w-5 h-5 text-gray-600" />
              {Object.keys(books).length > 0 && (
-               <span className="absolute -top-1 -right-1 w-4 h-4 bg-accent-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
+               <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary-600 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
                  {Object.keys(books).length}
                </span>
              )}
@@ -248,25 +261,28 @@ const App: React.FC = () => {
       </header>
 
       {/* Bottom Nav for Mobile */}
-      <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 md:hidden w-[90%] max-w-sm">
-        <div className="glass-panel rounded-3xl shadow-2xl border border-white/50 p-2 flex items-center justify-around">
+      <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-gray-100 bg-white px-6 py-3">
+        <div className="flex items-center justify-around">
           <button
             onClick={resetApp}
-            className={`p-4 rounded-2xl transition-all ${screen === 'HOME' ? 'bg-brand-600 text-white shadow-lg shadow-brand-500/30' : 'text-gray-400'}`}
+            className={`flex flex-col items-center gap-1 ${screen === 'HOME' ? 'text-primary-600' : 'text-gray-400'}`}
           >
             <Home className="w-6 h-6" />
+            <span className="text-[10px] font-bold">Home</span>
           </button>
           <button
             onClick={() => setShowLibrary(true)}
-            className={`p-4 rounded-2xl transition-all ${showLibrary ? 'bg-brand-600 text-white shadow-lg shadow-brand-500/30' : 'text-gray-400'}`}
+            className={`flex flex-col items-center gap-1 ${showLibrary ? 'text-primary-600' : 'text-gray-400'}`}
           >
             <Library className="w-6 h-6" />
+            <span className="text-[10px] font-bold">Library</span>
           </button>
           <button
             onClick={() => {}}
-            className="p-4 rounded-2xl text-gray-400"
+            className="flex flex-col items-center gap-1 text-gray-400"
           >
             <Trophy className="w-6 h-6" />
+            <span className="text-[10px] font-bold">Awards</span>
           </button>
         </div>
       </nav>
@@ -274,43 +290,81 @@ const App: React.FC = () => {
       <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-12 relative">
         
         {screen === 'HOME' && (
-          <div className="animate-fade-in">
-            <div className="flex flex-col md:flex-row items-center gap-12 mb-20 mt-8">
-              <div className="flex-1 text-center md:text-left">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-xs font-bold mb-6 animate-bounce">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
-                  </span>
-                  OFFLINE ACCESS READY
-                </div>
-                <h1 className="text-5xl md:text-7xl font-black text-gray-900 mb-6 leading-[1.1] tracking-tight">
-                  Master Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-accent-500">Exams</span> with AI.
-                </h1>
-                <p className="text-xl text-gray-500 max-w-xl font-medium leading-relaxed">
-                  The smartest way to prepare for WAEC, JAMB & NECO. Download practice packs and study anywhere, even without internet.
-                </p>
+          <div className="animate-fade-in max-w-3xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100 text-gray-400 text-[10px] font-bold mb-6 tracking-widest uppercase">
+                Offline Access Available
               </div>
-              <div className="hidden md:flex flex-1 justify-center relative">
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-brand-100 rounded-full blur-[80px] opacity-50"></div>
-                  <div className="relative glass-panel p-8 rounded-[40px] shadow-2xl border border-white/50 max-w-xs rotate-3 hover:rotate-0 transition-transform duration-500">
-                      <div className="bg-brand-500 w-full aspect-square rounded-3xl mb-4 flex items-center justify-center">
-                          <Trophy className="w-20 h-20 text-white" />
+              <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
+                Prepare for your exams.
+              </h1>
+              <p className="text-lg text-gray-500 font-medium leading-relaxed max-w-xl mx-auto mb-10">
+                The smartest way to prepare for WAEC, JAMB & NECO. Download practice packs and study anywhere.
+              </p>
+
+              <div className="relative max-w-xl mx-auto">
+                <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none">
+                  <Search className="w-5 h-5 text-gray-400" />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Search subjects (e.g. Mathematics, Physics...)"
+                  className="w-full pl-14 pr-6 py-5 bg-white border border-gray-200 rounded-2xl shadow-sm focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all font-medium text-gray-900"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onFocus={() => setIsSearching(true)}
+                />
+
+                {isSearching && searchQuery.trim().length > 0 && (
+                  <div className="absolute top-full left-0 right-0 mt-3 bg-white border border-gray-100 rounded-2xl shadow-xl z-50 overflow-hidden text-left">
+                    {filteredResults.length > 0 ? (
+                      filteredResults.map((res, i) => (
+                        <button
+                          key={`${res.exam}-${res.subject}`}
+                          onClick={() => {
+                            setSelectedExam(res.exam);
+                            setSelectedSubject(res.subject);
+                            setScreen('YEAR_SELECT');
+                            setSearchQuery('');
+                            setIsSearching(false);
+                          }}
+                          className={`w-full flex items-center justify-between px-6 py-4 hover:bg-gray-50 transition-colors border-b border-gray-50 last:border-0`}
+                        >
+                          <div className="flex items-center gap-4">
+                            <div className="p-2 bg-gray-50 rounded-lg text-gray-400">
+                              {getSubjectIcon(res.subject)}
+                            </div>
+                            <span className="font-bold text-gray-900">{res.subject}</span>
+                          </div>
+                          <span className="text-[10px] font-black text-primary-600 bg-primary-50 px-2.5 py-1 rounded-md">
+                            {res.exam}
+                          </span>
+                        </button>
+                      ))
+                    ) : (
+                      <div className="px-6 py-10 text-center text-gray-400 font-medium">
+                        No subjects found matching "{searchQuery}"
                       </div>
-                      <div className="space-y-2">
-                          <div className="h-4 bg-gray-100 rounded-full w-3/4"></div>
-                          <div className="h-4 bg-gray-50 rounded-full w-1/2"></div>
-                      </div>
+                    )}
                   </div>
+                )}
+                {isSearching && (
+                  <div
+                    className="fixed inset-0 z-40 bg-transparent"
+                    onClick={() => setIsSearching(false)}
+                  ></div>
+                )}
               </div>
             </div>
 
             <div className="mb-12">
-              <h2 className="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
-                Select Your Exam
-                <div className="h-px flex-1 bg-gray-100"></div>
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="flex items-center gap-4 mb-8">
+                <h2 className="text-sm font-bold text-gray-400 uppercase tracking-[0.2em] whitespace-nowrap">
+                  Browse by Exam
+                </h2>
+                <div className="h-px w-full bg-gray-100"></div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <ExamCard
                   type={ExamType.JAMB}
                   description="Joint Admissions & Matriculation Board"
@@ -336,7 +390,7 @@ const App: React.FC = () => {
 
         {screen === 'STREAM_SELECT' && (
           <div className="animate-fade-in max-w-4xl mx-auto">
-             <button onClick={() => setScreen('HOME')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-brand-600 transition-colors">
+             <button onClick={() => setScreen('HOME')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Back to Exams
             </button>
             <h2 className="text-4xl font-black text-gray-900 mb-2">Select Department</h2>
@@ -362,15 +416,15 @@ const App: React.FC = () => {
 
         {screen === 'SUBJECT_SELECT' && selectedStream && (
           <div className="animate-fade-in max-w-4xl mx-auto">
-            <button onClick={() => setScreen('STREAM_SELECT')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-brand-600 transition-colors">
+            <button onClick={() => setScreen('STREAM_SELECT')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Back to Departments
             </button>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
                  <div>
-                    <h2 className="text-4xl font-black text-gray-900 mb-2">Pick a Subject</h2>
+                    <h2 className="text-4xl font-bold text-gray-900 mb-2 tracking-tight">Pick a Subject</h2>
                     <p className="text-lg text-gray-500 font-medium">Which subject are we crushing today?</p>
                  </div>
-                 <span className="inline-flex px-4 py-2 bg-brand-50 rounded-2xl text-xs font-black text-brand-600 uppercase tracking-wider border border-brand-100">
+                 <span className="inline-flex px-4 py-2 bg-primary-50 rounded-2xl text-xs font-bold text-primary-600 uppercase tracking-widest border border-primary-100">
                     {STREAMS.find(s => s.id === selectedStream)?.label}
                  </span>
             </div>
@@ -380,9 +434,9 @@ const App: React.FC = () => {
                 <button
                   key={subject}
                   onClick={() => { setSelectedSubject(subject); setScreen('YEAR_SELECT'); }}
-                  className="flex items-center p-5 bg-white border border-gray-100 rounded-[24px] hover:border-brand-500 hover:shadow-xl transition-all text-left group"
+                  className="flex items-center p-5 bg-white border border-gray-100 rounded-2xl hover:border-primary-500 hover:shadow-lg transition-all text-left group"
                 >
-                  <div className="w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center text-gray-400 mr-4 group-hover:bg-brand-600 group-hover:text-white transition-all shadow-sm">
+                  <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 mr-4 group-hover:bg-primary-50 group-hover:text-primary-600 transition-all">
                       {getSubjectIcon(subject)}
                   </div>
                   <span className="font-bold text-gray-700 group-hover:text-gray-900">{subject}</span>
@@ -394,11 +448,11 @@ const App: React.FC = () => {
 
         {screen === 'YEAR_SELECT' && selectedExam && selectedSubject && (
             <div className="animate-fade-in max-w-4xl mx-auto">
-                <button onClick={() => setScreen('SUBJECT_SELECT')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-brand-600 transition-colors">
+                <button onClick={() => setScreen('SUBJECT_SELECT')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
                     <ArrowLeft className="w-4 h-4" /> Back to Subjects
                 </button>
 
-                <div className="bg-gradient-to-r from-brand-600 to-brand-900 p-8 rounded-[40px] mb-10 shadow-2xl shadow-brand-500/20 relative overflow-hidden">
+                <div className="bg-gradient-to-r from-primary-600 to-primary-900 p-8 rounded-[40px] mb-10 shadow-2xl shadow-primary-500/20 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
                     <div className="relative z-10 flex items-center justify-between">
                         <div>
@@ -420,13 +474,13 @@ const App: React.FC = () => {
                      <div className="flex bg-gray-100 p-1.5 rounded-2xl">
                         <button 
                             onClick={() => setPracticeMode('STUDY')}
-                            className={`px-5 py-2 text-xs font-black rounded-xl transition-all ${practiceMode === 'STUDY' ? 'bg-white shadow-md text-brand-600' : 'text-gray-500'}`}
+                            className={`px-5 py-2 text-xs font-black rounded-xl transition-all ${practiceMode === 'STUDY' ? 'bg-white shadow-md text-primary-600' : 'text-gray-500'}`}
                         >
                             STUDY
                         </button>
                         <button 
                             onClick={() => setPracticeMode('TEST')}
-                            className={`px-5 py-2 text-xs font-black rounded-xl transition-all ${practiceMode === 'TEST' ? 'bg-white shadow-md text-brand-600' : 'text-gray-500'}`}
+                            className={`px-5 py-2 text-xs font-black rounded-xl transition-all ${practiceMode === 'TEST' ? 'bg-white shadow-md text-primary-600' : 'text-gray-500'}`}
                         >
                             TEST
                         </button>
@@ -440,9 +494,9 @@ const App: React.FC = () => {
                         const book = books[bookId];
 
                         return (
-                            <div key={year} className="group bg-white p-5 rounded-[32px] border border-gray-100 hover:border-brand-200 hover:shadow-xl transition-all flex items-center justify-between">
+                            <div key={year} className="group bg-white p-5 rounded-[32px] border border-gray-100 hover:border-primary-200 hover:shadow-xl transition-all flex items-center justify-between">
                                 <div className="flex items-center gap-5">
-                                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center font-black text-xl shadow-inner ${isDownloaded ? 'bg-brand-50 text-brand-600' : 'bg-gray-50 text-gray-300'}`}>
+                                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center font-black text-xl shadow-inner ${isDownloaded ? 'bg-primary-50 text-primary-600' : 'bg-gray-50 text-gray-300'}`}>
                                         {year.slice(2)}
                                     </div>
                                     <div>
@@ -450,9 +504,9 @@ const App: React.FC = () => {
                                         <div className="text-xs font-bold flex items-center gap-3">
                                             {isDownloaded ? (
                                                 <>
-                                                    <span className="text-accent-500 flex items-center gap-1"><WifiOff className="w-3.5 h-3.5"/> OFFLINE READY</span>
+                                                    <span className="text-primary-600 flex items-center gap-1"><WifiOff className="w-3.5 h-3.5"/> OFFLINE READY</span>
                                                     {book.bestScore !== undefined && book.attempts > 0 && (
-                                                        <span className="text-brand-500 flex items-center gap-1">
+                                                        <span className="text-primary-500 flex items-center gap-1">
                                                             <Trophy className="w-3.5 h-3.5" /> Best: {book.bestScore}/{book.questions.length}
                                                         </span>
                                                     )}
@@ -469,13 +523,13 @@ const App: React.FC = () => {
                                         <>
                                             <button 
                                                 onClick={() => handleStart(bookId)}
-                                                className="px-6 py-3 bg-brand-600 text-white font-black rounded-2xl hover:bg-brand-700 shadow-lg shadow-brand-500/20 transition-all flex items-center gap-2"
+                                                className="px-6 py-3 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all flex items-center gap-2"
                                             >
                                                 <Play className="w-4 h-4 fill-current" /> START
                                             </button>
                                             <button 
                                                 onClick={() => { if(confirm('Delete this pack?')) deleteBook(bookId); }}
-                                                className="p-3 text-gray-300 hover:text-accent-600 hover:bg-accent-50 rounded-2xl transition-all"
+                                                className="p-3 text-gray-300 hover:text-red-600 hover:bg-red-50 rounded-2xl transition-all"
                                             >
                                                 <Trash2 className="w-5 h-5" />
                                             </button>
@@ -483,7 +537,7 @@ const App: React.FC = () => {
                                     ) : (
                                         <button 
                                             onClick={() => handleDownload(year)}
-                                            className="px-6 py-3 bg-gray-50 text-gray-600 font-black rounded-2xl hover:bg-brand-600 hover:text-white transition-all flex items-center gap-2 group-hover:shadow-md"
+                                            className="px-6 py-3 bg-gray-50 text-gray-600 font-black rounded-2xl hover:bg-primary-600 hover:text-white transition-all flex items-center gap-2 group-hover:shadow-md"
                                         >
                                             <DownloadCloud className="w-4 h-4" /> DOWNLOAD
                                         </button>
@@ -530,8 +584,8 @@ const App: React.FC = () => {
             <div className="bg-[#fafafa] rounded-[40px] w-full max-w-xl max-h-[85vh] flex flex-col shadow-[0_0_50px_rgba(0,0,0,0.1)] overflow-hidden animate-scale-in border border-white">
                 <div className="px-8 py-6 border-b border-gray-100 flex justify-between items-center bg-white">
                     <div className="flex items-center gap-4">
-                        <div className="bg-brand-50 p-3 rounded-2xl">
-                          <Library className="w-6 h-6 text-brand-600" />
+                        <div className="bg-primary-50 p-3 rounded-2xl">
+                          <Library className="w-6 h-6 text-primary-600" />
                         </div>
                         <div>
                           <h3 className="font-black text-gray-900 text-xl">My Library</h3>
@@ -554,20 +608,20 @@ const App: React.FC = () => {
                         </div>
                     ) : (
                         (Object.values(books) as Book[]).sort((a,b) => b.dateCreated - a.dateCreated).map((book) => (
-                            <div key={book.id} className="flex items-center justify-between p-5 bg-white border border-gray-100 rounded-[32px] hover:border-brand-300 transition-all shadow-sm hover:shadow-xl group">
+                            <div key={book.id} className="flex items-center justify-between p-5 bg-white border border-gray-100 rounded-[32px] hover:border-primary-300 transition-all shadow-sm hover:shadow-xl group">
                                 <div className="flex items-center gap-5">
-                                    <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center text-gray-300 font-black text-lg group-hover:bg-brand-50 group-hover:text-brand-600 transition-all relative">
+                                    <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center text-gray-300 font-black text-lg group-hover:bg-primary-50 group-hover:text-primary-600 transition-all relative">
                                         {book.year.slice(2)}
                                         {book.bestScore !== undefined && book.attempts > 0 && book.bestScore > (book.questions.length * 0.8) && (
-                                            <div className="absolute -top-1 -right-1 w-4 h-4 bg-accent-500 rounded-full border-2 border-white animate-pulse"></div>
+                                            <div className="absolute -top-1 -right-1 w-4 h-4 bg-primary-600 rounded-full border-2 border-white animate-pulse"></div>
                                         )}
                                     </div>
                                     <div>
                                         <div className="font-black text-gray-900 text-lg leading-tight">{book.subject}</div>
                                         <div className="text-xs text-gray-400 font-black flex items-center gap-3 mt-1">
-                                            <span className="text-brand-600">{book.examType}</span>
+                                            <span className="text-primary-600">{book.examType}</span>
                                             {book.bestScore !== undefined && book.attempts > 0 && (
-                                                <span className="text-accent-500 flex items-center gap-1">
+                                                <span className="text-primary-600 flex items-center gap-1">
                                                     <Trophy className="w-3.5 h-3.5" />
                                                     {book.bestScore}/{book.questions.length}
                                                 </span>
@@ -578,7 +632,7 @@ const App: React.FC = () => {
                                 <div className="flex gap-3">
                                     <button 
                                         onClick={() => { handleStart(book.id); setShowLibrary(false); }} 
-                                        className="p-3.5 bg-brand-600 text-white rounded-2xl hover:bg-brand-700 shadow-lg shadow-brand-500/20 transition-all"
+                                        className="p-3.5 bg-primary-600 text-white rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all"
                                         title="Start Practice"
                                     >
                                         <Play className="w-4 h-4 fill-current" />
@@ -589,7 +643,7 @@ const App: React.FC = () => {
                                                 deleteBook(book.id);
                                             }
                                         }} 
-                                        className="p-3.5 bg-gray-50 text-gray-300 rounded-2xl hover:bg-accent-50 hover:text-accent-600 transition-all"
+                                        className="p-3.5 bg-gray-50 text-gray-300 rounded-2xl hover:bg-red-50 hover:text-red-600 transition-all"
                                         title="Delete Pack"
                                     >
                                         <Trash2 className="w-4 h-4" />
@@ -600,7 +654,7 @@ const App: React.FC = () => {
                     )}
                 </div>
                  <div className="p-8 bg-white border-t border-gray-50 text-center">
-                    <button onClick={() => setShowLibrary(false)} className="w-full py-4 bg-gray-50 text-sm font-black text-gray-400 rounded-2xl hover:text-brand-600 hover:bg-brand-50 transition-all">
+                    <button onClick={() => setShowLibrary(false)} className="w-full py-4 bg-gray-50 text-sm font-black text-gray-400 rounded-2xl hover:text-primary-600 hover:bg-primary-50 transition-all">
                         CLOSE LIBRARY
                     </button>
                 </div>
@@ -608,8 +662,6 @@ const App: React.FC = () => {
         </div>
       )}
 
-      {/* AI Chat Bot Overlay */}
-      <ChatBot />
     </div>
   );
 };
