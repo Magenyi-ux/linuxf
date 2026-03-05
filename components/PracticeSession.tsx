@@ -110,9 +110,19 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
 
       {/* Question */}
       <div className="mb-12 bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-6">
             <MathText text={currentQuestion.text} />
         </h2>
+        {currentQuestion.imageUrl && (
+            <div className="mt-6 rounded-2xl overflow-hidden border border-gray-100 bg-gray-50 flex justify-center p-4">
+                <img
+                    src={currentQuestion.imageUrl}
+                    alt="Question visual"
+                    className="max-h-[400px] object-contain rounded-lg"
+                    onError={(e) => (e.currentTarget.style.display = 'none')}
+                />
+            </div>
+        )}
       </div>
 
       {/* Options */}

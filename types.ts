@@ -39,6 +39,7 @@ export interface Question {
   options: string[];
   correctOptionIndex: number;
   explanation: string;
+  imageUrl?: string;
 }
 
 export interface Book {

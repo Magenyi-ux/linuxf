@@ -1,3 +1,4 @@
+
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import fs from 'fs';
@@ -10,6 +11,9 @@ const SUBJECT_MAPPING = {
     'Physics': 'physics',
     'Chemistry': 'chemistry',
     'Biology': 'biology',
+    'Further Mathematics': 'further-mathematics',
+    'Agricultural Science': 'agricultural-science',
+    'Geography': 'geography',
     'Economics': 'economics',
     'Commerce': 'commerce',
     'Government': 'government',
@@ -17,7 +21,9 @@ const SUBJECT_MAPPING = {
     'History': 'history',
     'Civic Education': 'civic-education',
     'CRS': 'christian-religious-knowledge-crk',
-    'IRS': 'islamic-religious-knowledge-irk'
+    'IRS': 'islamic-religious-knowledge-irk',
+    'French': 'french',
+    'Arabic': 'arabic'
 };
 
 const EXAM_TYPE_MAPPING = {
@@ -39,7 +45,7 @@ async function getAnswerAndExplanation(detailUrl) {
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
             },
-            timeout: 5000
+            timeout: 10000
         });
         const $ = cheerio.load(response.data);
         const answerText = $('body').text().match(/Correct Answer: Option ([A-D])/);
@@ -58,7 +64,7 @@ async function getAnswerAndExplanation(detailUrl) {
     }
 }
 
-async function scrapeQuestions(subject, examType, year, existingHashes, targetCount = 30) {
+async function scrapeQuestions(subject, examType, year, existingHashes, targetCount = 60) {
     const urlSubject = SUBJECT_MAPPING[subject];
     const urlExam = EXAM_TYPE_MAPPING[examType];
 
@@ -76,21 +82,23 @@ async function scrapeQuestions(subject, examType, year, existingHashes, targetCo
                 headers: {
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
                 },
-                timeout: 10000
+                timeout: 15000
             });
             const $ = cheerio.load(response.data);
 
-            const questionBlocks = $('.question-desc');
-            if (questionBlocks.length === 0) {
+            const questionItems = $('.question-item');
+            if (questionItems.length === 0) {
                 hasMore = false;
                 break;
             }
 
-            for (let i = 0; i < questionBlocks.length; i++) {
-                const el = questionBlocks[i];
-                const text = $(el).find('p').text().trim();
+            for (let i = 0; i < questionItems.length; i++) {
+                const el = questionItems[i];
+                const desc = $(el).find('.question-desc');
+                const text = desc.text().trim();
+
                 const options = [];
-                const optionsList = $(el).next('ul.list-unstyled').find('li');
+                const optionsList = $(el).find('ul.list-unstyled li');
 
                 optionsList.each((j, li) => {
                     let optText = $(li).text().trim();
@@ -98,7 +106,16 @@ async function scrapeQuestions(subject, examType, year, existingHashes, targetCo
                     options.push(optText);
                 });
 
-                const detailLink = $(el).nextAll('a').filter((i, a) => $(a).text().includes('View Answer')).first().attr('href');
+                const detailLink = $(el).find('a').filter((i, a) => $(a).text().includes('View Answer')).attr('href');
+
+                // Improved Image detection
+                let imageUrl = desc.find('img').attr('src');
+                if (imageUrl && (imageUrl.includes('storage/serve') || imageUrl.includes('ads'))) {
+                    imageUrl = null;
+                }
+                if (imageUrl && !imageUrl.startsWith('http')) {
+                    imageUrl = 'https://myschool.ng' + imageUrl;
+                }
 
                 if (text && options.length === 4 && detailLink) {
                     const tempQ = { text, options };
@@ -112,25 +129,25 @@ async function scrapeQuestions(subject, examType, year, existingHashes, targetCo
                             text,
                             options,
                             correctOptionIndex,
-                            explanation: explanation + " Simplified Method: Focused preparation leads to success. Review " + subject + " fundamentals."
+                            explanation: explanation + " Simplified Method: Focused preparation leads to success. Review " + subject + " fundamentals.",
+                            imageUrl: imageUrl || undefined
                         });
                         existingHashes.add(hash);
-                        process.stdout.write('.');
+                        process.stdout.write(imageUrl ? 'I' : '.');
                     }
                 }
-
                 if (questions.length >= targetCount) break;
             }
 
+            console.log(`\nPage ${page} complete. Total: ${questions.length}`);
             page++;
-            if (page > 10) hasMore = false;
-            await new Promise(r => setTimeout(r, 100));
+            if (page > 15) hasMore = false;
+            await new Promise(r => setTimeout(r, 200));
         } catch (error) {
-            console.error(`Error page ${page}:`, error.message);
+            console.error(`\nError page ${page}:`, error.message);
             hasMore = false;
         }
     }
-    console.log(`\nDone: ${questions.length}`);
     return questions;
 }
 
@@ -188,24 +205,28 @@ export const fallbackData: FallbackData = {
 
 async function main() {
     const EXAMS = ['JAMB', 'WAEC'];
-    const SUBJECTS = Object.keys(SUBJECT_MAPPING);
-    const YEARS = ['2023', '2022'];
+    const SCIENCE_SUBJECTS = ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Further Mathematics', 'Agricultural Science', 'Geography'];
+    const YEARS = ['2023', '2022', '2021'];
 
     const currentData = { JAMB: {}, WAEC: {}, NECO: {} };
     const existingHashes = new Set();
 
-    for (const exam of EXAMS) {
-        for (const subject of SUBJECTS) {
+    for (const subject of SCIENCE_SUBJECTS) {
+        for (const exam of EXAMS) {
             for (const year of YEARS) {
-                const questions = await scrapeQuestions(subject, exam, year, existingHashes, 30);
+                const questions = await scrapeQuestions(subject, exam, year, existingHashes, 60);
                 if (!currentData[exam][subject]) currentData[exam][subject] = {};
                 currentData[exam][subject][year] = questions;
             }
             saveData(currentData);
         }
     }
+
+    // Mirror NECO from WAEC
     currentData.NECO = JSON.parse(JSON.stringify(currentData.WAEC));
     saveData(currentData);
+
+    console.log("\nScraping complete!");
 }
 
 main();
