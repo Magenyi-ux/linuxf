@@ -1,5 +1,6 @@
 import React from 'react';
 import katex from 'katex';
+import DOMPurify from 'dompurify';
 
 interface MathTextProps {
   text: string;
@@ -23,10 +24,11 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
   };
 
   // 2. Split by LaTeX delimiters ($...$, \(...\), \[...\])
-  const parts = text.split(/(\$[^$]+\$|\\\([^)]+\\\)|\\\[[^\]]+\\\])/g);
+  // We use a non-greedy match for content within delimiters
+  const parts = text.split(/(\$[^$]+\$|\\\(.+?\\\)|\\\[.+?\\\])/gs);
 
   return (
-    <div className={`math-content whitespace-pre-wrap ${className}`}>
+    <div className={`math-content whitespace-pre-wrap break-words ${className}`}>
       {parts.map((part, i) => {
         const isInlineMath = (part.startsWith('$') && part.endsWith('$')) || (part.startsWith('\\(') && part.endsWith('\\)'));
         const isBlockMath = part.startsWith('\\[') && part.endsWith('\\]');
@@ -41,7 +43,14 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
               throwOnError: false,
               displayMode: isBlockMath
             });
-            return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
+
+            // Sanitize KaTeX output as it uses SVG/HTML
+            const sanitizedHtml = DOMPurify.sanitize(html, {
+              USE_PROFILES: { html: true, svg: true },
+              ADD_ATTR: ['style', 'd', 'viewBox', 'fill', 'stroke', 'points', 'transform', 'width', 'height']
+            });
+
+            return <span key={i} dangerouslySetInnerHTML={{ __html: sanitizedHtml }} className="mx-1 inline-block align-middle" />;
           } catch (e) {
             // Fallback if KaTeX fails
             return <span key={i} className="text-red-500">{part}</span>;
