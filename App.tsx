@@ -90,30 +90,44 @@ const App: React.FC = () => {
   const [displayedText, setDisplayedText] = useState('');
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentQuoteIndex((prev) => (prev + 1) % HOME_QUOTES.length);
-    }, 6000); // Increased interval to allow for typing time
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
     let currentText = '';
     let charIndex = 0;
+    let isDeleting = false;
+    let typingInterval: any;
+
     const fullText = HOME_QUOTES[currentQuoteIndex];
 
-    setDisplayedText('');
-
-    const typingInterval = setInterval(() => {
-      if (charIndex < fullText.length) {
-        currentText += fullText[charIndex];
-        setDisplayedText(currentText);
-        charIndex++;
+    const tick = () => {
+      if (!isDeleting) {
+        // Typing phase
+        if (charIndex < fullText.length) {
+          currentText = fullText.substring(0, charIndex + 1);
+          setDisplayedText(currentText);
+          charIndex++;
+          typingInterval = setTimeout(tick, 50);
+        } else {
+          // Finished typing, wait 4 seconds before deleting
+          isDeleting = true;
+          typingInterval = setTimeout(tick, 4000);
+        }
       } else {
-        clearInterval(typingInterval);
+        // Deleting phase
+        if (charIndex > 0) {
+          currentText = fullText.substring(0, charIndex - 1);
+          setDisplayedText(currentText);
+          charIndex--;
+          typingInterval = setTimeout(tick, 30);
+        } else {
+          // Finished deleting, move to next quote
+          isDeleting = false;
+          setCurrentQuoteIndex((prev) => (prev + 1) % HOME_QUOTES.length);
+        }
       }
-    }, 50);
+    };
 
-    return () => clearInterval(typingInterval);
+    typingInterval = setTimeout(tick, 50);
+
+    return () => clearTimeout(typingInterval);
   }, [currentQuoteIndex]);
 
   useEffect(() => {
