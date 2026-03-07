@@ -88,33 +88,37 @@ const App: React.FC = () => {
   const [books, setBooks] = useState<Record<string, Book>>({}); 
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
+  const [typingPhase, setTypingPhase] = useState<'TYPING' | 'WAITING' | 'DELETING'>('TYPING');
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentQuoteIndex((prev) => (prev + 1) % HOME_QUOTES.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    let currentText = '';
-    let charIndex = 0;
+    let timer: NodeJS.Timeout;
     const quote = HOME_QUOTES[currentQuoteIndex];
 
-    setDisplayText('');
-
-    const typingInterval = setInterval(() => {
-      if (charIndex < quote.length) {
-        currentText += quote[charIndex];
-        setDisplayText(currentText);
-        charIndex++;
+    if (typingPhase === 'TYPING') {
+      if (displayText.length < quote.length) {
+        timer = setTimeout(() => {
+          setDisplayText(quote.slice(0, displayText.length + 1));
+        }, 50);
       } else {
-        clearInterval(typingInterval);
+        setTypingPhase('WAITING');
       }
-    }, 50);
+    } else if (typingPhase === 'WAITING') {
+      timer = setTimeout(() => {
+        setTypingPhase('DELETING');
+      }, 4000);
+    } else if (typingPhase === 'DELETING') {
+      if (displayText.length > 0) {
+        timer = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1));
+        }, 30);
+      } else {
+        setCurrentQuoteIndex((prev) => (prev + 1) % HOME_QUOTES.length);
+        setTypingPhase('TYPING');
+      }
+    }
 
-    return () => clearInterval(typingInterval);
-  }, [currentQuoteIndex]);
+    return () => clearTimeout(timer);
+  }, [displayText, typingPhase, currentQuoteIndex]);
 
   useEffect(() => {
     try {
