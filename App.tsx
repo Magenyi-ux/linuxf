@@ -60,6 +60,15 @@ const SUBJECTS_BY_STREAM: Record<StreamType, Subject[]> = {
   ]
 };
 
+const HOME_QUOTES = [
+  "Prepare for your exams.",
+  "Master your subjects with ease.",
+  "The smartest way to study offline.",
+  "Excellence is a habit, practice often.",
+  "Your journey to success starts here.",
+  "Crack WAEC, JAMB & NECO with confidence."
+];
+
 const App: React.FC = () => {
   const [screen, setScreen] = useState<ScreenState>('HOME');
   const [selectedExam, setSelectedExam] = useState<ExamType | null>(null);
@@ -77,6 +86,14 @@ const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const [books, setBooks] = useState<Record<string, Book>>({}); 
+  const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentQuoteIndex((prev) => (prev + 1) % HOME_QUOTES.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     try {
@@ -295,8 +312,11 @@ const App: React.FC = () => {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100 text-gray-400 text-[10px] font-bold mb-6 tracking-widest uppercase">
                 Offline Access Available
               </div>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
-                Prepare for your exams.
+              <h1
+                key={currentQuoteIndex}
+                className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight animate-fade-in"
+              >
+                {HOME_QUOTES[currentQuoteIndex]}
               </h1>
               <p className="text-lg text-gray-500 font-medium leading-relaxed max-w-xl mx-auto mb-10">
                 The smartest way to prepare for WAEC, JAMB & NECO. Download practice packs and study anywhere.
