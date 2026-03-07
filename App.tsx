@@ -87,13 +87,34 @@ const App: React.FC = () => {
 
   const [books, setBooks] = useState<Record<string, Book>>({}); 
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
+  const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentQuoteIndex((prev) => (prev + 1) % HOME_QUOTES.length);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    let currentText = '';
+    let charIndex = 0;
+    const quote = HOME_QUOTES[currentQuoteIndex];
+
+    setDisplayText('');
+
+    const typingInterval = setInterval(() => {
+      if (charIndex < quote.length) {
+        currentText += quote[charIndex];
+        setDisplayText(currentText);
+        charIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 50);
+
+    return () => clearInterval(typingInterval);
+  }, [currentQuoteIndex]);
 
   useEffect(() => {
     try {
@@ -313,10 +334,10 @@ const App: React.FC = () => {
                 Offline Access Available
               </div>
               <h1
-                key={currentQuoteIndex}
-                className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight animate-fade-in"
+                className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight h-[2.5em] md:h-auto"
               >
-                {HOME_QUOTES[currentQuoteIndex]}
+                {displayText}
+                <span className="text-primary-600 animate-pulse ml-1">_</span>
               </h1>
               <p className="text-lg text-gray-500 font-medium leading-relaxed max-w-xl mx-auto mb-10">
                 The smartest way to prepare for WAEC, JAMB & NECO. Download practice packs and study anywhere.
