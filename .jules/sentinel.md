@@ -1,0 +1,4 @@
+## 2025-05-15 - [KaTeX XSS Prevention with DOMPurify]
+**Vulnerability:** Use of `dangerouslySetInnerHTML` with raw KaTeX output, which could theoretically be manipulated if the input LaTeX is untrusted (e.g., from AI or scraped sources).
+**Learning:** KaTeX output requires a specific DOMPurify configuration to render correctly. Simply allowing `svg`, `use`, and `path` tags is insufficient for complex math. Using `USE_PROFILES: { html: true, svg: true, svgFilters: true }` is the most reliable way to ensure all KaTeX-generated SVG elements (like `rect` for fraction bars) are preserved while maintaining security.
+**Prevention:** Always use `DOMPurify` with comprehensive SVG profiles when rendering math content through `dangerouslySetInnerHTML`. Pin security-critical dependencies (KaTeX, DOMPurify) to exact versions to match SRI hashes in `index.html`.
