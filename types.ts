@@ -34,7 +34,7 @@ export enum Subject {
 }
 
 export interface Question {
-  id: number;
+  id: string | number;
   text: string;
   options: string[];
   correctOptionIndex: number;

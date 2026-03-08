@@ -18,7 +18,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   questions, sources = [], examType, subject, mode, onFinish, onBack 
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, number>>({}); // q.id -> optionIndex
+  const [answers, setAnswers] = useState<Record<string | number, number>>({}); // q.id -> optionIndex
   const [showExplanation, setShowExplanation] = useState(false);
 
   const currentQuestion = questions[currentIndex];

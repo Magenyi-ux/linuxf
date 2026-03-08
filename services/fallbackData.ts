@@ -142,8 +142,850 @@ export const fallbackData: FallbackData = {
       ]
     }
   },
-  [ExamType.WAEC]: {
+    [ExamType.WAEC]: {
     [Subject.ENGLISH]: {
+      "2011": [
+        {
+                "id": "2011Ee1",
+                "text": "Which of the following would be the most suitable opening for a letter to your younger sibling about the importance of education?",
+                "options": [
+                        "I am writing to inform you of my latest examination results.",
+                        "It has come to my attention that you have been influenced by bad friends and are losing interest in your studies.",
+                        "Could you please tell me when you will be coming home for the holidays?",
+                        "The weather here is very cold and I hope you are staying warm."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "A personal letter addressing a specific concern should start by stating the reason for writing. Simplified Method: State the main issue clearly and directly."
+        },
+        {
+                "id": "2011Ee2",
+                "text": "In an article on the dangers of drug abuse among Nigerian youth, which point best highlights the social consequences?",
+                "options": [
+                        "Drug abuse causes permanent damage to the liver and kidneys.",
+                        "Youth who abuse drugs often drop out of school and engage in criminal activities.",
+                        "The cost of rehabilitation is very high for many families.",
+                        "Illegal drugs are often sold in hidden locations in the city."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Social consequences refer to the impact on the community and the individual's role in it, such as crime and education. Simplified Method: Focus on society-wide impacts."
+        },
+        {
+                "id": "2011Ee3",
+                "text": "When writing a formal letter to the PTA Chairman requesting funds for library renovation, what is the most appropriate way to suggest parent support?",
+                "options": [
+                        "Parents must pay an additional fee of five thousand naira each.",
+                        "We suggest that parents donate high-quality books and educational materials to the library.",
+                        "The government should be responsible for all library funding.",
+                        "Teachers should spend their weekends organizing the library shelves."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Suggesting constructive ways for parents to contribute beyond just money is effective in formal requests. Simplified Method: Offer varied ways to help."
+        },
+        {
+                "id": "2011Ee4",
+                "text": "In a debate on the motion 'Social media does more harm than good to students,' which of these is a strong argument FOR the motion?",
+                "options": [
+                        "Social media allows students to connect with friends worldwide.",
+                        "It provides a platform for creative expression and skill development.",
+                        "It often leads to addiction, sleep deprivation, and exposure to cyberbullying.",
+                        "Many educational resources are shared on social media platforms."
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Arguments 'FOR' the motion must highlight the negative aspects (harm). Simplified Method: Match the 'harm' in the motion to the 'addiction/bullying' in the option."
+        },
+        {
+                "id": "2011Ee5",
+                "text": "Which of the following would be a suitable climax for a story ending with 'Honesty is the best policy'?",
+                "options": [
+                        "A character finds a wallet, keeps the money, and never gets caught.",
+                        "A character admits to a mistake even when they could have blamed someone else, and is eventually rewarded for their truthfulness.",
+                        "A character lies about their qualifications to get a job and succeeds.",
+                        "A character works hard in the village and becomes a wealthy farmer."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The story must demonstrate the moral lesson that being honest leads to the best outcome. Simplified Method: Truth + Reward = Honesty is the best policy."
+        },
+        {
+                "id": "2011Ee6",
+                "text": "Passage: The sun was merciless that afternoon as Mallam Sani trudged along the dusty path... His worn-out slippers slapped against his heels... he lived modestly on his meagre pension...\n\nQuestion: What do Mallam Sani's worn-out slippers and faded agbada suggest about his financial situation?",
+                "options": [
+                        "He is very wealthy but chooses to live simply.",
+                        "He is in a difficult financial state and lives a very modest life.",
+                        "He is a fashion-conscious individual who likes vintage clothing.",
+                        "He is an active traveler who walks long distances."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "'Worn-out' and 'faded' are indicators of poverty or lack of funds for new items. Simplified Method: Physical appearance reflects economic status."
+        },
+        {
+                "id": "2011Ee7",
+                "text": "Passage: ...Voices rose in excitement... someone would wave a slip of paper in the air. Mallam Sani's heart skipped a beat.\n\nQuestion: Why did Mallam Sani's heart skip a beat when he saw the crowd?",
+                "options": [
+                        "He was afraid of the large gathering under the tree.",
+                        "He realized he was late for his teaching session.",
+                        "He anticipated that the scholarship results he had worked for were out.",
+                        "He was exhausted from the afternoon heat."
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The excitement and slips of paper (lists) suggest the results of the scholarship he prepared students for. Simplified Method: Anticipation of success causes emotional reaction."
+        },
+        {
+                "id": "2011Ee8",
+                "text": "Passage: ...He had prepared village children for the scholarship examination free of charge... Many had passed...\n\nQuestion: Which of these best describes the relationship between Mallam Sani and his former students?",
+                "options": [
+                        "Strict and professional with little personal contact.",
+                        "Deeply respectful, characterized by gratitude and mentorship.",
+                        "Hostile, as the students felt he worked them too hard.",
+                        "Casual, like friends of the same age group."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The passage shows students surrounding him with joy and expressing deep thanks. Simplified Method: Mentor + Gratitude = Respectful relationship."
+        },
+        {
+                "id": "2011Ee9",
+                "text": "Passage: 'You told my parents that educating a girl educates a nation. You paid for my first school uniform yourself.'\n\nQuestion: Mention two ways Mallam Sani helped children beyond classroom teaching.",
+                "options": [
+                        "He bought them snacks and gave them money for transport.",
+                        "He advocated for girl-child education and personally funded school needs like uniforms.",
+                        "He built a new school building and hired more teachers.",
+                        "He traveled to the city to buy books for himself."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The text explicitly mentions him talking to parents and paying for a uniform. Simplified Method: Look for actions outside the school building."
+        },
+        {
+                "id": "2011Ee10",
+                "text": "Passage: 'He had planted seeds he might never see fully grow, but tonight, he witnessed the first tender shoots.'\n\nQuestion: What is the meaning of this statement in the context of the passage?",
+                "options": [
+                        "Mallam Sani was a successful farmer who retired to teaching.",
+                        "The students' success is the result of his long-term dedication and teaching.",
+                        "He literally planted trees in the village square years ago.",
+                        "He was sad that he would not live to see the children graduate."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The 'seeds' are the children's minds/education, and 'shoots' are their early successes like scholarships. Simplified Method: Metaphor for long-term investment in people."
+        },
+        {
+                "id": "2011Ee11",
+                "text": "Passage: '...the sun was merciless...'\n\nQuestion: What figure of speech is used in this expression?",
+                "options": [
+                        "Simile",
+                        "Personification",
+                        "Hyperbole",
+                        "Metonymy"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The sun is given the human quality of being 'merciless'. Simplified Method: Human trait (mercy) + Non-human (sun) = Personification."
+        },
+        {
+                "id": "2011Ee12",
+                "text": "Passage: '...a harvest that would feed generations.'\n\nQuestion: What grammatical name is given to this expression?",
+                "options": [
+                        "Noun Phrase",
+                        "Adjectival Clause",
+                        "Adverbial Phrase",
+                        "Noun Clause"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "It functions as a noun within the sentence. Simplified Method: It names a thing (the harvest) and its description."
+        },
+        {
+                "id": "2011Ee13",
+                "text": "In the passage about Mallam Sani, which word can replace 'trudged'?",
+                "options": [
+                        "Ran",
+                        "Walked heavily",
+                        "Skipped",
+                        "Danced"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Trudged implies walking with effort, often due to exhaustion or heavy terrain. Simplified Method: Slow, heavy steps."
+        },
+        {
+                "id": "2011Ee14",
+                "text": "In the passage about Mallam Sani, which word can replace 'meagre'?",
+                "options": [
+                        "Enormous",
+                        "Sufficient",
+                        "Small/Scanty",
+                        "Abundant"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Meagre means very small in amount. Simplified Method: Meagre = Hardly enough."
+        },
+        {
+                "id": "2011Ee15",
+                "text": "What is a suitable title for the passage about Mallam Sani?",
+                "options": [
+                        "The Greedy School Teacher",
+                        "The Village Square Celebration",
+                        "The Legacy of a Dedicated Teacher",
+                        "The Dangers of the Sun"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The passage focuses on Sani's lifelong contribution and the results of his work. Simplified Method: Focus on the main character's impact."
+        },
+        {
+                "id": "2011Ee16",
+                "text": "Passage: During sleep, our bodies repair themselves, our brains consolidate memories, and our immune systems strengthen.\n\nQuestion: According to the passage, what are the three biological processes that occur during sleep?",
+                "options": [
+                        "Eating, breathing, and walking",
+                        "Repair, memory consolidation, and immune strengthening",
+                        "Studying, watching TV, and scrolling social media",
+                        "Dreaming, snoring, and talking"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The passage explicitly lists repair, memory, and immunity. Simplified Method: Look for the specific list in the text."
+        },
+        {
+                "id": "2011Ee17",
+                "text": "Passage: Research has linked insufficient sleep to... obesity, diabetes, and cardiovascular disease.\n\nQuestion: Mention three health problems associated with chronic sleep deprivation.",
+                "options": [
+                        "Headache, fever, and cough",
+                        "Obesity, diabetes, and heart disease",
+                        "Malaria, typhoid, and cholera",
+                        "Blindness, deafness, and lameness"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "These are the specific conditions mentioned in the second paragraph. Simplified Method: Match the diseases in the text to the options."
+        },
+        {
+                "id": "2011Ee18",
+                "text": "Passage: '...creating a phenomenon known as social jetlag.'\n\nQuestion: What is 'social jetlag' as used in the passage?",
+                "options": [
+                        "Traveling to a different time zone for a party.",
+                        "The conflict between biological sleep needs and early school/work start times.",
+                        "The feeling of being tired after using social media all night.",
+                        "A type of disease caused by sleeping too much."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The passage defines it as the conflict between the internal clock and external schedules. Simplified Method: Internal clock vs. External clock."
+        },
+        {
+                "id": "2011Ee19",
+                "text": "Which of these is NOT mentioned as a cause of inadequate sleep among Nigerian adolescents?",
+                "options": [
+                        "Social media scrolling",
+                        "Homework overload",
+                        "Healthy diet",
+                        "Early morning religious activities"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Homework, social media, and religious activities are listed; healthy diet is not. Simplified Method: Find the 'odd one out' in the text's list."
+        },
+        {
+                "id": "2011Ee20",
+                "text": "Passage: 'Sleep is not the enemy of productivity but its ally.'\n\nQuestion: What does this statement mean?",
+                "options": [
+                        "Sleep prevents you from getting work done.",
+                        "Sleep and productivity are on opposite sides.",
+                        "Getting enough sleep actually helps you be more productive.",
+                        "Productive people never sleep."
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "An 'ally' is a helper. This means sleep supports productivity. Simplified Method: Ally = Friend/Helper."
+        },
+        {
+                "id": "2011Ee21",
+                "text": "Tunde is very troublesome and so his neighbours find it difficult to put up with him. This means that his neighbours:",
+                "options": [
+                        "cannot live with him under the same roof",
+                        "cannot rely on him",
+                        "cannot tolerate him",
+                        "hate him immensely"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The phrasal verb 'put up with' means to tolerate, endure, or accept someone annoying. Simplified Method: Put up with = Tolerate."
+        },
+        {
+                "id": "2011Ee22",
+                "text": "The President's birthday party was attended by the cream of society. This means that:",
+                "options": [
+                        "the most important people were at the party",
+                        "all the civil servants were at the party",
+                        "other presidents attended the party",
+                        "only invited guests attended the party"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The idiom 'the cream of society' refers to the best, most elite, or most important members. Simplified Method: Cream = Best part/Top layer."
+        },
+        {
+                "id": "2011Ee23",
+                "text": "The principal played the ostrich when she got reports of malpractices in the examination hall. This means that the principal:",
+                "options": [
+                        "became vigilant",
+                        "behaved like an ostrich",
+                        "ignored the problem",
+                        "denied the reports"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "To 'play the ostrich' means to ignore a problem or pretend it doesn't exist. Simplified Method: Head in the sand = Not seeing the problem."
+        },
+        {
+                "id": "2011Ee24",
+                "text": "Our uncle visits us only once in a blue moon. This means that our uncle:",
+                "options": [
+                        "visits us only when the moon is blue",
+                        "seldom visits us",
+                        "visits us once a year",
+                        "finds it difficult to visit us"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "'Once in a blue moon' means very rarely or seldom. Simplified Method: Rare event = Seldom."
+        },
+        {
+                "id": "2011Ee25",
+                "text": "The Principal's prompt intervention nipped last week's crisis in the bud. This means that:",
+                "options": [
+                        "the crisis was averted",
+                        "the students were chased away",
+                        "no one was willing to be part of the crisis",
+                        "the students decided to obey the Principal's orders"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "'Nip something in the bud' means to stop something at an early stage before it grows. Simplified Method: Stop it early = Prevent/Avert."
+        },
+        {
+                "id": "2011Ee26",
+                "text": "The school next door is virtually a bedlam as its students are uncontrollable. This means that:",
+                "options": [
+                        "the school is a playground for everybody",
+                        "the students move up and down in the compound",
+                        "no student is willing to stay in the classroom",
+                        "the school is a place of noise and confusion"
+                ],
+                "correctOptionIndex": 3,
+                "explanation": "'Bedlam' means a scene of uproar, chaos, noise, and confusion. Simplified Method: Bedlam = Chaos."
+        },
+        {
+                "id": "2011Ee27",
+                "text": "Mary should not criticize anybody since she too has a skeleton in her cupboard. This means that she:",
+                "options": [
+                        "has a secret",
+                        "loves to play with skeletons",
+                        "studies skeletons",
+                        "does not want anybody to steal from her cupboard"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "'A skeleton in the cupboard' means a shameful or embarrassing secret. Simplified Method: Skeleton = Hidden secret."
+        },
+        {
+                "id": "2011Ee28",
+                "text": "Araba's friends decided to send her to Coventry. This means that:",
+                "options": [
+                        "Araba was to be sent to a convent",
+                        "she was to be sent away",
+                        "her friends decided to ignore her",
+                        "her friends decided to forgive her"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "'Send someone to Coventry' means to ostracize them or refuse to speak to them. Simplified Method: Coventry = Social exclusion."
+        },
+        {
+                "id": "2011Ee29",
+                "text": "The widow works her fingers to the bone to take care of her children. This means that the widow:",
+                "options": [
+                        "wears out her fingers with work",
+                        "is lazy",
+                        "massages her bones",
+                        "works extremely hard"
+                ],
+                "correctOptionIndex": 3,
+                "explanation": "'Work one's fingers to the bone' means to work extremely hard or to exhaustion. Simplified Method: To the bone = Maximum effort."
+        },
+        {
+                "id": "2011Ee30",
+                "text": "The way the boys beat up their friends made my blood boil. This means that:",
+                "options": [
+                        "I was not happy with the boys",
+                        "I hated the boys",
+                        "my blood boiled",
+                        "I was thoroughly agitated by the action of the boys"
+                ],
+                "correctOptionIndex": 3,
+                "explanation": "'Make someone's blood boil' means to make them extremely angry or agitated. Simplified Method: Boiling blood = Intense rage."
+        },
+        {
+                "id": "2011Ee31",
+                "text": "The committee has promised to ______ the matter thoroughly before reaching a conclusion.",
+                "options": [
+                        "investigate",
+                        "investigation",
+                        "investigating",
+                        "investigated"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "'Promised to' is followed by the base form of the verb. Simplified Method: To + Base Verb."
+        },
+        {
+                "id": "2011Ee32",
+                "text": "Neither the principal nor the teachers ______ satisfied with the examination results.",
+                "options": [
+                        "is",
+                        "are",
+                        "was",
+                        "were"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "When 'neither...nor' is used, the verb agrees with the closer subject ('teachers'). Simplified Method: Match the closest person/group."
+        },
+        {
+                "id": "2011Ee33",
+                "text": "The management has decided to ______ the workers' salaries by 15% due to economic hardship.",
+                "options": [
+                        "rise",
+                        "raise",
+                        "arise",
+                        "rose"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "'Raise' is a transitive verb meaning to increase something. Simplified Method: You raise something (salaries)."
+        },
+        {
+                "id": "2011Ee34",
+                "text": "If I ______ you, I would accept the scholarship without hesitation.",
+                "options": [
+                        "am",
+                        "was",
+                        "were",
+                        "be"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Hypothetical 'if' clauses use 'were' for all persons. Simplified Method: If + were = Imaginary/Hypothetical."
+        },
+        {
+                "id": "2011Ee35",
+                "text": "The governor, together with his aides, ______ expected to arrive at noon.",
+                "options": [
+                        "is",
+                        "are",
+                        "were",
+                        "have been"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "'Together with' phrases don't change the number of the subject ('governor'). Simplified Method: The word after 'together with' doesn't count for the verb."
+        },
+        {
+                "id": "2011Ee36",
+                "text": "Ade has been suffering from malaria ______ three days.",
+                "options": [
+                        "since",
+                        "for",
+                        "from",
+                        "within"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "'For' is used for a duration/period of time. Simplified Method: For + Amount of time."
+        },
+        {
+                "id": "2011Ee37",
+                "text": "The students were told to do the assignment ______.",
+                "options": [
+                        "themselves",
+                        "themself",
+                        "theirselves",
+                        "their self"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The standard reflexive pronoun for plural 'them' is 'themselves'. Simplified Method: Self (1) -> Selves (Many)."
+        },
+        {
+                "id": "2011Ee38",
+                "text": "Hardly ______ entered the hall when the lights went off.",
+                "options": [
+                        "had he",
+                        "he had",
+                        "did he",
+                        "he did"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "Inverted word order is used after 'Hardly' at the start of a sentence. Simplified Method: Negative word at start = Verb before Subject."
+        },
+        {
+                "id": "2011Ee39",
+                "text": "The teacher asked each of the students to bring ______ own dictionary.",
+                "options": [
+                        "his",
+                        "their",
+                        "our",
+                        "one's"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "'Each' is singular, so it takes the singular possessive 'his' (or 'his or her'). Simplified Method: Each = 1 = His."
+        },
+        {
+                "id": "2011Ee40",
+                "text": "By this time next year, I ______ my university education.",
+                "options": [
+                        "will complete",
+                        "will have completed",
+                        "would complete",
+                        "completed"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Future perfect tense indicates an action completed by a future point. Simplified Method: By [Future Time] = Will have [Done]."
+        },
+        {
+                "id": "2011Ee41",
+                "text": "Choose the word nearest in meaning: The chairman's speech was 'ambiguous' and left many people confused.",
+                "options": [
+                        "clear",
+                        "unclear",
+                        "brief",
+                        "lengthy"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Ambiguous means having more than one possible meaning; open to doubt. Simplified Method: Multi-meaning = Confusing = Unclear."
+        },
+        {
+                "id": "2011Ee42",
+                "text": "Choose the word nearest in meaning: The young man displayed 'remarkable' courage during the accident.",
+                "options": [
+                        "ordinary",
+                        "little",
+                        "exceptional",
+                        "fake"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Remarkable means worthy of attention; striking; exceptional. Simplified Method: Remarkable = Stand-out = Exceptional."
+        },
+        {
+                "id": "2011Ee43",
+                "text": "Choose the word nearest in meaning: The company decided to 'terminate' his appointment due to gross misconduct.",
+                "options": [
+                        "extend",
+                        "renew",
+                        "end",
+                        "celebrate"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "To terminate means to bring to an end. Simplified Method: Terminate = End/Finish."
+        },
+        {
+                "id": "2011Ee44",
+                "text": "Choose the word opposite in meaning: The food was 'plentiful' at the party.",
+                "options": [
+                        "enough",
+                        "scarce",
+                        "delicious",
+                        "expensive"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Plentiful means in large quantities; the opposite is scarce (very little). Simplified Method: Many vs. Very few."
+        },
+        {
+                "id": "2011Ee45",
+                "text": "Choose the word opposite in meaning: He is known for his 'honest' dealings with clients.",
+                "options": [
+                        "fair",
+                        "prompt",
+                        "corrupt",
+                        "generous"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Honest means truthful; the opposite is corrupt or dishonest. Simplified Method: Truthful vs. Crooked."
+        },
+        {
+                "id": "2011Ee46",
+                "text": "The importance of reading cannot be overemphasized. Reading [46] our knowledge and exposes us to new ideas.",
+                "options": [
+                        "broadens",
+                        "limits",
+                        "reduces",
+                        "narrows"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "Reading expands or increases knowledge. Simplified Method: Knowledge grows = Broadens."
+        },
+        {
+                "id": "2011Ee47",
+                "text": "It also [47] our vocabulary and improves our writing skills.",
+                "options": [
+                        "destroys",
+                        "enhances",
+                        "weakens",
+                        "complicates"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Enhance means to improve the quality or value of something. Simplified Method: Enhance = Improve."
+        },
+        {
+                "id": "2011Ee48",
+                "text": "Unfortunately, many young people today prefer watching television or [48] social media to reading books.",
+                "options": [
+                        "use",
+                        "used",
+                        "using",
+                        "uses"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Parallel structure: 'watching television or USING social media'. Simplified Method: -ing + or + -ing."
+        },
+        {
+                "id": "2011Ee49",
+                "text": "The doctor prescribed ______ for the patient's infection.",
+                "options": [
+                        "vegetables",
+                        "antibiotics",
+                        "exercise",
+                        "water"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Antibiotics are used specifically to treat infections. Simplified Method: Infection = Antibiotics."
+        },
+        {
+                "id": "2011Ee50",
+                "text": "The accountant discovered a ______ in the company's financial records.",
+                "options": [
+                        "donation",
+                        "discrepancy",
+                        "benefit",
+                        "profit"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "A discrepancy is a lack of compatibility or similarity between two facts. Simplified Method: Discrepancy = Difference/Error."
+        },
+        {
+                "id": "2011Ee51",
+                "text": "Choose the word with the same vowel sound as the one in 'boot':",
+                "options": [
+                        "put",
+                        "book",
+                        "food",
+                        "foot"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Boot and food both have the long /u:/ sound. Simplified Method: Long 'oo' sound."
+        },
+        {
+                "id": "2011Ee52",
+                "text": "Choose the word with the same vowel sound as the one in 'cat':",
+                "options": [
+                        "hate",
+                        "mat",
+                        "late",
+                        "eight"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Cat and mat both have the short /æ/ sound. Simplified Method: Short 'a' sound."
+        },
+        {
+                "id": "2011Ee53",
+                "text": "Choose the word with the same consonant sound as the one in 'ship':",
+                "options": [
+                        "chip",
+                        "sheep",
+                        "cheap",
+                        "zip"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Ship and sheep both have the /ʃ/ sound. Simplified Method: 'Sh' sound."
+        },
+        {
+                "id": "2011Ee54",
+                "text": "Choose the word with the same consonant sound as the one in 'physics':",
+                "options": [
+                        "philosophy",
+                        "photo",
+                        "phone",
+                        "fat"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "Philosophy and physics both have the /f/ sound (represented by ph). Simplified Method: Ph sounds like F."
+        },
+        {
+                "id": "2011Ee55",
+                "text": "Choose the word that rhymes with 'light':",
+                "options": [
+                        "lit",
+                        "late",
+                        "bite",
+                        "height"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Bite rhymes with light (/laɪt/ and /baɪt/). Simplified Method: Same ending sound."
+        },
+        {
+                "id": "2011Ee56",
+                "text": "Identify the correctly stressed syllable: education",
+                "options": [
+                        "ED-u-ca-tion",
+                        "e-DU-ca-tion",
+                        "e-du-CA-tion",
+                        "e-du-ca-TION"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "Words ending in -tion are usually stressed on the syllable before the suffix. Simplified Method: Stress is on 'CA'."
+        },
+        {
+                "id": "2011Ee57",
+                "text": "Identify the word with a different stress pattern:",
+                "options": [
+                        "TABLE",
+                        "CHAIRman",
+                        "beGIN",
+                        "WINdow"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "TABLE, CHAIRman, and WINdow are stressed on the first syllable; beGIN is stressed on the second. Simplified Method: First-syllable vs. Second-syllable."
+        },
+        {
+                "id": "2011Ee58",
+                "text": "My sister PASSED the examination. (Emphatic stress on PASSED). Which question does this answer?",
+                "options": [
+                        "Did my brother pass the examination?",
+                        "Did my sister fail the examination?",
+                        "Did my sister pass the interview?",
+                        "Did my mother pass the examination?"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Emphatic stress on the verb 'PASSED' contradicts 'fail'. Simplified Method: Emphasize the part that is different from the wrong assumption."
+        },
+        {
+                "id": "2011Ee59",
+                "text": "She bought a RED car. (Emphatic stress on RED). Which question does this answer?",
+                "options": [
+                        "Did she steal a red car?",
+                        "Did she buy a blue car?",
+                        "Did he buy a red car?",
+                        "Did she buy a red bicycle?"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "Emphatic stress on 'RED' contrasts with another color like 'blue'. Simplified Method: Focus on the color."
+        },
+        {
+                "id": "2011Ee60",
+                "text": "Identify the word with the sound represented by /θ/:",
+                "options": [
+                        "this",
+                        "that",
+                        "these",
+                        "thought"
+                ],
+                "correctOptionIndex": 3,
+                "explanation": "The symbol /θ/ represents the voiceless 'th' sound in 'thought'. Simplified Method: Airy 'th' sound."
+        },
+        {
+                "id": "2011Ee61",
+                "text": "Passage: 'One of the most profound benefits of technology in education is access to information... Through the internet, students can now explore vast libraries...'\n\nQuestion: Which of the following sentences best summarizes the first benefit of technology mentioned in the passage?",
+                "options": [
+                        "Technology makes students lazier by providing all answers.",
+                        "The internet provides unprecedented access to a vast array of global information and libraries.",
+                        "Every student in Nigeria now has a smartphone and internet access.",
+                        "Libraries are becoming obsolete because of the internet."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The passage highlights the 'democratization of information' via the internet. Simplified Method: Focus on the main positive result (access to info)."
+        },
+        {
+                "id": "2011Ee62",
+                "text": "Passage: '...technology enables personalized learning experiences. Educational software can adapt to individual student's pace...'\n\nQuestion: In one sentence, what is the second benefit of technology in education?",
+                "options": [
+                        "It allows teachers to take longer breaks during lessons.",
+                        "It facilitates customized learning experiences that adapt to each student's unique learning speed.",
+                        "It ensures that all students finish their syllabus at the same time.",
+                        "It replaces the need for any human interaction in the classroom."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The text discusses 'personalized learning' and 'adapting to individual student's pace'. Simplified Method: Personalized = Adapted to the individual."
+        },
+        {
+                "id": "2011Ee63",
+                "text": "Passage: 'Interactive simulations and virtual laboratories allow students to conduct experiments...'\n\nQuestion: What is the third benefit of technology discussed in the passage?",
+                "options": [
+                        "It makes experiments safer by removing all chemicals from schools.",
+                        "It provides opportunities for students to engage in practical learning through digital simulations.",
+                        "It proves that traditional laboratories are a waste of money.",
+                        "It allows students to play games during science classes."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The passage mentions 'interactive simulations' as a tool for experiments. Simplified Method: Virtual labs = Practical digital learning."
+        },
+        {
+                "id": "2011Ee64",
+                "text": "Passage: 'The most obvious [challenge] is the digital divide—the gap between those who have access to technology and those who do not.'\n\nQuestion: What is the first major challenge of technology integration mentioned?",
+                "options": [
+                        "The high cost of electricity in urban areas.",
+                        "The inequality in access to digital tools, often referred to as the digital divide.",
+                        "The lack of interesting educational software for students.",
+                        "The difficulty of carrying heavy laptops to school."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The text explicitly names the 'digital divide' as a gap in access. Simplified Method: Digital Divide = Inequality in access."
+        },
+        {
+                "id": "2011Ee65",
+                "text": "Passage: 'Additionally, technology can be a significant source of distraction. Students... often struggle to resist the temptation of social media...'\n\nQuestion: Which statement best summarizes the second challenge discussed?",
+                "options": [
+                        "Teachers are not well-trained to use computers.",
+                        "Social media is more important than classroom learning.",
+                        "Digital devices can significantly divert students' attention away from their studies.",
+                        "Smartphones should be banned in all Nigerian schools."
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The text focuses on 'distraction' from social media and games. Simplified Method: Distraction = Loss of focus."
+        },
+        {
+                "id": "2011Ee66",
+                "text": "Passage: 'There is also the concern about the quality and reliability of online information... students... may absorb misinformation.'\n\nQuestion: What is the third challenge identified by the writer?",
+                "options": [
+                        "The internet is too expensive for most students.",
+                        "The difficulty of finding any information on the internet.",
+                        "The presence of inaccurate or unreliable information that students may accept without questioning.",
+                        "The fact that most websites are written in foreign languages."
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The writer is concerned with 'quality and reliability' and 'misinformation'. Simplified Method: Not everything online is true."
+        },
+        {
+                "id": "2011Ee67",
+                "text": "Passage: '...the over-reliance on technology may erode fundamental skills. Handwriting, mental arithmetic... may atrophy...'\n\nQuestion: What is the final challenge of technology mentioned in the passage?",
+                "options": [
+                        "The physical damage to eyes from looking at screens.",
+                        "The potential decline of basic traditional skills like handwriting and mental calculation.",
+                        "The lack of jobs for teachers in the future.",
+                        "The high cost of repairing broken tablets and phones."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The text mentions the 'erosion of fundamental skills' like handwriting. Simplified Method: Skills atrophy = Use it or lose it."
+        },
+        {
+                "id": "2011Ee68",
+                "text": "Passage: 'This requires thoughtful integration... Technology should serve educational goals, not dictate them.'\n\nQuestion: According to the writer, how can educators effectively address the challenges of technology?",
+                "options": [
+                        "By completely removing technology from schools.",
+                        "By letting students decide which technology to use.",
+                        "By integrating technology thoughtfully so it serves specific educational objectives.",
+                        "By replacing all traditional textbooks with digital ones."
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The writer advocates for 'thoughtful integration' where technology 'serves goals'. Simplified Method: Plan the use; don't just use it for the sake of it."
+        },
+        {
+                "id": "2011Ee69",
+                "text": "Passage: 'Teachers must be trained not just to use technology, but to use it effectively. Students must be taught digital literacy...'\n\nQuestion: What are two key solutions for successful technology adoption in education?",
+                "options": [
+                        "Buying more computers and building faster networks.",
+                        "Effective teacher training and teaching students digital literacy.",
+                        "Reducing school hours and increasing homework.",
+                        "Hiring IT experts to replace classroom teachers."
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The text emphasizes 'teacher training' and 'digital literacy'. Simplified Method: Training + Literacy = Success."
+        },
+        {
+                "id": "2011Ee70",
+                "text": "Passage: 'The ideal classroom of the future may blend the best of both worlds: the personal connection of human instruction combined with the vast resources... of digital tools.'\n\nQuestion: In one sentence, what is the writer's vision for the ideal future classroom?",
+                "options": [
+                        "A classroom where robots teach students everything.",
+                        "A classroom that relies solely on traditional, non-digital methods.",
+                        "A balanced environment that combines human mentorship with powerful digital resources.",
+                        "A virtual space where students never meet in person."
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The vision is a 'blend' of 'human instruction' and 'digital tools'. Simplified Method: Human + Tech = Ideal Future."
+        }
+],
       "2025": []
     },
     [Subject.MATHEMATICS]: {
