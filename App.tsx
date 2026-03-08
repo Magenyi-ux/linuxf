@@ -175,7 +175,7 @@ const App: React.FC = () => {
     }
   };
 
-  const years = Array.from({ length: 15 }, (_, i) => (2025 - i).toString());
+  const years = Array.from({ length: 16 }, (_, i) => (2025 - i).toString());
 
   const allSubjectsWithExams = Object.values(ExamType).flatMap(exam =>
     Object.values(Subject).map(subject => ({ exam, subject }))
