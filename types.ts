@@ -60,6 +60,9 @@ export interface UserProfile {
   level: number;
   xp: number;
   streak: number;
+  totalQuestionsAnswered: number;
+  correctAnswers: number;
+  joinedDate: number;
 }
 
-export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS';
+export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'PROFILE';

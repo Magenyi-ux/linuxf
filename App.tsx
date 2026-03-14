@@ -5,12 +5,14 @@ import { ExamCard } from './components/ExamCard';
 import { LoadingScreen } from './components/LoadingScreen';
 import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
+import { Profile } from './components/Profile';
+import { ChatBot } from './components/ChatBot';
 import { fetchExamQuestions } from './services/geminiService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
-  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Home, ArrowLeft, Search
+  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Home, ArrowLeft, Search, User
 } from 'lucide-react';
 
 // Stream Definitions
@@ -85,6 +87,15 @@ const App: React.FC = () => {
   const [lastTotal, setLastTotal] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
 
+  const [userProfile, setUserProfile] = useState<UserProfile>({
+    level: 1,
+    xp: 0,
+    streak: 1,
+    totalQuestionsAnswered: 0,
+    correctAnswers: 0,
+    joinedDate: Date.now()
+  });
+
   const [books, setBooks] = useState<Record<string, Book>>({}); 
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
@@ -120,10 +131,17 @@ const App: React.FC = () => {
     try {
       const savedBooks = localStorage.getItem('waExamPrep_books');
       if (savedBooks) setBooks(JSON.parse(savedBooks));
+
+      const savedProfile = localStorage.getItem('waExamPrep_profile');
+      if (savedProfile) setUserProfile(JSON.parse(savedProfile));
     } catch (e) {
-      console.error("Failed to load books from storage", e);
+      console.error("Failed to load data from storage", e);
     }
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem('waExamPrep_profile', JSON.stringify(userProfile));
+  }, [userProfile]);
 
   const saveBook = (book: Book) => {
     try {
@@ -230,6 +248,20 @@ const App: React.FC = () => {
       setLastScore(score);
       setLastTotal(total);
 
+      // Update Profile Stats
+      const xpGained = score * 10;
+      setUserProfile(prev => {
+          const newXp = prev.xp + xpGained;
+          const newLevel = Math.floor(newXp / 1000) + 1;
+          return {
+              ...prev,
+              xp: newXp,
+              level: newLevel,
+              totalQuestionsAnswered: prev.totalQuestionsAnswered + total,
+              correctAnswers: prev.correctAnswers + score
+          };
+      });
+
       // If we are in a book session, update the book's stats
       if (activeBookId && books[activeBookId]) {
           const book = books[activeBookId];
@@ -282,6 +314,12 @@ const App: React.FC = () => {
              >
                 My Library
              </button>
+             <button
+                onClick={() => setScreen('PROFILE')}
+                className={`text-sm font-semibold transition-colors ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
+             >
+                Profile
+             </button>
           </div>
 
           <button 
@@ -316,11 +354,11 @@ const App: React.FC = () => {
             <span className="text-[10px] font-bold">Library</span>
           </button>
           <button
-            onClick={() => {}}
-            className="flex flex-col items-center gap-1 text-gray-400"
+            onClick={() => setScreen('PROFILE')}
+            className={`flex flex-col items-center gap-1 ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-400'}`}
           >
-            <Trophy className="w-6 h-6" />
-            <span className="text-[10px] font-bold">Awards</span>
+            <User className="w-6 h-6" />
+            <span className="text-[10px] font-bold">Profile</span>
           </button>
         </div>
       </nav>
@@ -617,7 +655,16 @@ const App: React.FC = () => {
                 onHome={resetApp}
             />
         )}
+
+        {screen === 'PROFILE' && (
+            <Profile
+                profile={userProfile}
+                onBack={() => setScreen('HOME')}
+            />
+        )}
       </main>
+
+      <ChatBot />
 
       {/* Library Modal */}
       {showLibrary && (

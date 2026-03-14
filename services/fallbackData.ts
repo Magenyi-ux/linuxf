@@ -867,218 +867,135 @@ export const fallbackData: FallbackData = {
         }
 ]
     },
+    [Subject.PHYSICS]: {
+      "2024": [
+        {
+          id: "phy2024_1",
+          text: "A car starts from rest and accelerates uniformly at $2 m/s^2$ for 10 seconds. Calculate the final velocity.",
+          options: ["10 m/s", "20 m/s", "5 m/s", "40 m/s"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is using the first equation of motion: $v = u + at$. Since it starts from rest, $u=0$. $v = 0 + (2 \\times 10) = 20 m/s$. Simplified Method: Step 1: Identify $u=0, a=2, t=10$. Step 2: Use $v=at$. Step 3: Multiply 2 by 10."
+        },
+        {
+          id: "phy2024_2",
+          text: "Which of the following is a scalar quantity?",
+          options: ["Velocity", "Force", "Work", "Acceleration"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is that Work only has magnitude and no direction, unlike velocity, force, and acceleration which are vectors. Simplified Method: Scalar = Magnitude only. Vector = Magnitude + Direction."
+        },
+        {
+          id: "phy2024_3",
+          text: "An object of mass 5kg is acted upon by a force of 20N. What is the acceleration produced?",
+          options: ["2 $m/s^2$", "4 $m/s^2$", "100 $m/s^2$", "0.25 $m/s^2$"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is Newton's second law: $F = ma$. Therefore, $a = F/m = 20/5 = 4 m/s^2$. Simplified Method: Step 1: Divide Force by Mass. Step 2: $20 \\div 5 = 4$."
+        },
+        {
+          id: "phy2024_4",
+          text: "Identify the type of lens shown in the diagram, which is thicker at the center than at the edges.",
+          imageUrl: "https://myschool.ng/storage/classroom/editor_images/convex_lens.png",
+          options: ["Concave lens", "Convex lens", "Bifocal lens", "Cylindrical lens"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is that a convex lens (converging lens) is characterized by being thicker in the middle. Simplified Method: Thick middle = Convex (Converging)."
+        },
+        {
+          id: "phy2024_5",
+          text: "Calculate the equivalent resistance of two resistors of $4\\Omega$ and $6\\Omega$ connected in series.",
+          options: ["2.4$\\Omega$", "10$\\Omega$", "24$\\Omega$", "1.5$\\Omega$"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is that for series connection, $R_{total} = R_1 + R_2 = 4 + 6 = 10\\Omega$. Simplified Method: Just add the resistances together in a line."
+        }
+      ]
+    },
+    [Subject.CHEMISTRY]: {
+      "2024": [
+        {
+          id: "ch2024_1",
+          text: "What is the oxidation state of Manganese in $KMnO_4$?",
+          options: ["+2", "+5", "+7", "+4"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is the sum of oxidation states: $1(+1) + x + 4(-2) = 0 \\Rightarrow 1 + x - 8 = 0 \\Rightarrow x = +7$. Simplified Method: Step 1: Set up the equation. Step 2: Solve for Manganese (x)."
+        },
+        {
+          id: "ch2024_2",
+          text: "Which of the following elements is a noble gas?",
+          options: ["Nitrogen", "Oxygen", "Argon", "Chlorine"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is that Argon belongs to Group 18 (Noble Gases) and is chemically inert. Simplified Method: Look at the last column of the periodic table."
+        },
+        {
+          id: "ch2024_3",
+          text: "The process of a solid turning directly into a gas is called:",
+          options: ["Evaporation", "Sublimation", "Condensation", "Fusion"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is that sublimation is the phase transition from solid to gas without passing through the liquid phase. Simplified Method: Solid to Gas skip liquid = Sublimation."
+        },
+        {
+          id: "ch2024_4",
+          text: "Identify the functional group in the molecule shown: $CH_3CH_2OH$.",
+          options: ["Alkanol (-OH)", "Alkanal (-CHO)", "Alkanone (>C=O)", "Alkanoic acid (-COOH)"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is the presence of the hydroxyl group (-OH), identifying it as an alkanol (ethanol). Simplified Method: -OH at the end means Alcohol (Alkanol)."
+        }
+      ]
+    },
+    [Subject.BIOLOGY]: {
+      "2024": [
+        {
+          id: "bio2024_1",
+          text: "Which organelle is known as the 'powerhouse' of the cell?",
+          options: ["Nucleus", "Ribosome", "Mitochondrion", "Vacuole"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is that mitochondria are responsible for aerobic respiration and ATP production. Simplified Method: Powerhouse = Mitochondria."
+        },
+        {
+          id: "bio2024_2",
+          text: "In the human circulatory system, which vessel carries oxygenated blood from the lungs to the heart?",
+          options: ["Pulmonary Artery", "Aorta", "Pulmonary Vein", "Vena Cava"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is that the pulmonary vein is the exception among veins, carrying oxygen-rich blood. Simplified Method: Lungs to Heart = Pulmonary Vein."
+        }
+      ]
+    },
+    [Subject.GEOGRAPHY]: {
+      "2024": [
+        {
+          id: "geo2024_1",
+          text: "Which of the following is the largest planet in our solar system?",
+          options: ["Earth", "Mars", "Jupiter", "Saturn"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is that Jupiter's mass and volume far exceed any other planet. Simplified Method: Biggest planet = Jupiter."
+        }
+      ]
+    },
+    [Subject.AGRIC_SCIENCE]: {
+      "2024": [
+        {
+          id: "agric2024_1",
+          text: "The primary purpose of mulching in crop production is to:",
+          options: ["Increase soil acidity", "Conserve soil moisture", "Attract pests", "Compact the soil"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is that mulching covers the soil surface, reducing evaporation. Simplified Method: Covering soil = Keeping water in."
+        }
+      ]
+    },
     [Subject.FURTHER_MATHS]: {
       "2025": [
         {
           id: "fm2025_1",
-          text: "Find the roots of the quadratic equation: \\( 2x^2 - 5x + 3 = 0 \\)",
+          text: "Find the roots of the quadratic equation: \\[ 2x^2 - 5x + 3 = 0 \\]",
           options: ["x = 1, 1.5", "x = -1, -1.5", "x = 2, 3", "x = 0.5, 3"],
           correctOptionIndex: 0,
           explanation: "The reason this answer is correct is that the factors are (2x-3)(x-1)=0. Simplified Method: Use the quadratic formula."
-        },
+        }
+      ],
+      "2024": [
         {
-          id: "fm2025_2",
-          text: "Solve the inequality: \\( |2x - 1| < 5 \\)",
-          options: ["-2 < x < 3", "x < 3", "x > -2", "-3 < x < 2"],
+          id: "fm2024_1",
+          text: "Calculate the derivative of $y = x^3 + 2x^2 - 5x + 7$ with respect to x.",
+          options: ["$3x^2 + 4x - 5$", "$x^2 + x - 5$", "$3x^2 + 4x + 7$", "$6x + 4$"],
           correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is that \\( -5 < 2x - 1 < 5 \\). Simplified Method: Split into two inequalities."
-        },
-        {
-          id: "fm2025_3",
-          text: "Evaluate the limit: \\( \\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2} \\)",
-          options: ["2", "4", "0", "Undefined"],
-          correctOptionIndex: 1,
-          explanation: "The reason this answer is correct is that the expression simplifies to \\( x+2 \\). Simplified Method: Factorize and cancel."
-        },
-        {
-          id: "fm2025_4",
-          text: "Find the derivative of \\( f(x) = \\sin(2x) \\).",
-          options: ["2 \\cos(2x)", "\\cos(2x)", "-2 \\cos(2x)", "2 \\sin(x)"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is the chain rule. Simplified Method: Outer derivative times inner derivative."
-        },
-        {
-          id: "fm2025_5",
-          text: "Calculate the area under the curve \\( y = x^2 \\) from \\( x = 0 \\) to \\( x = 3 \\).",
-          options: ["3", "6", "9", "27"],
-          correctOptionIndex: 2,
-          explanation: "The reason this answer is correct is the integral \\( [x^3/3] \\). Simplified Method: Plug bounds into the antiderivative."
-        },
-        {
-          id: "fm2025_6",
-          text: "Identify the Law shown in a tip-to-tail vector diagram.",
-          imageUrl: "https://myschool.ng/storage/classroom/editor_images/scan%20(2)_LI.jpg",
-          options: ["Triangle Law", "Parallelogram Law", "Polygon Law", "Subtraction"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is that the diagram shows the Triangle Law of vector addition. Simplified Method: Tip-to-tail = Triangle."
-        },
-        {
-          id: "fm2025_7",
-          text: "If \\( \\vec{a} = 3i - 4j \\), find the magnitude \\( |\\vec{a}| \\).",
-          options: ["1", "5", "7", "25"],
-          correctOptionIndex: 1,
-          explanation: "The reason this answer is correct is \\( \\sqrt{3^2 + (-4)^2} = 5 \\). Simplified Method: Use Pythagoras on the components."
-        },
-        {
-          id: "fm2025_8",
-          text: "Calculate the dot product of (2, 3) and (4, -1).",
-          options: ["5", "11", "8", "12"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is \\( (2 \\times 4) + (3 \\times -1) = 5 \\). Simplified Method: Multiply components and add."
-        },
-        {
-          id: "fm2025_9",
-          text: "Find the 10th term of an AP where \\( a = 5 \\) and \\( d = 3 \\).",
-          options: ["30", "32", "35", "38"],
-          correctOptionIndex: 1,
-          explanation: "The reason this answer is correct is \\( 5 + (9 \\times 3) = 32 \\). Simplified Method: Start at 5, add 3 nine times."
-        },
-        {
-          id: "fm2025_10",
-          text: "Sum the first 5 terms of the GP: 2, 6, 18, ...",
-          options: ["242", "121", "80", "160"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is \\( 2(3^5 - 1)/2 = 242 \\). Simplified Method: Add terms: 2, 6, 18, 54, 162."
-        },
-        {
-          id: "fm2025_11",
-          text: "Find the center of the circle: \\( x^2 + y^2 - 4x + 6y - 12 = 0 \\).",
-          options: ["(2, -3)", "(-2, 3)", "(4, -6)", "(2, 3)"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is the center is (2, -3). Simplified Method: Halve the linear coefficients and change signs."
-        },
-        {
-          id: "fm2025_12",
-          text: "Determine the gradient of \\( y = x^3 \\) at \\( x = 2 \\).",
-          options: ["4", "8", "12", "6"],
-          correctOptionIndex: 2,
-          explanation: "The reason this answer is correct is \\( dy/dx = 3x^2 = 12 \\). Simplified Method: Differentiate then plug in x."
-        },
-        {
-          id: "fm2025_13",
-          text: "Evaluate \\( \\int \\sin x dx \\).",
-          options: ["\\cos x + C", "-\\cos x + C", "\\sin x + C", "-\\sin x + C"],
-          correctOptionIndex: 1,
-          explanation: "The reason this answer is correct is that the derivative of \\( -\\cos x \\) is \\( \\sin x \\). Simplified Method: Trig integration rule."
-        },
-        {
-          id: "fm2025_14",
-          text: "Probability of picking a King or Queen from 52 cards.",
-          options: ["2/13", "1/13", "4/13", "8/52"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is \\( 8/52 = 2/13 \\). Simplified Method: 4 Kings + 4 Queens out of 52."
-        },
-        {
-          id: "fm2025_15",
-          text: "Ways to seat 5 people in a row.",
-          options: ["5", "25", "120", "60"],
-          correctOptionIndex: 2,
-          explanation: "The reason this answer is correct is \\( 5! = 120 \\). Simplified Method: Arrangement of n items is n!."
-        },
-        {
-          id: "fm2025_16",
-          text: "Standard deviation of: 2, 4, 6.",
-          options: ["√2.67", "2", "√8", "1.63"],
-          correctOptionIndex: 3,
-          explanation: "The reason this answer is correct is S.D = 1.63. Simplified Method: Root of average squared deviations from mean."
-        },
-        {
-          id: "fm2025_17",
-          text: "Displacement at \\( t=2 \\) for \\( v = 2t + 3 \\).",
-          options: ["7m", "10m", "12m", "5m"],
-          correctOptionIndex: 1,
-          explanation: "The reason this answer is correct is \\( s = t^2 + 3t = 10 \\). Simplified Method: Integrate velocity to get displacement."
-        },
-        {
-          id: "fm2025_18",
-          text: "Work done: F=10N, d=5m, angle=60°.",
-          options: ["50J", "25J", "43.3J", "100J"],
-          correctOptionIndex: 1,
-          explanation: "The reason this answer is correct is \\( 10 \\times 5 \\times 0.5 = 25 \\). Simplified Method: Force times distance times cos(angle)."
-        },
-        {
-          id: "fm2025_19",
-          text: "Simplify: \\( (1+i)^2 \\).",
-          options: ["2", "2i", "-2", "1+2i"],
-          correctOptionIndex: 1,
-          explanation: "The reason this answer is correct is \\( 1 + 2i - 1 = 2i \\). Simplified Method: Square of complex number."
-        },
-        {
-          id: "fm2025_20",
-          text: "Inverse of matrix [[1, 2], [3, 4]].",
-          options: ["[[-2, 1], [1.5, -0.5]]", "[[4, -2], [-3, 1]]", "[[-4, 2], [3, -1]]", "[[1, 0], [0, 1]]"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is using the inverse formula. Simplified Method: Adjoint divided by determinant."
-        },
-        {
-          id: "fm2025_21",
-          text: "Correlation coefficient if \\( \\sum xy=10, \\sum x^2=4, \\sum y^2=25 \\).",
-          options: ["1.0", "0.8", "0.5", "0.1"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is \\( 10/\\sqrt{100} = 1 \\). Simplified Method: Perfect correlation."
-        },
-        {
-          id: "fm2025_22",
-          text: "Evaluate \\( a * b = a + b + ab \\) for 2 * 3.",
-          options: ["5", "6", "11", "10"],
-          correctOptionIndex: 2,
-          explanation: "The reason this answer is correct is \\( 2 + 3 + 6 = 11 \\). Simplified Method: Substitute into the rule."
-        },
-        {
-          id: "fm2025_23",
-          text: "Sum of squares of roots for \\( x^2 - 3x + 2 = 0 \\).",
-          options: ["5", "9", "13", "4"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is \\( 3^2 - 2(2) = 5 \\). Simplified Method: Sum squared minus twice product."
-        },
-        {
-          id: "fm2025_24",
-          text: "Partial fraction of \\( \\frac{1}{(x-1)(x-2)} \\).",
-          options: ["\\( \\frac{1}{x-2} - \\frac{1}{x-1} \\)", "\\( \\frac{1}{x-1} - \\frac{1}{x-2} \\)", "\\( \\frac{2}{x-2} - \\frac{1}{x-1} \\)", "\\( \\frac{1}{x-2} + \\frac{1}{x-1} \\)"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is the decomposition. Simplified Method: Solve for coefficients A and B."
-        },
-        {
-          id: "fm2025_25",
-          text: "The projection of vector \\( \\vec{a} \\) on \\( \\vec{b} \\) is:",
-          options: ["\\( \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|} \\)", "\\( \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}|} \\)", "\\( \\vec{a} \\cdot \\vec{b} \\)", "\\( |\\vec{a}| \\cos \\theta \\)"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is the scalar projection formula. Simplified Method: Dot product divided by base magnitude."
-        },
-        {
-          id: "fm2025_26",
-          text: "Vertical component of 50N at 30°.",
-          options: ["25N", "43.3N", "50N", "15N"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is \\( 50 \\sin 30^\\circ = 25 \\). Simplified Method: Force times sine of angle."
-        },
-        {
-          id: "fm2025_27",
-          text: "Distance between (1, 2) and (4, 6).",
-          options: ["5", "7", "√7", "25"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is \\( \\sqrt{(4-1)^2 + (6-2)^2} = 5 \\). Simplified Method: Use distance formula."
-        },
-        {
-          id: "fm2025_28",
-          text: "Mapping: f(x) = x^2 from R to R.",
-          options: ["One-to-one", "Many-to-one", "Onto", "Bijective"],
-          correctOptionIndex: 1,
-          explanation: "The reason this answer is correct is multiple inputs give one output. Simplified Method: Parabola mapping."
-        },
-        {
-          id: "fm2025_29",
-          text: "Definite integral of 2x from 1 to 4.",
-          options: ["15", "16", "17", "14"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is \\( [x^2] \\) from 1 to 4 = 15. Simplified Method: Upper bound minus lower bound."
-        },
-        {
-          id: "fm2025_30",
-          text: "Unit vector of (3, 4).",
-          options: ["(0.6, 0.8)", "(3, 4)", "(1, 1)", "(0.3, 0.4)"],
-          correctOptionIndex: 0,
-          explanation: "The reason this answer is correct is by dividing by magnitude 5. Simplified Method: Normalized vector."
+          explanation: "The reason this answer is correct is using the power rule $d/dx(x^n) = nx^{n-1}$. Simplified Method: Step 1: Multiply power by coefficient. Step 2: Subtract 1 from power. Step 3: Constants go to zero."
         }
       ]
     }
@@ -1949,12 +1866,14 @@ fallbackData[ExamType.NECO][Subject.ENGLISH]["2025"] = fallbackData[ExamType.JAM
 fallbackData[ExamType.WAEC][Subject.MATHEMATICS]["2025"] = fallbackData[ExamType.JAMB][Subject.MATHEMATICS]["2025"];
 fallbackData[ExamType.NECO][Subject.MATHEMATICS]["2025"] = fallbackData[ExamType.JAMB][Subject.MATHEMATICS]["2025"];
 
-fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS] = { "2025": [] };
-fallbackData[ExamType.NECO][Subject.FURTHER_MATHS] = { "2025": [] };
-fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
-fallbackData[ExamType.NECO][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
-
-fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS] = { "2025": [] };
-fallbackData[ExamType.NECO][Subject.FURTHER_MATHS] = { "2025": [] };
-fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
-fallbackData[ExamType.NECO][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
+// Mirroring all subjects for 2024 and 2025
+[ExamType.WAEC, ExamType.NECO].forEach(exam => {
+  [Subject.PHYSICS, Subject.CHEMISTRY, Subject.BIOLOGY, Subject.GEOGRAPHY, Subject.AGRIC_SCIENCE, Subject.FURTHER_MATHS, Subject.MATHEMATICS, Subject.ENGLISH].forEach(sub => {
+    if (!fallbackData[exam][sub]) fallbackData[exam][sub] = {};
+    if (fallbackData[ExamType.JAMB][sub]) {
+      Object.keys(fallbackData[ExamType.JAMB][sub]).forEach(year => {
+        fallbackData[exam][sub][year] = fallbackData[ExamType.JAMB][sub][year];
+      });
+    }
+  });
+});
