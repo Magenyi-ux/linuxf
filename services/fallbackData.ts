@@ -140,6 +140,947 @@ export const fallbackData: FallbackData = {
         { id: 159, text: "The prime factors of 6 are:", options: ["1, 6", "2, 3", "1, 2, 3, 6", "2, 4"], correctOptionIndex: 1, explanation: "2 and 3 are prime and divide 6. Simplified Method: Prime numbers only." },
         { id: 160, text: "Find the area of a square with perimeter 20cm.", options: ["25cm²", "20cm²", "100cm²", "16cm²"], correctOptionIndex: 0, explanation: "\\( side = 20/4 = 5. Area = 5 \times 5 = 25 \\). Simplified Method: Find side first, then square it." }
       ]
+    },
+    [Subject.FURTHER_MATHS]: {
+      "2025": [
+        {
+                "id": "fm2025_1",
+                "text": "Find the roots of the quadratic equation: \\( 2x^2 - 5x + 3 = 0 \\)",
+                "options": [
+                        "x = 1, 1.5",
+                        "x = -1, -1.5",
+                        "x = 2, 3",
+                        "x = 0.5, 3"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is that the factors are (2x-3)(x-1)=0. Simplified Method: Use the quadratic formula."
+        },
+        {
+                "id": "fm2025_2",
+                "text": "Solve the inequality: \\( |2x - 1| < 5 \\)",
+                "options": [
+                        "-2 < x < 3",
+                        "x < 3",
+                        "x > -2",
+                        "-3 < x < 2"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is that \\( -5 < 2x - 1 < 5 \\). Simplified Method: Split into two inequalities."
+        },
+        {
+                "id": "fm2025_3",
+                "text": "Evaluate the limit: \\( \\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2} \\)",
+                "options": [
+                        "2",
+                        "4",
+                        "0",
+                        "Undefined"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is that the expression simplifies to \\( x+2 \\). Simplified Method: Factorize and cancel."
+        },
+        {
+                "id": "fm2025_4",
+                "text": "Find the derivative of \\( f(x) = \\sin(2x) \\).",
+                "options": [
+                        "2 \\cos(2x)",
+                        "\\cos(2x)",
+                        "-2 \\cos(2x)",
+                        "2 \\sin(x)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is the chain rule. Simplified Method: Outer derivative times inner derivative."
+        },
+        {
+                "id": "fm2025_5",
+                "text": "Calculate the area under the curve \\( y = x^2 \\) from \\( x = 0 \\) to \\( x = 3 \\).",
+                "options": [
+                        "3",
+                        "6",
+                        "9",
+                        "27"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The reason this answer is correct is the integral \\( [x^3/3] \\). Simplified Method: Plug bounds into the antiderivative."
+        },
+        {
+                "id": "fm2025_6",
+                "text": "Identify the Law shown in a tip-to-tail vector diagram.",
+                "imageUrl": "https://myschool.ng/storage/classroom/editor_images/scan%20(2)_LI.jpg",
+                "options": [
+                        "Triangle Law",
+                        "Parallelogram Law",
+                        "Polygon Law",
+                        "Subtraction"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is that the diagram shows the Triangle Law of vector addition. Simplified Method: Tip-to-tail = Triangle."
+        },
+        {
+                "id": "fm2025_7",
+                "text": "If \\( \\vec{a} = 3i - 4j \\), find the magnitude \\( |\\vec{a}| \\).",
+                "options": [
+                        "1",
+                        "5",
+                        "7",
+                        "25"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( \\sqrt{3^2 + (-4)^2} = 5 \\). Simplified Method: Use Pythagoras on the components."
+        },
+        {
+                "id": "fm2025_8",
+                "text": "Calculate the dot product of (2, 3) and (4, -1).",
+                "options": [
+                        "5",
+                        "11",
+                        "8",
+                        "12"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( (2 \\times 4) + (3 \\times -1) = 5 \\). Simplified Method: Multiply components and add."
+        },
+        {
+                "id": "fm2025_9",
+                "text": "Find the 10th term of an AP where \\( a = 5 \\) and \\( d = 3 \\).",
+                "options": [
+                        "30",
+                        "32",
+                        "35",
+                        "38"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( 5 + (9 \\times 3) = 32 \\). Simplified Method: Start at 5, add 3 nine times."
+        },
+        {
+                "id": "fm2025_10",
+                "text": "Sum the first 5 terms of the GP: 2, 6, 18, ...",
+                "options": [
+                        "242",
+                        "121",
+                        "80",
+                        "160"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 2(3^5 - 1)/2 = 242 \\). Simplified Method: Add terms: 2, 6, 18, 54, 162."
+        },
+        {
+                "id": "fm2025_11",
+                "text": "Find the center of the circle: \\( x^2 + y^2 - 4x + 6y - 12 = 0 \\).",
+                "options": [
+                        "(2, -3)",
+                        "(-2, 3)",
+                        "(4, -6)",
+                        "(2, 3)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is the center is (2, -3). Simplified Method: Halve the linear coefficients and change signs."
+        },
+        {
+                "id": "fm2025_12",
+                "text": "Determine the gradient of \\( y = x^3 \\) at \\( x = 2 \\).",
+                "options": [
+                        "4",
+                        "8",
+                        "12",
+                        "6"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The reason this answer is correct is \\( dy/dx = 3x^2 = 12 \\). Simplified Method: Differentiate then plug in x."
+        },
+        {
+                "id": "fm2025_13",
+                "text": "Evaluate \\( \\int \\sin x dx \\).",
+                "options": [
+                        "\\cos x + C",
+                        "-\\cos x + C",
+                        "\\sin x + C",
+                        "-\\sin x + C"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is that the derivative of \\( -\\cos x \\) is \\( \\sin x \\). Simplified Method: Trig integration rule."
+        },
+        {
+                "id": "fm2025_14",
+                "text": "Probability of picking a King or Queen from 52 cards.",
+                "options": [
+                        "2/13",
+                        "1/13",
+                        "4/13",
+                        "8/52"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 8/52 = 2/13 \\). Simplified Method: 4 Kings + 4 Queens out of 52."
+        },
+        {
+                "id": "fm2025_15",
+                "text": "Ways to seat 5 people in a row.",
+                "options": [
+                        "5",
+                        "25",
+                        "120",
+                        "60"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The reason this answer is correct is \\( 5! = 120 \\). Simplified Method: Arrangement of n items is n!."
+        },
+        {
+                "id": "fm2025_16",
+                "text": "Standard deviation of: 2, 4, 6.",
+                "options": [
+                        "√2.67",
+                        "2",
+                        "√8",
+                        "1.63"
+                ],
+                "correctOptionIndex": 3,
+                "explanation": "The reason this answer is correct is S.D = 1.63. Simplified Method: Root of average squared deviations from mean."
+        },
+        {
+                "id": "fm2025_17",
+                "text": "Displacement at \\( t=2 \\) for \\( v = 2t + 3 \\).",
+                "options": [
+                        "7m",
+                        "10m",
+                        "12m",
+                        "5m"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( s = t^2 + 3t = 10 \\). Simplified Method: Integrate velocity to get displacement."
+        },
+        {
+                "id": "fm2025_18",
+                "text": "Work done: F=10N, d=5m, angle=60°.",
+                "options": [
+                        "50J",
+                        "25J",
+                        "43.3J",
+                        "100J"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( 10 \\times 5 \\times 0.5 = 25 \\). Simplified Method: Force times distance times cos(angle)."
+        },
+        {
+                "id": "fm2025_19",
+                "text": "Simplify: \\( (1+i)^2 \\).",
+                "options": [
+                        "2",
+                        "2i",
+                        "-2",
+                        "1+2i"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( 1 + 2i - 1 = 2i \\). Simplified Method: Square of complex number."
+        },
+        {
+                "id": "fm2025_20",
+                "text": "Inverse of matrix [[1, 2], [3, 4]].",
+                "options": [
+                        "[[-2, 1], [1.5, -0.5]]",
+                        "[[4, -2], [-3, 1]]",
+                        "[[-4, 2], [3, -1]]",
+                        "[[1, 0], [0, 1]]"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is using the inverse formula. Simplified Method: Adjoint divided by determinant."
+        },
+        {
+                "id": "fm2025_21",
+                "text": "Correlation coefficient if \\( \\sum xy=10, \\sum x^2=4, \\sum y^2=25 \\).",
+                "options": [
+                        "1.0",
+                        "0.8",
+                        "0.5",
+                        "0.1"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 10/\\sqrt{100} = 1 \\). Simplified Method: Perfect correlation."
+        },
+        {
+                "id": "fm2025_22",
+                "text": "Evaluate \\( a * b = a + b + ab \\) for 2 * 3.",
+                "options": [
+                        "5",
+                        "6",
+                        "11",
+                        "10"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The reason this answer is correct is \\( 2 + 3 + 6 = 11 \\). Simplified Method: Substitute into the rule."
+        },
+        {
+                "id": "fm2025_23",
+                "text": "Sum of squares of roots for \\( x^2 - 3x + 2 = 0 \\).",
+                "options": [
+                        "5",
+                        "9",
+                        "13",
+                        "4"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 3^2 - 2(2) = 5 \\). Simplified Method: Sum squared minus twice product."
+        },
+        {
+                "id": "fm2025_24",
+                "text": "Partial fraction of \\( \\frac{1}{(x-1)(x-2)} \\).",
+                "options": [
+                        "\\( \\frac{1}{x-2} - \\frac{1}{x-1} \\)",
+                        "\\( \\frac{1}{x-1} - \\frac{1}{x-2} \\)",
+                        "\\( \\frac{2}{x-2} - \\frac{1}{x-1} \\)",
+                        "\\( \\frac{1}{x-2} + \\frac{1}{x-1} \\)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is the decomposition. Simplified Method: Solve for coefficients A and B."
+        },
+        {
+                "id": "fm2025_25",
+                "text": "The projection of vector \\( \\vec{a} \\) on \\( \\vec{b} \\) is:",
+                "options": [
+                        "\\( \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|} \\)",
+                        "\\( \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}|} \\)",
+                        "\\( \\vec{a} \\cdot \\vec{b} \\)",
+                        "\\( |\\vec{a}| \\cos \\theta \\)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is the scalar projection formula. Simplified Method: Dot product divided by base magnitude."
+        },
+        {
+                "id": "fm2025_26",
+                "text": "Vertical component of 50N at 30°.",
+                "options": [
+                        "25N",
+                        "43.3N",
+                        "50N",
+                        "15N"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 50 \\sin 30^\\circ = 25 \\). Simplified Method: Force times sine of angle."
+        },
+        {
+                "id": "fm2025_27",
+                "text": "Distance between (1, 2) and (4, 6).",
+                "options": [
+                        "5",
+                        "7",
+                        "√7",
+                        "25"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( \\sqrt{(4-1)^2 + (6-2)^2} = 5 \\). Simplified Method: Use distance formula."
+        },
+        {
+                "id": "fm2025_28",
+                "text": "Mapping: f(x) = x^2 from R to R.",
+                "options": [
+                        "One-to-one",
+                        "Many-to-one",
+                        "Onto",
+                        "Bijective"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is multiple inputs give one output. Simplified Method: Parabola mapping."
+        },
+        {
+                "id": "fm2025_29",
+                "text": "Definite integral of 2x from 1 to 4.",
+                "options": [
+                        "15",
+                        "16",
+                        "17",
+                        "14"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( [x^2] \\) from 1 to 4 = 15. Simplified Method: Upper bound minus lower bound."
+        },
+        {
+                "id": "fm2025_30",
+                "text": "Unit vector of (3, 4).",
+                "options": [
+                        "(0.6, 0.8)",
+                        "(3, 4)",
+                        "(1, 1)",
+                        "(0.3, 0.4)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is by dividing by magnitude 5. Simplified Method: Normalized vector."
+        },
+        {
+                "id": "fm2025_1_b",
+                "text": "Find the roots of the quadratic equation: \\( 2x^2 - 5x + 3 = 0 \\)",
+                "options": [
+                        "x = 1, 1.5",
+                        "x = -1, -1.5",
+                        "x = 2, 3",
+                        "x = 0.5, 3"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is that the factors are (2x-3)(x-1)=0. Simplified Method: Use the quadratic formula."
+        },
+        {
+                "id": "fm2025_2_b",
+                "text": "Solve the inequality: \\( |2x - 1| < 5 \\)",
+                "options": [
+                        "-2 < x < 3",
+                        "x < 3",
+                        "x > -2",
+                        "-3 < x < 2"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is that \\( -5 < 2x - 1 < 5 \\). Simplified Method: Split into two inequalities."
+        },
+        {
+                "id": "fm2025_3_b",
+                "text": "Evaluate the limit: \\( \\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2} \\)",
+                "options": [
+                        "2",
+                        "4",
+                        "0",
+                        "Undefined"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is that the expression simplifies to \\( x+2 \\). Simplified Method: Factorize and cancel."
+        },
+        {
+                "id": "fm2025_4_b",
+                "text": "Find the derivative of \\( f(x) = \\sin(2x) \\).",
+                "options": [
+                        "2 \\cos(2x)",
+                        "\\cos(2x)",
+                        "-2 \\cos(2x)",
+                        "2 \\sin(x)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is the chain rule. Simplified Method: Outer derivative times inner derivative."
+        },
+        {
+                "id": "fm2025_5_b",
+                "text": "Calculate the area under the curve \\( y = x^2 \\) from \\( x = 0 \\) to \\( x = 3 \\).",
+                "options": [
+                        "3",
+                        "6",
+                        "9",
+                        "27"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The reason this answer is correct is the integral \\( [x^3/3] \\). Simplified Method: Plug bounds into the antiderivative."
+        },
+        {
+                "id": "fm2025_6_b",
+                "text": "Identify the Law shown in a tip-to-tail vector diagram.",
+                "imageUrl": "https://myschool.ng/storage/classroom/editor_images/scan%20(2)_LI.jpg",
+                "options": [
+                        "Triangle Law",
+                        "Parallelogram Law",
+                        "Polygon Law",
+                        "Subtraction"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is that the diagram shows the Triangle Law of vector addition. Simplified Method: Tip-to-tail = Triangle."
+        },
+        {
+                "id": "fm2025_7_b",
+                "text": "If \\( \\vec{a} = 3i - 4j \\), find the magnitude \\( |\\vec{a}| \\).",
+                "options": [
+                        "1",
+                        "5",
+                        "7",
+                        "25"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( \\sqrt{3^2 + (-4)^2} = 5 \\). Simplified Method: Use Pythagoras on the components."
+        },
+        {
+                "id": "fm2025_8_b",
+                "text": "Calculate the dot product of (2, 3) and (4, -1).",
+                "options": [
+                        "5",
+                        "11",
+                        "8",
+                        "12"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( (2 \\times 4) + (3 \\times -1) = 5 \\). Simplified Method: Multiply components and add."
+        },
+        {
+                "id": "fm2025_9_b",
+                "text": "Find the 10th term of an AP where \\( a = 5 \\) and \\( d = 3 \\).",
+                "options": [
+                        "30",
+                        "32",
+                        "35",
+                        "38"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( 5 + (9 \\times 3) = 32 \\). Simplified Method: Start at 5, add 3 nine times."
+        },
+        {
+                "id": "fm2025_10_b",
+                "text": "Sum the first 5 terms of the GP: 2, 6, 18, ...",
+                "options": [
+                        "242",
+                        "121",
+                        "80",
+                        "160"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 2(3^5 - 1)/2 = 242 \\). Simplified Method: Add terms: 2, 6, 18, 54, 162."
+        },
+        {
+                "id": "fm2025_11_b",
+                "text": "Find the center of the circle: \\( x^2 + y^2 - 4x + 6y - 12 = 0 \\).",
+                "options": [
+                        "(2, -3)",
+                        "(-2, 3)",
+                        "(4, -6)",
+                        "(2, 3)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is the center is (2, -3). Simplified Method: Halve the linear coefficients and change signs."
+        },
+        {
+                "id": "fm2025_12_b",
+                "text": "Determine the gradient of \\( y = x^3 \\) at \\( x = 2 \\).",
+                "options": [
+                        "4",
+                        "8",
+                        "12",
+                        "6"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The reason this answer is correct is \\( dy/dx = 3x^2 = 12 \\). Simplified Method: Differentiate then plug in x."
+        },
+        {
+                "id": "fm2025_13_b",
+                "text": "Evaluate \\( \\int \\sin x dx \\).",
+                "options": [
+                        "\\cos x + C",
+                        "-\\cos x + C",
+                        "\\sin x + C",
+                        "-\\sin x + C"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is that the derivative of \\( -\\cos x \\) is \\( \\sin x \\). Simplified Method: Trig integration rule."
+        },
+        {
+                "id": "fm2025_14_b",
+                "text": "Probability of picking a King or Queen from 52 cards.",
+                "options": [
+                        "2/13",
+                        "1/13",
+                        "4/13",
+                        "8/52"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 8/52 = 2/13 \\). Simplified Method: 4 Kings + 4 Queens out of 52."
+        },
+        {
+                "id": "fm2025_15_b",
+                "text": "Ways to seat 5 people in a row.",
+                "options": [
+                        "5",
+                        "25",
+                        "120",
+                        "60"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The reason this answer is correct is \\( 5! = 120 \\). Simplified Method: Arrangement of n items is n!."
+        },
+        {
+                "id": "fm2025_16_b",
+                "text": "Standard deviation of: 2, 4, 6.",
+                "options": [
+                        "√2.67",
+                        "2",
+                        "√8",
+                        "1.63"
+                ],
+                "correctOptionIndex": 3,
+                "explanation": "The reason this answer is correct is S.D = 1.63. Simplified Method: Root of average squared deviations from mean."
+        },
+        {
+                "id": "fm2025_17_b",
+                "text": "Displacement at \\( t=2 \\) for \\( v = 2t + 3 \\).",
+                "options": [
+                        "7m",
+                        "10m",
+                        "12m",
+                        "5m"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( s = t^2 + 3t = 10 \\). Simplified Method: Integrate velocity to get displacement."
+        },
+        {
+                "id": "fm2025_18_b",
+                "text": "Work done: F=10N, d=5m, angle=60°.",
+                "options": [
+                        "50J",
+                        "25J",
+                        "43.3J",
+                        "100J"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( 10 \\times 5 \\times 0.5 = 25 \\). Simplified Method: Force times distance times cos(angle)."
+        },
+        {
+                "id": "fm2025_19_b",
+                "text": "Simplify: \\( (1+i)^2 \\).",
+                "options": [
+                        "2",
+                        "2i",
+                        "-2",
+                        "1+2i"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is \\( 1 + 2i - 1 = 2i \\). Simplified Method: Square of complex number."
+        },
+        {
+                "id": "fm2025_20_b",
+                "text": "Inverse of matrix [[1, 2], [3, 4]].",
+                "options": [
+                        "[[-2, 1], [1.5, -0.5]]",
+                        "[[4, -2], [-3, 1]]",
+                        "[[-4, 2], [3, -1]]",
+                        "[[1, 0], [0, 1]]"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is using the inverse formula. Simplified Method: Adjoint divided by determinant."
+        },
+        {
+                "id": "fm2025_21_b",
+                "text": "Correlation coefficient if \\( \\sum xy=10, \\sum x^2=4, \\sum y^2=25 \\).",
+                "options": [
+                        "1.0",
+                        "0.8",
+                        "0.5",
+                        "0.1"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 10/\\sqrt{100} = 1 \\). Simplified Method: Perfect correlation."
+        },
+        {
+                "id": "fm2025_22_b",
+                "text": "Evaluate \\( a * b = a + b + ab \\) for 2 * 3.",
+                "options": [
+                        "5",
+                        "6",
+                        "11",
+                        "10"
+                ],
+                "correctOptionIndex": 2,
+                "explanation": "The reason this answer is correct is \\( 2 + 3 + 6 = 11 \\). Simplified Method: Substitute into the rule."
+        },
+        {
+                "id": "fm2025_23_b",
+                "text": "Sum of squares of roots for \\( x^2 - 3x + 2 = 0 \\).",
+                "options": [
+                        "5",
+                        "9",
+                        "13",
+                        "4"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 3^2 - 2(2) = 5 \\). Simplified Method: Sum squared minus twice product."
+        },
+        {
+                "id": "fm2025_24_b",
+                "text": "Partial fraction of \\( \\frac{1}{(x-1)(x-2)} \\).",
+                "options": [
+                        "\\( \\frac{1}{x-2} - \\frac{1}{x-1} \\)",
+                        "\\( \\frac{1}{x-1} - \\frac{1}{x-2} \\)",
+                        "\\( \\frac{2}{x-2} - \\frac{1}{x-1} \\)",
+                        "\\( \\frac{1}{x-2} + \\frac{1}{x-1} \\)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is the decomposition. Simplified Method: Solve for coefficients A and B."
+        },
+        {
+                "id": "fm2025_25_b",
+                "text": "The projection of vector \\( \\vec{a} \\) on \\( \\vec{b} \\) is:",
+                "options": [
+                        "\\( \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|} \\)",
+                        "\\( \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}|} \\)",
+                        "\\( \\vec{a} \\cdot \\vec{b} \\)",
+                        "\\( |\\vec{a}| \\cos \\theta \\)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is the scalar projection formula. Simplified Method: Dot product divided by base magnitude."
+        },
+        {
+                "id": "fm2025_26_b",
+                "text": "Vertical component of 50N at 30°.",
+                "options": [
+                        "25N",
+                        "43.3N",
+                        "50N",
+                        "15N"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( 50 \\sin 30^\\circ = 25 \\). Simplified Method: Force times sine of angle."
+        },
+        {
+                "id": "fm2025_27_b",
+                "text": "Distance between (1, 2) and (4, 6).",
+                "options": [
+                        "5",
+                        "7",
+                        "√7",
+                        "25"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( \\sqrt{(4-1)^2 + (6-2)^2} = 5 \\). Simplified Method: Use distance formula."
+        },
+        {
+                "id": "fm2025_28_b",
+                "text": "Mapping: f(x) = x^2 from R to R.",
+                "options": [
+                        "One-to-one",
+                        "Many-to-one",
+                        "Onto",
+                        "Bijective"
+                ],
+                "correctOptionIndex": 1,
+                "explanation": "The reason this answer is correct is multiple inputs give one output. Simplified Method: Parabola mapping."
+        },
+        {
+                "id": "fm2025_29_b",
+                "text": "Definite integral of 2x from 1 to 4.",
+                "options": [
+                        "15",
+                        "16",
+                        "17",
+                        "14"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is \\( [x^2] \\) from 1 to 4 = 15. Simplified Method: Upper bound minus lower bound."
+        },
+        {
+                "id": "fm2025_30_b",
+                "text": "Unit vector of (3, 4).",
+                "options": [
+                        "(0.6, 0.8)",
+                        "(3, 4)",
+                        "(1, 1)",
+                        "(0.3, 0.4)"
+                ],
+                "correctOptionIndex": 0,
+                "explanation": "The reason this answer is correct is by dividing by magnitude 5. Simplified Method: Normalized vector."
+        }
+]
+    },
+    [Subject.FURTHER_MATHS]: {
+      "2025": [
+        {
+          id: "fm2025_1",
+          text: "Find the roots of the quadratic equation: \\( 2x^2 - 5x + 3 = 0 \\)",
+          options: ["x = 1, 1.5", "x = -1, -1.5", "x = 2, 3", "x = 0.5, 3"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is that the factors are (2x-3)(x-1)=0. Simplified Method: Use the quadratic formula."
+        },
+        {
+          id: "fm2025_2",
+          text: "Solve the inequality: \\( |2x - 1| < 5 \\)",
+          options: ["-2 < x < 3", "x < 3", "x > -2", "-3 < x < 2"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is that \\( -5 < 2x - 1 < 5 \\). Simplified Method: Split into two inequalities."
+        },
+        {
+          id: "fm2025_3",
+          text: "Evaluate the limit: \\( \\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2} \\)",
+          options: ["2", "4", "0", "Undefined"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is that the expression simplifies to \\( x+2 \\). Simplified Method: Factorize and cancel."
+        },
+        {
+          id: "fm2025_4",
+          text: "Find the derivative of \\( f(x) = \\sin(2x) \\).",
+          options: ["2 \\cos(2x)", "\\cos(2x)", "-2 \\cos(2x)", "2 \\sin(x)"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is the chain rule. Simplified Method: Outer derivative times inner derivative."
+        },
+        {
+          id: "fm2025_5",
+          text: "Calculate the area under the curve \\( y = x^2 \\) from \\( x = 0 \\) to \\( x = 3 \\).",
+          options: ["3", "6", "9", "27"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is the integral \\( [x^3/3] \\). Simplified Method: Plug bounds into the antiderivative."
+        },
+        {
+          id: "fm2025_6",
+          text: "Identify the Law shown in a tip-to-tail vector diagram.",
+          imageUrl: "https://myschool.ng/storage/classroom/editor_images/scan%20(2)_LI.jpg",
+          options: ["Triangle Law", "Parallelogram Law", "Polygon Law", "Subtraction"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is that the diagram shows the Triangle Law of vector addition. Simplified Method: Tip-to-tail = Triangle."
+        },
+        {
+          id: "fm2025_7",
+          text: "If \\( \\vec{a} = 3i - 4j \\), find the magnitude \\( |\\vec{a}| \\).",
+          options: ["1", "5", "7", "25"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is \\( \\sqrt{3^2 + (-4)^2} = 5 \\). Simplified Method: Use Pythagoras on the components."
+        },
+        {
+          id: "fm2025_8",
+          text: "Calculate the dot product of (2, 3) and (4, -1).",
+          options: ["5", "11", "8", "12"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is \\( (2 \\times 4) + (3 \\times -1) = 5 \\). Simplified Method: Multiply components and add."
+        },
+        {
+          id: "fm2025_9",
+          text: "Find the 10th term of an AP where \\( a = 5 \\) and \\( d = 3 \\).",
+          options: ["30", "32", "35", "38"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is \\( 5 + (9 \\times 3) = 32 \\). Simplified Method: Start at 5, add 3 nine times."
+        },
+        {
+          id: "fm2025_10",
+          text: "Sum the first 5 terms of the GP: 2, 6, 18, ...",
+          options: ["242", "121", "80", "160"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is \\( 2(3^5 - 1)/2 = 242 \\). Simplified Method: Add terms: 2, 6, 18, 54, 162."
+        },
+        {
+          id: "fm2025_11",
+          text: "Find the center of the circle: \\( x^2 + y^2 - 4x + 6y - 12 = 0 \\).",
+          options: ["(2, -3)", "(-2, 3)", "(4, -6)", "(2, 3)"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is the center is (2, -3). Simplified Method: Halve the linear coefficients and change signs."
+        },
+        {
+          id: "fm2025_12",
+          text: "Determine the gradient of \\( y = x^3 \\) at \\( x = 2 \\).",
+          options: ["4", "8", "12", "6"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is \\( dy/dx = 3x^2 = 12 \\). Simplified Method: Differentiate then plug in x."
+        },
+        {
+          id: "fm2025_13",
+          text: "Evaluate \\( \\int \\sin x dx \\).",
+          options: ["\\cos x + C", "-\\cos x + C", "\\sin x + C", "-\\sin x + C"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is that the derivative of \\( -\\cos x \\) is \\( \\sin x \\). Simplified Method: Trig integration rule."
+        },
+        {
+          id: "fm2025_14",
+          text: "Probability of picking a King or Queen from 52 cards.",
+          options: ["2/13", "1/13", "4/13", "8/52"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is \\( 8/52 = 2/13 \\). Simplified Method: 4 Kings + 4 Queens out of 52."
+        },
+        {
+          id: "fm2025_15",
+          text: "Ways to seat 5 people in a row.",
+          options: ["5", "25", "120", "60"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is \\( 5! = 120 \\). Simplified Method: Arrangement of n items is n!."
+        },
+        {
+          id: "fm2025_16",
+          text: "Standard deviation of: 2, 4, 6.",
+          options: ["√2.67", "2", "√8", "1.63"],
+          correctOptionIndex: 3,
+          explanation: "The reason this answer is correct is S.D = 1.63. Simplified Method: Root of average squared deviations from mean."
+        },
+        {
+          id: "fm2025_17",
+          text: "Displacement at \\( t=2 \\) for \\( v = 2t + 3 \\).",
+          options: ["7m", "10m", "12m", "5m"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is \\( s = t^2 + 3t = 10 \\). Simplified Method: Integrate velocity to get displacement."
+        },
+        {
+          id: "fm2025_18",
+          text: "Work done: F=10N, d=5m, angle=60°.",
+          options: ["50J", "25J", "43.3J", "100J"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is \\( 10 \\times 5 \\times 0.5 = 25 \\). Simplified Method: Force times distance times cos(angle)."
+        },
+        {
+          id: "fm2025_19",
+          text: "Simplify: \\( (1+i)^2 \\).",
+          options: ["2", "2i", "-2", "1+2i"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is \\( 1 + 2i - 1 = 2i \\). Simplified Method: Square of complex number."
+        },
+        {
+          id: "fm2025_20",
+          text: "Inverse of matrix [[1, 2], [3, 4]].",
+          options: ["[[-2, 1], [1.5, -0.5]]", "[[4, -2], [-3, 1]]", "[[-4, 2], [3, -1]]", "[[1, 0], [0, 1]]"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is using the inverse formula. Simplified Method: Adjoint divided by determinant."
+        },
+        {
+          id: "fm2025_21",
+          text: "Correlation coefficient if \\( \\sum xy=10, \\sum x^2=4, \\sum y^2=25 \\).",
+          options: ["1.0", "0.8", "0.5", "0.1"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is \\( 10/\\sqrt{100} = 1 \\). Simplified Method: Perfect correlation."
+        },
+        {
+          id: "fm2025_22",
+          text: "Evaluate \\( a * b = a + b + ab \\) for 2 * 3.",
+          options: ["5", "6", "11", "10"],
+          correctOptionIndex: 2,
+          explanation: "The reason this answer is correct is \\( 2 + 3 + 6 = 11 \\). Simplified Method: Substitute into the rule."
+        },
+        {
+          id: "fm2025_23",
+          text: "Sum of squares of roots for \\( x^2 - 3x + 2 = 0 \\).",
+          options: ["5", "9", "13", "4"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is \\( 3^2 - 2(2) = 5 \\). Simplified Method: Sum squared minus twice product."
+        },
+        {
+          id: "fm2025_24",
+          text: "Partial fraction of \\( \\frac{1}{(x-1)(x-2)} \\).",
+          options: ["\\( \\frac{1}{x-2} - \\frac{1}{x-1} \\)", "\\( \\frac{1}{x-1} - \\frac{1}{x-2} \\)", "\\( \\frac{2}{x-2} - \\frac{1}{x-1} \\)", "\\( \\frac{1}{x-2} + \\frac{1}{x-1} \\)"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is the decomposition. Simplified Method: Solve for coefficients A and B."
+        },
+        {
+          id: "fm2025_25",
+          text: "The projection of vector \\( \\vec{a} \\) on \\( \\vec{b} \\) is:",
+          options: ["\\( \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|} \\)", "\\( \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}|} \\)", "\\( \\vec{a} \\cdot \\vec{b} \\)", "\\( |\\vec{a}| \\cos \\theta \\)"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is the scalar projection formula. Simplified Method: Dot product divided by base magnitude."
+        },
+        {
+          id: "fm2025_26",
+          text: "Vertical component of 50N at 30°.",
+          options: ["25N", "43.3N", "50N", "15N"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is \\( 50 \\sin 30^\\circ = 25 \\). Simplified Method: Force times sine of angle."
+        },
+        {
+          id: "fm2025_27",
+          text: "Distance between (1, 2) and (4, 6).",
+          options: ["5", "7", "√7", "25"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is \\( \\sqrt{(4-1)^2 + (6-2)^2} = 5 \\). Simplified Method: Use distance formula."
+        },
+        {
+          id: "fm2025_28",
+          text: "Mapping: f(x) = x^2 from R to R.",
+          options: ["One-to-one", "Many-to-one", "Onto", "Bijective"],
+          correctOptionIndex: 1,
+          explanation: "The reason this answer is correct is multiple inputs give one output. Simplified Method: Parabola mapping."
+        },
+        {
+          id: "fm2025_29",
+          text: "Definite integral of 2x from 1 to 4.",
+          options: ["15", "16", "17", "14"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is \\( [x^2] \\) from 1 to 4 = 15. Simplified Method: Upper bound minus lower bound."
+        },
+        {
+          id: "fm2025_30",
+          text: "Unit vector of (3, 4).",
+          options: ["(0.6, 0.8)", "(3, 4)", "(1, 1)", "(0.3, 0.4)"],
+          correctOptionIndex: 0,
+          explanation: "The reason this answer is correct is by dividing by magnitude 5. Simplified Method: Normalized vector."
+        }
+      ]
     }
   },
     [ExamType.WAEC]: {
@@ -1007,3 +1948,13 @@ fallbackData[ExamType.WAEC][Subject.ENGLISH]["2025"] = fallbackData[ExamType.JAM
 fallbackData[ExamType.NECO][Subject.ENGLISH]["2025"] = fallbackData[ExamType.JAMB][Subject.ENGLISH]["2025"];
 fallbackData[ExamType.WAEC][Subject.MATHEMATICS]["2025"] = fallbackData[ExamType.JAMB][Subject.MATHEMATICS]["2025"];
 fallbackData[ExamType.NECO][Subject.MATHEMATICS]["2025"] = fallbackData[ExamType.JAMB][Subject.MATHEMATICS]["2025"];
+
+fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS] = { "2025": [] };
+fallbackData[ExamType.NECO][Subject.FURTHER_MATHS] = { "2025": [] };
+fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
+fallbackData[ExamType.NECO][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
+
+fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS] = { "2025": [] };
+fallbackData[ExamType.NECO][Subject.FURTHER_MATHS] = { "2025": [] };
+fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
+fallbackData[ExamType.NECO][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
