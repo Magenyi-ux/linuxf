@@ -1,12 +1,11 @@
 
-import { OpenAI } from 'openai';
+import { GoogleGenAI } from '@google/genai';
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
+const genAI = new GoogleGenAI(process.env.API_KEY || process.env.GEMINI_API_KEY);
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 const EXAM_TYPES = ['JAMB', 'WAEC', 'NECO'];
 const SUBJECTS = [
@@ -14,9 +13,12 @@ const SUBJECTS = [
     'English Language',
     'Physics',
     'Chemistry',
-    'Biology'
+    'Biology',
+    'Further Mathematics',
+    'Agricultural Science',
+    'Geography'
 ];
-const YEARS = Array.from({ length: 11 }, (_, i) => (2025 - i).toString());
+const YEARS = Array.from({ length: 25 }, (_, i) => (2024 - i).toString());
 
 const FALLBACK_DATA_PATH = path.resolve('services/fallbackData.ts');
 
@@ -35,31 +37,30 @@ async function generateQuestions(examType, subject, year, count, existingHashes)
         Requirements:
         1. Questions must be high-quality and relevant to the curriculum.
         2. Each question MUST have exactly 4 options.
-        3. The explanation MUST include a "Simplified Method" section to help students understand better.
-        4. Use LaTeX for mathematical formulas or chemical equations where appropriate (e.g. \\( x^2 \\), \\( H_2O \\)).
+        3. The explanation MUST include a "Simplified Method" section with step-by-step guidance.
+        4. Use LaTeX for mathematical formulas or chemical equations where appropriate. USE $ for delimiters (e.g. $x^2$, $H_2O$).
+        5. If the question requires a diagram, add a placeholder imageUrl like "https://placehold.co/600x400?text=Diagram+for+${subject}".
 
         Output format: ONLY a raw JSON array of objects. No markdown formatting.
         [
           {
             "text": "Question text...",
+            "imageUrl": "optional...",
             "options": ["A", "B", "C", "D"],
             "correctOptionIndex": 0,
-            "explanation": "Detailed explanation... Simplified Method: ..."
+            "explanation": "Detailed explanation... Simplified Method: Step 1... Step 2..."
           }
         ]
     `;
 
     try {
-        const completion = await openai.chat.completions.create({
-            model: "gpt-4o-mini",
-            messages: [
-                { role: "system", content: "You are a helpful assistant that generates educational content in JSON format." },
-                { role: "user", content: prompt }
-            ],
-            response_format: { type: "json_object" }
-        });
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        let content = response.text();
 
-        const content = completion.choices[0].message.content;
+        // Clean markdown
+        content = content.replace(/```json/g, '').replace(/```/g, '').trim();
+
         let questions = JSON.parse(content);
 
         if (!Array.isArray(questions)) {
@@ -166,7 +167,10 @@ export const fallbackData: FallbackData = {
                 'ENGLISH': 'English Language',
                 'PHYSICS': 'Physics',
                 'CHEMISTRY': 'Chemistry',
-                'BIOLOGY': 'Biology'
+                'BIOLOGY': 'Biology',
+                'FURTHER_MATHS': 'Further Mathematics',
+                'AGRIC_SCIENCE': 'Agricultural Science',
+                'GEOGRAPHY': 'Geography'
             }).find(([k, v]) => v === subject)?.[0] || subject.toUpperCase().replace(/\s+/g, '_');
 
             output += `    [Subject.${subjectEnumKey}]: {\n`;

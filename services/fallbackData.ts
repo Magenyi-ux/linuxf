@@ -77,6 +77,105 @@ export const fallbackData: FallbackData = {
       ],
       "2024": [] // Empty for now, user can generate via script
     },
+    [Subject.PHYSICS]: {
+      "2024": [
+        {
+          "id": "phy2024_1",
+          "text": "A car starts from rest and accelerates uniformly at $2m/s^2$ for 10 seconds. Calculate the distance covered.",
+          "options": ["100m", "200m", "50m", "150m"],
+          "correctOptionIndex": 0,
+          "explanation": "The reason this answer is correct is that we use the equation of motion $s = ut + 0.5at^2$. \n\n**Simplified Method:** \nStep 1: Identify given values: $u = 0$ (starts from rest), $a = 2$, $t = 10$. \nStep 2: Plug into formula: $s = (0 \times 10) + (0.5 \times 2 \times 10^2)$. \nStep 3: $s = 0 + 1 \times 100 = 100m$."
+        },
+        {
+          "id": "phy2024_2",
+          "text": "What is the refractive index of a medium if the speed of light in it is $2 \times 10^8 m/s$? (Speed of light in vacuum = $3 \times 10^8 m/s$)",
+          "options": ["1.5", "0.67", "2.0", "1.33"],
+          "correctOptionIndex": 0,
+          "explanation": "The reason this answer is correct is that refractive index $n = c/v$. \n\n**Simplified Method:** \nStep 1: $n = (3 \times 10^8) / (2 \times 10^8)$. \nStep 2: Cancel $10^8$. \nStep 3: $3 / 2 = 1.5$."
+        }
+      ]
+    },
+    [Subject.CHEMISTRY]: {
+      "2024": [
+        {
+          "id": "chm2024_1",
+          "text": "Calculate the number of moles in 10g of Calcium Carbonate ($CaCO_3$). ($Ca=40, C=12, O=16$)",
+          "options": ["0.1 mol", "1.0 mol", "0.5 mol", "0.01 mol"],
+          "correctOptionIndex": 0,
+          "explanation": "The reason this answer is correct is that Moles = Mass / Molar Mass. \n\n**Simplified Method:** \nStep 1: Find Molar Mass of $CaCO_3 = 40 + 12 + (16 \times 3) = 100g/mol$. \nStep 2: Moles = $10g / 100g/mol = 0.1 mol$."
+        }
+      ]
+    },
+    [Subject.BIOLOGY]: {
+      "2024": [
+        {
+          "id": "bio2024_1",
+          "text": "Identify the structure labeled 'X' in the diagram of the human heart below.",
+          "imageUrl": "https://placehold.co/600x400?text=Diagram+of+Human+Heart+with+Label+X",
+          "options": ["Left Atrium", "Right Ventricle", "Aorta", "Pulmonary Artery"],
+          "correctOptionIndex": 2,
+          "explanation": "The reason this answer is correct is that structure X points to the largest artery which carries oxygenated blood to the body. \n\n**Simplified Method:** \nStep 1: Look at the top-most large vessel. \nStep 2: Recognize it as the Aorta. \nStep 3: Match it with Option C."
+        },
+        {
+          "id": "bio2024_2",
+          "text": "Which of the following cell organelles is known as the 'powerhouse' of the cell?",
+          "options": ["Nucleus", "Mitochondrion", "Ribosome", "Chloroplast"],
+          "correctOptionIndex": 1,
+          "explanation": "The reason this answer is correct is that mitochondria are responsible for aerobic respiration and ATP production. \n\n**Simplified Method:** \nThink of the Mitochondrion as the engine or battery of the cell that provides energy."
+        }
+      ]
+    },
+    [Subject.AGRIC_SCIENCE]: {
+      "2024": [
+        {
+          "id": "agr2024_1",
+          "text": "Which of these is a biotic factor affecting agricultural production?",
+          "options": ["Temperature", "Soil pH", "Pests", "Rainfall"],
+          "correctOptionIndex": 2,
+          "explanation": "The reason this answer is correct is that biotic factors are living organisms that affect the environment. \n\n**Simplified Method:** \nBiotic = Living. Pests are living, while others are non-living (abiotic)."
+        }
+      ]
+    },
+    [Subject.GEOGRAPHY]: {
+      "2024": [
+        {
+          "id": "geo2024_1",
+          "text": "If the time at the Greenwich Meridian (Long $0^\circ$) is 12:00 noon, what is the time at a place on Long $15^\circ E$?",
+          "options": ["11:00 am", "1:00 pm", "12:15 pm", "12:00 midnight"],
+          "correctOptionIndex": 1,
+          "explanation": "The reason this answer is correct is that the Earth rotates $15^\circ$ per hour. East is ahead. \n\n**Simplified Method:** \nStep 1: Calculate time difference: $15^\circ / 15^\circ = 1$ hour. \nStep 2: Since it is East, add the hour: 12:00 + 1 hour = 1:00 pm."
+        }
+      ],
+      "2015": [
+        {
+          "id": "geo2015_1",
+          "text": "Which of the following is a primary rock type?",
+          "options": ["Sedimentary", "Metamorphic", "Igneous", "Sandstone"],
+          "correctOptionIndex": 2,
+          "explanation": "The reason this answer is correct is that Igneous rocks are formed from cooling magma and are considered primary rocks. \n\n**Simplified Method:** \nIgneous rocks come directly from the Earth's interior (magma), making them 'first' or primary."
+        }
+      ]
+    },
+    [Subject.FURTHER_MATHS]: {
+      "2024": [
+        {
+          "id": "fm2024_1",
+          "text": "Evaluate $\int_0^2 (3x^2 + 1) dx$",
+          "options": ["9", "10", "8", "11"],
+          "correctOptionIndex": 1,
+          "explanation": "The reason this answer is correct is that the integral is $[x^3 + x]$ from 0 to 2. \n\n**Simplified Method:** \nStep 1: Integrate: $x^3 + x$. \nStep 2: Plug in 2: $2^3 + 2 = 8 + 2 = 10$. \nStep 3: Plug in 0: $0$. \nStep 4: Subtract: $10 - 0 = 10$."
+        }
+      ],
+      "2010": [
+         {
+          "id": "fm2010_1",
+          "text": "Find the sum of the first 20 terms of the AP: $5, 8, 11, ...$",
+          "options": ["670", "700", "650", "630"],
+          "correctOptionIndex": 0,
+          "explanation": "The reason this answer is correct is using the sum formula $S_n = \frac{n}{2}(2a + (n-1)d)$. \n\n**Simplified Method:** \nStep 1: $a=5, d=3, n=20$. \nStep 2: $S_{20} = 10(10 + 19 \times 3)$. \nStep 3: $S_{20} = 10(10 + 57) = 10(67) = 670$."
+        }
+      ]
+    },
     [Subject.MATHEMATICS]: {
       "2025": [
         { id: 101, text: "Solve for x: \\( 2x + 5 = 15 \\)", options: ["5", "10", "7.5", "20"], correctOptionIndex: 0, explanation: "\\( 2x = 10 \\rightarrow x = 5 \\). Simplified Method: Subtract 5 then divide by 2." },
@@ -1949,12 +2048,12 @@ fallbackData[ExamType.NECO][Subject.ENGLISH]["2025"] = fallbackData[ExamType.JAM
 fallbackData[ExamType.WAEC][Subject.MATHEMATICS]["2025"] = fallbackData[ExamType.JAMB][Subject.MATHEMATICS]["2025"];
 fallbackData[ExamType.NECO][Subject.MATHEMATICS]["2025"] = fallbackData[ExamType.JAMB][Subject.MATHEMATICS]["2025"];
 
-fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS] = { "2025": [] };
-fallbackData[ExamType.NECO][Subject.FURTHER_MATHS] = { "2025": [] };
-fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
-fallbackData[ExamType.NECO][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
-
-fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS] = { "2025": [] };
-fallbackData[ExamType.NECO][Subject.FURTHER_MATHS] = { "2025": [] };
-fallbackData[ExamType.WAEC][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
-fallbackData[ExamType.NECO][Subject.FURTHER_MATHS]["2025"] = fallbackData[ExamType.JAMB][Subject.FURTHER_MATHS]["2025"];
+// Helper to mirror science subjects across exams if missing
+[ExamType.WAEC, ExamType.NECO].forEach(exam => {
+  [Subject.PHYSICS, Subject.CHEMISTRY, Subject.BIOLOGY, Subject.FURTHER_MATHS, Subject.AGRIC_SCIENCE, Subject.GEOGRAPHY].forEach(sub => {
+    if (!fallbackData[exam][sub]) fallbackData[exam][sub] = {};
+    Object.keys(fallbackData[ExamType.JAMB][sub] || {}).forEach(year => {
+      fallbackData[exam][sub][year] = fallbackData[ExamType.JAMB][sub][year];
+    });
+  });
+});
