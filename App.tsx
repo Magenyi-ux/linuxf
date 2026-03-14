@@ -5,12 +5,14 @@ import { ExamCard } from './components/ExamCard';
 import { LoadingScreen } from './components/LoadingScreen';
 import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
+import { Profile } from './components/Profile';
+import { ChatBot } from './components/ChatBot';
 import { fetchExamQuestions } from './services/geminiService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
-  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Home, ArrowLeft, Search
+  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Home, ArrowLeft, Search, User
 } from 'lucide-react';
 
 // Stream Definitions
@@ -86,6 +88,11 @@ const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const [books, setBooks] = useState<Record<string, Book>>({}); 
+  const [userProfile, setUserProfile] = useState<UserProfile>({
+    level: 1,
+    xp: 0,
+    streak: 0
+  });
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
 
@@ -120,10 +127,17 @@ const App: React.FC = () => {
     try {
       const savedBooks = localStorage.getItem('waExamPrep_books');
       if (savedBooks) setBooks(JSON.parse(savedBooks));
+
+      const savedProfile = localStorage.getItem('waExamPrep_profile');
+      if (savedProfile) setUserProfile(JSON.parse(savedProfile));
     } catch (e) {
-      console.error("Failed to load books from storage", e);
+      console.error("Failed to load data from storage", e);
     }
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem('waExamPrep_profile', JSON.stringify(userProfile));
+  }, [userProfile]);
 
   const saveBook = (book: Book) => {
     try {
@@ -230,6 +244,15 @@ const App: React.FC = () => {
       setLastScore(score);
       setLastTotal(total);
 
+      // Award XP: 10 XP per correct answer + 50 bonus for finishing
+      const xpGained = (score * 10) + 50;
+      setUserProfile(prev => ({
+        ...prev,
+        xp: prev.xp + xpGained,
+        level: Math.floor((prev.xp + xpGained) / 1000) + 1,
+        streak: prev.streak + 1 // Simple streak increment for now
+      }));
+
       // If we are in a book session, update the book's stats
       if (activeBookId && books[activeBookId]) {
           const book = books[activeBookId];
@@ -282,10 +305,16 @@ const App: React.FC = () => {
              >
                 My Library
              </button>
+             <button
+                onClick={() => setScreen('PROFILE')}
+                className={`text-sm font-semibold transition-colors ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
+             >
+                Profile
+             </button>
           </div>
 
           <button 
-            onClick={() => setShowLibrary(true)}
+            onClick={() => setScreen('PROFILE')}
             className="md:hidden p-2.5 bg-gray-50 rounded-xl relative border border-gray-100"
           >
              <Library className="w-5 h-5 text-gray-600" />
@@ -316,11 +345,11 @@ const App: React.FC = () => {
             <span className="text-[10px] font-bold">Library</span>
           </button>
           <button
-            onClick={() => {}}
-            className="flex flex-col items-center gap-1 text-gray-400"
+            onClick={() => setScreen('PROFILE')}
+            className={`flex flex-col items-center gap-1 ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-400'}`}
           >
-            <Trophy className="w-6 h-6" />
-            <span className="text-[10px] font-bold">Awards</span>
+            <User className="w-6 h-6" />
+            <span className="text-[10px] font-bold">Profile</span>
           </button>
         </div>
       </nav>
@@ -617,7 +646,18 @@ const App: React.FC = () => {
                 onHome={resetApp}
             />
         )}
+
+        {screen === 'PROFILE' && (
+            <Profile
+                user={userProfile}
+                books={books}
+                onDeleteBook={deleteBook}
+                onBack={resetApp}
+            />
+        )}
       </main>
+
+      <ChatBot />
 
       {/* Library Modal */}
       {showLibrary && (
