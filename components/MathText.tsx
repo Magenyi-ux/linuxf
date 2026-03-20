@@ -1,5 +1,6 @@
 import React from 'react';
 import katex from 'katex';
+import DOMPurify from 'dompurify';
 
 interface MathTextProps {
   text: string;
@@ -36,7 +37,12 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
               throwOnError: false,
               displayMode: false
             });
-            return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
+            // 🛡️ Sentinel: Sanitize KaTeX output to prevent XSS (KaTeX < 0.16.21 vulnerabilities)
+            // Use HTML, SVG, and MathML profiles to ensure math symbols render correctly and remain accessible
+            const sanitizedHtml = DOMPurify.sanitize(html, {
+              USE_PROFILES: { html: true, svg: true, svgFilters: true, mathMl: true }
+            });
+            return <span key={i} dangerouslySetInnerHTML={{ __html: sanitizedHtml }} className="mx-1" />;
           } catch (e) {
             // Fallback if KaTeX fails
             return <span key={i} className="text-red-500">{part}</span>;
