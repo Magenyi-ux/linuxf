@@ -1,14 +1,14 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { MessageCircle, X, Send, Bot, User, Minimize2, Maximize2, RotateCcw } from 'lucide-react';
-import { createTutorChatSession } from '../services/geminiService';
+import { createTutorChatSession } from '../services/aiService';
 import { MathText } from './MathText';
 
 export const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'model'; content: string }[]>([
-    { role: 'model', content: "Hello! I'm **Professor Gemini**, your AI study tutor. How can I help you prepare for your exams today?" }
+    { role: 'model', content: "Hello! I'm **Professor Qwen**, your AI study tutor. How can I help you prepare for your exams today?" }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -56,7 +56,7 @@ export const ChatBot: React.FC = () => {
     if (confirm("Reset conversation?")) {
       chatSessionRef.current = createTutorChatSession();
       setMessages([
-        { role: 'model', content: "Hello! I'm **Professor Gemini**, your AI study tutor. How can I help you prepare for your exams today?" }
+        { role: 'model', content: "Hello! I'm **Professor Qwen**, your AI study tutor. How can I help you prepare for your exams today?" }
       ]);
     }
   };
@@ -69,7 +69,7 @@ export const ChatBot: React.FC = () => {
       >
         <MessageCircle className="w-8 h-8" />
         <span className="absolute right-full mr-4 bg-gray-900 text-white px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-            Ask Professor Gemini
+            Ask Professor Qwen
         </span>
       </button>
     );
@@ -84,7 +84,7 @@ export const ChatBot: React.FC = () => {
                 <Bot className="w-5 h-5" />
             </div>
             <div>
-                <h3 className="font-black text-sm">Professor Gemini</h3>
+                <h3 className="font-black text-sm">Professor Qwen</h3>
                 <div className="flex items-center gap-1.5">
                     <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
                     <span className="text-[10px] font-bold opacity-80 uppercase tracking-widest">Always Learning</span>

@@ -12,7 +12,7 @@
     "@google/genai": "^1.33.0",
     "katex": "0.16.9",
     "lucide-react": "^0.560.0",
-    "openai": "^6.25.0",
+    "openai": "^6.32.0",
     "pdfjs-dist": "4.4.168",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
