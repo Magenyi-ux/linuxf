@@ -3,7 +3,7 @@ import { ExamType, Subject, Question } from "../types";
 import { fallbackData } from "./fallbackData";
 
 const openai = new OpenAI({
-    apiKey: process.env.NVIDIA_API_KEY || 'dummy_key',
+    apiKey: "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",
     baseURL: "https://integrate.api.nvidia.com/v1",
     dangerouslyAllowBrowser: true // Required for frontend usage
 });
