@@ -4,7 +4,7 @@ import { fallbackData } from "./fallbackData";
 
 const openai = new OpenAI({
     apiKey: "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",
-    baseURL: "https://integrate.api.nvidia.com/v1",
+    baseURL: typeof window !== 'undefined' ? `${window.location.origin}/api/nvidia/v1` : "/api/nvidia/v1",
     dangerouslyAllowBrowser: true // Required for frontend usage
 });
 
@@ -89,7 +89,8 @@ export const fetchExamQuestions = async (
   `;
 
   try {
-    console.log("Calling NVIDIA NIM with parameters:", { model, baseURL: "https://integrate.api.nvidia.com/v1" });
+    const baseURL = typeof window !== 'undefined' ? `${window.location.origin}/api/nvidia/v1` : "/api/nvidia/v1";
+    console.log("Calling NVIDIA NIM (proxied) with parameters:", { model, baseURL });
     const response = await openai.chat.completions.create({
       model: model,
       messages: [{ role: "user", content: prompt }],
