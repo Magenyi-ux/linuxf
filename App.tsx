@@ -7,7 +7,7 @@ import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
 import { Profile } from './components/Profile';
 import { ChatBot } from './components/ChatBot';
-import { fetchExamQuestions } from './services/geminiService';
+import { fetchExamQuestions } from './services/aiService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
