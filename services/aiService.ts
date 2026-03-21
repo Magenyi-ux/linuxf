@@ -60,7 +60,7 @@ export const fetchExamQuestions = async (
       };
   }
 
-  const model = "qwen/qwen3.5-122b-a10b";
+  const model = "meta/llama3-8b-instruct";
 
   const yearContext = year === 'Random'
     ? "randomly selected from various past years (2010-2023)"
@@ -120,7 +120,7 @@ export const createTutorChatSession = () => {
   const history: { role: "user" | "assistant" | "system", content: string }[] = [
     {
         role: "system",
-        content: "You are 'Professor Qwen', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO). Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams. Be concise, use local context where appropriate for Nigerian students, and always be supportive. If asked about things outside of education/exams, politely steer the conversation back to studying."
+        content: "You are 'Professor', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO). Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams. Be concise, use local context where appropriate for Nigerian students, and always be supportive. If asked about things outside of education/exams, politely steer the conversation back to studying."
     }
   ];
 
@@ -128,9 +128,9 @@ export const createTutorChatSession = () => {
     sendMessage: async (message: string) => {
       history.push({ role: "user", content: message });
 
-      console.log("Calling NVIDIA NIM Chat with model: qwen/qwen3.5-122b-a10b");
+      console.log("Calling NVIDIA NIM Chat with model: meta/llama3-8b-instruct");
       const response = await openai.chat.completions.create({
-        model: "qwen/qwen3.5-122b-a10b",
+        model: "meta/llama3-8b-instruct",
         messages: history,
         temperature: 0.7,
       });
