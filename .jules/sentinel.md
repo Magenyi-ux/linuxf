@@ -1,0 +1,4 @@
+## 2025-03-22 - [KaTeX XSS Mitigation & DOMPurify Integration]
+**Vulnerability:** KaTeX versions prior to 0.16.21 were vulnerable to several XSS-related issues, including protocol bypass and unescaped filenames in `\includegraphics`. Additionally, rendering raw HTML from KaTeX directly into the DOM via `dangerouslySetInnerHTML` without sanitization posed a defense-in-depth risk.
+**Learning:** Even trusted libraries like KaTeX can have vulnerabilities. Sanitizing the generated HTML with DOMPurify is a necessary secondary defense. When using DOMPurify with KaTeX, it's critical to use `USE_PROFILES: { html: true, svg: true, svgFilters: true, mathMl: true }` to avoid stripping the MathML and SVG elements required for correct mathematical rendering.
+**Prevention:** Always pin security-critical dependencies to safe versions in `package.json` and keep the browser-side `importmap` and SRI hashes in `index.html` strictly in sync.
