@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@google/genai": "^1.33.0",
-    "katex": "0.16.9",
+    "dompurify": "3.3.3",
+    "katex": "0.16.21",
     "lucide-react": "^0.560.0",
     "openai": "^6.32.0",
     "pdfjs-dist": "4.4.168",
@@ -20,6 +21,7 @@
     "recharts": "^3.5.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",
