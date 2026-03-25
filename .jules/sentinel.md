@@ -1,0 +1,4 @@
+## 2025-05-15 - [KaTeX XSS Mitigation & Sanitization]
+**Vulnerability:** KaTeX versions < 0.16.21 are vulnerable to XSS through unescaped filenames and protocol bypasses. Additionally, rendering math via `dangerouslySetInnerHTML` without sanitization poses a risk if math strings are user-controlled.
+**Learning:** KaTeX output contains complex SVG and MathML structures that can be stripped by aggressive sanitizers. Using `DOMPurify` with specific profiles (`html`, `svg`, `svgFilters`, `mathMl`) is essential to maintain rendering integrity while ensuring security.
+**Prevention:** Always pin security-critical dependencies like `katex` and `dompurify` to exact, audited versions. Ensure `index.html` (SRI hashes/importmap) stays in sync with `package.json`. Use `DOMPurify.sanitize` with appropriate profiles for all rendered HTML.
