@@ -1,0 +1,4 @@
+## 2025-05-15 - [Outdated KaTeX and Unsanitized Math Rendering]
+**Vulnerability:** KaTeX version 0.16.9 contains several moderate vulnerabilities including XSS via protocol bypass and unescaped filenames. Furthermore, the `MathText.tsx` component renders KaTeX output directly via `dangerouslySetInnerHTML` without any secondary HTML sanitization.
+**Learning:** Even well-known libraries can have security flaws. Relying solely on a library's internal safety for rendering raw HTML (via `dangerouslySetInnerHTML`) without an independent sanitization layer creates a single point of failure.
+**Prevention:** Pin security-sensitive dependencies to their latest patched versions. Implement a defense-in-depth strategy by always sanitizing HTML output from third-party libraries using a trusted sanitizer like DOMPurify before rendering it in the DOM.
