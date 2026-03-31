@@ -1,5 +1,6 @@
 import React from 'react';
 import katex from 'katex';
+import DOMPurify from 'dompurify';
 
 interface MathTextProps {
   text: string;
@@ -32,9 +33,12 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = '' }) => {
           // This is a math segment
           const math = part.startsWith('$') ? part.slice(1, -1) : part.slice(2, -2);
           try {
-            const html = katex.renderToString(math, {
+            const rawHtml = katex.renderToString(math, {
               throwOnError: false,
               displayMode: false
+            });
+            const html = DOMPurify.sanitize(rawHtml, {
+              USE_PROFILES: { html: true, svg: true, svgFilters: true, mathMl: true }
             });
             return <span key={i} dangerouslySetInnerHTML={{ __html: html }} className="mx-1" />;
           } catch (e) {
