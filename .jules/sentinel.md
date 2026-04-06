@@ -1,0 +1,4 @@
+## 2026-04-04 - [Removal of Hardcoded NVIDIA API Keys]
+**Vulnerability:** Found hardcoded NVIDIA NIM API keys in `services/aiService.ts` and `scripts/scraper.js`. These keys provide access to billable AI services and were exposed in the source code.
+**Learning:** Development speed sometimes leads to "temporary" hardcoded secrets being left in code. Even in internal or experimental scripts, secrets should be managed via environment variables from the start.
+**Prevention:** Use environment variables (e.g., `import.meta.env.VITE_NVIDIA_API_KEY` for Vite, `process.env.NVIDIA_API_KEY` for Node.js scripts). Include a `.env.example` file in the repository to document necessary secrets without exposing them. Use secret scanning tools in the CI/CD pipeline to catch hardcoded keys before they are committed.
