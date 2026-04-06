@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { MessageCircle, X, Send, Bot, User, Minimize2, Maximize2, RotateCcw } from 'lucide-react';
+import { MessageCircle, X, Send, Bot, User, Minimize2, Maximize2, RotateCcw, Image as ImageIcon, Search } from 'lucide-react';
 import { createTutorChatSession } from '../services/aiService';
 import { MathText } from './MathText';
 
@@ -12,8 +12,35 @@ export const ChatBot: React.FC = () => {
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const chatSessionRef = useRef<any>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const handleDiveDeep = (e: any) => {
+        const { context } = e.detail;
+        setIsOpen(true);
+        setIsMinimized(false);
+        setMessages([
+            { role: 'model', content: "Initializing deep research mode... analyzing your question context." }
+        ]);
+        chatSessionRef.current = createTutorChatSession(context);
+        setIsLoading(true);
+
+        // Mocking the initial response from the new session
+        setTimeout(() => {
+            setMessages(prev => [
+                ...prev,
+                { role: 'model', content: "I've analyzed the question and explanation. I'm ready to **'Dive Deep'** and help you master this topic. I can provide diagrams, prove concepts, or explain specific steps. What would you like to explore first?" }
+            ]);
+            setIsLoading(false);
+        }, 1500);
+    };
+
+    window.addEventListener('dive-deep', handleDiveDeep);
+    return () => window.removeEventListener('dive-deep', handleDiveDeep);
+  }, []);
 
   useEffect(() => {
     if (isOpen && !chatSessionRef.current) {
@@ -27,12 +54,32 @@ export const ChatBot: React.FC = () => {
     }
   }, [messages, isLoading]);
 
+  const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+            setSelectedImage(reader.result as string);
+        };
+        reader.readAsDataURL(file);
+    }
+  };
+
   const handleSend = async () => {
-    if (!input.trim() || isLoading) return;
+    if ((!input.trim() && !selectedImage) || isLoading) return;
 
     const userMessage = input.trim();
+    const imageToUpload = selectedImage ? selectedImage.split(',')[1] : undefined;
+
     setInput('');
-    setMessages(prev => [...prev, { role: 'user', content: userMessage }]);
+    setSelectedImage(null);
+    setMessages(prev => [
+        ...prev,
+        {
+            role: 'user',
+            content: selectedImage ? `[Image Uploaded] ${userMessage}` : userMessage
+        }
+    ]);
     setIsLoading(true);
 
     try {
@@ -40,7 +87,7 @@ export const ChatBot: React.FC = () => {
         chatSessionRef.current = createTutorChatSession();
       }
 
-      const result = await chatSessionRef.current.sendMessage(userMessage);
+      const result = await chatSessionRef.current.sendMessage(userMessage || "Please analyze this image.", imageToUpload);
       const responseText = result.response.text();
 
       setMessages(prev => [...prev, { role: 'model', content: responseText }]);
@@ -138,22 +185,48 @@ export const ChatBot: React.FC = () => {
 
           {/* Input */}
           <div className="p-4 bg-white border-t border-gray-100">
-            <div className="relative">
+            {selectedImage && (
+                <div className="mb-3 relative inline-block">
+                    <img src={selectedImage} alt="Selected" className="w-16 h-16 object-cover rounded-xl border-2 border-primary-500" />
+                    <button
+                        onClick={() => setSelectedImage(null)}
+                        className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 shadow-lg"
+                    >
+                        <X className="w-3 h-3" />
+                    </button>
+                </div>
+            )}
+            <div className="relative flex gap-2">
                 <input
-                    type="text"
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                    placeholder="Ask about a topic, formula..."
-                    className="w-full pl-5 pr-14 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:bg-white outline-none transition-all text-sm font-medium"
+                    type="file"
+                    ref={fileInputRef}
+                    onChange={handleImageSelect}
+                    accept="image/*"
+                    className="hidden"
                 />
                 <button
-                    onClick={handleSend}
-                    disabled={!input.trim() || isLoading}
-                    className="absolute right-2 top-2 bottom-2 w-10 bg-primary-600 text-white rounded-xl flex items-center justify-center hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                    onClick={() => fileInputRef.current?.click()}
+                    className="p-4 bg-gray-50 border border-gray-100 rounded-2xl text-gray-400 hover:text-primary-600 transition-all"
                 >
-                    <Send className="w-4 h-4" />
+                    <ImageIcon className="w-5 h-5" />
                 </button>
+                <div className="relative flex-1">
+                    <input
+                        type="text"
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
+                        onKeyPress={(e) => e.key === 'Enter' && handleSend()}
+                        placeholder="Ask or upload an image..."
+                        className="w-full pl-5 pr-14 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:bg-white outline-none transition-all text-sm font-medium"
+                    />
+                    <button
+                        onClick={handleSend}
+                        disabled={(!input.trim() && !selectedImage) || isLoading}
+                        className="absolute right-2 top-2 bottom-2 w-10 bg-primary-600 text-white rounded-xl flex items-center justify-center hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                    >
+                        <Send className="w-4 h-4" />
+                    </button>
+                </div>
             </div>
           </div>
         </>

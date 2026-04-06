@@ -117,22 +117,42 @@ export const fetchExamQuestions = async (
   }
 };
 
-export const createTutorChatSession = () => {
-  const history: { role: "user" | "assistant" | "system", content: string }[] = [
+export const createTutorChatSession = (initialContext?: string) => {
+  const model = "nvidia/neva-22b";
+  const history: { role: "user" | "assistant" | "system", content: any }[] = [
     {
         role: "system",
-        content: "You are 'Professor', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO). Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams. Be concise, use local context where appropriate for Nigerian students, and always be supportive. If asked about things outside of education/exams, politely steer the conversation back to studying."
+        content: `You are 'Professor', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO).
+        Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams.
+        Be concise, use local context where appropriate for Nigerian students, and always be supportive.
+        When explaining topics, perform deep research, use 'Simplified Method' logic, and provide Markdown images from Wikipedia or Unsplash to aid understanding.
+        Example image: ![Topic Image](https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=400)
+        You have vision capabilities and can understand images provided via OCR or visual analysis.`
     }
   ];
 
-  return {
-    sendMessage: async (message: string) => {
-      history.push({ role: "user", content: message });
+  if (initialContext) {
+    history.push({ role: "user", content: `CONTEXT FOR RESEARCH: ${initialContext}` });
+    history.push({ role: "assistant", content: "I've analyzed the question and explanation. I'm ready to 'Dive Deep' and help you master this topic. What would you like to explore first? I can provide diagrams, prove concepts, or explain specific steps." });
+  }
 
-      console.log("Calling NVIDIA NIM Chat with model: meta/llama3-8b-instruct");
+  return {
+    sendMessage: async (message: string, imageBase64?: string) => {
+      let content: any = message;
+
+      if (imageBase64) {
+        content = [
+          { type: "text", text: message },
+          { type: "image_url", image_url: { url: `data:image/jpeg;base64,${imageBase64}` } }
+        ];
+      }
+
+      history.push({ role: "user", content });
+
+      console.log(`Calling NVIDIA NIM Chat with model: ${model}`);
       const response = await openai.chat.completions.create({
-        model: "meta/llama3-8b-instruct",
-        messages: history,
+        model: model,
+        messages: history as any,
         temperature: 0.7,
       });
 
