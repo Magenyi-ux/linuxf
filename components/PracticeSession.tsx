@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Question, Subject, ExamType } from '../types';
-import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle } from 'lucide-react';
+import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search } from 'lucide-react';
 import { MathText } from './MathText';
 
 interface PracticeSessionProps {
@@ -170,9 +170,23 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
                       </div>
                       <span className="font-bold text-gray-900 text-sm uppercase tracking-widest">Explanation</span>
                   </div>
-                  <div className="text-gray-700 leading-relaxed text-lg font-medium relative z-10">
+                  <div className="text-gray-700 leading-relaxed text-lg font-medium relative z-10 mb-6">
                       <MathText text={currentQuestion.explanation} />
                   </div>
+                  <button
+                    onClick={() => {
+                        const event = new CustomEvent('dive-deep', {
+                            detail: {
+                                context: `Question: ${currentQuestion.text}\nExplanation: ${currentQuestion.explanation}`
+                            }
+                        });
+                        window.dispatchEvent(event);
+                    }}
+                    className="flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-2xl font-bold hover:bg-primary-700 transition-all shadow-lg shadow-primary-500/20 active:scale-95 group"
+                  >
+                      <Search className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                      Dive Deep & Research
+                  </button>
               </div>
           </div>
       )}
