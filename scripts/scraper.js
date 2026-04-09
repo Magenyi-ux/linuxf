@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
@@ -8,7 +9,7 @@ import OpenAI from 'openai';
  */
 
 const FALLBACK_DATA_PATH = path.resolve('services/fallbackData.ts');
-const API_KEY = "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";
+const API_KEY = process.env.NVIDIA_API_KEY;
 
 const openai = new OpenAI({
     apiKey: API_KEY,

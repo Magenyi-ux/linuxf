@@ -1,0 +1,4 @@
+## 2026-04-04 - [Hardcoded API Keys in Frontend and Scripts]
+**Vulnerability:** Hardcoded NVIDIA API keys were found in both the frontend service (`services/aiService.ts`) and the data generation script (`scripts/scraper.js`). These keys are sensitive and should never be committed to version control as they can be exploited if the repository is public or shared.
+**Learning:** Hardcoding keys is a common but dangerous practice during rapid development. In this project, the same key was duplicated across different layers of the application (frontend and tooling), increasing the surface area for leakage.
+**Prevention:** Always use environment variables for sensitive credentials. For Vite frontend, use `import.meta.env.VITE_*` and for Node.js scripts, use `process.env` with a loader like `dotenv`. Implement `.env.example` to guide future developers.
