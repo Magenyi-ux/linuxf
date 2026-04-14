@@ -8,7 +8,15 @@ import OpenAI from 'openai';
  */
 
 const FALLBACK_DATA_PATH = path.resolve('services/fallbackData.ts');
-const API_KEY = "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";
+
+// Sentinel: Using environment variable to prevent secret leakage.
+// Run with Node 22+ using: node --env-file=.env scripts/scraper.js
+const API_KEY = process.env.NVIDIA_API_KEY;
+
+if (!API_KEY) {
+    console.error("Error: NVIDIA_API_KEY environment variable is not set.");
+    process.exit(1);
+}
 
 const openai = new OpenAI({
     apiKey: API_KEY,
