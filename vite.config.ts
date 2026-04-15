@@ -17,10 +17,8 @@ export default defineConfig(({ mode }) => {
         },
       },
       plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
+      // 🛡️ Sentinel: Removed insecure 'define' block that leaked legacy keys.
+      // Vite handles 'VITE_' prefixed env variables automatically via import.meta.env.
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
