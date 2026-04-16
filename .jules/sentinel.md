@@ -1,0 +1,4 @@
+## 2026-04-04 - [CRITICAL] Hardcoded API Keys and Insecure Vite Configuration
+**Vulnerability:** Hardcoded NVIDIA API keys were discovered in `services/aiService.ts` and `scripts/scraper.js`. Additionally, `vite.config.ts` contained an insecure `define` block that leaked legacy environment variables into the client-side bundle, and the `.gitignore` failed to block `.env` files.
+**Learning:** Hardcoding secrets is a common but high-impact error often occurring during rapid prototyping or when migrating between providers (e.g., Gemini to NVIDIA NIM). The insecure Vite `define` block showed that legacy keys can persist in build configurations even after the code using them is removed.
+**Prevention:** Always use environment variables for secrets. Prefix client-side variables with `VITE_` and never hardcode fallbacks. Maintain a strict `.gitignore` that blocks all `.env` variations and use `.env.example` for documentation.
