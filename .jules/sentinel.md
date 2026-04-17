@@ -1,0 +1,4 @@
+## 2026-04-04 - Removal of Hardcoded NVIDIA API Keys
+**Vulnerability:** Hardcoded NVIDIA API keys were found in `services/aiService.ts` and `scripts/scraper.js`. Additionally, `vite.config.ts` was leaking a legacy `GEMINI_API_KEY` to the client-side bundle via the `define` block.
+**Learning:** Hardcoding secrets is a common but critical mistake that exposes infrastructure to unauthorized use and potential financial drain. Using Vite's `define` to inject secrets into the global scope makes them accessible to anyone via the browser console.
+**Prevention:** Always use environment variables for secrets. Use the `VITE_` prefix for frontend secrets that *must* be public-facing (while acknowledging the risks), and ensure non-prefixed variables are used for backend/scripting. Regularly audit build configurations for accidental secret leakage.
