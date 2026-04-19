@@ -7,12 +7,13 @@ import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
 import { Profile } from './components/Profile';
 import { ChatBot } from './components/ChatBot';
+import { Auth } from './components/Auth';
 import { fetchExamQuestions } from './services/aiService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
-  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Home, ArrowLeft, Search, User
+  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Home, ArrowLeft, Search, User, LogOut, LogIn
 } from 'lucide-react';
 
 // Stream Definitions
@@ -93,6 +94,7 @@ const App: React.FC = () => {
     xp: 0,
     streak: 0
   });
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
 
@@ -128,8 +130,15 @@ const App: React.FC = () => {
       const savedBooks = localStorage.getItem('waExamPrep_books');
       if (savedBooks) setBooks(JSON.parse(savedBooks));
 
-      const savedProfile = localStorage.getItem('waExamPrep_profile');
-      if (savedProfile) setUserProfile(JSON.parse(savedProfile));
+      // Try to load session first
+      const savedSession = localStorage.getItem('waExamPrep_session');
+      if (savedSession) {
+        setUserProfile(JSON.parse(savedSession));
+        setIsLoggedIn(true);
+      } else {
+        const savedProfile = localStorage.getItem('waExamPrep_profile');
+        if (savedProfile) setUserProfile(JSON.parse(savedProfile));
+      }
     } catch (e) {
       console.error("Failed to load data from storage", e);
     }
@@ -277,6 +286,17 @@ const App: React.FC = () => {
     setSearchQuery('');
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem('waExamPrep_session');
+    setIsLoggedIn(false);
+    setUserProfile({
+      level: 1,
+      xp: 0,
+      streak: 0
+    });
+    setScreen('HOME');
+  };
+
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col relative pb-24 md:pb-8">
       {/* Dynamic Header */}
@@ -311,6 +331,21 @@ const App: React.FC = () => {
              >
                 Profile
              </button>
+             {isLoggedIn ? (
+               <button
+                  onClick={handleLogout}
+                  className="flex items-center gap-2 px-5 py-2.5 bg-gray-50 text-gray-600 rounded-xl text-sm font-bold hover:bg-red-50 hover:text-red-600 transition-all border border-gray-100"
+               >
+                  <LogOut className="w-4 h-4" /> Logout
+               </button>
+             ) : (
+               <button
+                  onClick={() => setScreen('AUTH')}
+                  className="flex items-center gap-2 px-5 py-2.5 bg-primary-600 text-white rounded-xl text-sm font-bold hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all"
+               >
+                  <LogIn className="w-4 h-4" /> Sign In
+               </button>
+             )}
           </div>
 
           <button 
@@ -654,6 +689,17 @@ const App: React.FC = () => {
                 onDeleteBook={deleteBook}
                 onBack={resetApp}
             />
+        )}
+
+        {screen === 'AUTH' && (
+          <Auth
+            onAuthComplete={(profile) => {
+              setUserProfile(profile);
+              setIsLoggedIn(true);
+              setScreen('HOME');
+            }}
+            onBack={() => setScreen('HOME')}
+          />
         )}
       </main>
 
