@@ -30,7 +30,10 @@ export enum Subject {
   CRS = 'CRS',
   IRS = 'IRS',
   FRENCH = 'French',
-  ARABIC = 'Arabic'
+  ARABIC = 'Arabic',
+  HAUSA = 'Hausa',
+  YORUBA = 'Yoruba',
+  IGBO = 'Igbo'
 }
 
 export interface Question {
