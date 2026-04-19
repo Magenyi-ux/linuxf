@@ -13,14 +13,16 @@ export default defineConfig(({ mode }) => {
             target: 'https://integrate.api.nvidia.com',
             changeOrigin: true,
             rewrite: (path) => path.replace(/^\/api\/nvidia/, ''),
+            headers: {
+              'Authorization': `Bearer ${env.NV_API_KEY}`
+            }
           },
         },
       },
       plugins: [react()],
       define: {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.NV_API_KEY': JSON.stringify(env.NV_API_KEY)
+        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
       },
       resolve: {
         alias: {
