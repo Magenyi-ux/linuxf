@@ -1,16 +1,29 @@
 
 import React from 'react';
 import { UserProfile, Book } from '../types';
-import { Trophy, Flame, Target, BookOpen, Clock, Trash2, ArrowLeft } from 'lucide-react';
+import { Trophy, Flame, Target, BookOpen, Clock, Trash2, ArrowLeft, LogOut, Trash, LogIn, Mail, User, ArrowRight } from 'lucide-react';
 
 interface ProfileProps {
   user: UserProfile;
   books: Record<string, Book>;
+  isLoggedIn: boolean;
   onDeleteBook: (id: string) => void;
   onBack: () => void;
+  onLogout: () => void;
+  onDeleteAccount: () => void;
+  onLogin: () => void;
 }
 
-export const Profile: React.FC<ProfileProps> = ({ user, books, onDeleteBook, onBack }) => {
+export const Profile: React.FC<ProfileProps> = ({
+  user,
+  books,
+  isLoggedIn,
+  onDeleteBook,
+  onBack,
+  onLogout,
+  onDeleteAccount,
+  onLogin
+}) => {
   const bookList = Object.values(books).sort((a, b) => b.dateCreated - a.dateCreated);
   const totalQuestions = bookList.reduce((acc, b) => acc + b.questions.length, 0);
   const totalAttempts = bookList.reduce((acc, b) => acc + (b.attempts || 0), 0);
@@ -23,7 +36,23 @@ export const Profile: React.FC<ProfileProps> = ({ user, books, onDeleteBook, onB
 
       <div className="flex flex-col md:flex-row gap-8 mb-12">
         {/* User Card */}
-        <div className="flex-1 bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm flex flex-col items-center text-center">
+        <div className="flex-1 bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm flex flex-col items-center text-center relative overflow-hidden">
+          {!isLoggedIn && (
+            <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center p-6 text-center">
+               <div className="bg-primary-50 p-4 rounded-3xl mb-4">
+                  <LogIn className="w-8 h-8 text-primary-600" />
+               </div>
+               <h3 className="text-xl font-black text-gray-900 mb-2">Sign in to track progress</h3>
+               <p className="text-sm text-gray-500 font-medium mb-6">Create an account to save your XP, levels, and streak across devices.</p>
+               <button
+                onClick={onLogin}
+                className="px-8 py-3 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all flex items-center gap-2"
+               >
+                 <LogIn className="w-4 h-4" /> SIGN IN
+               </button>
+            </div>
+          )}
+
           <div className="w-24 h-24 bg-primary-600 rounded-3xl flex items-center justify-center text-white text-4xl font-black mb-6 shadow-xl shadow-primary-500/20">
             {user.level}
           </div>
@@ -81,12 +110,54 @@ export const Profile: React.FC<ProfileProps> = ({ user, books, onDeleteBook, onB
                     <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">Questions Offline</div>
                 </div>
             </div>
-            <div className="bg-primary-600 p-8 rounded-[40px] text-white shadow-xl shadow-primary-500/20">
-                <h3 className="text-lg font-black mb-2">Study Goal</h3>
-                <p className="text-primary-100 text-sm font-medium leading-relaxed opacity-80">
-                    You're doing great! Keep practicing to increase your streak and level up.
-                </p>
-            </div>
+            {isLoggedIn ? (
+              <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
+                <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
+                   <User className="w-4 h-4" /> Account Settings
+                </h3>
+
+                <div className="flex items-center gap-4 mb-8 p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                    <div className="bg-white p-2.5 rounded-xl text-gray-400">
+                        <Mail className="w-5 h-5" />
+                    </div>
+                    <div className="overflow-hidden">
+                        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Email Address</div>
+                        <div className="text-sm font-bold text-gray-900 truncate">{user.email}</div>
+                    </div>
+                </div>
+
+                <div className="space-y-3">
+                    <button
+                        onClick={onLogout}
+                        className="w-full flex items-center justify-between px-6 py-4 bg-gray-50 text-gray-600 rounded-2xl font-bold hover:bg-gray-100 transition-all group"
+                    >
+                        <div className="flex items-center gap-3">
+                            <LogOut className="w-5 h-5" />
+                            <span>Log Out</span>
+                        </div>
+                        <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all" />
+                    </button>
+
+                    <button
+                        onClick={onDeleteAccount}
+                        className="w-full flex items-center justify-between px-6 py-4 text-red-500 font-bold hover:bg-red-50 rounded-2xl transition-all group"
+                    >
+                        <div className="flex items-center gap-3">
+                            <Trash className="w-5 h-5" />
+                            <span>Delete Account</span>
+                        </div>
+                        <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all" />
+                    </button>
+                </div>
+              </div>
+            ) : (
+              <div className="bg-primary-600 p-8 rounded-[40px] text-white shadow-xl shadow-primary-500/20">
+                  <h3 className="text-lg font-black mb-2">Study Goal</h3>
+                  <p className="text-primary-100 text-sm font-medium leading-relaxed opacity-80">
+                      You're doing great! Keep practicing to increase your streak and level up.
+                  </p>
+              </div>
+            )}
         </div>
       </div>
 

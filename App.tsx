@@ -364,9 +364,26 @@ const App: React.FC = () => {
     setUserProfile({
       level: 1,
       xp: 0,
-      streak: 0
+      streak: 0,
+      role: 'USER',
+      timeSpent: 0,
+      isBanned: false
     });
     setScreen('HOME');
+  };
+
+  const handleDeleteAccount = () => {
+    if (!userProfile.email) return;
+    if (window.confirm("Are you sure you want to delete your account? This action cannot be undone and all your progress will be lost.")) {
+      const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
+      const filteredUsers = users.filter((u: any) => u.email !== userProfile.email);
+      localStorage.setItem('waExamPrep_users', JSON.stringify(filteredUsers));
+
+      const bookKey = `waExamPrep_books_${userProfile.email}`;
+      localStorage.removeItem(bookKey);
+
+      handleLogout();
+    }
   };
 
   return (
@@ -775,8 +792,12 @@ const App: React.FC = () => {
             <Profile
                 user={userProfile}
                 books={books}
+                isLoggedIn={isLoggedIn}
                 onDeleteBook={deleteBook}
                 onBack={resetApp}
+                onLogout={handleLogout}
+                onDeleteAccount={handleDeleteAccount}
+                onLogin={() => setScreen('AUTH')}
             />
         )}
 
