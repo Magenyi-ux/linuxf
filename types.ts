@@ -54,6 +54,7 @@ export interface Book {
   bestScore?: number;
   lastScore?: number;
   attempts?: number;
+  usageCount?: number;
 }
 
 export interface UserProfile {
@@ -62,6 +63,9 @@ export interface UserProfile {
   level: number;
   xp: number;
   streak: number;
+  role: 'ADMIN' | 'USER';
+  timeSpent: number; // in seconds
+  isBanned: boolean;
 }
 
-export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'PROFILE' | 'CHAT' | 'AUTH';
+export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'PROFILE' | 'CHAT' | 'AUTH' | 'ADMIN';
