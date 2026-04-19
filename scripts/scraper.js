@@ -2,13 +2,14 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import OpenAI from 'openai';
+import 'dotenv/config';
 
 /**
  * Examply Question Scraper & AI Question Generator
  */
 
 const FALLBACK_DATA_PATH = path.resolve('services/fallbackData.ts');
-const API_KEY = "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";
+const API_KEY = process.env.NV_API_KEY;
 
 const openai = new OpenAI({
     apiKey: API_KEY,
