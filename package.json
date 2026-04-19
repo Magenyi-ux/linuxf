@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@google/genai": "^1.33.0",
+    "dotenv": "^17.4.2",
     "katex": "0.16.9",
     "lucide-react": "^0.560.0",
     "openai": "^6.32.0",
