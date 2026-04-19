@@ -6,6 +6,7 @@ import { LoadingScreen } from './components/LoadingScreen';
 import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
 import { Profile } from './components/Profile';
+import { AdminDashboard } from './components/AdminDashboard';
 import { ChatBot } from './components/ChatBot';
 import { Auth } from './components/Auth';
 import { fetchExamQuestions } from './services/aiService';
@@ -92,7 +93,10 @@ const App: React.FC = () => {
   const [userProfile, setUserProfile] = useState<UserProfile>({
     level: 1,
     xp: 0,
-    streak: 0
+    streak: 0,
+    role: 'USER',
+    timeSpent: 0,
+    isBanned: false
   });
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
@@ -127,32 +131,93 @@ const App: React.FC = () => {
 
   useEffect(() => {
     try {
-      const savedBooks = localStorage.getItem('waExamPrep_books');
-      if (savedBooks) setBooks(JSON.parse(savedBooks));
-
       // Try to load session first
       const savedSession = localStorage.getItem('waExamPrep_session');
       if (savedSession) {
-        setUserProfile(JSON.parse(savedSession));
+        const profile = JSON.parse(savedSession);
+        setUserProfile(profile);
         setIsLoggedIn(true);
+
+        // Load user-specific books
+        const bookKey = `waExamPrep_books_${profile.email}`;
+        const savedBooks = localStorage.getItem(bookKey);
+        if (savedBooks) {
+          setBooks(JSON.parse(savedBooks));
+        } else {
+          setBooks({});
+        }
       } else {
         const savedProfile = localStorage.getItem('waExamPrep_profile');
-        if (savedProfile) setUserProfile(JSON.parse(savedProfile));
+        if (savedProfile) {
+          setUserProfile(JSON.parse(savedProfile));
+        }
+
+        const savedBooks = localStorage.getItem('waExamPrep_books');
+        if (savedBooks) setBooks(JSON.parse(savedBooks));
       }
     } catch (e) {
       console.error("Failed to load data from storage", e);
     }
   }, []);
 
+  // Effect to reload books when login state or user changes
+  useEffect(() => {
+    if (isLoggedIn && userProfile.email) {
+      const bookKey = `waExamPrep_books_${userProfile.email}`;
+      const savedBooks = localStorage.getItem(bookKey);
+      if (savedBooks) {
+        setBooks(JSON.parse(savedBooks));
+      } else {
+        setBooks({});
+      }
+    } else if (!isLoggedIn) {
+       const savedBooks = localStorage.getItem('waExamPrep_books');
+       if (savedBooks) setBooks(JSON.parse(savedBooks));
+       else setBooks({});
+    }
+  }, [isLoggedIn, userProfile.email]);
+
   useEffect(() => {
     localStorage.setItem('waExamPrep_profile', JSON.stringify(userProfile));
-  }, [userProfile]);
+
+    // Sync to session if logged in
+    if (isLoggedIn) {
+      localStorage.setItem('waExamPrep_session', JSON.stringify(userProfile));
+
+      // Sync to global users list
+      const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
+      const userIndex = users.findIndex((u: any) => u.email === userProfile.email);
+      if (userIndex !== -1) {
+        // Preserve password
+        const password = users[userIndex].password;
+        users[userIndex] = { ...userProfile, password };
+        localStorage.setItem('waExamPrep_users', JSON.stringify(users));
+      }
+    }
+  }, [userProfile, isLoggedIn]);
+
+  // Time Tracking Effect
+  useEffect(() => {
+    let interval: any;
+    if (isLoggedIn) {
+      interval = setInterval(() => {
+        setUserProfile(prev => ({
+          ...prev,
+          timeSpent: (prev.timeSpent || 0) + 10
+        }));
+      }, 10000); // Update every 10 seconds
+    }
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [isLoggedIn]);
 
   const saveBook = (book: Book) => {
     try {
       const newBooks = { ...books, [book.id]: book };
       setBooks(newBooks);
-      localStorage.setItem('waExamPrep_books', JSON.stringify(newBooks));
+      const bookKey = isLoggedIn && userProfile.email ? `waExamPrep_books_${userProfile.email}` : 'waExamPrep_books';
+      localStorage.setItem(bookKey, JSON.stringify(newBooks));
     } catch (e) {
       alert("Storage Full! Your device storage is full. Please delete some old question packs from the Library to save new ones.");
     }
@@ -161,7 +226,8 @@ const App: React.FC = () => {
   const deleteBook = (bookId: string) => {
     const { [bookId]: removed, ...rest } = books;
     setBooks(rest);
-    localStorage.setItem('waExamPrep_books', JSON.stringify(rest));
+    const bookKey = isLoggedIn && userProfile.email ? `waExamPrep_books_${userProfile.email}` : 'waExamPrep_books';
+    localStorage.setItem(bookKey, JSON.stringify(rest));
   };
 
   const getBookId = (exam: ExamType, subject: Subject, year: string) => `${exam}-${subject}-${year}`;
@@ -213,6 +279,12 @@ const App: React.FC = () => {
 
   const handleStart = (bookId: string) => {
      if (books[bookId]) {
+         // Increment global usage for admin tracking
+         const globalUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
+         const bookTitle = `${books[bookId].examType} ${books[bookId].subject} ${books[bookId].year}`;
+         globalUsage[bookTitle] = (globalUsage[bookTitle] || 0) + 1;
+         localStorage.setItem('waExamPrep_global_usage', JSON.stringify(globalUsage));
+
          setQuestions(books[bookId].questions);
          setCurrentSources(books[bookId].sources || []);
          setActiveBookId(bookId);
@@ -331,6 +403,14 @@ const App: React.FC = () => {
              >
                 Profile
              </button>
+             {userProfile.role === 'ADMIN' && (
+               <button
+                  onClick={() => setScreen('ADMIN')}
+                  className={`text-sm font-semibold transition-colors ${screen === 'ADMIN' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
+               >
+                  Admin
+               </button>
+             )}
              {isLoggedIn ? (
                <button
                   onClick={handleLogout}
@@ -386,6 +466,15 @@ const App: React.FC = () => {
             <User className="w-6 h-6" />
             <span className="text-[10px] font-bold">Profile</span>
           </button>
+          {userProfile.role === 'ADMIN' && (
+            <button
+              onClick={() => setScreen('ADMIN')}
+              className={`flex flex-col items-center gap-1 ${screen === 'ADMIN' ? 'text-primary-600' : 'text-gray-400'}`}
+            >
+              <Scale className="w-6 h-6" />
+              <span className="text-[10px] font-bold">Admin</span>
+            </button>
+          )}
         </div>
       </nav>
 
@@ -687,6 +776,12 @@ const App: React.FC = () => {
                 user={userProfile}
                 books={books}
                 onDeleteBook={deleteBook}
+                onBack={resetApp}
+            />
+        )}
+
+        {screen === 'ADMIN' && (
+            <AdminDashboard
                 onBack={resetApp}
             />
         )}

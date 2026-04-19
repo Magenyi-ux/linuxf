@@ -31,6 +31,33 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
       // Use consistent prefix
       const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
 
+      // Handle Hardcoded Admin Account
+      const isAdminAccount = formData.email === 'admin@magenyi' && formData.password === 'admin123';
+
+      if (isAdminAccount) {
+        let adminUser = users.find((u: any) => u.email === 'admin@magenyi');
+        if (!adminUser) {
+          adminUser = {
+            name: 'System Admin',
+            email: 'admin@magenyi',
+            password: 'admin123',
+            level: 99,
+            xp: 0,
+            streak: 0,
+            role: 'ADMIN',
+            timeSpent: 0,
+            isBanned: false
+          };
+          users.push(adminUser);
+          localStorage.setItem('waExamPrep_users', JSON.stringify(users));
+        }
+
+        const { password, ...sessionProfile } = adminUser;
+        localStorage.setItem('waExamPrep_session', JSON.stringify(sessionProfile));
+        onAuthComplete(sessionProfile as UserProfile);
+        return;
+      }
+
       if (mode === 'SIGN_UP') {
         if (users.find((u: any) => u.email === formData.email)) {
           throw new Error('User already exists with this email.');
@@ -42,7 +69,10 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
           email: formData.email,
           level: 1,
           xp: 0,
-          streak: 0
+          streak: 0,
+          role: 'USER',
+          timeSpent: 0,
+          isBanned: false
         };
 
         const userData = {
@@ -58,6 +88,10 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
         const userMatch = users.find((u: any) => u.email === formData.email && u.password === formData.password);
         if (!userMatch) {
           throw new Error('Invalid email or password.');
+        }
+
+        if (userMatch.isBanned) {
+          throw new Error('This account has been banned from the platform.');
         }
 
         // Remove password before setting session and profile
