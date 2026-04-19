@@ -73,7 +73,12 @@ const HOME_QUOTES = [
 ];
 
 const App: React.FC = () => {
-  const [screen, setScreen] = useState<ScreenState>('HOME');
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    return !!localStorage.getItem('waExamPrep_session');
+  });
+  const [screen, setScreen] = useState<ScreenState>(() => {
+    return localStorage.getItem('waExamPrep_session') ? 'HOME' : 'AUTH';
+  });
   const [selectedExam, setSelectedExam] = useState<ExamType | null>(null);
   const [selectedStream, setSelectedStream] = useState<StreamType | null>(null);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
@@ -88,13 +93,22 @@ const App: React.FC = () => {
   const [lastTotal, setLastTotal] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
 
-  const [books, setBooks] = useState<Record<string, Book>>({}); 
-  const [userProfile, setUserProfile] = useState<UserProfile>({
-    level: 1,
-    xp: 0,
-    streak: 0
+  const [books, setBooks] = useState<Record<string, Book>>(() => {
+    try {
+      const saved = localStorage.getItem('waExamPrep_books');
+      return saved ? JSON.parse(saved) : {};
+    } catch { return {}; }
   });
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userProfile, setUserProfile] = useState<UserProfile>(() => {
+    try {
+      const session = localStorage.getItem('waExamPrep_session');
+      if (session) return JSON.parse(session);
+      const profile = localStorage.getItem('waExamPrep_profile');
+      if (profile) return JSON.parse(profile);
+    } catch {}
+    return { level: 1, xp: 0, streak: 0 };
+  });
+
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
 
@@ -124,25 +138,6 @@ const App: React.FC = () => {
 
     return () => clearInterval(typingInterval);
   }, [currentQuoteIndex]);
-
-  useEffect(() => {
-    try {
-      const savedBooks = localStorage.getItem('waExamPrep_books');
-      if (savedBooks) setBooks(JSON.parse(savedBooks));
-
-      // Try to load session first
-      const savedSession = localStorage.getItem('waExamPrep_session');
-      if (savedSession) {
-        setUserProfile(JSON.parse(savedSession));
-        setIsLoggedIn(true);
-      } else {
-        const savedProfile = localStorage.getItem('waExamPrep_profile');
-        if (savedProfile) setUserProfile(JSON.parse(savedProfile));
-      }
-    } catch (e) {
-      console.error("Failed to load data from storage", e);
-    }
-  }, []);
 
   useEffect(() => {
     localStorage.setItem('waExamPrep_profile', JSON.stringify(userProfile));
@@ -278,7 +273,7 @@ const App: React.FC = () => {
   };
 
   const resetApp = () => {
-    setScreen('HOME');
+    setScreen(isLoggedIn ? 'HOME' : 'AUTH');
     setSelectedExam(null);
     setSelectedStream(null);
     setSelectedSubject(null);
@@ -294,7 +289,7 @@ const App: React.FC = () => {
       xp: 0,
       streak: 0
     });
-    setScreen('HOME');
+    setScreen('AUTH');
   };
 
   return (
@@ -312,86 +307,92 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div className="hidden md:flex items-center gap-8">
-             <button
-                onClick={resetApp}
-                className={`text-sm font-semibold transition-colors ${screen === 'HOME' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
-             >
-                Home
-             </button>
-             <button
-                onClick={() => setShowLibrary(true)}
-                className={`text-sm font-semibold transition-colors ${showLibrary ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
-             >
-                My Library
-             </button>
-             <button
-                onClick={() => setScreen('PROFILE')}
-                className={`text-sm font-semibold transition-colors ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
-             >
-                Profile
-             </button>
-             {isLoggedIn ? (
+          {isLoggedIn ? (
+            <div className="hidden md:flex items-center gap-8">
+               <button
+                  onClick={resetApp}
+                  className={`text-sm font-semibold transition-colors ${screen === 'HOME' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
+               >
+                  Home
+               </button>
+               <button
+                  onClick={() => setShowLibrary(true)}
+                  className={`text-sm font-semibold transition-colors ${showLibrary ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
+               >
+                  My Library
+               </button>
+               <button
+                  onClick={() => setScreen('PROFILE')}
+                  className={`text-sm font-semibold transition-colors ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
+               >
+                  Profile
+               </button>
                <button
                   onClick={handleLogout}
                   className="flex items-center gap-2 px-5 py-2.5 bg-gray-50 text-gray-600 rounded-xl text-sm font-bold hover:bg-red-50 hover:text-red-600 transition-all border border-gray-100"
                >
                   <LogOut className="w-4 h-4" /> Logout
                </button>
-             ) : (
+            </div>
+          ) : (
+            <div className="hidden md:flex items-center gap-8">
                <button
                   onClick={() => setScreen('AUTH')}
                   className="flex items-center gap-2 px-5 py-2.5 bg-primary-600 text-white rounded-xl text-sm font-bold hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all"
                >
                   <LogIn className="w-4 h-4" /> Sign In
                </button>
-             )}
-          </div>
+            </div>
+          )}
 
-          <button 
-            onClick={() => setScreen('PROFILE')}
-            className="md:hidden p-2.5 bg-gray-50 rounded-xl relative border border-gray-100"
-          >
-             <Library className="w-5 h-5 text-gray-600" />
-             {Object.keys(books).length > 0 && (
-               <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary-600 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
-                 {Object.keys(books).length}
-               </span>
-             )}
-          </button>
+          {isLoggedIn && (
+            <button
+              onClick={() => setScreen('PROFILE')}
+              className="md:hidden p-2.5 bg-gray-50 rounded-xl relative border border-gray-100"
+            >
+               <Library className="w-5 h-5 text-gray-600" />
+               {Object.keys(books).length > 0 && (
+                 <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary-600 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
+                   {Object.keys(books).length}
+                 </span>
+               )}
+            </button>
+          )}
         </div>
       </header>
 
       {/* Bottom Nav for Mobile */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-gray-100 bg-white px-6 py-3">
-        <div className="flex items-center justify-around">
-          <button
-            onClick={resetApp}
-            className={`flex flex-col items-center gap-1 ${screen === 'HOME' ? 'text-primary-600' : 'text-gray-400'}`}
-          >
-            <Home className="w-6 h-6" />
-            <span className="text-[10px] font-bold">Home</span>
-          </button>
-          <button
-            onClick={() => setShowLibrary(true)}
-            className={`flex flex-col items-center gap-1 ${showLibrary ? 'text-primary-600' : 'text-gray-400'}`}
-          >
-            <Library className="w-6 h-6" />
-            <span className="text-[10px] font-bold">Library</span>
-          </button>
-          <button
-            onClick={() => setScreen('PROFILE')}
-            className={`flex flex-col items-center gap-1 ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-400'}`}
-          >
-            <User className="w-6 h-6" />
-            <span className="text-[10px] font-bold">Profile</span>
-          </button>
-        </div>
-      </nav>
+      {isLoggedIn && (
+        <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-gray-100 bg-white px-6 py-3">
+          <div className="flex items-center justify-around">
+            <button
+              onClick={resetApp}
+              className={`flex flex-col items-center gap-1 ${screen === 'HOME' ? 'text-primary-600' : 'text-gray-400'}`}
+            >
+              <Home className="w-6 h-6" />
+              <span className="text-[10px] font-bold">Home</span>
+            </button>
+            <button
+              onClick={() => setShowLibrary(true)}
+              className={`flex flex-col items-center gap-1 ${showLibrary ? 'text-primary-600' : 'text-gray-400'}`}
+            >
+              <Library className="w-6 h-6" />
+              <span className="text-[10px] font-bold">Library</span>
+            </button>
+            <button
+              onClick={() => setScreen('PROFILE')}
+              className={`flex flex-col items-center gap-1 ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-400'}`}
+            >
+              <User className="w-6 h-6" />
+              <span className="text-[10px] font-bold">Profile</span>
+            </button>
+          </div>
+        </nav>
+      )}
 
       <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-12 relative">
         
-        {screen === 'HOME' && (
+        {isLoggedIn && screen === 'HOME' && (
           <div className="animate-fade-in max-w-3xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100 text-gray-400 text-[10px] font-bold mb-6 tracking-widest uppercase">
@@ -493,7 +494,7 @@ const App: React.FC = () => {
           </div>
         )}
 
-        {screen === 'STREAM_SELECT' && (
+        {isLoggedIn && screen === 'STREAM_SELECT' && (
           <div className="animate-fade-in max-w-4xl mx-auto">
              <button onClick={() => setScreen('HOME')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Back to Exams
@@ -519,7 +520,7 @@ const App: React.FC = () => {
           </div>
         )}
 
-        {screen === 'SUBJECT_SELECT' && selectedStream && (
+        {isLoggedIn && screen === 'SUBJECT_SELECT' && selectedStream && (
           <div className="animate-fade-in max-w-4xl mx-auto">
             <button onClick={() => setScreen('STREAM_SELECT')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Back to Departments
@@ -551,7 +552,7 @@ const App: React.FC = () => {
           </div>
         )}
 
-        {screen === 'YEAR_SELECT' && selectedExam && selectedSubject && (
+        {isLoggedIn && screen === 'YEAR_SELECT' && selectedExam && selectedSubject && (
             <div className="animate-fade-in max-w-4xl mx-auto">
                 <button onClick={() => setScreen('SUBJECT_SELECT')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
                     <ArrowLeft className="w-4 h-4" /> Back to Subjects
@@ -655,11 +656,11 @@ const App: React.FC = () => {
             </div>
         )}
 
-        {screen === 'LOADING' && (
+        {isLoggedIn && screen === 'LOADING' && (
              <LoadingScreen message={`Downloading ${selectedExam} ${selectedSubject} question pack...`} />
         )}
 
-        {screen === 'PRACTICE' && selectedExam && selectedSubject && (
+        {isLoggedIn && screen === 'PRACTICE' && selectedExam && selectedSubject && (
             <PracticeSession 
                 questions={questions}
                 sources={currentSources}
@@ -671,7 +672,7 @@ const App: React.FC = () => {
             />
         )}
 
-        {screen === 'RESULTS' && selectedExam && selectedSubject && (
+        {isLoggedIn && screen === 'RESULTS' && selectedExam && selectedSubject && (
             <Results 
                 score={lastScore}
                 total={lastTotal}
@@ -682,7 +683,7 @@ const App: React.FC = () => {
             />
         )}
 
-        {screen === 'PROFILE' && (
+        {isLoggedIn && screen === 'PROFILE' && (
             <Profile
                 user={userProfile}
                 books={books}
@@ -698,12 +699,12 @@ const App: React.FC = () => {
               setIsLoggedIn(true);
               setScreen('HOME');
             }}
-            onBack={() => setScreen('HOME')}
+            onBack={isLoggedIn ? () => setScreen('HOME') : undefined}
           />
         )}
       </main>
 
-      <ChatBot />
+      {isLoggedIn && <ChatBot />}
 
       {/* Library Modal */}
       {showLibrary && (

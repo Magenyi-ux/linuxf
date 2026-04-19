@@ -5,7 +5,7 @@ import { UserProfile } from '../types';
 
 interface AuthProps {
   onAuthComplete: (profile: UserProfile) => void;
-  onBack: () => void;
+  onBack?: () => void;
 }
 
 export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
@@ -74,12 +74,14 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
 
   return (
     <div className="animate-fade-in max-w-md mx-auto py-12">
-      <button
-        onClick={onBack}
-        className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors"
-      >
-        <ArrowLeft className="w-4 h-4" /> Back to Home
-      </button>
+      {onBack && (
+        <button
+          onClick={onBack}
+          className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" /> Back to Home
+        </button>
+      )}
 
       <div className="bg-white p-8 md:p-10 rounded-[40px] border border-gray-100 shadow-2xl shadow-gray-200/50">
         <div className="flex flex-col items-center text-center mb-10">
