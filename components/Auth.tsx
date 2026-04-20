@@ -32,7 +32,9 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
       const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
 
       // Handle Hardcoded Admin Account
-      const isAdminAccount = formData.email === 'admin@magenyi' && formData.password === 'admin123';
+      // SECURITY: Hardcoded admin account is a temporary measure.
+      // In production, this should be moved to a secure authentication provider.
+      const isAdminAccount = formData.email === 'admin@magenyi' && formData.password === 'magenyi123';
 
       if (isAdminAccount) {
         let adminUser = users.find((u: any) => u.email === 'admin@magenyi');
@@ -40,7 +42,7 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
           adminUser = {
             name: 'System Admin',
             email: 'admin@magenyi',
-            password: 'admin123',
+            password: 'magenyi123',
             level: 99,
             xp: 0,
             streak: 0,
