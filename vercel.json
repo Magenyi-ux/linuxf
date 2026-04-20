@@ -3,6 +3,10 @@
     {
       "source": "/api/nvidia/:path*",
       "destination": "/api/nvidia?path=:path*"
+    },
+    {
+      "source": "/api/admin/logs",
+      "destination": "/api/admin/logs"
     }
   ]
 }

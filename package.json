@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@google/genai": "^1.33.0",
+    "@sentry/react": "^10.49.0",
+    "@vercel/kv": "^3.0.0",
     "dotenv": "^17.4.2",
     "katex": "0.16.9",
     "lucide-react": "^0.560.0",
@@ -21,6 +23,7 @@
     "recharts": "^3.5.1"
   },
   "devDependencies": {
+    "@sentry/vite-plugin": "^5.2.0",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",

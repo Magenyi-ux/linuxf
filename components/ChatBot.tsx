@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MessageCircle, X, Send, Bot, User, Minimize2, Maximize2, RotateCcw, Image as ImageIcon, Search } from 'lucide-react';
 import { createTutorChatSession } from '../services/aiService';
+import { trackEvent } from '../services/analytics';
 import { MathText } from './MathText';
 
 export const ChatBot: React.FC = () => {
@@ -43,8 +44,11 @@ export const ChatBot: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (isOpen && !chatSessionRef.current) {
-      chatSessionRef.current = createTutorChatSession();
+    if (isOpen) {
+      trackEvent('feature_used', { name: 'chatbot_open' });
+      if (!chatSessionRef.current) {
+        chatSessionRef.current = createTutorChatSession();
+      }
     }
   }, [isOpen]);
 
@@ -83,6 +87,11 @@ export const ChatBot: React.FC = () => {
     setIsLoading(true);
 
     try {
+      trackEvent('question_asked', {
+        hasImage: !!selectedImage,
+        textLength: userMessage.length
+      });
+
       if (!chatSessionRef.current) {
         chatSessionRef.current = createTutorChatSession();
       }

@@ -10,6 +10,7 @@ import { AdminDashboard } from './components/AdminDashboard';
 import { ChatBot } from './components/ChatBot';
 import { Auth } from './components/Auth';
 import { fetchExamQuestions } from './services/aiService';
+import { trackEvent } from './services/analytics';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
@@ -128,6 +129,10 @@ const App: React.FC = () => {
 
     return () => clearInterval(typingInterval);
   }, [currentQuoteIndex]);
+
+  useEffect(() => {
+    trackEvent('app_session_start');
+  }, []);
 
   useEffect(() => {
     try {
@@ -279,13 +284,16 @@ const App: React.FC = () => {
 
   const handleStart = (bookId: string) => {
      if (books[bookId]) {
+         const book = books[bookId];
          // Increment global usage for admin tracking
          const globalUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
-         const bookTitle = `${books[bookId].examType} ${books[bookId].subject} ${books[bookId].year}`;
+         const bookTitle = `${book.examType} ${book.subject} ${book.year}`;
          globalUsage[bookTitle] = (globalUsage[bookTitle] || 0) + 1;
          localStorage.setItem('waExamPrep_global_usage', JSON.stringify(globalUsage));
 
-         setQuestions(books[bookId].questions);
+         trackEvent('feature_used', { name: 'practice_start', examType: book.examType, subject: book.subject, year: book.year });
+
+         setQuestions(book.questions);
          setCurrentSources(books[bookId].sources || []);
          setActiveBookId(bookId);
          setScreen('PRACTICE');
@@ -314,6 +322,7 @@ const App: React.FC = () => {
         };
         
         saveBook(newBook);
+        trackEvent('feature_used', { name: 'pack_download', examType: selectedExam, subject: selectedSubject, year: year });
         setScreen('YEAR_SELECT'); // Return to list so user can download more
      } catch (err) {
         alert("Could not download questions. Check your internet connection or try again.");
@@ -346,6 +355,7 @@ const App: React.FC = () => {
           saveBook(updatedBook);
       }
       
+      trackEvent('practice_finish', { score, total, percentage: (score/total)*100 });
       setScreen('RESULTS');
   };
 
@@ -359,6 +369,7 @@ const App: React.FC = () => {
   };
 
   const handleLogout = () => {
+    trackEvent('user_logout');
     localStorage.removeItem('waExamPrep_session');
     setIsLoggedIn(false);
     setUserProfile({
