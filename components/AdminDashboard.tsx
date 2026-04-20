@@ -32,7 +32,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
+    const cleanEmail = email.trim();
+    const cleanPassword = password.trim();
+
+    if (cleanEmail === 'admin@magenyi' && cleanPassword === 'magenyi123') {
       setIsAuthenticated(true);
       sessionStorage.setItem('admin_authenticated', 'true');
       fetchAdminData();
@@ -110,7 +113,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
             <div>
               <label className="text-xs font-black text-gray-400 uppercase tracking-widest mb-2 block">Email</label>
               <input
-                type="email"
+                type="text"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:bg-white outline-none transition-all font-medium"
