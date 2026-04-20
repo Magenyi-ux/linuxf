@@ -24,24 +24,28 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
   useEffect(() => {
     // Check if already authenticated in this session
     const isAuth = sessionStorage.getItem('admin_authenticated') === 'true';
-    if (isAuth) {
+    const savedCreds = sessionStorage.getItem('admin_credentials');
+    if (isAuth && savedCreds) {
       setIsAuthenticated(true);
-      fetchAdminData();
+      fetchAdminData(savedCreds);
     }
   }, []);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
+    // Verification against hardcoded frontend credentials
     if (email === 'admin@magenyi' && password === 'magenyi123') {
+      const credentials = btoa(`${email}:${password}`);
       setIsAuthenticated(true);
       sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
+      sessionStorage.setItem('admin_credentials', credentials);
+      fetchAdminData(credentials);
     } else {
       setError('Invalid admin credentials');
     }
   };
 
-  const fetchAdminData = async () => {
+  const fetchAdminData = async (providedCredentials?: string) => {
     setLoading(true);
     try {
       // Local storage data
@@ -50,8 +54,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       const savedUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
       setGlobalUsage(savedUsage);
 
-      // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
+      // Backend data (Secured with Basic Auth) - using provided or stored credentials
+      const credentials = providedCredentials || sessionStorage.getItem('admin_credentials');
+
+      if (!credentials) return;
+
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
