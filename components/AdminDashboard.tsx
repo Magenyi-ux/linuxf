@@ -26,22 +26,48 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     const isAuth = sessionStorage.getItem('admin_authenticated') === 'true';
     if (isAuth) {
       setIsAuthenticated(true);
-      fetchAdminData();
+      const credentials = sessionStorage.getItem('admin_credentials');
+      if (credentials) {
+        fetchAdminData(credentials);
+      }
     }
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
-    } else {
-      setError('Invalid admin credentials');
+    setError('');
+    setLoading(true);
+
+    try {
+      const credentials = btoa(`${email.trim()}:${password.trim()}`);
+      const response = await fetch('/api/admin/logs', {
+        headers: {
+          'Authorization': `Basic ${credentials}`
+        }
+      });
+
+      if (response.ok) {
+        setIsAuthenticated(true);
+        sessionStorage.setItem('admin_authenticated', 'true');
+        sessionStorage.setItem('admin_credentials', credentials);
+        fetchAdminData(credentials);
+      } else if (response.status === 401) {
+        setError('Invalid admin credentials');
+      } else {
+        const data = await response.json();
+        setError(data.error || 'Failed to authenticate with admin server');
+      }
+    } catch (err) {
+      setError('Network error occurred during admin authentication');
+    } finally {
+      setLoading(false);
     }
   };
 
-  const fetchAdminData = async () => {
+  const fetchAdminData = async (authCredentials?: string) => {
+    const credentials = authCredentials || sessionStorage.getItem('admin_credentials');
+    if (!credentials) return;
+
     setLoading(true);
     try {
       // Local storage data
@@ -51,7 +77,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       setGlobalUsage(savedUsage);
 
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
@@ -63,6 +88,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         setEvents(data.events || []);
         setStats(data.stats || {});
         setFeatureUsage(data.featureUsage || {});
+      } else if (response.status === 401) {
+          setIsAuthenticated(false);
+          sessionStorage.removeItem('admin_authenticated');
+          sessionStorage.removeItem('admin_credentials');
+          setError('Session expired or credentials rejected');
       }
     } catch (err) {
       console.error('Failed to fetch admin data:', err);
@@ -110,7 +140,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
             <div>
               <label className="text-xs font-black text-gray-400 uppercase tracking-widest mb-2 block">Email</label>
               <input
-                type="email"
+                type="text"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:bg-white outline-none transition-all font-medium"

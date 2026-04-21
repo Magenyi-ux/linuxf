@@ -1,0 +1,4 @@
+## 2026-04-19 - Hardcoded Admin Credentials and API Key Leakage
+**Vulnerability:** Hardcoded administrative credentials were found across both frontend (`components/Auth.tsx`, `components/AdminDashboard.tsx`) and backend (`api/admin/logs.ts`) components. Additionally, the `GEMINI_API_KEY` was being baked into the client-side JavaScript bundle via Vite's `define` configuration.
+**Learning:** Hardcoded credentials and environment variable injection into frontend bundles are common shortcuts that bypass proper authentication and secret management, leading to significant exposure.
+**Prevention:** Always use environment variables for secrets, manage authentication on the server-side whenever possible, and strictly control which environment variables are exposed to the frontend (e.g., using the `VITE_` prefix and avoiding the `define` block for sensitive keys).
