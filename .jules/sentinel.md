@@ -1,0 +1,4 @@
+## 2026-04-22 - [Security] Removal of Hardcoded Admin Credentials and Secret Leakage
+**Vulnerability:** Hardcoded admin credentials were present in both frontend and backend files (`AdminDashboard.tsx`, `Auth.tsx`, `api/admin/logs.ts`). Additionally, `GEMINI_API_KEY` was being exposed to the client-side via Vite's `define` block.
+**Learning:** Developers often use hardcoded accounts for testing or "administrative overrides" which later become permanent vulnerabilities. Client-side "hiding" of admin logic is insufficient; authentication must be verified by the server. Vite's `define` can easily leak server-side environment variables if not carefully managed.
+**Prevention:** Never hardcode credentials. Use environment variables on the server-side only. Use Basic Auth or session tokens for administrative endpoints. Periodically audit `vite.config.ts` for leaked secrets in the `define` block.
