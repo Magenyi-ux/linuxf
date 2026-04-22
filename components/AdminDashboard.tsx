@@ -24,24 +24,32 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
   useEffect(() => {
     // Check if already authenticated in this session
     const isAuth = sessionStorage.getItem('admin_authenticated') === 'true';
-    if (isAuth) {
+    const credentials = sessionStorage.getItem('admin_credentials');
+    if (isAuth && credentials) {
       setIsAuthenticated(true);
-      fetchAdminData();
+      fetchAdminData(credentials);
     }
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
+    setLoading(true);
+    setError('');
+
+    const credentials = btoa(`${email}:${password}`);
+    const success = await fetchAdminData(credentials);
+
+    if (success) {
       setIsAuthenticated(true);
       sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
+      sessionStorage.setItem('admin_credentials', credentials);
     } else {
-      setError('Invalid admin credentials');
+      setError('Invalid admin credentials or server error');
     }
+    setLoading(false);
   };
 
-  const fetchAdminData = async () => {
+  const fetchAdminData = async (credentials: string) => {
     setLoading(true);
     try {
       // Local storage data
@@ -51,7 +59,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       setGlobalUsage(savedUsage);
 
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
@@ -63,9 +70,17 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         setEvents(data.events || []);
         setStats(data.stats || {});
         setFeatureUsage(data.featureUsage || {});
+        return true;
+      } else {
+        if (response.status === 401) {
+            sessionStorage.removeItem('admin_authenticated');
+            sessionStorage.removeItem('admin_credentials');
+        }
+        return false;
       }
     } catch (err) {
       console.error('Failed to fetch admin data:', err);
+      return false;
     } finally {
       setLoading(false);
     }
@@ -158,7 +173,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         <button onClick={onBack} className="flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Dashboard
         </button>
-        <button onClick={fetchAdminData} className="px-4 py-2 bg-gray-100 text-gray-600 rounded-xl text-xs font-black hover:bg-primary-50 hover:text-primary-600 transition-all">
+        <button
+          onClick={() => {
+            const creds = sessionStorage.getItem('admin_credentials');
+            if (creds) fetchAdminData(creds);
+          }}
+          className="px-4 py-2 bg-gray-100 text-gray-600 rounded-xl text-xs font-black hover:bg-primary-50 hover:text-primary-600 transition-all"
+        >
           REFRESH DATA
         </button>
       </div>
