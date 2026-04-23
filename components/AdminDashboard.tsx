@@ -30,18 +30,47 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     }
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
-    } else {
-      setError('Invalid admin credentials');
+    setLoading(true);
+    setError('');
+
+    try {
+      const credentials = btoa(`${email.trim()}:${password.trim()}`);
+      const response = await fetch('/api/admin/logs', {
+        headers: {
+          'Authorization': `Basic ${credentials}`
+        }
+      });
+
+      if (response.ok) {
+        setIsAuthenticated(true);
+        sessionStorage.setItem('admin_authenticated', 'true');
+        sessionStorage.setItem('admin_credentials', credentials);
+
+        const data = await response.json();
+        setEvents(data.events || []);
+        setStats(data.stats || {});
+        setFeatureUsage(data.featureUsage || {});
+
+        const savedUsers = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
+        setUsers(savedUsers);
+        const savedUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
+        setGlobalUsage(savedUsage);
+      } else {
+        setError('Invalid admin credentials or access denied');
+      }
+    } catch (err) {
+      setError('Connection failed. Please check your credentials and try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
   const fetchAdminData = async () => {
+    const credentials = sessionStorage.getItem('admin_credentials');
+    if (!credentials) return;
+
     setLoading(true);
     try {
       // Local storage data
@@ -51,7 +80,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       setGlobalUsage(savedUsage);
 
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
@@ -63,6 +91,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         setEvents(data.events || []);
         setStats(data.stats || {});
         setFeatureUsage(data.featureUsage || {});
+      } else if (response.status === 401) {
+        setIsAuthenticated(false);
+        sessionStorage.removeItem('admin_authenticated');
+        sessionStorage.removeItem('admin_credentials');
       }
     } catch (err) {
       console.error('Failed to fetch admin data:', err);
@@ -132,9 +164,16 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
             {error && <p className="text-red-500 text-xs font-bold">{error}</p>}
             <button
               type="submit"
-              className="w-full py-4 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all flex items-center justify-center gap-2"
+              disabled={loading}
+              className="w-full py-4 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all flex items-center justify-center gap-2 disabled:opacity-50"
             >
-              <LogIn className="w-5 h-5" /> SIGN IN
+              {loading ? (
+                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+              ) : (
+                <>
+                  <LogIn className="w-5 h-5" /> SIGN IN
+                </>
+              )}
             </button>
           </form>
 
