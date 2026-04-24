@@ -30,14 +30,37 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     }
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
-    } else {
-      setError('Invalid admin credentials');
+    setLoading(true);
+    setError('');
+
+    try {
+      const credentials = btoa(`${email}:${password}`);
+      const response = await fetch('/api/admin/logs', {
+        headers: {
+          'Authorization': `Basic ${credentials}`
+        }
+      });
+
+      if (response.ok) {
+        setIsAuthenticated(true);
+        sessionStorage.setItem('admin_authenticated', 'true');
+        sessionStorage.setItem('admin_credentials', credentials);
+        const data = await response.json();
+        setEvents(data.events || []);
+        setStats(data.stats || {});
+        setFeatureUsage(data.featureUsage || {});
+
+        const savedUsers = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
+        setUsers(savedUsers);
+      } else {
+        setError('Invalid admin credentials');
+      }
+    } catch (err) {
+      setError('Failed to connect to admin services');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -51,7 +74,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       setGlobalUsage(savedUsage);
 
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
+      const credentials = sessionStorage.getItem('admin_credentials');
+      if (!credentials) return;
+
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
@@ -261,7 +286,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
                         )}
                       </td>
                       <td className="px-6 py-5 text-right">
-                        {user.email !== 'admin@magenyi' && (
+                        {user.role !== 'ADMIN' && (
                           <button
                             onClick={() => toggleBan(user.email!)}
                             className={`px-3 py-1.5 rounded-lg text-[10px] font-black transition-all ${
