@@ -26,22 +26,64 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     const isAuth = sessionStorage.getItem('admin_authenticated') === 'true';
     if (isAuth) {
       setIsAuthenticated(true);
-      fetchAdminData();
+      const savedCredentials = sessionStorage.getItem('admin_credentials');
+      if (savedCredentials) {
+        fetchAdminData(savedCredentials);
+      }
     }
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
-    } else {
-      setError('Invalid admin credentials');
+    setError('');
+    setLoading(true);
+
+    try {
+      // Basic Auth: base64(email:password)
+      // Use standard btoa with escaping for potential non-ASCII characters if needed,
+      // though emails/passwords are usually ASCII.
+      const credentials = btoa(unescape(encodeURIComponent(`${email.trim()}:${password.trim()}`)));
+
+      // Verify credentials by attempting to fetch logs
+      const response = await fetch('/api/admin/logs', {
+        headers: {
+          'Authorization': `Basic ${credentials}`
+        }
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setIsAuthenticated(true);
+        sessionStorage.setItem('admin_authenticated', 'true');
+        sessionStorage.setItem('admin_credentials', credentials);
+
+        // Process data
+        setEvents(data.events || []);
+        setStats(data.stats || {});
+        setFeatureUsage(data.featureUsage || {});
+
+        // Load local data too
+        const savedUsers = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
+        setUsers(savedUsers);
+        const savedUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
+        setGlobalUsage(savedUsage);
+      } else if (response.status === 401) {
+        setError('Invalid admin credentials');
+      } else {
+        setError('Server error during authentication');
+      }
+    } catch (err) {
+      console.error('Login failed:', err);
+      setError('Connection error');
+    } finally {
+      setLoading(false);
     }
   };
 
-  const fetchAdminData = async () => {
+  const fetchAdminData = async (providedCredentials?: string) => {
+    const credentials = providedCredentials || sessionStorage.getItem('admin_credentials');
+    if (!credentials) return;
+
     setLoading(true);
     try {
       // Local storage data
@@ -51,7 +93,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       setGlobalUsage(savedUsage);
 
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
@@ -63,6 +104,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         setEvents(data.events || []);
         setStats(data.stats || {});
         setFeatureUsage(data.featureUsage || {});
+      } else if (response.status === 401) {
+        // Session might be stale or credentials changed
+        setIsAuthenticated(false);
+        sessionStorage.removeItem('admin_authenticated');
+        sessionStorage.removeItem('admin_credentials');
       }
     } catch (err) {
       console.error('Failed to fetch admin data:', err);
@@ -110,11 +156,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
             <div>
               <label className="text-xs font-black text-gray-400 uppercase tracking-widest mb-2 block">Email</label>
               <input
-                type="email"
+                type="text"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:bg-white outline-none transition-all font-medium"
-                placeholder="admin@magenyi"
+                placeholder="Admin Handle or Email"
                 required
               />
             </div>
@@ -132,9 +178,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
             {error && <p className="text-red-500 text-xs font-bold">{error}</p>}
             <button
               type="submit"
-              className="w-full py-4 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all flex items-center justify-center gap-2"
+              disabled={loading}
+              className="w-full py-4 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all flex items-center justify-center gap-2 disabled:opacity-50"
             >
-              <LogIn className="w-5 h-5" /> SIGN IN
+              {loading ? (
+                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+              ) : (
+                <><LogIn className="w-5 h-5" /> SIGN IN</>
+              )}
             </button>
           </form>
 
@@ -152,13 +203,20 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     .sort(([, a], [, b]) => b - a)
     .slice(0, 5);
 
+  const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || 'admin@magenyi';
+
   return (
     <div className="animate-fade-in max-w-6xl mx-auto pb-12">
       <div className="flex items-center justify-between mb-8">
         <button onClick={onBack} className="flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Dashboard
         </button>
-        <button onClick={fetchAdminData} className="px-4 py-2 bg-gray-100 text-gray-600 rounded-xl text-xs font-black hover:bg-primary-50 hover:text-primary-600 transition-all">
+        <button
+          onClick={() => fetchAdminData()}
+          disabled={loading}
+          className="px-4 py-2 bg-gray-100 text-gray-600 rounded-xl text-xs font-black hover:bg-primary-50 hover:text-primary-600 transition-all flex items-center gap-2 disabled:opacity-50"
+        >
+          {loading && <div className="w-3 h-3 border-2 border-gray-300 border-t-primary-600 rounded-full animate-spin"></div>}
           REFRESH DATA
         </button>
       </div>
@@ -261,7 +319,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
                         )}
                       </td>
                       <td className="px-6 py-5 text-right">
-                        {user.email !== 'admin@magenyi' && (
+                        {user.email !== adminEmail && (
                           <button
                             onClick={() => toggleBan(user.email!)}
                             className={`px-3 py-1.5 rounded-lg text-[10px] font-black transition-all ${
