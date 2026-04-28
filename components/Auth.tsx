@@ -28,56 +28,30 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
     await new Promise(resolve => setTimeout(resolve, 800));
 
     try {
-      // Use consistent prefix
       const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
-
-      // Handle Hardcoded Admin Account
-      const isAdminAccount = formData.email === 'admin@magenyi' && formData.password === 'admin123';
-
-      if (isAdminAccount) {
-        let adminUser = users.find((u: any) => u.email === 'admin@magenyi');
-        if (!adminUser) {
-          adminUser = {
-            name: 'System Admin',
-            email: 'admin@magenyi',
-            password: 'admin123',
-            level: 99,
-            xp: 0,
-            streak: 0,
-            role: 'ADMIN',
-            timeSpent: 0,
-            isBanned: false
-          };
-          users.push(adminUser);
-          localStorage.setItem('waExamPrep_users', JSON.stringify(users));
-        }
-
-        const { password, ...sessionProfile } = adminUser;
-        localStorage.setItem('waExamPrep_session', JSON.stringify(sessionProfile));
-        onAuthComplete(sessionProfile as UserProfile);
-        return;
-      }
+      const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
 
       if (mode === 'SIGN_UP') {
         if (users.find((u: any) => u.email === formData.email)) {
           throw new Error('User already exists with this email.');
         }
 
-        // Simulating password hashing/secure storage by not storing the password in the public profile
+        const isSystemAdmin = adminEmail && formData.email === adminEmail;
+
         const newProfile: UserProfile = {
           name: formData.name,
           email: formData.email,
-          level: 1,
+          level: isSystemAdmin ? 99 : 1,
           xp: 0,
           streak: 0,
-          role: 'USER',
+          role: isSystemAdmin ? 'ADMIN' : 'USER',
           timeSpent: 0,
           isBanned: false
         };
 
         const userData = {
           ...newProfile,
-          password: formData.password // In a real app, this would be hashed
+          password: formData.password
         };
 
         users.push(userData);
@@ -94,8 +68,15 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
           throw new Error('This account has been banned from the platform.');
         }
 
+        // Dynamically assign ADMIN role if email matches VITE_ADMIN_EMAIL
+        const isSystemAdmin = adminEmail && userMatch.email === adminEmail;
+        const profileWithRole = {
+            ...userMatch,
+            role: isSystemAdmin ? 'ADMIN' : userMatch.role
+        };
+
         // Remove password before setting session and profile
-        const { password, ...sessionProfile } = userMatch;
+        const { password, ...sessionProfile } = profileWithRole;
         localStorage.setItem('waExamPrep_session', JSON.stringify(sessionProfile));
         onAuthComplete(sessionProfile as UserProfile);
       }
