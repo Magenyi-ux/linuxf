@@ -24,24 +24,45 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
   useEffect(() => {
     // Check if already authenticated in this session
     const isAuth = sessionStorage.getItem('admin_authenticated') === 'true';
-    if (isAuth) {
+    const credentials = sessionStorage.getItem('admin_credentials');
+    if (isAuth && credentials) {
       setIsAuthenticated(true);
-      fetchAdminData();
+      fetchAdminData(credentials);
     }
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
-    } else {
-      setError('Invalid admin credentials');
+    setLoading(true);
+    setError('');
+
+    try {
+      const credentials = btoa(`${email.trim()}:${password.trim()}`);
+      const response = await fetch('/api/admin/logs', {
+        headers: {
+          'Authorization': `Basic ${credentials}`
+        }
+      });
+
+      if (response.ok) {
+        setIsAuthenticated(true);
+        sessionStorage.setItem('admin_authenticated', 'true');
+        sessionStorage.setItem('admin_credentials', credentials);
+        fetchAdminData(credentials);
+      } else {
+        setError('Invalid admin credentials');
+      }
+    } catch (err) {
+      setError('Connection error. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
-  const fetchAdminData = async () => {
+  const fetchAdminData = async (credentials?: string) => {
+    const authCreds = credentials || sessionStorage.getItem('admin_credentials');
+    if (!authCreds) return;
+
     setLoading(true);
     try {
       // Local storage data
@@ -51,10 +72,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       setGlobalUsage(savedUsage);
 
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
       const response = await fetch('/api/admin/logs', {
         headers: {
-          'Authorization': `Basic ${credentials}`
+          'Authorization': `Basic ${authCreds}`
         }
       });
 
@@ -261,7 +281,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
                         )}
                       </td>
                       <td className="px-6 py-5 text-right">
-                        {user.email !== 'admin@magenyi' && (
+                        {user.email !== (import.meta.env.VITE_ADMIN_EMAIL || 'admin@magenyi') && (
                           <button
                             onClick={() => toggleBan(user.email!)}
                             className={`px-3 py-1.5 rounded-lg text-[10px] font-black transition-all ${
