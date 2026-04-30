@@ -31,32 +31,7 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
       // Use consistent prefix
       const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
 
-      // Handle Hardcoded Admin Account
-      const isAdminAccount = formData.email === 'admin@magenyi' && formData.password === 'admin123';
-
-      if (isAdminAccount) {
-        let adminUser = users.find((u: any) => u.email === 'admin@magenyi');
-        if (!adminUser) {
-          adminUser = {
-            name: 'System Admin',
-            email: 'admin@magenyi',
-            password: 'admin123',
-            level: 99,
-            xp: 0,
-            streak: 0,
-            role: 'ADMIN',
-            timeSpent: 0,
-            isBanned: false
-          };
-          users.push(adminUser);
-          localStorage.setItem('waExamPrep_users', JSON.stringify(users));
-        }
-
-        const { password, ...sessionProfile } = adminUser;
-        localStorage.setItem('waExamPrep_session', JSON.stringify(sessionProfile));
-        onAuthComplete(sessionProfile as UserProfile);
-        return;
-      }
+      const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
 
       if (mode === 'SIGN_UP') {
         if (users.find((u: any) => u.email === formData.email)) {
@@ -70,7 +45,7 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
           level: 1,
           xp: 0,
           streak: 0,
-          role: 'USER',
+          role: adminEmail && formData.email === adminEmail ? 'ADMIN' : 'USER',
           timeSpent: 0,
           isBanned: false
         };
@@ -92,6 +67,11 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
 
         if (userMatch.isBanned) {
           throw new Error('This account has been banned from the platform.');
+        }
+
+        // Ensure role is correctly set if they are admin
+        if (adminEmail && userMatch.email === adminEmail) {
+           userMatch.role = 'ADMIN';
         }
 
         // Remove password before setting session and profile
