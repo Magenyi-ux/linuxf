@@ -1,0 +1,4 @@
+## 2026-04-22 - [CRITICAL] Removal of Hardcoded Admin Credentials and API Key Leakage
+**Vulnerability:** Hardcoded administrative credentials in frontend and backend, and leakage of GEMINI_API_KEY into the client-side bundle via Vite configuration.
+**Learning:** Hardcoding credentials for "simplicity" or "mocking" often persists into production, creating critical security holes. Vite's `define` block bakes environment variables directly into the JS bundle, making them accessible to anyone.
+**Prevention:** Always use environment variables for secrets, even in development. For frontend admin access, validate credentials against a secure backend endpoint rather than hardcoding checks in the UI. Ensure Vite only exposes necessary variables (prefixed with `VITE_`) and avoid using the `define` block for secrets.
