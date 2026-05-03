@@ -31,46 +31,21 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
       // Use consistent prefix
       const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
 
-      // Handle Hardcoded Admin Account
-      const isAdminAccount = formData.email === 'admin@magenyi' && formData.password === 'admin123';
-
-      if (isAdminAccount) {
-        let adminUser = users.find((u: any) => u.email === 'admin@magenyi');
-        if (!adminUser) {
-          adminUser = {
-            name: 'System Admin',
-            email: 'admin@magenyi',
-            password: 'admin123',
-            level: 99,
-            xp: 0,
-            streak: 0,
-            role: 'ADMIN',
-            timeSpent: 0,
-            isBanned: false
-          };
-          users.push(adminUser);
-          localStorage.setItem('waExamPrep_users', JSON.stringify(users));
-        }
-
-        const { password, ...sessionProfile } = adminUser;
-        localStorage.setItem('waExamPrep_session', JSON.stringify(sessionProfile));
-        onAuthComplete(sessionProfile as UserProfile);
-        return;
-      }
-
       if (mode === 'SIGN_UP') {
         if (users.find((u: any) => u.email === formData.email)) {
           throw new Error('User already exists with this email.');
         }
 
+        const isAdminEmail = formData.email === import.meta.env.VITE_ADMIN_EMAIL;
+
         // Simulating password hashing/secure storage by not storing the password in the public profile
         const newProfile: UserProfile = {
           name: formData.name,
           email: formData.email,
-          level: 1,
+          level: isAdminEmail ? 99 : 1,
           xp: 0,
           streak: 0,
-          role: 'USER',
+          role: isAdminEmail ? 'ADMIN' : 'USER',
           timeSpent: 0,
           isBanned: false
         };
