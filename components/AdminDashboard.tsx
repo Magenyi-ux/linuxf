@@ -30,18 +30,48 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     }
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
-    } else {
-      setError('Invalid admin credentials');
+    setLoading(true);
+    setError('');
+
+    try {
+      const credentials = btoa(`${email}:${password}`);
+      const response = await fetch('/api/admin/logs', {
+        headers: {
+          'Authorization': `Basic ${credentials}`
+        }
+      });
+
+      if (response.ok) {
+        setIsAuthenticated(true);
+        sessionStorage.setItem('admin_authenticated', 'true');
+        sessionStorage.setItem('admin_credentials', credentials);
+
+        // Load initial data
+        const data = await response.json();
+        setEvents(data.events || []);
+        setStats(data.stats || {});
+        setFeatureUsage(data.featureUsage || {});
+
+        const savedUsers = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
+        setUsers(savedUsers);
+        const savedUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
+        setGlobalUsage(savedUsage);
+      } else {
+        setError('Invalid admin credentials');
+      }
+    } catch (err) {
+      setError('Connection failed. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
   const fetchAdminData = async () => {
+    const credentials = sessionStorage.getItem('admin_credentials');
+    if (!credentials) return;
+
     setLoading(true);
     try {
       // Local storage data
@@ -51,7 +81,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       setGlobalUsage(savedUsage);
 
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
@@ -261,7 +290,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
                         )}
                       </td>
                       <td className="px-6 py-5 text-right">
-                        {user.email !== 'admin@magenyi' && (
+                        {user.email !== import.meta.env.VITE_ADMIN_EMAIL && (
                           <button
                             onClick={() => toggleBan(user.email!)}
                             className={`px-3 py-1.5 rounded-lg text-[10px] font-black transition-all ${
