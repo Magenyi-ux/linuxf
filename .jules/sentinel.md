@@ -1,0 +1,4 @@
+## 2026-04-22 - [CRITICAL] Removal of Hardcoded Admin Credentials and Secret Exposure
+**Vulnerability:** Hardcoded admin credentials (`admin@magenyi:magenyi123`) were used in both frontend and backend for authentication. Additionally, `GEMINI_API_KEY` was being baked into the client-side bundle via `vite.config.ts`.
+**Learning:** Hardcoded credentials create a "god mode" account that cannot be rotated without a code change and is visible to anyone with access to the source or the compiled JS. Baking secrets into the frontend via Vite `define` makes them public to any user.
+**Prevention:** Always use environment variables for secrets. Sensitive logic (like credential verification) should happen on the server-side. Ensure build tools don't accidentally expose non-public environment variables to the client.
