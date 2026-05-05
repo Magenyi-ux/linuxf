@@ -30,18 +30,20 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     }
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
+    setError('');
+    const success = await fetchAdminData(email, password);
+    if (success) {
       setIsAuthenticated(true);
       sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
+      sessionStorage.setItem('admin_credentials', btoa(`${email.trim()}:${password.trim()}`));
     } else {
       setError('Invalid admin credentials');
     }
   };
 
-  const fetchAdminData = async () => {
+  const fetchAdminData = async (userEmail?: string, userPassword?: string) => {
     setLoading(true);
     try {
       // Local storage data
@@ -51,7 +53,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       setGlobalUsage(savedUsage);
 
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
+      let credentials = sessionStorage.getItem('admin_credentials');
+      if (userEmail && userPassword) {
+        credentials = btoa(`${userEmail.trim()}:${userPassword.trim()}`);
+      }
+
+      if (!credentials) return false;
+
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
@@ -63,9 +71,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         setEvents(data.events || []);
         setStats(data.stats || {});
         setFeatureUsage(data.featureUsage || {});
+        return true;
       }
+      return false;
     } catch (err) {
       console.error('Failed to fetch admin data:', err);
+      return false;
     } finally {
       setLoading(false);
     }
@@ -110,11 +121,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
             <div>
               <label className="text-xs font-black text-gray-400 uppercase tracking-widest mb-2 block">Email</label>
               <input
-                type="email"
+                  type="text"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:bg-white outline-none transition-all font-medium"
-                placeholder="admin@magenyi"
+                  placeholder="Admin Email"
                 required
               />
             </div>
@@ -261,7 +272,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
                         )}
                       </td>
                       <td className="px-6 py-5 text-right">
-                        {user.email !== 'admin@magenyi' && (
+                        {user.email !== import.meta.env.VITE_ADMIN_EMAIL && (
                           <button
                             onClick={() => toggleBan(user.email!)}
                             className={`px-3 py-1.5 rounded-lg text-[10px] font-black transition-all ${
