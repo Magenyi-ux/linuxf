@@ -2,12 +2,16 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { kv } from '@vercel/kv';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  // Simple Basic Auth check
-  const authHeader = req.headers.authorization;
+  const adminEmail = process.env.ADMIN_EMAIL;
+  const adminPassword = process.env.ADMIN_PASSWORD;
 
-  // We expect "Basic " + base64(admin@magenyi:magenyi123)
-  // admin@magenyi:magenyi123 in base64 is YWRtaW5AbWFnZW55aTptYWdlbnlpMTIz
-  const expectedAuth = 'Basic YWRtaW5AbWFnZW55aTptYWdlbnlpMTIz';
+  if (!adminEmail || !adminPassword) {
+    console.error('ADMIN_EMAIL or ADMIN_PASSWORD environment variables are not set');
+    return res.status(500).json({ error: 'Internal Server Error' });
+  }
+
+  const expectedAuth = `Basic ${Buffer.from(`${adminEmail.trim()}:${adminPassword.trim()}`).toString('base64')}`;
+  const authHeader = req.headers.authorization;
 
   if (!authHeader || authHeader !== expectedAuth) {
     return res.status(401).json({ error: 'Unauthorized' });
