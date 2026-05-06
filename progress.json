@@ -1,0 +1,74 @@
+{
+  "english-language": {
+    "completed": true,
+    "total_questions": 3491
+  },
+  "mathematics": {
+    "completed": true,
+    "total_questions": 1618
+  },
+  "history": {
+    "completed": true,
+    "total_questions": 0
+  },
+  "civic-education": {
+    "completed": true,
+    "total_questions": 577
+  },
+  "crs": {
+    "completed": true,
+    "total_questions": 0
+  },
+  "irs": {
+    "completed": true,
+    "total_questions": 0
+  },
+  "french": {
+    "completed": true,
+    "total_questions": 0
+  },
+  "arabic": {
+    "completed": true,
+    "total_questions": 0
+  },
+  "commerce": {
+    "completed": true,
+    "total_questions": 2083
+  },
+  "physics": {
+    "completed": true,
+    "total_questions": 1679
+  },
+  "chemistry": {
+    "completed": true,
+    "total_questions": 1454
+  },
+  "biology": {
+    "completed": true,
+    "total_questions": 691
+  },
+  "further-mathematics": {
+    "completed": true,
+    "total_questions": 508
+  },
+  "agricultural-science": {
+    "completed": true,
+    "total_questions": 1979
+  },
+  "geography": {
+    "completed": true,
+    "total_questions": 1431
+  },
+  "economics": {
+    "completed": true,
+    "total_questions": 1692
+  },
+  "literature-in-english": {
+    "completed": true,
+    "total_questions": 1210
+  },
+  "government": {
+    "completed": true,
+    "total_questions": 1876
+  }
+}
