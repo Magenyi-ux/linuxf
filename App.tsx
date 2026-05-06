@@ -11,6 +11,8 @@ import { ChatBot } from './components/ChatBot';
 import { Auth } from './components/Auth';
 import { fetchExamQuestions } from './services/aiService';
 import { trackEvent } from './services/analytics';
+import { fallbackData } from './services/fallbackData';
+import { studyRandData } from './services/studyRandData';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
@@ -79,6 +81,7 @@ const App: React.FC = () => {
   const [selectedExam, setSelectedExam] = useState<ExamType | null>(null);
   const [selectedStream, setSelectedStream] = useState<StreamType | null>(null);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
+  const [selectedRandSubjects, setSelectedRandSubjects] = useState<Subject[]>([]);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentSources, setCurrentSources] = useState<string[]>([]);
   const [practiceMode, setPracticeMode] = useState<'STUDY' | 'TEST'>('STUDY');
@@ -364,6 +367,7 @@ const App: React.FC = () => {
     setSelectedExam(null);
     setSelectedStream(null);
     setSelectedSubject(null);
+    setSelectedRandSubjects([]);
     setActiveBookId(null);
     setSearchQuery('');
   };
@@ -605,6 +609,12 @@ const App: React.FC = () => {
                   onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); }}
                   colorClass="bg-amber-500"
                 />
+                <ExamCard
+                  type={ExamType.STUDY_RAND}
+                  description="Randomized subject quiz and study"
+                  onClick={(t) => { setSelectedExam(t); setScreen('STUDY_RAND_SUBJECTS'); }}
+                  colorClass="bg-emerald-500"
+                />
               </div>
             </div>
           </div>
@@ -784,7 +794,7 @@ const App: React.FC = () => {
                 subject={selectedSubject}
                 mode={practiceMode}
                 onFinish={handleFinishPractice}
-                onBack={() => setScreen('YEAR_SELECT')}
+                onBack={() => setScreen(selectedExam === ExamType.STUDY_RAND ? 'STUDY_RAND_SUBJECTS' : 'YEAR_SELECT')}
             />
         )}
 
@@ -816,6 +826,87 @@ const App: React.FC = () => {
             <AdminDashboard
                 onBack={resetApp}
             />
+        )}
+
+        {screen === 'STUDY_RAND_SUBJECTS' && (
+          <div className="animate-fade-in max-w-4xl mx-auto">
+            <button onClick={() => setScreen('HOME')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
+                <ArrowLeft className="w-4 h-4" /> Back to Home
+            </button>
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                 <div>
+                    <h2 className="text-4xl font-bold text-gray-900 mb-2 tracking-tight">Randomized Study</h2>
+                    <p className="text-lg text-gray-500 font-medium">Select subjects to take a 60-question random quiz.</p>
+                 </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+              {Object.values(Subject).map((sub) => {
+                const hasNewData = !!studyRandData[sub];
+                const hasFallbackData = Object.values(fallbackData).some(exam => !!exam[sub]);
+                if (!hasNewData && !hasFallbackData) return null;
+
+                return (
+                  <button
+                    key={sub}
+                    onClick={() => {
+                      setSelectedRandSubjects(prev =>
+                        prev.includes(sub) ? prev.filter(s => s !== sub) : [...prev, sub]
+                      );
+                    }}
+                    className={`flex items-center p-5 border rounded-2xl transition-all text-left group ${selectedRandSubjects.includes(sub) ? 'border-primary-500 bg-primary-50' : 'bg-white border-gray-100 hover:border-primary-300'}`}
+                  >
+                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center mr-4 transition-all ${selectedRandSubjects.includes(sub) ? 'bg-primary-600 text-white' : 'bg-gray-50 text-gray-400 group-hover:bg-primary-50 group-hover:text-primary-600'}`}>
+                        {getSubjectIcon(sub)}
+                    </div>
+                    <span className={`font-bold ${selectedRandSubjects.includes(sub) ? 'text-primary-900' : 'text-gray-700 group-hover:text-gray-900'}`}>{sub}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="sticky bottom-24 md:bottom-8 flex justify-center">
+               <button
+                  disabled={selectedRandSubjects.length === 0}
+                  onClick={() => {
+                    // Logic to gather 60 questions
+                    let pool: Question[] = [];
+                    selectedRandSubjects.forEach(sub => {
+                      // From fallbackData
+                      Object.values(fallbackData).forEach(examData => {
+                        if (examData[sub]) {
+                          Object.values(examData[sub]).forEach(yearQuestions => {
+                            pool = [...pool, ...yearQuestions];
+                          });
+                        }
+                      });
+                      // From studyRandData
+                      if (studyRandData[sub]) {
+                        pool = [...pool, ...studyRandData[sub]];
+                      }
+                    });
+
+                    if (pool.length === 0) {
+                      alert("No questions found for the selected subjects.");
+                      return;
+                    }
+
+                    // Shuffle pool
+                    const shuffled = [...pool].sort(() => 0.5 - Math.random());
+                    const selected = shuffled.slice(0, 60);
+
+                    setQuestions(selected);
+                    setSelectedExam(ExamType.STUDY_RAND);
+                    setSelectedSubject(selectedRandSubjects.join(', ') as any); // Just for display
+                    setPracticeMode('TEST');
+                    setScreen('PRACTICE');
+                  }}
+                  className="px-12 py-5 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-2xl shadow-primary-500/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3 scale-110"
+               >
+                  START RANDOM QUIZ <ArrowRight className="w-5 h-5" />
+               </button>
+            </div>
+          </div>
         )}
 
         {screen === 'AUTH' && (
