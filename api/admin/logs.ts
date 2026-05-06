@@ -5,9 +5,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Simple Basic Auth check
   const authHeader = req.headers.authorization;
 
-  // We expect "Basic " + base64(admin@magenyi:magenyi123)
-  // admin@magenyi:magenyi123 in base64 is YWRtaW5AbWFnZW55aTptYWdlbnlpMTIz
-  const expectedAuth = 'Basic YWRtaW5AbWFnZW55aTptYWdlbnlpMTIz';
+  const adminEmail = process.env.ADMIN_EMAIL;
+  const adminPassword = process.env.ADMIN_PASSWORD;
+
+  if (!adminEmail || !adminPassword) {
+    console.error('Admin credentials not configured in environment');
+    return res.status(500).json({ error: 'Internal Server Error' });
+  }
+
+  const expectedAuth = `Basic ${Buffer.from(`${adminEmail}:${adminPassword}`).toString('base64')}`;
 
   if (!authHeader || authHeader !== expectedAuth) {
     return res.status(401).json({ error: 'Unauthorized' });
