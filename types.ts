@@ -67,6 +67,8 @@ export interface UserProfile {
   role: 'ADMIN' | 'USER';
   timeSpent: number; // in seconds
   isBanned: boolean;
+  showChatBot?: boolean;
+  chatBotPosition?: { x: number; y: number } | null;
 }
 
 export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'PROFILE' | 'CHAT' | 'AUTH' | 'ADMIN';

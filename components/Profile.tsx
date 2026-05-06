@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { UserProfile, Book } from '../types';
-import { Trophy, Flame, Target, BookOpen, Clock, Trash2, ArrowLeft, LogOut, Trash, LogIn, Mail, User, ArrowRight } from 'lucide-react';
+import { Trophy, Flame, Target, BookOpen, Clock, Trash2, ArrowLeft, LogOut, Trash, LogIn, Mail, User, ArrowRight, Settings, MessageSquare } from 'lucide-react';
 
 interface ProfileProps {
   user: UserProfile;
@@ -12,6 +12,7 @@ interface ProfileProps {
   onLogout: () => void;
   onDeleteAccount: () => void;
   onLogin: () => void;
+  onUpdateSettings: (settings: Partial<UserProfile>) => void;
 }
 
 export const Profile: React.FC<ProfileProps> = ({
@@ -110,6 +111,39 @@ export const Profile: React.FC<ProfileProps> = ({
                     <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">Questions Offline</div>
                 </div>
             </div>
+            <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
+                <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
+                   <Settings className="w-4 h-4" /> App Settings
+                </h3>
+
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100 mb-4">
+                    <div className="flex items-center gap-4">
+                        <div className="bg-white p-2.5 rounded-xl text-primary-600">
+                            <MessageSquare className="w-5 h-5" />
+                        </div>
+                        <div>
+                            <div className="text-sm font-bold text-gray-900">Chat Assistant</div>
+                            <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Floating tutor button</div>
+                        </div>
+                    </div>
+                    <button
+                        onClick={() => onUpdateSettings({ showChatBot: !user.showChatBot })}
+                        className={`w-12 h-6 rounded-full p-1 transition-all duration-300 ${user.showChatBot !== false ? 'bg-primary-600' : 'bg-gray-300'}`}
+                    >
+                        <div className={`w-4 h-4 bg-white rounded-full transition-all duration-300 ${user.showChatBot !== false ? 'translate-x-6' : 'translate-x-0'}`}></div>
+                    </button>
+                </div>
+
+                {user.chatBotPosition && (
+                    <button
+                        onClick={() => onUpdateSettings({ chatBotPosition: null })}
+                        className="w-full text-xs font-bold text-primary-600 hover:underline mb-4"
+                    >
+                        Reset Chat Button Position
+                    </button>
+                )}
+            </div>
+
             {isLoggedIn ? (
               <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
                 <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
