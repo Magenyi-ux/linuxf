@@ -5,9 +5,25 @@ import { createTutorChatSession } from '../services/aiService';
 import { trackEvent } from '../services/analytics';
 import { MathText } from './MathText';
 
-export const ChatBot: React.FC = () => {
+interface ChatBotProps {
+  showChatBot: boolean;
+  savedPosition?: { x: number; y: number } | null;
+  onPositionChange: (pos: { x: number; y: number }) => void;
+  onHide: () => void;
+}
+
+export const ChatBot: React.FC<ChatBotProps> = ({
+  showChatBot,
+  savedPosition,
+  onPositionChange,
+  onHide
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
+  const [position, setPosition] = useState(savedPosition || { x: -1, y: -1 });
+  const [isOverHideZone, setIsOverHideZone] = useState(false);
+  const dragRef = useRef<{ startX: number, startY: number, initialX: number, initialY: number } | null>(null);
   const [messages, setMessages] = useState<{ role: 'user' | 'model'; content: string }[]>([
     { role: 'model', content: "Hello! I'm **Professor**, your AI study tutor. How can I help you prepare for your exams today?" }
   ]);
@@ -57,6 +73,85 @@ export const ChatBot: React.FC = () => {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
   }, [messages, isLoading]);
+
+  useEffect(() => {
+    if (savedPosition) {
+        setPosition(savedPosition);
+    } else if (savedPosition === null) {
+        setPosition({ x: -1, y: -1 });
+    }
+  }, [savedPosition]);
+
+  const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
+    if (isOpen) return;
+
+    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+    const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+
+    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+
+    dragRef.current = {
+        startX: clientX,
+        startY: clientY,
+        initialX: position.x === -1 ? rect.left : position.x,
+        initialY: position.y === -1 ? rect.top : position.y
+    };
+
+    setIsDragging(true);
+  };
+
+  useEffect(() => {
+    const handleMove = (e: MouseEvent | TouchEvent) => {
+        if (!isDragging || !dragRef.current) return;
+
+        const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+        const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+
+        const dx = clientX - dragRef.current.startX;
+        const dy = clientY - dragRef.current.startY;
+
+        const newX = dragRef.current.initialX + dx;
+        const newY = dragRef.current.initialY + dy;
+
+        setPosition({ x: newX, y: newY });
+
+        // Check if over hide zone (bottom middle)
+        const hideZone = document.getElementById('chat-hide-zone');
+        if (hideZone) {
+            const rect = hideZone.getBoundingClientRect();
+            const isOver = clientX > rect.left && clientX < rect.right && clientY > rect.top && clientY < rect.bottom;
+            setIsOverHideZone(isOver);
+        }
+    };
+
+    const handleEnd = () => {
+        if (!isDragging) return;
+
+        if (isOverHideZone) {
+            onHide();
+        } else {
+            onPositionChange(position);
+        }
+
+        setIsDragging(false);
+        setIsOverHideZone(false);
+        dragRef.current = null;
+    };
+
+    if (isDragging) {
+        window.addEventListener('mousemove', handleMove);
+        window.addEventListener('mouseup', handleEnd);
+        window.addEventListener('touchmove', handleMove, { passive: false });
+        window.addEventListener('touchend', handleEnd);
+    }
+
+    return () => {
+        window.removeEventListener('mousemove', handleMove);
+        window.removeEventListener('mouseup', handleEnd);
+        window.removeEventListener('touchmove', handleMove);
+        window.removeEventListener('touchend', handleEnd);
+    };
+  }, [isDragging, position, isOverHideZone, onHide, onPositionChange]);
 
   const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -117,22 +212,60 @@ export const ChatBot: React.FC = () => {
     }
   };
 
+  if (!showChatBot) return null;
+
   if (!isOpen) {
+    const style: React.CSSProperties = position.x !== -1 ? {
+        left: `${position.x}px`,
+        top: `${position.y}px`,
+        bottom: 'auto',
+        right: 'auto',
+        position: 'fixed'
+    } : {};
+
     return (
-      <button
-        onClick={() => setIsOpen(true)}
-        className="fixed bottom-24 right-6 md:bottom-8 md:right-8 w-16 h-16 bg-primary-600 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50 group"
-      >
-        <MessageCircle className="w-8 h-8" />
-        <span className="absolute right-full mr-4 bg-gray-900 text-white px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-            Ask Professor
-        </span>
-      </button>
+      <>
+        <button
+            onClick={() => !isDragging && setIsOpen(true)}
+            onMouseDown={handleDragStart}
+            onTouchStart={handleDragStart}
+            style={style}
+            className={`fixed bottom-24 right-6 md:bottom-8 md:right-8 w-16 h-16 bg-primary-600 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50 group cursor-move ${isDragging ? 'scale-125 rotate-12 shadow-primary-500/50' : ''}`}
+        >
+            <MessageCircle className="w-8 h-8" />
+            {!isDragging && (
+                <span className="absolute right-full mr-4 bg-gray-900 text-white px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                    Ask Professor
+                </span>
+            )}
+        </button>
+
+        {/* Hide Zone */}
+        {isDragging && (
+            <div
+                id="chat-hide-zone"
+                className={`fixed bottom-12 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full border-4 border-dashed flex items-center justify-center transition-all z-[60] ${isOverHideZone ? 'bg-red-500 border-red-200 scale-125' : 'bg-gray-900/20 border-white/50'}`}
+            >
+                <X className={`w-8 h-8 ${isOverHideZone ? 'text-white' : 'text-white/70'}`} />
+            </div>
+        )}
+      </>
     );
   }
 
+  const containerStyle: React.CSSProperties = position.x !== -1 ? {
+      left: window.innerWidth > 768 ? `${position.x - 320}px` : '5vw',
+      top: window.innerWidth > 768 ? `${position.y - 500}px` : '10vh',
+      bottom: 'auto',
+      right: 'auto',
+      position: 'fixed'
+  } : {};
+
   return (
-    <div className={`fixed bottom-24 right-6 md:bottom-8 md:right-8 w-[90vw] md:w-96 bg-white rounded-[32px] shadow-2xl border border-gray-100 flex flex-col z-50 overflow-hidden transition-all ${isMinimized ? 'h-20' : 'h-[500px] md:h-[600px]'}`}>
+    <div
+      style={window.innerWidth > 768 ? containerStyle : {}}
+      className={`fixed bottom-24 right-6 md:bottom-8 md:right-8 w-[90vw] md:w-96 bg-white rounded-[32px] shadow-2xl border border-gray-100 flex flex-col z-50 overflow-hidden transition-all ${isMinimized ? 'h-20' : 'h-[500px] md:h-[600px]'}`}
+    >
       {/* Header */}
       <div className="p-5 bg-primary-600 flex items-center justify-between text-white">
         <div className="flex items-center gap-3">

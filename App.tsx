@@ -100,7 +100,9 @@ const App: React.FC = () => {
     streak: 0,
     role: 'USER',
     timeSpent: 0,
-    isBanned: false
+    isBanned: false,
+    showChatBot: true,
+    chatBotPosition: null
   });
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
@@ -382,7 +384,9 @@ const App: React.FC = () => {
       streak: 0,
       role: 'USER',
       timeSpent: 0,
-      isBanned: false
+      isBanned: false,
+      showChatBot: true,
+      chatBotPosition: null
     });
     setScreen('HOME');
   };
@@ -404,7 +408,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col relative pb-24 md:pb-8">
       {/* Dynamic Header */}
-      <header className="sticky top-0 z-40 w-full glass-panel border-b border-gray-100">
+      <header className={`sticky top-0 z-40 w-full glass-panel border-b border-gray-100 transition-all duration-500 ${screen === 'PRACTICE' ? '-translate-y-full opacity-0 invisible h-0' : 'translate-y-0 opacity-100 visible'}`}>
         <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer group" onClick={resetApp}>
             <div className="bg-primary-600 p-2.5 rounded-xl transition-transform">
@@ -475,7 +479,7 @@ const App: React.FC = () => {
       </header>
 
       {/* Bottom Nav for Mobile */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-gray-100 bg-white px-6 py-3">
+      <nav className={`fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-gray-100 bg-white px-6 py-3 transition-all duration-500 ${screen === 'PRACTICE' ? 'translate-y-full opacity-0 invisible' : 'translate-y-0 opacity-100 visible'}`}>
         <div className="flex items-center justify-around">
           <button
             onClick={resetApp}
@@ -819,6 +823,7 @@ const App: React.FC = () => {
                 onLogout={handleLogout}
                 onDeleteAccount={handleDeleteAccount}
                 onLogin={() => setScreen('AUTH')}
+                onUpdateSettings={(settings) => setUserProfile(prev => ({ ...prev, ...settings }))}
             />
         )}
 
@@ -921,7 +926,12 @@ const App: React.FC = () => {
         )}
       </main>
 
-      <ChatBot />
+      <ChatBot
+        showChatBot={userProfile.showChatBot !== false}
+        savedPosition={userProfile.chatBotPosition}
+        onPositionChange={(pos) => setUserProfile(prev => ({ ...prev, chatBotPosition: pos }))}
+        onHide={() => setUserProfile(prev => ({ ...prev, showChatBot: false }))}
+      />
 
       {/* Library Modal */}
       {showLibrary && (
