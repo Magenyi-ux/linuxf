@@ -23,7 +23,8 @@ export const Profile: React.FC<ProfileProps> = ({
   onBack,
   onLogout,
   onDeleteAccount,
-  onLogin
+  onLogin,
+  onUpdateSettings
 }) => {
   const bookList = Object.values(books).sort((a, b) => b.dateCreated - a.dateCreated);
   const totalQuestions = bookList.reduce((acc, b) => acc + b.questions.length, 0);
