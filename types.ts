@@ -2,7 +2,8 @@
 export enum ExamType {
   JAMB = 'JAMB',
   WAEC = 'WAEC',
-  NECO = 'NECO'
+  NECO = 'NECO',
+  STUDY_RAND = 'Study Rand'
 }
 
 export enum Subject {
