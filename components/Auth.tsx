@@ -31,16 +31,25 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
       // Use consistent prefix
       const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
 
-      // Handle Hardcoded Admin Account
-      const isAdminAccount = formData.email === 'admin@magenyi' && formData.password === 'admin123';
+      // Handle Admin Account based on environment variable
+      const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
+      const isAdminAccount = adminEmail && formData.email === adminEmail;
 
-      if (isAdminAccount) {
-        let adminUser = users.find((u: any) => u.email === 'admin@magenyi');
+      // Only proceed as admin if email matches AND we are in SIGN_IN mode with correct password
+      // In SIGN_UP mode, we don't allow creating a new admin account this way
+      if (isAdminAccount && mode === 'SIGN_IN') {
+        let adminUser = users.find((u: any) => u.email === adminEmail);
+
+        // If admin exists, verify password (mocking server-side check)
+        if (adminUser && adminUser.password !== formData.password) {
+          throw new Error('Invalid email or password.');
+        }
+
         if (!adminUser) {
           adminUser = {
             name: 'System Admin',
-            email: 'admin@magenyi',
-            password: 'admin123',
+            email: adminEmail,
+            password: formData.password,
             level: 99,
             xp: 0,
             streak: 0,
