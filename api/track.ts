@@ -23,6 +23,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   };
 
   try {
+    if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
+      console.warn('KV environment variables are not set. Skipping tracking.');
+      return res.status(200).json({ success: true, warning: 'KV not configured' });
+    }
+
     // Store in a list for chronological view
     await kv.lpush('examply_events', JSON.stringify(eventLog));
 
@@ -41,6 +46,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.status(200).json({ success: true });
   } catch (error) {
     console.error('Error tracking event:', error);
-    res.status(500).json({ error: 'Failed to store event' });
+    // Return 200 even on error to prevent frontend from breaking if analytics fails
+    res.status(200).json({ success: false, error: 'Failed to store event' });
   }
 }

@@ -20,7 +20,7 @@ const PROFESSOR_MODELS = [
 
 const professorOpenAI = new OpenAI({
     apiKey: PROFESSOR_API_KEY,
-    baseURL: "https://integrate.api.nvidia.com/v1",
+    baseURL: typeof window !== 'undefined' ? `${window.location.origin}/api/nvidia/v1` : "/api/nvidia/v1",
     dangerouslyAllowBrowser: true
 });
 
