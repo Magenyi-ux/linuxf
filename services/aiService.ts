@@ -8,6 +8,22 @@ const openai = new OpenAI({
     dangerouslyAllowBrowser: true // Required for frontend usage
 });
 
+const PROFESSOR_API_KEY = "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";
+const PROFESSOR_MODELS = [
+    "deepseek-ai/deepseek-v3.2",
+    "minimax/minimax-m2.1",
+    "thudm/glm-4.7",
+    "moonshotai/kimi-k2.5",
+    "mistralai/devstral-2",
+    "stepfun/step-3.5-flash",
+];
+
+const professorOpenAI = new OpenAI({
+    apiKey: PROFESSOR_API_KEY,
+    baseURL: "https://integrate.api.nvidia.com/v1",
+    dangerouslyAllowBrowser: true
+});
+
 /**
  * Sanitizes a raw string from the LLM to be valid JSON.
  */
@@ -118,7 +134,6 @@ export const fetchExamQuestions = async (
 };
 
 export const createTutorChatSession = (initialContext?: string) => {
-  const model = "nvidia/neva-22b";
   const history: { role: "user" | "assistant" | "system", content: any }[] = [
     {
         role: "system",
@@ -149,14 +164,34 @@ export const createTutorChatSession = (initialContext?: string) => {
 
       history.push({ role: "user", content });
 
-      console.log(`Calling NVIDIA NIM Chat with model: ${model}`);
-      const response = await openai.chat.completions.create({
-        model: model,
-        messages: history as any,
-        temperature: 0.7,
-      });
+      let responseText = "";
+      let lastError = null;
 
-      const responseText = response.choices[0]?.message?.content || "";
+      // Randomize the order of models for load balancing/variety
+      const shuffledModels = [...PROFESSOR_MODELS].sort(() => Math.random() - 0.5);
+
+      // Failover logic: Try models one by one
+      for (const model of shuffledModels) {
+          try {
+              console.log(`Trying Professor model: ${model}`);
+              const response = await professorOpenAI.chat.completions.create({
+                  model: model,
+                  messages: history as any,
+                  temperature: 0.7,
+                  max_tokens: 1024,
+              });
+              responseText = response.choices[0]?.message?.content || "";
+              if (responseText) break; // Success!
+          } catch (err) {
+              console.warn(`Model ${model} failed, trying next...`, err);
+              lastError = err;
+          }
+      }
+
+      if (!responseText && lastError) {
+          throw lastError;
+      }
+
       history.push({ role: "assistant", content: responseText });
 
       return {
