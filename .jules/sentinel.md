@@ -1,0 +1,4 @@
+## 2026-04-22 - [CRITICAL] Secret leakage through build configuration and hardcoding
+**Vulnerability:** API keys (NVIDIA and Gemini) were exposed to the client-side bundle. One was hardcoded in `services/aiService.ts`, and another was explicitly injected via the `define` block in `vite.config.ts`.
+**Learning:** Build tools like Vite can inadvertently leak environment variables if configured with a `define` block or if `import.meta.env` is used without `VITE_` prefixes (depending on configuration). Hardcoding secrets remains a common but severe risk.
+**Prevention:** Never hardcode secrets. Use server-side proxies to handle API authentication so that no sensitive keys ever reach the client. Ensure build configurations do not explicitly export non-prefixed environment variables to the frontend.
