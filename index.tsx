@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import * as Sentry from "@sentry/react";
 import App from './App';
+import './index.css';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
+import 'katex/dist/katex.min.css';
 
 Sentry.init({
   dsn: "https://examplePublicKey@o0.ingest.sentry.io/0", // Placeholder DSN
