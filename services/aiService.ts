@@ -8,18 +8,17 @@ const openai = new OpenAI({
     dangerouslyAllowBrowser: true // Required for frontend usage
 });
 
-const PROFESSOR_API_KEY = "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";
 const PROFESSOR_MODELS = [
-    "deepseek-ai/deepseek-v3.2",
-    "minimax/minimax-m2.1",
-    "thudm/glm-4.7",
-    "moonshotai/kimi-k2.5",
-    "mistralai/devstral-2",
-    "stepfun/step-3.5-flash",
+    "meta/llama-3.3-70b-instruct",
+    "nvidia/llama-3.1-nemotron-70b-instruct",
+    "deepseek-ai/deepseek-v3",
+    "mistralai/mistral-large-2-instruct",
+    "google/gemma-2-27b-it",
+    "microsoft/phi-4"
 ];
 
 const professorOpenAI = new OpenAI({
-    apiKey: PROFESSOR_API_KEY,
+    apiKey: 'pk-this-is-a-placeholder-the-proxy-handles-auth',
     baseURL: typeof window !== 'undefined' ? `${window.location.origin}/api/nvidia/v1` : "/api/nvidia/v1",
     dangerouslyAllowBrowser: true
 });
@@ -76,7 +75,7 @@ export const fetchExamQuestions = async (
       };
   }
 
-  const model = "meta/llama3-8b-instruct";
+  const model = "meta/llama-3.1-8b-instruct";
 
   const yearContext = year === 'Random'
     ? "randomly selected from various past years (2010-2023)"
