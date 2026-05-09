@@ -23,35 +23,24 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
 
   useEffect(() => {
     // Check if already authenticated in this session
-    const isAuth = sessionStorage.getItem('admin_authenticated') === 'true';
-    if (isAuth) {
-      setIsAuthenticated(true);
-      fetchAdminData();
+    const storedEmail = sessionStorage.getItem('admin_email');
+    const storedPass = sessionStorage.getItem('admin_password');
+    if (storedEmail && storedPass) {
+      fetchAdminData(storedEmail, storedPass);
     }
   }, []);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
-    } else {
-      setError('Invalid admin credentials');
-    }
+    fetchAdminData(email, password);
   };
 
-  const fetchAdminData = async () => {
+  const fetchAdminData = async (adminEmail: string, adminPass: string) => {
     setLoading(true);
+    setError('');
     try {
-      // Local storage data
-      const savedUsers = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
-      setUsers(savedUsers);
-      const savedUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
-      setGlobalUsage(savedUsage);
-
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
+      const credentials = btoa(`${adminEmail.trim()}:${adminPass.trim()}`);
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
@@ -63,9 +52,23 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         setEvents(data.events || []);
         setStats(data.stats || {});
         setFeatureUsage(data.featureUsage || {});
+
+        setIsAuthenticated(true);
+        sessionStorage.setItem('admin_email', adminEmail.trim());
+        sessionStorage.setItem('admin_password', adminPass.trim());
+
+        // Local storage data
+        const savedUsers = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
+        setUsers(savedUsers);
+        const savedUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
+        setGlobalUsage(savedUsage);
+      } else {
+        setError('Invalid admin credentials or unauthorized access');
+        setIsAuthenticated(false);
       }
     } catch (err) {
       console.error('Failed to fetch admin data:', err);
+      setError('Connection error. Failed to reach admin API.');
     } finally {
       setLoading(false);
     }
@@ -261,7 +264,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
                         )}
                       </td>
                       <td className="px-6 py-5 text-right">
-                        {user.email !== 'admin@magenyi' && (
+                        {user.email !== (import.meta.env.VITE_ADMIN_EMAIL || 'admin@magenyi') && (
                           <button
                             onClick={() => toggleBan(user.email!)}
                             className={`px-3 py-1.5 rounded-lg text-[10px] font-black transition-all ${

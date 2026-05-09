@@ -31,16 +31,25 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
       // Use consistent prefix
       const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
 
-      // Handle Hardcoded Admin Account
-      const isAdminAccount = formData.email === 'admin@magenyi' && formData.password === 'admin123';
+      // Handle Admin Account via environment variable
+      const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
+      const isAdminAccount = adminEmail && formData.email === adminEmail;
 
       if (isAdminAccount) {
-        let adminUser = users.find((u: any) => u.email === 'admin@magenyi');
-        if (!adminUser) {
+        let adminUser = users.find((u: any) => u.email === adminEmail);
+
+        // If admin account doesn't exist yet, we can't just let them in without a password check
+        // if we were in a real system. Here we'll allow the first login to set the password
+        // or if it exists, verify it.
+        if (adminUser) {
+           if (adminUser.password !== formData.password) {
+             throw new Error('Invalid admin password.');
+           }
+        } else {
           adminUser = {
             name: 'System Admin',
-            email: 'admin@magenyi',
-            password: 'admin123',
+            email: adminEmail,
+            password: formData.password,
             level: 99,
             xp: 0,
             streak: 0,

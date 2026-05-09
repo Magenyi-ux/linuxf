@@ -8,7 +8,7 @@ const openai = new OpenAI({
     dangerouslyAllowBrowser: true // Required for frontend usage
 });
 
-const PROFESSOR_API_KEY = "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";
+const PROFESSOR_API_KEY = "pk-this-is-a-placeholder-the-proxy-handles-auth";
 const PROFESSOR_MODELS = [
     "deepseek-ai/deepseek-v3.2",
     "minimax/minimax-m2.1",
