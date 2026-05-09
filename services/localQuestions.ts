@@ -80,12 +80,11 @@ const processRawData = (
     : data.filter((q) => q.year_id === year);
 
   if (filtered.length === 0) {
-      // If no questions for specific year, but we have data for the subject,
-      // maybe we should return some random ones anyway?
-      // The requirement says "prefer these local packs when a year is selected".
-      // If the year doesn't exist in the local pack, we might want to return null to fallback to AI.
-      return null;
+      // Fallback: if specific year is empty, take any questions from this subject
+      filtered = data;
   }
+
+  if (filtered.length === 0) return null;
 
   // Shuffle and pick 'count'
   const shuffled = [...filtered].sort(() => Math.random() - 0.5);

@@ -137,7 +137,14 @@ export const fetchExamQuestions = async (
     return { questions, sources: ["AI Generated via NVIDIA NIM"] };
 
   } catch (error) {
-    console.error("Failed to fetch questions:", error);
+    console.warn("AI generation failed, searching for any local alternatives...", error);
+
+    // Final emergency fallback: try to get ANY local questions for this subject
+    const emergencyLocal = getLocalQuestions(subject, "Random", count);
+    if (emergencyLocal && emergencyLocal.questions.length > 0) {
+        return emergencyLocal;
+    }
+
     throw error;
   }
 };
