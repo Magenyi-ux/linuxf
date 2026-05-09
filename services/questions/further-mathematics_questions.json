@@ -1,0 +1,5084 @@
+[
+  {
+    "id": 1,
+    "question": "If x2−kx+9=0 has equal roots, find the values of k.",
+    "options": {
+      "a": "3, 4",
+      "b": "±3",
+      "c": "±5"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 2,
+    "question": "The function f: x →\n√\n4−2x\n is defined on the set of real numbers R. Find the domain of f.",
+    "options": {
+      "a": "x<2",
+      "b": "x≤2",
+      "c": "x=2"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 3,
+    "question": ", find f1(−2).",
+    "options": {
+      "a": "-5",
+      "b": "-3",
+      "c": "−"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 4,
+    "question": "Find the coefficient of x4 in the expansion of (1−2x)6.",
+    "options": {
+      "a": "-320",
+      "b": "-240",
+      "c": "240"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 5,
+    "question": "Find the 21st term of the Arithmetic Progression (",
+    "options": {
+      "a": "43.5",
+      "b": "46",
+      "c": "48.5"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 6,
+    "question": "How many ways can 6 students be seated around a circular table?",
+    "options": {
+      "a": "36",
+      "b": "48",
+      "c": "120"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 7,
+    "question": "A straight line 2x+3y=6, passes through the point (-1,2). Find the equation of the line.",
+    "options": {
+      "a": "2x-3y=2",
+      "b": "2x-3y=-2",
+      "c": "2x+3y=-4"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 8,
+    "question": "A circle with centre (4,5) passes through the y-intercept of the line 5x - 2y + 6 = 0. Find its equation.",
+    "options": {
+      "a": "x2+y2+8x−10y+21=0",
+      "b": "x2+y2+8x−10y−21=0",
+      "c": "x2+y2−8x−10y−21=0"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 9,
+    "question": "Given that f(x)=5x2−4x+3, find the coordinates of the point where the gradient is 6.",
+    "options": {
+      "a": "(4,1)",
+      "b": "(4,-2)",
+      "c": "(1,4)"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 10,
+    "question": "There are 7 boys in a class of 20. Find the number of ways of selecting 3 girls and 2 boys",
+    "options": {
+      "a": "1638",
+      "b": "2730",
+      "c": "6006"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 11,
+    "question": "Differentiate \n5x3+x2\n\n\nx\n,x≠0 with respect to x.",
+    "options": {
+      "a": "10x+1",
+      "b": "10x+2",
+      "c": "x(15x+1)"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 12,
+    "question": "A fair die is tossed twice. What is its smple size?",
+    "options": {
+      "a": "6",
+      "b": "12",
+      "c": "36"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 13,
+    "question": "Face\t1\t2\t3\t4\t5\t6\nFrequency\t12\t18\ty\t30\t2y\t45\n\n Given the table above as the result of tossing a fair die 150 times, find the mode.",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "5"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 14,
+    "question": "Given that a = 5i + 4j and b = 3i + 7j, evaluate (3a - 8b).",
+    "options": {
+      "a": "9i + 44j",
+      "b": "-9i + 44j",
+      "c": "-9i - 44j"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 15,
+    "question": "Solve 32x−3x+2=3x+1−27",
+    "options": {
+      "a": "1 or 0",
+      "b": "1 or 2",
+      "c": "1 or -2"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 16,
+    "question": "Find the magnitude and direction of the vector p=(5i−12j)",
+    "options": {
+      "a": "(13, 113.38°)",
+      "b": "(13, 067.38°)",
+      "c": "(13, 025.38°)"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 17,
+    "question": "The velocity, V, of a particle after t seconds, is V=3t2+2t−1. Find the acceleration of the particle after 2 seconds.",
+    "options": {
+      "a": "10ms−2",
+      "b": "12ms−2",
+      "c": "14ms−2"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 18,
+    "question": "Given that f(x)=2x2−3 and g(x)=x+1 where x∈R. Find g o f(x).",
+    "options": {
+      "a": "2(x2−1)",
+      "b": "2x2+4x−1",
+      "c": "2x2+6x−1"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 19,
+    "question": "If P = n2+1:n=0,2,3 and Q = n+1:n=2,3,5, find P∩ Q.",
+    "options": {
+      "a": "{5, 10}",
+      "b": "{4, 6}",
+      "c": "{1, 3}"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 20,
+    "question": "If (2x2−x−3) is a factor of f(x)=2x3−5x2−x+6, find the other factor",
+    "options": {
+      "a": "(x - 2)",
+      "b": "(x - 1)",
+      "c": "(x + 1)",
+      "d": "(x +"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 21,
+    "question": "Given that f(x)=3x2−12x+12 and f(x)=3, find the values of x.",
+    "options": {
+      "a": "1, 3",
+      "b": "-1, -3",
+      "c": "1, -3"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 22,
+    "question": "A binary operation * is defined on the set of real numbers, by a∗b=\na\n\n\nb\n+\nb\n\n\na\n. If (\n√\nx\n+1)∗(\n√\nx\n−1)=4, find the value of x.",
+    "options": {
+      "a": "6",
+      "b": "5",
+      "c": "4"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 23,
+    "question": "If the polynomial f(x)=3x3−2x2+7x+5 is divided by (x - 1), find the remainder.",
+    "options": {
+      "a": "-17",
+      "b": "-7",
+      "c": "5"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 24,
+    "question": "P=1,3,5,7,9,Q=2,4,6,8,10,12,R=2,3,5,7,11 are subsets of U=1,2,3,...,12. Which of the following statements is true?",
+    "options": {
+      "a": "Q∩R=∅",
+      "b": "R⊂P",
+      "c": "(R∩P)⊂(R∩U)"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 25,
+    "question": "If log3a−2=3log3b, express a in terms of b.",
+    "options": {
+      "a": "a=b3−3",
+      "b": "a=b3−9",
+      "c": "a=9b3"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 26,
+    "question": "If α and β are the roots of 2x2−5x+6=0, find the equation whose roots are (α+1) and (β+1).",
+    "options": {
+      "a": "2x2−9x+15=0",
+      "b": "2x2−9x+13=0",
+      "c": "2x2−9x−13=0"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 27,
+    "question": "If α and β are the roots of the equation 2x2+5x+n=0, such that αβ=2, find the value of n.",
+    "options": {
+      "a": "-4",
+      "b": "-2",
+      "c": "2"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 28,
+    "question": "Solve log2(12x−10)=1+log2(4x+3).",
+    "options": {
+      "a": "4.75",
+      "b": "4.00",
+      "c": "1.75"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 29,
+    "question": "x2\n)9.",
+    "options": {
+      "a": "324",
+      "b": "252",
+      "c": "-252"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 30,
+    "question": "The general term of an infinite sequence 9, 4, -1, -6,... is ur=ar+b. Find the values of a and b.",
+    "options": {
+      "a": "a = 5, b = 14",
+      "b": "a = -5, b = 14",
+      "c": "a = 5, b = -14"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 31,
+    "question": "k|+|2\t3\n−1\tk|=6, find the value of the constant k, where k > 0.",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "3"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 32,
+    "question": "How many numbers greater than 150 can be formed from the digits 1, 2, 3, 4, 5 without repetition?",
+    "options": {
+      "a": "91",
+      "b": "191",
+      "c": "291"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 33,
+    "question": "4\n, If the product of the second and third terms of the sequence is 972, find its common ratio.",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "6"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 34,
+    "question": "Find the radius of the circle x2+y2−8x−2y+1=0.",
+    "options": {
+      "a": "9",
+      "b": "7",
+      "c": "4"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 35,
+    "question": "In how many ways can the letters of the word 'ELECTIVE' be arranged?",
+    "options": {
+      "a": "336",
+      "b": "1680",
+      "c": "6720"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 36,
+    "question": "5)=13, find the value of x.",
+    "options": {
+      "a": "-2",
+      "b": "-1",
+      "c": "1"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 37,
+    "question": "4\nπ radians in degrees.",
+    "options": {
+      "a": "495°",
+      "b": "225°",
+      "c": "585°"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 38,
+    "question": "Find the equation to the circle x2+y2−4x−2y=0 at the point (1, 3).",
+    "options": {
+      "a": "2y - x -5 = 0",
+      "b": "2y + x - 5 = 0",
+      "c": "2y + x + 5 = 0"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 39,
+    "question": "Given that y=x(x+1)2, calculate the maximum value of y.",
+    "options": {
+      "a": "-2",
+      "b": "0",
+      "c": "1"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 40,
+    "question": "The midpoint of M(4, -1) and N(x, y) is P(3, -4). Find the coordinates of N.",
+    "options": {
+      "a": "(2, -3)",
+      "b": "(2, -7)",
+      "c": "(-1, -3)"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 41,
+    "question": "Find the stationary point of the curve y=3x2−2x3.",
+    "options": {
+      "a": "(1, 0)",
+      "b": "(-1, 0)",
+      "c": "(1, 1)"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 42,
+    "question": "x3−4\n\n\nx3\ndx.",
+    "options": {
+      "a": "-5.5",
+      "b": "-2.0",
+      "c": "2.0"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 43,
+    "question": "Calculate the standard deviation of 30, 29, 25, 28, 32 and 24.",
+    "options": {
+      "a": "2.0",
+      "b": "2.8",
+      "c": "3.0"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 44,
+    "question": "The marks scored by 4 students in Mathematics and Physics are ranked as shown in the table below\n\nMathematics\t3\t4\t2\t1\nPhysics\t4\t3\t1\t2\n\nCalculate the Spearmann's rank correlation coefficient.",
+    "options": {
+      "a": "0.2",
+      "b": "0.5",
+      "c": "0.6"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 45,
+    "question": "A body of mass 28g, initially at rest is acted upon by a force, F Newtons. If it attains a velocity of 5.4ms−1 in 18 seconds, find the value of F.",
+    "options": {
+      "a": "0.0082N",
+      "b": "0.0084N",
+      "c": "0.082N"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 46,
+    "question": "Find the angle between forces of magnitude 7N and 4N if their resultant has a magnitude of 9N.",
+    "options": {
+      "a": "39.45°",
+      "b": "73.40°",
+      "c": "75.34°"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 47,
+    "question": "x\n)9",
+    "options": {
+      "a": "84",
+      "b": "168",
+      "c": "336"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 48,
+    "question": "A particle starts from rest and moves through a distance S=12t2−2t3 metres in time t seconds. Find its acceleration in 1 second.",
+    "options": {
+      "a": "24ms−2",
+      "b": "18ms−2",
+      "c": "12ms−2"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 49,
+    "question": "A car is moving at 120kmh−1. Find its speed in ms−1.",
+    "options": {
+      "a": "33.3ms−1",
+      "b": "66.6ms−1",
+      "c": "99.9ms−1"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 50,
+    "question": "Two functions f and g are defined on the set of real numbers by f:x→x2+1 and g:x→x−2. Find f o g.",
+    "options": {
+      "a": "x2+4x−5",
+      "b": "x2−4x+5",
+      "c": "x2−1"
+    },
+    "year_id": "2010"
+  },
+  {
+    "id": 51,
+    "question": "If P=x:−2<x<5 and Q=x:−5<x<2 are subsets of μ=x:−5≤x≤5, where x is a real number, find (P∪Q).",
+    "options": {
+      "a": "x:−5<x<5",
+      "b": "x:−5≤x≤5",
+      "c": "x:−5≤x<5"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 52,
+    "question": "Consider the statements:\n\np : Musa is short\n\nq : Musa is brilliant\n\nWhich of the following represents the statement \"Musa is short but not brilliant\"?",
+    "options": {
+      "a": "p∨q",
+      "b": "p∨∼q",
+      "c": "p∧∼q"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 53,
+    "question": "If y=4x−1, list the range of the domain −2≤x≤2, where x is an integer.",
+    "options": {
+      "a": "{-9, -1, 2,3, 4}",
+      "b": "{-9, -2, 0, 1, 7}",
+      "c": "{-5, -4, -3, -2}"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 54,
+    "question": "Factorize completely: x2+x2y+3x−10y+3xy−10.",
+    "options": {
+      "a": "(x + 2)(x + 5)(y + 1)",
+      "b": "(x + 2)(x - 5)(y + 1)",
+      "c": "(x - 2)(x + 5)(y + 1)"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 55,
+    "question": "If the solution set of x2+kx−5=0 is (-1, 5), find the value of k.",
+    "options": {
+      "a": "-6",
+      "b": "-4",
+      "c": "4"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 56,
+    "question": "Simplify \nnP5\n\n\nnC5\n.",
+    "options": {
+      "a": "80",
+      "b": "90",
+      "c": "110"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 57,
+    "question": "Find the fourth term in the expansion of (3x−y)6.",
+    "options": {
+      "a": "−540x3y3",
+      "b": "−540x4y2",
+      "c": "−27x3y3"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 58,
+    "question": "Points E(-2, -1) and F(3, 2) are the ends of the diameter of a circle. Find the equation of the circle.",
+    "options": {
+      "a": "x2+y2−5x+3=0",
+      "b": "x2+y2−2x−6y−13=0",
+      "c": "x2+y2−x+5y−6=0"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 59,
+    "question": "The lines 2y+3x−16=0 and 7y−2x−6=0 intersect at point P. Find the coordinates of P.",
+    "options": {
+      "a": "(4, 2)",
+      "b": "(4, -2)",
+      "c": "(-4, 2)"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 60,
+    "question": "Find lim\nx→3\n2x2+x−21\n\n\nx−3\n.",
+    "options": {
+      "a": "0",
+      "b": "1",
+      "c": "7"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 61,
+    "question": "7\n]",
+    "options": {
+      "a": "11cm2s−1",
+      "b": "22cm2s−1",
+      "c": "33cm2s−1"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 62,
+    "question": "Given that n=10 and ∑d2=20, calculate the Spearman's rank correlation coefficient.",
+    "options": {
+      "a": "0.121",
+      "b": "0.733",
+      "c": "0.879"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 63,
+    "question": "Find the variance of 11, 12, 13, 14 and 15.",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "√"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 64,
+    "question": "A box contains 14 white balls and 6 black balls. Find the probability of first drawing a black ball and then a white ball without replacement.",
+    "options": {
+      "a": "0.21",
+      "b": "0.22",
+      "c": "0.30"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 65,
+    "question": "Given that r=3i+4j and t=−5i+12j, find the acute angle between them.",
+    "options": {
+      "a": "14.3°",
+      "b": "55.9°",
+      "c": "59.5°"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 66,
+    "question": "A body of mass 10kg moving with a velocity of 5ms−1 collides with another body of mass 15kg moving in the same direction as the first with a velocity of 2ms−1. After collision, the two bodies move together with a common velocity vms−1.",
+    "options": {
+      "a": "3.2",
+      "b": "5.3",
+      "c": "7.0"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 67,
+    "question": "A man of mass 80kg stands in a lift. If the lift moves upwards with acceleration 0.5ms−2, calculate the reaction from the floor of the lift on the man. [g=10ms−2]",
+    "options": {
+      "a": "760N",
+      "b": "800N",
+      "c": "805N"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 68,
+    "question": "A ball falls from a height of 18m above the ground. Find the speed with which the ball hits the ground. [g=10ms−2]",
+    "options": {
+      "a": "9ms−1",
+      "b": "9.49ms−1",
+      "c": "13.42ms−1"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 69,
+    "question": "Solve: 4(2x2)=8x",
+    "options": {
+      "a": "(1, 2)",
+      "b": "(1, -2)",
+      "c": "(-1, 2)"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 70,
+    "question": "Given that f:x→x2 and g:x→x+3, where x∈R, find fog(2).",
+    "options": {
+      "a": "25",
+      "b": "9",
+      "c": "7"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 71,
+    "question": "Given that \n2x\n\n\n(x+6)(x+3)\n=\nP\n\n\nx+6\n+\nQ\n\n\nx+3\n, find P and Q.",
+    "options": {
+      "a": "P = 4 and Q = 2",
+      "b": "P = 2 and Q = 4",
+      "c": "P = 4 and Q = -2"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 72,
+    "question": "Which of the following is a factor of the polynomial 6x4+2x3+15x+5?",
+    "options": {
+      "a": "3x + 1",
+      "b": "x + 1",
+      "c": "2x + 1"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 73,
+    "question": "Find the minimum value of y=x2+6x−12.",
+    "options": {
+      "a": "-21",
+      "b": "-12",
+      "c": "-6"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 74,
+    "question": "In how many ways can a committee of 5 be selected from 8 students if 2 particular students are to be included?",
+    "options": {
+      "a": "20",
+      "b": "28",
+      "c": "54"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 75,
+    "question": "If x=i−3j and y=6i+j, calculate the angle between x and y.",
+    "options": {
+      "a": "60°",
+      "b": "75°",
+      "c": "81°"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 76,
+    "question": "The gradient of a curve at the point (-2, 0) is 3x2−4x. Find the equation of the curve.",
+    "options": {
+      "a": "y=6x−4",
+      "b": "y=6x2−4x+12",
+      "c": "y=x3−2x2"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 77,
+    "question": "Given that x2+4x+k=(x+r)2+1, find the value of k and r.",
+    "options": {
+      "a": "k = 5, r = -1",
+      "b": "k = 5, r = 2",
+      "c": "k = 2, r = -5"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 78,
+    "question": "Given the statements:\n\np : the subject is difficult\n\nq : I will do my best\n\nWhich of the following is equivalent to 'Although the subject is difficult, I will do my best'?",
+    "options": {
+      "a": "p∨q",
+      "b": "∼p∨q",
+      "c": "p∧(∼q)"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 79,
+    "question": "Marks\t0\t1\t2\t3\t4\t5\nNumber of candidates\t6\t4\t8\t10\t9\t3\n\nThe table above shows the distribution of marks scored by students in a test. How many candidates scored above the median score?",
+    "options": {
+      "a": "3",
+      "b": "12",
+      "c": "22"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 80,
+    "question": "The table above shows the distribution of marks scored by students in a test. Find the interquartile range of the distribution.",
+    "options": {
+      "a": "4",
+      "b": "3",
+      "c": "2"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 81,
+    "question": "A mass of 75kg is placed on a lift. Find the force exerted by the floor of the lift on the mass when the lift is moving up with constant velocity. [g=9.8ms−2]",
+    "options": {
+      "a": "750N",
+      "b": "745N",
+      "c": "735N"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 82,
+    "question": "Given that y=4−9x and Δx=0.1, calculate Δy.",
+    "options": {
+      "a": "9.0",
+      "b": "0.9",
+      "c": "-0.3"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 83,
+    "question": "In calculating the mean of 8 numbers, a boy mistakenly used 17 instead of 25 as one of the numbers. If he obtained 20 as the mean, find the correct mean.",
+    "options": {
+      "a": "24",
+      "b": "23",
+      "c": "21"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 84,
+    "question": "If 2sin2θ=1+cosθ,0°≤θ≤90°, find the value of θ.",
+    "options": {
+      "a": "90°",
+      "b": "60°",
+      "c": "45°"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 85,
+    "question": "A 24N force acts on a body such that it changes its velocity from 5m/s to 9m/s in 2 secs.If the body is travelling in a straight line, calculate the distance covered in the period.",
+    "options": {
+      "a": "22m",
+      "b": "18m",
+      "c": "14m"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 86,
+    "question": "The sum, Sn,  of a sequence is given by Sn=2n2−5. Find the 6th term.",
+    "options": {
+      "a": "112",
+      "b": "67",
+      "c": "45"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 87,
+    "question": "Forces F1=(8N,030°) and F2=(10N,150°) act on a particle. Find the horizontal component of the resultant force.",
+    "options": {
+      "a": "1.7N",
+      "b": "4.5N",
+      "c": "9.0N"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 88,
+    "question": "Forces of magnitude 8N and 5N act on a body as shown above. Calculate, correct to 2 d.p., the resultant force acting at O.",
+    "options": {
+      "a": "14.06N",
+      "b": "13.00N",
+      "c": "9.83N"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 89,
+    "question": "Forces of magnitude 8N and 5N act on a body as shown above. Calculate, correct to 2 dp, the angle that the resultant makes with the horizontal.",
+    "options": {
+      "a": "80.76°",
+      "b": "75.00°",
+      "c": "71.99°"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 90,
+    "question": "5−y\n=25(54−2y), find the value of y.",
+    "options": {
+      "a": "4",
+      "b": "2",
+      "c": "-4"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 91,
+    "question": "Simplify: (1−sinθ)(1+sinθ).",
+    "options": {
+      "a": "sin2θ",
+      "b": "sec2θ",
+      "c": "tan2θ"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 92,
+    "question": "If f(x)=3x3+8x2+6x+k and f(2)=1, find the value of k.",
+    "options": {
+      "a": "-67",
+      "b": "-61",
+      "c": "61"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 93,
+    "question": "Using the binomial expansion (1+x)6=1+6x+15x2+20x3+15x4+6x5+x6, find, correct to 3 dp, the value of (1.98)6.",
+    "options": {
+      "a": "64.245",
+      "b": "61.255",
+      "c": "60.255"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 94,
+    "question": "If (x+2) and (3x−1) are factors of 6x3+x2−19x+6, find the third factor.",
+    "options": {
+      "a": "2x−3",
+      "b": "3x+1",
+      "c": "x−2"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 95,
+    "question": "If 2,(k+1),8,... form an exponential sequence (GP), find the values of k.",
+    "options": {
+      "a": "-3 and 5",
+      "b": "5 and -5",
+      "c": "3 and -3"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 96,
+    "question": "3\n, find the value of k.",
+    "options": {
+      "a": "5",
+      "b": "6",
+      "c": "8"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 97,
+    "question": "The radius of a sphere is increasing at a rate 3cms−1. Find the rate of increase in the surface area, when the radius is 2cm.",
+    "options": {
+      "a": "8πcm2s−1",
+      "b": "16πcm2s−1",
+      "c": "24πcm2s−1"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 98,
+    "question": "Age in years\t10 - 14\t15 - 19\t20 - 24\t25 - 29\t30 - 34\nFrequency\t6\t8\t14\t10\t12\n\nWhat is the class mark of the median class?",
+    "options": {
+      "a": "17",
+      "b": "22",
+      "c": "27"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 99,
+    "question": "Age in years\t10 - 14\t15 - 19\t20 - 24\t25 - 29\t30 - 34\nFrequency\t6\t8\t14\t10\t12\n\n \n\nIn which group is the upper quartile?",
+    "options": {
+      "a": "15 - 19",
+      "b": "20 - 24",
+      "c": "25 - 29"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 100,
+    "question": "Age in years\t10 - 14\t15 - 19\t20 - 24\t25 - 29\t30 - 34\nFrequency\t6\t8\t14\t10\t12\n\nFind the mean of the distribution.",
+    "options": {
+      "a": "23.4",
+      "b": "23.6",
+      "c": "24.3"
+    },
+    "year_id": "2011"
+  },
+  {
+    "id": 101,
+    "question": "Find the angle between (5i+3j) and (3i−5j).",
+    "options": {
+      "a": "180°",
+      "b": "90°",
+      "c": "45°"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 102,
+    "question": "Find the coefficient of x3 in the binomial expansion of (3x+4)4 in ascending powers of x.",
+    "options": {
+      "a": "432",
+      "b": "194",
+      "c": "144"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 103,
+    "question": "The deviations from the mean of a set of numbers are (k+3)2,(k+7),−2,k and (k+2)2, where k is a constant. Find the value of k.",
+    "options": {
+      "a": "3",
+      "b": "2",
+      "c": "-2"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 104,
+    "question": "Find the equation of a circle with centre (2, -3) and radius 2 units.",
+    "options": {
+      "a": "x2+y2−4x+6y+9=0",
+      "b": "x2+y2+4x−6y−9=0",
+      "c": "x2+y2+4x+6y−9=0"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 105,
+    "question": "The first term of a linear sequence is 9 and the common difference is 7. If the nth term is 380, find the value of n.",
+    "options": {
+      "a": "45",
+      "b": "54",
+      "c": "56"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 106,
+    "question": "For what values of m is 9y2+my+4 a perfect square?",
+    "options": {
+      "a": "±2",
+      "b": "±3",
+      "c": "±6"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 107,
+    "question": "A particle accelerates at 12ms−2 and travels a distance of 250m in 6 seconds. Find the initial velocity of the particle.",
+    "options": {
+      "a": "5.7ms−1",
+      "b": "6.0ms−1",
+      "c": "60.0ms−1"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 108,
+    "question": "In how many ways can 9 people be seated on a bench if only 3 places are available?",
+    "options": {
+      "a": "1200",
+      "b": "504",
+      "c": "320"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 109,
+    "question": "If the points (-1, t -1), (t, t - 3) and (t - 6, 3) lie on the same straight line, find the values of t.",
+    "options": {
+      "a": "t = -2 and 3",
+      "b": "t = 2 and -3",
+      "c": "t = 2 and 3"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 110,
+    "question": "A ball is thrown vertically upwards with a velocity of 15ms−1. Calculate the maximum height reached. [g=10ms−2]",
+    "options": {
+      "a": "15.25m",
+      "b": "13.25m",
+      "c": "11.25m"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 111,
+    "question": "Find the distance between the points (2, 5) and (5, 9).",
+    "options": {
+      "a": "4 units",
+      "b": "5 units",
+      "c": "12 units"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 112,
+    "question": "Solve: sinθ=tanθ",
+    "options": {
+      "a": "200°",
+      "b": "90°",
+      "c": "60°"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 113,
+    "question": "6\n×a\n−1\n\n\nn\n=1, solve for n.",
+    "options": {
+      "a": "-6.00",
+      "b": "-1.20",
+      "c": "0.83"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 114,
+    "question": "If f(x)=x2  and g(x)=sinx, find g o f.",
+    "options": {
+      "a": "sin2x",
+      "b": "sinx2",
+      "c": "(sinx)x2"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 115,
+    "question": "Find the third term in the expansion of (a−b)6 in ascending powers of b.",
+    "options": {
+      "a": "−15a4b2",
+      "b": "15a4b2",
+      "c": "−15a3b3"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 116,
+    "question": "If \n√\nx\n+\n√\nx+1\n=\n√\n2x+1\n, find the possible values of x.",
+    "options": {
+      "a": "1 and -1",
+      "b": "-1 and 2",
+      "c": "1 and 2"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 117,
+    "question": "Given that f(x)=2x3−3x2−11x+6 and f(3)=0, factorize f(x).",
+    "options": {
+      "a": "(x - 3)(x - 2)(2x + 2)",
+      "b": "(x + 3)(x - 2)(x - 1)",
+      "c": "(x - 3)(x + 2)(2x -1)"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 118,
+    "question": "Find the equation of the line that is perpendicular to 2y+5x−6=0 and bisects the line joining the points P(4, 3) and Q(-6, 1).",
+    "options": {
+      "a": "y + 5x + 3 = 0",
+      "b": "2y - 5x - 9 = 0",
+      "c": "5y + 2x - 8 = 0"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 119,
+    "question": "Given that P=(y−2\ty−1\ny−4\ty+2) and |P| = -23, find the value of y.",
+    "options": {
+      "a": "-4",
+      "b": "-3",
+      "c": "-1"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 120,
+    "question": "An object is thrown vertically upwards from the top of a cliff with a velocity of 25ms−1. Find the time, in seconds, when it is 20 metres above the cliff. [g=10ms−2].",
+    "options": {
+      "a": "0 and 1",
+      "b": "0 and 4",
+      "c": "0 and 5"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 121,
+    "question": "The function f:F→R \n\n= f(x)={3x+2:x>4\n3x−2:x=4\n5x−3:x<4. Find f(4) - f(-3).",
+    "options": {
+      "a": "28",
+      "b": "26",
+      "c": "-26"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 122,
+    "question": "A committee consists of 5 boys namely: Kofi, John, Ojo, Ozo and James and 3 girls namely: Rose, Ugo and Ama. In how many ways can a sub-committee consisting of 3 boys and 2 girls be chosen, if Ozo must be on the sub-committee?",
+    "options": {
+      "a": "35",
+      "b": "30",
+      "c": "18"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 123,
+    "question": "Forces 50N and 80N act on a body as shown in the diagram. Find, correct to the nearest whole number, the horizontal component of the resultant force.",
+    "options": {
+      "a": "13N",
+      "b": "43N",
+      "c": "57N"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 124,
+    "question": "The sales of five salesgirls on a certain day are as follows; GH¢ 26.00, GH¢ 39.00, GH¢ 33.00, GH¢ 25.00 and GH¢ 37.00. Calculate the standard deviation if the mean sale is GH¢ 32.00.",
+    "options": {
+      "a": "GH¢ 5.65",
+      "b": "GH¢ 5.66",
+      "c": "GH¢ 6.5"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 125,
+    "question": "7\n].",
+    "options": {
+      "a": "0.20 mm/s",
+      "b": "0.08 mm/s",
+      "c": "0.25 mm/s"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 126,
+    "question": "Two bodies of masses 3kg and 5kg moving with velocities 2 m/s and V m/s respectively in opposite directions collide. If they move together after collision with velocity 3.5 m/s in the direction of the 5kg mass, find the value of V.",
+    "options": {
+      "a": "7.8 m/s",
+      "b": "6.8 m/s",
+      "c": "5.6 m/s"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 127,
+    "question": "If s=3i−j and t=2i+3j, find (t−3s).(t+3s).",
+    "options": {
+      "a": "-77",
+      "b": "-71",
+      "c": "-53"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 128,
+    "question": "If 2sin2θ=1+cosθ,0°≤θ≤90°, find θ.",
+    "options": {
+      "a": "30°",
+      "b": "45°",
+      "c": "60°"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 129,
+    "question": "Find the upper quartile of the following scores: 41, 29, 17, 2, 12, 33, 45, 18, 43 and 5.",
+    "options": {
+      "a": "45",
+      "b": "41",
+      "c": "33"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 130,
+    "question": "x);Q=(1\t3\n−2\t4);R=(−5\t25\n−8\t26)  and PQ = R, find the value of x.",
+    "options": {
+      "a": "-5",
+      "b": "-2",
+      "c": "2"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 131,
+    "question": "Calculate the mean deviation of 1, 2, 3, 4, 5, 5, 6, 7, 8, 9.",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 132,
+    "question": "Find the equation of the straight line that passes through (2, -3) and perpendicular to the line 3x - 2y + 4 = 0.",
+    "options": {
+      "a": "2y - 3x = 0",
+      "b": "3y - 2x + 5 = 0",
+      "c": "3y + 2x + 5 = 0"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 133,
+    "question": "If \nnC3\n\n\nnP2\n=1, find the value of n.",
+    "options": {
+      "a": "8",
+      "b": "7",
+      "c": "6"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 134,
+    "question": "A body is kept at rest by three forces F1=(10N,030°),F2=(10N,150°) and F3. Find F3.",
+    "options": {
+      "a": "(12N, 090°)",
+      "b": "(10N, 270°)",
+      "c": "(10N, 180°)"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 135,
+    "question": "Which of the following sets is equivalent to (P∪Q)∩(P∪Q′)?",
+    "options": {
+      "a": "P",
+      "b": "P∩Q",
+      "c": "P∪Q"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 136,
+    "question": "Simplify: \ncos2θ−1\n\n\nsin2θ",
+    "options": {
+      "a": "−tanθ",
+      "b": "−cosθ",
+      "c": "tanθ"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 137,
+    "question": "Solve the inequality x2−2x≥3",
+    "options": {
+      "a": "−1≤x≤3",
+      "b": "x≥3 and x≤−1",
+      "c": "x≥3 or x<−1"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 138,
+    "question": "2\n and cosx>0, find x.",
+    "options": {
+      "a": "300°",
+      "b": "240°",
+      "c": "120°"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 139,
+    "question": "QRS is a triangle such that \n→\nQR\n=(3i+2j) and \n→\nSR\n=(−5i+3j), find \n→\nSQ\n.",
+    "options": {
+      "a": "8i + j",
+      "b": "2i - j",
+      "c": "-2i - 3j"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 140,
+    "question": "If (x + 1) is a factor of the polynomial x3+px2+x+6. Find the value of p.",
+    "options": {
+      "a": "-8",
+      "b": "-4",
+      "c": "4"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 141,
+    "question": "A polynomial is defined by f(x+1)=x3+px2−4x+2, find f(2).",
+    "options": {
+      "a": "-8",
+      "b": "-2",
+      "c": "2"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 142,
+    "question": "The equation of a circle is 3x2+3y2+24x−12y=15. Find its radius.",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 143,
+    "question": "If the midpoint of the line joining (1 - k, -4) and (2, k + 1) is (-k, k), find the value of k.",
+    "options": {
+      "a": "-4",
+      "b": "-3",
+      "c": "-2"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 144,
+    "question": "−2\n(3x2−2x−12)dx",
+    "options": {
+      "a": "-30",
+      "b": "-18",
+      "c": "-6"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 145,
+    "question": "The marks obtained by 10 students in a test are as follows: 3, 7, 6, 2, 8, 5, 9, 1, 4 and 10. Find the mean mark.",
+    "options": {
+      "a": "4.50",
+      "b": "5.50",
+      "c": "6.50"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 146,
+    "question": "The marks obtained by 10 students in a test are as follows: 3, 7, 6, 2, 8, 5, 9, 1, 4 and 10. Find the variance.",
+    "options": {
+      "a": "8.25",
+      "b": "8.50",
+      "c": "9.00"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 147,
+    "question": "If r denotes the correlation coefficient between two variables, which of the following is always true?",
+    "options": {
+      "a": "0<r≤1",
+      "b": "−1≤r<1",
+      "c": "−1<r≤0"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 148,
+    "question": "A stone is dropped from a height of 45m. Find the time it takes to hit the ground. [g=10ms−2]",
+    "options": {
+      "a": "3.0 seconds",
+      "b": "4.5 seconds",
+      "c": "5.0 seconds"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 149,
+    "question": "In computing the mean of 8 numbers, a boy mistakenly used 17 instead of 25 as one of the numbers and obtained 20 as the mean. Find the correct mean",
+    "options": {
+      "a": "19",
+      "b": "21",
+      "c": "23"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 150,
+    "question": "Given that nPr=90 and nCr=15, find the value of r.",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "5"
+    },
+    "year_id": "2012"
+  },
+  {
+    "id": 151,
+    "question": "Which of the following is nor a measure of central tendency?",
+    "options": {
+      "a": "Mean",
+      "b": "Variance",
+      "c": "Median"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 152,
+    "question": "If P(x - 3) + Q(x + 1) = 2x + 3, find the value of (P + Q).",
+    "options": {
+      "a": "0",
+      "b": "1",
+      "c": "2"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 153,
+    "question": "Find the values of x at the point of intersection of the curve y=x2+2x−3 and the lines y+x=1.",
+    "options": {
+      "a": "(1, -2)",
+      "b": "(0, 4)",
+      "c": "(2, -3)"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 154,
+    "question": "x\n)8.",
+    "options": {
+      "a": "90720",
+      "b": "1296",
+      "c": "1120"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 155,
+    "question": "A straight line makes intercepts of -3 and 2 on the x- and y- axes respectively. Find the equation of the line.",
+    "options": {
+      "a": "2x + 3y + 6 = 0",
+      "b": "3x - 2y - 6 = 0",
+      "c": "-3x + 2y - 6 = 0"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 156,
+    "question": "Find the number of different arrangements of the word IKOTITINA.",
+    "options": {
+      "a": "30240",
+      "b": "60840",
+      "c": "120960"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 157,
+    "question": "Find the acute angle between the lines 2x + y = 4 and -3x + y + 7 = 0.",
+    "options": {
+      "a": "40°",
+      "b": "44°",
+      "c": "45°"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 158,
+    "question": "2\nt2−3t. Find its acceleration.",
+    "options": {
+      "a": "1ms−2",
+      "b": "2ms−2",
+      "c": "3ms−2"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 159,
+    "question": "The angle of a sector of a circle is 0.9 radians. If the radius of the circle is 4cm, find the length of the arc of the sector.",
+    "options": {
+      "a": "3.6 cm",
+      "b": "7.6 cm",
+      "c": "8.0 cm"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 160,
+    "question": "From the diagram above, h[g(3)] is",
+    "options": {
+      "a": "s",
+      "b": "β",
+      "c": "s,β"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 161,
+    "question": "g∘h is",
+    "options": {
+      "a": "one- to- one",
+      "b": "onto",
+      "c": "a relation"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 162,
+    "question": "The diagram above is a velocity- time graph of a moving object. Calculate the distance travelled when the acceleration is zero.",
+    "options": {
+      "a": "300 m",
+      "b": "90 m",
+      "c": "150 m"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 163,
+    "question": "A binary operation * is defined on the set of real numbers R, by a* b = -1. Find the identity element under the operation *.",
+    "options": {
+      "a": "-1",
+      "b": "0",
+      "c": "1"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 164,
+    "question": "Find the remainder when 5x3+2x2−7x−5 is divided by (x - 2).",
+    "options": {
+      "a": "-51",
+      "b": "-23",
+      "c": "29"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 165,
+    "question": "f(x)=p+qx, where p and q are constants. If f(1) = 7 and f(5) = 19, find f(3).",
+    "options": {
+      "a": "13",
+      "b": "15",
+      "c": "17"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 166,
+    "question": "7\n respectively. Find its equation.",
+    "options": {
+      "a": "7x2−4x−5=0",
+      "b": "7x2−4x+5=0",
+      "c": "7x2+4x−5=0"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 167,
+    "question": "2\n.",
+    "options": {
+      "a": "4.0",
+      "b": "6.5",
+      "c": "5.0"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 168,
+    "question": "A line is perpendicular to 3x−y+11=0 and passes through the point (1, -5). Find its equation.",
+    "options": {
+      "a": "3y - x -14 = 0",
+      "b": "3x + y + 1 = 0",
+      "c": "3y + x + 1 = 0"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 169,
+    "question": "x)(2\n3)=(12\n29), find x.",
+    "options": {
+      "a": "5",
+      "b": "6",
+      "c": "7"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 170,
+    "question": "The fourth term of a geometric sequence is 2 and the sixth term is 8. Find the common ratio.",
+    "options": {
+      "a": "±1",
+      "b": "±2",
+      "c": "±3"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 171,
+    "question": "What percentage increase in the radius of a sphere will cause its volume to increase by 45%?",
+    "options": {
+      "a": "13%",
+      "b": "15%",
+      "c": "23%"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 172,
+    "question": ".",
+    "options": {
+      "a": "x2−y2−6x+16y+23=0",
+      "b": "x2+y2+6x+16y−23=0",
+      "c": "x2+y2+6x−16y+23=0"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 173,
+    "question": "Determine the coefficient of x2 in the expansion of (a+3x)6.",
+    "options": {
+      "a": "18a2",
+      "b": "45a4",
+      "c": "135a4"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 174,
+    "question": "The mean of 2, 5, (x + 2), 7 and 9 is 6. Find the median.",
+    "options": {
+      "a": "5.5",
+      "b": "6.0",
+      "c": "6.5"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 175,
+    "question": "In how many ways can 3 prefects be chosen out of 8 prefects?",
+    "options": {
+      "a": "6",
+      "b": "24",
+      "c": "56"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 176,
+    "question": "Find the standard deviation of the numbers 3,6,2,1,7 and 5.",
+    "options": {
+      "a": "2.00",
+      "b": "2.16",
+      "c": "2.50"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 177,
+    "question": "Marks\t5-7\t8-10\t11-13\t14-16\t17-19\t20-22\nNo of students\t4\t7\t26\t41\t14\t8\n\nThe table above shows the distribution of marks of students in a class. Find the upper class boundary of the modal class.",
+    "options": {
+      "a": "13.5",
+      "b": "16",
+      "c": "16.5"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 178,
+    "question": "=15\n, find the value of x?",
+    "options": {
+      "a": "2",
+      "b": "4",
+      "c": "5"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 179,
+    "question": "Four doctors and two nurses are to sit round a circular table. In how many ways can this be done if the nurses are to sit together?",
+    "options": {
+      "a": "48",
+      "b": "60",
+      "c": "240"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 180,
+    "question": "A force of 200N acting on a body of mass 20kg initially at rest causes it to move a distance of 320m along a straight line for t secs. Find the value of t.",
+    "options": {
+      "a": "4s",
+      "b": "6s",
+      "c": "8s"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 181,
+    "question": "A body of mass 25kg changes its speed from 15m/s to 35m/s in 5 seconds by the action of an applied force F. Find the value of F.",
+    "options": {
+      "a": "100N",
+      "b": "375N",
+      "c": "500N"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 182,
+    "question": "A particle starts from rest and moves in a straight line such that its velocity, v, at time t seconds is given by v=(3t2−2t)ms−1. Calculate the distance covered in the first 2 seconds.",
+    "options": {
+      "a": "2m",
+      "b": "4m",
+      "c": "6m"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 183,
+    "question": "A particle starts from rest and moves in a straight line such that its velocity, v, at time t seconds is given by v=(3t2−2t)ms−1. Determine the acceleration when t = 2 secs.",
+    "options": {
+      "a": "4ms−2",
+      "b": "6ms−2",
+      "c": "8ms−2"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 184,
+    "question": "Given that q=9i+6j and r=4i−6j, which of the following statements is true?",
+    "options": {
+      "a": "r and q are collinear",
+      "b": "r and q are perpendicular",
+      "c": "The magnitude of r is 52 units"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 185,
+    "question": "The functions f and g are defined on the set, R, of real numbers by f:x→x2−x−6 and g:x→x−1. Find f∘g(3).",
+    "options": {
+      "a": "-8",
+      "b": "-6",
+      "c": "-4"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 186,
+    "question": "and q=(12\n5).",
+    "options": {
+      "a": "23.52°",
+      "b": "24.50°",
+      "c": "29.52°"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 187,
+    "question": "Find the domain of f(x)=\nx\n\n\n3−x\n,x∈R, the set of real numbers.",
+    "options": {
+      "a": "x:x∈R,x≠3",
+      "b": "x:x∈R,x≠1",
+      "c": "x:x∈R,x≠0"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 188,
+    "question": "If (x - 3) is a factor of 2x2−2x+p, find the value of constant p.",
+    "options": {
+      "a": "-12",
+      "b": "-6",
+      "c": "3"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 189,
+    "question": "If sinx=−sin70°,0°<x<360°, determine the two possible values of x.",
+    "options": {
+      "a": "110°, 250°",
+      "b": "110°, 290°",
+      "c": "200°, 250°"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 190,
+    "question": "For what values of x is \nx2−9x+18\n\n\nx2+2x−35\n undefined?",
+    "options": {
+      "a": "6 or 3",
+      "b": "-18 or -9",
+      "c": "-7 or 5"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 191,
+    "question": "Calculate, correct to one decimal place, the length of the line joining points X(3, 5) and Y(5, 1).",
+    "options": {
+      "a": "4.0",
+      "b": "4.2",
+      "c": "4.5"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 192,
+    "question": "Calculate, correct to one decimal place, the acute angle between the lines 3x - 4y + 5 = 0 and 2x + 3y - 1 = 0.",
+    "options": {
+      "a": "70.6°",
+      "b": "50.2°",
+      "c": "39.8°"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 193,
+    "question": "Given that P=x:x is a factor of 6 is the domain of g(x)=x2+3x−5, find the range of x.",
+    "options": {
+      "a": "{-1, 5, 13}",
+      "b": "{5, 13, 49}",
+      "c": "{1, 2, 3, 6}"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 194,
+    "question": "The third of geometric progression (G.P) is 10 and the sixth term is 80. Find the common ratio.",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 195,
+    "question": "Find the axis of symmetry of the curve y=x2−4x−12.",
+    "options": {
+      "a": "x = -2",
+      "b": "y = -2",
+      "c": "x = 2"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 196,
+    "question": "Find the equation of the tangent to the curve y=4x2−12x+7 at point (2, -1).",
+    "options": {
+      "a": "y + 4x - 9 = 0",
+      "b": "y - 4x - 9 = 0",
+      "c": "y - 4x + 9 = 0"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 197,
+    "question": "The mean age of 15 pupils in a class is 14.2 years. One new pupil joined the class and the mean changed to 14.1 years. Calculate the age of the new pupil.",
+    "options": {
+      "a": "12.4 years",
+      "b": "12.6 years",
+      "c": "13.2 years"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 198,
+    "question": "The probabilities that a husband and wife will be alive in 15 years time are m and n respectively. Find the probability that only one of them will be alive at that time.",
+    "options": {
+      "a": "mn",
+      "b": "m + n",
+      "c": "m + n - 2mn"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 199,
+    "question": "In a class of 50 pupils, 35 like Science and 30 like History. What is the probability of selecting a pupil who likes both Science and History?",
+    "options": {
+      "a": "0.10",
+      "b": "0.30",
+      "c": "0.60"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 200,
+    "question": "P, Q, R, S are points in a plane such that PQ = 8i - 5j, QR = 5i + 7j, RS = 7i + 3j  and PS = xi + yj. Find (x, y).",
+    "options": {
+      "a": "(-6, -15)",
+      "b": "(-6, 5)",
+      "c": "(20, 5)"
+    },
+    "year_id": "2013"
+  },
+  {
+    "id": 201,
+    "question": "If \n→\nOA\n=3i+4j and \n→\nOB\n=5i−6j where O is the origin and M is the midpoint of AB, find OM.",
+    "options": {
+      "a": "-2i - 10j",
+      "b": "-2i + 2j",
+      "c": "4i - j"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 202,
+    "question": "A stone is thrown vertically upwards and its height at any time t seconds is h=45t−9t2. Find the maximum height reached.",
+    "options": {
+      "a": "45. 25 m",
+      "b": "45.50 m",
+      "c": "56.00 m"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 203,
+    "question": "Given that \ndy\n\n\ndx\n=3x2−4 and y = 6 when x = 3, find the equation for y.",
+    "options": {
+      "a": "x3−4x−9",
+      "b": "x3−4x+9",
+      "c": "x3+4x−9"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 204,
+    "question": "A company took delivery of 12 vehicles made up of 7 buses and 5 saloon cars for two of its departments; Personnel and General Administration. If the Personnel department is to have at least 3 saloon cars, in how many ways can these vehicles be distributed equally between the departments?",
+    "options": {
+      "a": "350",
+      "b": "455",
+      "c": "462"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 205,
+    "question": "A bicycle wheel of diameter 70 cm covered a distance of 350 cm in 2 seconds. How many radians per second did it turn?",
+    "options": {
+      "a": "5",
+      "b": "7",
+      "c": "8"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 206,
+    "question": "Find the maximum value of 2+sin(θ+25).",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "3"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 207,
+    "question": "What is the angle between a=(3i−4j) and b=(6i+4j)?",
+    "options": {
+      "a": "13°",
+      "b": "87°",
+      "c": "100°"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 208,
+    "question": "Solve x2−2x−8>0.",
+    "options": {
+      "a": "x < -4 or x > 2",
+      "b": "x < -2 or x > 4",
+      "c": "-2 < x < 4"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 209,
+    "question": "If (x + 3) is a factor of the polynomial x3+3x2+nx−12, where n is a constant, find the value of n.",
+    "options": {
+      "a": "-1",
+      "b": "-2",
+      "c": "-3"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 210,
+    "question": "The line y=mx−3 is a tangent to the curve y=1−3x+2x3 at (1, 0). Find the value of the constant m.",
+    "options": {
+      "a": "-4",
+      "b": "-1",
+      "c": "3"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 211,
+    "question": "The coordinates of the centre of a circle is (-2, 3). If its area is 25πcm2, find its equation.",
+    "options": {
+      "a": "x2+y2−4x−6y−12=0",
+      "b": "x2+y2−4x+6y−12=0",
+      "c": "x2+y2+4x+6y−12=0"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 212,
+    "question": "Find the coefficient of x4 in the binomial expansion of (2+x)6.",
+    "options": {
+      "a": "120",
+      "b": "80",
+      "c": "60"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 213,
+    "question": "Given that 2x=0.125, find the value of x.",
+    "options": {
+      "a": "0",
+      "b": "-1",
+      "c": "-2"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 214,
+    "question": "The gradient of point P on the curve y=3x2−x+3 is 5. Find the coordinates of P.",
+    "options": {
+      "a": "(1, 5)",
+      "b": "(1, 7)",
+      "c": "(1, 13)"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 215,
+    "question": "An arc of length 10.8 cm subtends an angle of 1.2 radians at the centre of a circle. Calculate the radius of the circle.",
+    "options": {
+      "a": "12.6 cm",
+      "b": "12.0 cm",
+      "c": "9.6 cm"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 216,
+    "question": "p and q are statements such that p⟹q. Which of the following is a valid conclusion from the implication?",
+    "options": {
+      "a": "q⟹p",
+      "b": "∼q⟹p",
+      "c": "∼q⟹∼p"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 217,
+    "question": "The roots of a quadratic equation are -3 and 1. Find its equation.",
+    "options": {
+      "a": "x2−3x+1=0",
+      "b": "x2−2x+1=0",
+      "c": "x2+2x−3=0"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 218,
+    "question": "Given that log3(x−y)=1 and log3(2x+y)=2, find the value of x.",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "3"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 219,
+    "question": "If \n8Px\n\n\n8Cx\n=6, find the value of x.",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "3"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 220,
+    "question": "A stone is projected vertically with a speed of 10 m/s from a point 8 metres above the ground. Find the maximum height reached. [g=10ms−2].",
+    "options": {
+      "a": "13 metres",
+      "b": "15 metres",
+      "c": "18 metres"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 221,
+    "question": "The velocity vms−1 of a particle moving in a straight line is given by v=3t2−2t+1 at time t secs. Find the acceleration of the particle after 3 seconds.",
+    "options": {
+      "a": "26ms−2",
+      "b": "18ms−2",
+      "c": "17ms−2"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 222,
+    "question": "Simplify 2log38−3log32",
+    "options": {
+      "a": "−log34",
+      "b": "−log32",
+      "c": "3log32"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 223,
+    "question": "1)(2\n3).",
+    "options": {
+      "a": "(13, 11)",
+      "b": "(11, 13)",
+      "c": "(13"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 224,
+    "question": "Eight football clubs are to play in a league on home and away basis. How many matches are possible?",
+    "options": {
+      "a": "14",
+      "b": "28",
+      "c": "56"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 225,
+    "question": "A force F acts on a body of mass 12kg increases its speed from 5 m/s to 35 m/s in 5 seconds. Find the value of F.",
+    "options": {
+      "a": "36 N",
+      "b": "48 N",
+      "c": "72 N"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 226,
+    "question": "The ages, in years, of 5 boys are 5, 6, 6, 8 and 10. Calculate, correct to one decimal place, the standard deviation of their ages.",
+    "options": {
+      "a": "3.2 years",
+      "b": "2.6 years",
+      "c": "1.9 years"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 227,
+    "question": "A body is acted upon by forces F1=(10N,090°) and F2=(6N,180°). Find the magnitude of the resultant force.",
+    "options": {
+      "a": "11.6 N",
+      "b": "11.7 N",
+      "c": "11.8 N"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 228,
+    "question": "The sum of the first n terms of a linear sequence is Sn=n2+2n. Find the common difference of the sequence.",
+    "options": {
+      "a": "5",
+      "b": "4",
+      "c": "3"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 229,
+    "question": "The sum of the first n terms of a linear sequence is Sn=n2+2n. Determine the general term of the sequence.",
+    "options": {
+      "a": "n + 1",
+      "b": "2n + 1",
+      "c": "3n + 1"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 230,
+    "question": "The polynomial 2x3+x2−3x+p has a remainder of 20 when divided by (x - 2). Find the value of constant p.",
+    "options": {
+      "a": "8",
+      "b": "6",
+      "c": "-6"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 231,
+    "question": "If 2log42=x+1, find the value of x.",
+    "options": {
+      "a": "-2",
+      "b": "-1",
+      "c": "0"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 232,
+    "question": "Which of the following quadratic curves will not intersect with the x- axis?",
+    "options": {
+      "a": "y=2−4x−x2",
+      "b": "y=x2−5x−1",
+      "c": "y=2x2−x−1"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 233,
+    "question": "1\n(2+2x−3x2)dx.",
+    "options": {
+      "a": "-2",
+      "b": "2",
+      "c": "8"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 234,
+    "question": "A rectangle has a perimeter of 24m. If its area is to be maximum, find its dimension.",
+    "options": {
+      "a": "12, 12",
+      "b": "6, 6",
+      "c": "4, 8"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 235,
+    "question": "radians in degrees.",
+    "options": {
+      "a": "315°",
+      "b": "210°",
+      "c": "105°"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 236,
+    "question": "Two statements are represented by p and q as follows:\n\np : He is brilliant; q : He is regular in class\n\nWhich of the following symbols represent \"He is regular in class but dull\"?",
+    "options": {
+      "a": "q∨∼p",
+      "b": "q\\edge∼p",
+      "c": "∼q\\edge∼p"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 237,
+    "question": "Find the locus of points which is equidistant from P(4, 5) and Q(-6, -1).",
+    "options": {
+      "a": "3x - 5y + 13 = 0",
+      "b": "3x - 5y - 7 = 0",
+      "c": "5x - 3y + 7 = 0"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 238,
+    "question": "A binary operation ,*, is defined on the set R, of real numbers by a∗b=a2+b+ab. Find the value of x for which 5∗x=37.",
+    "options": {
+      "a": "7",
+      "b": "2",
+      "c": "-2"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 239,
+    "question": "Given that f′(x)=3x2−6x+1 and f(3) = 5, find f(x).",
+    "options": {
+      "a": "f(x)=x3−3x2+x+20",
+      "b": "f(x)=x3−3x2+x+31",
+      "c": "f(x)=x3−3x2+x+2"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 240,
+    "question": "3|=32, find the value of x.",
+    "options": {
+      "a": "4",
+      "b": "2",
+      "c": "-2"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 241,
+    "question": "Given that \n→\nAB\n=5i+3j and \n→\nAC\n=2i+5j, find \n→\nBC\n.",
+    "options": {
+      "a": "-7i - 8j",
+      "b": "-3i + 2j",
+      "c": "3i - 2j"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 242,
+    "question": "Two forces F1=(10N,020°) and F2=(7N,200°) act on a particle. Find the resultant force.",
+    "options": {
+      "a": "(3 N, 020°)",
+      "b": "(3 N, 200°)",
+      "c": "(17 N, 020°)"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 243,
+    "question": "Marks\t2\t3\t4\t5\t6\t7\t8\nNo of students\t5\t7\t9\t6\t3\t6\t4\n\nThe table above shows the distribution of marks by some candidates in a test. What is the median score?",
+    "options": {
+      "a": "3.5",
+      "b": "4.0",
+      "c": "4.5"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 244,
+    "question": "Marks\t2\t3\t4\t5\t6\t7\t8\nNo of students\t5\t7\t9\t6\t3\t6\t4\n\nThe table above shows the distribution of marks by some candidates in a test. Find, correct to one decimal place, the mean of the distribution.",
+    "options": {
+      "a": "5.5",
+      "b": "5.3",
+      "c": "5.2"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 245,
+    "question": "A test consists of 12 questions out of which candidates are to answer 10. If the first 6 are compulsory, in how many ways can each candidate select her questions?",
+    "options": {
+      "a": "40",
+      "b": "25",
+      "c": "15"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 246,
+    "question": "A body starts from rest and moves in a straight line with uniform acceleration of 5ms−2. How far, in metres, does it go in 10 seconds?",
+    "options": {
+      "a": "50 m",
+      "b": "250 m",
+      "c": "350 m"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 247,
+    "question": "If n items are arranged two at a time, the number obtained is 20. Find the value of n.",
+    "options": {
+      "a": "5",
+      "b": "10",
+      "c": "15"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 248,
+    "question": "If y=x2−6x+11 is written in the form y=a(x−h)2+k, find the value of (a+h+k).",
+    "options": {
+      "a": "-4",
+      "b": "-3",
+      "c": "0"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 249,
+    "question": "The distance between P(x, 7) and Q(6, 19) is 13 units. Find the values of x.",
+    "options": {
+      "a": "1 or -7",
+      "b": "1 or 7",
+      "c": "1 or 11"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 250,
+    "question": "Given that the straight lines kx−5y+6=0 and mx+ny−1=0 are parallel, find a relationship connecting the constants m, n and k.",
+    "options": {
+      "a": "5n - km = 0",
+      "b": "kn + 5m = 0",
+      "c": "5n + km = 0"
+    },
+    "year_id": "2014"
+  },
+  {
+    "id": 251,
+    "question": "Given that α and β are the roots of an equation such that α+β=3 and αβ=2, find the equation.",
+    "options": {
+      "a": "x2−3x+2=0",
+      "b": "x2−2x+3=0",
+      "c": "x2−3x−2=0"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 252,
+    "question": "Which of the following is the same as sin(270+x)°?",
+    "options": {
+      "a": "sinx",
+      "b": "tanx",
+      "c": "−sinx"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 253,
+    "question": "The sum of the first three terms of an Arithmetic Progression (",
+    "options": {
+      "a": "130",
+      "b": "192",
+      "c": "210"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 254,
+    "question": "2\n. Find the value of x.",
+    "options": {
+      "a": "-4",
+      "b": "0",
+      "c": "4"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 255,
+    "question": "Find the fourth term of the binomial expansion of (x−k)5 in descending powers of x.",
+    "options": {
+      "a": "10x3k2",
+      "b": "5x3k2",
+      "c": "−5x2k3"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 256,
+    "question": "The tangent to the curve y=4x3+kx2−6x+4 at the point P(1, m) is parallel to the x- axis, where k and m are constants. Find the value of k.",
+    "options": {
+      "a": "3",
+      "b": "2",
+      "c": "-3"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 257,
+    "question": "The tangent to the curve y=4x3+kx2−6x+4 at the point P(1, m) is parallel to the x- axis, where k and m are constants. Determine the coordinates of P.",
+    "options": {
+      "a": "(1, 2)",
+      "b": "(1, 1)",
+      "c": "(1, -1)"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 258,
+    "question": "2\n=log5125, find the value of y.",
+    "options": {
+      "a": "16",
+      "b": "25",
+      "c": "36"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 259,
+    "question": "Two vectors m and n are defined by m=3i+4j and n=2i−j. Find the angle between m and n.",
+    "options": {
+      "a": "97.9°",
+      "b": "79.7°",
+      "c": "63.4°"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 260,
+    "question": "Find the area of the circle whose equation is given as x2+y2−4x+8y+11=0.",
+    "options": {
+      "a": "3π",
+      "b": "6π",
+      "c": "9π"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 261,
+    "question": "Two bodies of masses 8 kg and 5 kg travelling in the same direction with speeds x m/s and 2 m/s respectively collide. If after collision, they move together with a speed of 3.85 m/s, find, correct to the nearest whole number, the value of x.",
+    "options": {
+      "a": "2",
+      "b": "5",
+      "c": "8"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 262,
+    "question": "Evaluate lim\nx→3\nx2−2x−3\n\n\nx−3",
+    "options": {
+      "a": "4",
+      "b": "3",
+      "c": "2"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 263,
+    "question": "If f(x)=mx2−6x−3 and f′(1)=12, find the value of the constant m.",
+    "options": {
+      "a": "9",
+      "b": "3",
+      "c": "-3"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 264,
+    "question": "A body is acted upon by two forces F1=(5N,060°) and F2=(10N,180°). Find the magnitude of the resultant force.",
+    "options": {
+      "a": "18.75 N",
+      "b": "15.75 N",
+      "c": "9.50 N"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 265,
+    "question": "The polynomial 2x3+3x2+qx−1 has the same reminder when divided by (x+2) and (x−1). Find the value of the constant q.",
+    "options": {
+      "a": "-11",
+      "b": "-9",
+      "c": "-3"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 266,
+    "question": "Marks\t5 - 7\t8 - 10\t11 - 13\t14 -  16\t17 - 19\t20 - 22\nFrequency\t4\t7\t26\t41\t14\t8\n\nThe table above shows the marks obtained by 100 pupils in a test. Find the upper class boundary of the class containing the third quartile.",
+    "options": {
+      "a": "13.0",
+      "b": "16.0",
+      "c": "16.5"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 267,
+    "question": "Marks\t5 - 7\t8 - 10\t11 - 13\t14 -  16\t17 - 19\t20 - 22\nFrequency\t4\t7\t26\t41\t14\t8\n\nThe table above shows the marks obtained by 100 pupils in a test. Find the probability that a student picked at random scored at least 14 marks.",
+    "options": {
+      "a": "0.22",
+      "b": "0.41",
+      "c": "0.49"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 268,
+    "question": "How many ways can 12 people be divided into three groups of 2, 7 and 3 in that order?",
+    "options": {
+      "a": "7920",
+      "b": "792",
+      "c": "187"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 269,
+    "question": "2). Which of the following operations is possible?",
+    "options": {
+      "a": "QP",
+      "b": "P2",
+      "c": "Q2P"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 270,
+    "question": "Simplify \nnP3\n\n\nnC2\n+nP0",
+    "options": {
+      "a": "n - 5",
+      "b": "n - 3",
+      "c": "2n - 1"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 271,
+    "question": "A particle is projected vertically upwards with a speed of 40 m/s. At what times will it be 35m above its point of projection? Take g=10ms−2",
+    "options": {
+      "a": "1 sec and 7 sec",
+      "b": "1 sec and 8 sec",
+      "c": "2 sec and 5 sec"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 272,
+    "question": "Three students are working independently on a Mathematics problem. Their respective probabilities of solving the problem are 0.6, 0.7 and 0.8. What is the probability that at least one of them solves the problem?",
+    "options": {
+      "a": "0.024",
+      "b": "0.336",
+      "c": "0.664"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 273,
+    "question": "Calculate, correct to one decimal place, the standard deviation of the numbers: -1, 5, 0, 2 and 9.",
+    "options": {
+      "a": "7.2",
+      "b": "6.6",
+      "c": "3.6"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 274,
+    "question": "A group of 5 boys and 4 girls is to be chosen from a class of 8 boys and 6 girls. In how many ways can this be done?",
+    "options": {
+      "a": "840",
+      "b": "480",
+      "c": "408"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 275,
+    "question": "P=x:1≤x≤6 and Q=x:2<x<9 where x∈R, find P∩Q.",
+    "options": {
+      "a": "x:2≤x≤6",
+      "b": "x:2≤x<6",
+      "c": "x:2<x<6"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 276,
+    "question": "If (x−3) is a factor of 2x3+3x2−17x−30, find the remaining factors.",
+    "options": {
+      "a": "(2x - 5)(x - 2)",
+      "b": "(2x - 5)(x + 2)",
+      "c": "(2x + 5)(x - 2)"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 277,
+    "question": "Two functions f and g are defined by f:x→3x−1 and g:x→2x3, evaluate fg(−2).",
+    "options": {
+      "a": "-49",
+      "b": "-47",
+      "c": "-10"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 278,
+    "question": ", find q.",
+    "options": {
+      "a": "4",
+      "b": "-4",
+      "c": "-5"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 279,
+    "question": "Find the coefficient of x4 in the binomial expansion of (1−2x)6.",
+    "options": {
+      "a": "320",
+      "b": "240",
+      "c": "-320"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 280,
+    "question": "Find the equation of the line passing through (0, -1) and parallel to the y- axis.",
+    "options": {
+      "a": "y = -1",
+      "b": "y = 0",
+      "c": "x = 0"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 281,
+    "question": "The roots of the equation 2x2+kx+5=0 are α and β, where k is a constant. If α2+β2=−1, find the values of k.",
+    "options": {
+      "a": "±16",
+      "b": "±8",
+      "c": "±4"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 282,
+    "question": "Find the sum of the exponential series 96+24+6+...",
+    "options": {
+      "a": "144",
+      "b": "128",
+      "c": "72"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 283,
+    "question": "The mean age of n men in a club is 50 years. Two men aged 55 and 63 years left the club, and the mean age reduced by 1 year. Find the value of n.",
+    "options": {
+      "a": "30",
+      "b": "20",
+      "c": "18"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 284,
+    "question": "A committee of 4 is to be selected from a group of 5 men and 3 women. In how many ways can this be done if the chairman of the committee must be a man?",
+    "options": {
+      "a": "15",
+      "b": "40",
+      "c": "70"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 285,
+    "question": "Simplify \nnP4\n\n\nnC4",
+    "options": {
+      "a": "24",
+      "b": "18",
+      "c": "12"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 286,
+    "question": "Simplify 8n×22n÷43n",
+    "options": {
+      "a": "2−n",
+      "b": "21−n",
+      "c": "2n"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 287,
+    "question": "A particle of mass 2.5 kg is moving at a speed of 12 m/s. If a force of magnitude 10 N acts against it, find how long it takes to come to rest.",
+    "options": {
+      "a": "1.5 s",
+      "b": "3.0 s",
+      "c": "4.0 s"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 288,
+    "question": "Age(in years)\t1 - 5\t6 - 10\t11 - 15\nFrequency\t3\t5\t2\n\nCalculate the standard deviation of the distribution.",
+    "options": {
+      "a": "1.10",
+      "b": "2.36",
+      "c": "3.50"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 289,
+    "question": "The equation of the line of best fit for variables x and y is \ny=19.33+0.42x\n, where x is the independent variable. Estimate the value of y when x = 15.",
+    "options": {
+      "a": "18.91",
+      "b": "19.75",
+      "c": "25.63"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 290,
+    "question": "Find the least value of the function f(x)=3x2+18x+32.",
+    "options": {
+      "a": "5",
+      "b": "4",
+      "c": "-3"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 291,
+    "question": "A force of 32 N is applied to an object of mass m kg which is at rest on a smooth horizontal surface. If the acceleration produced is 8ms−2, find the value of m.",
+    "options": {
+      "a": "12",
+      "b": "16",
+      "c": "6"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 292,
+    "question": "4)(−6\nP)=(3\n−26), find the value of P.",
+    "options": {
+      "a": "-8",
+      "b": "-5",
+      "c": "4"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 293,
+    "question": "The mean and median of integers x, y, z and t are 5 and z respectively. If x < y < z < t and y = 4, find (x + t).",
+    "options": {
+      "a": "12",
+      "b": "11",
+      "c": "10"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 294,
+    "question": "A lift moving upwards with a uniform acceleration of 5ms−2 carries a body of mass p kg. If the reaction on the floor is 480 N, find the value of p. [Take g = 10ms−2].",
+    "options": {
+      "a": "32",
+      "b": "36",
+      "c": "48"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 295,
+    "question": "Calculate, correct to one decimal place, the angle between 5i + 12j and -2i + 3j.",
+    "options": {
+      "a": "54.8°",
+      "b": "56.3°",
+      "c": "66.4°"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 296,
+    "question": "A particle is projected vertically upwards from a height 45 metres above the ground with a velocity of 40 m/s. How long does it take it to hit the ground? [Take g = \\(10 ms^{-2}\\)].",
+    "options": {
+      "a": "1s",
+      "b": "3s",
+      "c": "7s"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 297,
+    "question": "Two forces, each of magnitude 16 N, are inclined to each other at an angle of 60°. Calculate the magnitude of their resultant.",
+    "options": {
+      "a": "16 N",
+      "b": "\\(16 \\sqrt{3}\\) N",
+      "c": "18 N"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 298,
+    "question": "ABCD is a square. Forces of magnitude 14N, 4N, 2N and \\(2\\sqrt{2} N\\) act along the sides AB, BC, CD and DA respectively. Find in Newtons, the magnitude of the resultant of the forces.",
+    "options": {
+      "a": "14.11",
+      "b": "13.81",
+      "c": "12.06"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 299,
+    "question": "Solve: 8\\(^{x - 2}\\) = 4\\(^{3x}\\)",
+    "options": {
+      "a": "-2",
+      "b": "-1",
+      "c": "1"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 300,
+    "question": "= 5 and 2p = k = 6 simultaneously",
+    "options": {
+      "a": "p = -6, k = -6",
+      "b": "p = -6, k = 6",
+      "c": "p = 6, k = 6"
+    },
+    "year_id": "2015"
+  },
+  {
+    "id": 301,
+    "question": "If nC2 = 15, find the value of n",
+    "options": {
+      "a": "8",
+      "b": "7",
+      "c": "6"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 302,
+    "question": "An operation (*) is defined on the set T = {-1, 0, ...., 5} by x * y = x + y - xy. Which of the following operation(s) will give an image that is an element of T?\n\nI. 2(*)5 II. 3(*)2 III. 3(*)4",
+    "options": {
+      "a": "I only",
+      "b": "II only",
+      "c": "I and III only"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 303,
+    "question": "Given that g ; x → 3x and f ; x → cos x. Find the value of go f(20o)",
+    "options": {
+      "a": "0.50",
+      "b": "0.94",
+      "c": "2.60"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 304,
+    "question": "A linear transformation is defined by T: (x, y) → (-x + y, -4y). Find the image, Q`, of Q(-3, 2) under T",
+    "options": {
+      "a": "Q`(5, -8)",
+      "b": "Q`(-8, 5)",
+      "c": "Q`(5, -3)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 305,
+    "question": "If g : r → 5 - 2r, r is a real number, find the image of -3",
+    "options": {
+      "a": "13",
+      "b": "11",
+      "c": "-1"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 306,
+    "question": "Consider the following statements:\n\np: Birds fly\n\nq: The sky is blue\n\nr: The grass is green\nWhat is the symbolic representation of \"If the grass is green and the sky is not blue, then the birds do not fly\"?",
+    "options": {
+      "a": "A. (r ^ p) → q",
+      "b": "(r ^ q) → p",
+      "c": "(r ^~ q) → ~p"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 307,
+    "question": "Find the sum of the first 20 terms of the sequence -7-3, 1, ......",
+    "options": {
+      "a": "620",
+      "b": "660",
+      "c": "690"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 308,
+    "question": "Point X and Y are on the same horizontal base as the foot of a building such that X is 96m due east of the building and Y is due west. If the angle of elevation of the top of that building from X is 30o and that of Y is 50o, calculate the distance of Y from the base of the building.",
+    "options": {
+      "a": "30m",
+      "b": "32m",
+      "c": "42m"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 309,
+    "question": "If the mean of 2, 5, (x + 1), (x + 2), 7 and 9 is 6, find the median.",
+    "options": {
+      "a": "6.5",
+      "b": "6.0",
+      "c": "5.5"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 310,
+    "question": "Calculate the mean deviation of 5, 8, 2, 9 and 6",
+    "options": {
+      "a": "5",
+      "b": "4",
+      "c": "3"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 311,
+    "question": "A particle starts from rest and moves in a straight line such that its velocity, V ms−1, at time t second is given by V = 3t2 - 6t. Calculate the acceleration in the 3rd second.",
+    "options": {
+      "a": "12m",
+      "b": "16m",
+      "c": "64m"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 312,
+    "question": "x2\n)4",
+    "options": {
+      "a": "10",
+      "b": "12",
+      "c": "24"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 313,
+    "question": "Which of these inequalities is represented by the shaded portion of the graph?",
+    "options": {
+      "a": "2y + x - 3 < 0",
+      "b": "2y - x - 3 < 0",
+      "c": "2y - x + 3 < 0"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 314,
+    "question": "A 35 N force acts on a body of mass 5 kg for 2 seconds. Calculate the change in momentum of the body.",
+    "options": {
+      "a": "70 kg ms−1",
+      "b": "55 kg ms−1",
+      "c": "50 kg ms−1"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 315,
+    "question": "Solve, correct to three significant figures, (0.3)x =  (0,5)8",
+    "options": {
+      "a": "4.61",
+      "b": "4.606",
+      "c": "0.461"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 316,
+    "question": "Given that P and Q are non-empty subsets of the universal set, U. Find P ∩ (Q U Q`).",
+    "options": {
+      "a": "p",
+      "b": "P`",
+      "c": "Q"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 317,
+    "question": "The function f : x → x2 + px + q has turning point when x = -3 and remainder of -6 when divided by (x + 2). Find the value of q.",
+    "options": {
+      "a": "6",
+      "b": "2",
+      "c": "-2"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 318,
+    "question": "Which of the following vectors is perpendicular to (−1\t3)?",
+    "options": {
+      "a": "(−3\t1)",
+      "b": "(1\t3)",
+      "c": "(1\t−3)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 319,
+    "question": "Find correct to the nearest degree,5 the angle between p = 12i - 5j and q = 4i +3j",
+    "options": {
+      "a": "59o",
+      "b": "60o",
+      "c": "75o"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 320,
+    "question": "Find the area between line y = x + 1 and the x-axis from x = -2 to x = 0.",
+    "options": {
+      "a": "5 square units",
+      "b": "4 square units",
+      "c": "2 square units"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 321,
+    "question": "How many numbers greater than 200 can be formed from the digits 1,2,3,4, 5 if no digit is to be repeated in any particular number?",
+    "options": {
+      "a": "50",
+      "b": "60",
+      "c": "288"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 322,
+    "question": "The probabilities that John and Jane will pass an examination are 0.9 and 0.7 respectively. Find the probability that at least one of them will pass the examination.",
+    "options": {
+      "a": "0.28",
+      "b": "0.67",
+      "c": "0.72"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 323,
+    "question": "Given that X and Y are independent events such that P(X) = 0.5, P(Y) = m and P(X U Y) = 0.75, find the value of m.",
+    "options": {
+      "a": "0.6",
+      "b": "0.5",
+      "c": "0.4"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 324,
+    "question": "A uniform beam, PQ. is 100 m long and weighs 35 N. It is placed on a support at a point 40 cm from P. If weights of 54 N and FN are attached at P and Q respectively in order to keep it in a horizontal position, calculate, correct to the nearest whole number, the value of F.",
+    "options": {
+      "a": "69",
+      "b": "60",
+      "c": "35"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 325,
+    "question": "Evaluate: \\(^{lim}_{x \\to 1} \\begin{pmatrix} \\frac{1 - x}{x^2 - 3x + 2} \\end {pmatrix}\\)",
+    "options": {
+      "a": "-1",
+      "b": "- \\(\\frac{1}{2}\\)",
+      "c": "\\(\\frac{1}{2}\\)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 326,
+    "question": "A binary operation * is defined on the set of real number, R, by x*y = x\\(^2\\) - y\\(^2\\) + xy, where x, \\(\\in\\)  R. Evaluate (\\(\\sqrt{3}\\))*(\\(\\sqrt{2}\\))\n\n \n\n\\({\\color{red}2x} \\times 3\\)",
+    "options": {
+      "a": "1 - \\(\\sqrt{6}\\)",
+      "b": "\\(\\sqrt{6}\\) - 1",
+      "c": "\\(\\sqrt{6}\\)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 327,
+    "question": "Find the inverse of \\(\\begin{pmatrix} 3 & 5 \\\\ 1 & 2 \\end{pmatrix}\\)",
+    "options": {
+      "a": "\\(\\begin{pmatrix} 5 & 1 \\\\ -3 & 2 \\end{pmatrix}\\)",
+      "b": "\\(\\begin{pmatrix} 2 & -5 \\\\ -1 & 3 \\end{pmatrix}\\)",
+      "c": "\\(\\begin{pmatrix} -5 & 2 \\\\ -1 & 3 \\end{pmatrix}\\)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 328,
+    "question": "If cos x = -0.7133, find the values of x between 0\\(^o\\) and 360\\(^o\\)",
+    "options": {
+      "a": "44.5\\(^o\\) , 224.5\\(^o\\)",
+      "b": "123.5\\(^o\\) , 190.5\\(^o\\)",
+      "c": "135.5\\(^o\\) , 213.5\\(^o\\)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 329,
+    "question": "If \\(\\int^3_0(px^2 + 16)dx\\) = 129. Find the value of p.",
+    "options": {
+      "a": "9",
+      "b": "8",
+      "c": "7"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 330,
+    "question": "If  \\(\\begin{pmatrix} p+q & 1\\\\ 0 & p-q \\end {pmatrix}\\) = \\(\\begin{pmatrix} 2 & 1 \\\\ 0 & 8 \\end{pmatrix}\\)\n\nFind the values of p and q",
+    "options": {
+      "a": "p = 5, q = 3",
+      "b": "p = 5, q = -3",
+      "c": "p = -5, q = -3"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 331,
+    "question": "Given that X  : R \\(\\to\\) R is defined by x = \\(\\frac{y + 1}{5 - y}\\) , y \\(\\in\\) R, find the domain of x.",
+    "options": {
+      "a": "{y : y \\(\\in\\) R, y \\(\\neq\\) 0}",
+      "b": "{y : y \\(\\in\\) R, y \\(\\neq\\) 1}",
+      "c": "{y : y \\(\\in\\) R, y \\(\\neq\\) 5}"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 332,
+    "question": "Given that 2x + 3y - 10 = 0 and 3x = 2y - 11, calculate the value of (x - y).",
+    "options": {
+      "a": "5",
+      "b": "3",
+      "c": "- 3"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 333,
+    "question": "Determine the coefficient of x\\(^3\\) in the binomial expansion of ( 1 + \\(\\frac{1}{2}\\)x)",
+    "options": {
+      "a": "\\(\\frac{5}{8}\\)",
+      "b": "\\(\\frac{5}{6}\\)",
+      "c": "\\(\\frac{5}{4}\\)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 334,
+    "question": "Given that P = {x : 1 \\(\\geq\\) x \\(\\geq\\) 6} and Q = {x : 2 < x < 10}. Where x are integers, find n(p \\(\\cap\\) Q)",
+    "options": {
+      "a": "4",
+      "b": "6",
+      "c": "8"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 335,
+    "question": "If X = \\(\\frac{3}{5}\\) and cos y = \\(\\frac{24}{25}\\), where X and Y are acute, find the value of cos (X + Y).",
+    "options": {
+      "a": "\\(\\frac{117}{125}\\)",
+      "b": "\\(\\frac{24}{25}\\)",
+      "c": "\\(\\frac{3}{5}\\)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 336,
+    "question": "Find the median of the numbers 9,7, 5, 2, 12,9,9, 2, 10, 10, and 18.",
+    "options": {
+      "a": "7",
+      "b": "9",
+      "c": "10"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 337,
+    "question": "Calculate the probability that the product of two numbers selected at random with replacement from the set {-5,-2,4, 8} is positive",
+    "options": {
+      "a": "\\(\\frac{2}{3}\\)",
+      "b": "\\(\\frac{1}{2}\\)",
+      "c": "\\(\\frac{1}{3}\\)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 338,
+    "question": "Find the angle between i + 5j and 5i - J",
+    "options": {
+      "a": "0o",
+      "b": "45o",
+      "c": "60o"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 339,
+    "question": "Given that F = 3i - 12j, R = 7i + 5j and N = pi + qj are forces acting on a body, if the body is in equilibrium. find the values of p and q.",
+    "options": {
+      "a": "p=-10, q=7",
+      "b": "p=-10, q=-7",
+      "c": "p=10, q=- 7"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 340,
+    "question": "A stone was dropped from the top of a building 40m high. Find, correct to one decimal place, the time it took the stone to reach the ground. [Take g = 9.8ms−2]",
+    "options": {
+      "a": "2.9.seconds",
+      "b": "2.8 seconds",
+      "c": "2.6 seconds"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 341,
+    "question": "If the binomial expansion of (1 + 3x)6 is used to evaluate (0.97)6, find the value of x.",
+    "options": {
+      "a": "0.03",
+      "b": "0.01",
+      "c": "- 0.01"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 342,
+    "question": "Find the nth term of the linear sequence (",
+    "options": {
+      "a": "(8 + 3n)y + 1",
+      "b": "8y + 3n + 1",
+      "c": "(8 - 3n)y + 1"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 343,
+    "question": "A circle with centre (5,-4) passes through the point (5, 0). Find its equation.",
+    "options": {
+      "a": "x2 + y2 + 10x + 8y + 25 =0",
+      "b": "x2 + y2 +10x - 8y - 25 = 0",
+      "c": "x2 + y2 - 10x + 8y + 25 =0"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 344,
+    "question": "Calculate, correct to two decimal places, the area enclosed by the line 3x - 5y + 4 = 0 and the axes.",
+    "options": {
+      "a": "0.50 square units",
+      "b": "0.51 square units",
+      "c": "0.53 square units"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 345,
+    "question": "In how many ways can the letters of the word MEMBER be arranged?",
+    "options": {
+      "a": "720",
+      "b": "360",
+      "c": "180"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 346,
+    "question": "Which of the following is not an equation of a circle?",
+    "options": {
+      "a": "3x2 +3y2 + 5x + 7y =5",
+      "b": "x2 + y2 + 5x + 4y = 0",
+      "c": "5x2 + 5y2 - 16 = 0"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 347,
+    "question": "A function f defined by f : x -> x\\(^2\\) + px + q is such that f(3) = 6 and f(3) = 0. Find the value of q.",
+    "options": {
+      "a": "- 9",
+      "b": "- 6",
+      "c": "15"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 348,
+    "question": "In what interval is the function f : x -> 2x - x\\(^2\\) increasing?",
+    "options": {
+      "a": "x = 1",
+      "b": "x < 1",
+      "c": "x > 1"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 349,
+    "question": "A force of 230N acts in its direction 065\\(^o\\). Find its horizontal component.",
+    "options": {
+      "a": "208.5N",
+      "b": "197.2N",
+      "c": "118.5N"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 350,
+    "question": "Calculate the variance of \\(\\sqrt{2}\\), (1 + \\(\\sqrt{2}\\)) and (2 + \\(\\sqrt{2}\\))",
+    "options": {
+      "a": "0",
+      "b": "\\(\\sqrt{\\frac{2}{3}}\\)",
+      "c": "\\(\\frac{2}{3}\\)"
+    },
+    "year_id": "2016"
+  },
+  {
+    "id": 351,
+    "question": "A three-digit odd number less than 500 is to be formed from 1,2,3,4 and 5. If repetition of digits is allowed, in how many ways can this be done?",
+    "options": {
+      "a": "125",
+      "b": "75",
+      "c": "60"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 352,
+    "question": "The variables x and y are such that y =2x\\(^3\\) - 2x\\(^2\\) - 5x + 5. Calculate the corresponding change in y and x changes from 2.00 to 2.05.",
+    "options": {
+      "a": "0.58",
+      "b": "0.95",
+      "c": "1.48"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 353,
+    "question": "A bag contains 5 red and 5 blue identical balls. Three balls are selected at random without replacement. Determine the probability of selecting balls alternating in color.",
+    "options": {
+      "a": "\\(\\frac{7}{18}\\)",
+      "b": "\\(\\frac{5}{18}\\)",
+      "c": "\\(\\frac{5}{36}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 354,
+    "question": "The distance(s) in metres covered by a particle in motion at any time, t seconds, is given by S =120t - 16t\\(^2\\). Find in metres, the distance covered by the body before coming to rest.",
+    "options": {
+      "a": "220",
+      "b": "222",
+      "c": "223"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 355,
+    "question": "P(3,4) and Q(-3, -4) are two points in a plane. Find the gradient of the line that is normal to the line PQ.",
+    "options": {
+      "a": "\\(\\frac{4}{3}\\)",
+      "b": "\\(\\frac{3}{4}\\)",
+      "c": "\\(\\frac{-3}{4}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 356,
+    "question": "Find the unit vector in the direction opposite to the resultant of forces.  F\\(_1\\) = (-2i - 3j) and F\\(_2\\) = (5i - j)",
+    "options": {
+      "a": "\\(\\frac{1}{5}\\)(-3i - 4j)",
+      "b": "\\(\\frac{1}{5}\\)(-3i + 4j)",
+      "c": "\\(\\frac{1}{5}\\)(3i - 4j)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 357,
+    "question": "If the sum of the roots of 2x\\(^2\\) + 5mx + n = 0 is 5, find the value of m.",
+    "options": {
+      "a": "- 2.5",
+      "b": "- 2.0",
+      "c": "2.0"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 358,
+    "question": "If log 5(\\(\\frac{125x^3}{\\sqrt[ 3 ] {y}}\\) is expressed in the values of p, q and k respectively.",
+    "options": {
+      "a": "3, \\(\\frac{-1}{3}\\), 5",
+      "b": "\\(\\frac{-1}{3}\\), 3, 5",
+      "c": "3, \\(\\frac{-1}{3}\\), 3"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 359,
+    "question": "Consider the statements:\n\nx: Birds fly\n\ny:  The sky is blue\n\nWhich of the following statements can be represented as x \\(\\to\\) y?",
+    "options": {
+      "a": "When birds fly, the sky is blue",
+      "b": "Birds fly if and only if the sky is blue?",
+      "c": "Either the bird is flying or the sky is blue."
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 360,
+    "question": "Simplify ( \\(\\frac{1}{2 - √3}\\) + \\(\\frac{2}{2 + √3}\\) )\\(^{-1}\\)",
+    "options": {
+      "a": "\\(\\frac{-1}{33}\\)(6 + √3)",
+      "b": "\\(\\frac{-1}{33}\\)(6 - √3)",
+      "c": "\\(\\frac{1}{33}\\)(6 + √3)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 361,
+    "question": "For what range of values of x is x\\(^2\\) - 2x - 3 ≤ 0",
+    "options": {
+      "a": "{x: -1 ≤ x ≤ 3}",
+      "b": "{ x: -3 ≤ x ≤ 1}",
+      "c": "{ x: -3 ≤ x ≤ -1}"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 362,
+    "question": "Given that M = \\(\\begin{pmatrix} 3 & 2 \\\\ -1 & 4 \\end{pmatrix}\\) and N = \\(\\begin{pmatrix} 5 & 6 \\\\ -2 & -3 \\end{pmatrix}\\), calculate (3M - 2N)",
+    "options": {
+      "a": "\\(\\begin{pmatrix} 1 & 6 \\\\ 1 & 18 \\end{pmatrix}\\)",
+      "b": "\\(\\begin{pmatrix} -1 & -6 \\\\ 1 & 18 \\end{pmatrix}\\)",
+      "c": "\\(\\begin{pmatrix} 1 & 6 \\\\ -1 & -18 \\end{pmatrix}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 363,
+    "question": "Simplify \\(\\frac{1}{3}\\) log8 + \\(\\frac{1}{3}\\) log 64 - 2 log6",
+    "options": {
+      "a": "log \\(\\frac{2}{7}\\)",
+      "b": "log 2",
+      "c": "log \\(\\frac{2}{9}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 364,
+    "question": "Solve (\\(\\frac{1}{9}\\))\\(^{x + 2}\\) = 243\\(^{x - 2}\\)",
+    "options": {
+      "a": "\\(\\frac{7}{5}\\)",
+      "b": "\\(\\frac{6}{7}\\)",
+      "c": "\\(\\frac{-7}{6}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 365,
+    "question": "g(x) = 2x + 3 and f(x) = 3x\\(^2\\) - 2x + 4\n\nfind f {g (-3)}.",
+    "options": {
+      "a": "37",
+      "b": "1",
+      "c": "-3"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 366,
+    "question": "Using binomial expansion of ( 1 + x)\\(^6\\) = 1 + 6x + 15x\\(^2\\) + 20x\\(^3\\) + 6x\\(^5\\) + x)\\(^6\\), find, correct to three decimal places, the value of (1.998))\\(^6\\)",
+    "options": {
+      "a": "63.616",
+      "b": "63.167",
+      "c": "62.628"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 367,
+    "question": "In how many ways can 8 persons be seated on a bench if only three seats are available?",
+    "options": {
+      "a": "100",
+      "b": "125",
+      "c": "336"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 368,
+    "question": "If α and β are the roots of 3x\\(^2\\) - 7x + 6 = 0, find \\(\\frac{1}{α}\\) + \\(\\frac{1}{β}\\)",
+    "options": {
+      "a": "\\(\\frac{7}{6}\\)",
+      "b": "\\(\\frac{7}{3}\\)",
+      "c": "\\(\\frac{14}{5}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 369,
+    "question": "If f(x) = 4x\\(^3\\) + px\\(^2\\) + 7x - 23 is divided by (2x -5), the remainder is 7. find the value of p",
+    "options": {
+      "a": "-7.0",
+      "b": "-8.0",
+      "c": "-9.6"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 370,
+    "question": "For what value of k is 4x\\(^2\\) - 12x + k, a perfect square?",
+    "options": {
+      "a": "-9",
+      "b": "\\(\\frac{-9}{4}\\)",
+      "c": "\\(\\frac{9}{4}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 371,
+    "question": "A binary operation * is defined on the set of real numbers, R, by\n\nP * q = \\(\\frac{q^2 - p^2}{2pq}\\). Find 3 * 2",
+    "options": {
+      "a": "\\(\\frac{13}{12}\\)",
+      "b": "\\(\\frac{5}{12}\\)",
+      "c": "-\\(\\frac{5}{12}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 372,
+    "question": "Find the inverse of  \\(\\begin{pmatrix} 4 & 2 \\\\ -3 & -2 \\end{pmatrix}\\)",
+    "options": {
+      "a": "\\(\\begin{pmatrix} 1 & 1 \\\\ -1.5 & -2 \\end{pmatrix}\\)",
+      "b": "\\(\\begin{pmatrix} 1 & -1 \\\\ 1.5 & -2 \\end{pmatrix}\\)",
+      "c": "\\(\\begin{pmatrix} -2 & 1 \\\\ 1.5 & 1 \\end{pmatrix}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 373,
+    "question": "Given that P = { x: 0 ≤ x ≤ 36, x is a factor of 36 divisible by 3} and Q = { x: 0 ≤ x ≤ 36, x is an even number and a perfect square}, find P n Q.",
+    "options": {
+      "a": "{1,4,9,36}",
+      "b": "{3,9.36}",
+      "c": "{9,36}"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 374,
+    "question": "A body of mass 15kg is placed on a smooth plane which is inclined at 60° to the horizontal. If the box is at rest,\n\ncalculate the normal reaction to the plane. [ Take g = 10m/s\\(^2\\) ]",
+    "options": {
+      "a": "129.9N",
+      "b": "75N",
+      "c": "60.0N"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 375,
+    "question": "A fair die is tossed 60 times and the results are recorded in the table\n\nNumber of die\t1\t2\t3\t4\t5\t6\nFrequency\t15\t10\t14\t2\t8\t11\n\nFind the probability of obtaining a prime number.",
+    "options": {
+      "a": "\\(\\frac{7}{30}\\)",
+      "b": "\\(\\frac{1}{6}\\)",
+      "c": "\\(\\frac{7}{15}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 376,
+    "question": "If 2y\\(^2\\) + 7 = 3y - xy, find \\(\\frac{dy}{dx}\\)",
+    "options": {
+      "a": "\\(\\frac{-y}{4x+y-3}\\)",
+      "b": "\\(\\frac{y}{4x+y-3}\\)",
+      "c": "\\(\\frac{y}{4x+x-3}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 377,
+    "question": "Three forces, F\\(_1\\) (8N, 030°), F\\(_2\\) (10N, 150° ) and F\\(_3\\) ( KN, 240° )are in equilibrium. Find the value of N",
+    "options": {
+      "a": "5√3",
+      "b": "6√2",
+      "c": "6√3"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 378,
+    "question": "In △PQR, \\(\\overline{PQ}\\) = 5i - 2j and \\(\\overline{QR}\\) = 4i + 3j. Find \\(\\overline{RP}\\).",
+    "options": {
+      "a": "-i - 5j",
+      "b": "-9 - j",
+      "c": "i + 5j"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 379,
+    "question": "A stone is thrown vertically upward and distance, S metres after t seconds is given by S = 12t + \\(\\frac{5}{2t^2}\\) - t\\(^3\\).\n\nCalculate the maximum height reached.",
+    "options": {
+      "a": "418.5m",
+      "b": "56.0m",
+      "c": "31.5m"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 380,
+    "question": "A stone is thrown vertically upward and distance, S metres after t seconds is given by S = 12t + \\(\\frac{5}{2t^2}\\) - t\\(^3\\).\n\nCalculate the distance travelled in the third second.",
+    "options": {
+      "a": "5.5m",
+      "b": "14.5m",
+      "c": "26.0m"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 381,
+    "question": "Given that F\\(^1\\)(x) = x\\(^3\\) √x, find f(x)",
+    "options": {
+      "a": "\\(\\frac{2x^{9/2}}{9}\\) + c",
+      "b": "2\\(x^{\\frac{9}{2}}\\) + c",
+      "c": "\\(\\frac{2x^{\\frac{5}{2}}}{5}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 382,
+    "question": "If ( 1- 2x)\\(^4\\) = 1 + px + qx\\(^2\\) - 32x\\(^3\\) + 16\\(^4\\), find the value of (q - p)",
+    "options": {
+      "a": "-32",
+      "b": "-16",
+      "c": "16"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 383,
+    "question": "If sin x = \\(\\frac{12}{13}\\) and sin y = \\(\\frac{4}{5}\\), where x and y are acute angles, find  cos (x + y)",
+    "options": {
+      "a": "\\(\\frac{48}{65}\\)",
+      "b": "\\(\\frac{13}{15}\\)",
+      "c": "\\(\\frac{-33}{65}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 384,
+    "question": "The first term of an AP is 4 and the sum of the first three terms is 18. Find the product of the first three terms",
+    "options": {
+      "a": "292",
+      "b": "272",
+      "c": "192"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 385,
+    "question": "A committee consists of 6 boys and 4 girls. In how many ways can a sub-committee consisting of 3 boys and 2 girls be formed if one particular boy and one particular girl must be on the sub-committee?",
+    "options": {
+      "a": "120",
+      "b": "80",
+      "c": "56"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 386,
+    "question": "If √5 cosx + √15sinx = 0, for 0° < x < 360°, find the values of x.",
+    "options": {
+      "a": "30° and 150°",
+      "b": "150° and 210°",
+      "c": "150° and 330°"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 387,
+    "question": "If 2i +pj and 4i -2j are perpendicular, find the value of p.",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 388,
+    "question": "Consider the following statements:\n\nX: Benita is polite\n\ny: Benita is neat\n\nz: Benita is intelligent\n\nWhich of the following symbolizes the statement: \"Benita is neat if and only if she is neither polite nor intelligent\"?",
+    "options": {
+      "a": "y⟺ ~x v z",
+      "b": "y⟺ ~x v ~z",
+      "c": "y⟺ ~x ^ ~z"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 389,
+    "question": "A bag contains 8 red, 4 blue and 2 green identical balls. Two balls are drawn randomly from the bag without replacement. Find the probability that the balls drawn are red and blue.",
+    "options": {
+      "a": "12/91",
+      "b": "16/91",
+      "d": "A. 12/91",
+      "c": "30/91"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 390,
+    "question": "Find the equation of the normal to the curve y= 2x2 - 5x + 10 at P(1, 7).",
+    "options": {
+      "a": "y+x-3 =0",
+      "b": "y-x+6=0",
+      "c": "y - x - 6=0"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 391,
+    "question": "Find the value of the derivative of y = 3x\\(^2\\) (2x +1) with respect to x at the point x = 2.",
+    "options": {
+      "a": "72",
+      "b": "84",
+      "c": "96"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 392,
+    "question": "Find the radius of the circle 2x\\(^2\\) - 4x + 2y\\(^2\\) - 6y -2 = 0.",
+    "options": {
+      "a": "\\(\\frac{17}{4}\\)",
+      "b": "\\(\\frac{17}{2}\\)",
+      "c": "\\(\\frac{17}{\\sqrt{2}}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 393,
+    "question": "Given that f: x --> x\\(^2\\) - x + 1 is defined on the Set Q = { x : 0 ≤ x < 20, x is a multiple of 5}. find the set of range of F.",
+    "options": {
+      "a": "{21, 91, 221}",
+      "b": "{21, 91, 221, 381}",
+      "c": "{1,21, 91, 221}"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 394,
+    "question": "If \\(\\frac{15 - 2x}{(x+4)(x-3)}\\) = \\(\\frac{R}{(x+4)}\\) + \\(\\frac{9}{(x-3)}\\), find the value of R",
+    "options": {
+      "a": "\\(\\frac{-32}{7}\\)",
+      "b": "\\(\\frac{-23}{7}\\)",
+      "c": "\\(\\frac{23}{7}\\)"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 395,
+    "question": "The table shows the distribution of marks obtained by some students in a test\n\nMarks\t0-9\t10-19\t20-29\t30-39\t40-49\nFrequency\t4\t12\t16\t6\t2\n\nWhat is the upper class boundary of the upper quartile class?",
+    "options": {
+      "a": "49.5",
+      "b": "39.5",
+      "c": "29.5"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 396,
+    "question": "The table shows the distribution of marks obtained by some students in a test\n\nMarks\t0-9\t10-19\t20-29\t30-39\t40-49\nFrequency\t4\t12\t16\t6\t2\n\n \n\nFind the modal class mark.",
+    "options": {
+      "a": "4.5",
+      "b": "14.5",
+      "c": "24.5"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 397,
+    "question": ", where x, yER. Find the value of 4∆3",
+    "options": {
+      "a": "16",
+      "b": "8",
+      "c": "4"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 398,
+    "question": "Simplify \n9∗3n+1−3n+2\n\n\n3n+1−3n",
+    "options": {
+      "a": "3",
+      "b": "9",
+      "c": "27"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 399,
+    "question": "Consider the following statement:\n\nx: All wrestlers are strong\n\ny: Some wresters are not weightlifters.\n\nWhich of the following is a valid conclusion?",
+    "options": {
+      "a": "All strong wrestlers are weightlifters",
+      "b": "Some strong wrestlers are not weightlifters",
+      "c": "Some weak wrestlers are weightlifters"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 400,
+    "question": "The functions f:x → 2x\\(^2\\) + 3x -7 and g:x →5x\\(^2\\) + 7x - 6 are defined on the set of real numbers, R. Find the values of x for which 3f(x) = g(x).",
+    "options": {
+      "a": "x = -3 or -5",
+      "b": "x = -3 or 5",
+      "c": "x = 3 or -5"
+    },
+    "year_id": "2017"
+  },
+  {
+    "id": 401,
+    "question": "Express \\(\\frac{4π}{2}\\) radians in degrees.",
+    "options": {
+      "a": "288º",
+      "b": "200º",
+      "c": "144º"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 402,
+    "question": "A straight line makes intercepts of -3 and 2 on the x and y axes respectively. Find the equation of the line.",
+    "options": {
+      "a": "2x + 3y + 6 = 0",
+      "b": "3x - 2y - 6 = 0",
+      "c": "-3x 2y - 6 = 0"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 403,
+    "question": "Which of the following is the semi-interquartile range of a distribution?",
+    "options": {
+      "a": "Mode - Median",
+      "b": "Highest score - Lowest score",
+      "c": "1/2 (Upper Quartile - Median)"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 404,
+    "question": "Evaluate \\(∫^0_{-1}\\) (x + 1)(x - 2) dx",
+    "options": {
+      "a": "7/6",
+      "b": "5/6",
+      "c": "-5/6"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 405,
+    "question": "If 36, p,\\(\\frac{9}{4}\\) and q are consecutive terms of an exponential sequence (G.P), find the sum of p and q.",
+    "options": {
+      "a": "9/16",
+      "b": "81/16",
+      "c": "9"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 406,
+    "question": "Differentiate \\(\\frac{5x^ 3+x^2}{x}\\), x ≠ 0 with respect to x.",
+    "options": {
+      "a": "10x + 1",
+      "b": "10x + 2",
+      "c": "x(15x + 1)"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 407,
+    "question": "Given that \\(\\frac{8x+m}{x^2-3x-4} ≡ \\frac{5}{x+1} + \\frac{3}{x-4}\\)",
+    "options": {
+      "a": "23",
+      "b": "17",
+      "c": "-17"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 408,
+    "question": "If \\(x^2+y^2+-2x-6y+5 =0\\), evaluate dy/dx when x=3 and y=2.",
+    "options": {
+      "a": "2",
+      "b": "-2",
+      "c": "-4"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 409,
+    "question": "4||−6\nk||3\n−26|=15. Solve for k.",
+    "options": {
+      "a": "-8",
+      "b": "-5",
+      "c": "-4"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 410,
+    "question": "A linear transformation T is defined by T: (x,y) → (3x - y, x + 4y). Find the image of (2, -1) under T.",
+    "options": {
+      "a": "(7, -2)",
+      "b": "(5, -2)",
+      "c": "(-2, 7)"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 411,
+    "question": "Evaluate 4p2+4C2−4p3",
+    "options": {
+      "a": "18",
+      "b": "6",
+      "c": "-6"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 412,
+    "question": "x2\n)5",
+    "options": {
+      "a": "10",
+      "b": "40",
+      "c": "32"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 413,
+    "question": "Given that P = {x: x is a multiple of 5}, Q = {x: x is a multiple of 3} and R = {x: x is an odd number} are subsets of μ = {x: 20 ≤ x ≤ 35}, (P⋃Q)∩R.",
+    "options": {
+      "a": "{20, 21, 25, 30, 33}",
+      "b": "{21, 25, 27, 33, 35}",
+      "c": "{20, 21, 25, 27, 33, 35}"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 414,
+    "question": "A particle moving with a velocity of 5m/s accelerates at 2m/s2. Find the distance it covers in 4 seconds.",
+    "options": {
+      "a": "16m",
+      "b": "26m",
+      "c": "36m"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 415,
+    "question": "If Un = kn2 + pn, U1 = -1, U5 = 15, find the values of k and p.",
+    "options": {
+      "a": "k = -1, p = 2",
+      "b": "k = -1, p = -2",
+      "c": "k = 1, p = -2"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 416,
+    "question": "In how many ways can six persons be paired?",
+    "options": {
+      "a": "5",
+      "b": "10",
+      "c": "15"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 417,
+    "question": "Solve: 32x−2−28(3x−2)+3=0",
+    "options": {
+      "a": "x = -2 or x = 1",
+      "b": "x = 0 or x = -3",
+      "c": "x = 2 or x = 1"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 418,
+    "question": "Given that P = (-4, -5) and Q = (2,3), express →PQ in the form (k,θ). where k is the magnitude and θ the bearing.",
+    "options": {
+      "a": "(10 units, 053º)",
+      "b": "(9 units, 049º)",
+      "c": "(10 units, 037º)"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 419,
+    "question": "If →PQ = -2i + 5j and →RQ = -i - 7j, find →PR",
+    "options": {
+      "a": "-3i + 12j",
+      "b": "-3i - 12j",
+      "c": "-i + 12j"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 420,
+    "question": "The table shows the distribution of the distance (in km) covered by 40 hunters while hunting.\n\nDistance(km)\t3\t4\t5\t6\t7\t8\nFrequency\t5\t4\tx\t9\t2x\t1\n\nIf a hunter is selected at random, find the probability that the hunter covered at least 6km.",
+    "options": {
+      "a": "\\(\\frac{3}{5}\\)",
+      "b": "\\(\\frac{2}{5}\\)",
+      "c": "\\(\\frac{3}{8}\\)"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 421,
+    "question": "The table shows the distribution of the distance (in km) covered by 40 hunters while hunting.\n\nWhat is the mode of the distribution?\n \n\nDistance(km)\t3\t4\t5\t6\t7\t8\nFrequency\t5\t4\tx\t9\t2x\t1",
+    "options": {
+      "a": "5",
+      "b": "6",
+      "c": "7"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 422,
+    "question": "If g(x) = √(1-x\\(^2\\)), find the domain of g(x)",
+    "options": {
+      "a": "x < -1 or x > 1",
+      "b": "x ≤ -1 or x ≥1",
+      "c": "-1 ≤ x ≤ 1"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 423,
+    "question": "Find the coefficient of x3y2 in the binomial expansion of (x-2y)5",
+    "options": {
+      "a": "-80",
+      "b": "10",
+      "c": "40"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 424,
+    "question": "The mean heights of three groups of students consisting of 20, 16 and 14 students each are 1.67m, 1.50m and 1.40m respectively. Find the mean height of all the students.",
+    "options": {
+      "a": "1.63m",
+      "b": "1.54m",
+      "c": "1.52m"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 425,
+    "question": "Find correct to the nearest degree, the acute angle formed by the lines y = 2x + 5 and 2y = x - 6",
+    "options": {
+      "a": "76∘",
+      "b": "53∘",
+      "c": "37∘"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 426,
+    "question": "Solve: 4sin2θ + 1 = 2, where 0º < θ < 180º",
+    "options": {
+      "a": "60º 0r 120º",
+      "b": "30º 0r 150º",
+      "c": "30º 0r 120º"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 427,
+    "question": "The probability that a student will graduate from college is 0.4. If 3 students are selected from the college, what is the probability that at least one student will graduate?",
+    "options": {
+      "a": "0.06",
+      "b": "0.22",
+      "c": "0.78"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 428,
+    "question": "The gradient of a function at any point (x,y) 2x - 6. If the function passes through (1,2), find the function.",
+    "options": {
+      "a": "x2 -  6x - 5",
+      "b": "x2 -  6x + 5",
+      "c": "x2 -  6x - 3"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 429,
+    "question": "A particle of mass 3kg moving along a straight line under the action of a F N, covers a line distance, d, at time, t, such that d = t\\(^2\\) + 3t. Find the magnitude of F at time t.",
+    "options": {
+      "a": "0N",
+      "b": "2N",
+      "c": "3(2t + 3)N"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 430,
+    "question": "If α and β are roots of x\\(^2\\) + mx - n = 0, where m and n are constants, form the\n\nequation\twhose\troots\tare\t1\nα\tand\t1\nβ\t.",
+    "options": {
+      "a": "mnx\\(^2\\)  - n\\(^2\\) x - m = 0",
+      "b": "mx\\(^2\\)  - nx + 1 = 0",
+      "c": "nx\\(^2\\)  - mx + 1 = 0"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 431,
+    "question": "A particle is acted upon by forces F = (10N, 060º), P = (15N, 120º) and Q = (12N, 200º). Express the force that will keep the particle in equilibrium in the form xi + yj, where x and y are scalars.",
+    "options": {
+      "a": "17.55i + 13.78j",
+      "b": "17.55j - 13.78i",
+      "c": "-17.55i + 13.78j"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 432,
+    "question": "Evaluate: lim\\(_{x→-2}\\) \\(\\frac{x^3+8}{x+2}\\).",
+    "options": {
+      "a": "12",
+      "b": "8",
+      "c": "4"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 433,
+    "question": "If f(x-1) = x\\(^3\\) + 3x\\(^2\\) + 4x - 5, find f(2)",
+    "options": {
+      "a": "61",
+      "b": "25",
+      "c": "20"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 434,
+    "question": "The length of the line joining points (x,4) and (-x,3) is 7 units. Find the value of x.",
+    "options": {
+      "a": "4√3",
+      "b": "2√6",
+      "c": "3√2"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 435,
+    "question": "Calculate, correct to one decimal place, the angle between 5 i + 12 j and -2 i + 3 j",
+    "options": {
+      "a": "56.3º",
+      "b": "76.3º",
+      "c": "66.4º"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 436,
+    "question": "Find the equation of the normal to the curve y = 3x2+2 at point (1, 5).",
+    "options": {
+      "a": "6y - x - 29 = 0",
+      "b": "6y + x - 31 = 0",
+      "c": "y - 6x - 1 = 0"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 437,
+    "question": "2\nt2+6t−4. Calculate the acceleration of the body after 2 seconds",
+    "options": {
+      "a": "19 ms−2",
+      "b": "21 ms−2",
+      "c": "41 ms−2"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 438,
+    "question": "The table shows the operation * on the set {x, y, z, w}.\n\n*\tX\tY\tZ\tW\nX\tY\tZ\tX\tW\nY\tZ\tW\tY\tX\nZ\tX\tY\tZ\tW\nW\tW\tX\tW\tZ\n\nFind the identity of the element.",
+    "options": {
+      "a": "W",
+      "b": "Y",
+      "c": "Z"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 439,
+    "question": "Given that M is the midpoint of T (2, 4) and Q (-8, 6), find the length of MQ .",
+    "options": {
+      "a": "√26units",
+      "b": "√28units",
+      "c": "√24units"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 440,
+    "question": "A particle began to move at 27ms−1 along a straight line with constant retardation of 9ms−2. Calculate the time it took the particle to come to a stop.",
+    "options": {
+      "a": "3 sec",
+      "b": "2 sec",
+      "c": "4 sec"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 441,
+    "question": "Find the fifth term in the binomial expansion of (q+x)7.",
+    "options": {
+      "a": "21q2x5",
+      "b": "21q4x3",
+      "c": "35q3x4"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 442,
+    "question": "Given that P = {x : 2 ≤ x ≤ 8} and Q = {x : 4 < x ≤ 12} are subsets of the universal set μ = {x : x ∈ R}, find (P ⋂ Q1).",
+    "options": {
+      "a": "{x : 4 < x < 8}",
+      "b": "{x : 2 < x ≤ 4}",
+      "c": "{x : 2 ≤ x ≤ 4}"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 443,
+    "question": "Consider the statements:\nx: The school bus arrived late\ny: The student walked down to school\nWhich of the following can be represented by y ⇒ x?",
+    "options": {
+      "a": "The school bus arrived early and Kate ran to school",
+      "b": "Mary walked to school because the school bus arrived late",
+      "c": "Either the school bus arrived late or Maryam walked to school"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 444,
+    "question": "3−√6\n in the form x+m√y",
+    "options": {
+      "a": "3 - 3 √6",
+      "b": "3 + 3√6",
+      "c": "3 + √6"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 445,
+    "question": "The table shows the mark obtained by students in a test.\n\nMarks\t1\t2\t3\t4\t5\nFrequency\t2\tk\t1\t1\t2\n\nIf the mean mark is 3, find the value of k.",
+    "options": {
+      "a": "4",
+      "b": "1",
+      "c": "2"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 446,
+    "question": "Given that r = (10 N , 200º) and n = (16 N , 020º), find (3r - 2n).",
+    "options": {
+      "a": "(62 N , 240º)",
+      "b": "(62 N , 200º)",
+      "c": "(62 N , 280º)"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 447,
+    "question": "Solve 6 sin 2θ tan θ = 4, where 0º < θ < 90º",
+    "options": {
+      "a": "18.43º",
+      "b": "30.00º",
+      "c": "35.26º"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 448,
+    "question": "If f:x→2tanx and g:x→√(x2+8),find(gof)(45o)",
+    "options": {
+      "a": "4",
+      "b": "2√3",
+      "c": "6"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 449,
+    "question": "A uniform beam PQ of length 80 cm and weight 60 N rests on a support at X where | PX | = 30 cm. If the body is kept in equilibrium by a mass m kg which is placed at P , calculate the value of m\n[Take g = 10 ms−2]",
+    "options": {
+      "a": "2.0",
+      "b": "3.0",
+      "c": "2.5"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 450,
+    "question": "Adu's scores in five subjects in an examination are 85, 84, 83, 86 and 87. Calculate the standard deviation.",
+    "options": {
+      "a": "2.0",
+      "b": "1.4",
+      "c": "1.8"
+    },
+    "year_id": "2018"
+  },
+  {
+    "id": 451,
+    "question": "In how many ways can a committee of 3 women and 2 men be chosen from a group of 7 men and 5 women?",
+    "options": {
+      "a": "500",
+      "b": "350",
+      "c": "720"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 452,
+    "question": "If 3x2+px+12=0 has equal roots, find the values of p .",
+    "options": {
+      "a": "±12",
+      "b": "±3",
+      "c": "±4"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 453,
+    "question": "Given that \n3x+4\n\n\n(x−2)(x+3)\n≡\nP\n\n\nx+3\n+\nQ\n\n\nx−2\n,find the value of Q.",
+    "options": {
+      "a": "2",
+      "b": "-2",
+      "c": "1"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 454,
+    "question": "The velocity of a body of mass 4.56 kg increases from (10ms−1,060o)to(50ms−1,060o) in 16 seconds . Calculate the magnitude of force acting on it.",
+    "options": {
+      "a": "17.1 N",
+      "b": "11.4 N",
+      "c": "36.5 N"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 455,
+    "question": "If m and ( m + 4) are the roots of 4x2−4x−15=0, find the equation whose roots are 2 m and (2 m + 8).",
+    "options": {
+      "a": "x2+8x−15=0",
+      "b": "x2−2x−15=0",
+      "c": "x2−8x−15=0"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 456,
+    "question": "In how many ways can four Mathematicians be selected from six ?",
+    "options": {
+      "a": "90",
+      "b": "60",
+      "c": "15"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 457,
+    "question": "If (x−5) is a factor of x3−4x2−11x+30, find the remaining factors.",
+    "options": {
+      "a": "(x+3)and(x−2)",
+      "b": "(x−3)and(x+2)",
+      "c": "(x−3)and(x−2)"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 458,
+    "question": "Given that f: x → \n√\nx\n and g : x → 25 - x2, find the value of f o g(3)",
+    "options": {
+      "a": "4",
+      "b": "3",
+      "c": "2"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 459,
+    "question": "√\nx\n = 1, find the value of x",
+    "options": {
+      "a": "36",
+      "b": "16",
+      "c": "9"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 460,
+    "question": "If the nth term of a linear sequence (",
+    "options": {
+      "a": "120",
+      "b": "183",
+      "c": "366"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 461,
+    "question": "If h(x) = x2 + px + 2 is divided by (x + 3), the remainder is 5, find p",
+    "options": {
+      "a": "4",
+      "b": "3",
+      "c": "2"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 462,
+    "question": "If 5x + 7 ≡ P(x + 3) + Q(x - 1), find the value of p",
+    "options": {
+      "a": "3",
+      "b": "2",
+      "c": "1"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 463,
+    "question": "Solve 22x -  5(2x) + 4 = 0",
+    "options": {
+      "a": "x = 0 and 2",
+      "b": "x = 1 and 2",
+      "c": "x = 0 and 1"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 464,
+    "question": "Given that p = (m+1\tm−1\nm+4\tm−8) and |p| = - 34, find the value of m.",
+    "options": {
+      "a": "5",
+      "b": "4",
+      "c": "3"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 465,
+    "question": "If r = i + 2j and n = -i + 3j, find |2n - r|.",
+    "options": {
+      "a": "3.6",
+      "b": "4.0",
+      "c": "5.0"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 466,
+    "question": "The gradient of the curve y = mx2 + 3x - 1 at the point (-1, 1) is 9. Find the value of m",
+    "options": {
+      "a": "- 3",
+      "b": "3",
+      "c": "−5"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 467,
+    "question": "If kx2 is a term in the binomial expansion of (1 - 2x)4, find the value of k.",
+    "options": {
+      "a": "-24",
+      "b": "-8",
+      "c": "8"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 468,
+    "question": "A body of mass 42 kg increases its speed from 15 ms−1 to 43 ms−1 in 12 seconds. Find the force acting on the body.",
+    "options": {
+      "a": "203N",
+      "b": "150N",
+      "c": "98N"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 469,
+    "question": "Given that M and N are two sets. Which of the following is the same as (M ∩ N)'?",
+    "options": {
+      "a": "M' ∩ N'",
+      "b": "M' U N",
+      "c": "M ∩ N'"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 470,
+    "question": "A particle starts from rest accelerates at 4ms−2. Find the distance covered after 4 seconds.",
+    "options": {
+      "a": "12 m",
+      "b": "14 m",
+      "c": "18 m"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 471,
+    "question": "A particle of mass 40 kg is kept on a smooth plane inclined at an angle of 30º to the horizontal by a force up the plane. find, correct to one decimal place, the magnitude of the normal reaction of the plane of the particle.[Take g = 10 ms−2]",
+    "options": {
+      "a": "146.0N",
+      "b": "200.6N",
+      "c": "346.4N"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 472,
+    "question": "The point P(-3, 5) lies on a line which is perpendicular to 2x - 4y + 3 = 0. Find the equation of the line.",
+    "options": {
+      "a": "y - 2x - 11 = 0",
+      "b": "y - 2x - 1 = 0",
+      "c": "y + 2x + 1 = 0"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 473,
+    "question": "Find the coefficient of y2 in the binomial expansion of (y - 2x)5.",
+    "options": {
+      "a": "80x3",
+      "b": "80x2",
+      "c": "- 80x2"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 474,
+    "question": "How many three-digit numbers can be formed from the digits 2, 3, 4, 5, 6, 7, and 8 if repetition is not allowed?",
+    "options": {
+      "a": "420",
+      "b": "210",
+      "c": "120"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 475,
+    "question": "5) (2\nm) = 2(12\n14.5), find the value of m.",
+    "options": {
+      "a": "5",
+      "b": "4",
+      "c": "3"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 476,
+    "question": "A body of mass 80 kg moving with a velocity of 25 ) ms−1 collides with another moving in the opposite direction at 10 ms−1. After collision, both bodies moved with a common velocity of 12.8 ms−1. Calculate, correct to the nearest whole number, the mass of the second body.",
+    "options": {
+      "a": "33 kg",
+      "b": "38 kg",
+      "c": "43 kg"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 477,
+    "question": "In how many ways can 12 people be seated on a bench if only 5 spaces are available?",
+    "options": {
+      "a": "95040",
+      "b": "11880",
+      "c": "792"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 478,
+    "question": "The mean of four numbers is 5 and the mean of another three numbers is 12. Find the mean of the seven numbers.",
+    "options": {
+      "a": "10",
+      "b": "9",
+      "c": "8"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 479,
+    "question": "Find, correct to the nearest degree, the acute angle between 3x - y - 5 = 0, and 7x - y - 3 = 0",
+    "options": {
+      "a": "100",
+      "b": "110",
+      "c": "240"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 480,
+    "question": "The gradient of a curve is given by 3x2 - 8x + 2. If the curve passes through P(0, 4), find the equation of the curve.",
+    "options": {
+      "a": "y = x3 - 4x2 + 2x + 4",
+      "b": "y = x3 - 4x2 + 2x + 2",
+      "c": "y = 3x3 - 4x2 + 2x + 4"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 481,
+    "question": "Given that y = 2x - 1 and Δx = 0.1, find Δ y",
+    "options": {
+      "a": "0.20",
+      "b": "0.15",
+      "c": "0.10"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 482,
+    "question": "The scores of some students in a class test are 4, 6, 1, 8, 9, 5, and 2. Calculate, correct to one decimal place, the mean deviation of their scores.",
+    "options": {
+      "a": "2.3",
+      "b": "2.7",
+      "c": "5.0"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 483,
+    "question": "The line x + y + 4 = 0 makes an angle of θ with the x-axis. Find the value of θ",
+    "options": {
+      "a": "3150",
+      "b": "2250",
+      "c": "1350"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 484,
+    "question": "The parents of 7 out of every 10 students in a class are farmers. If 12 students were selected at random, find the probability that the parents of 8 of them will be farmers.",
+    "options": {
+      "a": "0.0078",
+      "b": "0.0231",
+      "c": "0.0780"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 485,
+    "question": "In a truth table, if p is true and q is false, which of the following notations is false",
+    "options": {
+      "a": "[(p ⇒ q) ^ q] ⇒ q",
+      "b": "[(p ⇒ q) ^ q] ⇔ q",
+      "c": "[(p ⇒ q) ^ q] ^ q"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 486,
+    "question": "Find the sum of the first 20 terms of the sequences, -7, - 3, 1, . . . . .",
+    "options": {
+      "a": "620",
+      "b": "660",
+      "c": "690"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 487,
+    "question": "If P = {x:1 ≤ x ≤ 6} and Q = {x: 2 < x < 9 },where x ∈ R, find P ∩ Q.",
+    "options": {
+      "a": "{x:1 ≤ x < 6}",
+      "b": "{x:2 < x < 6}",
+      "c": "{x:2 ≤ x ≤ 6}"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 488,
+    "question": "If (x - 3)is a factor of 2x3 + 3x2 - 17x - 30, find the remaining factors.",
+    "options": {
+      "a": "(2x-5)(x-2)",
+      "b": "(2x+5)(x-2)",
+      "c": "(2x-5)(x+2)"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 489,
+    "question": "Two functions f and g are defined by f:x → 3x - 1, g: x → 2x3, find fg(- 2).",
+    "options": {
+      "a": "-9",
+      "b": "-47",
+      "c": "-49"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 490,
+    "question": "Find the coefficient of x4 in the binomial expansion (1 - 2x)6",
+    "options": {
+      "a": "240",
+      "b": "-240",
+      "c": "-320"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 491,
+    "question": "Find the equation of the line passing through (0, -1) and parallel to the y-axis",
+    "options": {
+      "a": "y = -1",
+      "b": "x=-1",
+      "c": "y=0"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 492,
+    "question": "The roots of the equation 2x2 + kx + 5 = 0 are α and β, where k is a constant. If α2 + β2 = -1, find the values of k",
+    "options": {
+      "a": "±2",
+      "b": "±4",
+      "c": "±16"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 493,
+    "question": "Find the sum of the exponential series 96 + 24 + 6 +......",
+    "options": {
+      "a": "128",
+      "b": "72",
+      "c": "144"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 494,
+    "question": "Evaluate limx→1 \n1−x\n\n\nx2−3x+2",
+    "options": {
+      "a": "0",
+      "b": "1",
+      "c": "-1"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 495,
+    "question": "The mean age of n men in a club is 50 years. Two men aged 55 and 63 left the club, and the mean age reduced by 1 year. Find the value of n",
+    "options": {
+      "a": "30",
+      "b": "14",
+      "c": "18"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 496,
+    "question": "Simplify 8n x 22n + 43n",
+    "options": {
+      "a": "21−n",
+      "b": "2n+1",
+      "c": "2n"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 497,
+    "question": "A particle of mass 2.5kg is moving at a speed of 12 ms−1. If a force of magnitude 10N acts against it, find how long it takes to come to rest.",
+    "options": {
+      "a": "4.0s",
+      "b": "1.5s",
+      "c": "3.0s"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 498,
+    "question": "The equation of the line of best fit for variable x and y is y = 19.33 + 0.42x, where x is the independent variable. Find y when x =15",
+    "options": {
+      "a": "25.63",
+      "b": "38.23",
+      "c": "19.74"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 499,
+    "question": "A force of 32 newtons is applied to an object of mass m kg, which is at rest on a smooth horizontal surface. if acceleration produced is 8ms−2, find the value of m",
+    "options": {
+      "a": "6",
+      "b": "4",
+      "c": "12"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 500,
+    "question": "Find the coordinate of the point on the curve y = x2 + 4x - 2, where the gradient is zero",
+    "options": {
+      "a": "(-2,-2)",
+      "b": "(-2,-6)",
+      "c": "(-2,10)"
+    },
+    "year_id": "2019"
+  },
+  {
+    "id": 501,
+    "question": "find the least value of the function f(x)= 3x2 + 18x + 32",
+    "options": {
+      "a": "4",
+      "b": "2",
+      "c": "5"
+    },
+    "year_id": "2020"
+  },
+  {
+    "id": 502,
+    "question": "A force of 32N is applied to an object of mass mkg, which is at rest on a smooth horizontal surface. If the acceleration produced is 8ms−2, find the value of m",
+    "options": {
+      "a": "16",
+      "b": "6",
+      "c": "12"
+    },
+    "year_id": "2020"
+  },
+  {
+    "id": 503,
+    "question": "4||6\np|=|3\n−26|  Find p",
+    "options": {
+      "a": "4",
+      "b": "-3",
+      "c": "-5"
+    },
+    "year_id": "2020"
+  },
+  {
+    "id": 504,
+    "question": "The mean and median of integers x,y, z, and t are 5 and z, respectively. If x< y< z< t and y = 4. Find (x + t)",
+    "options": {
+      "a": "11",
+      "b": "10",
+      "c": "12"
+    },
+    "year_id": "2020"
+  },
+  {
+    "id": 505,
+    "question": "A lift moving with a uniform acceleration of 5 ms−2 carries a body of mass p kg. If the reaction on the floor is 480N, find the value of p [take g =10ms−1]",
+    "options": {
+      "a": "48",
+      "b": "64",
+      "c": "32"
+    },
+    "year_id": "2020"
+  },
+  {
+    "id": 506,
+    "question": "Calculate correct to one decimal place, the angle between 5i + 12j and -2i + 3J",
+    "options": {
+      "a": "56.3o",
+      "b": "54.8o",
+      "c": "66.4o"
+    },
+    "year_id": "2020"
+  },
+  {
+    "id": 507,
+    "question": "A particle is projected vertically upward from a height 45 metres above the ground with a velocity of 40m/s. How long does it takes to hit the ground?",
+    "options": {
+      "a": "9s",
+      "b": "1s",
+      "c": "3s"
+    },
+    "year_id": "2020"
+  },
+  {
+    "id": 508,
+    "question": "N act along the sides AB, BC, CD, and DA, respectively. Find in Newton, the magnitude of the resultant of the force.",
+    "options": {
+      "a": "11.05",
+      "b": "14.11",
+      "c": "12.06"
+    },
+    "year_id": "2020"
+  }
+]
