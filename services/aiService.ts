@@ -2,13 +2,17 @@ import OpenAI from "openai";
 import { ExamType, Subject, Question } from "../types";
 import { fallbackData } from "./fallbackData";
 
+// SECURITY NOTE: We use a placeholder key here because the actual API authentication
+// is handled by our server-side proxy at /api/nvidia. The proxy overwrites the
+// Authorization header with the real NV_API_KEY from the environment, ensuring
+// that the secret key is never exposed to the client-side bundle.
 const openai = new OpenAI({
-    apiKey: 'pk-this-is-a-placeholder-the-proxy-handles-auth',
+    apiKey: 'pk-placeholder-the-proxy-handles-auth',
     baseURL: typeof window !== 'undefined' ? `${window.location.origin}/api/nvidia/v1` : "/api/nvidia/v1",
     dangerouslyAllowBrowser: true // Required for frontend usage
 });
 
-const PROFESSOR_API_KEY = "pk-this-is-a-placeholder-the-proxy-handles-auth";
+const PROFESSOR_API_KEY = "pk-placeholder-the-proxy-handles-auth";
 const PROFESSOR_MODELS = [
     "deepseek-ai/deepseek-v3.2",
     "minimax/minimax-m2.1",

@@ -33,7 +33,11 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
 
       // Handle Admin Account via environment variable
       const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
-      const isAdminAccount = adminEmail && formData.email === adminEmail;
+      if (!adminEmail) {
+        console.warn('VITE_ADMIN_EMAIL environment variable is not set. Admin login disabled.');
+      }
+
+      const isAdminAccount = adminEmail && formData.email.trim() === adminEmail.trim();
 
       if (isAdminAccount) {
         let adminUser = users.find((u: any) => u.email === adminEmail);

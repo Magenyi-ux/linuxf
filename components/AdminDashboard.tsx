@@ -40,7 +40,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     setError('');
     try {
       // Backend data (Secured with Basic Auth)
-      const credentials = btoa(`${adminEmail.trim()}:${adminPass.trim()}`);
+      // Robust base64 encoding for browser
+      const credentials = btoa(unescape(encodeURIComponent(`${adminEmail.trim()}:${adminPass.trim()}`)));
       const response = await fetch('/api/admin/logs', {
         headers: {
           'Authorization': `Basic ${credentials}`
@@ -63,7 +64,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         const savedUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
         setGlobalUsage(savedUsage);
       } else {
-        setError('Invalid admin credentials or unauthorized access');
+        const data = await response.json().catch(() => ({}));
+        if (response.status === 401) {
+          setError('Invalid admin credentials.');
+        } else if (response.status === 500) {
+          setError('Server configuration error. Admin credentials not set on backend.');
+        } else {
+          setError(data.error || 'Access denied. Unauthorized.');
+        }
         setIsAuthenticated(false);
       }
     } catch (err) {
