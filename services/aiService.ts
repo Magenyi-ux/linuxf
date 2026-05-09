@@ -1,6 +1,7 @@
 import OpenAI from "openai";
 import { ExamType, Subject, Question } from "../types";
 import { fallbackData } from "./fallbackData";
+import { getLocalQuestions } from "./localQuestions";
 
 const openai = new OpenAI({
     apiKey: 'pk-this-is-a-placeholder-the-proxy-handles-auth',
@@ -69,6 +70,13 @@ export const fetchExamQuestions = async (
   year: string,
   count: number = 10
 ): Promise<{ questions: Question[], sources: string[] }> => {
+  // 1. Try Local Question Bank (JSON files)
+  const localQuestions = getLocalQuestions(subject, year, count);
+  if (localQuestions && localQuestions.questions.length > 0) {
+      return localQuestions;
+  }
+
+  // 2. Try Hardcoded fallbackData
   if (fallbackData[examType]?.[subject]?.[year]) {
       return {
           questions: fallbackData[examType][subject][year],
@@ -76,6 +84,7 @@ export const fetchExamQuestions = async (
       };
   }
 
+  // 3. Fallback to AI Generation
   const model = "meta/llama3-8b-instruct";
 
   const yearContext = year === 'Random'
