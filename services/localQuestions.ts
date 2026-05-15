@@ -15,6 +15,8 @@ interface RawQuestion {
     [key: string]: string | undefined;
   };
   year_id: string;
+  correctOptionIndex?: number;
+  explanation?: string;
 }
 
 const subjectToFilename: Record<string, string> = {
@@ -104,8 +106,8 @@ const processRawData = (
       id: `local_${subject.toLowerCase().replace(/\s+/g, '_')}_${q.id}`,
       text: q.question,
       options: optionsArray,
-      correctOptionIndex: 0, // Placeholder as per requirement
-      explanation: "", // Placeholder as per requirement
+      correctOptionIndex: q.correctOptionIndex ?? 0,
+      explanation: q.explanation ?? "",
     };
   });
 
