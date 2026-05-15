@@ -16,8 +16,7 @@ Yesterday we finished up to index 1,000 of the Commerce subject. Today, please:
 ---
 
 **Current Progress:**
-- **Commerce:** 0 - 1,000 (DONE)
-- **Commerce:** 1,001 - 2,083 (PENDING)
+- **Commerce:** 0 - 2,083 (DONE)
 - **Economics:** 0 - 3,250+ (PENDING)
 - **English Language:** 0 - 6,000+ (PENDING)
 - ... (Other subjects)
@@ -38,8 +37,7 @@ Today, please:
 4. Run the script and verify a few samples."
 
 **Current Progress (Local JSONs):**
-- **Commerce:** 1 - 1,000 (DONE - Verified Batch 1)
-- **Commerce:** 1,001 - 2,083 (PENDING)
+- **Commerce:** 1 - 2,083 (DONE - Fully Verified with Diagrams)
 - **Economics:** 0 - 1,692 (Placeholder)
 - **English Language:** 0 - 3,491 (Placeholder)
 - ... (Other subjects)
