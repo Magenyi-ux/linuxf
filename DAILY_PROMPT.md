@@ -38,7 +38,8 @@ Today, please:
 4. Run the script and verify a few samples."
 
 **Current Progress (Local JSONs):**
-- **Commerce:** 0 - 2,083 (Placeholder)
+- **Commerce:** 1 - 1,000 (DONE - Verified Batch 1)
+- **Commerce:** 1,001 - 2,083 (PENDING)
 - **Economics:** 0 - 1,692 (Placeholder)
 - **English Language:** 0 - 3,491 (Placeholder)
 - ... (Other subjects)
