@@ -4,6 +4,8 @@ import { MessageCircle, X, Send, Bot, User, Minimize2, Maximize2, RotateCcw, Ima
 import { createTutorChatSession } from '../services/aiService';
 import { trackEvent } from '../services/analytics';
 import { MathText } from './MathText';
+import { KnowledgeReport } from './KnowledgeReport';
+import { initKnowledgeDB, parseCommand, addTopic, addUnit, saveKnowledgeDB } from '../services/knowledgeService';
 
 interface ChatBotProps {
   showChatBot: boolean;
@@ -24,8 +26,16 @@ export const ChatBot: React.FC<ChatBotProps> = ({
   const [position, setPosition] = useState(savedPosition || { x: -1, y: -1 });
   const [isOverHideZone, setIsOverHideZone] = useState(false);
   const dragRef = useRef<{ startX: number, startY: number, initialX: number, initialY: number } | null>(null);
-  const [messages, setMessages] = useState<{ role: 'user' | 'model'; content: string }[]>([
-    { role: 'model', content: "Hello! I'm **Professor**, your AI study tutor. How can I help you prepare for your exams today?" }
+  const [messages, setMessages] = useState<{
+    role: 'user' | 'model';
+    content: string;
+    report?: any;
+    isSearch?: boolean;
+    searchResults?: string[];
+    canSave?: boolean;
+    topicName?: string;
+  }[]>([
+    { role: 'model', content: "Hello! I'm **Professor**, your AI study tutor. How can I help you prepare for your exams today? \n\n*Tip: Try power commands like `/explain optics` or `/formula gravity`.*" }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -62,6 +72,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({
   useEffect(() => {
     if (isOpen) {
       trackEvent('feature_used', { name: 'chatbot_open' });
+      initKnowledgeDB().catch(console.error);
       if (!chatSessionRef.current) {
         chatSessionRef.current = createTutorChatSession();
       }
@@ -164,10 +175,35 @@ export const ChatBot: React.FC<ChatBotProps> = ({
     }
   };
 
-  const handleSend = async () => {
-    if ((!input.trim() && !selectedImage) || isLoading) return;
+  const handleSaveToDB = async (msgIndex: number) => {
+    const msg = messages[msgIndex];
+    if (!msg.topicName) return;
 
-    const userMessage = input.trim();
+    try {
+        addTopic({
+            name: msg.topicName.toLowerCase().replace(/\s+/g, '_'),
+            subject: 'General',
+            coverage: 100
+        });
+        addUnit({
+            topic: msg.topicName.toLowerCase().replace(/\s+/g, '_'),
+            type: 'definition',
+            content: msg.content
+        });
+        await saveKnowledgeDB();
+
+        setMessages(prev => prev.map((m, i) => i === msgIndex ? { ...m, canSave: false } : m));
+        alert("Knowledge saved to Core!");
+    } catch (e) {
+        console.error("Save failed", e);
+    }
+  };
+
+  const handleSend = async (overrideMessage?: string) => {
+    const messageToProcess = overrideMessage || input;
+    if ((!messageToProcess.trim() && !selectedImage) || isLoading) return;
+
+    const userMessage = messageToProcess.trim();
     const imageToUpload = selectedImage ? selectedImage.split(',')[1] : undefined;
 
     setInput('');
@@ -179,6 +215,37 @@ export const ChatBot: React.FC<ChatBotProps> = ({
             content: selectedImage ? `[Image Uploaded] ${userMessage}` : userMessage
         }
     ]);
+
+    // Handle Knowledge OS Commands
+    if (userMessage.startsWith('/')) {
+        const result = parseCommand(userMessage);
+        if (result) {
+            if (result.error) {
+                setMessages(prev => [...prev, {
+                    role: 'model',
+                    content: `⚠️ ${result.error}\n\nFalling back to AI research...`
+                }]);
+                // Continue to AI fallback
+            } else if (result.type === 'search') {
+                setMessages(prev => [...prev, {
+                    role: 'model',
+                    content: `Search results for "${result.topic}":`,
+                    isSearch: true,
+                    searchResults: result.results
+                }]);
+                return;
+            } else {
+                setMessages(prev => [...prev, {
+                    role: 'model',
+                    content: `Knowledge Core match found for **${result.topic}**.`,
+                    report: result
+                }]);
+                trackEvent('feature_used', { name: 'knowledge_command', command: result.command });
+                return;
+            }
+        }
+    }
+
     setIsLoading(true);
 
     try {
@@ -194,7 +261,16 @@ export const ChatBot: React.FC<ChatBotProps> = ({
       const result = await chatSessionRef.current.sendMessage(userMessage || "Please analyze this image.", imageToUpload);
       const responseText = result.response.text();
 
-      setMessages(prev => [...prev, { role: 'model', content: responseText }]);
+      // Check if this looks like a definition or explanation for a topic
+      const topicMatch = userMessage.match(/what is ([\w\s]+)/i) || userMessage.match(/explain ([\w\s]+)/i);
+      const topicName = topicMatch ? topicMatch[1] : undefined;
+
+      setMessages(prev => [...prev, {
+        role: 'model',
+        content: responseText,
+        canSave: !!topicName,
+        topicName: topicName
+      }]);
     } catch (error) {
       console.error("Chat failed:", error);
       setMessages(prev => [...prev, { role: 'model', content: "Sorry, I'm having trouble connecting right now. Please check your internet or try again later." }]);
@@ -305,6 +381,36 @@ export const ChatBot: React.FC<ChatBotProps> = ({
                   </div>
                   <div className={`p-4 rounded-2xl text-sm font-medium leading-relaxed shadow-sm ${msg.role === 'user' ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 border border-gray-100'}`}>
                     <MathText text={msg.content} />
+                    {msg.report && (
+                      <KnowledgeReport
+                        {...msg.report}
+                      />
+                    )}
+                    {msg.canSave && (
+                        <button
+                            onClick={() => handleSaveToDB(i)}
+                            className="mt-3 flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-green-600 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-green-100 transition-colors border border-green-100"
+                        >
+                            <RotateCcw className="w-3 h-3 rotate-180" /> Save to Knowledge Core
+                        </button>
+                    )}
+                    {msg.isSearch && msg.searchResults && (
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {msg.searchResults.length > 0 ? msg.searchResults.map((res, idx) => (
+                          <button
+                            key={idx}
+                            onClick={() => {
+                              handleSend(`/explain ${res}`);
+                            }}
+                            className="px-3 py-1.5 bg-primary-50 text-primary-600 rounded-lg text-xs font-bold hover:bg-primary-100 transition-colors"
+                          >
+                            {res}
+                          </button>
+                        )) : (
+                          <span className="text-xs text-gray-400 italic">No topics found.</span>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
