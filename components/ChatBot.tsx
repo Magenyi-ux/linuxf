@@ -24,7 +24,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({
   const [position, setPosition] = useState(savedPosition || { x: -1, y: -1 });
   const [isOverHideZone, setIsOverHideZone] = useState(false);
   const dragRef = useRef<{ startX: number, startY: number, initialX: number, initialY: number } | null>(null);
-  const [messages, setMessages] = useState<{ role: 'user' | 'model'; content: string }[]>([
+  const [messages, setMessages] = useState<{ role: 'user' | 'model'; content: string; reasoning?: string }[]>([
     { role: 'model', content: "Hello! I'm **Professor**, your AI study tutor. How can I help you prepare for your exams today?" }
   ]);
   const [input, setInput] = useState('');
@@ -193,8 +193,9 @@ export const ChatBot: React.FC<ChatBotProps> = ({
 
       const result = await chatSessionRef.current.sendMessage(userMessage || "Please analyze this image.", imageToUpload);
       const responseText = result.response.text();
+      const reasoning = result.response.reasoning ? result.response.reasoning() : undefined;
 
-      setMessages(prev => [...prev, { role: 'model', content: responseText }]);
+      setMessages(prev => [...prev, { role: 'model', content: responseText, reasoning }]);
     } catch (error) {
       console.error("Chat failed:", error);
       setMessages(prev => [...prev, { role: 'model', content: "Sorry, I'm having trouble connecting right now. Please check your internet or try again later." }]);
@@ -303,8 +304,21 @@ export const ChatBot: React.FC<ChatBotProps> = ({
                   <div className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm ${msg.role === 'user' ? 'bg-primary-100 text-primary-600' : 'bg-white text-gray-400 border border-gray-100'}`}>
                     {msg.role === 'user' ? <User className="w-4 h-4" /> : <Bot className="w-4 h-4" />}
                   </div>
-                  <div className={`p-4 rounded-2xl text-sm font-medium leading-relaxed shadow-sm ${msg.role === 'user' ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 border border-gray-100'}`}>
-                    <MathText text={msg.content} />
+                  <div className={`flex flex-col gap-2 max-w-full ${msg.role === 'user' ? 'items-end' : 'items-start'}`}>
+                    {msg.reasoning && (
+                      <details className="w-full bg-gray-100/50 rounded-xl overflow-hidden border border-gray-200/50 group">
+                        <summary className="px-4 py-2 text-[10px] font-bold text-gray-500 cursor-pointer hover:bg-gray-200/50 transition-colors list-none flex items-center gap-2">
+                          <div className="w-1.5 h-1.5 bg-primary-500 rounded-full animate-pulse"></div>
+                          PROFESSOR'S THINKING PROCESS
+                        </summary>
+                        <div className="px-4 pb-3 text-xs text-gray-600 font-normal italic leading-relaxed border-t border-gray-200/30 pt-2">
+                          <MathText text={msg.reasoning} />
+                        </div>
+                      </details>
+                    )}
+                    <div className={`p-4 rounded-2xl text-sm font-medium leading-relaxed shadow-sm w-full ${msg.role === 'user' ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 border border-gray-100'}`}>
+                      <MathText text={msg.content} />
+                    </div>
                   </div>
                 </div>
               </div>
