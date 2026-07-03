@@ -9,18 +9,12 @@ const openai = new OpenAI({
     dangerouslyAllowBrowser: true // Required for frontend usage
 });
 
-const PROFESSOR_API_KEY = "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";
 const PROFESSOR_MODELS = [
-    "deepseek-ai/deepseek-v3.2",
-    "minimax/minimax-m2.1",
-    "thudm/glm-4.7",
-    "moonshotai/kimi-k2.5",
-    "mistralai/devstral-2",
-    "stepfun/step-3.5-flash",
+    "z-ai/glm-5.2",
 ];
 
 const professorOpenAI = new OpenAI({
-    apiKey: PROFESSOR_API_KEY,
+    apiKey: 'pk-this-is-a-placeholder-the-proxy-handles-auth',
     baseURL: typeof window !== 'undefined' ? `${window.location.origin}/api/nvidia/v1` : "/api/nvidia/v1",
     dangerouslyAllowBrowser: true
 });
@@ -85,7 +79,7 @@ export const fetchExamQuestions = async (
   }
 
   // 3. Fallback to AI Generation
-  const model = "meta/llama3-8b-instruct";
+  const model = "z-ai/glm-5.2";
 
   const yearContext = year === 'Random'
     ? "randomly selected from various past years (2010-2023)"
@@ -179,6 +173,8 @@ export const createTutorChatSession = (initialContext?: string) => {
       // Randomize the order of models for load balancing/variety
       const shuffledModels = [...PROFESSOR_MODELS].sort(() => Math.random() - 0.5);
 
+      let reasoningContent = "";
+
       // Failover logic: Try models one by one
       for (const model of shuffledModels) {
           try {
@@ -186,10 +182,18 @@ export const createTutorChatSession = (initialContext?: string) => {
               const response = await professorOpenAI.chat.completions.create({
                   model: model,
                   messages: history as any,
-                  temperature: 0.7,
-                  max_tokens: 1024,
-              });
+                  temperature: 1,
+                  max_tokens: 16384,
+                  extra_body: {
+                    "chat_template_kwargs": {
+                      "enable_thinking": true,
+                      "clear_thinking": false
+                    }
+                  }
+              } as any);
               responseText = response.choices[0]?.message?.content || "";
+              reasoningContent = (response.choices[0]?.message as any)?.reasoning_content || "";
+
               if (responseText) break; // Success!
           } catch (err) {
               console.warn(`Model ${model} failed, trying next...`, err);
@@ -205,7 +209,8 @@ export const createTutorChatSession = (initialContext?: string) => {
 
       return {
         response: {
-          text: () => responseText
+          text: () => responseText,
+          reasoning: () => reasoningContent
         }
       };
     }

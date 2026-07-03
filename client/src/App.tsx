@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import { ChatBot } from "components_shared/ChatBot";
 
 
 function Router() {
@@ -33,6 +34,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router />
+          <ChatBot showChatBot={true} savedPosition={null} onPositionChange={() => {}} onHide={() => {}} />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
