@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Contour map with a hill</title>
+  <desc id="desc">Concentric contour lines are close together on one side and wider apart on the other side.</desc>
+  <rect width="720" height="420" rx="28" fill="#fffbeb"/>
+  <path d="M90 120 C180 55 300 65 365 125 C430 185 530 190 630 125" fill="none" stroke="#92400e" stroke-width="5"/>
+  <path d="M90 160 C180 100 275 105 350 155 C430 210 530 225 630 160" fill="none" stroke="#a16207" stroke-width="5"/>
+  <path d="M90 205 C190 155 275 150 345 190 C430 240 535 255 630 205" fill="none" stroke="#b45309" stroke-width="5"/>
+  <path d="M110 255 C195 215 270 208 340 235 C430 275 530 290 610 250" fill="none" stroke="#c2410c" stroke-width="5"/>
+  <path d="M145 305 C220 275 275 270 340 280 C410 295 485 315 565 300" fill="none" stroke="#ea580c" stroke-width="5"/>
+  <path d="M245 340 C290 320 330 318 370 325 C405 332 440 340 480 335" fill="none" stroke="#f97316" stroke-width="5"/>
+  <path d="M300 370 C325 357 355 355 380 360 C400 364 420 367 440 365" fill="none" stroke="#fb923c" stroke-width="5"/>
+  <text x="316" y="215" font-family="Arial" font-size="25" font-weight="700" fill="#78350f">Hill</text>
+  <text x="84" y="392" font-family="Arial" font-size="21" fill="#78350f">Close contours = steep slope</text>
+  <text x="438" y="392" font-family="Arial" font-size="21" fill="#78350f">Wide contours = gentle slope</text>
+</svg>

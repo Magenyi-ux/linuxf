@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Vector components diagram</title>
+  <desc id="desc">A force vector F makes angle theta with the horizontal and has horizontal and vertical components.</desc>
+  <rect width="720" height="360" rx="28" fill="#f8fafc"/>
+  <line x1="90" y1="280" x2="625" y2="280" stroke="#334155" stroke-width="5"/>
+  <line x1="90" y1="280" x2="90" y2="55" stroke="#334155" stroke-width="5"/>
+  <line x1="90" y1="280" x2="535" y2="95" stroke="#2563eb" stroke-width="9"/>
+  <polygon points="535,95 503,98 520,126" fill="#2563eb"/>
+  <line x1="90" y1="280" x2="535" y2="280" stroke="#16a34a" stroke-width="7" stroke-dasharray="14 10"/>
+  <line x1="535" y1="280" x2="535" y2="95" stroke="#dc2626" stroke-width="7" stroke-dasharray="14 10"/>
+  <path d="M165 280 A75 75 0 0 1 160 249" fill="none" stroke="#0f172a" stroke-width="4"/>
+  <text x="548" y="89" font-family="Arial" font-size="28" font-weight="700" fill="#1d4ed8">F</text>
+  <text x="300" y="315" font-family="Arial" font-size="24" font-weight="700" fill="#15803d">Fₓ = F cos θ</text>
+  <text x="550" y="190" font-family="Arial" font-size="24" font-weight="700" fill="#b91c1c">Fᵧ</text>
+  <text x="145" y="260" font-family="Arial" font-size="22" fill="#0f172a">θ</text>
+  <text x="600" y="310" font-family="Arial" font-size="20" fill="#334155">x</text>
+  <text x="68" y="65" font-family="Arial" font-size="20" fill="#334155">y</text>
+</svg>
