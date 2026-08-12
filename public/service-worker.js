@@ -1,8 +1,11 @@
-const CACHE_NAME = "examply-cache-v1";
+const CACHE_NAME = "examply-cache-v2";
 const ASSETS_TO_CACHE = [
   "/",
   "/index.html",
-  "/manifest.json"
+  "/manifest.json",
+  "/question-assets/physics-vector.svg",
+  "/question-assets/biology-cell.svg",
+  "/question-assets/contour-map.svg"
 ];
 
 // Install Event: Cache essential assets and skip waiting
