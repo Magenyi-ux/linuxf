@@ -5,9 +5,12 @@
     "options": {
       "a": "3, 4",
       "b": "±3",
-      "c": "±5"
+      "c": "±5",
+      "d": "±6"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: equal (repeated) roots for ax^2+bx+c=0 occur when discriminant D = b^2-4ac = 0. Here the equation is x^2 - kx + 9 = 0, so D = (-k)^2 - 4(1)(9) = k^2 - 36. Set k^2 - 36 = 0 => k^2 = 36 => k = ±6. Thus the correct values are ±6. Distractors: 3,4; ±3; ±5 are not solutions of k^2 = 36 (they give nonzero discriminant)."
   },
   {
     "id": 2,
@@ -15,9 +18,12 @@
     "options": {
       "a": "x<2",
       "b": "x≤2",
-      "c": "x=2"
+      "c": "x=2",
+      "d": "x≥2"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: domain of f(x)=√(4-2x) requires the radicand nonnegative: 4 - 2x ≥ 0. Solve: -2x ≥ -4 => x ≤ 2. So the domain is x ≤ 2. x<2 omits x=2 incorrectly; x=2 is only one point not the whole domain; x≥2 contradicts the inequality."
   },
   {
     "id": 3,
@@ -25,9 +31,12 @@
     "options": {
       "a": "-5",
       "b": "-3",
-      "c": "−"
+      "c": "−",
+      "d": "no solution"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Interpretation and reasoning: if this continues from the previous item where f(x)=√(4-2x), then f(x)≥0 for all x in the domain, so there is no x with f(x) = -2. Thus f^{-1}(-2) (or f1(-2) meaning the inverse value) does not exist. The dash option indicates 'no value/undefined' and is correct. The numeric choices -5 and -3 are impossible because the square-root function never attains negative outputs."
   },
   {
     "id": 4,
@@ -35,9 +44,12 @@
     "options": {
       "a": "-320",
       "b": "-240",
-      "c": "240"
+      "c": "240",
+      "d": "320"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: binomial expansion coefficient. The coefficient of x^4 in (1 - 2x)^6 is C(6,4)*(1)^{6-4}*(-2)^4. Compute C(6,4)=15 and (-2)^4=16, so coefficient = 15*16 = 240. Negative signs in other options are incorrect because (-2)^4 is positive; -240 and -320 are sign or magnitude errors, and 320 has wrong magnitude."
   },
   {
     "id": 5,

@@ -8,7 +8,9 @@
       "c": "choice",
       "d": "output"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: In economics 'ends' are the goals or wants that people seek to satisfy. The quoted definition is Lionel Robbins' definition of economics: it studies the relationship between ends (wants) and scarce means with alternative uses. Thus 'ends' = wants. 'Resource' are means, 'choice' is a decision process, and 'output' is a result — none of these match 'ends'."
   },
   {
     "id": 2,
@@ -19,7 +21,9 @@
       "c": "efficiency of the working population",
       "d": "industries which are becoming less important"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: Occupational distribution over time shows structural changes in employment across sectors. By comparing occupations across time we see which industries gain or lose workers, hence which industries are becoming less important. It does not directly measure population growth rate, labour force size, or overall efficiency (though indirect inferences are possible)."
   },
   {
     "id": 3,
@@ -30,7 +34,9 @@
       "c": "quantity of goods demanded",
       "d": "quantity of goods supplied"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: Price in a market is the outcome of demand and supply interaction. Given the choices, the most direct influence on price is the quantity demanded at different prices: changes in demand shift the demand schedule and thus affect equilibrium price. 'Supplier' or 'consumer' alone cannot determine market price; 'quantity supplied' also matters, but many elementary tests that list only one side may emphasise demand's role. The best available choice here is 'quantity of goods demanded'."
   },
   {
     "id": 4,
@@ -41,7 +47,9 @@
       "c": "when MC = MR",
       "d": "when AC = AR"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: A firm maximizes profit where marginal cost (MC) equals marginal revenue (MR). At that point any small change in output would reduce profit. MC = AR or AC = AR are not profit-maximizing conditions; 'PC' is not a standard variable here. Therefore MC = MR is correct."
   },
   {
     "id": 5,
@@ -52,7 +60,9 @@
       "c": "what techniques of production to be adopted",
       "d": "equal distribution of goods and services"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: The basic economic problems are what to produce, how to produce, and for whom to produce. 'Equal distribution of goods and services' is a desirable social goal but not one of the fundamental allocation problems every economic system must solve; it is therefore not an economic problem in the usual listing."
   },
   {
     "id": 6,
@@ -63,7 +73,9 @@
       "c": "Traditional economy",
       "d": "Free Market economy"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: In a free market economy consumers drive demand and firms respond; consumer preferences determine what is produced, so the consumer is often called 'the king'. In planned or traditional economies consumers have less influence; mixed economies combine features."
   },
   {
     "id": 7,
@@ -74,7 +86,9 @@
       "c": "Financial organization",
       "d": "Social organization"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: The International Monetary Fund (IMF) is an international financial institution whose primary functions are to oversee the international monetary system and provide financial assistance to members. It is therefore classified as a financial organization, not primarily political, trade or social."
   },
   {
     "id": 8,
@@ -85,7 +99,9 @@
       "c": "Is parallel to X axis",
       "d": "Is parallel to Y axis"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: A normal (downward sloping) demand curve is typically convex to the origin (bowed toward the origin) in standard microeconomics, reflecting diminishing marginal utility and varying elasticity along the curve. It is not concave to the origin, nor horizontal (parallel to X) or vertical (parallel to Y)."
   },
   {
     "id": 9,
@@ -96,7 +112,9 @@
       "c": "A table showing the consumer demand on order of importance",
       "d": "The quantity of goods the consumer is prepared to buy"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: A demand schedule is a tabular presentation that shows the relationship between various prices and the corresponding quantities demanded per unit time. The first option is incomplete; the third and fourth options misstate the meaning (the schedule links price and quantity demanded)."
   },
   {
     "id": 10,
@@ -107,7 +125,9 @@
       "c": "Prevention of exploitation",
       "d": "Control of producer’s profit"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: Price controls can have advantages such as controlling inflation, preventing exploitation and limiting excessive profits. However 'distortion of the price mechanism' is a disadvantage, not an advantage. Thus it is the item that is not an advantage."
   },
   {
     "id": 11,
@@ -118,7 +138,9 @@
       "c": "Population",
       "d": "Price of other commodities"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: A change in demand (a shift of the demand curve) is caused by factors like income, tastes and fashions, and prices of related goods. 'Population' affects market size but may not change individual demand preferences per se; if the question concerns individual demand, population does not change an individual's demand curve. Given the options and common exam framing, 'Population' is the least direct cause of a change in demand per consumer and is selected here."
   },
   {
     "id": 12,
@@ -129,7 +151,9 @@
       "c": "Imported capital goods",
       "d": "Certain selected goods"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: Price control by government normally involves fixing maximum or minimum prices on certain selected goods (essential commodities) to protect consumers or producers. It is not a general rule limited to luxury, inferior, or imported capital goods specifically."
   },
   {
     "id": 13,
@@ -140,7 +164,9 @@
       "c": "Supplementary goods",
       "d": "Gifted goods"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: If a price increase for commodity A causes demand for commodity B to decrease, A and B are complements (goods consumed together). Substitutes would show demand for B increasing when A's price rises. 'Supplementary' and 'gifted' goods are not standard terms here."
   },
   {
     "id": 14,
@@ -151,7 +177,9 @@
       "c": "Price remains constant",
       "d": "Price is not given"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: When demand is inelastic (elasticity < 1), total revenue moves in the same direction as price. Therefore if price is reduced, total revenue falls. Raising the price would increase total revenue when demand is inelastic."
   },
   {
     "id": 15,
@@ -162,7 +190,9 @@
       "c": "Pounds sterling",
       "d": "Deutschemark"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 0,
+    "explanation": "Key concept: The US dollar is the primary reserve currency and the major currency used in IMF operations historically. The other currencies listed are not the main currency used for IMF credit and accounting."
   },
   {
     "id": 16,
@@ -173,7 +203,9 @@
       "c": "Kwara and Benue States",
       "d": "Rivers and Bendel States"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: Historically in Nigeria the major oil-producing states include Rivers and the old Bendel (now split into Edo and Delta). Thus the pair Rivers and Bendel (historical naming) is the best choice among the options."
   },
   {
     "id": 17,
@@ -184,7 +216,9 @@
       "c": "Give equal chances to indigenes and foreigners in making economic decisions in the country",
       "d": "Give industrial training to indigenes"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 0,
+    "explanation": "Key concept: The Nigerian indigenization decree aimed to increase local participation and ownership in key economic sectors so indigenes could participate fully in the country's economic activities. It was not primarily intended to 'drive away' foreigners or merely to provide training."
   },
   {
     "id": 18,
@@ -195,7 +229,9 @@
       "c": "Capitalist economy",
       "d": "Traditional economy"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: In a capitalist (market) economy most capital goods are privately owned by individuals and firms. A planned economy features state ownership of capital; a mixed economy combines both private and public ownership; traditional economy is based on customs."
   },
   {
     "id": 19,
@@ -206,7 +242,9 @@
       "c": "There is unlimited liability",
       "d": "Continuity is doubtful at the death of the proprietor"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: Characteristics of a sole proprietorship include the proprietor providing capital, being the boss, and bearing unlimited liability. Another commonly listed characteristic is that continuity is doubtful upon the proprietor's death (the business may not survive). Given the options, the item that is most often highlighted as a distinguishing (vulnerable) feature is the doubtful continuity at death; therefore it is treated here as the correct highlight relative to others."
   },
   {
     "id": 20,
@@ -217,7 +255,9 @@
       "c": "Enhances financial relationship among countries",
       "d": "Offer soft loans for educational and health services"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: The International Bank for Reconstruction and Development (IBRD, part of the World Bank) provides loans and credits for development projects including education and health. While it does enhance international financial relations generally, its principal importance to developing nations is the provision of (often concessionary) loans for development projects, so 'offer soft loans for educational and health services' best fits."
   },
   {
     "id": 21,
@@ -228,7 +268,9 @@
       "c": "The population grows at arithmetic progression while food production grows at geometric progression",
       "d": "People could be sent to ‘No man’s land’ when the population increases"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: Malthusian theory states population grows faster than the food supply, leading to checks like famine and disease. The precise claim is that population tends to grow geometrically while food grows arithmetically; option three reverses that and is incorrect. The chosen option captures the central comparative growth idea."
   },
   {
     "id": 22,
@@ -239,7 +281,9 @@
       "c": "Commercial Bills",
       "d": "Stock and Shares"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 0,
+    "explanation": "Key concept: For a commercial bank, the most liquid assets are those instantly convertible to cash: money at call and short notice. Treasury bills are also liquid but slightly less so; commercial bills and stock/shares are less liquid comparatively."
   },
   {
     "id": 23,
@@ -250,7 +294,9 @@
       "c": "It is the ration of price index of exports to imports",
       "d": "It is usually expressed as percentage"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: Terms of trade measure how many units of imports can be obtained per unit of exports — that is the rate at which exports exchange for imports. Although often expressed as a ratio or percentage of export and import price indices, the core meaning is the exchange rate between exports and imports, so option two is the clearest correct statement."
   },
   {
     "id": 24,
@@ -261,7 +307,9 @@
       "c": "In order to specialize, a country must have absolute advantage",
       "d": "The law is based on opportunity cost principle"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: Ricardo's law of comparative advantage states that countries should specialise in goods with the lowest opportunity cost (relative efficiency), not necessarily where they have an absolute advantage. The statement that a country must have absolute advantage to specialise contradicts the law, so it does not relate to comparative advantage."
   },
   {
     "id": 25,
@@ -272,7 +320,9 @@
       "c": "Availability of funds",
       "d": "Increased profit prospects"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: Factors that adversely affect expansion of production include market limitations. A limited size of the market restricts demand and thus prevents firms from expanding output profitably. Effective management, availability of funds and increased profit prospects support expansion, not hinder it."
   },
   {
     "id": 26,
@@ -283,7 +333,9 @@
       "c": "Services are exchanged",
       "d": "The same currency is used as the medium of exchange"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: International trade differs from domestic trade because different currencies are usually involved; the same currency being used is generally true of domestic trade but not of international trade. The other three items are similarities or features that can apply to both."
   },
   {
     "id": 27,
@@ -294,7 +346,9 @@
       "c": "Bank on which the cheque is drawn",
       "d": "Person who writes out the cheque"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: In cheque terminology the drawer is the person who writes and signs the cheque ordering the bank to pay. The payee is the one to be paid; the drawee is the bank. Therefore 'person who writes out the cheque' is correct."
   },
   {
     "id": 28,
@@ -305,7 +359,9 @@
       "c": "Building of damns",
       "d": "Building of habours"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: Capital expenditure (capital projects) includes long-term investments like roads, dams and harbours. 'Supply of electricity' typically refers to recurrent operating expenditure (provision of a service) rather than a one-off capital investment, so it is not classed as capital expenditure in this context."
   },
   {
     "id": 29,
@@ -316,7 +372,9 @@
       "c": "Refining",
       "d": "Marketing"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: OPEC (Organization of Petroleum Exporting Countries) coordinates oil production and marketing policies among member states to influence supply and price. It is not directly an exploring or refining body; its role best matches 'marketing' and coordination of crude oil policies."
   },
   {
     "id": 30,
@@ -327,7 +385,9 @@
       "c": "Fairly inelastic",
       "d": "Unitary elastic"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: Price elasticity of demand equals zero when demand is perfectly inelastic: quantity demanded does not change regardless of price. 'Fairly' elastic/inelastic and 'unitary' are other elasticity categories but do not correspond to a zero coefficient."
   },
   {
     "id": 31,
@@ -338,7 +398,9 @@
       "c": "Industries are producing below capacity",
       "d": "Firms compromising an industry are concentrated in one area"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: External economies of scale arise when firms in the same industry cluster geographically: shared suppliers, labour pools, and knowledge spillovers lower costs for all firms in the area. Scattered industries or individual firm expansion do not generate these external, industry-wide cost savings."
   },
   {
     "id": 32,
@@ -349,7 +411,9 @@
       "c": "The retailer",
       "d": "The consumer"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: If demand is inelastic, consumers' quantity demanded changes little when tax increases prices; therefore consumers bear most of the burden of an indirect tax (tax incidence falls largely on consumers). Producers bear less of the burden when demand is inelastic."
   },
   {
     "id": 33,
@@ -360,7 +424,9 @@
       "c": "Rubber, Cocoa, Coffee, Palm Kernel",
       "d": "Palm Oil, Palm Kernel, Sugarcane"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: Nigeria's current export crops historically include cocoa, rubber, coffee and palm kernel (and others). The option listing Rubber, Cocoa, Coffee, Palm Kernel best matches commonly cited export crops. Other lists either contain non-export staples or mix older/less accurate items."
   },
   {
     "id": 34,
@@ -371,7 +437,9 @@
       "c": "Fiscal policy",
       "d": "Internal policy"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: The imposition of high income tax is a fiscal policy tool (government taxation and spending) used to reduce aggregate demand. Monetary policy deals with money supply and interest rates; budgetary policy is related but fiscal policy is the standard term."
   },
   {
     "id": 35,
@@ -382,7 +450,9 @@
       "c": "Number of industries and land areas",
       "d": "Revenue derivable from an area"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 2,
+    "explanation": "Key concept: Revenue allocation formulas typically consider needs, population size and revenue derivable; the 'number of industries and land areas' is not a standard primary factor used for allocating revenue and is the least relevant option of the four."
   },
   {
     "id": 36,
@@ -393,7 +463,9 @@
       "c": "Average regularly spend on consumption",
       "d": "Total expenditure on consumption"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: Marginal propensity to consume (MPC) is defined as the change in consumption divided by the change in income (ΔC/ΔY). It measures the fraction of additional income that is consumed, not total or average consumption or a mere desire."
   },
   {
     "id": 37,
@@ -404,7 +476,9 @@
       "c": "Crops mainly for export",
       "d": "To feed the community around"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 0,
+    "explanation": "Key concept: Subsistence farming is production primarily for the farmer's own family consumption (immediate and extended household). It is not mainly for sale or export; feeding the wider community may occur but the defining feature is household consumption."
   },
   {
     "id": 38,
@@ -415,7 +489,9 @@
       "c": "Are never enough to share among consumers of goods and services",
       "d": "Required to meet our essential wants are unlimited"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 1,
+    "explanation": "Key concept: Scarcity in economics means resources needed to satisfy human wants are limited relative to those wants. The correct concise statement is that these resources are limited. The other options either overstate or misphrase the economic definition."
   },
   {
     "id": 39,
@@ -426,7 +502,9 @@
       "c": "Demand curve",
       "d": "Demand schedule"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: A table listing prices and the corresponding quantities demanded per unit time is called a demand schedule. A demand curve is the graphical representation; 'time series' and 'demand series' are not the standard term for that table."
   },
   {
     "id": 40,
@@ -437,7 +515,9 @@
       "c": "Homogeneity",
       "d": "Double coincidence of wants"
     },
-    "year_id": "2010"
+    "year_id": "2010",
+    "correctOptionIndex": 3,
+    "explanation": "Key concept: The main disadvantage of the barter system is the requirement of a double coincidence of wants — both parties must want what the other offers at the same time. Durability, divisibility and homogeneity are issues but not the greatest single disadvantage."
   },
   {
     "id": 41,
