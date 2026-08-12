@@ -64,6 +64,14 @@ const cleanAndParseJson = (text: string): any[] => {
     }
 };
 
+const isCompleteQuestion = (question: Partial<Question>): question is Omit<Question, "id"> => (
+  typeof question.text === "string" && question.text.trim().length > 0 &&
+  Array.isArray(question.options) && question.options.length === 4 &&
+  question.options.every((option) => typeof option === "string" && option.trim().length > 0) &&
+  typeof question.correctOptionIndex === "number" && question.correctOptionIndex >= 0 && question.correctOptionIndex <= 3 &&
+  typeof question.explanation === "string" && question.explanation.trim().length >= 20
+);
+
 export const fetchExamQuestions = async (
   examType: ExamType,
   subject: Subject,
@@ -78,10 +86,13 @@ export const fetchExamQuestions = async (
 
   // 2. Try Hardcoded fallbackData
   if (fallbackData[examType]?.[subject]?.[year]) {
-      return {
-          questions: fallbackData[examType][subject][year],
-          sources: ["Local Past Questions Bank"]
-      };
+      const completeFallbackQuestions = fallbackData[examType][subject][year].filter(isCompleteQuestion);
+      if (completeFallbackQuestions.length > 0) {
+        return {
+            questions: completeFallbackQuestions,
+            sources: ["Local Past Questions Bank"]
+        };
+      }
   }
 
   // 3. Fallback to AI Generation
@@ -129,10 +140,16 @@ export const fetchExamQuestions = async (
         throw new Error("No questions generated. Malformed AI response.");
     }
 
-    const questions = data.map((q, index) => ({
-        ...q,
+    const questions = data
+      .filter((question): question is Omit<Question, "id"> => isCompleteQuestion(question))
+      .map((question, index) => ({
+        ...question,
         id: Date.now() + index
-    }));
+      }));
+
+    if (questions.length === 0) {
+      throw new Error("The generated question set did not contain four complete options and a detailed explanation for any item.");
+    }
 
     return { questions, sources: ["AI Generated via NVIDIA NIM"] };
 

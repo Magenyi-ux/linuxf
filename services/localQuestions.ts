@@ -1,22 +1,35 @@
-import { Subject, Question } from "../types";
+import { Question, Subject } from "../types";
+import { visualQuestionsBySubject } from "./visualQuestions";
 
-// Import all JSON files from the questions directory
+// Import all JSON files from the questions directory.
 const questionFiles = import.meta.glob("./questions/*.json", { eager: true });
+
+type RawOptions = Record<string, string | undefined> | string[];
 
 interface RawQuestion {
   id: number | string;
-  question: string;
-  options: {
-    a?: string;
-    b?: string;
-    c?: string;
-    d?: string;
-    e?: string;
-    [key: string]: string | undefined;
-  };
-  year_id: string;
+  question?: string;
+  questionText?: string;
+  text?: string;
+  options?: RawOptions;
+  option_a?: string;
+  option_b?: string;
+  option_c?: string;
+  option_d?: string;
+  optionA?: string;
+  optionB?: string;
+  optionC?: string;
+  optionD?: string;
+  year_id?: string | number;
   correctOptionIndex?: number;
+  correctAnswer?: string;
+  answer?: string;
   explanation?: string;
+  solution?: string;
+  imageUrl?: string;
+  image_url?: string;
+  imageAlt?: string;
+  image_alt?: string;
 }
 
 const subjectToFilename: Record<string, string> = {
@@ -40,29 +53,62 @@ const subjectToFilename: Record<string, string> = {
   [Subject.ARABIC]: "arabic",
 };
 
-/**
- * Loads and adapts questions from local JSON files.
- */
+const optionKeys = ["a", "b", "c", "d", "A", "B", "C", "D"] as const;
+
+const extractOptions = (question: RawQuestion): string[] => {
+  if (Array.isArray(question.options)) {
+    return question.options.filter((value): value is string => typeof value === "string" && value.trim().length > 0).map((value) => value.trim());
+  }
+
+  if (question.options && typeof question.options === "object") {
+    return optionKeys
+      .map((key) => question.options?.[key])
+      .filter((value): value is string => typeof value === "string" && value.trim().length > 0)
+      .map((value) => value.trim());
+  }
+
+  return [
+    question.option_a,
+    question.option_b,
+    question.option_c,
+    question.option_d,
+    question.optionA,
+    question.optionB,
+    question.optionC,
+    question.optionD,
+  ].filter((value): value is string => typeof value === "string" && value.trim().length > 0).map((value) => value.trim()).slice(0, 4);
+};
+
+const parseCorrectOptionIndex = (question: RawQuestion): number | null => {
+  if (typeof question.correctOptionIndex === "number" && question.correctOptionIndex >= 0 && question.correctOptionIndex <= 3) {
+    return question.correctOptionIndex;
+  }
+
+  const rawAnswer = question.correctAnswer ?? question.answer;
+  if (typeof rawAnswer !== "string") return null;
+  const normalized = rawAnswer.trim().toUpperCase();
+  if (/^[A-D]$/.test(normalized)) return normalized.charCodeAt(0) - 65;
+  const numeric = Number(normalized);
+  return Number.isInteger(numeric) && numeric >= 0 && numeric <= 3 ? numeric : null;
+};
+
+/** Loads and adapts complete questions from local JSON files. */
 export const getLocalQuestions = (
   subject: Subject,
   year: string,
-  count: number = 10
+  count: number = 10,
 ): { questions: Question[]; sources: string[] } | null => {
   const filename = subjectToFilename[subject];
   if (!filename) return null;
 
-  // Try to find the file in the globbed imports
   const filePath = `./questions/${filename}_questions.json`;
-  const fileData = (questionFiles[filePath] as any)?.default;
+  const fileData = (questionFiles[filePath] as { default?: RawQuestion[] } | undefined)?.default;
 
   if (!fileData || !Array.isArray(fileData)) {
-    // Try fallback for myschool_economics
     if (subject === Subject.ECONOMICS) {
-       const altPath = `./questions/myschool_economics_questions.json`;
-       const altData = (questionFiles[altPath] as any)?.default;
-       if (altData && Array.isArray(altData)) {
-           return processRawData(altData, year, count, subject);
-       }
+      const altPath = "./questions/myschool_economics_questions.json";
+      const altData = (questionFiles[altPath] as { default?: RawQuestion[] } | undefined)?.default;
+      if (altData && Array.isArray(altData)) return processRawData(altData, year, count, subject);
     }
     return null;
   }
@@ -74,45 +120,35 @@ const processRawData = (
   data: RawQuestion[],
   year: string,
   count: number,
-  subject: Subject
-) => {
-  // Filter by year if not 'Random'
-  let filtered = year === "Random"
-    ? data
-    : data.filter((q) => q.year_id === year);
+  subject: Subject,
+): { questions: Question[]; sources: string[] } | null => {
+  const filtered = year === "Random" ? data : data.filter((question) => String(question.year_id ?? "") === String(year));
+  const visualQuestions = year === "Random" ? (visualQuestionsBySubject[subject] ?? []) : [];
+  if (filtered.length === 0 && visualQuestions.length === 0) return null;
 
-  if (filtered.length === 0) {
-      // If no questions for specific year, but we have data for the subject,
-      // maybe we should return some random ones anyway?
-      // The requirement says "prefer these local packs when a year is selected".
-      // If the year doesn't exist in the local pack, we might want to return null to fallback to AI.
-      return null;
-  }
+  const selected = [...filtered].sort(() => Math.random() - 0.5).slice(0, Math.max(0, count - visualQuestions.length));
+  const transformed: Question[] = selected.flatMap((question) => {
+    const options = extractOptions(question).slice(0, 4);
+    const correctOptionIndex = parseCorrectOptionIndex(question);
+    const explanation = (question.explanation ?? question.solution ?? "").trim();
+    const text = (question.question ?? question.questionText ?? question.text ?? "").trim();
 
-  // Shuffle and pick 'count'
-  const shuffled = [...filtered].sort(() => Math.random() - 0.5);
-  const selected = shuffled.slice(0, count);
+    // Never surface a malformed record: every quiz item must have four choices,
+    // a valid correct-answer index, and a meaningful explanation.
+    if (!text || options.length !== 4 || correctOptionIndex === null || explanation.length < 20) return [];
 
-  const transformed: Question[] = selected.map((q) => {
-    // Map options object to array
-    const optionsArray: string[] = [];
-    if (q.options.a) optionsArray.push(q.options.a);
-    if (q.options.b) optionsArray.push(q.options.b);
-    if (q.options.c) optionsArray.push(q.options.c);
-    if (q.options.d) optionsArray.push(q.options.d);
-    if (q.options.e) optionsArray.push(q.options.e);
-
-    return {
-      id: `local_${subject.toLowerCase().replace(/\s+/g, '_')}_${q.id}`,
-      text: q.question,
-      options: optionsArray,
-      correctOptionIndex: q.correctOptionIndex ?? 0,
-      explanation: q.explanation ?? "",
-    };
+    return [{
+      id: `local_${subject.toLowerCase().replace(/\s+/g, "_")}_${question.id}`,
+      text,
+      imageUrl: question.imageUrl ?? question.image_url,
+      imageAlt: question.imageAlt ?? question.image_alt ?? "Question illustration",
+      options,
+      correctOptionIndex,
+      explanation,
+    }];
   });
 
-  return {
-    questions: transformed,
-    sources: ["Local Question Bank (Vetted)"],
-  };
+  const combined = [...visualQuestions, ...transformed].slice(0, count);
+  if (combined.length === 0) return null;
+  return { questions: combined, sources: ["Local Question Bank (Vetted)", "Offline Visual Question Set"] };
 };
