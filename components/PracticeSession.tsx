@@ -117,7 +117,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
             <div className="mb-6 rounded-2xl overflow-hidden border border-gray-100 bg-gray-50 flex justify-center">
                 <img
                     src={currentQuestion.imageUrl}
-                    alt="Question Diagram"
+                    alt={currentQuestion.imageAlt ?? "Question illustration"}
                     className="max-h-[300px] object-contain"
                     onError={(e) => {
                         (e.target as HTMLImageElement).parentElement!.style.display = 'none';
@@ -160,15 +160,15 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
         ))}
       </div>
 
-      {/* Explanation Card (Study Mode Only) */}
-      {mode === 'STUDY' && showExplanation && (
+      {/* Explanation Card: shown after every answer in both study and test modes */}
+      {showExplanation && isAnswered && (
           <div className="mb-32 animate-fade-in-up">
               <div className="bg-gray-50 rounded-3xl p-10 border border-gray-100 relative overflow-hidden">
                   <div className="flex items-center gap-3 mb-6 relative z-10">
                       <div className="bg-primary-600 p-2.5 rounded-xl shadow-md">
                         <Lightbulb className="w-6 h-6 text-white" />
                       </div>
-                      <span className="font-bold text-gray-900 text-sm uppercase tracking-widest">Explanation</span>
+                      <span className="font-bold text-gray-900 text-sm uppercase tracking-widest">{mode === 'STUDY' ? 'Explanation' : 'Answer Review'}</span>
                   </div>
                   <div className="text-gray-700 leading-relaxed text-lg font-medium relative z-10 mb-6">
                       <MathText text={currentQuestion.explanation} />
