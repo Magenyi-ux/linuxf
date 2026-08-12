@@ -38,6 +38,7 @@ export interface Question {
   id: string | number;
   text: string;
   imageUrl?: string;
+  imageAlt?: string;
   options: string[];
   correctOptionIndex: number;
   explanation: string;

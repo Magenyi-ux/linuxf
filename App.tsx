@@ -339,13 +339,13 @@ const App: React.FC = () => {
       setLastScore(score);
       setLastTotal(total);
 
-      // Award XP: 10 XP per correct answer + 50 bonus for finishing
-      const xpGained = (score * 10) + 50;
+      // PWA-only reward: award XP for correct answers, not for merely finishing.
+      const xpGained = score * 10;
       setUserProfile(prev => ({
         ...prev,
         xp: prev.xp + xpGained,
         level: Math.floor((prev.xp + xpGained) / 1000) + 1,
-        streak: prev.streak + 1 // Simple streak increment for now
+        streak: score > 0 ? prev.streak + 1 : prev.streak
       }));
 
       // If we are in a book session, update the book's stats
