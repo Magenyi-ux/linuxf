@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_001",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the option that correctly completes the sentence: The basket of oranges ___ on the table.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The head noun of the subject is “basket”, which is singular. The prepositional phrase “of oranges” does not change the singular verb required."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_002",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Tense",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the bus arrived, Musa ___ for nearly an hour.",
+    "options": [
+      "has waited",
+      "had waited",
+      "waits",
+      "will wait"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The waiting happened before another past event, the bus arrival. The past perfect “had waited” correctly shows that earlier completed duration."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_003",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Article usage",
+    "contentLabel": "Original exam-style practice",
+    "text": "She bought ___ umbrella because rain was beginning to fall.",
+    "options": [
+      "a",
+      "the",
+      "an",
+      "no article"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "“Umbrella” begins with a vowel sound, so the indefinite article “an” is required. The spelling and sound both support this choice."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_004",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Prepositions",
+    "contentLabel": "Original exam-style practice",
+    "text": "The students were congratulated ___ their excellent performance.",
+    "options": [
+      "at",
+      "with",
+      "by",
+      "on"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The normal collocation is “congratulate someone on something”. The preposition “on” introduces the achievement for which the students are praised."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_005",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Pronouns",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the players brought ___ own water bottle.",
+    "options": [
+      "his or her",
+      "their",
+      "our",
+      "your"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With a singular distributive subject such as “each”, formal examination grammar uses a singular possessive pronoun: “his or her”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_006",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Question tags",
+    "contentLabel": "Original exam-style practice",
+    "text": "You have submitted the form, ___?",
+    "options": [
+      "have you",
+      "haven’t you",
+      "don’t you",
+      "didn’t you"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A positive present-perfect statement normally takes a negative tag. The auxiliary “have” is repeated in the tag, giving “haven’t you?”"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_007",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Reported speech",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ada said, “I am preparing for the test.” In reported speech, this becomes",
+    "options": [
+      "Ada said that I am preparing for the test.",
+      "Ada says that she is preparing for the test.",
+      "Ada said that she was preparing for the test.",
+      "Ada said that she has prepared for the test."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "When a present continuous statement is reported after a past reporting verb, it normally backshifts to past continuous and the pronoun changes to match Ada."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_008",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Passive voice",
+    "contentLabel": "Original exam-style practice",
+    "text": "The committee will announce the result tomorrow. The passive form is",
+    "options": [
+      "The result will announce tomorrow.",
+      "The result is announced tomorrow.",
+      "The committee will be announced tomorrow.",
+      "The result will be announced tomorrow."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The object “the result” becomes the subject in the passive form. Future passive voice uses “will be” followed by the past participle “announced”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_009",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Conditional clauses",
+    "contentLabel": "Original exam-style practice",
+    "text": "If the laboratory ___ properly equipped, the experiment would be easier.",
+    "options": [
+      "were",
+      "is",
+      "was",
+      "has been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The result clause uses “would be”, so this is a hypothetical conditional. Formal English uses “were” for all persons in this unreal condition."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_010",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Word meaning",
+    "contentLabel": "Original exam-style practice",
+    "text": "Select the word nearest in meaning to “cautious” as used in: A cautious driver checks both mirrors.",
+    "options": [
+      "careless",
+      "careful",
+      "noisy",
+      "hurried"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "“Cautious” means careful to avoid danger or mistakes. In the context of driving, checking mirrors is an example of being careful."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_011",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Opposites",
+    "contentLabel": "Original exam-style practice",
+    "text": "Select the word opposite in meaning to “scarce”.",
+    "options": [
+      "limited",
+      "rare",
+      "abundant",
+      "few"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "“Scarce” describes something available in insufficient quantity. “Abundant” means present in large quantity, making it the direct opposite."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_012",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Idioms",
+    "contentLabel": "Original exam-style practice",
+    "text": "If Chika says she will “turn over a new leaf”, she intends to",
+    "options": [
+      "read a different book",
+      "leave school immediately",
+      "hide an old document",
+      "begin to behave in a better way"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom “turn over a new leaf” means to make a fresh start by changing one’s behaviour for the better."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_013",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which expression is most appropriate in a formal letter to a principal?",
+    "options": [
+      "I would be grateful for your consideration.",
+      "I need your answer now.",
+      "Please sort this out for me.",
+      "You must do it today."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Formal correspondence uses polite and respectful language. “I would be grateful for your consideration” states the request without sounding demanding."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_014",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Punctuation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is correctly punctuated?",
+    "options": [
+      "After the meeting the secretary, filed the minutes. [comma separates subject and verb]",
+      "After the meeting, the secretary filed the minutes.",
+      "After, the meeting the secretary filed the minutes. [comma splits the introductory phrase]",
+      "After the meeting the, secretary filed the minutes. [comma separates modifier and noun]"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An introductory phrase may be followed by a comma. No comma should separate the subject “the secretary” from its verb “filed”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_015",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence uses capital letters correctly?",
+    "options": [
+      "Mrs bello travelled to kano in july. [all proper names uncapitalised]",
+      "Mrs Bello travelled to kano in July. [city name uncapitalised]",
+      "Mrs Bello travelled to Kano in July.",
+      "Mrs bello travelled to Kano in july. [title and month uncapitalised]"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Names of people and places, as well as months, take capital letters. “Mrs”, “Bello”, “Kano”, and “July” are correctly capitalised."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_016",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Countable nouns",
+    "contentLabel": "Original exam-style practice",
+    "text": "There are only ___ chairs left in the hall.",
+    "options": [
+      "much",
+      "a little",
+      "less",
+      "a few"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "“Chairs” is a countable plural noun. “A few” is used with countable plurals, while “a little” and “much” are used with uncountable nouns."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_017",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Uncountable nouns",
+    "contentLabel": "Original exam-style practice",
+    "text": "We have very ___ information about the new timetable.",
+    "options": [
+      "little",
+      "few",
+      "many",
+      "several"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "“Information” is an uncountable noun in standard English. “Little” correctly modifies an uncountable quantity, whereas “few” modifies countable nouns."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_018",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Conjunctions",
+    "contentLabel": "Original exam-style practice",
+    "text": "The match continued ___ the heavy rain.",
+    "options": [
+      "because",
+      "despite",
+      "although",
+      "therefore"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "“Despite” is a preposition meaning “in spite of” and can be followed by a noun phrase such as “the heavy rain”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_019",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence has the same meaning as: “No other runner was faster than Tunde”?",
+    "options": [
+      "Tunde was a fast runner only.",
+      "Every runner was faster than Tunde.",
+      "Tunde was the fastest runner.",
+      "Tunde was slower than all runners."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "If no other runner was faster, Tunde had the highest speed among all the runners. The superlative form is therefore “the fastest runner”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_020",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Adjective order",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct word order: She wore a ___ dress.",
+    "options": [
+      "blue beautiful long",
+      "long blue beautiful",
+      "long beautiful blue",
+      "beautiful long blue"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "English adjective order normally places opinion before size before colour. “Beautiful long blue dress” follows this standard order."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_021",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Adverbs",
+    "contentLabel": "Original exam-style practice",
+    "text": "The teacher spoke ___ so that everyone could understand.",
+    "options": [
+      "clearly",
+      "clear",
+      "clearness",
+      "clearest"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The verb “spoke” needs an adverb to describe how the action was performed. “Clearly” is the correct adverbial form."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_022",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Clauses",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence “The girl who won the prize is my cousin”, the words “who won the prize” form a",
+    "options": [
+      "main clause",
+      "relative clause",
+      "noun phrase",
+      "prepositional phrase"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The clause begins with the relative pronoun “who” and gives extra information about “the girl”. It is therefore a relative clause."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_023",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Subject and predicate",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence “The new science teacher explained the rule patiently”, the subject is",
+    "options": [
+      "explained",
+      "the rule",
+      "The new science teacher",
+      "patiently"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The subject is the person or thing that performs the action. Here, “The new science teacher” performs the action “explained”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_024",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Direct and indirect objects",
+    "contentLabel": "Original exam-style practice",
+    "text": "In “The coach gave the team a strategy”, the direct object is",
+    "options": [
+      "The coach",
+      "the team",
+      "gave",
+      "a strategy"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The direct object is what was given, namely “a strategy”. “The team” receives it and is the indirect object."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_025",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Verb forms",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the manager nor the workers ___ ready to leave.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "has"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With “neither … nor”, the verb agrees with the noun nearest to it. The nearer noun “workers” is plural, so “are” is correct."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_026",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Comparisons",
+    "contentLabel": "Original exam-style practice",
+    "text": "This route is ___ than the one we used yesterday.",
+    "options": [
+      "shortest",
+      "shorter",
+      "more short",
+      "as shortest"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A comparison between two routes requires the comparative form. The one-syllable adjective “short” takes “-er”, producing “shorter”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_027",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Parallel structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "The prefect enjoys reading, debating, and ___.",
+    "options": [
+      "to write",
+      "writes",
+      "writing",
+      "written"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Items in a series should have the same grammatical form. Since “reading” and “debating” are gerunds, “writing” completes the parallel structure."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_028",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Phrasal verbs",
+    "contentLabel": "Original exam-style practice",
+    "text": "The principal asked the students to ___ their applications before Friday.",
+    "options": [
+      "hand over to",
+      "hand out",
+      "hand down",
+      "hand in"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "“Hand in” means submit a document or piece of work to an authority. The other phrasal verbs have different meanings."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_029",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Collocations",
+    "contentLabel": "Original exam-style practice",
+    "text": "The doctor advised him to ___ attention to his diet.",
+    "options": [
+      "pay",
+      "give",
+      "make",
+      "do"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The established collocation is “pay attention to”. English examinations frequently test such fixed word partnerships."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_030",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Word classes",
+    "contentLabel": "Original exam-style practice",
+    "text": "In “They arrived early”, the word “early” functions as an",
+    "options": [
+      "adjective",
+      "adverb",
+      "noun",
+      "pronoun"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "“Early” modifies the verb “arrived” by telling when they arrived. A word that modifies a verb is functioning as an adverb."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_031",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Homophones",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct word to complete: The farmer sold ___ produce at the market.",
+    "options": [
+      "he’s",
+      "hers",
+      "his",
+      "their"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The blank needs a possessive determiner before “produce”. “His” shows that the produce belonged to the farmer; “he’s” means “he is”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_032",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Possessives",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is correct?",
+    "options": [
+      "The girl’s uniforms were neatly arranged. [singular possessive]",
+      "The girls uniforms were neatly arranged. [apostrophe omitted]",
+      "The girls’s uniforms were neatly arranged. [incorrect plural possessive]",
+      "The girls’ uniforms were neatly arranged."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The uniforms belong to more than one girl, so the plural possessive apostrophe comes after the final s: “girls’ uniforms”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_033",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Quotation marks",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence punctuates direct speech correctly?",
+    "options": [
+      "“Please wait here,” the officer said.",
+      "“Please wait here”, the officer said. [comma outside closing quotation mark]",
+      "“Please wait here” the officer said. [reporting-clause comma omitted]",
+      "Please wait here,” the officer said. [opening quotation mark omitted]"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "In direct speech, the spoken words are enclosed in quotation marks and the comma before the reporting clause is placed inside the closing quotation mark."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_034",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is a polite request?",
+    "options": [
+      "You will explain the last question.",
+      "Could you explain the last question, please?",
+      "Explain the last question now.",
+      "Why have you explained the last question?"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "“Could you … please?” uses a modal question and politeness marker to make a courteous request rather than an order."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_035",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Formal vocabulary",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a formal report, “purchase” is preferred to",
+    "options": [
+      "obtain",
+      "acquire",
+      "buy",
+      "procure"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "“Purchase” is a more formal equivalent of “buy”. The other options are also formal or specialised words and do not make the intended contrast."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_036",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Informal vocabulary",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which expression is most suitable in a friendly text message to a classmate?",
+    "options": [
+      "I hereby acknowledge receipt of your message.",
+      "Your correspondence is duly noted.",
+      "Kindly accept the assurances of my esteem.",
+      "I will see you later."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A friendly text message normally uses simple, natural conversational language. The other options are excessively formal for a peer message."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_037",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Comprehension: fact",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: “The library opened at eight, but the first readers arrived before half past eight.” What time did the first readers arrive?",
+    "options": [
+      "After 8:30 a.m.",
+      "Before 8:00 a.m.",
+      "Exactly 8:00 a.m.",
+      "Before 8:30 a.m."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The passage explicitly says the first readers arrived “before half past eight”. Half past eight is 8:30 a.m., so their arrival was earlier than 8:30."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_038",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Comprehension: inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: “Although the road was wet, the driver reduced speed and reached home safely.” It can be inferred that the driver was",
+    "options": [
+      "lost",
+      "careful",
+      "reckless",
+      "unaware"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Reducing speed on a wet road is a safety precaution. This action supports the inference that the driver was careful."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_039",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Comprehension: purpose",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: “The notice urges students to return borrowed books by Monday.” The purpose of the notice is to",
+    "options": [
+      "advertise a new bus route",
+      "describe the library building",
+      "remind students to return books",
+      "invite students to a sports event"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The word “urges” and the return deadline show that the notice is a reminder intended to make students return borrowed books."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_040",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Figurative language",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the expression “The wind whispered through the trees”, the figure of speech is",
+    "options": [
+      "simile",
+      "metaphor",
+      "hyperbole",
+      "personification"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Whispering is a human action, but it is attributed to the wind. Giving human qualities to a non-human thing is personification."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_041",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Figurative language",
+    "contentLabel": "Original exam-style practice",
+    "text": "The statement “Her smile was like sunshine” contains a",
+    "options": [
+      "simile",
+      "metaphor",
+      "pun",
+      "paradox"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A simile compares two unlike things using “like” or “as”. The word “like” explicitly compares the smile with sunshine."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_042",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Tone",
+    "contentLabel": "Original exam-style practice",
+    "text": "The sentence “What a wonderful effort you have made!” has an ___ tone.",
+    "options": [
+      "hostile",
+      "admiring",
+      "indifferent",
+      "sarcastic"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The exclamation “What a wonderful effort” expresses praise and approval, so the speaker’s tone is admiring."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_043",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Stress patterns",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word is normally stressed on the second syllable?",
+    "options": [
+      "TAble",
+      "DOCtor",
+      "reLAX",
+      "WINdow"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The usual spoken stress in “relax” falls on the second syllable. The other listed words normally take first-syllable stress."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_044",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Vowel sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the same vowel sound as “seat”?",
+    "options": [
+      "bet",
+      "bat",
+      "boat",
+      "beat"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "“Seat” and “beat” contain the long /iː/ vowel sound. The other words contain different vowel sounds."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_045",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Consonant sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word ends with a voiced consonant sound?",
+    "options": [
+      "bag",
+      "back",
+      "laugh",
+      "leaf"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The final /g/ sound in “bag” is voiced because the vocal cords vibrate. The final sounds in “back”, “laugh”, and “leaf” are voiceless."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_046",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Intonation",
+    "contentLabel": "Original exam-style practice",
+    "text": "A speaker usually uses a rising intonation at the end of a",
+    "options": [
+      "complete statement",
+      "yes-or-no question",
+      "command",
+      "wh-question"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "English yes-or-no questions often have rising final intonation. Statements, commands and many wh-questions usually end with falling intonation."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_047",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Word substitution",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the word that best completes: The chairman’s explanation was so ___ that everyone understood it.",
+    "options": [
+      "clearly",
+      "clarity",
+      "clear",
+      "clearest"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "After “was so”, the sentence needs an adjective describing “explanation”. “Clear” is the correct adjective form."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_048",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Lexis and structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "The students could not attend the event because they had ___ the date.",
+    "options": [
+      "forget",
+      "forgetting",
+      "forgets",
+      "forgotten"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "After “had”, English requires the past participle. The past participle of “forget” is “forgotten”."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_049",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Relative pronouns",
+    "contentLabel": "Original exam-style practice",
+    "text": "The woman ___ handbag was found has been contacted.",
+    "options": [
+      "whose",
+      "who",
+      "whom",
+      "which"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "“Whose” expresses possession and correctly links the handbag to the woman. “Who” and “whom” refer to people but do not show possession."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2016_050",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2016",
+    "topic": "Negative forms",
+    "contentLabel": "Original exam-style practice",
+    "text": "Hardly had the lesson begun ___ the bell rang.",
+    "options": [
+      "than",
+      "when",
+      "that",
+      "because"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The fixed correlative expression is “hardly … when”. It shows that the bell rang almost immediately after the lesson began."
+  }
+]
