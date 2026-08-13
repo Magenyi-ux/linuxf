@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_BIOLOGY_2025_001",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Cell structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which structure controls the activities of a living cell?",
+    "options": [
+      "Nucleus",
+      "Cell wall",
+      "Vacuole",
+      "Cytoplasm"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The nucleus contains genetic material and coordinates the cell activities. A cell wall gives support, a vacuole stores cell sap, and cytoplasm is the site of many reactions."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_002",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Cell structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which feature is present in a typical plant cell but absent from an animal cell?",
+    "options": [
+      "Cell membrane",
+      "Cellulose cell wall",
+      "Cytoplasm",
+      "Nucleus"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Plant cells possess a cellulose cell wall that gives support and a definite shape. Animal cells also have a cell membrane, cytoplasm and, in most cases, a nucleus."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_003",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Cell structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "The movement of water molecules from a dilute solution through a partially permeable membrane is called",
+    "options": [
+      "Diffusion",
+      "Active transport",
+      "Osmosis",
+      "Translocation"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Osmosis is specifically the net movement of water through a partially permeable membrane from higher water potential to lower water potential. The other processes have different definitions."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_004",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Cell structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which organelle releases usable energy during aerobic respiration?",
+    "options": [
+      "Chloroplast",
+      "Ribosome",
+      "Golgi body",
+      "Mitochondrion"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Mitochondria are the main sites of aerobic respiration and ATP production. Chloroplasts carry out photosynthesis, while ribosomes assemble proteins."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_005",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Cell structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the principal function of ribosomes in a cell?",
+    "options": [
+      "Protein synthesis",
+      "Lipid storage",
+      "Photosynthesis",
+      "Cell division"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ribosomes join amino acids together to make proteins according to genetic instructions. They do not store lipids, perform photosynthesis or control chromosome separation."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_006",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Nutrition",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which reagent gives a blue-black colour when starch is present?",
+    "options": [
+      "Benedict solution",
+      "Iodine solution",
+      "Biuret reagent",
+      "Ethanol"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Iodine solution changes from brown to blue-black in the presence of starch. Benedict solution tests reducing sugar, Biuret tests protein, and ethanol is used in the emulsion test for fats."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_007",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Nutrition",
+    "contentLabel": "Original exam-style practice",
+    "text": "A food sample gives a violet colour with Biuret reagent. The sample contains",
+    "options": [
+      "Starch",
+      "Reducing sugar",
+      "Protein",
+      "Fat only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Biuret test gives a violet or purple colour when peptide bonds in proteins are present. Starch, reducing sugars and fats require different chemical tests."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_008",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Nutrition",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which raw material is required for photosynthesis?",
+    "options": [
+      "Oxygen",
+      "Urea",
+      "Lactic acid",
+      "Carbon dioxide"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Plants use carbon dioxide and water, in the presence of light and chlorophyll, to make glucose. Oxygen is normally a product of photosynthesis rather than a raw material."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_009",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Nutrition",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main role of chlorophyll in a green plant?",
+    "options": [
+      "Absorb light energy",
+      "Absorb mineral salts",
+      "Transport sucrose",
+      "Produce carbon dioxide"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Chlorophyll absorbs light energy that drives photosynthesis. Mineral uptake is mainly by roots, sucrose transport is through phloem, and carbon dioxide is a photosynthetic raw material."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_010",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Nutrition",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which vessel transports absorbed fatty acids from intestinal villi into the lymphatic system?",
+    "options": [
+      "Arteriole",
+      "Lacteal",
+      "Xylem vessel",
+      "Trachea"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Each villus contains a lacteal that absorbs fatty acids and glycerol into the lymphatic system. Arterioles carry blood, xylem is found in plants, and a trachea carries air."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_011",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Transport",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which tissue transports water and mineral salts upward in a flowering plant?",
+    "options": [
+      "Phloem",
+      "Epidermis",
+      "Xylem",
+      "Cambium only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Xylem vessels carry water and dissolved mineral salts mainly from roots to leaves. Phloem transports manufactured food, while epidermis is protective tissue."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_012",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Transport",
+    "contentLabel": "Original exam-style practice",
+    "text": "The loss of water vapour from the aerial parts of a plant is called",
+    "options": [
+      "Translocation",
+      "Guttation",
+      "Respiration",
+      "Transpiration"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Transpiration is the evaporation and diffusion of water vapour, chiefly through stomata. Translocation is food transport and respiration is the chemical release of energy from food."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_013",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Transport",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which blood component is chiefly responsible for clotting after a cut?",
+    "options": [
+      "Platelets",
+      "Red blood cells",
+      "Plasma",
+      "Lymphocytes"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Platelets release substances that initiate blood clotting and help prevent excessive blood loss. Red blood cells carry oxygen, plasma transports dissolved substances, and lymphocytes provide immunity."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_014",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Transport",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which feature makes red blood cells efficient at transporting oxygen?",
+    "options": [
+      "They have cell walls",
+      "They contain haemoglobin",
+      "They contain chloroplasts",
+      "They divide rapidly in blood"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Haemoglobin binds oxygen reversibly, allowing red blood cells to transport it efficiently. Mature mammalian red blood cells lack cell walls and chloroplasts and do not divide in circulation."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_015",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Respiration",
+    "contentLabel": "Original exam-style practice",
+    "text": "In human beings, most gaseous exchange takes place in the",
+    "options": [
+      "Trachea",
+      "Bronchi",
+      "Alveoli",
+      "Diaphragm"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Alveoli have thin moist walls, a large surface area and a rich capillary supply, making them well suited for gas exchange. The trachea and bronchi mainly conduct air."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_016",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Respiration",
+    "contentLabel": "Original exam-style practice",
+    "text": "Anaerobic respiration in yeast produces ethanol and",
+    "options": [
+      "Oxygen",
+      "Urea",
+      "Water only",
+      "Carbon dioxide"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Yeast breaks down glucose anaerobically to ethanol and carbon dioxide, releasing a small amount of energy. Oxygen is not produced in this anaerobic process."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_017",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Coordination",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which part of the brain coordinates balance and muscular movement?",
+    "options": [
+      "Cerebellum",
+      "Medulla oblongata",
+      "Cerebrum",
+      "Spinal nerve"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The cerebellum coordinates voluntary muscle activity, posture and balance. The cerebrum handles higher functions, while the medulla regulates several involuntary activities."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_018",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Coordination",
+    "contentLabel": "Original exam-style practice",
+    "text": "A rapid automatic response to a stimulus is known as a",
+    "options": [
+      "Learned behaviour",
+      "Reflex action",
+      "Taxis",
+      "Conditioning"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A reflex action is a quick involuntary response coordinated through a reflex arc, often via the spinal cord. It protects the body before conscious thought is required."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_019",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Coordination",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which hormone lowers blood glucose concentration?",
+    "options": [
+      "Adrenaline",
+      "Thyroxine",
+      "Insulin",
+      "Auxin"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Insulin promotes uptake and storage of glucose, reducing blood sugar concentration. Adrenaline tends to raise blood glucose, thyroxine controls metabolic rate, and auxin is a plant hormone."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_020",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Coordination",
+    "contentLabel": "Original exam-style practice",
+    "text": "The bending of a shoot toward light is an example of",
+    "options": [
+      "Negative geotropism",
+      "Hydrotropism",
+      "Nastic movement",
+      "Positive phototropism"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A shoot growing toward a directional light source shows positive phototropism. Geotropism is a response to gravity, while hydrotropism is a growth response to water."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_021",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Reproduction",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transfer of pollen grains from anther to stigma is called",
+    "options": [
+      "Pollination",
+      "Fertilisation",
+      "Germination",
+      "Dispersal"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Pollination is the transfer of pollen from anther to stigma. Fertilisation occurs later when male and female nuclei fuse inside the ovule."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_022",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Reproduction",
+    "contentLabel": "Original exam-style practice",
+    "text": "In flowering plants, fertilisation occurs when",
+    "options": [
+      "A seed coat forms",
+      "Male and female nuclei fuse",
+      "Pollen lands on anther",
+      "Fruit opens"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fertilisation is the fusion of the male nucleus from pollen with the female nucleus in the ovule. Seed and fruit development occur after this fusion."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_023",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Reproduction",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which organ produces sperm cells in human males?",
+    "options": [
+      "Ovary",
+      "Uterus",
+      "Testis",
+      "Prostate gland"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The testes produce sperm cells and secrete testosterone. Ovaries produce ova, the uterus supports development of the embryo, and the prostate adds fluid to semen."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_024",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Reproduction",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is a major function of the placenta?",
+    "options": [
+      "Mix maternal and foetal blood directly",
+      "Produce sperm",
+      "Store urine",
+      "Exchange materials between mother and foetus"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The placenta permits exchange of nutrients, oxygen and wastes between maternal and foetal blood without normally mixing the two blood supplies directly. It does not produce sperm or store urine."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_025",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Genetics",
+    "contentLabel": "Original exam-style practice",
+    "text": "An allele that is expressed in the heterozygous condition is described as",
+    "options": [
+      "Dominant",
+      "Recessive",
+      "Lethal",
+      "Mutated only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A dominant allele produces its trait when present with a contrasting recessive allele in a heterozygote. A recessive allele is expressed only when no dominant allele is present."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_026",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Genetics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The genetic constitution of an organism is its",
+    "options": [
+      "Phenotype",
+      "Genotype",
+      "Species",
+      "Habitat"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Genotype refers to the allele combination an organism possesses. Phenotype is the observable appearance resulting from genotype and environmental influences."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_027",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Genetics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which process creates new combinations of alleles during meiosis?",
+    "options": [
+      "Binary fission",
+      "Transpiration",
+      "Crossing over",
+      "Budding"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Crossing over occurs between homologous chromosomes during meiosis and exchanges segments of DNA. This produces new allele combinations and increases variation in offspring."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_028",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Evolution",
+    "contentLabel": "Original exam-style practice",
+    "text": "Natural selection is most likely to favour organisms that",
+    "options": [
+      "Are always the largest",
+      "Never vary",
+      "Avoid reproduction",
+      "Leave more successful offspring"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Natural selection increases the frequency of inherited traits that help organisms survive and reproduce. Fitness is measured by successful reproduction, not merely by body size."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_029",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Evolution",
+    "contentLabel": "Original exam-style practice",
+    "text": "A structure inherited from a common ancestor but modified for different functions is called",
+    "options": [
+      "Homologous structure",
+      "Vestigial organ only",
+      "Analogous structure",
+      "Artificial organ"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Homologous structures share an evolutionary origin but may have different functions, such as forelimbs of mammals. Analogous structures have similar functions but different evolutionary origins."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_030",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Ecology",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a food chain, organisms that manufacture their own food are",
+    "options": [
+      "Consumers",
+      "Producers",
+      "Parasites",
+      "Decomposers only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Producers, usually green plants, make organic food from inorganic materials using energy from sunlight. Consumers obtain food by feeding on other organisms."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_031",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Ecology",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which group returns nutrients from dead organisms to the environment?",
+    "options": [
+      "Herbivores",
+      "Carnivores",
+      "Decomposers",
+      "Producers"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Decomposers such as bacteria and fungi break down dead organisms and wastes, releasing simple substances back into the ecosystem. This recycling supports continued plant growth."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_032",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Ecology",
+    "contentLabel": "Original exam-style practice",
+    "text": "Energy is lost between trophic levels mainly as",
+    "options": [
+      "New sunlight",
+      "Mineral salts",
+      "Chlorophyll",
+      "Heat from respiration"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Organisms use much of their food energy in respiration, and heat is released to the environment. Consequently, less energy is available to organisms at the next trophic level."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_033",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Ecology",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which instrument is most suitable for estimating the abundance of grasses in a field?",
+    "options": [
+      "Quadrat",
+      "Burette",
+      "Thermometer",
+      "Barometer"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A quadrat samples a known area and is suitable for stationary organisms such as grasses. A burette measures liquid volume, a thermometer measures temperature, and a barometer measures pressure."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_034",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Ecology",
+    "contentLabel": "Original exam-style practice",
+    "text": "A population is best defined as organisms of the same species living",
+    "options": [
+      "In different continents only",
+      "In the same area at the same time",
+      "At different trophic levels",
+      "In one food chain only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A population consists of members of one species that occupy the same area at the same time and can potentially interbreed. A community includes populations of different species."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_035",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Classification",
+    "contentLabel": "Original exam-style practice",
+    "text": "The two-part scientific name of an organism is called",
+    "options": [
+      "Food web",
+      "Dichotomous key",
+      "Binomial nomenclature",
+      "Ecological niche"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Binomial nomenclature gives each species a genus name followed by a specific epithet, such as Homo sapiens. A dichotomous key is used to identify organisms."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_036",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Classification",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which kingdom contains organisms with chitinous cell walls?",
+    "options": [
+      "Plantae",
+      "Animalia",
+      "Monera only",
+      "Fungi"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Fungi typically have cell walls containing chitin and obtain nutrients by absorption. Plants have cellulose walls, animals lack cell walls, and bacteria have a different wall composition."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_037",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Classification",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which feature is characteristic of mammals?",
+    "options": [
+      "They possess mammary glands",
+      "They have feathers",
+      "They breathe only through gills",
+      "They all lay shells"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Mammary glands, which produce milk for young, are characteristic of mammals. Feathers identify birds, while gills are characteristic of many aquatic animals."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_038",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Adaptation",
+    "contentLabel": "Original exam-style practice",
+    "text": "A thick waxy cuticle is an adaptation that mainly reduces",
+    "options": [
+      "Photosynthesis completely",
+      "Water loss",
+      "Mineral absorption",
+      "Pollination"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A waxy cuticle forms a waterproof barrier on leaves and reduces evaporation of water. It does not stop photosynthesis completely or directly cause mineral absorption."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_039",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Adaptation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Webbed feet help a duck chiefly by",
+    "options": [
+      "Capturing light for photosynthesis",
+      "Producing venom",
+      "Increasing surface area for swimming",
+      "Reducing blood circulation"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Webbed feet increase the area that pushes against water, making swimming more efficient. Ducks do not photosynthesise and webbing is not used to produce venom."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_040",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Practical biology",
+    "contentLabel": "Original exam-style practice",
+    "text": "A microscope image is 40 mm long while the actual specimen is 0.20 mm long. What is the magnification?",
+    "options": [
+      "8 times",
+      "40 times",
+      "800 times",
+      "200 times"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Magnification equals image size divided by actual size. Therefore 40 mm divided by 0.20 mm equals 200. Both measurements are already in millimetres, so no conversion is needed."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_041",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Practical biology",
+    "contentLabel": "Original exam-style practice",
+    "text": "Why should a cover slip be lowered gently onto a microscope slide?",
+    "options": [
+      "To avoid trapping air bubbles",
+      "To increase specimen mass",
+      "To sterilise the specimen",
+      "To make the lens thicker"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Lowering a cover slip at an angle reduces trapped air bubbles, which can obscure the specimen. It does not change the mass, sterilise the sample or alter the microscope lens."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_042",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Practical biology",
+    "contentLabel": "Original exam-style practice",
+    "text": "In an experiment, the factor deliberately changed by the investigator is the",
+    "options": [
+      "Dependent variable",
+      "Independent variable",
+      "Control variable",
+      "Conclusion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The independent variable is deliberately changed to test its effect. The dependent variable is measured, while control variables are kept constant to make the comparison fair."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_043",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Practical biology",
+    "contentLabel": "Original exam-style practice",
+    "text": "Why is a control setup included in a biological experiment?",
+    "options": [
+      "To guarantee the hypothesis",
+      "To replace all measurements",
+      "To provide a valid comparison",
+      "To increase the temperature"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A control provides a baseline for comparison, allowing an observed effect to be linked more confidently to the variable being tested. It does not guarantee a result or replace measurements."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_044",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Health and disease",
+    "contentLabel": "Original exam-style practice",
+    "text": "Malaria is transmitted mainly by the bite of an infected",
+    "options": [
+      "Housefly",
+      "Tsetse fly",
+      "Tick",
+      "Female Anopheles mosquito"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Malaria parasites are transmitted to humans by infected female Anopheles mosquitoes. Tsetse flies transmit sleeping sickness, while houseflies and ticks are not the principal malaria vectors."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_045",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Health and disease",
+    "contentLabel": "Original exam-style practice",
+    "text": "Vaccination protects an individual mainly by stimulating production of",
+    "options": [
+      "Specific antibodies and memory cells",
+      "More red blood cells only",
+      "Digestive enzymes",
+      "Chlorophyll"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Vaccines expose the immune system safely to antigens, leading to antibodies and memory cells. On later exposure, the body can respond more rapidly and effectively."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_046",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Excretion",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which organ removes urea from the blood and regulates water balance?",
+    "options": [
+      "Lung",
+      "Kidney",
+      "Heart",
+      "Pancreas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The kidneys filter blood, excrete urea in urine and adjust water and salt balance. Lungs remove carbon dioxide, the heart pumps blood, and the pancreas produces hormones and enzymes."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_047",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Growth",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which condition is essential for germination of most viable seeds?",
+    "options": [
+      "Bright light in every case",
+      "Chlorophyll",
+      "Water",
+      "Carbon dioxide only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Water is required to activate metabolism and soften the seed coat during germination. Most seeds also need oxygen and suitable temperature, but light is not essential for every species."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_048",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Environmental conservation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which practice helps to conserve biodiversity in a forest ecosystem?",
+    "options": [
+      "Uncontrolled bush burning",
+      "Overhunting wild animals",
+      "Clearing all undergrowth",
+      "Establishing protected areas"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Protected areas limit destructive activities and preserve habitats, allowing populations and food webs to persist. Bush burning, overhunting and indiscriminate clearing generally reduce biodiversity."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_049",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Support and movement",
+    "contentLabel": "Original exam-style practice",
+    "text": "At a freely movable joint, cartilage reduces friction by",
+    "options": [
+      "Providing a smooth cushioning surface",
+      "Producing red blood cells",
+      "Joining bone to muscle",
+      "Secreting digestive enzymes"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Cartilage covers the ends of bones at many joints, providing a smooth surface that reduces friction and absorbs shock. Tendons join muscle to bone, while marrow forms blood cells."
+  },
+  {
+    "id": "NECO_BIOLOGY_2025_050",
+    "examType": "NECO",
+    "subject": "Biology",
+    "year": "2025",
+    "topic": "Homeostasis",
+    "contentLabel": "Original exam-style practice",
+    "text": "Sweating on a hot day helps maintain body temperature because evaporation",
+    "options": [
+      "Adds heat to the blood",
+      "Removes heat from the skin",
+      "Stops circulation",
+      "Raises body temperature"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Evaporation requires energy, which is taken as heat from the skin. This cools the body and helps prevent overheating; it does not stop circulation or add heat."
+  }
+]
