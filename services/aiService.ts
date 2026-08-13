@@ -1,6 +1,5 @@
 import OpenAI from "openai";
 import { ExamType, Subject, Question } from "../types";
-import { fallbackData } from "./fallbackData";
 import { getLocalQuestions } from "./localQuestions";
 
 const openai = new OpenAI({
@@ -9,7 +8,8 @@ const openai = new OpenAI({
     dangerouslyAllowBrowser: true // Required for frontend usage
 });
 
-const PROFESSOR_API_KEY = "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";
+// Authentication is supplied by the server-side NVIDIA proxy through NV_API_KEY.
+const PROFESSOR_API_KEY = 'pk-this-is-a-placeholder-the-proxy-handles-auth';
 const PROFESSOR_MODELS = [
     "deepseek-ai/deepseek-v3.2",
     "minimax/minimax-m2.1",
@@ -79,23 +79,14 @@ export const fetchExamQuestions = async (
   count: number = 10
 ): Promise<{ questions: Question[], sources: string[] }> => {
   // 1. Try Local Question Bank (JSON files)
-  const localQuestions = getLocalQuestions(subject, year, count);
+  const localQuestions = getLocalQuestions(subject, year, count, examType);
   if (localQuestions && localQuestions.questions.length > 0) {
       return localQuestions;
   }
 
-  // 2. Try Hardcoded fallbackData
-  if (fallbackData[examType]?.[subject]?.[year]) {
-      const completeFallbackQuestions = fallbackData[examType][subject][year].filter(isCompleteQuestion);
-      if (completeFallbackQuestions.length > 0) {
-        return {
-            questions: completeFallbackQuestions,
-            sources: ["Local Past Questions Bank"]
-        };
-      }
-  }
-
-  // 3. Fallback to AI Generation
+  // If no local pack is available, use the configured server-side AI proxy.
+  // The published question banks remain the primary source of exam content.
+  // Fallback to AI Generation
   const model = "meta/llama3-8b-instruct";
 
   const yearContext = year === 'Random'

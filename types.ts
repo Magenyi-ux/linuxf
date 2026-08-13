@@ -60,6 +60,7 @@ export interface Book {
 }
 
 export interface UserProfile {
+  id?: string;
   name?: string;
   email?: string;
   level: number;
@@ -72,4 +73,4 @@ export interface UserProfile {
   chatBotPosition?: { x: number; y: number } | null;
 }
 
-export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'PROFILE' | 'CHAT' | 'AUTH' | 'ADMIN';
+export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'PROFILE' | 'CHAT' | 'AUTH' | 'ADMIN' | 'STUDY_RAND_SUBJECTS';

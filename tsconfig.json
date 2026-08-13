@@ -1,6 +1,15 @@
 {
-  "include": ["client/src/**/*", "shared/**/*", "server/**/*"],
-  "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
+  "include": [
+    "*.tsx",
+    "*.ts",
+    "components/**/*",
+    "services/**/*",
+    "hooks/**/*",
+    "client/src/**/*",
+    "shared/**/*",
+    "server/**/*"
+  ],
+  "exclude": ["node_modules", "build", "dist", "**/*.test.ts", "api/**/*", "services/fallbackData.ts", "services/studyRandData.ts"],
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",

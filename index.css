@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "./tailwind.config.js";
 
 @layer base {
   body {
@@ -13,27 +12,30 @@
     @apply bg-white border border-brand-200;
   }
 
-  /* Custom Scrollbar for Sidebar */
   .sidebar-scrollbar::-webkit-scrollbar {
     width: 6px;
   }
+
   .sidebar-scrollbar::-webkit-scrollbar-track {
     background: transparent;
   }
+
   .sidebar-scrollbar::-webkit-scrollbar-thumb {
     @apply bg-brand-200 rounded-full;
   }
 
-  /* Math and Markdown styling */
   .math-content ul {
     @apply list-disc pl-6 mt-2 mb-2;
   }
+
   .math-content ol {
     @apply list-decimal pl-6 mt-2 mb-2;
   }
+
   .math-content p {
     @apply mb-2;
   }
+
   .math-content strong {
     @apply font-bold text-gray-800;
   }

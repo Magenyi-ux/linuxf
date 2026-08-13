@@ -1,4 +1,4 @@
-const CACHE_NAME = "examply-cache-v2";
+const CACHE_NAME = "examply-cache-v3";
 const ASSETS_TO_CACHE = [
   "/",
   "/index.html",
@@ -38,8 +38,14 @@ self.addEventListener("activate", (event) => {
 
 // Fetch Event: Network-first strategy
 self.addEventListener("fetch", (event) => {
-  // Only handle GET requests and skip chrome-extension/others
-  if (event.request.method !== 'GET' || !event.request.url.startsWith('http')) {
+  // Only cache same-origin GET assets. Never cache external Supabase/PostHog
+  // responses or same-origin API responses that may contain user data.
+  const requestUrl = new URL(event.request.url);
+  if (
+    event.request.method !== 'GET' ||
+    requestUrl.origin !== self.location.origin ||
+    requestUrl.pathname.startsWith('/api/')
+  ) {
     return;
   }
 

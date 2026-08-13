@@ -342,8 +342,9 @@ const extractOptions = (question: RawQuestion): string[] => {
   }
 
   if (question.options && typeof question.options === "object") {
+    const optionRecord = question.options as Record<string, string | undefined>;
     return optionKeys
-      .map((key) => question.options?.[key])
+      .map((key) => optionRecord[key])
       .filter((value): value is string => typeof value === "string" && value.trim().length > 0)
       .map((value) => value.trim());
   }

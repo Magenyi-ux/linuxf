@@ -215,7 +215,8 @@ export default defineConfig({
     },
   },
   envDir: path.resolve(import.meta.dirname),
-  root: path.resolve(import.meta.dirname, "client"),
+  // The quiz application lives at the repository root; the client/ tree is the unused scaffold landing page.
+  root: path.resolve(import.meta.dirname),
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,

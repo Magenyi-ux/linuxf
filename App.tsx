@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { ScreenState, ExamType, Subject, Question, Book } from './types';
+import { ScreenState, ExamType, Subject, Question, Book, UserProfile } from './types';
 import { ExamCard } from './components/ExamCard';
 import { LoadingScreen } from './components/LoadingScreen';
 import { Results } from './components/Results';
@@ -9,10 +9,11 @@ import { Profile } from './components/Profile';
 import { AdminDashboard } from './components/AdminDashboard';
 import { ChatBot } from './components/ChatBot';
 import { Auth } from './components/Auth';
+import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
+import { getRemoteAchievementKeys, getRemoteProgressTotals, syncUserData } from './services/syncService';
 import { fetchExamQuestions } from './services/aiService';
 import { trackEvent } from './services/analytics';
-import { fallbackData } from './services/fallbackData';
-import { studyRandData } from './services/studyRandData';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
@@ -76,7 +77,8 @@ const HOME_QUOTES = [
   "Crack WAEC, JAMB & NECO with confidence."
 ];
 
-const App: React.FC = () => {
+const AppShell: React.FC = () => {
+  const { user: supabaseUser, profile: authProfile, loading: authLoading, signOut } = useAuth();
   const [screen, setScreen] = useState<ScreenState>('HOME');
   const [selectedExam, setSelectedExam] = useState<ExamType | null>(null);
   const [selectedStream, setSelectedStream] = useState<StreamType | null>(null);
@@ -141,34 +143,83 @@ const App: React.FC = () => {
 
   useEffect(() => {
     try {
-      // Try to load session first
-      const savedSession = localStorage.getItem('waExamPrep_session');
-      if (savedSession) {
-        const profile = JSON.parse(savedSession);
-        setUserProfile(profile);
-        setIsLoggedIn(true);
+      // Legacy local accounts could contain plaintext passwords. Remove only the old
+      // account/session records; downloaded question packs remain available offline.
+      localStorage.removeItem('waExamPrep_users');
+      localStorage.removeItem('waExamPrep_session');
+      const savedProfile = localStorage.getItem('waExamPrep_profile');
+      if (savedProfile) setUserProfile(JSON.parse(savedProfile));
 
-        // Load user-specific books
-        const bookKey = `waExamPrep_books_${profile.email}`;
-        const savedBooks = localStorage.getItem(bookKey);
-        if (savedBooks) {
-          setBooks(JSON.parse(savedBooks));
-        } else {
-          setBooks({});
-        }
-      } else {
-        const savedProfile = localStorage.getItem('waExamPrep_profile');
-        if (savedProfile) {
-          setUserProfile(JSON.parse(savedProfile));
-        }
-
-        const savedBooks = localStorage.getItem('waExamPrep_books');
-        if (savedBooks) setBooks(JSON.parse(savedBooks));
-      }
-    } catch (e) {
-      console.error("Failed to load data from storage", e);
+      const savedBooks = localStorage.getItem('waExamPrep_books');
+      if (savedBooks) setBooks(JSON.parse(savedBooks));
+    } catch (error) {
+      console.error('Failed to load local study data:', error);
     }
   }, []);
+
+  useEffect(() => {
+    if (authLoading) return;
+
+    if (supabaseUser) {
+      setIsLoggedIn(true);
+      if (authProfile) {
+        setUserProfile((previous) => ({ ...previous, ...authProfile }));
+      } else {
+        setUserProfile((previous) => ({ ...previous, id: supabaseUser.id, email: supabaseUser.email || undefined }));
+      }
+      return;
+    }
+
+    setIsLoggedIn(false);
+    setUserProfile((previous) => ({
+      ...previous,
+      id: undefined,
+      name: undefined,
+      email: undefined,
+      role: 'USER',
+      xp: 0,
+      level: 1,
+      streak: 0,
+    }));
+  }, [authLoading, authProfile, supabaseUser]);
+
+  useEffect(() => {
+    if (!supabaseUser || !isLoggedIn) return;
+
+    let active = true;
+    const reconcile = async () => {
+      try {
+        await syncUserData(supabaseUser.id);
+        const [totals, remoteAchievementKeys] = await Promise.all([
+          getRemoteProgressTotals(supabaseUser.id),
+          getRemoteAchievementKeys(supabaseUser.id),
+        ]);
+        if (!active) return;
+
+        const achievementStorageKey = `examply_achievements_${supabaseUser.id}`;
+        const localAchievementKeys = JSON.parse(localStorage.getItem(achievementStorageKey) || '[]') as string[];
+        const mergedAchievementKeys = Array.from(new Set([...localAchievementKeys, ...remoteAchievementKeys]));
+        localStorage.setItem(achievementStorageKey, JSON.stringify(mergedAchievementKeys));
+
+        setUserProfile((previous) => ({
+          ...previous,
+          xp: Math.max(previous.xp, totals.xp),
+          level: Math.floor(Math.max(previous.xp, totals.xp) / 1000) + 1,
+        }));
+      } catch (error) {
+        console.warn('Progress sync deferred until the next connection:', error);
+      }
+    };
+
+    const onOnline = () => { void reconcile(); };
+    window.addEventListener('online', onOnline);
+    void reconcile();
+
+    return () => {
+      active = false;
+      window.removeEventListener('online', onOnline);
+    };
+  }, [isLoggedIn, supabaseUser]);
 
   // Effect to reload books when login state or user changes
   useEffect(() => {
@@ -189,22 +240,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     localStorage.setItem('waExamPrep_profile', JSON.stringify(userProfile));
-
-    // Sync to session if logged in
-    if (isLoggedIn) {
-      localStorage.setItem('waExamPrep_session', JSON.stringify(userProfile));
-
-      // Sync to global users list
-      const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
-      const userIndex = users.findIndex((u: any) => u.email === userProfile.email);
-      if (userIndex !== -1) {
-        // Preserve password
-        const password = users[userIndex].password;
-        users[userIndex] = { ...userProfile, password };
-        localStorage.setItem('waExamPrep_users', JSON.stringify(users));
-      }
-    }
-  }, [userProfile, isLoggedIn]);
+  }, [userProfile]);
 
   // Time Tracking Effect
   useEffect(() => {
@@ -348,7 +384,7 @@ const App: React.FC = () => {
         streak: score > 0 ? prev.streak + 1 : prev.streak
       }));
 
-      // If we are in a book session, update the book's stats
+      // If we are in a book session, update the book's stats.
       if (activeBookId && books[activeBookId]) {
           const book = books[activeBookId];
           const updatedBook: Book = {
@@ -359,8 +395,41 @@ const App: React.FC = () => {
           };
           saveBook(updatedBook);
       }
+
+      if (supabaseUser) {
+        const examYear = activeBookId && books[activeBookId] ? Number(books[activeBookId].year) : null;
+        enqueueProgress(supabaseUser.id, {
+          subject: selectedSubject || 'Random Study',
+          examType: selectedExam || 'Study Rand',
+          examYear: Number.isFinite(examYear) ? examYear : null,
+          questionsAttempted: total,
+          questionsCorrect: score,
+          xpEarned: xpGained,
+        });
+
+        const achievementKey = score === total ? 'perfect_quiz' : (score / total) >= 0.8 ? 'quiz_excellence' : null;
+        if (achievementKey) {
+          const storageKey = `examply_achievements_${supabaseUser.id}`;
+          const earned = JSON.parse(localStorage.getItem(storageKey) || '[]') as string[];
+          if (!earned.includes(achievementKey)) {
+            localStorage.setItem(storageKey, JSON.stringify([...earned, achievementKey]));
+            enqueueAchievement(supabaseUser.id, {
+              achievementKey,
+              earnedAt: new Date().toISOString(),
+            });
+            trackEvent('achievement_earned', { name: achievementKey });
+          }
+        }
+
+        if (navigator.onLine) void syncUserData(supabaseUser.id);
+      }
       
-      trackEvent('practice_finish', { score, total, percentage: (score/total)*100 });
+      trackEvent('practice_finish', {
+        questions_attempted: total,
+        questions_correct: score,
+        xp_earned: xpGained,
+        percentage: total > 0 ? (score / total) * 100 : 0,
+      });
       setScreen('RESULTS');
   };
 
@@ -374,8 +443,12 @@ const App: React.FC = () => {
     setSearchQuery('');
   };
 
-  const handleLogout = () => {
-    trackEvent('user_logout');
+  const handleLogout = async () => {
+    try {
+      await signOut();
+    } catch (error) {
+      console.warn('Supabase sign-out failed:', error);
+    }
     localStorage.removeItem('waExamPrep_session');
     setIsLoggedIn(false);
     setUserProfile({
@@ -392,18 +465,12 @@ const App: React.FC = () => {
   };
 
   const handleDeleteAccount = () => {
-    if (!userProfile.email) return;
-    if (window.confirm("Are you sure you want to delete your account? This action cannot be undone and all your progress will be lost.")) {
-      const users = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
-      const filteredUsers = users.filter((u: any) => u.email !== userProfile.email);
-      localStorage.setItem('waExamPrep_users', JSON.stringify(filteredUsers));
-
-      const bookKey = `waExamPrep_books_${userProfile.email}`;
-      localStorage.removeItem(bookKey);
-
-      handleLogout();
-    }
+    alert('For safety, account deletion requires a server-side support workflow. No local or remote account data was deleted.');
   };
+
+  if (authLoading) {
+    return <LoadingScreen message="Restoring your secure session..." />;
+  }
 
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col relative pb-24 md:pb-8">
@@ -741,7 +808,7 @@ const App: React.FC = () => {
                                             {isDownloaded ? (
                                                 <>
                                                     <span className="text-primary-600 flex items-center gap-1"><WifiOff className="w-3.5 h-3.5"/> OFFLINE READY</span>
-                                                    {book.bestScore !== undefined && book.attempts > 0 && (
+                                                    {book.bestScore !== undefined && (book.attempts || 0) > 0 && (
                                                         <span className="text-primary-500 flex items-center gap-1">
                                                             <Trophy className="w-3.5 h-3.5" /> Best: {book.bestScore}/{book.questions.length}
                                                         </span>
@@ -847,9 +914,8 @@ const App: React.FC = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
               {Object.values(Subject).map((sub) => {
-                const hasNewData = !!studyRandData[sub];
-                const hasFallbackData = Object.values(fallbackData).some(exam => !!exam[sub]);
-                if (!hasNewData && !hasFallbackData) return null;
+                const hasDownloadedData = (Object.values(books) as Book[]).some((book) => book.subject === sub && book.questions.length > 0);
+                if (!hasDownloadedData) return null;
 
                 return (
                   <button
@@ -874,22 +940,10 @@ const App: React.FC = () => {
                <button
                   disabled={selectedRandSubjects.length === 0}
                   onClick={() => {
-                    // Logic to gather 60 questions
-                    let pool: Question[] = [];
-                    selectedRandSubjects.forEach(sub => {
-                      // From fallbackData
-                      Object.values(fallbackData).forEach(examData => {
-                        if (examData[sub]) {
-                          Object.values(examData[sub]).forEach(yearQuestions => {
-                            pool = [...pool, ...yearQuestions];
-                          });
-                        }
-                      });
-                      // From studyRandData
-                      if (studyRandData[sub]) {
-                        pool = [...pool, ...studyRandData[sub]];
-                      }
-                    });
+                    // Gather questions from the packs already stored for offline use.
+                    const pool: Question[] = (Object.values(books) as Book[])
+                      .filter((book) => selectedRandSubjects.includes(book.subject))
+                      .flatMap((book) => book.questions);
 
                     if (pool.length === 0) {
                       alert("No questions found for the selected subjects.");
@@ -967,7 +1021,7 @@ const App: React.FC = () => {
                                 <div className="flex items-center gap-5">
                                     <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center text-gray-300 font-black text-lg group-hover:bg-primary-50 group-hover:text-primary-600 transition-all relative">
                                         {book.year.slice(2)}
-                                        {book.bestScore !== undefined && book.attempts > 0 && book.bestScore > (book.questions.length * 0.8) && (
+                                        {book.bestScore !== undefined && (book.attempts || 0) > 0 && book.bestScore > (book.questions.length * 0.8) && (
                                             <div className="absolute -top-1 -right-1 w-4 h-4 bg-primary-600 rounded-full border-2 border-white animate-pulse"></div>
                                         )}
                                     </div>
@@ -975,7 +1029,7 @@ const App: React.FC = () => {
                                         <div className="font-black text-gray-900 text-lg leading-tight">{book.subject}</div>
                                         <div className="text-xs text-gray-400 font-black flex items-center gap-3 mt-1">
                                             <span className="text-primary-600">{book.examType}</span>
-                                            {book.bestScore !== undefined && book.attempts > 0 && (
+                                            {book.bestScore !== undefined && (book.attempts || 0) > 0 && (
                                                 <span className="text-primary-600 flex items-center gap-1">
                                                     <Trophy className="w-3.5 h-3.5" />
                                                     {book.bestScore}/{book.questions.length}
@@ -1020,5 +1074,11 @@ const App: React.FC = () => {
     </div>
   );
 };
+
+const App: React.FC = () => (
+  <AuthProvider>
+    <AppShell />
+  </AuthProvider>
+);
 
 export default App;
