@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_PHYSICS_2015_001",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Measurement",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: which instrument is most suitable for measuring the diameter of a thin wire accurately?",
+    "options": [
+      "Micrometer screw gauge",
+      "Metre rule",
+      "Measuring cylinder",
+      "Spring balance"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A micrometer screw gauge has a small pitch and fine scale, making it suitable for small diameters such as a wire. A metre rule is less precise for this purpose. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_002",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Measurement",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: which quantity is a vector quantity?",
+    "options": [
+      "Speed",
+      "Velocity",
+      "Distance",
+      "Mass"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Velocity has both magnitude and direction, so it is a vector. Speed, distance and mass have magnitude only and are scalar quantities. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_003",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Measurement",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: the SI unit of pressure is",
+    "options": [
+      "Newton",
+      "Joule",
+      "Pascal",
+      "Watt"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Pressure is force per unit area and its SI unit is the pascal, equal to one newton per square metre. A newton measures force, a joule energy, and a watt power. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_004",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Measurement",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: a body has mass 200 g and volume 50 cm3. Its density is",
+    "options": [
+      "0.25 g cm-3",
+      "150 g cm-3",
+      "10000 g cm-3",
+      "4 g cm-3"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Density equals mass divided by volume. Thus 200 g divided by 50 cm3 equals 4 g cm-3. The calculation must use compatible units for mass and volume. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_005",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Motion",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: the gradient of a distance-time graph represents",
+    "options": [
+      "Speed",
+      "Acceleration",
+      "Force",
+      "Momentum"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Gradient is change in distance divided by change in time, which is speed. Acceleration is obtained from the gradient of a velocity-time graph. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_006",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Motion",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: a car accelerates from rest at 2 m s-2 for 5 s. Its final speed is",
+    "options": [
+      "2.5 m s-1",
+      "10 m s-1",
+      "7 m s-1",
+      "25 m s-1"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Using v = u + at, with u = 0, a = 2 m s-2 and t = 5 s gives v = 10 m s-1. The unit is metres per second. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_007",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Forces",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: newton's first law states that a body remains at rest or in uniform motion unless acted upon by",
+    "options": [
+      "Its own mass",
+      "A balanced force",
+      "A resultant external force",
+      "A temperature change"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A body changes its state of motion only when an unbalanced or resultant external force acts on it. Balanced forces have zero resultant and do not cause acceleration. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_008",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Forces",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: the tendency of a body to resist a change in its state of motion is called",
+    "options": [
+      "Impulse",
+      "Power",
+      "Pressure",
+      "Inertia"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Inertia is the resistance of an object to changes in rest or motion. Greater mass generally means greater inertia, while impulse and power describe different physical quantities. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_009",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Forces",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: friction between a car tyre and the road is useful because it",
+    "options": [
+      "Provides grip for motion and braking",
+      "Always reduces mass",
+      "Eliminates all heat",
+      "Makes gravity vanish"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Friction provides the grip required for a tyre to accelerate, turn and brake. Although friction can produce heat and wear, it does not change mass or remove gravity. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_010",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Moments",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: for a body in rotational equilibrium, the total clockwise moment is",
+    "options": [
+      "Always zero without forces",
+      "Equal to the total anticlockwise moment",
+      "Greater than anticlockwise moment",
+      "Independent of distance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The principle of moments states that clockwise moments equal anticlockwise moments for equilibrium. A moment depends on both force and perpendicular distance from the pivot. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_011",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Work, energy and power",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: work done is calculated as force multiplied by",
+    "options": [
+      "Time taken only",
+      "Mass only",
+      "Distance moved in the force direction",
+      "Temperature rise"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Work done equals force times displacement in the direction of the force. Time is used in calculating power, not directly in the definition of mechanical work. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_012",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Work, energy and power",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: a machine does 600 J of work in 20 s. Its power output is",
+    "options": [
+      "12 W",
+      "300 W",
+      "12000 W",
+      "30 W"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Power is the rate of doing work: P = W/t = 600 J/20 s = 30 W. One watt is one joule of work done per second. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_013",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Work, energy and power",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: the energy possessed by a moving object is",
+    "options": [
+      "Kinetic energy",
+      "Potential energy only",
+      "Chemical energy only",
+      "Nuclear energy only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Kinetic energy is energy due to motion and depends on mass and speed. Potential energy is stored because of position or configuration. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_014",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Work, energy and power",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: which energy conversion occurs in a hydroelectric power station?",
+    "options": [
+      "Electrical to chemical energy only",
+      "Gravitational potential to electrical energy",
+      "Light to nuclear energy",
+      "Sound to mass energy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Water stored at height has gravitational potential energy, which becomes kinetic and then electrical energy through turbines and generators. The other conversions do not describe the main process. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_015",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Simple machines",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: the mechanical advantage of a machine is the ratio of",
+    "options": [
+      "Effort to load",
+      "Distance to time",
+      "Load to effort",
+      "Power to energy"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Mechanical advantage equals load divided by effort. It indicates how much a machine multiplies force, whereas velocity ratio compares distances moved. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_016",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Heat",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: heat transfer through a metal spoon in hot tea occurs mainly by",
+    "options": [
+      "Convection",
+      "Radiation only",
+      "Evaporation",
+      "Conduction"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "In a solid metal, energy is transferred through collisions and mobile electrons by conduction. Convection requires bulk fluid motion and radiation uses electromagnetic waves. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_017",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Heat",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: why are gaps left between railway lines?",
+    "options": [
+      "To allow thermal expansion",
+      "To reduce magnetic fields",
+      "To increase density",
+      "To stop conduction completely"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Metals expand when heated, so gaps prevent rails from buckling in hot weather. The gaps do not primarily control density, magnetism or all heat transfer. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_018",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Heat",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: the specific heat capacity of a substance is the heat required to raise the temperature of",
+    "options": [
+      "Any mass by ten degrees",
+      "Unit mass by one degree",
+      "One mole by any temperature",
+      "A whole object to boiling point"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Specific heat capacity is energy required per unit mass for a one-degree Celsius or one-kelvin rise. The value depends on the material, not simply its total mass. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_019",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Gas laws",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: at constant temperature, pressure of a fixed mass of gas increases when its volume",
+    "options": [
+      "Increases proportionally",
+      "Remains unrelated",
+      "Decreases",
+      "Becomes zero temperature"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Boyle's law states that pressure is inversely proportional to volume for a fixed mass of gas at constant temperature. Reducing volume increases collision frequency with container walls. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_020",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Waves",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: the number of complete waves passing a point each second is the",
+    "options": [
+      "Wavelength",
+      "Amplitude",
+      "Period only",
+      "Frequency"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Frequency is the number of oscillations or waves per second, measured in hertz. Wavelength is the distance between corresponding points, and amplitude is maximum displacement. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_021",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Waves",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: a wave has frequency 50 Hz and wavelength 2 m. Its speed is",
+    "options": [
+      "100 m s-1",
+      "25 m s-1",
+      "52 m s-1",
+      "0.04 m s-1"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Wave speed equals frequency multiplied by wavelength. Thus v = 50 Hz x 2 m = 100 m s-1. Units of hertz are per second. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_022",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Sound",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: sound cannot travel through a vacuum because it requires",
+    "options": [
+      "Gravity only",
+      "A material medium",
+      "Light energy",
+      "An electric field only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sound is a mechanical wave that transfers energy through vibrating particles. A vacuum has no particles to pass on those vibrations, unlike light which can travel through vacuum. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_023",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Sound",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: a higher-pitched sound has a higher",
+    "options": [
+      "Amplitude only",
+      "Speed in a given medium",
+      "Frequency",
+      "Mass"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Pitch is determined by frequency: more vibrations per second give a higher pitch. Amplitude is related mainly to loudness, while wave speed depends chiefly on the medium. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_024",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Light",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: the law of reflection states that the angle of incidence is",
+    "options": [
+      "Twice the angle of reflection",
+      "Always zero",
+      "Measured from the mirror surface",
+      "Equal to the angle of reflection"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Both angles are measured from the normal to the reflecting surface, and they are equal. Measuring from the surface rather than the normal gives the wrong reference. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_025",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Light",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: a pencil appears bent in water because light changes direction when it",
+    "options": [
+      "Passes between media of different optical density",
+      "Travels only in straight lines",
+      "Is reflected by a black surface",
+      "Stops moving"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Refraction occurs when light changes speed as it passes between materials such as water and air, causing a change in direction. This makes a submerged pencil appear displaced. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_026",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Light",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: which lens is used to correct short-sightedness?",
+    "options": [
+      "Convex lens",
+      "Concave lens",
+      "Plane mirror",
+      "Prism only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A concave lens diverges incoming light so that a short-sighted eye can focus distant objects on the retina. A convex lens is normally used to correct long-sightedness. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_027",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Electricity",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: electric current is the rate of flow of",
+    "options": [
+      "Resistance",
+      "Potential difference",
+      "Electric charge",
+      "Magnetic field"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Current is defined as charge flowing per unit time and is measured in amperes. Potential difference is energy transferred per unit charge, while resistance opposes current. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_028",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Electricity",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: if 12 C of charge passes a point in 3 s, the current is",
+    "options": [
+      "0.25 A",
+      "9 A",
+      "36 A",
+      "4 A"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Using I = Q/t gives 12 C divided by 3 s, which is 4 A. An ampere is one coulomb of charge passing per second. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_029",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Electricity",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: ohm's law is expressed by",
+    "options": [
+      "V = IR",
+      "P = IV only",
+      "F = ma",
+      "Q = It only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ohm's law relates potential difference, current and resistance for an ohmic conductor at constant temperature: V = IR. The other equations describe different physical relations. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_030",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Electricity",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: two resistors of 2 ohms and 3 ohms connected in series have total resistance",
+    "options": [
+      "1.2 ohms",
+      "5 ohms",
+      "6 ohms",
+      "0.5 ohms"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Resistances in series add directly, so 2 ohms + 3 ohms = 5 ohms. The reciprocal calculation is used for parallel resistors, not series circuits. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_031",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Electricity",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: the electrical power of an appliance is given by",
+    "options": [
+      "Current divided by resistance",
+      "Charge multiplied by time",
+      "Potential difference multiplied by current",
+      "Energy divided by voltage only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Electrical power equals P = VI, where V is potential difference and I is current. It is the rate at which electrical energy is transferred. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_032",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Magnetism",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: the region around a magnet where magnetic effects can be detected is its",
+    "options": [
+      "Electric circuit",
+      "Neutral zone only",
+      "Gravitational mass",
+      "Magnetic field"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A magnetic field is the region in which a magnetic pole or moving charge can experience magnetic force. It can be represented by field lines around the magnet. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_033",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Magnetism",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: an electromagnet becomes stronger when the number of turns on its coil is",
+    "options": [
+      "Increased",
+      "Reduced to zero",
+      "Made of plastic only",
+      "Disconnected from current"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Increasing the number of coil turns increases the combined magnetic effect of the current loops. An iron core and larger current can also strengthen an electromagnet. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_034",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Electromagnetic induction",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: an induced current is produced in a coil when there is a change in",
+    "options": [
+      "The coil colour only",
+      "Magnetic flux through the coil",
+      "The mass of a battery",
+      "Room temperature only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Electromagnetic induction occurs when the magnetic flux linking a conductor changes, such as by moving a magnet or coil. A stationary unchanging field does not induce a sustained current. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_035",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Electromagnetic induction",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: a transformer operates using",
+    "options": [
+      "Direct current only",
+      "Static electric charge only",
+      "Alternating current",
+      "Sound waves"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A transformer needs changing magnetic flux, so it works with alternating current. Direct current produces no continuous changing flux after the circuit is switched on. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_036",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Atomic physics",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: an atom is electrically neutral when the number of protons equals the number of",
+    "options": [
+      "Neutrons only",
+      "Nucleons",
+      "Shells",
+      "Electrons"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Protons carry positive charge and electrons carry equal negative charge. Equal numbers give zero net charge; neutron number does not affect electrical charge. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_037",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Atomic physics",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: radioactive decay is unaffected by changes in",
+    "options": [
+      "Temperature and pressure",
+      "The isotope involved",
+      "The amount of time elapsed",
+      "The number of undecayed nuclei"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Radioactive decay is a nuclear process and is not appreciably altered by ordinary changes in temperature or pressure. The decay rate depends on the isotope and the number of undecayed nuclei. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_038",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Nuclear physics",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: which radiation is most strongly ionising but least penetrating?",
+    "options": [
+      "Gamma radiation",
+      "Alpha radiation",
+      "X-rays",
+      "Visible light"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Alpha particles are heavy and doubly charged, so they ionise strongly but are stopped by paper or skin. Gamma radiation penetrates much further and is less strongly ionising. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_039",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Nuclear physics",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: the half-life of a radioactive substance is the time taken for",
+    "options": [
+      "All nuclei to decay",
+      "Its temperature to double",
+      "Half its unstable nuclei to decay",
+      "Its mass to become constant"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Half-life is the time in which the number of undecayed radioactive nuclei, or the activity, falls to half its original value. Decay is random, so the sample is not completely gone after one half-life. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_040",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Practical physics",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: in a simple pendulum experiment, which quantity should be measured for many oscillations to reduce timing error?",
+    "options": [
+      "Mass of the bob only",
+      "Colour of the string",
+      "Room humidity only",
+      "Total time for the oscillations"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Timing many oscillations and dividing by the number reduces the effect of reaction-time error on the period. The bob mass has little effect on period for small swings. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_041",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Practical physics",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: a measured value that is very different from the others in a set of repeats is called",
+    "options": [
+      "An anomalous result",
+      "A control variable",
+      "A systematic unit",
+      "A scalar result"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "An anomalous result is an outlier that does not fit the general pattern and should be investigated. Repeats help identify such results and improve reliability. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_042",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Practical physics",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: why should the eye be placed directly in front of a scale when taking a reading?",
+    "options": [
+      "To increase the object mass",
+      "To avoid parallax error",
+      "To change the unit",
+      "To create a magnetic field"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Viewing a scale perpendicularly prevents apparent displacement of the reading caused by different eye positions. This source of error is called parallax. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_043",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Fluids",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: pressure in a liquid increases with",
+    "options": [
+      "Decreasing density only",
+      "Reducing gravity to zero",
+      "Depth",
+      "Surface area only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Liquid pressure increases with depth because the weight of liquid above increases. It also depends on liquid density and gravitational field strength. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_044",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Fluids",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: an object floats in a liquid when the upthrust is",
+    "options": [
+      "Always less than its weight",
+      "Zero",
+      "Equal to its volume only",
+      "Equal to its weight"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "For a floating object in equilibrium, the upward buoyant force equals the downward weight. If upthrust were less than weight, the object would sink further. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_045",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Elasticity",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: within the elastic limit, extension of a spring is directly proportional to",
+    "options": [
+      "Applied force",
+      "Its colour",
+      "Temperature in all cases",
+      "Time alone"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Hooke's law states that extension is proportional to applied force, provided the elastic limit is not exceeded. Beyond that limit, the spring may not return to its original length. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_046",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Momentum",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: momentum is calculated as",
+    "options": [
+      "Force divided by area",
+      "Mass multiplied by velocity",
+      "Energy divided by time",
+      "Mass multiplied by acceleration"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Momentum p = mv and is a vector in the direction of velocity. Force is the rate of change of momentum, while pressure is force divided by area. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_047",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Momentum",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: in an isolated collision, total momentum is",
+    "options": [
+      "Always doubled",
+      "Always converted entirely to heat",
+      "Conserved",
+      "Independent of velocity"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "If external forces are negligible, the total momentum before a collision equals the total momentum after it. Some kinetic energy may change form, but momentum is conserved. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_048",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Electronics",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2015 WAEC objective exercise, determine this: a diode allows current to flow mainly in",
+    "options": [
+      "Both directions equally",
+      "No direction ever",
+      "Alternating directions without restriction",
+      "One direction"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A diode conducts readily when forward biased and resists current when reverse biased, so it provides one-way conduction. This property is used in rectifier circuits. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_049",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Energy resources",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate working through 2015 WAEC Physics practice considers: which source of energy is renewable?",
+    "options": [
+      "Solar energy",
+      "Coal",
+      "Natural gas",
+      "Petroleum"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Solar energy is replenished naturally by the Sun and is renewable on human time scales. Coal, natural gas and petroleum are finite fossil fuels formed over millions of years. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  },
+  {
+    "id": "WAEC_PHYSICS_2015_050",
+    "examType": "WAEC",
+    "subject": "Physics",
+    "year": "2015",
+    "topic": "Energy resources",
+    "contentLabel": "Original exam-style practice",
+    "text": "A 2015 WAEC Physics revision question asks: which device converts electrical energy into mechanical energy in an electric fan?",
+    "options": [
+      "Generator",
+      "Electric motor",
+      "Transformer",
+      "Rectifier"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An electric motor uses magnetic forces on a current-carrying coil to convert electrical energy into rotational mechanical energy. A generator performs the reverse conversion, while transformers change voltage levels. This is original WAEC 2015 syllabus-aligned practice rather than an official past-paper question."
+  }
+]
