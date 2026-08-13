@@ -1,0 +1,852 @@
+[
+  {
+    "id": "JAMB_IRS_2024_001",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet Muhammad (SAW) belonged to the clan of",
+    "options": [
+      "Banu Umayyah",
+      "Banu Hashim",
+      "Banu Zuhra",
+      "Banu Makhzum"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet belonged to the Banu Hashim clan of Quraysh. Therefore, option B (Banu Hashim) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_002",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's father died",
+    "options": [
+      "after his birth",
+      "before his birth",
+      "when he was 5",
+      "when he was 10"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Abdullah died before the Prophet was born. Therefore, option B (before his birth) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_003",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet was born in",
+    "options": [
+      "Madinah",
+      "Ta'if",
+      "Makkah",
+      "Jerusalem"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "He was born in Makkah in the Year of the Elephant. Therefore, option C (Makkah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_004",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's mother died when he was",
+    "options": [
+      "2 years old",
+      "6 years old",
+      "10 years old",
+      "15 years old"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Aminah died when the Prophet was about 6 years old. Therefore, option B (6 years old) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_005",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's grandfather died when he was",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Abdul-Muttalib died when the Prophet was 8 years old. Therefore, option B (8) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_006",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's trade journey to Syria was with",
+    "options": [
+      "Abu Talib",
+      "Abu Bakr",
+      "Khadijah's caravan",
+      "Umar"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "He led Khadijah's caravan to Syria before marriage. Therefore, option C (Khadijah's caravan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_007",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The monk who recognised signs of prophethood was",
+    "options": [
+      "Salman",
+      "Bahira",
+      "Waraqah",
+      "Zayd"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bahira, a Christian monk, recognised the signs on the Prophet during a trade journey. Therefore, option B (Bahira) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_008",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original exam-style practice",
+    "text": "The cousin of Khadijah who confirmed the first revelation was",
+    "options": [
+      "Bahira",
+      "Waraqah ibn Nawfal",
+      "Abu Talib",
+      "Abbas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Waraqah ibn Nawfal confirmed the Prophet's experience. Therefore, option B (Waraqah ibn Nawfal) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_009",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first Muslims were from",
+    "options": [
+      "only the rich",
+      "the Prophet's family and close friends",
+      "only the poor",
+      "only slaves"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Early converts included Khadijah, Abu Bakr, Ali, and Zayd. Therefore, option B (the Prophet's family and close friends) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_010",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The period of secret preaching lasted for",
+    "options": [
+      "1 year",
+      "3 years",
+      "5 years",
+      "10 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet preached secretly for about three years. Therefore, option B (3 years) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_011",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first open call to Islam was at",
+    "options": [
+      "Mount Arafat",
+      "Mount Safa",
+      "Mount Uhud",
+      "Mount Nur"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet called Quraysh from Mount Safa. Therefore, option B (Mount Safa) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_012",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The boycott of Banu Hashim lasted for",
+    "options": [
+      "1 year",
+      "2 years",
+      "3 years",
+      "5 years"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The social and economic boycott lasted about three years. Therefore, option C (3 years) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_013",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's visit to Ta'if resulted in",
+    "options": [
+      "immediate acceptance",
+      "rejection and stoning",
+      "a treaty",
+      "war"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The people of Ta'if rejected the Prophet and stoned him. Therefore, option B (rejection and stoning) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_014",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first pledge of Aqabah involved",
+    "options": [
+      "5 men",
+      "10 men",
+      "12 men",
+      "20 men"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Twelve men from Yathrib (Madinah) pledged allegiance in the first Aqabah. Therefore, option C (12 men) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_015",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The second pledge of Aqabah involved",
+    "options": [
+      "50 people",
+      "73 men and 2 women",
+      "100 people",
+      "200 people"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "73 men and 2 women pledged to support the Prophet in the second Aqabah. Therefore, option B (73 men and 2 women) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_016",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's camel during the Hijrah stopped at",
+    "options": [
+      "Quba",
+      "the site of Masjid an-Nabawi",
+      "Arafat",
+      "Mina"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The camel Qaswa stopped at the site where the Prophet's Mosque was built. Therefore, option B (the site of Masjid an-Nabawi) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_017",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first institution established in Madinah was",
+    "options": [
+      "a market",
+      "the mosque",
+      "a school",
+      "a court"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet built the mosque as the first institution. Therefore, option B (the mosque) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_018",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Islamic Ethics and Social Life",
+    "contentLabel": "Original exam-style practice",
+    "text": "The brotherhood established between Muhajirun and Ansar is called",
+    "options": [
+      "Mu'akhah",
+      "Shura",
+      "Bay'ah",
+      "Hijrah"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Mu'akhah paired emigrants with helpers in brotherhood. Therefore, option A (Mu'akhah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_019",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first battle in Islam was",
+    "options": [
+      "Uhud",
+      "Khandaq",
+      "Badr",
+      "Hunayn"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Badr (624 CE) was the first major battle. Therefore, option C (Badr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_020",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The number of Quraysh at Badr was about",
+    "options": [
+      "500",
+      "700",
+      "1000",
+      "1500"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "About 1000 Quraysh fighters faced the Muslims. Therefore, option C (1000) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_021",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Muslims captured how many prisoners at Badr?",
+    "options": [
+      "30",
+      "50",
+      "70",
+      "100"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "About 70 prisoners were captured at Badr. Therefore, option C (70) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_022",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet treated prisoners of Badr by",
+    "options": [
+      "killing them",
+      "enslaving them all",
+      "accepting ransom or literacy teaching",
+      "exiling them"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Prisoners could gain freedom by teaching Muslims to read or ransom. Therefore, option C (accepting ransom or literacy teaching) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_023",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The martyrs of Uhud include",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Hamza",
+      "Ali"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Hamza was martyred at Uhud. Therefore, option C (Hamza) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_024",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Battle of Khandaq is also called",
+    "options": [
+      "Battle of Badr",
+      "Battle of the Confederates",
+      "Battle of Hunayn",
+      "Battle of Tabuk"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Khandaq (Trench) is also called Ahzab (Confederates). Therefore, option B (Battle of the Confederates) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_025",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The tribe that betrayed the Muslims during Khandaq was",
+    "options": [
+      "Quraysh",
+      "Banu Qurayzah",
+      "Banu Nadir",
+      "Banu Qaynuqa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Banu Qurayzah betrayed the pact during the siege. Therefore, option B (Banu Qurayzah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_026",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Treaty of Hudaybiyyah included a truce for",
+    "options": [
+      "5 years",
+      "10 years",
+      "15 years",
+      "20 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The treaty established a 10-year truce. Therefore, option B (10 years) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_027",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The conquest of Makkah was occasioned by the violation of",
+    "options": [
+      "Treaty of Madinah",
+      "Treaty of Hudaybiyyah",
+      "Treaty of Ta'if",
+      "Treaty of Badr"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Quraysh allies broke the Hudaybiyyah treaty. Therefore, option B (Treaty of Hudaybiyyah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_028",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet entered Makkah as a conqueror but",
+    "options": [
+      "destroyed the Ka'bah",
+      "showed mercy and forgiveness",
+      "exiled everyone",
+      "imposed heavy taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He declared general amnesty. Therefore, option B (showed mercy and forgiveness) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_029",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The idols inside the Ka'bah were removed because",
+    "options": [
+      "they were valuable",
+      "Islam prohibits idol worship",
+      "they were broken by accident",
+      "the Quraysh wanted it"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Purifying the Ka'bah meant removing all idols. Therefore, option B (Islam prohibits idol worship) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_030",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Battle of Hunayn was fought against",
+    "options": [
+      "Quraysh",
+      "the Hawazin and Thaqif tribes",
+      "Persians",
+      "Romans"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hunayn was against the Hawazin and Thaqif. Therefore, option B (the Hawazin and Thaqif tribes) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_031",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The expedition to Tabuk was against the",
+    "options": [
+      "Persians",
+      "Romans (Byzantines)",
+      "Egyptians",
+      "Abyssinians"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tabuk was a campaign against the Byzantine Romans. Therefore, option B (Romans (Byzantines)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_032",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The last major military expedition of the Prophet was",
+    "options": [
+      "Badr",
+      "Uhud",
+      "Tabuk",
+      "Hunayn"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Tabuk was the final campaign. Therefore, option C (Tabuk) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_033",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's farewell Hajj was in the year",
+    "options": [
+      "10 AH",
+      "11 AH",
+      "12 AH",
+      "13 AH"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Farewell Hajj was in 10 AH (632 CE). Therefore, option A (10 AH) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_034",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the Farewell Sermon, the Prophet declared",
+    "options": [
+      "racial superiority",
+      "equality of all humans",
+      "oppression of women",
+      "tribal dominance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He affirmed no superiority except by piety. Therefore, option B (equality of all humans) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_035",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet explicitly forbade",
+    "options": [
+      "trade",
+      "usury (Riba)",
+      "marriage",
+      "travel"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Riba was abolished in the Farewell Sermon. Therefore, option B (usury (Riba)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_036",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet instructed men to treat women",
+    "options": [
+      "harshly",
+      "kindly",
+      "as servants",
+      "with suspicion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He said, 'Treat women kindly.' Therefore, option B (kindly) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_037",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet said no Arab is superior to a non-Arab except by",
+    "options": [
+      "wealth",
+      "lineage",
+      "piety (Taqwa)",
+      "power"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Superiority is only through God-consciousness. Therefore, option C (piety (Taqwa)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_038",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's last sermon was delivered at",
+    "options": [
+      "Mina",
+      "Muzdalifah",
+      "Arafat",
+      "Safa"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "It was delivered at Mount Arafat. Therefore, option C (Arafat) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_039",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet passed away in the month of",
+    "options": [
+      "Ramadan",
+      "Rabi' al-Awwal",
+      "Muharram",
+      "Dhul-Hijjah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He died in Rabi' al-Awwal, 11 AH. Therefore, option B (Rabi' al-Awwal) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_040",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet was buried in",
+    "options": [
+      "Makkah",
+      "his room in Madinah",
+      "Jerusalem",
+      "Ta'if"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He was buried in Aishah's room, now part of the Prophet's Mosque. Therefore, option B (his room in Madinah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_041",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's household is referred to as",
+    "options": [
+      "Sahabah",
+      "Ahl al-Bayt",
+      "Tabi'un",
+      "Ansar"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ahl al-Bayt are the members of the Prophet's household. Therefore, option B (Ahl al-Bayt) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_042",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Sahabah are",
+    "options": [
+      "the enemies of Islam",
+      "the companions of the Prophet",
+      "the prophets",
+      "the angels"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sahabah are the companions who met and believed in the Prophet. Therefore, option B (the companions of the Prophet) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_043",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Tabi'un are",
+    "options": [
+      "the companions",
+      "the successors who met the companions",
+      "the prophets",
+      "the angels"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tabi'un are the generation after the Sahabah. Therefore, option B (the successors who met the companions) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_044",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The four rightly guided caliphs ruled for approximately",
+    "options": [
+      "20 years",
+      "30 years",
+      "40 years",
+      "50 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Rashidun era lasted about 30 years (632-661 CE). Therefore, option B (30 years) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_045",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Abu Bakr was given the title As-Siddiq because he",
+    "options": [
+      "was wealthy",
+      "was the first to believe without doubt",
+      "was a great warrior",
+      "led many battles"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "As-Siddiq means 'the truthful'—he accepted the Prophet's night journey without doubt. Therefore, option B (was the first to believe without doubt) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_046",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Umar was given the title Al-Faruq because he",
+    "options": [
+      "was strong",
+      "distinguished between truth and falsehood",
+      "was a judge",
+      "led prayers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Faruq means 'the one who distinguishes truth from falsehood'. Therefore, option B (distinguished between truth and falsehood) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_047",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Uthman was known as Dhun-Nurayn because he",
+    "options": [
+      "had two swords",
+      "married two daughters of the Prophet",
+      "ruled two kingdoms",
+      "wrote two books"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He married Ruqayyah and later Umm Kulthum, both daughters of the Prophet. Therefore, option B (married two daughters of the Prophet) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_048",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ali ibn Abi Talib was the Prophet's",
+    "options": [
+      "son",
+      "cousin and son-in-law",
+      "uncle",
+      "grandfather"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ali was the Prophet's cousin and husband of Fatimah. Therefore, option B (cousin and son-in-law) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_049",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The miracle in which the moon was split was granted to",
+    "options": [
+      "Prophet Musa (AS)",
+      "Prophet Muhammad (SAW)",
+      "Prophet Isa (AS)",
+      "Prophet Nuh (AS)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islamic tradition relates the splitting of the moon as one of the signs granted to Prophet Muhammad (SAW). It is associated with his prophethood, not with Musa, Isa or Nuh, whose miracles were different. Therefore, option B (Prophet Muhammad (SAW)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2024_050",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2024",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first adult male to accept Islam was",
+    "options": [
+      "Umar",
+      "Uthman",
+      "Abu Bakr",
+      "Zayd"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Abu Bakr was the first adult male convert. Therefore, option C (Abu Bakr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

@@ -332,6 +332,18 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2011`]: "./questions/jamb_physics_2011_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2011`]: "./questions/waec_physics_2011_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2011`]: "./questions/neco_physics_2011_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2026`]: "./questions/jamb_irs_2026_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2025`]: "./questions/jamb_irs_2025_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2024`]: "./questions/jamb_irs_2024_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2023`]: "./questions/jamb_irs_2023_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2022`]: "./questions/jamb_irs_2022_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2021`]: "./questions/jamb_irs_2021_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2020`]: "./questions/jamb_irs_2020_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2019`]: "./questions/jamb_irs_2019_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2018`]: "./questions/jamb_irs_2018_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2017`]: "./questions/jamb_irs_2017_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2016`]: "./questions/jamb_irs_2016_practice.json",
+  [`${ExamType.JAMB}:${Subject.IRS}:2015`]: "./questions/jamb_irs_2015_practice.json",
 };
 
 const optionKeys = ["a", "b", "c", "d", "A", "B", "C", "D"] as const;

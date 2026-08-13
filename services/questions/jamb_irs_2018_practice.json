@@ -1,0 +1,852 @@
+[
+  {
+    "id": "JAMB_IRS_2018_001",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The term 'Fiqh' refers to",
+    "options": [
+      "Islamic theology",
+      "Islamic jurisprudence",
+      "Islamic history",
+      "Islamic mysticism"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fiqh is the science of Islamic law and jurisprudence. Therefore, option B (Islamic jurisprudence) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_002",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The four Sunni schools of law are",
+    "options": [
+      "Hanafi, Maliki, Shafi'i, Hanbali",
+      "Ja'fari, Zaidi, Ibadi, Ismaili",
+      "Salafi, Sufi, Ahmadi, Barelvi",
+      "Ash'ari, Maturidi, Mu'tazili, Athari"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The four main Sunni madhhabs are Hanafi, Maliki, Shafi'i, and Hanbali. Therefore, option A (Hanafi, Maliki, Shafi'i, Hanbali) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_003",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The founder of the Hanafi school was",
+    "options": [
+      "Malik ibn Anas",
+      "Abu Hanifah",
+      "Ash-Shafi'i",
+      "Ahmad ibn Hanbal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Imam Abu Hanifah founded the Hanafi school. Therefore, option B (Abu Hanifah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_004",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The founder of the Maliki school was",
+    "options": [
+      "Abu Hanifah",
+      "Malik ibn Anas",
+      "Ash-Shafi'i",
+      "Ibn Hanbal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Imam Malik ibn Anas founded the Maliki school. Therefore, option B (Malik ibn Anas) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_005",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The founder of the Shafi'i school was",
+    "options": [
+      "Abu Hanifah",
+      "Malik",
+      "Muhammad ibn Idris ash-Shafi'i",
+      "Ahmad ibn Hanbal"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Imam ash-Shafi'i founded the Shafi'i school. Therefore, option C (Muhammad ibn Idris ash-Shafi'i) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_006",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The founder of the Hanbali school was",
+    "options": [
+      "Abu Hanifah",
+      "Malik",
+      "Ash-Shafi'i",
+      "Ahmad ibn Hanbal"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Imam Ahmad ibn Hanbal founded the Hanbali school. Therefore, option D (Ahmad ibn Hanbal) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_007",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ijma means",
+    "options": [
+      "individual reasoning",
+      "consensus of scholars",
+      "analogy",
+      "personal opinion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ijma is the consensus of Islamic scholars on a legal issue. Therefore, option B (consensus of scholars) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_008",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Qiyas refers to",
+    "options": [
+      "consensus",
+      "analogical reasoning",
+      "public interest",
+      "custom"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Qiyas is analogical deduction used in Islamic jurisprudence. Therefore, option B (analogical reasoning) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_009",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ijtihad means",
+    "options": [
+      "consensus",
+      "independent legal reasoning",
+      "imitation",
+      "prayer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ijtihad is independent reasoning to derive legal rulings. Therefore, option B (independent legal reasoning) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_010",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Taqleed means",
+    "options": [
+      "independent reasoning",
+      "following a qualified scholar's opinion",
+      "consensus",
+      "analogy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Taqleed is following the rulings of a recognized scholar. Therefore, option B (following a qualified scholar's opinion) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_011",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The primary source of Islamic law is",
+    "options": [
+      "Ijma",
+      "Qiyas",
+      "The Qur'an",
+      "Ijtihad"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Qur'an is the first and primary source of Shariah. Therefore, option C (The Qur'an) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_012",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The second source of Islamic law is",
+    "options": [
+      "Ijma",
+      "Qiyas",
+      "Sunnah (Hadith)",
+      "Urf"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Sunnah of the Prophet is the second primary source. Therefore, option C (Sunnah (Hadith)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_013",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Haram means",
+    "options": [
+      "recommended",
+      "permissible",
+      "prohibited",
+      "disliked"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Haram refers to actions that are strictly prohibited. Therefore, option C (prohibited) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_014",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Halal means",
+    "options": [
+      "prohibited",
+      "permissible",
+      "disliked",
+      "obligatory"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Halal means lawful or permissible in Islam. Therefore, option B (permissible) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_015",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Makruh means",
+    "options": [
+      "obligatory",
+      "permissible",
+      "disliked",
+      "prohibited"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Makruh is an act that is disliked but not sinful. Therefore, option C (disliked) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_016",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fard means",
+    "options": [
+      "recommended",
+      "obligatory",
+      "optional",
+      "forbidden"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fard is an obligatory act, like the five daily prayers. Therefore, option B (obligatory) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_017",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mustahabb means",
+    "options": [
+      "prohibited",
+      "recommended",
+      "obligatory",
+      "disliked"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Mustahabb (Sunnah) is a recommended act. Therefore, option B (recommended) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_018",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mubah means",
+    "options": [
+      "obligatory",
+      "prohibited",
+      "permissible and neutral",
+      "recommended"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Mubah is an act that is neither rewarded nor punished. Therefore, option C (permissible and neutral) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_019",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The nisab for Zakat on gold is",
+    "options": [
+      "70 grams",
+      "85 grams",
+      "90 grams",
+      "100 grams"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The nisab for gold is 85 grams. Therefore, option B (85 grams) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_020",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The nisab for Zakat on silver is",
+    "options": [
+      "500 grams",
+      "595 grams",
+      "600 grams",
+      "700 grams"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The nisab for silver is 595 grams. Therefore, option B (595 grams) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_021",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The rate of Zakat on agricultural produce irrigated by natural rain is",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Zakat on rain-fed crops is 10% (ushr). Therefore, option B (10%) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_022",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The rate of Zakat on agricultural produce irrigated artificially is",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Irrigated crops attract 5% Zakat. Therefore, option A (5%) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_023",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The minimum age for obligatory fasting is",
+    "options": [
+      "7 years",
+      "10 years",
+      "puberty",
+      "18 years"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Fasting becomes obligatory at puberty. Therefore, option C (puberty) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_024",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "Those exempted from fasting include",
+    "options": [
+      "healthy adults",
+      "the sick and travellers",
+      "students",
+      "workers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The sick, travellers, elderly, pregnant/nursing women are exempt or may defer. Therefore, option B (the sick and travellers) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_025",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fidyah is",
+    "options": [
+      "a form of prayer",
+      "compensation for missed fasts",
+      "a type of Zakat",
+      "a pilgrimage rite"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fidyah is compensation (feeding a poor person) for unperformed fasts. Therefore, option B (compensation for missed fasts) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_026",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "Kaffarah for deliberately breaking a fast is",
+    "options": [
+      "fasting one day",
+      "fasting 60 consecutive days or feeding 60 poor people",
+      "paying money",
+      "performing Hajj"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Kaffarah requires fasting 60 days consecutively or feeding 60 poor persons. Therefore, option B (fasting 60 consecutive days or feeding 60 poor people) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_027",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The five categories of Islamic rulings are",
+    "options": [
+      "Fard, Mustahabb, Mubah, Makruh, Haram",
+      "Salat, Zakat, Sawm, Hajj, Shahadah",
+      "Qur'an, Sunnah, Ijma, Qiyas, Ijtihad",
+      "Tawhid, Risalah, Akhirah, Qadar, Malaika"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The five rulings (ahkam) are Fard, Mustahabb, Mubah, Makruh, and Haram. Therefore, option A (Fard, Mustahabb, Mubah, Makruh, Haram) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_028",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Wajib means",
+    "options": [
+      "recommended",
+      "obligatory but slightly less than Fard",
+      "prohibited",
+      "neutral"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wajib is obligatory; in Hanafi fiqh, it is slightly below Fard in certainty. Therefore, option B (obligatory but slightly less than Fard) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_029",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet said, 'Actions are judged by'",
+    "options": [
+      "their results",
+      "intentions",
+      "their size",
+      "the time spent"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The famous Hadith: 'Actions are judged by intentions' (Bukhari & Muslim). Therefore, option B (intentions) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_030",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Hadith 'None of you truly believes until he loves for his brother what he loves for himself' emphasizes",
+    "options": [
+      "selfishness",
+      "brotherhood and selflessness",
+      "competition",
+      "individualism"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It teaches empathy, brotherhood, and selflessness. Therefore, option B (brotherhood and selflessness) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_031",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The month of Ramadan is mentioned in the Qur'an in Surah",
+    "options": [
+      "Al-Fatihah",
+      "Al-Baqarah",
+      "Al-Imran",
+      "An-Nisa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Al-Baqarah (2:185) mentions Ramadan and fasting. Therefore, option B (Al-Baqarah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_032",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Qur'an was first revealed in the month of",
+    "options": [
+      "Muharram",
+      "Rajab",
+      "Ramadan",
+      "Dhul-Hijjah"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The first revelation came in Ramadan. Therefore, option C (Ramadan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_033",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The term 'Sawm' means",
+    "options": [
+      "prayer",
+      "fasting",
+      "charity",
+      "pilgrimage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sawm is the Arabic term for fasting. Therefore, option B (fasting) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_034",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The blessed night in Ramadan is",
+    "options": [
+      "Ashura",
+      "Laylatul Qadr",
+      "Isra",
+      "Mi'raj"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Laylatul Qadr is the Night of Power in Ramadan. Therefore, option B (Laylatul Qadr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_035",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "Tarawih prayer is performed",
+    "options": [
+      "before Fajr",
+      "after Isha during Ramadan",
+      "at midday",
+      "at sunset"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tarawih is the night prayer after Isha in Ramadan. Therefore, option B (after Isha during Ramadan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_036",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The number of raka'at of Tarawih traditionally prayed is",
+    "options": [
+      "8 or 20",
+      "3",
+      "5",
+      "13"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Tarawih is commonly 8 or 20 raka'at, with differences among schools. Therefore, option A (8 or 20) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_037",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "I'tikaf means",
+    "options": [
+      "fasting",
+      "seclusion in the mosque for worship",
+      "giving charity",
+      "performing Umrah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "I'tikaf is spiritual retreat in the mosque, especially in the last 10 days of Ramadan. Therefore, option B (seclusion in the mosque for worship) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_038",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Sadaqah means",
+    "options": [
+      "obligatory charity",
+      "voluntary charity",
+      "fasting",
+      "prayer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sadaqah is voluntary charity, unlike Zakat which is obligatory. Therefore, option B (voluntary charity) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_039",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Sadaqah Jariyah refers to",
+    "options": [
+      "one-time charity",
+      "continuous charity with lasting rewards",
+      "hidden charity",
+      "charity to relatives"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sadaqah Jariyah is ongoing charity like building wells or schools. Therefore, option B (continuous charity with lasting rewards) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_040",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Waqf is",
+    "options": [
+      "a type of prayer",
+      "an Islamic endowment",
+      "a pilgrimage rite",
+      "a form of fasting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Waqf is a permanent endowment for charitable purposes. Therefore, option B (an Islamic endowment) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_041",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Arabic term for lawful earning is",
+    "options": [
+      "Haram",
+      "Halal",
+      "Makruh",
+      "Riba"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Halal earnings are lawful and permissible. Therefore, option B (Halal) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_042",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Islamic Ethics and Social Life",
+    "contentLabel": "Original exam-style practice",
+    "text": "Riba means",
+    "options": [
+      "charity",
+      "interest or usury",
+      "trade",
+      "gift"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Riba (interest/usury) is strictly prohibited in Islam. Therefore, option B (interest or usury) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_043",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mudarabah is an Islamic contract based on",
+    "options": [
+      "interest",
+      "profit-sharing",
+      "gambling",
+      "loan with interest"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Mudarabah is a profit-sharing partnership in Islamic finance. Therefore, option B (profit-sharing) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_044",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Musharakah is",
+    "options": [
+      "a type of Zakat",
+      "a joint partnership where all parties share capital and profit",
+      "a loan",
+      "a form of charity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Musharakah is a joint venture partnership. Therefore, option B (a joint partnership where all parties share capital and profit) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_045",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Murabahah is",
+    "options": [
+      "cost-plus financing",
+      "profit-sharing",
+      "charity",
+      "gambling"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Murabahah is a sale with a known profit margin. Therefore, option A (cost-plus financing) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_046",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ijara is an Islamic contract for",
+    "options": [
+      "sale",
+      "leasing",
+      "partnership",
+      "charity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ijara is an Islamic leasing arrangement. Therefore, option B (leasing) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_047",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Sukuk refers to",
+    "options": [
+      "interest-bearing bonds",
+      "Islamic bonds",
+      "charity certificates",
+      "bank loans"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sukuk are Islamic financial certificates similar to bonds but Shariah-compliant. Therefore, option B (Islamic bonds) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_048",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Takaful is",
+    "options": [
+      "conventional insurance",
+      "Islamic insurance based on mutual cooperation",
+      "a type of loan",
+      "a form of Zakat"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Takaful is cooperative insurance compliant with Shariah. Therefore, option B (Islamic insurance based on mutual cooperation) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_049",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Islamic Ethics and Social Life",
+    "contentLabel": "Original exam-style practice",
+    "text": "The prohibition of Riba is based on",
+    "options": [
+      "consensus only",
+      "clear Qur'anic verses",
+      "personal opinion",
+      "tradition"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Riba is prohibited explicitly in the Qur'an, e.g., Surah Al-Baqarah 2:275-279. Therefore, option B (clear Qur'anic verses) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2018_050",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2018",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Gharar in Islamic finance means",
+    "options": [
+      "profit-sharing",
+      "excessive uncertainty or ambiguity",
+      "charity",
+      "leasing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Gharar (uncertainty) is prohibited in contracts. Therefore, option B (excessive uncertainty or ambiguity) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

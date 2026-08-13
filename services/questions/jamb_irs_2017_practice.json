@@ -1,0 +1,852 @@
+[
+  {
+    "id": "JAMB_IRS_2017_001",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Islamic calendar begins with the event of",
+    "options": [
+      "the Prophet's birth",
+      "the first revelation",
+      "the Hijrah",
+      "the conquest of Makkah"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Islamic calendar starts from the Hijrah (migration) in 622 CE. Therefore, option C (the Hijrah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_002",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first month of the Islamic calendar is",
+    "options": [
+      "Ramadan",
+      "Shawwal",
+      "Muharram",
+      "Dhul-Hijjah"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Muharram is the first month of the Islamic year. Therefore, option C (Muharram) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_003",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The 10th of Muharram is known as",
+    "options": [
+      "Eid al-Fitr",
+      "Ashura",
+      "Eid al-Adha",
+      "Laylatul Qadr"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ashura (10th of Muharram) is a day of fasting and reflection. Therefore, option B (Ashura) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_004",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Laylatul Qadr is better than",
+    "options": [
+      "one year",
+      "one hundred months",
+      "one thousand months",
+      "ten thousand months"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Qur'an says Laylatul Qadr is better than a thousand months (Surah Al-Qadr). Therefore, option C (one thousand months) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_005",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "Laylatul Qadr is believed to fall in the last ten days of",
+    "options": [
+      "Muharram",
+      "Shawwal",
+      "Ramadan",
+      "Rajab"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "It occurs in the odd nights of the last ten days of Ramadan. Therefore, option C (Ramadan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_006",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original exam-style practice",
+    "text": "The night journey (Isra) and ascension (Mi'raj) are mentioned in Surah",
+    "options": [
+      "Al-Baqarah",
+      "Al-Isra",
+      "An-Najm",
+      "B and C"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Both Al-Isra (17) and An-Najm (53) mention the journey. Therefore, option D (B and C) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_007",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet received the command of five daily prayers during",
+    "options": [
+      "Hijrah",
+      "Mi'raj",
+      "Battle of Badr",
+      "Treaty of Hudaybiyyah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The five daily prayers were made obligatory during the Mi'raj. Therefore, option B (Mi'raj) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_008",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The tribe of Prophet Muhammad (SAW) was",
+    "options": [
+      "Banu Umayyah",
+      "Banu Quraysh",
+      "Banu Israel",
+      "Banu Hashim"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet belonged to the Quraysh tribe, specifically Banu Hashim clan. Therefore, option B (Banu Quraysh) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_009",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's father was",
+    "options": [
+      "Abu Talib",
+      "Abdullah",
+      "Abdul-Muttalib",
+      "Hamza"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "His father was Abdullah ibn Abdul-Muttalib. Therefore, option B (Abdullah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_010",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's mother was",
+    "options": [
+      "Halimah",
+      "Aminah",
+      "Fatimah",
+      "Khadijah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "His mother was Aminah bint Wahb. Therefore, option B (Aminah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_011",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet was born in the Year of the",
+    "options": [
+      "Elephant",
+      "Horse",
+      "Camel",
+      "Lion"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "He was born in the Year of the Elephant (570 CE). Therefore, option A (Elephant) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_012",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's wet nurse was",
+    "options": [
+      "Aminah",
+      "Halimah as-Sa'diyyah",
+      "Khadijah",
+      "Fatimah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Halimah as-Sa'diyyah nursed the Prophet in his early years. Therefore, option B (Halimah as-Sa'diyyah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_013",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's grandfather was",
+    "options": [
+      "Abu Talib",
+      "Abbas",
+      "Abdul-Muttalib",
+      "Hamza"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "His grandfather was Abdul-Muttalib, who cared for him after his mother's death. Therefore, option C (Abdul-Muttalib) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_014",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "After his grandfather's death, the Prophet was cared for by his uncle",
+    "options": [
+      "Abbas",
+      "Abu Lahab",
+      "Abu Talib",
+      "Hamza"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Abu Talib cared for the Prophet after Abdul-Muttalib died. Therefore, option C (Abu Talib) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_015",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet was known as Al-Amin, meaning",
+    "options": [
+      "the wise",
+      "the trustworthy",
+      "the strong",
+      "the eloquent"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Amin means 'the trustworthy' due to his honesty. Therefore, option B (the trustworthy) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_016",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet worked as a",
+    "options": [
+      "farmer",
+      "trader",
+      "blacksmith",
+      "carpenter"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He worked as a merchant and trader. Therefore, option B (trader) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_017",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet married Khadijah at the age of",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "40"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He married Khadijah when he was 25 and she was 40. Therefore, option B (25) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_018",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first revelation came when the Prophet was",
+    "options": [
+      "35 years old",
+      "40 years old",
+      "45 years old",
+      "50 years old"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet received the first revelation at age 40. Therefore, option B (40 years old) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_019",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original exam-style practice",
+    "text": "The cave where the Prophet received the first revelation is",
+    "options": [
+      "Cave Thawr",
+      "Cave Hira",
+      "Cave of Ashab al-Kahf",
+      "Cave of Safa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The revelation came in Cave Hira on Mount Nur. Therefore, option B (Cave Hira) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_020",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first word of the first revelation was",
+    "options": [
+      "Read",
+      "Write",
+      "Pray",
+      "Listen"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The first word revealed was 'Iqra' meaning 'Read'. Therefore, option A (Read) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_021",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first male to accept Islam was",
+    "options": [
+      "Abu Bakr",
+      "Ali",
+      "Zayd",
+      "Umar"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Abu Bakr was the first adult male to accept Islam. Therefore, option A (Abu Bakr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_022",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first child to accept Islam was",
+    "options": [
+      "Ali",
+      "Zayd",
+      "Abdullah",
+      "Talhah"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ali ibn Abi Talib was the first child to embrace Islam. Therefore, option A (Ali) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_023",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's migration to Madinah was accompanied by",
+    "options": [
+      "Umar",
+      "Ali",
+      "Abu Bakr",
+      "Uthman"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Abu Bakr accompanied the Prophet during the Hijrah. Therefore, option C (Abu Bakr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_024",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The cave where the Prophet and Abu Bakr hid during the Hijrah is",
+    "options": [
+      "Hira",
+      "Thawr",
+      "Nur",
+      "Uhud"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "They hid in Cave Thawr for three days. Therefore, option B (Thawr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_025",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first community of Muslims migrated to",
+    "options": [
+      "Egypt",
+      "Syria",
+      "Abyssinia",
+      "Persia"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Some early Muslims migrated to Abyssinia (Ethiopia) for safety. Therefore, option C (Abyssinia) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_026",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Christian king of Abyssinia who welcomed the Muslims was",
+    "options": [
+      "Heraclius",
+      "Negus (An-Najashi)",
+      "Cyrus",
+      "Constantine"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An-Najashi (Negus) protected the Muslim refugees. Therefore, option B (Negus (An-Najashi)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_027",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first ambassador of Islam was",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Mus'ab ibn Umayr",
+      "Ali"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Mus'ab ibn Umayr was sent to Madinah to teach Islam before the Hijrah. Therefore, option C (Mus'ab ibn Umayr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_028",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Ansar were the Muslims of",
+    "options": [
+      "Makkah",
+      "Madinah",
+      "Abyssinia",
+      "Ta'if"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Ansar (helpers) were the Muslims of Madinah who welcomed the migrants. Therefore, option B (Madinah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_029",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Muhajirun were the Muslims who",
+    "options": [
+      "fought in Badr",
+      "migrated from Makkah to Madinah",
+      "migrated to Abyssinia",
+      "conquered Makkah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Muhajirun were the emigrants from Makkah. Therefore, option B (migrated from Makkah to Madinah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_030",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The treaty that established peace between Muslims and Quraysh was",
+    "options": [
+      "Treaty of Madinah",
+      "Treaty of Hudaybiyyah",
+      "Treaty of Ta'if",
+      "Treaty of Makkah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Treaty of Hudaybiyyah was a peace agreement in 628 CE. Therefore, option B (Treaty of Hudaybiyyah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_031",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The constitution of Madinah was the first written constitution that",
+    "options": [
+      "divided Muslims",
+      "established a multi-religious state",
+      "banned other religions",
+      "created a monarchy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Constitution of Madinah established rights and duties for Muslims, Jews, and others. Therefore, option B (established a multi-religious state) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_032",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The mosque built by the Prophet in Madinah is",
+    "options": [
+      "Masjid al-Haram",
+      "Masjid Quba",
+      "Masjid an-Nabawi",
+      "Masjid al-Aqsa"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Masjid an-Nabawi (the Prophet's Mosque) was built in Madinah. Therefore, option C (Masjid an-Nabawi) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_033",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's tomb is located in",
+    "options": [
+      "Makkah",
+      "Madinah",
+      "Jerusalem",
+      "Ta'if"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet is buried in Madinah in his mosque. Therefore, option B (Madinah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_034",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Battle of Badr was fought in",
+    "options": [
+      "622 CE",
+      "624 CE",
+      "625 CE",
+      "627 CE"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Badr took place in 624 CE (2 AH). Therefore, option B (624 CE) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_035",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The number of Muslims in the Battle of Badr was approximately",
+    "options": [
+      "313",
+      "500",
+      "1000",
+      "1500"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "About 313 Muslims faced a much larger Quraysh army. Therefore, option A (313) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_036",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Battle of Uhud resulted in",
+    "options": [
+      "Muslim victory",
+      "Quraysh victory",
+      "a truce",
+      "no clear winner"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Quraysh defeated the Muslims at Uhud due to archers leaving their post. Therefore, option B (Quraysh victory) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_037",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's uncle who was martyred at Uhud was",
+    "options": [
+      "Abbas",
+      "Abu Talib",
+      "Hamza",
+      "Abu Lahab"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Hamza ibn Abdul-Muttalib was killed at Uhud. Therefore, option C (Hamza) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_038",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Battle of Khandaq (Trench) was fought in",
+    "options": [
+      "625 CE",
+      "627 CE",
+      "629 CE",
+      "630 CE"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Battle of the Trench was in 627 CE. Therefore, option B (627 CE) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_039",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The idea of digging a trench was suggested by",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Salman al-Farsi",
+      "Ali"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Salman al-Farsi suggested digging a trench to defend Madinah. Therefore, option C (Salman al-Farsi) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_040",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The conquest of Makkah was led by",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Ali",
+      "Prophet Muhammad (SAW)"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The Prophet led the conquest of Makkah in 630 CE. Therefore, option D (Prophet Muhammad (SAW)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_041",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "Upon conquering Makkah, the Prophet",
+    "options": [
+      "destroyed everyone",
+      "granted general amnesty",
+      "exiled everyone",
+      "imposed heavy taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He declared a general amnesty, forgiving his former enemies. Therefore, option B (granted general amnesty) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_042",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original exam-style practice",
+    "text": "The first call to prayer in the Ka'bah after its conquest was made by",
+    "options": [
+      "Abu Bakr",
+      "Bilal",
+      "Ali",
+      "Umar"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bilal ibn Rabah called the adhan from the Ka'bah roof. Therefore, option B (Bilal) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_043",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's Farewell Sermon was delivered at",
+    "options": [
+      "Mina",
+      "Arafat",
+      "Muzdalifah",
+      "Safa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Farewell Sermon was delivered at Mount Arafat. Therefore, option B (Arafat) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_044",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the Farewell Sermon, the Prophet emphasized",
+    "options": [
+      "tribal superiority",
+      "equality of all humans",
+      "oppression of women",
+      "economic exploitation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "He declared that no Arab is superior to a non-Arab except by piety. Therefore, option B (equality of all humans) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_045",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's daughter who married Ali ibn Abi Talib was",
+    "options": [
+      "Zaynab",
+      "Ruqayyah",
+      "Umm Kulthum",
+      "Fatimah"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Fatimah az-Zahra married Ali ibn Abi Talib. Therefore, option D (Fatimah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_046",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The grandsons of the Prophet through Fatimah were",
+    "options": [
+      "Abdullah and Umar",
+      "Hasan and Husayn",
+      "Zayd and Khalid",
+      "Hamza and Abbas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hasan and Husayn were the sons of Ali and Fatimah. Therefore, option B (Hasan and Husayn) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_047",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original exam-style practice",
+    "text": "The Prophet's uncle who supported him but never accepted Islam was",
+    "options": [
+      "Hamza",
+      "Abbas",
+      "Abu Talib",
+      "Abu Lahab"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Abu Talib protected the Prophet but died without embracing Islam. Therefore, option C (Abu Talib) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_048",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original exam-style practice",
+    "text": "The year Abu Talib and Khadijah died is called the Year of",
+    "options": [
+      "Joy",
+      "Sorrow",
+      "Victory",
+      "Peace"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Year of Sorrow (Aam al-Huzn) saw the death of Khadijah and Abu Talib. Therefore, option B (Sorrow) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_049",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original exam-style practice",
+    "text": "The People of the Cave are mentioned in Surah",
+    "options": [
+      "Al-Baqarah",
+      "Al-Kahf",
+      "Maryam",
+      "Yasin"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Al-Kahf recounts the story of Ashab al-Kahf. Therefore, option B (Al-Kahf) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "JAMB_IRS_2017_050",
+    "examType": "JAMB",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Dhul-Qarnayn is mentioned in Surah",
+    "options": [
+      "Al-Baqarah",
+      "Al-Kahf",
+      "An-Naml",
+      "Hud"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Dhul-Qarnayn's story is in Surah Al-Kahf. Therefore, option B (Al-Kahf) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]
