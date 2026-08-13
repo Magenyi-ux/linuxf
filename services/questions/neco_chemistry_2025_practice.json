@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_CHEMISTRY_2025_001",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which statement about one mole of a substance is correct?",
+    "options": [
+      "It always has a mass of 1 g",
+      "It contains Avogadro's number of particles",
+      "It occupies 1 dm3 at every condition",
+      "It contains one atom only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "One mole contains approximately 6.02 x 10^23 specified particles, called Avogadro's number. The mass depends on the molar mass, and gas volume depends on temperature and pressure, so the other statements are not generally correct."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_002",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the percentage by mass of oxygen in CaCO3? [Ca=40, C=12, O=16]",
+    "options": [
+      "16%",
+      "40%",
+      "48%",
+      "60%"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The formula mass of calcium carbonate is 40 + 12 + 48 = 100. Oxygen contributes 48 of the 100 mass units, so its percentage by mass is 48%. The other options describe individual contributions or incorrect totals."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_003",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "A balanced chemical equation obeys the law of conservation of",
+    "options": [
+      "mass",
+      "volume only",
+      "temperature only",
+      "colour"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Atoms are neither created nor destroyed during a chemical reaction, so total mass is conserved. A balanced equation has equal numbers of each type of atom on both sides, although volume, temperature and colour may change."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_004",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the simplest ratio of atoms in hydrogen peroxide, H2O2?",
+    "options": [
+      "1:1",
+      "2:1",
+      "1:2",
+      "2:2"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The subscripts 2 and 2 can both be divided by 2, leaving the simplest ratio of hydrogen to oxygen as 1:1. A molecular formula may contain a multiple of the empirical formula."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_005",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which electronic arrangement belongs to a noble gas?",
+    "options": [
+      "2,8",
+      "2,8,1",
+      "2,7",
+      "2,8,7"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The arrangement 2,8 has a complete outer shell and represents neon, a noble gas. The other configurations have incomplete outer shells and therefore tend to gain or lose electrons more readily."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_006",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "The neutron differs from the proton because the neutron has",
+    "options": [
+      "a positive charge",
+      "no electrical charge",
+      "a negative charge",
+      "no mass"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A neutron has no net electrical charge, whereas a proton is positively charged. Both have approximately one atomic mass unit, so the neutron is not massless and does not carry a negative charge."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_007",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which property generally increases down Group 1?",
+    "options": [
+      "Ionization energy",
+      "Atomic radius",
+      "Electronegativity",
+      "First-shell electron number"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Atomic radius increases down Group 1 because new electron shells are added and shielding increases. Ionization energy and electronegativity generally decrease, while the first shell always holds the same number of electrons."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_008",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "The elements in Period 2 have how many occupied electron shells?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Eight"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The period number indicates the number of occupied electron shells in the ground-state atom. Period 2 elements therefore have two occupied shells."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_009",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which pair is most likely to form an ionic compound?",
+    "options": [
+      "Sodium and chlorine",
+      "Carbon and hydrogen",
+      "Oxygen and sulfur",
+      "Nitrogen and chlorine"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Sodium is a metal and chlorine is a non-metal with a strong electronegativity difference, so electron transfer produces Na+ and Cl- ions. The other pairs are non-metal combinations that generally form covalent compounds."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_010",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "A molecule with three bonding pairs and one lone pair around its central atom is usually",
+    "options": [
+      "linear",
+      "trigonal pyramidal",
+      "tetrahedral with no lone pair",
+      "octahedral"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Four electron pairs arrange approximately tetrahedrally, but one lone pair compresses the bond angles and gives a trigonal pyramidal molecular shape, as in ammonia. It is not linear or octahedral."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_011",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which property is typical of a simple molecular substance?",
+    "options": [
+      "Very high melting point from a giant lattice",
+      "Low melting point due to weak intermolecular forces",
+      "Electrical conduction as a solid",
+      "Permanent ionic charges in every molecule"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Simple molecular substances are held together within molecules by strong covalent bonds but between molecules by weaker forces, so they often have low melting and boiling points. They usually do not conduct electricity because they lack mobile ions or electrons."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_012",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which substance contains hydrogen bonding between its molecules?",
+    "options": [
+      "Methane",
+      "Ethane",
+      "Ethanol",
+      "Carbon dioxide"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Ethanol contains an O-H bond, allowing hydrogen bonding between molecules. Methane, ethane and carbon dioxide do not contain hydrogen attached to a highly electronegative atom in the required arrangement."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_013",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "The particles in a solid vibrate about fixed positions because they",
+    "options": [
+      "are held by strong attractive forces",
+      "have no energy at all",
+      "are continuously boiling",
+      "are separated by huge distances"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Strong attractive forces hold solid particles close together in fixed positions, although they still vibrate about those positions. They possess kinetic energy and are not boiling or widely separated like gas particles."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_014",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which process is used to obtain salt from seawater in a salt pan?",
+    "options": [
+      "Condensation",
+      "Evaporation",
+      "Filtration only",
+      "Sublimation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sunlight heats seawater and water evaporates, leaving dissolved salt crystals behind. Condensation recovers a liquid from vapour, filtration removes insoluble solids, and sublimation is a solid-to-gas change."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_015",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "The random movement of smoke particles in air provides evidence for",
+    "options": [
+      "nuclear fission",
+      "Brownian motion",
+      "electrolysis",
+      "crystallisation"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Brownian motion is the irregular movement of visible particles caused by collisions with fast-moving, invisible particles of the surrounding fluid. It demonstrates the kinetic nature of matter."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_016",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which gas law relates volume directly to absolute temperature at constant pressure?",
+    "options": [
+      "Boyle's law",
+      "Dalton's law",
+      "Avogadro's law",
+      "Charles' law"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Charles' law states that the volume of a fixed mass of gas is directly proportional to its absolute temperature when pressure is constant. Boyle's law links pressure and volume, while Dalton's law concerns partial pressures."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_017",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which change increases the rate of reaction by increasing the number of collisions per second?",
+    "options": [
+      "Increasing concentration",
+      "Removing reactant",
+      "Lowering pressure of a gas",
+      "Cooling the reactants"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Increasing concentration places more particles in a given volume, so collisions occur more frequently and the reaction rate usually rises. Removing reactant, lowering gas pressure and cooling generally reduce successful collision frequency or energy."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_018",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "A reaction profile with products lower in energy than reactants represents a",
+    "options": [
+      "nuclear reaction",
+      "reversible reaction only",
+      "exothermic reaction",
+      "neutralisation only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "When products are at lower enthalpy than reactants, the difference is released to the surroundings and the reaction is exothermic. It may be reversible or irreversible; the energy profile alone does not require reversibility."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_019",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "Why does powdered calcium carbonate react faster with dilute acid than lumps of the same mass?",
+    "options": [
+      "The powder has lower density only",
+      "The powder has a larger surface area",
+      "The powder is a different compound",
+      "The powder has no particles"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Powdering exposes a larger total surface area to the acid. More acid particles can collide with calcium carbonate each second, increasing reaction rate. The chemical identity and total mass remain the same."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_020",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which statement about a catalyst is correct?",
+    "options": [
+      "It is consumed completely",
+      "It changes the final equilibrium yield",
+      "It lowers activation energy",
+      "It always makes a reaction exothermic"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A catalyst lowers the activation energy by providing an alternative pathway and is regenerated during the reaction. It does not change the equilibrium constant, final equilibrium composition or sign of the enthalpy change."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_021",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which ion is mainly responsible for the acidic character of an aqueous solution?",
+    "options": [
+      "Hydrogen ion",
+      "Chloride ion",
+      "Sodium ion",
+      "Nitrate ion"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Acidic aqueous solutions have a higher concentration of hydrogen ions, often represented as hydronium ions in water. Chloride, sodium and nitrate ions may be spectator ions and do not by themselves define acidity."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_022",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "A base that dissolves in water to produce hydroxide ions is called an",
+    "options": [
+      "acid",
+      "alkali",
+      "indicator",
+      "oxide only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An alkali is a soluble base that produces hydroxide ions in aqueous solution. Not every base is soluble, so the terms base and alkali are not interchangeable in this definition."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_023",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "If a solution changes from pH 6 to pH 4, the hydrogen-ion concentration becomes",
+    "options": [
+      "100 times smaller",
+      "10 times smaller",
+      "100 times greater",
+      "unchanged"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A decrease of two pH units means the hydrogen-ion concentration increases by 10^2, or 100 times. Lower pH therefore means greater acidity, not a smaller hydrogen-ion concentration."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_024",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which reaction is a neutralisation reaction?",
+    "options": [
+      "Acid plus metal producing hydrogen",
+      "Acid plus base producing salt and water",
+      "Metal plus oxygen producing oxide",
+      "Salt plus water producing gas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Neutralisation is the reaction between an acid and a base to form salt and water. Acid-metal reactions and metal oxidation are different reaction types, even though they may also release heat or gas."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_025",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Reduction can be identified by",
+    "options": [
+      "gain of electrons",
+      "loss of electrons",
+      "increase in oxidation number",
+      "loss of oxygen only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Reduction is gain of electrons and is accompanied by a decrease in oxidation number. Loss of electrons or increase in oxidation number indicates oxidation. Loss of oxygen is an older but useful description in some reactions, not the general definition."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_026",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the oxidation number of oxygen in most oxides?",
+    "options": [
+      "positive two",
+      "zero",
+      "negative two",
+      "negative one"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Oxygen usually has oxidation number -2 in oxides because it is more electronegative than the element bonded to it. Exceptions include peroxides and compounds with fluorine, but they are not the normal oxide case."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_027",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which electrode attracts cations during electrolysis?",
+    "options": [
+      "Anode",
+      "Cathode",
+      "Salt bridge",
+      "External switch"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cations are positively charged and migrate toward the negative cathode, where they may gain electrons. The anode attracts anions."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_028",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a Daniell cell, zinc is oxidised to zinc ions at the",
+    "options": [
+      "cathode",
+      "anode",
+      "salt bridge",
+      "wire"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Zinc atoms lose electrons at the zinc electrode, producing zinc ions. Since oxidation occurs at the anode, zinc is the anode in a Daniell cell. The electrons then travel through the external wire to the cathode."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_029",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which metal is commonly used as the cathode in the electrorefining of copper?",
+    "options": [
+      "Pure copper sheet",
+      "Impure copper block",
+      "Carbon rod only",
+      "Zinc plate"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A thin sheet of pure copper is used as the cathode. Copper ions from the electrolyte gain electrons and deposit as pure copper on it, while the impure copper anode dissolves and insoluble impurities form anode sludge."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_030",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which substance is oxidised when magnesium burns in oxygen?",
+    "options": [
+      "Oxygen",
+      "Magnesium",
+      "Magnesium oxide only",
+      "Nitrogen in air"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Magnesium loses electrons to form Mg2+ in magnesium oxide, so magnesium is oxidised. Oxygen gains electrons and is reduced. The product is not itself the species that undergoes oxidation in the reaction."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_031",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which homologous series contains the functional group -COOH?",
+    "options": [
+      "Alkanes",
+      "Alkenes",
+      "Carboxylic acids",
+      "Amines"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The -COOH group is the carboxyl functional group and defines carboxylic acids such as ethanoic acid. Alkanes and alkenes are hydrocarbons, while amines contain nitrogen-based amino groups."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_032",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the product when ethanoic acid reacts with sodium carbonate?",
+    "options": [
+      "Ethene only",
+      "Sodium ethanoate, water and carbon dioxide",
+      "Ethanol only",
+      "Sodium chloride and oxygen"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An acid reacting with a carbonate gives a salt, water and carbon dioxide. Ethanoic acid therefore forms sodium ethanoate, water and carbon dioxide. It is not an esterification or oxidation reaction."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_033",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which reagent can distinguish an aldehyde from a ketone?",
+    "options": [
+      "Tollens' reagent",
+      "Sodium chloride solution",
+      "Dilute hydrochloric acid only",
+      "Universal indicator"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Aldehydes reduce Tollens' reagent to produce a silver mirror, whereas ordinary ketones do not react in the same way. Sodium chloride, dilute hydrochloric acid and universal indicator do not provide this specific distinction."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_034",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The cracking of long-chain hydrocarbons produces shorter-chain hydrocarbons and",
+    "options": [
+      "only water",
+      "an alkene or hydrogen-rich gas",
+      "only carbon dioxide",
+      "a metal salt"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cracking breaks large hydrocarbon molecules into smaller, more useful molecules. The products commonly include a shorter alkane and an alkene, although product distributions depend on the cracking conditions and catalyst."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_035",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which process converts vegetable oil into a harder margarine-like fat?",
+    "options": [
+      "Hydrogenation",
+      "Neutralisation",
+      "Fermentation",
+      "Electrolysis"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Hydrogenation adds hydrogen across carbon-carbon double bonds in unsaturated oils, usually using a nickel catalyst, and makes the product more saturated and harder. The other processes do not produce this change in oil structure."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_036",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which compound is an example of an aromatic hydrocarbon?",
+    "options": [
+      "Benzene",
+      "Ethanol",
+      "Ethanoic acid",
+      "Propane"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Benzene is the simplest aromatic hydrocarbon and contains a delocalised ring of pi electrons. Ethanol and ethanoic acid contain oxygen functional groups, while propane is a saturated aliphatic hydrocarbon."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_037",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which metal is the most reactive in the list?",
+    "options": [
+      "Silver",
+      "Copper",
+      "Potassium",
+      "Gold"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Potassium is a Group 1 metal with a strong tendency to lose its single outer electron, making it much more reactive than copper, silver or gold. The latter metals are relatively unreactive and are often found in native or less reactive forms."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_038",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which metal oxide is reduced by carbon in a blast furnace?",
+    "options": [
+      "Iron(III) oxide",
+      "Sodium oxide",
+      "Aluminium oxide",
+      "Potassium oxide"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Iron(III) oxide is reduced by carbon monoxide, produced from coke, in the blast furnace. Sodium, aluminium and potassium oxides are too stable for economical carbon reduction and require electrolysis."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_039",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Galvanising protects iron by coating it with",
+    "options": [
+      "Tin",
+      "Zinc",
+      "Copper",
+      "Aluminium oxide only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Galvanising coats iron or steel with zinc. Zinc provides a physical barrier and can also act sacrificially because it is more easily oxidised than iron, protecting exposed areas when the coating is scratched."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_040",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which non-metal is a liquid at room temperature?",
+    "options": [
+      "Chlorine",
+      "Bromine",
+      "Iodine",
+      "Sulfur"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bromine is a reddish-brown liquid at room temperature. Chlorine is a gas, iodine is a solid that sublimes, and sulfur is a yellow solid under ordinary conditions."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_041",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which atmospheric gas is used by green plants during photosynthesis?",
+    "options": [
+      "Carbon dioxide",
+      "Nitrogen only",
+      "Hydrogen sulfide",
+      "Methane"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Green plants absorb carbon dioxide and water and use light energy to make glucose, releasing oxygen. Nitrogen is needed for protein synthesis but is not the carbon source in photosynthesis, while methane and hydrogen sulfide are not the normal reactants."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_042",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The layer of the atmosphere that absorbs much harmful ultraviolet radiation contains relatively high ozone. This layer is the",
+    "options": [
+      "troposphere",
+      "stratosphere",
+      "mesosphere",
+      "exosphere"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The ozone layer is located mainly in the stratosphere and absorbs much of the Sun's harmful ultraviolet radiation. The troposphere is where most weather occurs, while the mesosphere and exosphere are higher atmospheric regions."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_043",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which treatment is used to kill pathogenic microorganisms in drinking water?",
+    "options": [
+      "Sedimentation only",
+      "Filtration only",
+      "Chlorination",
+      "Decantation"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Chlorination adds a controlled amount of chlorine or a chlorine compound to disinfect water by killing many pathogenic microorganisms. Sedimentation, filtration and decantation remove particles but do not guarantee chemical disinfection."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_044",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "A major consequence of oil spillage in water is",
+    "options": [
+      "increased dissolved oxygen",
+      "reduced light penetration and oxygen exchange",
+      "instant formation of potable water",
+      "complete removal of aquatic plants"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An oil layer can block light and reduce contact between water and air, lowering photosynthesis and oxygen exchange. It does not make water potable or automatically remove every aquatic plant, although it can severely damage aquatic life."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_045",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "A gas that relights a glowing splint is",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Carbon dioxide",
+      "Ammonia"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Oxygen supports combustion and relights a glowing splint. Hydrogen burns with a pop, carbon dioxide extinguishes a flame, and ammonia has a pungent smell and is alkaline but does not give this relighting test."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_046",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which apparatus is used to measure a fixed volume accurately during titration?",
+    "options": [
+      "Beaker",
+      "Burette",
+      "Evaporating dish",
+      "Tripod stand"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A burette delivers and measures a variable but accurately read volume of solution during titration. A pipette measures a fixed volume, while a beaker and evaporating dish are not precision volumetric instruments."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_047",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the purpose of an indicator in an acid-base titration?",
+    "options": [
+      "To increase acid concentration",
+      "To show a colour change near the endpoint",
+      "To act as the main reactant",
+      "To prevent neutralisation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An indicator changes colour over a particular pH range and helps show that the endpoint has been reached. It is added in a small amount and is not the main reactant or a substance that prevents neutralisation."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_048",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which method separates coloured dyes in ink?",
+    "options": [
+      "Chromatography",
+      "Filtration",
+      "Crystallisation only",
+      "Magnetic separation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Paper chromatography separates dyes because they have different solubilities in the mobile solvent and different attractions to the paper. Filtration separates insoluble solids, while crystallisation and magnetic separation are unsuitable for dissolved dyes."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_049",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "A white precipitate that dissolves in excess aqueous ammonia is likely to be",
+    "options": [
+      "Silver chloride",
+      "Barium sulfate",
+      "Copper metal",
+      "Sodium nitrate"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Silver chloride is a white precipitate that dissolves in dilute ammonia by forming a soluble diamminesilver complex. Barium sulfate remains insoluble in ammonia, copper metal is not a precipitate formed in this test, and sodium nitrate is soluble."
+  },
+  {
+    "id": "NECO_CHEMISTRY_2025_050",
+    "examType": "NECO",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the safest first action when diluting concentrated acid?",
+    "options": [
+      "Add acid slowly to water while stirring",
+      "Add water rapidly to acid",
+      "Heat the acid before adding water",
+      "Seal the mixture immediately"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Concentrated acid should be added slowly to a larger volume of water with stirring because the process releases heat. Adding water to acid can cause local boiling and dangerous splashing. Appropriate eye and skin protection is also required."
+  }
+]

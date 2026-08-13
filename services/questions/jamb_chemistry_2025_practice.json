@@ -1,0 +1,852 @@
+[
+  {
+    "id": "JAMB_CHEMISTRY_2025_001",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which species contains 18 electrons?",
+    "options": [
+      "F-",
+      "Mg2+",
+      "Na+",
+      "Cl-"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A chlorine atom has atomic number 17, so the chloride ion gains one electron and contains 18 electrons. Fluoride, sodium and magnesium ions in the listed charge states each contain 10 electrons, making chloride the only option with 18 electrons."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_002",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the empirical formula of a compound containing 40.0% carbon, 6.7% hydrogen and 53.3% oxygen by mass?",
+    "options": [
+      "CH2O",
+      "C2H4O2",
+      "CH4O",
+      "C2H2O"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Assuming 100 g, the mole amounts are about 3.33 mol carbon, 6.7 mol hydrogen and 3.33 mol oxygen. Dividing by 3.33 gives the simplest ratio 1:2:1, so the empirical formula is CH2O. C2H4O2 is a possible molecular formula but is not the simplest ratio."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_003",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "An isotope of an element has mass number 23 and atomic number 11. How many neutrons does it contain?",
+    "options": [
+      "11",
+      "34",
+      "23",
+      "12"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Mass number equals the total of protons and neutrons. Therefore, neutrons equal mass number minus atomic number: 23 - 11 = 12. The atomic number itself gives the number of protons, not the number of neutrons."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_004",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "How many moles are present in 9.0 g of water? [H=1, O=16]",
+    "options": [
+      "0.25 mol",
+      "2.00 mol",
+      "1.00 mol",
+      "0.50 mol"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The molar mass of water is 18 g mol-1. Dividing the sample mass by the molar mass gives 9.0/18 = 0.50 mol, which is option B. Option A would correspond to 4.5 g of water, not 9.0 g."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_005",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What mass of calcium carbonate contains 0.20 mol? [Ca=40, C=12, O=16]",
+    "options": [
+      "10 g",
+      "100 g",
+      "40 g",
+      "20 g"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Calcium carbonate has molar mass 40 + 12 + 3(16) = 100 g mol-1. The mass of 0.20 mol is 0.20 x 100 = 20 g. The other values result from using an incorrect molar mass or mole relationship."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_006",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which electronic configuration represents a Group 17 element in Period 3?",
+    "options": [
+      "2,8,1",
+      "2,7",
+      "2,8,8",
+      "2,8,7"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A Period 3 atom has three occupied shells, while a Group 17 atom has seven valence electrons. The configuration 2,8,7 satisfies both conditions and represents chlorine. The other choices belong to different groups or periods."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_007",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "Across a period, atomic radius generally decreases because nuclear charge increases while",
+    "options": [
+      "a new shell is added",
+      "the atom loses all valence electrons",
+      "neutrons are removed",
+      "the same shell is being filled"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Across a period, electrons enter the same principal shell while the number of protons increases. The stronger attraction pulls the electron cloud closer to the nucleus, reducing atomic radius. A new shell is added when moving down a group, not across a period."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_008",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which subatomic particle determines the identity of an element?",
+    "options": [
+      "Proton",
+      "Neutron",
+      "Electron",
+      "Nucleon"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The atomic number is the number of protons in the nucleus and uniquely identifies an element. Isotopes can have different neutron numbers, and ions can gain or lose electrons without changing their elemental identity."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_009",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which substance is most likely to conduct electricity when molten but not as a solid?",
+    "options": [
+      "Sodium chloride",
+      "Sulfur",
+      "Paraffin wax",
+      "Glucose"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Solid sodium chloride contains ions fixed in a crystal lattice, but melting frees the ions to move and carry charge. Molecular substances such as sulfur, wax and glucose do not provide mobile charged particles in the molten state."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_010",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the shape of a methane molecule?",
+    "options": [
+      "Tetrahedral",
+      "Trigonal planar",
+      "Linear",
+      "Bent"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Carbon in methane forms four bonding pairs and has no lone pair on the central atom. The electron pairs arrange themselves tetrahedrally to minimize repulsion, giving methane its tetrahedral molecular shape."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_011",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "A covalent bond is formed when atoms",
+    "options": [
+      "transfer protons",
+      "exchange nuclei",
+      "share neutrons",
+      "share electron pairs"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Covalent bonding involves the sharing of one or more pairs of valence electrons between atoms. Proton or neutron transfer would change nuclear composition and is not the basis of ordinary chemical bonding."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_012",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which molecule is polar?",
+    "options": [
+      "H2O",
+      "CH4",
+      "CO2",
+      "BF3"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Water has polar O-H bonds and a bent shape, so the bond dipoles do not cancel. CO2, CH4 and BF3 have symmetrical arrangements in which their individual bond dipoles cancel to give non-polar molecules."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_013",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which change involves particles gaining enough energy to escape from a liquid surface?",
+    "options": [
+      "Freezing",
+      "Condensation",
+      "Evaporation",
+      "Deposition"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Evaporation occurs when higher-energy particles at the surface of a liquid overcome intermolecular attractions and enter the gas phase. Freezing and condensation remove energy, while deposition changes gas directly to solid."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_014",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "At constant temperature, what happens to the volume of a fixed mass of gas when its pressure is doubled?",
+    "options": [
+      "It doubles",
+      "It becomes four times larger",
+      "It is halved",
+      "It remains unchanged"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Boyle's law states that pressure is inversely proportional to volume at constant temperature. Doubling the pressure therefore reduces the volume to one-half of its original value."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_015",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which property is characteristic of a liquid rather than a gas?",
+    "options": [
+      "It has a fixed volume but no fixed shape",
+      "It is highly compressible",
+      "Its particles are very far apart",
+      "It fills every available space"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A liquid has particles close enough to maintain a nearly fixed volume but mobile enough to take the shape of its container. Gases are much more compressible and expand to fill their containers."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_016",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "A catalyst increases the rate of a reaction by",
+    "options": [
+      "increasing the enthalpy change",
+      "raising the temperature of the reactants",
+      "being permanently consumed",
+      "providing an alternative lower-energy pathway"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A catalyst provides an alternative reaction pathway with lower activation energy. More particles can then react successfully at the same temperature. A catalyst does not change the overall enthalpy change and is regenerated at the end."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_017",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which observation indicates that a reaction is exothermic?",
+    "options": [
+      "The surroundings become colder",
+      "The reaction mixture absorbs heat",
+      "The surroundings become warmer",
+      "The products contain no energy"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "An exothermic reaction releases heat to its surroundings, so the temperature of the surrounding mixture or container rises. It does not mean that the products contain no energy; it means their enthalpy is lower than that of the reactants."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_018",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which change usually increases the rate of reaction between a solid and an acid without changing their identities?",
+    "options": [
+      "Using larger solid pieces",
+      "Reducing the acid concentration",
+      "Powdering the solid",
+      "Cooling the mixture"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Powdering the solid increases its surface area, producing more frequent collisions between acid particles and the solid surface. Larger pieces, lower concentration and cooling generally reduce the frequency or energy of successful collisions."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_019",
+    "examType": "Chemistry",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the pH of a neutral solution at 25 degrees Celsius?",
+    "options": [
+      "0",
+      "1",
+      "7",
+      "14"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "At 25 degrees Celsius, a neutral solution has equal concentrations of hydrogen and hydroxide ions, each about 1.0 x 10^-7 mol dm^-3. The negative logarithm of the hydrogen-ion concentration is therefore pH 7."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_020",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which substance is a Brønsted-Lowry acid?",
+    "options": [
+      "A proton donor",
+      "A proton acceptor",
+      "An electron-pair donor only",
+      "A hydroxide ion donor only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A Brønsted-Lowry acid is defined as a proton donor, while a Brønsted-Lowry base accepts a proton. The definition is based on proton transfer and does not require the substance to donate hydroxide ions."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_021",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "When a dynamic equilibrium is disturbed, the system tends to",
+    "options": [
+      "stop all reactions",
+      "destroy the catalyst",
+      "increase both reactants and products equally",
+      "oppose the imposed change"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Le Chatelier's principle states that an equilibrium system responds to a change in concentration, pressure or temperature in a way that opposes that change. The forward and reverse reactions continue; the system does not simply stop."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_022",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which pair can form a buffer solution?",
+    "options": [
+      "HCl and NaCl",
+      "NaOH and KOH",
+      "CH3COOH and CH3COONa",
+      "HNO3 and H2SO4"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A buffer contains a weak acid and its conjugate base, or a weak base and its conjugate acid. Ethanoic acid and sodium ethanoate provide this conjugate pair and resist large pH changes after small acid or base additions."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_023",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Oxidation is best described as",
+    "options": [
+      "gain of electrons",
+      "loss of electrons",
+      "gain of neutrons",
+      "loss of protons only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Oxidation is defined electronically as loss of electrons. The mnemonic OIL means Oxidation Is Loss, while reduction is gain of electrons. Changes in neutrons or protons describe nuclear processes rather than ordinary redox reactions."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_024",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the oxidation number of manganese in KMnO4?",
+    "options": [
+      "+2",
+      "+4",
+      "+6",
+      "+7"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Potassium is +1 and four oxygen atoms contribute -8 in total. For the neutral compound, manganese must satisfy +1 + Mn - 8 = 0, giving Mn = +7. This is a common oxidation-state calculation."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_025",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "During electrolysis, reduction occurs at the",
+    "options": [
+      "anode",
+      "cathode",
+      "salt bridge",
+      "electrolyte surface only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Reduction is gain of electrons and occurs at the cathode in both electrolytic and galvanic cells. The anode is the site of oxidation, so confusing the two electrodes reverses the redox definitions."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_026",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the electrolysis of concentrated aqueous sodium chloride, the gas commonly released at the anode is",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Chlorine",
+      "Nitrogen"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "At the anode, chloride ions are preferentially oxidized in concentrated brine to form chlorine gas. Hydrogen is produced at the cathode, while oxygen is more likely when chloride concentration is low or the electrode conditions favour water oxidation."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_027",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which functional group is present in ethanol?",
+    "options": [
+      "Carboxyl",
+      "Hydroxyl",
+      "Aldehyde",
+      "Amino"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ethanol has the formula C2H5OH and contains the hydroxyl functional group, written as -OH. A carboxyl group occurs in carboxylic acids, an aldehyde group contains -CHO, and an amino group contains -NH2."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_028",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the IUPAC name of CH3CH2CH3?",
+    "options": [
+      "Methane",
+      "Ethane",
+      "Propane",
+      "Butane"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The structure contains three carbon atoms joined by single bonds. The parent alkane with three carbon atoms is propane. Methane, ethane and butane contain one, two and four carbon atoms respectively."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_029",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which test distinguishes an alkene from an alkane?",
+    "options": [
+      "Blue litmus test",
+      "Bromine water decolourization",
+      "Silver nitrate test",
+      "Flame test"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An alkene contains a carbon-carbon double bond that adds bromine, rapidly decolourising orange-brown bromine water. Alkanes do not react under ordinary test conditions, so the colour remains."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_030",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The reaction of ethene with steam in the presence of an acid catalyst produces",
+    "options": [
+      "Ethane",
+      "Ethanol",
+      "Ethanoic acid",
+      "Ethanal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hydration adds water across the double bond of ethene to form ethanol. The acid catalyst speeds the addition reaction but is not consumed, while oxidation products such as ethanoic acid require different conditions."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_031",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which metal is extracted by electrolysis rather than by reduction with carbon?",
+    "options": [
+      "Iron",
+      "Copper",
+      "Aluminium",
+      "Lead"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Aluminium is very reactive and its oxide is too stable to be reduced economically by carbon. Molten aluminium oxide is electrolysed, whereas iron and lead compounds can be reduced in furnaces under suitable conditions."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_032",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which oxide reacts with both acids and alkalis?",
+    "options": [
+      "Sodium oxide",
+      "Aluminium oxide",
+      "Sulfur dioxide",
+      "Carbon dioxide"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Aluminium oxide is amphoteric: it reacts with acids as a basic oxide and with strong alkalis as an acidic oxide, forming aluminate species. The other choices show predominantly basic or acidic behaviour."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_033",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Rusting of iron requires oxygen and",
+    "options": [
+      "dry nitrogen",
+      "water or moisture",
+      "pure carbon dioxide only",
+      "sunlight only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Rusting is an electrochemical corrosion process that requires oxygen and water. Salt or acids can accelerate it, but dry nitrogen and sunlight alone do not provide the necessary conditions for hydrated iron(III) oxide formation."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_034",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which property makes copper suitable for electrical wiring?",
+    "options": [
+      "It is a poor conductor",
+      "It is highly brittle",
+      "It conducts electricity and is ductile",
+      "It reacts rapidly with water"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Copper has high electrical conductivity and can be drawn into thin wires because it is ductile. Brittleness and poor conductivity would make a metal unsuitable for wiring, while rapid reaction with water is not a useful property."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_035",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The main gas responsible for acid rain from burning sulfur-containing fuels is",
+    "options": [
+      "Sulfur dioxide",
+      "Hydrogen",
+      "Methane",
+      "Helium"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Sulfur dioxide is oxidized in the atmosphere and dissolves in rainwater to form sulfurous and sulfuric acids. These acids lower rainwater pH and can damage vegetation, buildings and aquatic ecosystems."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_036",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which process is used to separate crude oil into fractions?",
+    "options": [
+      "Simple filtration",
+      "Fractional distillation",
+      "Paper chromatography",
+      "Decantation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Crude oil is a mixture of hydrocarbons with different boiling ranges. Fractional distillation separates them as vapours condense at different levels in a fractionating column. Filtration and decantation cannot separate miscible liquids by boiling point."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_037",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the Haber process, nitrogen reacts with hydrogen to form",
+    "options": [
+      "Nitric acid",
+      "Ammonia",
+      "Methane",
+      "Urea directly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Haber process combines nitrogen and hydrogen reversibly to produce ammonia: N2 + 3H2 ⇌ 2NH3. Ammonia is later used to manufacture fertilizers and nitric acid, but it is the direct product of the process."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_038",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which gas is a major contributor to the enhanced greenhouse effect?",
+    "options": [
+      "Carbon dioxide",
+      "Neon",
+      "Argon",
+      "Nitrogen"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Carbon dioxide absorbs outgoing infrared radiation and its increased concentration enhances atmospheric warming. Nitrogen, argon and neon are not significant greenhouse gases under ordinary atmospheric conditions."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_039",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which reagent is commonly used to test for chloride ions?",
+    "options": [
+      "Acidified silver nitrate",
+      "Barium hydroxide",
+      "Fehling's solution",
+      "Ammonium thiocyanate only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "After acidifying the solution with dilute nitric acid, silver nitrate gives a white precipitate of silver chloride if chloride ions are present. Acidification removes interfering carbonate ions that could otherwise form misleading precipitates."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_040",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "A positive test for ammonium ions with warm sodium hydroxide produces",
+    "options": [
+      "Blue chlorine gas",
+      "Ammonia gas",
+      "Brown iodine vapour",
+      "Carbon dioxide"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ammonium ions react with warm hydroxide ions to release ammonia gas: NH4+ + OH- produces NH3 and H2O. Ammonia has a pungent smell and turns damp red litmus paper blue."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_041",
+    "examType": "Chemistry",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which method is most suitable for separating a soluble solid from its solution when the solvent should be recovered?",
+    "options": [
+      "Evaporation to dryness",
+      "Simple distillation",
+      "Filtration",
+      "Sublimation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Simple distillation vaporizes the solvent and condenses it in a separate receiver, leaving the dissolved solid behind. Evaporation to dryness recovers the solid but loses the solvent, while filtration cannot remove dissolved particles."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_042",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "If the concentration of hydrogen ions in a solution is 1.0 x 10^-3 mol dm-3, its pH is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "11"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "pH is the negative logarithm of the hydrogen-ion concentration. Therefore pH = -log10(1.0 x 10^-3) = 3. The value 11 would describe a strongly alkaline solution, not this acidic one."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_043",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "Raising the temperature usually increases reaction rate because particles",
+    "options": [
+      "become heavier",
+      "collide less often",
+      "have greater kinetic energy",
+      "lose their activation energy permanently"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Higher temperature increases the average kinetic energy of particles. Collisions become more frequent and a larger fraction of particles have energy at least equal to the activation energy, so more collisions produce reaction."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_044",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "For an exothermic forward equilibrium reaction, increasing temperature shifts equilibrium toward the",
+    "options": [
+      "products",
+      "reactants",
+      "catalyst",
+      "solvent only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Heat behaves like a product in an exothermic forward reaction. Increasing temperature adds heat, so the equilibrium shifts in the reverse direction toward reactants to oppose the change. A catalyst changes the rate, not the equilibrium position."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_045",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The products of complete combustion of a hydrocarbon are",
+    "options": [
+      "Carbon and hydrogen",
+      "Carbon monoxide and soot only",
+      "Carbon dioxide and water",
+      "Methane and oxygen"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "When a hydrocarbon burns with sufficient oxygen, all carbon atoms are oxidized to carbon dioxide and hydrogen atoms form water. Incomplete oxygen supply may produce carbon monoxide or soot, but those are not products of complete combustion."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_046",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which compound can undergo esterification with ethanol?",
+    "options": [
+      "Ethanoic acid",
+      "Sodium chloride",
+      "Ammonia",
+      "Calcium carbonate"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ethanol reacts with ethanoic acid in the presence of an acid catalyst to form the ester ethyl ethanoate and water. This condensation reaction is called esterification and requires an alcohol and a carboxylic acid."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_047",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The catalyst used in the Contact process is usually",
+    "options": [
+      "Iron",
+      "Vanadium(V) oxide",
+      "Nickel",
+      "Manganese(IV) oxide only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Contact process uses vanadium(V) oxide to catalyse oxidation of sulfur dioxide to sulfur trioxide. The sulfur trioxide is then used to manufacture sulfuric acid, an important industrial acid."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_048",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a simple galvanic cell, electrons flow through the external circuit from the",
+    "options": [
+      "cathode to anode",
+      "anode to cathode",
+      "salt bridge to anode",
+      "electrolyte to salt bridge"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Oxidation at the anode releases electrons, which travel through the external wire to the cathode where reduction occurs. The salt bridge completes ionic movement inside the cell but does not carry the external electron flow."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_049",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "Paper chromatography separates components mainly because they have different",
+    "options": [
+      "nuclear charges",
+      "affinities for the stationary and mobile phases",
+      "numbers of protons only",
+      "melting points in the paper"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In chromatography, each component distributes differently between the stationary paper and the moving solvent. A component more soluble in the mobile phase travels farther, while stronger attraction to the paper slows movement."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2025_050",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which substance is commonly used to soften temporary hard water?",
+    "options": [
+      "Sodium carbonate",
+      "Sodium chloride",
+      "Ethanol",
+      "Copper(II) sulfate"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Temporary hardness is caused mainly by calcium and magnesium hydrogencarbonates. Sodium carbonate supplies carbonate ions that precipitate the hardness ions as insoluble carbonates, reducing their concentration in the water."
+  }
+]

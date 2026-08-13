@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_CHEMISTRY_2025_001",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The relative molecular mass of H2SO4 is [H=1, S=32, O=16]",
+    "options": [
+      "49",
+      "98",
+      "100",
+      "196"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The relative molecular mass is calculated as 2(1) + 32 + 4(16) = 2 + 32 + 64 = 98. The other values result from omitting part of the formula or doubling the correct value."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_002",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which law states that equal volumes of gases at the same temperature and pressure contain equal numbers of molecules?",
+    "options": [
+      "Boyle's law",
+      "Avogadro's law",
+      "Charles' law",
+      "Graham's law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Avogadro's law states that equal volumes of gases under the same temperature and pressure contain equal numbers of molecules. Boyle's law relates pressure and volume, Charles' law relates volume and temperature, and Graham's law concerns diffusion."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_003",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The number of protons in an atom is called its",
+    "options": [
+      "mass number",
+      "nucleon number",
+      "atomic number",
+      "isotope number"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Atomic number is the number of protons in the nucleus and identifies the element. Mass number or nucleon number is the total number of protons and neutrons, while isotope is not a separate count used to define the element."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_004",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What volume will 0.50 mol of a gas occupy at room temperature and pressure if one mole occupies 24 dm3?",
+    "options": [
+      "6 dm3",
+      "12 dm3",
+      "24 dm3",
+      "48 dm3"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "At the stated conditions, volume equals amount multiplied by molar gas volume: 0.50 x 24 = 12 dm3."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_005",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "Elements in the same group of the periodic table have the same number of",
+    "options": [
+      "valence electrons",
+      "neutrons",
+      "occupied shells",
+      "nucleons"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Elements in the same group have the same number of valence electrons, which gives them similar chemical properties. Their numbers of neutrons and nucleons may differ, and the number of occupied shells changes down the group."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_006",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which element has the greatest tendency to attract bonding electrons?",
+    "options": [
+      "Sodium",
+      "Magnesium",
+      "Chlorine",
+      "Potassium"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Chlorine is the most electronegative of the listed elements because it is near the top right of the periodic table and strongly attracts bonding electrons. Sodium, magnesium and potassium are metals with lower electronegativities."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_007",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following is an isotope pair?",
+    "options": [
+      "35Cl and 37Cl",
+      "23Na and 24Mg",
+      "14C and 14N",
+      "40Ca and 40Ar"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Isotopes are atoms of the same element with the same atomic number but different mass numbers. Chlorine-35 and chlorine-37 are the same element and differ in neutron number, so they form the isotope pair. The other pairs have different atomic numbers."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_008",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which particle has a relative charge of -1?",
+    "options": [
+      "Proton",
+      "Neutron",
+      "Nucleus",
+      "Electron"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "An electron carries one negative elementary charge, represented as -1 relative to the proton's +1 charge. A proton is positive, a neutron is neutral, and the nucleus contains positively charged protons together with neutrons."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_009",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "The bond formed when one atom supplies both electrons in a shared pair is a",
+    "options": [
+      "metallic bond",
+      "coordinate covalent bond",
+      "hydrogen bond",
+      "pure ionic bond"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A coordinate covalent bond, also called a dative bond, forms when both shared electrons come from one atom. Metallic bonding involves delocalised electrons, hydrogen bonding is an intermolecular attraction, and ionic bonding involves electron transfer."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_010",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which substance has a giant covalent structure?",
+    "options": [
+      "Diamond",
+      "Sodium chloride",
+      "Water",
+      "Ammonia"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Diamond consists of carbon atoms joined by strong covalent bonds throughout a three-dimensional giant lattice. Sodium chloride is ionic, while water and ammonia are simple molecular substances with intermolecular forces."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_011",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "Why does graphite conduct electricity?",
+    "options": [
+      "It contains mobile ions",
+      "It has delocalised electrons",
+      "It contains liquid carbon",
+      "It has weak nuclei"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Each carbon atom in graphite bonds to three other carbon atoms, leaving one electron delocalised within the layers. These mobile electrons carry charge. Graphite does not conduct because of mobile ions or liquid carbon."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_012",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "The force that holds positive metal ions in a lattice to a sea of electrons is",
+    "options": [
+      "covalent attraction",
+      "hydrogen bonding",
+      "dipole attraction",
+      "metallic bonding"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Metallic bonding is the electrostatic attraction between positive metal ions and delocalised electrons. Covalent bonding involves shared pairs, hydrogen bonding is an intermolecular attraction, and dipole attraction occurs between polar molecules."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_013",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "Diffusion occurs fastest in gases because their particles",
+    "options": [
+      "are fixed in position",
+      "are far apart and move freely",
+      "have no kinetic energy",
+      "are larger than liquid particles"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Gas particles are widely separated and move rapidly in random directions, allowing them to spread quickly through available space. Solid particles are fixed in position, and all particles possess kinetic energy at temperatures above absolute zero."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_014",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "The temperature at which a liquid's vapour pressure equals the external pressure is its",
+    "options": [
+      "melting point",
+      "freezing point",
+      "boiling point",
+      "triple point"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Boiling occurs when vapour pressure becomes equal to the external pressure, allowing bubbles to form throughout the liquid. Melting and freezing concern solid-liquid change, while the triple point is a special condition where three phases coexist."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_015",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "When a solid changes directly into a gas, the process is called",
+    "options": [
+      "fusion",
+      "sublimation",
+      "condensation",
+      "liquefaction"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sublimation is the direct change from solid to gas without passing through the liquid state. Fusion is melting, condensation is gas to liquid, and liquefaction is the conversion of gas to liquid."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_016",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "The pressure of a fixed mass of gas is directly proportional to its absolute temperature when the",
+    "options": [
+      "volume is constant",
+      "mass is changing",
+      "pressure is zero",
+      "gas is removed"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "This relationship is Gay-Lussac's law and applies when the volume and amount of gas are constant. Increasing absolute temperature increases average kinetic energy and collision pressure. The other conditions do not define the law."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_017",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "The minimum energy required for a reaction to occur is called",
+    "options": [
+      "activation energy",
+      "heat of combustion",
+      "bond energy only",
+      "lattice energy"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Activation energy is the minimum energy that colliding particles must possess for a successful reaction. Heat of combustion and lattice energy describe particular energy changes, while bond energy refers to breaking or forming chemical bonds."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_018",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which factor does not usually affect the rate of a reaction between two aqueous reactants?",
+    "options": [
+      "Temperature",
+      "Concentration",
+      "Particle size of a dissolved solute",
+      "Catalyst"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Temperature, concentration and catalysts commonly affect reaction rate. Particle size is important for a solid because it changes surface area, but a solute already dissolved in water has no meaningful solid particle surface to expose."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_019",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "An endothermic reaction is one that",
+    "options": [
+      "releases heat to the surroundings",
+      "absorbs heat from the surroundings",
+      "always produces a gas",
+      "has no energy change"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An endothermic reaction absorbs heat from its surroundings, so the surroundings may cool. Gas formation is not required, and an endothermic process has a positive enthalpy change rather than no energy change."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_020",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "A catalyst speeds up a reversible reaction by",
+    "options": [
+      "changing the equilibrium constant",
+      "increasing the product mass at equilibrium",
+      "lowering activation energy in both directions",
+      "raising the enthalpy of products"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A catalyst provides a lower-activation-energy pathway for both the forward and reverse reactions. It speeds up the approach to equilibrium but does not change the equilibrium constant, equilibrium composition, or reaction enthalpy."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_021",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "A solution with pH 2 is how many times more acidic than one with pH 4?",
+    "options": [
+      "2 times",
+      "10 times",
+      "100 times",
+      "1,000 times"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Each pH unit represents a tenfold change in hydrogen-ion concentration. A difference of two pH units corresponds to 10^2, or 100 times. Therefore the pH 2 solution is 100 times more acidic,"
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_022",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which indicator is generally suitable for a strong acid-strong base titration?",
+    "options": [
+      "Methyl orange only",
+      "Phenolphthalein only",
+      "Either methyl orange or phenolphthalein",
+      "Starch solution"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A strong acid-strong base titration has a very steep pH change near the equivalence point, so both methyl orange and phenolphthalein can give a useful endpoint. Starch is used mainly in iodine titrations, not ordinary acid-base titrations."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_023",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which salt solution is likely to be acidic because it hydrolyses in water?",
+    "options": [
+      "Sodium chloride",
+      "Ammonium chloride",
+      "Potassium nitrate",
+      "Sodium ethanoate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ammonium chloride contains the conjugate acid of the weak base ammonia. Ammonium ions react partly with water to produce hydrogen ions, making the solution acidic. Sodium chloride and potassium nitrate are approximately neutral, while sodium ethanoate is alkaline."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_024",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "At equilibrium, the forward and reverse reactions have",
+    "options": [
+      "stopped completely",
+      "equal concentrations of all substances",
+      "equal rates",
+      "equal activation energies"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Dynamic equilibrium occurs when the forward and reverse reactions continue at equal rates. Concentrations remain constant but are not necessarily equal, and the reactions do not stop. Activation energies for the two directions need not be equal."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_025",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The reducing agent in a redox reaction is the species that",
+    "options": [
+      "is oxidised",
+      "is reduced",
+      "gains protons only",
+      "does not change"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A reducing agent donates electrons to another species and is itself oxidised. The oxidising agent accepts electrons and is reduced. Proton transfer alone does not define the reducing agent in a redox process."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_026",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In an electrolytic cell, the electrode connected to the positive terminal is the",
+    "options": [
+      "anode",
+      "cathode",
+      "salt bridge",
+      "electrolyte"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "In an electrolytic cell, the positive electrode is the anode, where oxidation occurs. The negative electrode is the cathode, where reduction occurs. This sign convention differs from a simple galvanic description but the electrode reactions remain oxidation at anode and reduction at cathode."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_027",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "During electroplating, the object to be coated is connected to the",
+    "options": [
+      "positive terminal as the anode",
+      "negative terminal as the cathode",
+      "salt bridge as an electrode",
+      "switch only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The object to be coated is made the cathode so metal ions in solution gain electrons and are reduced onto its surface. The plating metal is usually the anode, which supplies metal ions as it oxidises."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_028",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "A salt bridge in a galvanic cell mainly",
+    "options": [
+      "supplies electrons through the wire",
+      "maintains electrical neutrality in the half-cells",
+      "increases the mass of the anode only",
+      "stops ion movement"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The salt bridge permits ion migration so charge does not build up in either half-cell. Electrons travel through the external wire, not the salt bridge. It does not stop ion movement or simply increase anode mass."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_029",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The general formula of the alkanes is",
+    "options": [
+      "C n H 2n plus 2",
+      "C n H 2n",
+      "C n H 2n minus 2",
+      "C n H n"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Alkanes are saturated open-chain hydrocarbons containing only single bonds, with general formula CnH2n+2. CnH2n describes alkenes or cycloalkanes, while CnH2n-2 describes alkynes or compounds with two degrees of unsaturation."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_030",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The polymer formed from ethene is",
+    "options": [
+      "polyethene",
+      "polypropene",
+      "polychloroethene",
+      "nylon"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Addition polymerisation of ethene opens the carbon-carbon double bonds and joins many CH2=CH2 molecules into polyethene. Polypropene comes from propene, polychloroethene from chloroethene, and nylon is a condensation polymer."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_031",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which compound is an unsaturated hydrocarbon?",
+    "options": [
+      "Methane",
+      "Ethane",
+      "Ethene",
+      "Propane"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Ethene contains a carbon-carbon double bond and is therefore unsaturated. Methane, ethane and propane contain only single carbon-carbon bonds and are saturated alkanes."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_032",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Oxidation of a primary alcohol can first produce an",
+    "options": [
+      "alkane",
+      "aldehyde",
+      "amine",
+      "alkene only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A primary alcohol is oxidised first to an aldehyde and, under stronger or prolonged oxidation, may form a carboxylic acid. It does not directly become an amine or alkane."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_033",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The functional group in ethanoic acid is",
+    "options": [
+      "-OH only",
+      "-COOH",
+      "-NH2",
+      "-CHO"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ethanoic acid contains the carboxyl group, written -COOH, which combines a carbonyl group and a hydroxyl group on the same carbon. An isolated -OH occurs in alcohols, -NH2 in amines, and -CHO in aldehydes."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_034",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Saponification is the alkaline hydrolysis of",
+    "options": [
+      "an alkane",
+      "an ester",
+      "a metal oxide",
+      "an amine"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Saponification is the reaction of an ester with a strong alkali to produce an alcohol and the salt of a carboxylic acid, commonly soap when fats or oils are used. It is not the hydrolysis of an alkane or metal oxide."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_035",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which metal is commonly stored under paraffin oil?",
+    "options": [
+      "Sodium",
+      "Copper",
+      "Iron",
+      "Silver"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Sodium is highly reactive with oxygen and water, so it is stored under paraffin oil to prevent contact with air and moisture. Copper, iron and silver are much less reactive and do not require this storage method."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_036",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "The chief ore of aluminium is",
+    "options": [
+      "Haematite",
+      "Bauxite",
+      "Galena",
+      "Cassiterite"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bauxite is the principal ore of aluminium and contains hydrated aluminium oxides. Haematite is an iron ore, galena contains lead sulfide, and cassiterite is a tin ore."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_037",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which metal is below hydrogen in the electrochemical series?",
+    "options": [
+      "Potassium",
+      "Zinc",
+      "Magnesium",
+      "Copper"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Copper is below hydrogen in the electrochemical series and is less readily oxidised than hydrogen. Potassium, zinc and magnesium are above hydrogen and can displace hydrogen from dilute acids under suitable conditions."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_038",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "An alloy is best described as",
+    "options": [
+      "a pure metal",
+      "a mixture containing a metal and one or more elements",
+      "a metal oxide only",
+      "a non-metal gas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An alloy is a mixture in which a metal is combined with one or more other elements. The combination can improve hardness, strength, corrosion resistance or other properties. An alloy is not necessarily a single pure compound."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_039",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The main raw material used in the Solvay process is",
+    "options": [
+      "Brine",
+      "Crude oil",
+      "Bauxite",
+      "Sulfur"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Solvay process manufactures sodium carbonate from brine, limestone and ammonia. Brine supplies sodium chloride, limestone supplies calcium carbonate, and ammonia participates in the precipitation and recovery stages."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_040",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which pollutant is most directly associated with incomplete combustion?",
+    "options": [
+      "Carbon monoxide",
+      "Oxygen",
+      "Nitrogen",
+      "Water vapour"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Incomplete combustion occurs when oxygen is insufficient and produces carbon monoxide, a poisonous gas, together with soot."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_041",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The process that removes suspended particles from water by allowing them to settle is",
+    "options": [
+      "Sedimentation",
+      "Chlorination",
+      "Distillation",
+      "Neutralisation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Sedimentation allows suspended particles to settle under gravity before the clearer water is decanted or filtered. Chlorination kills microorganisms, distillation separates by boiling point, and neutralisation adjusts acidity or alkalinity."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_042",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "The increase in nutrient concentration in a lake that may cause algal bloom is called",
+    "options": [
+      "desalination",
+      "eutrophication",
+      "cracking",
+      "sublimation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Eutrophication results from excess nutrients, especially nitrates and phosphates, entering water. Rapid algal growth can block light and decomposition may reduce dissolved oxygen, harming aquatic organisms."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_043",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "A blue precipitate formed when aqueous sodium hydroxide is added to a solution may indicate",
+    "options": [
+      "Cu2+",
+      "Fe2+",
+      "Fe3+",
+      "NH4+"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Copper(II) ions form a blue copper(II) hydroxide precipitate with aqueous sodium hydroxide. Iron(II) hydroxide is green, iron(III) hydroxide is reddish-brown, and ammonium ions do not form this precipitate."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_044",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "A white precipitate with barium ions that dissolves in dilute acid suggests the presence of",
+    "options": [
+      "Sulfate ions",
+      "Carbonate ions",
+      "Chloride ions",
+      "Nitrate ions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Carbonate ions form a white barium carbonate precipitate that dissolves in dilute acid with effervescence. Barium sulfate is also white but remains insoluble in dilute acid, while chlorides and nitrates do not give the same precipitate."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_045",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which gas turns limewater milky?",
+    "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Hydrogen",
+      "Ammonia"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Carbon dioxide reacts with calcium hydroxide in limewater to form insoluble calcium carbonate, producing a milky appearance. Oxygen and hydrogen do not form this precipitate, while ammonia dissolves readily in water and is alkaline."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_046",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "The residue left on filter paper after filtration is called the",
+    "options": [
+      "filtrate",
+      "distillate",
+      "residue",
+      "solvent"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The insoluble solid retained on the filter paper is the residue. The liquid that passes through is the filtrate. Distillate is the condensed product from distillation, and solvent is the dissolving component of a solution."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_047",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "A flame test producing a lilac colour is characteristic of",
+    "options": [
+      "Sodium ions",
+      "Potassium ions",
+      "Calcium ions",
+      "Copper(II) ions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Potassium ions give a lilac or pale violet flame, especially when viewed through a cobalt glass to mask sodium contamination. Sodium is yellow, calcium is brick red, and copper compounds commonly produce a blue-green flame."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_048",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which technique is best for obtaining pure crystals from a soluble solid?",
+    "options": [
+      "Crystallisation",
+      "Decantation only",
+      "Magnetic separation",
+      "Chromatography of a gas"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Crystallisation involves concentrating a solution and cooling it so pure crystals form while many impurities remain in the mother liquor. Decantation cannot purify a dissolved solid, magnetic separation requires magnetic materials, and gas chromatography is not the standard method here."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_049",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "A strong acid is one that",
+    "options": [
+      "ionises completely in water",
+      "has a high relative molecular mass",
+      "is always concentrated",
+      "cannot react with a base"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A strong acid ionises almost completely in aqueous solution, producing a high concentration of hydrogen ions. Strength is not the same as concentration; a strong acid can be dilute, and all acids can react with suitable bases."
+  },
+  {
+    "id": "WAEC_CHEMISTRY_2025_050",
+    "examType": "WAEC",
+    "subject": "Chemistry",
+    "year": "2025",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which substance is amphoteric?",
+    "options": [
+      "HCl",
+      "NaOH",
+      "Aluminium hydroxide",
+      "Sodium chloride"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Aluminium hydroxide can react with acids as a base and with strong alkalis as an acid, so it is amphoteric. Hydrochloric acid and sodium hydroxide are acid and base respectively, while sodium chloride is a neutral salt."
+  }
+]
