@@ -1,4 +1,7 @@
 {
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public",
   "rewrites": [
     {
       "source": "/api/nvidia/:path*",
@@ -7,6 +10,10 @@
     {
       "source": "/api/admin/logs",
       "destination": "/api/admin/logs"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
