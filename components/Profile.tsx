@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { UserProfile, Book } from '../types';
+import type { ReferralSummary } from '../services/referralService';
 import { Trophy, Flame, Target, BookOpen, Clock, Trash2, ArrowLeft, LogOut, Trash, LogIn, Mail, User, ArrowRight, Settings, MessageSquare } from 'lucide-react';
 
 interface ProfileProps {
@@ -13,6 +14,7 @@ interface ProfileProps {
   onDeleteAccount: () => void;
   onLogin: () => void;
   onUpdateSettings: (settings: Partial<UserProfile>) => void;
+  referralSummary?: ReferralSummary | null;
 }
 
 export const Profile: React.FC<ProfileProps> = ({
@@ -24,7 +26,8 @@ export const Profile: React.FC<ProfileProps> = ({
   onLogout,
   onDeleteAccount,
   onLogin,
-  onUpdateSettings
+  onUpdateSettings,
+  referralSummary
 }) => {
   const bookList = Object.values(books).sort((a, b) => b.dateCreated - a.dateCreated);
   const totalQuestions = bookList.reduce((acc, b) => acc + b.questions.length, 0);
@@ -112,6 +115,19 @@ export const Profile: React.FC<ProfileProps> = ({
                     <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">Questions Offline</div>
                 </div>
             </div>
+            {referralSummary?.is_collaborator && (
+              <div className="bg-primary-600 p-8 rounded-[40px] text-white shadow-xl shadow-primary-500/20">
+                <div className="flex items-center justify-between gap-4 mb-4">
+                  <div>
+                    <div className="text-xs font-black uppercase tracking-widest text-primary-100">Referral performance</div>
+                    <div className="text-4xl font-black mt-2">{referralSummary.total_signups}</div>
+                    <div className="text-sm font-bold text-primary-100">Student sign-ups</div>
+                  </div>
+                  <div className="bg-white/15 p-3 rounded-2xl"><User className="w-6 h-6" /></div>
+                </div>
+                <p className="text-xs font-medium text-primary-100">Attributed to your referral key. Totals update from the server.</p>
+              </div>
+            )}
             <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
                 <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
                    <Settings className="w-4 h-4" /> App Settings

@@ -3,6 +3,7 @@ import type { Session, User } from '@supabase/supabase-js';
 import type { UserProfile } from '../types';
 import { isSupabaseConfigured, supabase } from '../services/supabaseClient';
 import { capturePostHogEvent } from '../services/posthogClient';
+import { attributeStoredReferral } from '../services/referralService';
 
 interface ProfileRow {
   id: string;
@@ -105,6 +106,11 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
       if (!isSupabaseConfigured) throw new Error('Authentication is not configured yet.');
       const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
       if (error) throw error;
+      try {
+        await attributeStoredReferral('pwa');
+      } catch (referralError) {
+        console.warn('Referral attribution was not completed after sign-in:', referralError);
+      }
     },
     signUp: async (name, email, password) => {
       if (!isSupabaseConfigured) throw new Error('Authentication is not configured yet.');
@@ -114,6 +120,13 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
         options: { data: { full_name: name.trim() } },
       });
       if (error) throw error;
+      if (data.session) {
+        try {
+          await attributeStoredReferral('pwa');
+        } catch (referralError) {
+          console.warn('Referral attribution was not completed after sign-up:', referralError);
+        }
+      }
       return { needsEmailConfirmation: !data.session };
     },
     signOut: async () => {

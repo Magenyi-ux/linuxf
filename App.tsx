@@ -14,6 +14,7 @@ import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
 import { getRemoteAchievementKeys, getRemoteProgressTotals, syncUserData } from './services/syncService';
 import { fetchExamQuestions } from './services/aiService';
 import { trackEvent } from './services/analytics';
+import { captureReferralKeyFromUrl, fetchMyReferralSummary, type ReferralSummary } from './services/referralService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
@@ -109,6 +110,11 @@ const AppShell: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
+  const [referralSummary, setReferralSummary] = useState<ReferralSummary | null>(null);
+
+  useEffect(() => {
+    captureReferralKeyFromUrl();
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -184,9 +190,18 @@ const AppShell: React.FC = () => {
   }, [authLoading, authProfile, supabaseUser]);
 
   useEffect(() => {
-    if (!supabaseUser || !isLoggedIn) return;
+    if (!supabaseUser || !isLoggedIn) {
+      setReferralSummary(null);
+      return;
+    }
 
     let active = true;
+    void fetchMyReferralSummary()
+      .then((summary) => {
+        if (active) setReferralSummary(summary);
+      })
+      .catch((error) => console.warn('Referral summary unavailable:', error));
+
     const reconcile = async () => {
       try {
         await syncUserData(supabaseUser.id);
@@ -891,6 +906,7 @@ const AppShell: React.FC = () => {
                 onDeleteAccount={handleDeleteAccount}
                 onLogin={() => setScreen('AUTH')}
                 onUpdateSettings={(settings) => setUserProfile(prev => ({ ...prev, ...settings }))}
+                referralSummary={referralSummary}
             />
         )}
 

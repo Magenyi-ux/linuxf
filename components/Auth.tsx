@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Mail, Lock, User, ArrowRight, GraduationCap, ArrowLeft, Eye, EyeOff } from 'lucide-react';
+import { Mail, Lock, User, ArrowRight, GraduationCap, ArrowLeft, Eye, EyeOff, Gift } from 'lucide-react';
 import type { UserProfile } from '../types';
 import { useAuth } from '../contexts/AuthContext';
 import { trackEvent } from '../services/analytics';
+import { getStoredReferralKey } from '../services/referralService';
 
 interface AuthProps {
   onAuthComplete: (profile: UserProfile) => void;
@@ -22,6 +23,7 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
   const [mode, setMode] = useState<'SIGN_IN' | 'SIGN_UP'>('SIGN_IN');
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
+  const [referralKey, setReferralKey] = useState(() => getStoredReferralKey() || '');
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
   const [loading, setLoading] = useState(false);
@@ -34,6 +36,11 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
 
     try {
       if (mode === 'SIGN_UP') {
+        const trimmedReferralKey = referralKey.trim();
+        if (trimmedReferralKey) {
+          localStorage.setItem('spherelearn_referral_key', trimmedReferralKey);
+          localStorage.setItem('spherelearn_referral_captured_at', String(Date.now()));
+        }
         if (formData.password.length < 8) {
           throw new Error('Use a password with at least 8 characters.');
         }
@@ -110,6 +117,21 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
                 value={formData.name}
                 onChange={(event) => setFormData({ ...formData, name: event.target.value })}
               />
+            </div>
+          )}
+
+          {mode === 'SIGN_UP' && (
+            <div className="relative">
+              <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none"><Gift className="w-5 h-5 text-gray-400" /></div>
+              <input
+                type="text"
+                autoComplete="off"
+                placeholder="Referral Key (optional)"
+                className="w-full pl-14 pr-6 py-4 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all font-medium text-gray-900"
+                value={referralKey}
+                onChange={(event) => setReferralKey(event.target.value)}
+              />
+              <p className="mt-2 px-2 text-[11px] font-medium text-gray-400">Enter the key shared by your collaborator.</p>
             </div>
           )}
 

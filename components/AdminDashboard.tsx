@@ -3,12 +3,15 @@ import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Users, Clock, Book, Ban, ShieldCheck, TrendingUp, Activity, Terminal, Lock, LogIn } from 'lucide-react';
 import { UserProfile } from '../types';
 import { trackEvent } from '../services/analytics';
+import { useAuth } from '../contexts/AuthContext';
+import { fetchAdminReferralReport, type AdminReferralRow } from '../services/referralService';
 
 interface AdminDashboardProps {
   onBack: () => void;
 }
 
 export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
+  const { profile: authProfile } = useAuth();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -20,6 +23,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
   const [stats, setStats] = useState<any>({});
   const [featureUsage, setFeatureUsage] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(false);
+  const [referralRows, setReferralRows] = useState<AdminReferralRow[]>([]);
+  const [referralError, setReferralError] = useState('');
 
   useEffect(() => {
     // Check if already authenticated in this session
@@ -63,6 +68,19 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         setEvents(data.events || []);
         setStats(data.stats || {});
         setFeatureUsage(data.featureUsage || {});
+      }
+
+      if (authProfile?.role === 'ADMIN') {
+        try {
+          setReferralError('');
+          setReferralRows(await fetchAdminReferralReport());
+        } catch (referralErr) {
+          console.error('Failed to fetch referral report:', referralErr);
+          setReferralError('Referral report unavailable. Apply the Supabase referral migration.');
+        }
+      } else {
+        setReferralRows([]);
+        setReferralError('Sign in with the protected Supabase admin account to view referral totals.');
       }
     } catch (err) {
       console.error('Failed to fetch admin data:', err);
@@ -229,6 +247,42 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
           </div>
         </div>
       </div>
+
+      <section className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <h3 className="text-xl font-black text-gray-900 flex items-center gap-2"><Users className="w-6 h-6 text-primary-600" /> Referral Sign-ups</h3>
+            <p className="text-sm text-gray-500 font-medium mt-1">Student accounts attributed to each collaborator key.</p>
+          </div>
+          <div className="bg-primary-50 text-primary-700 px-5 py-3 rounded-2xl">
+            <div className="text-[10px] font-black uppercase tracking-widest">Overall sign-ups</div>
+            <div className="text-3xl font-black">{referralRows[0]?.overall_signups ?? 0}</div>
+          </div>
+        </div>
+        {referralError && <p className="text-amber-700 bg-amber-50 border border-amber-100 rounded-2xl px-4 py-3 text-xs font-bold mb-4">{referralError}</p>}
+        {referralRows.length > 0 ? (
+          <div className="overflow-x-auto">
+            <table className="w-full text-left">
+              <thead><tr className="border-b border-gray-100">
+                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest">Collaborator</th>
+                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest">Key</th>
+                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest text-right">Student sign-ups</th>
+              </tr></thead>
+              <tbody className="divide-y divide-gray-50">
+                {referralRows.map((row) => (
+                  <tr key={row.collaborator_id}>
+                    <td className="px-4 py-4 font-bold text-gray-900">{row.display_name}</td>
+                    <td className="px-4 py-4 text-xs font-mono text-gray-500">••••{row.referral_key_hint}</td>
+                    <td className="px-4 py-4 text-right text-xl font-black text-primary-600">{row.total_signups}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <p className="text-gray-400 font-medium italic">No collaborator sign-ups recorded yet.</p>
+        )}
+      </section>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
         <section>
