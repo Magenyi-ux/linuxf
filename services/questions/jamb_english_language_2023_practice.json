@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_001",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the manager nor the assistants ____ ready to leave.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer subject; 'assistants' is plural so use 'are'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_002",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "We ____ to meet the client at 9 am tomorrow.",
+    "options": [
+      "will be meeting",
+      "are meeting",
+      "will meet",
+      "meet"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Present continuous (are meeting) expresses a planned arrangement with a fixed time more naturally than bare future."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_003",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "His explanation was so _____ that everyone understood immediately.",
+    "options": [
+      "ambiguous",
+      "verbose",
+      "lucid",
+      "cryptic"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Lucid' means clear and easily understood; contrasts with 'ambiguous' and 'cryptic' which mean unclear."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_004",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "She told him to keep his ______ about the negotiation.",
+    "options": [
+      "hair",
+      "mouth",
+      "feet",
+      "head"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom 'keep one's head' means to stay calm; 'keep his head' is the correct idiomatic choice here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_005",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly capitalised sentence: 'the bishop of lagos addressed the congregation.'",
+    "options": [
+      "The Bishop of Lagos addressed the congregation.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Titles that refer to a specific office as a proper noun (Bishop of Lagos) are capitalised; 'Lagos' is a proper noun too."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_006",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable is stressed in the word 'photograph'?",
+    "options": [
+      "second syllable",
+      "first syllable",
+      "third syllable",
+      "fourth syllable"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Photograph' has primary stress on the first syllable: 'PHO-to-graph'. This is a standard stress pattern."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_007",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "sounds/phonology",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which pair of words rhyme?",
+    "options": [
+      "though / through",
+      "read / book",
+      "fight / right",
+      "move / love"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Fight' and 'right' rhyme because they share the same vowel and final consonant sound; others do not rhyme."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_008",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "pronoun reference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the students should submit ____ essay.",
+    "options": [
+      "their",
+      "his",
+      "her",
+      "his or her"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Each' is singular; grammatically correct traditional agreement uses 'his or her' to match singular antecedent."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_009",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Combine into one sentence using 'enough': He is too young. He cannot vote.",
+    "options": [
+      "He is not old enough to vote.",
+      "He is too young enough to vote.",
+      "He is enough too young to vote.",
+      "He is not too enough to vote."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Correct transformation: 'not old enough' expresses the same meaning; other options are ungrammatical or nonsensical."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_010",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "cloze-style",
+    "contentLabel": "Original exam-style practice",
+    "text": "The committee will meet on Friday, ____ the venue is still undecided.",
+    "options": [
+      "though",
+      "although",
+      "unless",
+      "whereas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Although' (or 'though') properly links the two clauses expressing contrast after a comma; 'unless' and 'whereas' do not fit the contrast here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_011",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence expresses a polite request?",
+    "options": [
+      "Pass the salt.",
+      "You must pass the salt.",
+      "Could you please pass the salt?",
+      "I passed the salt."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Could you please pass the salt?' is a polite interrogative request form; the imperative 'Pass the salt.' is less polite."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_012",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ada used a calendar app to set reminders for her bills; last month none of her payments were late. What does this most likely imply?",
+    "options": [
+      "She did not have many bills.",
+      "Her bank paid automatically.",
+      "She forgot to check her calendar.",
+      "The app helped her pay on time."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The sequence suggests causation: setting reminders led to timely payments. This most plausibly implies the app helped her pay on time."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_013",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "A bouquet of roses ____ on the table.",
+    "options": [
+      "is",
+      "are",
+      "have been",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Subject 'a bouquet' is singular; use singular verb 'is'. Collective noun agreement requires verb to agree with the head noun."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_014",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time she joined the meeting, they ____ lunch.",
+    "options": [
+      "have started",
+      "had started",
+      "were starting",
+      "started"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Past perfect 'had started' indicates the action (starting lunch) occurred before another past event (she joined). Use past perfect for the earlier past action."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_015",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The scientist's theory was ____ by new evidence.",
+    "options": [
+      "vindictive",
+      "vindication",
+      "vindicated",
+      "veneration"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Context needs a verb meaning 'shown to be right' — 'vindicated'. 'Vindication' is a noun, 'vindictive' an adjective, 'veneration' means respect."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_016",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "He decided to bite the bullet and ____.",
+    "options": [
+      "eat fast to be brave",
+      "postpone the problem",
+      "complain loudly",
+      "face the difficult task"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Bite the bullet' is an idiom meaning to accept or endure something difficult; only 'face the difficult task' matches that sense."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_017",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "the foreign minister of ghana visited accra last week.",
+    "options": [
+      "The Foreign Minister of Ghana visited Accra last week.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Capitals required for sentence start, official title and proper nouns: 'The', 'Foreign Minister', 'Ghana', and city 'Accra'. Title words are capitalised in this use."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_018",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable is stressed in the word 'photography'?",
+    "options": [
+      "first (pho-)",
+      "second (TOG)",
+      "third (ra-)",
+      "fourth (phy)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Photography' is pronounced /fəˈtɒgrəfi/ with primary stress on the second syllable. Stress placement distinguishes related words (photography vs photograph)."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_019",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Phonology/Sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the long vowel sound /i:/?",
+    "options": [
+      "sit",
+      "set",
+      "seat",
+      "sat"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Seat' contains the long vowel /i:/. 'Sit' has /ɪ/, 'set' has /ɛ/, 'sat' has /æ/. Long vs short vowel contrast is phonemic."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_020",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is an offer?",
+    "options": [
+      "Could you pass the salt?",
+      "Would you mind opening the window?",
+      "You must finish this today.",
+      "Shall I carry your bag?"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Shall I carry your bag?' offers to do something for someone. The others are requests or commands, not offers."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_021",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence Transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive: 'They will announce the results tomorrow.'",
+    "options": [
+      "The results will be announced tomorrow.",
+      "Tomorrow the results were announced by them.",
+      "The results are announced tomorrow by them.",
+      "Announced tomorrow will be the results."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Passive of future simple uses 'will be' + past participle: 'The results will be announced tomorrow.' Other options show wrong tense or ungrammatical order."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_022",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Cloze/Conditionals",
+    "contentLabel": "Original exam-style practice",
+    "text": "If she ____ earlier, she would not have missed the train.",
+    "options": [
+      "left",
+      "had left",
+      "would leave",
+      "has left"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Third conditional requires past perfect in the if-clause: 'If she had left earlier...' to express an unreal past condition and its past consequence."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_023",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Short Interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mark's tone was curt during the interview.",
+    "options": [
+      "polite",
+      "lengthy",
+      "abrupt",
+      "hesitant"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Curt' describes speech that is brief and abrupt, often perceived as rude or unfriendly; it does not mean polite, long, or hesitant."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_024",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation/Direct Address",
+    "contentLabel": "Original exam-style practice",
+    "text": "Excuse me Maria can you help me?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "Excuse me, Maria, can you help me?"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "When directly addressing someone (vocative), commas set off the name: 'Excuse me, Maria, can you help me?' Commas before and after the name are required here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_025",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ten naira ____ enough to buy the book.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Monetary amounts (sums of money) are treated as singular nouns, so use 'is' for agreement."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_026",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By noon tomorrow, I ____ the report.",
+    "options": [
+      "finish",
+      "will have finished",
+      "will finish",
+      "finished"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The future perfect ('will have finished') shows an action completed before a specified future time."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_027",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Grammar (adverb/adjective)",
+    "contentLabel": "Original exam-style practice",
+    "text": "He sings ____ than his brother.",
+    "options": [
+      "beautiful",
+      "more beautiful",
+      "more beautifully",
+      "beautifully"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Comparing manner requires an adverb; the comparative adverb form is 'more beautifully'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_028",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly capitalised sentence: 'the minister of education will visit kano.'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "The Minister of Education will visit Kano."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Official titles and proper nouns are capitalised: 'Minister of Education' and place names like 'Kano'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_029",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable is stressed in the word 'banana'?",
+    "options": [
+      "2nd",
+      "1st",
+      "3rd",
+      "no stress"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The primary stress in 'banana' falls on the second syllable: ba-NA-na, so the 2nd syllable is stressed."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_030",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sounds (vowel)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the vowel sound /ɔː/ as in 'law'?",
+    "options": [
+      "cat",
+      "caught",
+      "coat",
+      "cut"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The vowel /ɔː/ (as in 'law') appears in 'caught'; 'cat', 'coat', and 'cut' have different vowel phonemes."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_031",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which completes the idiom: 'After the scandal, the politician had to eat ___.'",
+    "options": [
+      "humble cake",
+      "his words",
+      "humble pie",
+      "crow"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The idiom is 'eat humble pie', meaning to accept humiliation or admit error; 'humble pie' is the fixed phrase."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_032",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Combine using 'although': 'She failed the exam. She had studied hard.'",
+    "options": [
+      "She failed the exam although had studied hard.",
+      "Although she studied hard she had failed the exam.",
+      "She had studied hard although she failed the exam.",
+      "Although she had studied hard, she failed the exam."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Correct subordinate clause order: 'Although she had studied hard, she failed the exam.' preserves tense and contrast."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_033",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Cloze (conditional)",
+    "contentLabel": "Original exam-style practice",
+    "text": "If you ___ earlier, you would have caught the bus.",
+    "options": [
+      "had left",
+      "leave",
+      "left",
+      "would leave"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "This is a third conditional: use past perfect in the 'if' clause ('had left') with 'would have' in the result clause."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_034",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The meeting was perfunctory. Which best interprets 'perfunctory'?",
+    "options": [
+      "thorough",
+      "brief and superficial",
+      "angry",
+      "delayed"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Perfunctory' describes something done superficially or with minimal effort; it implies brief, routine performance."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_035",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which is an indirect question?",
+    "options": [
+      "Where did she go?",
+      "Tell me where she went.",
+      "Could you tell me where she went?",
+      "She asked, 'Where did she go?'"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "An indirect question is politely phrased and retains statement word order: 'Could you tell me where she went?' is indirect."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_036",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Determiners/Quantifiers",
+    "contentLabel": "Original exam-style practice",
+    "text": "_____ apples are in the basket?",
+    "options": [
+      "How much",
+      "How few",
+      "How little",
+      "How many"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Apples' is countable; use 'How many' for questions about quantity with countable nouns."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_037",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the participants ____ a badge.",
+    "options": [
+      "has",
+      "have",
+      "are",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Each' is singular and takes a singular verb. Use 'has' not 'have' or plural forms; rule of concord: each + singular verb."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_038",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense and aspect (future perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the end of the month she ____ her manuscript.",
+    "options": [
+      "will submit",
+      "will have submitted",
+      "submitted",
+      "has submitted"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future perfect ('will have submitted') expresses completion before a future time; 'will submit' does not show completion by that time."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_039",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence transformation (passive voice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive: 'A technician will repair the generator tomorrow.'",
+    "options": [
+      "A technician will be repaired by the generator tomorrow.",
+      "Tomorrow the generator will repair a technician.",
+      "The generator will be repaired by a technician tomorrow.",
+      "The generator will have been repaired by a technician yesterday."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Passive form places object first with correct auxiliary: 'will be' + past participle; option 1 correctly keeps tense and agent."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_040",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated sentence: Sade said, \"I'll join you at noon.\"",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "Sade said, \"I'll join you at noon.\""
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Standard dialogue tag uses comma then quoted sentence with initial capital; 'noon' is a common noun not capitalised; option 2 follows these conventions."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_041",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable is stressed in the word 'photographer'?",
+    "options": [
+      "second syllable",
+      "first syllable",
+      "third syllable",
+      "fourth syllable"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Photographer' has primary stress on the second syllable (pho-TOG-ra-pher); stress shifts from 'photograph' to the second syllable in 'photographer'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_042",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sounds (vowel quality)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the vowel sound /ʊ/ as in 'put'?",
+    "options": [
+      "boot",
+      "book",
+      "bait",
+      "but"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The vowel in 'book' is /ʊ/ (as in 'put'); 'boot' is /uː/, 'bait' is /eɪ/, 'but' is /ʌ/—different vowel qualities."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_043",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis and semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In 'Resilient local businesses recovered quickly after the flood,' 'resilient' most nearly means:",
+    "options": [
+      "stubborn",
+      "wealthy",
+      "able to recover quickly",
+      "new"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Resilient' means able to withstand or recover quickly from difficulties; it does not mean wealthy, new, or merely stubborn."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_044",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Idioms and register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In 'The manager warned against cutting corners on safety,' 'cutting corners' means:",
+    "options": [
+      "saving money correctly",
+      "asking for extra approval",
+      "working longer hours",
+      "doing something hastily and carelessly"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Cutting corners' idiomatically means doing less than is needed to save time or cost, producing careless or incomplete work, not simply saving money correctly."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_045",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech functions (advice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence expresses advice?",
+    "options": [
+      "You should see a doctor about that cough.",
+      "Would you mind bringing the file?",
+      "I lost my keys yesterday.",
+      "Thank you for your help."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'You should...' is a typical structure for advice; other options are a request, a statement of fact, and an expression of gratitude respectively."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_046",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Short interpretation (inference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "After the audit, the team found minor discrepancies but no evidence of fraud. The most reasonable conclusion is:",
+    "options": [
+      "The company is innocent of any dishonesty.",
+      "The discrepancies are likely unintentional and do not indicate fraud.",
+      "The auditors failed to detect serious problems.",
+      "Fraud will certainly be discovered later."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Finding minor discrepancies with no evidence of fraud supports the inference that errors are likely unintentional; it stops short of proving absolute innocence or predicting future fraud."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_047",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Reported speech (transformation)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to reported speech: \"Don't forget to lock the door,\" she said to Mark.",
+    "options": [
+      "She said Mark not to forget to lock the door.",
+      "She reminded Mark not forgetting the door to lock.",
+      "She told Mark not to forget to lock the door.",
+      "She told Mark forgot to lock the door."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Direct command with a negative becomes 'told Mark not to...' or 'reminded Mark to...'; option 1 correctly uses 'told' + negative infinitive structure for reported speech."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_048",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Pronoun reference and verb agreement",
+    "contentLabel": "Original exam-style practice",
+    "text": "She is the only one of the candidates who ____ the necessary experience.",
+    "options": [
+      "have",
+      "are",
+      "were",
+      "has"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'The only one' is singular; the relative clause refers to that singular antecedent, so singular verb 'has' is required despite 'candidates' appearing after 'of'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_049",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the principal or the teachers ____ responsible for the schedule.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'either...or' the verb agrees with the nearer subject. 'Teachers' is plural, so use 'are'. This is the nearest-subject agreement rule."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_050",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By 5 pm today I ____ the grant application.",
+    "options": [
+      "will submit",
+      "will have submitted",
+      "have submitted",
+      "had submitted"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future perfect ('will have submitted') expresses completion before a specified future time (by 5 pm). Other forms do not show future completion."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_051",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'Her stoicism impressed the team,' stoicism most nearly means:",
+    "options": [
+      "quick anger",
+      "loud enthusiasm",
+      "calm endurance",
+      "social charm"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Stoicism refers to control of emotion and endurance under hardship; 'calm endurance' captures this meaning unlike the other choices."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_052",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the idiom: 'When push comes to ___'.",
+    "options": [
+      "shore",
+      "town",
+      "meet",
+      "shove"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The established idiom is 'when push comes to shove', meaning when a situation becomes serious or urgent; 'shove' is the conventional word."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_053",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly capitalised sentence: 'senator chukwuma will address the assembly on Monday.'",
+    "options": [
+      "Senator Chukwuma will address the assembly on Monday.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Capitals: titles before names (Senator), proper names (Chukwuma), and days (Monday). 'assembly' is common unless it is an official proper name, so lower-case is correct here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_054",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable is stressed in the word 'instrumental'?",
+    "options": [
+      "First syllable (IN-strumental)",
+      "Third syllable (in-stru-MEN-tal)",
+      "Second syllable (in-STRU-mental)",
+      "Fourth syllable (in-stru-men-TAL)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The primary stress in 'instrumental' is on the third syllable: in-stru-MEN-tal (phonetic pattern /ˌɪnstrəˈmentəl/), so the third option is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_055",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "phonology",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the vowel sound /ʌ/ as in 'cup'?",
+    "options": [
+      "coat",
+      "car",
+      "come",
+      "case"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Come' is pronounced /kʌm/ with the /ʌ/ vowel (as in 'cup'). 'Coat' /oʊ/, 'car' /ɑː/ (or /a/), 'case' /eɪ/ are different vowel sounds."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_056",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is a polite request?",
+    "options": [
+      "Bring the files to my office now.",
+      "I will send the revised draft by noon.",
+      "I suggest we delay the meeting.",
+      "Could you send the revised draft by noon?"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Could you...' is a conventional polite request using a modal question form; the others are commands, statements, or suggestions, not polite requests."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_057",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive: 'The board appointed Nneka chairperson yesterday.'",
+    "options": [
+      "Nneka was appointed chairperson by the board yesterday.",
+      "Nneka appointed as chairperson by the board yesterday.",
+      "The board was appointed chairperson yesterday by Nneka.",
+      "Nneka had been appointed chairperson yesterday by the board."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Passive of past simple: object becomes subject ('Nneka'), verb becomes 'was appointed', and agent is 'by the board'. Option 1 follows standard passive formation and tense."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_058",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "cloze/conditionals",
+    "contentLabel": "Original exam-style practice",
+    "text": "If I ____ the report now, I will finish before lunch.",
+    "options": [
+      "started",
+      "start",
+      "had started",
+      "would start"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "First conditional uses present simple in the 'if' clause + 'will' in the main clause. 'If I start... I will finish' follows this rule; other forms are incorrect."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_059",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amina left her umbrella at the bus stop; it rained heavily that afternoon. The most reasonable inference is that:",
+    "options": [
+      "Amina avoided the rain by using a different umbrella.",
+      "The bus stop staff returned the umbrella immediately.",
+      "Amina likely got wet after losing her umbrella.",
+      "It did not rain where Amina was."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Given she left her umbrella and heavy rain occurred, the simplest inference is she likely got wet. The other choices require extra unsupported assumptions."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2023_060",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "punctuation/quotation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated sentence: Maria asked, 'When will the meeting start?'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "Maria asked, 'When will the meeting start?'"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Correct punctuation includes a comma before a direct quotation and capitalising the quoted sentence. The question mark belongs inside the quotation marks; option 1 follows these rules."
+  }
+]

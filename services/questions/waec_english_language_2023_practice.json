@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_001",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'Neither the teacher nor the students ____ present.', which option correctly fills the blank?",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither... nor' the verb agrees with the nearer noun 'students', which is plural, so the correct plural verb is 'are'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_002",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: 'By the time the buses arrived, the market ____.'",
+    "options": [
+      "closed",
+      "had closed",
+      "will close",
+      "is closing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The past perfect 'had closed' shows an action completed before another past event (buses arrived). This is the correct sequence of past actions."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_003",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis / Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'The relief fund will alleviate hardship', which word is closest in meaning to 'alleviate'?",
+    "options": [
+      "increase",
+      "intensify",
+      "lessen",
+      "ignore"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Alleviate' means to make less severe; 'lessen' matches this meaning. The other choices are antonyms or unrelated."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_004",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Idioms / Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'He bit off more than he could chew', the idiom means:",
+    "options": [
+      "He literally ate too much food.",
+      "He spoke rudely to someone.",
+      "He chewed his food very slowly.",
+      "He accepted more responsibility than he could manage."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom 'bite off more than one can chew' figuratively means taking on more than one can handle, i.e., too much responsibility."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_005",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation / Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version of the sentence 'When I arrived she had left' is correctly punctuated and capitalised?",
+    "options": [
+      "When I arrived, she had left.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A subordinate time clause 'When I arrived' requires a comma before the main clause. Proper capitalisation of 'When' and 'I' is also necessary."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_006",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: 'INstrument', 'aMUSE', 'reQUIRE', 'beFORE'?",
+    "options": [
+      "aMUSE",
+      "INstrument",
+      "reQUIRE",
+      "beFORE"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'INstrument' has primary stress on the first syllable (IN-stru-ment). The other words carry stress on later syllables."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_007",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sounds / Phonemes",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the word 'chef', the consonant sound at the beginning is pronounced as which phoneme?",
+    "options": [
+      "/k/",
+      "/tʃ/",
+      "/ʃ/",
+      "/ʒ/"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The initial 'ch' in 'chef' is a French loanword pronounced /ʃ/ (the 'sh' sound), not /tʃ/ or /k/ or /ʒ/."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_008",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which response best matches the function of the sentence 'Would you mind closing the window?'",
+    "options": [
+      "An offer",
+      "A complaint",
+      "Asking for permission",
+      "A polite request"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The phrasing 'Would you mind...' is a conventional form used to make a polite request, not to offer, complain or ask permission."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_009",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence transformation (Active → Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change the sentence 'The committee will announce the results tomorrow.' to passive. Which is correct?",
+    "options": [
+      "The results will be announced by the committee tomorrow.",
+      "The results will announced by the committee tomorrow.",
+      "The committee will be announced the results tomorrow.",
+      "The results will be announcing by the committee tomorrow."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Passive of 'will announce' uses 'will be announced'. Option 0 correctly places 'by the committee' and preserves tense and word order."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_010",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Cloze / Short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read the mini-sentence: 'Amaka looked at the sky and sighed; the grey clouds thickened.' The most likely inference is that...",
+    "options": [
+      "She expects sunshine later.",
+      "She feels worried that it will rain soon.",
+      "She is happy about the cloudy weather.",
+      "She plans to go swimming immediately."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Thickening grey clouds and a sigh together imply concern about imminent rain; expecting sunshine or swimming are implausible in context."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_011",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Every one of the applicants ____ required to bring a valid ID.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "have been"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use singular verb with 'Every one of ...' because the phrase refers to each individual; therefore 'is' agrees in number."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_012",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By noon tomorrow, I ____ the report.",
+    "options": [
+      "will finish",
+      "had finished",
+      "am finishing",
+      "will have finished"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Future perfect 'will have finished' expresses an action completed before a specified future time; other forms do not show completion by noon tomorrow."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_013",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The doctor prescribed a sedative.",
+    "options": [
+      "tranquiliser",
+      "stimulant",
+      "antiseptic",
+      "antacid"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A 'sedative' calms or reduces anxiety; 'tranquiliser' is the closest synonym. 'Stimulant' and others have opposite or unrelated effects."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_014",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "He decided to play his cards close to his chest.",
+    "options": [
+      "He showed his feelings openly.",
+      "He kept his plans secret.",
+      "He risked everything in a gamble.",
+      "He gave away his possessions."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The idiom 'play one's cards close to one's chest' means to be secretive about intentions; the other options misinterpret the figurative meaning."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_015",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version of the sentence 'after school we visited st. michael's chapel on king's road' is correctly punctuated and capitalised?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "After school, we visited St. Michael's Chapel on King's Road.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Correct punctuation needs a comma after the introductory phrase and proper nouns capitalised with possessive apostrophes: 'After school, we visited St. Michael's Chapel on King's Road.'"
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_016",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following words has primary stress on the first syllable?",
+    "options": [
+      "photography",
+      "relaxation",
+      "ahead",
+      "photograph"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "In 'photograph' the primary stress falls on the first syllable (PHO-to-graph). In 'photography' and 'relaxation' stress shifts; 'ahead' has stress on the second syllable."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_017",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "sounds (phoneme)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the word 'judge' the initial consonant sound is which phoneme?",
+    "options": [
+      "/dʒ/",
+      "/tʃ/",
+      "/ʒ/",
+      "/g/"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The initial sound of 'judge' is the voiced postalveolar affricate /dʒ/. /tʃ/ is its voiceless counterpart; /ʒ/ is the voiced fricative; /g/ is a voiced velar stop."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_018",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which response best matches the function of the utterance 'Do you have a moment to talk about your assignment?'",
+    "options": [
+      "Yes, I completed it yesterday.",
+      "Sure, what do you need to discuss?",
+      "No, I don't like assignments.",
+      "Please hand it in before Friday."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The speaker requests time to discuss something; an appropriate matching response offers readiness to talk. Other options either answer different questions or give unrelated information."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_019",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "sentence transformation (voice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive: 'They will announce the winners on Friday.'",
+    "options": [
+      "Will be announced the winners on Friday.",
+      "The winners will announce on Friday.",
+      "The winners will be announced on Friday.",
+      "On Friday the winners will announce."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Form passive by making object the subject and adding appropriate auxiliary + past participle: 'The winners will be announced on Friday.' Other options are ungrammatical or change meaning."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_020",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "short interpretation prompt",
+    "contentLabel": "Original exam-style practice",
+    "text": "Aisha packed a small bag, left her keys on the table and walked out without switching off the radio. The most likely inference is:",
+    "options": [
+      "She planned a long trip.",
+      "She never uses the radio.",
+      "She wanted the house to be silent.",
+      "She left in a hurry."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Leaving keys and the radio on suggests haste; 'left in a hurry' best explains careless omissions. The other options are inconsistent with these hurried actions."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_021",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the director or the assistants ____ responsible for the late submission.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "be"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use nearest-subject agreement: when subjects are joined by 'or', the verb agrees with the nearer subject; 'assistants' is plural so 'are' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_022",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the programme started, the chief guest ____.",
+    "options": [
+      "has arrived",
+      "had arrived",
+      "will have arrived",
+      "arrived"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sequence of past events requires the past perfect 'had arrived' to show the chief guest arrived before the programme started."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_023",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'The therapy helped to diminish the swelling', which word is closest in meaning to 'diminish'?:",
+    "options": [
+      "increase",
+      "preserve",
+      "reduce",
+      "ignore"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Diminish' means to make smaller or lessen; 'reduce' is the closest synonym, unlike 'increase', 'preserve' or 'ignore'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_024",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "If a colleague says 'keep me in the loop' they mean:",
+    "options": [
+      "exclude me from decisions",
+      "lock me out of meetings",
+      "criticise my work",
+      "let me know developments"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Idiom meaning: to keep someone informed about developments or decisions; 'let me know developments' matches this register."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_025",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correct for the sentence: he asked, 'where can I find the timetable?':",
+    "options": [
+      "He asked, 'Where can I find the timetable?'",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Direct question inside quotes should start with a capital and end with a question mark; pronoun 'I' must be capitalised; Option 3 follows these rules."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_026",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: 'TAble', 'inVite', 'reLAX', 'aBATe'?:",
+    "options": [
+      "inVite",
+      "TAble",
+      "reLAX",
+      "aBATe"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stress rule: 'TABLE' is pronounced with primary stress on the first syllable; the others have stress on later syllables."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_027",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Initial phoneme",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the word 'phone' the initial consonant sound is which phoneme?",
+    "options": [
+      "/p/",
+      "/θ/",
+      "/f/",
+      "/s/"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Phone' begins with the phoneme /f/ (the 'ph' spelling represents the /f/ sound), not /p/, /θ/ or /s/."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_028",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech function",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main function of the utterance 'Could you lend me a pen?':",
+    "options": [
+      "giving information",
+      "refusing politely",
+      "offering help",
+      "requesting an object"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Could you lend me a pen?' is a polite request asking someone to give a pen temporarily, not giving information or offering help."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_029",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence transformation (voice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive: 'The headteacher will inspect the dormitories next week.' Which is correct?",
+    "options": [
+      "The dormitories will be inspected by the headteacher next week.",
+      "The dormitories are inspected by the headteacher next week.",
+      "The headteacher will be inspected the dormitories next week.",
+      "The dormitories will inspect by the headteacher next week."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Passive requires object as subject + appropriate auxiliary + past participle: 'The dormitories will be inspected by the headteacher next week.' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_030",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Kola tightened his grip on the suitcase and waited at the gate. The most likely inference is:",
+    "options": [
+      "Kola is hiding from someone",
+      "Kola expects to travel soon",
+      "Kola has lost the key to the suitcase",
+      "Kola is repairing the suitcase"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Context clues (suitcase, waiting at gate) imply readiness to travel; other options are not supported by the sentence's details."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_031",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "The team, along with its coach, ____ arriving by six o'clock.",
+    "options": [
+      "are",
+      "have",
+      "is",
+      "were"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Collective noun 'team' is treated as a single unit here, so singular verb 'is' agrees with the subject."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_032",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the end of the semester I ____ all assigned essays.",
+    "options": [
+      "will finish",
+      "have finished",
+      "will be finishing",
+      "will have finished"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Future perfect 'will have finished' denotes completion before a specified future time; other forms do not show this sequence."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_033",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis / Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'The council sought to curtail spending', the word 'curtail' is closest in meaning to:",
+    "options": [
+      "restrict",
+      "increase",
+      "ignore",
+      "postpone"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Curtail' means to reduce or restrict something; contrast with 'increase' and 'ignore' which are opposite or unrelated."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_034",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Idioms / Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "If a supervisor tells you 'keep your guard up' during night duty they mean:",
+    "options": [
+      "relax and rest",
+      "remain alert",
+      "hide your plans",
+      "stop work immediately"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "This idiom means to stay watchful and attentive; it is not an instruction to relax, conceal, or cease activity."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_035",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised sentence for this statement: 'on tuesday mr adamu visited st thomas hospital'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "On Tuesday, Mr. Adamu visited St Thomas Hospital.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Correct capitals for day and proper nouns, title with period 'Mr.', comma after introductory adverbial; other options mis-capitalise or omit punctuation."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_036",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: 'DIrective', 'reLEASE', 'conDUCT', 'proceed'?",
+    "options": [
+      "reLEASE",
+      "conDUCT",
+      "proceed",
+      "DIrective"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Directive' is stressed on the first syllable (DI-rect-ive); the other verbs and words shown have primary stress on later syllables."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_037",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Phonetics (initial consonant)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the word 'genre' the initial consonant sound is represented by which phoneme?",
+    "options": [
+      "/ʒ/",
+      "/dʒ/",
+      "/g/",
+      "/tʃ/"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Genre' begins with the voiced postalveolar fricative /ʒ/ (as in 'vision'); /dʒ/ and /tʃ/ are affricates, /g/ is a voiced velar stop."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_038",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main function of the utterance 'Mind the step' spoken at a doorway?",
+    "options": [
+      "to offer assistance",
+      "to warn someone",
+      "to ask permission",
+      "to express surprise"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Mind the step' is a brief warning/instruction to be careful; it is not offering help, asking permission or showing surprise."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_039",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence transformation (active → passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive: 'They will publish the anthology next month.' Which is correct?",
+    "options": [
+      "The anthology will publish next month.",
+      "Next month the anthology will publish.",
+      "The anthology will be published next month.",
+      "The anthology is published by them next month."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Passive requires object as subject plus 'be' + past participle: 'will be published'; other options are ungrammatical or change meaning."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_040",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Short interpretation / inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-sentence: 'Rasheed left a pan on the stove and stepped away; soon the kitchen filled with a faint burnt smell.' The most likely inference is:",
+    "options": [
+      "Rasheed deliberately burned food to create smoke.",
+      "Rasheed was testing the stove and everything was normal.",
+      "The electricity went out and produced the smell.",
+      "Something on the stove began to burn because it was left unattended."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Leaving cookware unattended commonly causes items to burn and produce a burnt odour; other options are speculative or unrelated to the described cause."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_041",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'Each of the boxes ____ heavy.', which option correctly fills the blank?",
+    "options": [
+      "is",
+      "are",
+      "has",
+      "have"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'Each' as subject, singular verb is required. 'Each of the boxes is heavy' follows subject-verb agreement rule for distributive 'each'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_042",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: 'By 6 p.m. tomorrow, I ____ painting the fence.'",
+    "options": [
+      "will finish",
+      "will have finished",
+      "have finished",
+      "would finish"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use future perfect ('will have' + past participle) to show completion before a future time: 'will have finished' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_043",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis / semantics (synonym)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'The manager commended her for her diligence', which word is closest in meaning to 'commended'?",
+    "options": [
+      "recommended",
+      "entrusted",
+      "praised",
+      "noticed"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Commended' means to express approval or praise. 'Praised' is the closest synonym; others differ in meaning and force."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_044",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Idioms / register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'After three setbacks he threw in the towel.', the idiom means:",
+    "options": [
+      "congratulated his rivals",
+      "trained harder",
+      "postponed action",
+      "gave up"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Throw in the towel' is an idiom meaning to give up or concede; not to congratulate, train, or delay."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_045",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version of the sentence 'on sunday afternoon dr. Olu visited st. Mary's primary school' is correctly punctuated and capitalised?",
+    "options": [
+      "On Sunday afternoon Dr. Olu visited St. Mary's Primary School.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Capitals are required for sentence start and proper nouns: 'On Sunday', 'Dr.' and 'St. Mary's Primary School' are correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_046",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words has primary stress on the first syllable: 'HARMful', 'reLAX', 'aBOVE', 'perMIT'?",
+    "options": [
+      "reLAX",
+      "HARMful",
+      "aBOVE",
+      "perMIT"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'HARMful' has stress on the first syllable. The others (reLAX, aBOVE, perMIT) have stress on later syllables."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_047",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Phonetics (initial consonant sound)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the word 'measure' the initial consonant sound is represented by which phoneme?",
+    "options": [
+      "/m/",
+      "/z/",
+      "/ʒ/",
+      "/ʃ/"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The initial sound of 'measure' is the voiced postalveolar fricative /ʒ/ (as in 'vision'), not /m/, /z/, or /ʃ/."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_048",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main function of the utterance 'Would you mind if I opened the window?'",
+    "options": [
+      "offering help",
+      "giving advice",
+      "reporting information",
+      "requesting permission"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The structure 'Would you mind if I...' is a polite formula used to request permission, not to offer, advise, or report."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_049",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence transformation (active to passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive: 'Someone had stolen the cyclist's bag.' Which is correct?",
+    "options": [
+      "The cyclist's bag had been stolen.",
+      "The cyclist's bag was stolen by someone.",
+      "Had been stolen the cyclist's bag.",
+      "The bag was being stolen by someone."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Past perfect passive uses 'had been' + past participle: 'The cyclist's bag had been stolen.' Other options show wrong tense or word order."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2023_050",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Cloze / conditional structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the conditional clause: 'If you ____ earlier, we would have met the bus.'",
+    "options": [
+      "left",
+      "had left",
+      "would leave",
+      "had been leaving"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In a third conditional (counterfactual past), the if-clause requires past perfect ('had' + past participle): 'had left' is correct."
+  }
+]

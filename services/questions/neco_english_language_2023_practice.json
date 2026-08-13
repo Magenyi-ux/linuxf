@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_001",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the students ___ a copy of the handbook.",
+    "options": [
+      "has",
+      "have",
+      "are having",
+      "were having"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use singular verb with 'Each of the…' because the subject is treated as singular: 'Each ... has'. Rule: singular agreement."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_002",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the guests arrived, Lydia ___ the cake.",
+    "options": [
+      "has baked",
+      "had baked",
+      "was baking",
+      "will bake"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use past perfect for an action completed before another past event: 'had baked' shows earlier completion than 'arrived'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_003",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis / semantics (word choice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "His answer was full of ___; he avoided the truth.",
+    "options": [
+      "candour",
+      "clarity",
+      "ambiguity",
+      "precision"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Ambiguity fits because avoiding truth involves being unclear. Candour/clarity/precision mean openness or exactness."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_004",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Idioms and register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is most appropriate for a formal letter of complaint?",
+    "options": [
+      "I gotta tell you I'm angry about this.",
+      "You messed up my order — fix it now.",
+      "This is to notify you that I'm upset.",
+      "I am writing to express my dissatisfaction with your service."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Formal complaints use polite, complete phrasing: 'I am writing to express my dissatisfaction...' is suitably formal and conventional."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_005",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Consider the sentence: my sister said, 'we will leave at ten.' Which version is correctly capitalised and punctuated?",
+    "options": [
+      "My sister said, \"We will leave at ten.\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Correct: capitalise first word inside quotes and place closing punctuation inside. Quotation marks require 'We' capitalised and final full stop inside."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_006",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following words has primary stress on the first syllable? (Tested words: pencil, about, because, arrive)",
+    "options": [
+      "about",
+      "pencil",
+      "because",
+      "arrive"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Two-syllable nouns like 'PEN-cil' have stress on the first syllable; 'about', 'because', 'arrive' have stress later."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_007",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sounds (phoneme identification)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words ends with the /t/ sound?",
+    "options": [
+      "phase",
+      "face",
+      "fact",
+      "fade"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The final consonant in 'fact' is /t/. 'Phase' ends /z/, 'face' ends /s/ (or /s/ with voiceless), 'fade' ends /d/ sound."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_008",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech function",
+    "contentLabel": "Original exam-style practice",
+    "text": "Speaker A: \"Could you close the window?\" What is the function of this utterance?",
+    "options": [
+      "Apology",
+      "Offer",
+      "Suggestion",
+      "Request"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Could you...' is a polite request asking someone to perform an action. It is not an apology, offer, or suggestion."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_009",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence transformation (active to passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: Farmers harvest cassava every year.",
+    "options": [
+      "Cassava is harvested by farmers every year.",
+      "Cassava are harvested by farmers every year.",
+      "Farmers are harvested cassava every year.",
+      "Cassava was harvested by farmers every year."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Present simple passive: plural noun 'Cassava' takes singular 'is' here as uncountable/mass; correct form: 'Cassava is harvested by farmers every year.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_010",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Cloze / short interpretation (inference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amaka left her umbrella at Mr Bello's shop. She asked him to keep it until she returned. Why did Amaka ask Mr Bello to keep the umbrella?",
+    "options": [
+      "Because she wanted him to sell it.",
+      "Because she needed it later.",
+      "Because she wanted to borrow it from him.",
+      "Because she gave it to him as a present."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Inference: asking someone to keep an item 'until she returned' implies she intends to retrieve and use it later, not to sell, borrow, or gift it."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_011",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the committee members ____ responsible for a section.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "have been"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "With 'each' as a distributive subject, use a singular verb: 'each ... is'. This contrasts with plural verbs used with plural subjects."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_012",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By next month, I ____ completed the project.",
+    "options": [
+      "will have been",
+      "will be",
+      "have been",
+      "will have"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Future perfect uses 'will have' + past participle to show completion before a future time: 'will have completed'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_013",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Consider the sentence: \"dr. awudu will speak at the conference.\" Which version is correctly capitalised and punctuated?",
+    "options": [
+      "Dr. Awudu will speak at the conference.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "Doctor Awudu will speak at the conference."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Abbreviated title 'Dr.' requires a capital D and a period; names are capitalised: 'Dr. Awudu will speak...'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_014",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following words has primary stress on the second syllable? (Tested words: control, country, device, teacher)",
+    "options": [
+      "control",
+      "device",
+      "country",
+      "teacher"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In 'deVICE' the primary stress falls on the second syllable, whereas 'CONtrol' and 'COUNtry' have first-syllable stress."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_015",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sounds (Final Sound)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following words ends with the /d/ sound? (Tested words: bag, bake, base, bad)",
+    "options": [
+      "bag",
+      "bake",
+      "bad",
+      "base"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Phonetically, 'bad' ends with the voiced alveolar stop /d/; 'bag' /g/, 'bake' /k/ and 'base' /s/ are different final sounds."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_016",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Bukky is meticulous about arranging her books. What does 'meticulous' most nearly mean here?",
+    "options": [
+      "quick",
+      "disorganised",
+      "forgetful",
+      "careful"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Meticulous' means paying great attention to detail = careful. The other choices are antonyms or unrelated."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_017",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the sentence most appropriate for a job interview.",
+    "options": [
+      "\"I am eager to contribute my skills to your team.\"",
+      "\"Hey, what's up? Can I get this job?\"",
+      "\"You people should hire me; I'm the best.\"",
+      "\"Give me the chance and I'll show you.\""
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Formal, polite register suits interviews: 'I am eager to contribute...' is professional. Others are informal or aggressive."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_018",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Speaker: \"Could you show me the way to the market?\" What is the function of this utterance?",
+    "options": [
+      "A refusal",
+      "A request for information or help",
+      "An offer",
+      "A complaint"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The modal 'Could you...' is a polite request asking for directions or assistance, not an offer or refusal."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_019",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence Transformation (Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"Olufemi will deliver the parcel tomorrow.\"",
+    "options": [
+      "The parcel will deliver Olufemi tomorrow.",
+      "Olufemi will be delivered the parcel tomorrow.",
+      "The parcel will be delivered by Olufemi tomorrow.",
+      "The parcel was delivered by Olufemi tomorrow."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Passive: object becomes subject + 'will be' + past participle + 'by' agent: 'The parcel will be delivered by Olufemi.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_020",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Cloze/Grammar (Infinitive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "When the rains started, the farmers hurried to the field. They wanted to ____ the seed before it washed away.",
+    "options": [
+      "save",
+      "sowed",
+      "sowing",
+      "sow"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "After 'wanted to' use the base infinitive: 'wanted to sow'. 'Sowed' or 'sowing' would be grammatically incorrect here."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_021",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord (Subject-Verb Agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the manager nor the employees ___ willing to work late.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "be"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer noun; 'employees' (plural) requires 'are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_022",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense and Aspect (Future Perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the meeting starts, I ___ the draft for the report.",
+    "options": [
+      "will complete",
+      "will have completed",
+      "completed",
+      "am completing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The future perfect ('will have' + past participle) expresses an action finished before a future time: 'will have completed.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_023",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis / Semantics (Word Meaning)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'She was discreet about the surprise,' what does 'discreet' most nearly mean?",
+    "options": [
+      "open and public",
+      "loud and obvious",
+      "careful and tactful",
+      "quick and efficient"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Discreet' means careful and tactful in behaviour or speech; it does not mean loud or public."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_024",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Register (Formal vs Informal)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is most appropriate for opening a formal email to a university professor?",
+    "options": [
+      "Hey Prof, I need help with my paper.",
+      "Just checking if you got my essay.",
+      "Can you please look into my file?",
+      "I am writing to inquire about the status of my application."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A formal opening uses a complete polite phrase such as 'I am writing to inquire...' rather than informal greetings or short commands."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_025",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Consider the sentence: 'dr. mmeh will chair the seminar on thursday.' Which version is correctly capitalised and punctuated?",
+    "options": [
+      "Dr. Mmeh will chair the seminar on Thursday.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Titles and names take initial capitals and the abbreviation 'Dr.' has a full stop; days are capitalised: 'Dr. Mmeh ... Thursday.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_026",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word Stress (Primary Stress Position)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following words has primary stress on the first syllable? Tested words: 'happy', 'discuss', 'computer', 'arrange'.",
+    "options": [
+      "discuss",
+      "happy",
+      "computer",
+      "arrange"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Happy' is stressed on the first syllable ('HAP-py'); 'discuss', 'computer', 'arrange' have primary stress later in the word."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_027",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sounds (Final Consonant Sound)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words ends with the /tʃ/ sound? Tested words: 'watch', 'glass', 'bag', 'save'.",
+    "options": [
+      "glass",
+      "bag",
+      "watch",
+      "save"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The word 'watch' ends with the /tʃ/ (ch) sound; 'glass' ends /s/, 'bag' /g/, 'save' /v/."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_028",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech Functions (Polite Request)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Speaker A: 'Could you hand me the stapler, please?' What is the function of this utterance?",
+    "options": [
+      "an apology",
+      "a warning",
+      "a suggestion",
+      "a polite request"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The use of 'Could you... please?' signals a polite request for action, not an apology, warning or suggestion."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_029",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence Transformation (Passive Voice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'Someone repaired the road yesterday.' Which is correct?",
+    "options": [
+      "The road was repaired yesterday.",
+      "The road repaired yesterday.",
+      "Yesterday the road was repairing.",
+      "The road has been repaired yesterday."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Simple past passive uses 'was' + past participle: 'The road was repaired yesterday.' Other forms are ungrammatical or wrong tense."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_030",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Cloze (Perfect Tense Choice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "After the rehearsal, Nneka felt confident because she had ____ her lines.",
+    "options": [
+      "learn",
+      "learned",
+      "learning",
+      "have learned"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "With 'had' the past perfect requires the past participle form 'learned'. 'Had learned' = action completed before another past event."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_031",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Concord (Subject-Verb Agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the teacher nor the students ___ the announcement.",
+    "options": [
+      "was surprised",
+      "is surprised",
+      "were surprised",
+      "has surprised"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer subject 'students' (plural), so use 'were surprised'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_032",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Tense / Aspect (Future Perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By 6 p.m. tomorrow, I ____ this article.",
+    "options": [
+      "will finish",
+      "have finished",
+      "finished",
+      "will have finished"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use future perfect 'will have finished' to show an action completed before a future time (by 6 p.m.)."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_033",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Lexis / Semantics (Word Meaning)",
+    "contentLabel": "Original exam-style practice",
+    "text": "He spoke in a terse manner.",
+    "options": [
+      "using few words",
+      "speaking very politely",
+      "raising his voice",
+      "adding many details"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Terse' means brief and to the point, so 'using few words' is the closest meaning; other choices contradict brevity."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_034",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Register / Formality",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is most appropriate for a formal job application?",
+    "options": [
+      "Hey, I need this job; I can start immediately.",
+      "Please accept my application for the advertised teaching position.",
+      "I'm sending my CV because I'm looking for work.",
+      "Can you give me this job? I have experience."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Option 2 uses polite, formal language and a clear statement of purpose appropriate for applications; others are informal or vague."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_035",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Consider the sentence: mr. adejo will present 'the new plan' on monday. Which version is correctly capitalised and punctuated?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "Mr. Adejo will present 'The New Plan' on Monday.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Proper nouns and days are capitalised and titles in quotes are title-cased: 'Mr. Adejo', 'The New Plan', 'Monday' is correct punctuation and capitalisation."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_036",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following words has primary stress on the second syllable? (Tested words: banana, teacher, garden, market)",
+    "options": [
+      "teacher",
+      "garden",
+      "market",
+      "banana"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Banana is stressed on the second syllable (ba-NA-na). The other words carry primary stress on the first syllable."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_037",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Phonology (Final Sound)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following words ends with the /d/ sound? (Tested words: cold, pack, paste, curb)",
+    "options": [
+      "cold",
+      "pack",
+      "paste",
+      "curb"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Cold' ends in the voiced consonant /d/ (pronounced /koʊld/). The others end with different consonant sounds (/k/, /st/, /b/)."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_038",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Speech Function (Pragmatics)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Speaker: \"Would you mind closing the gate?\" What is the primary function of this utterance?",
+    "options": [
+      "A direct command",
+      "A request for action",
+      "An offer of help",
+      "An expression of annoyance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Polite question form 'Would you mind...?' functions as a request asking someone to perform an action, not a command or offer."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_039",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Sentence Transformation (Active to Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'The committee will announce the results tomorrow.'",
+    "options": [
+      "Tomorrow will be announced the results by the committee.",
+      "The results will announce the committee tomorrow.",
+      "The results will be announced by the committee tomorrow.",
+      "The committee will be announced the results tomorrow."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Correct passive moves object to subject: 'The results will be announced by the committee tomorrow.' preserves tense and agent placement."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_040",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "Cloze / Short Interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Tomiwa watered the seedlings at dawn. Why did he most likely do this?",
+    "options": [
+      "To make them grow only at night",
+      "To add chemical fertiliser to the leaves",
+      "To stop them from producing flowers",
+      "To prevent them from wilting in the midday heat"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Watering at dawn is commonly done to give plants moisture before heat; this prevents wilting—other options are implausible in context."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_041",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Every one of the applicants ____ to submit a copy of their certificate.",
+    "options": [
+      "is required",
+      "are required",
+      "were required",
+      "have been required"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'Every one of' the subject is singular, so the verb takes singular form: 'is required' is grammatically correct."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_042",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the concert begins, we ____ the tickets from the box office.",
+    "options": [
+      "will collect",
+      "will have collected",
+      "will be collecting",
+      "have collected"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future perfect expresses completion before a future point: 'will have collected' shows tickets obtained before the concert begins."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_043",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'Mojisola is frugal with her money,' what does 'frugal' most nearly mean?",
+    "options": [
+      "wasteful",
+      "generous",
+      "careful about spending",
+      "indifferent to money"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Frugal' means being careful with spending or economical; it contrasts with 'wasteful' or 'generous'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_044",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "register/idiom",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is most appropriate to begin a formal complaint letter to a landlord?",
+    "options": [
+      "Hey, you need to fix the leak now!",
+      "Can you sort out this leak when you have time?",
+      "Just letting you know the sink is faulty.",
+      "I am writing to report a persistent leak in flat 4B."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Formal letters use neutral, clear openings: 'I am writing to report...' is appropriately polite and specific for a complaint."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_045",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Consider the sentence: \"professor emeka said, 'the lecture starts on monday.'\" Which version is correctly capitalised and punctuated?",
+    "options": [
+      "Professor Emeka said, 'The lecture starts on Monday.'",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Titles and names, sentence-initial words and days are capitalised; the quoted sentence begins with a capital letter: full correct form shown in option 1."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_046",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable carries the primary stress in the word 'economy'?",
+    "options": [
+      "first syllable",
+      "second syllable",
+      "third syllable",
+      "fourth syllable"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The common pronunciation is e-CON-o-my, with primary stress on the second syllable; therefore 'second syllable' is correct."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_047",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "sounds (phonology)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words ends with the /ʃ/ sound? (Tested words: dish, dog, fade, bag)",
+    "options": [
+      "dog",
+      "fade",
+      "dish",
+      "bag"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The final sound of 'dish' is /ʃ/ (sh), while 'dog' ends /g/, 'fade' /d/, and 'bag' /g/; phonetic contrast identifies 'dish'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_048",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Speaker: \"Could you tell me how to get to the post office?\" What is the primary function of this utterance?",
+    "options": [
+      "Giving an order",
+      "Making an apology",
+      "Offering help",
+      "Requesting information"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The speaker asks for directions, so the utterance's function is requesting information, not ordering or offering."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_049",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "sentence transformation (voice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"They will publish the novel next month.\" Which is correct?",
+    "options": [
+      "The novel will be published next month.",
+      "The novel will publish next month.",
+      "The novel will have published next month.",
+      "The novel is published by them next month."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Future simple passive is formed with 'will be' + past participle: 'will be published' is correct; other options misuse voice or tense."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2023_050",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2023",
+    "topic": "short interpretation (vocabulary in context)",
+    "contentLabel": "Original exam-style practice",
+    "text": "After reading the safety bulletin, the crew took measures to avert an accident. What does 'avert' most nearly mean here?",
+    "options": [
+      "wait for",
+      "prevent",
+      "cause",
+      "record"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Avert' means to prevent or avoid something bad from happening; context of safety measures confirms 'prevent'."
+  }
+]

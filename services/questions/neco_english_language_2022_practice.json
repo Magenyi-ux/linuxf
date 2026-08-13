@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_001",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Grammatical structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "If I ____ earlier, I would have helped.",
+    "options": [
+      "had known",
+      "knew",
+      "would have known",
+      "have known"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "This is a third conditional: use 'if + past perfect' (had known) with 'would have + past participle' to talk about past unreal situations."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_002",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the students ____ the assignment on time.",
+    "options": [
+      "have submitted",
+      "has submitted",
+      "were submitting",
+      "are submitting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Each' is singular and requires a singular verb: 'Each of the students has submitted...' not the plural 'have' or continuous forms here."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_003",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By this time next year, Musa ____ at the factory for five years.",
+    "options": [
+      "will work",
+      "will be working",
+      "will have worked",
+      "has worked"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use the future perfect 'will have worked' to show an action continuing up to a future point and to express the completed duration of five years."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_004",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Cloze / Lexis and semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The council's decision was a blow to the villagers' ____.",
+    "options": [
+      "livings",
+      "lives",
+      "profits",
+      "livelihood"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Livelihood' (uncountable) means means of earning a living and collocates with 'a blow to'; 'livings' and 'profits' are less appropriate here."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_005",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Idioms / register",
+    "contentLabel": "Original exam-style practice",
+    "text": "After months of delay, she decided to bite the bullet and accept the promotion.",
+    "options": [
+      "to accept an unpleasant but necessary action",
+      "to avoid responsibility",
+      "to act without thinking",
+      "to celebrate success"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The idiom 'bite the bullet' means to face or accept something unpleasant but necessary, not to avoid or celebrate something."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_006",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation / capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correctly punctuated: 'While cooking the soup the woman burnt her hand.'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "While cooking the soup, the woman burnt her hand.",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An introductory subordinate clause 'While cooking the soup' should be followed by a comma before the main clause, so option with the comma is correct."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_007",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Word stress and sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence shows 'address' with primary stress on the first syllable?",
+    "options": [
+      "They will address the crowd tonight.",
+      "We often address problems directly.",
+      "Please write your address here.",
+      "Please address the letter and send it."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "As a noun 'address' is stressed on the first syllable (AD-dress): 'your address'. The verb uses second-syllable stress (ad-DRESS) in the other sentences."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_008",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which utterance is a polite request?",
+    "options": [
+      "Close the door now.",
+      "You must close the door.",
+      "The door is closed.",
+      "Could you close the door, please?"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Could you ... please?' uses a modal + please to form a polite request; the others are an order, an obligation, and a statement respectively."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_009",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct transformation using 'unless': 'If you do not study, you will fail the exam.'",
+    "options": [
+      "Unless you study, you will fail the exam.",
+      "Unless you will study, you will fail the exam.",
+      "You will fail the exam unless will you study.",
+      "Unless not you study, you will fail the exam."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Unless' means 'if not' and governs the present tense form: 'Unless you study, you will fail.' The other options are ungrammatical."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_010",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Short interpretation prompt",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: 'The market observes a blanket ban on stall trading on Sundays.' What does 'blanket ban' most likely mean here?",
+    "options": [
+      "a specific rule for one stall",
+      "a complete prohibition covering all stalls",
+      "a temporary suggestion for some traders",
+      "a partial restriction for food stalls only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Blanket ban' means a general or complete prohibition applied across the whole area or group, not a specific or partial rule."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_011",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Conditionals",
+    "contentLabel": "Original exam-style practice",
+    "text": "If Kemi ____ earlier, she would have caught the bus.",
+    "options": [
+      "left",
+      "would leave",
+      "had left",
+      "leaves"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use the third conditional for past unreal; 'had left' + 'would have' is the correct past perfect form for unreal past."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_012",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "None of the players ____ available for selection.",
+    "options": [
+      "are",
+      "were",
+      "have been",
+      "is"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "With 'none of' + plural noun, singular agreement ('none' often takes singular) so 'is' is correct here by standard concord rules."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_013",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By noon tomorrow, she ____ the painting.",
+    "options": [
+      "will have finished",
+      "will finish",
+      "has finished",
+      "had finished"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The future perfect ('will have finished') expresses completion before a specified future time; simple future is not precise enough."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_014",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Lexis / semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'The judge adjourned the case', what does 'adjourned' mean?",
+    "options": [
+      "closed permanently",
+      "postponed temporarily",
+      "criticised publicly",
+      "referred to another court"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Adjourned' means suspended or postponed to a later time; it does not imply permanent closure or referral in legal usage."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_015",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Idioms / register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In 'He hit the ground running on his first day', what does the idiom mean?",
+    "options": [
+      "tripped and fell",
+      "went for a run",
+      "started work energetically",
+      "took a break"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The idiom 'hit the ground running' means to begin energetically and effectively; it does not mean a literal fall or rest."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_016",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation and capitalization",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correctly punctuated: When she answered, 'I will go home now' the teacher smiled.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "When she answered, \"I will go home now,\" the teacher smiled."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Direct speech with a reporting clause needs the comma and capitalization inside the quotation: \"I will...,\" and the reporting clause follows, so option A is correct."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_017",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: photograph, record, include, around?",
+    "options": [
+      "photograph",
+      "record",
+      "include",
+      "around"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'PHOtograph' has primary stress on the first syllable; 'reCORD', 'inCLUDE' and 'aROUND' have stress on later syllables."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_018",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Phonology (vowel sounds)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has the same vowel sound as 'put'?",
+    "options": [
+      "but",
+      "foot",
+      "boot",
+      "pot"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Put' and 'foot' share the short /ʊ/ vowel sound; 'but' is /ʌ/, 'boot' is /uː/, and 'pot' is a different vowel."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_019",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct transformation beginning 'Because' for 'She can buy the car because she has saved money.'",
+    "options": [
+      "Because she saved money, she will be able to buy the car.",
+      "Because she had saved money, she could buy the car.",
+      "Because she has saved money, she can buy the car.",
+      "Because she saves money, she can buy the car."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "To retain meaning and tense, begin with 'Because she has saved money,' then main clause 'she can buy the car.' Other choices change aspect or time reference."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_020",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Cloze and short inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "When the bell rang, the children ____ out to the playground.",
+    "options": [
+      "run",
+      "running",
+      "have run",
+      "ran"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'When the bell rang' sets a past-time context, so the simple past 'ran' correctly matches the time reference; other options are incorrect tense/forms."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_021",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense/Aspect (Conditional)",
+    "contentLabel": "Original exam-style practice",
+    "text": "If Ladi ______ the map yesterday, she would have found the trail.",
+    "options": [
+      "had looked at",
+      "looked at",
+      "has looked at",
+      "was looking at"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Third conditional (past unreal) requires if + had + past participle: 'had looked at' is grammatically correct."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_022",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Concord (Subject-Verb Agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "None of the rice _____ left in the pot.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "With an uncountable noun like 'rice', 'none' typically takes a singular verb: use 'is' for agreement."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_023",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense/Aspect (Future Continuous)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By seven tonight, I ____ dinner.",
+    "options": [
+      "will cook",
+      "will have cooked",
+      "will be cooking",
+      "cook"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Future continuous (will be + -ing) expresses an action in progress at a specific future time: 'will be cooking'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_024",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Her new position comes with several perks.",
+    "options": [
+      "penalties",
+      "basic duties",
+      "strict rules",
+      "extra benefits"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "In workplace vocabulary 'perks' means additional benefits or privileges, not penalties or duties."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_025",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'Let's call it a day', the speaker most likely means:",
+    "options": [
+      "let us stop working for now",
+      "let us work harder",
+      "let us celebrate our success",
+      "let us repeat the task"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The idiom 'call it a day' is a common informal expression meaning to stop working or end activity for the day."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_026",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correctly punctuated: She said we will leave now.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "She said, \"We will leave now.\"",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Correct punctuation places a comma before the quotation and the period inside the closing quotation mark in standard written English."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_027",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: photograph, computer, rely, begin?",
+    "options": [
+      "computer",
+      "rely",
+      "photograph",
+      "begin"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The noun 'photograph' carries primary stress on the first syllable (PHO-to-graph); the others have stress on later syllables."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_028",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Speech Functions (Politeness)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which utterance is a polite refusal?",
+    "options": [
+      "Could you pass the salt?",
+      "May I borrow your pen?",
+      "Please, take a seat.",
+      "I'm sorry, I can't make it to lunch."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A polite refusal often uses an apology and negative verb: 'I'm sorry, I can't...' politely declines an invitation or request."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_029",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sentence Transformation (Concession)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct transformation beginning with 'Although' for: 'She was tired. She finished her homework.'",
+    "options": [
+      "Although she was tired, she finished her homework.",
+      "Although she finished her homework, she was tired.",
+      "Although she is tired, she finished her homework.",
+      "Although she had been tired, she finishes her homework."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Although' introduces a concession and keeps the two ideas in same tense: 'Although she was tired, she finished her homework.' is correct."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_030",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Cloze (Collocation)",
+    "contentLabel": "Original exam-style practice",
+    "text": "She is good ____ mathematics.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "with"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct collocation is 'good at' when referring to skill in a subject or activity: 'good at mathematics.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_031",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "grammar - conditional (third conditional)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Had I known about the meeting, I ____.",
+    "options": [
+      "would attend",
+      "will have attended",
+      "would have attended",
+      "had attended"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In the inverted third conditional 'Had I known' the correct structure is 'would have + past participle': 'would have attended'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_032",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither of the answers ____ correct.",
+    "options": [
+      "are",
+      "were",
+      "have been",
+      "is"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Neither' is singular and takes a singular verb, so 'is' is correct; 'are' would be used with plural subjects like 'both'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_033",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "tense/aspect (future perfect continuous)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By next June, Ama ____ at the school for three years.",
+    "options": [
+      "will have been teaching",
+      "will be teaching",
+      "will have taught",
+      "will teach"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A duration up to a future point uses the future perfect continuous: 'will have been teaching' expresses three years by next June."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_034",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "lexis/semantics (word meaning)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In 'He faced a dilemma', what does 'dilemma' most nearly mean?",
+    "options": [
+      "a public celebration",
+      "a problem requiring a choice",
+      "a short trip",
+      "unfair treatment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Dilemma' denotes a situation where a difficult choice is required; it does not mean celebration, journey, or unfair treatment."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_035",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "idioms/register",
+    "contentLabel": "Original exam-style practice",
+    "text": "When he said 'break the ice' in the meeting, he meant:",
+    "options": [
+      "destroy something valuable",
+      "delay the discussion until later",
+      "end awkward silence and start conversation",
+      "start an argument"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The idiom 'break the ice' means to ease tension or end awkward silence so people can begin talking; it does not mean destroying or delaying."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_036",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct punctuation for: When the rain stopped we continued the journey.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "When the rain stopped, we continued the journey."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A front subordinate clause 'When the rain stopped' needs a comma before the main clause; therefore the comma after 'stopped' is required."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_037",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the second syllable: remark, photograph, teacher, typical?",
+    "options": [
+      "remark",
+      "photograph",
+      "teacher",
+      "typical"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Remark' is pronounced re-MARK with primary stress on the second syllable; 'photograph', 'teacher', 'typical' have stress on the first syllable."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_038",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "speech functions (offer vs request)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which utterance is an offer?",
+    "options": [
+      "Would you mind closing the window?",
+      "Could I help you with your bags?",
+      "Please close the window.",
+      "I will close the window."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An offer expresses willingness to help; 'Could I help you with your bags?' is an offer, while the others are requests, commands, or statements."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_039",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "sentence transformation (use 'unless')",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct transformation beginning with 'Unless' for: 'You will get wet if you do not take an umbrella.'",
+    "options": [
+      "Unless you will take an umbrella, you will get wet.",
+      "Unless you do not take an umbrella, you will get wet.",
+      "Unless you take an umbrella, you will get wet.",
+      "Unless taking an umbrella, you will get wet."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Replace 'if you do not' with 'unless' plus the affirmative clause: 'Unless you take an umbrella...' is the correct transformation."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_040",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "cloze-style meaning/short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amina returned the faulty radio and received a full refund. What does 'refund' most likely mean?",
+    "options": [
+      "a replacement radio",
+      "an apology",
+      "a discount on a future purchase",
+      "money returned"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A 'refund' is repayment of money paid for an item that is faulty or unwanted; it does not mean a replacement, apology, or future discount."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_041",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the teacher nor the students ____ present at the assembly.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "has been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer subject; 'students' is plural so use 'are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_042",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By September, Tunde ____ on the construction project for two years.",
+    "options": [
+      "will have worked",
+      "will have been working",
+      "will work",
+      "will be working"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use future perfect continuous 'will have been working' to show an action continuing up to a future point."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_043",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "cloze",
+    "contentLabel": "Original exam-style practice",
+    "text": "She arrived ____ Lagos ____ the early hours of Monday.",
+    "options": [
+      "in, at",
+      "at, in",
+      "in, in",
+      "to, on"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use 'in' for a city and 'in the early hours' for a time period: 'in Lagos in the early hours'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_044",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "When Maria said she would \"cut her losses,\" she meant she would:",
+    "options": [
+      "record the losses she has made",
+      "avoid paying her debts",
+      "invest more money to recover",
+      "stop further loss or activity that is harmful"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Cut one's losses' is an idiom meaning to stop an activity to prevent further loss, not literal accounting."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_045",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised version of: \"while the students waited the principal entered the hall.\"",
+    "options": [
+      "While the students waited, the principal entered the hall.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A subordinating clause at the start needs an initial capital and a comma: 'While the students waited, the principal entered the hall.'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_046",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the third syllable: electricity, banana, teacher, comfortable?",
+    "options": [
+      "banana",
+      "electricity",
+      "teacher",
+      "comfortable"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Electricity is stressed on the third syllable (e-lec-TRIC-i-ty); the others have stress on different syllables."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_047",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "sounds/vowels",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words has the same vowel sound as 'coat'?",
+    "options": [
+      "cat",
+      "caught",
+      "boat",
+      "but"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Coat' and 'boat' share the same diphthong /oʊ/ (as in 'go'); 'cat', 'caught', 'but' have different vowel qualities."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_048",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which utterance is the most appropriate reply to: 'Congratulations on your promotion'?",
+    "options": [
+      "No, you are wrong.",
+      "Please, do it now.",
+      "I won't accept it.",
+      "Thank you, I appreciate that."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Responding to a compliment requires a brief expression of thanks such as 'Thank you, I appreciate that.'; other options are irrelevant."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_049",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform into a sentence beginning with 'No sooner': 'She finished her speech and the audience applauded.'",
+    "options": [
+      "No sooner had she finished her speech than the audience applauded.",
+      "No sooner she had finished her speech than the audience applauded.",
+      "No sooner she finished her speech when the audience had applauded.",
+      "No sooner had she finished her speech whereupon the audience would applaud."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct formal inversion is 'No sooner had she finished... than...' to link two immediate past events; other forms are ungrammatical or incorrect."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2022_050",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "After ten years, the CEO decided to 'pass the torch' to his deputy. What does this most likely mean?",
+    "options": [
+      "Light a ceremonial torch at an event",
+      "Give up responsibility to another person",
+      "Donate money to a charity project",
+      "Teach his deputy how to run fast"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Pass the torch' is an idiom meaning to transfer responsibility or leadership to someone else, not a literal lighting or donation."
+  }
+]

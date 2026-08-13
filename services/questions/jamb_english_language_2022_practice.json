@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_001",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "relative pronoun",
+    "contentLabel": "Original exam-style practice",
+    "text": "The artist ______ painted the mural will be awarded next week.",
+    "options": [
+      "who",
+      "whom",
+      "which",
+      "whose"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use 'who' for the subject of a clause referring to a person; 'whom' is object, 'which' is for things, 'whose' shows possession."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_002",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the director or the assistants ______ responsible for the error.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "be"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "With 'either...or' the verb agrees with the nearer subject ('assistants' plural), so use plural 'are'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_003",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time we arrive, the workshop ____.",
+    "options": [
+      "will start",
+      "has started",
+      "will have started",
+      "started"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'By the time' with a future arrival requires the future perfect 'will have started' to show completion before that time."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_004",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "lexis and collocation",
+    "contentLabel": "Original exam-style practice",
+    "text": "She has a _____ for solving logic puzzles quickly.",
+    "options": [
+      "knackiness",
+      "knackful",
+      "knackery",
+      "knack"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Knack' is the correct collocation meaning a natural ability; the other forms are nonstandard or incorrect derivations."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_005",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "idioms and register",
+    "contentLabel": "Original exam-style practice",
+    "text": "He decided to bite the ____ and apologise to his colleague.",
+    "options": [
+      "bullet",
+      "tongue",
+      "dust",
+      "bulletproof"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The idiom 'bite the bullet' means to accept hardship and act; 'bite the tongue' and others are incorrect uses or different idioms."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_006",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is punctuated correctly?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "The conference titled \"New Ideas in Education\" will start Monday.",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Place the closing quotation mark before the verb and do not add a comma; capitalise sentence-initial 'The'. Option 2 is correctly punctuated and capitalised."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_007",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "word stress and sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable?",
+    "options": [
+      "computer",
+      "describe",
+      "photograph",
+      "balloon"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'photograph' has primary stress on the first syllable (PHO-to-graph); 'computer', 'describe', 'balloon' have stress on later syllables."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_008",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "\"Could you pass the report by noon?\" This utterance is best classified as a",
+    "options": [
+      "refusal",
+      "offer",
+      "statement",
+      "request"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Although phrased as a question, 'Could you...' is a polite request form asking someone to do something, not a refusal or offer."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_009",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "sentence transformation (active to passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: 'They will announce the result tomorrow.' Which is correct?",
+    "options": [
+      "The result will be announced tomorrow.",
+      "Tomorrow the result will announce.",
+      "The result will announce tomorrow.",
+      "Tomorrow the result will be announcing."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Active 'They will announce the result' changes to passive 'The result will be announced'; tense and agent handling require 'will be announced'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_010",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "cloze (preposition and collocation)",
+    "contentLabel": "Original exam-style practice",
+    "text": "She graduated _____ the University of Ibadan _____ honours.",
+    "options": [
+      "at / with",
+      "from / with",
+      "of / with",
+      "from / on"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Standard collocation: 'graduate from' a university and 'with honours' to indicate distinction; other preposition choices are unidiomatic here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_011",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "punctuation (possessive apostrophe)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence shows correct possessive punctuation?",
+    "options": [
+      "The childrens toys were scattered across the floor.",
+      "Childrens' toys were scattered across the floor.",
+      "Children's toys were scattered across the floor.",
+      "Child's toys were scattered across the floor."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The plural noun 'children' is irregular; its possessive is formed as 'children's'. 'Child's' is singular; other forms are incorrect."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_012",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: 'Rita refused to copy answers even though she would have passed easily.' What quality best describes Rita?",
+    "options": [
+      "dishonest",
+      "indifferent",
+      "anxious",
+      "principled"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Refusing to cheat despite an easy pass indicates moral integrity or being 'principled'; not dishonesty, indifference, or anxiety."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_013",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Grammatical structure (relative clause)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct relative pronoun: \"The committee chose the candidate ___ had led community projects.\"",
+    "options": [
+      "who",
+      "whom",
+      "which",
+      "whose"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use 'who' for the subject of a relative clause referring to people; 'whom' is object, 'which' is for things, 'whose' shows possession."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_014",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb: \"Neither the coach nor the players ____ ready for practice.\"",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "When subjects are joined by 'neither...nor', the verb agrees with the nearer subject; 'players' is plural so use 'are'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_015",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense and aspect (future perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best form: \"By next March she ____ her degree.\"",
+    "options": [
+      "will complete",
+      "completes",
+      "will have completed",
+      "completed"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Future perfect ('will have completed') expresses completion before a specified future time; other options do not express completed action by that time."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_016",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Lexis and semantics (vocabulary meaning)",
+    "contentLabel": "Original exam-style practice",
+    "text": "The word 'melancholy' most nearly means:",
+    "options": [
+      "joyful",
+      "energetic",
+      "indifferent",
+      "sorrowful"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Melancholy' means deep sadness or sorrowful mood; it does not mean joyful, energetic, or indifferent."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_017",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Idioms and register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence \"He decided to play it by ear during the negotiations,\" the idiom 'play it by ear' means:",
+    "options": [
+      "decide as events unfold",
+      "perform a piece of music",
+      "refuse all suggestions",
+      "postpone indefinitely"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Play it by ear' is an idiom meaning to improvise or decide as events happen, not to perform music literally or to postpone."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_018",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which is the correct capitalization of the sentence \"we visited the british museum in london last summer.\"?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "We visited the British Museum in London last summer.",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Proper nouns and official names are capitalised: 'British Museum' and 'London'; sentence-initial letter also capitalised, so option with both correct capitals is right."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_019",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Word stress and pronunciation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which form(s) of the word 'record' has primary stress on the first syllable?",
+    "options": [
+      "reCORD (verb)",
+      "Both the noun and verb",
+      "REcord (noun)",
+      "Neither form"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In English the noun 'REcord' has stress on the first syllable, while the verb 'reCORD' shifts stress to the second syllable; only the noun fits."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_020",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Speech functions (pragmatics)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Classify the utterance: \"Could you close the window?\"",
+    "options": [
+      "Permission",
+      "Offer",
+      "Command",
+      "Request"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "This is a polite request asking someone to perform an action; it is not seeking permission, offering something, or a blunt command."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_021",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sentence transformation (active to passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: \"Someone will announce the scholarships tomorrow.\" Which is the best passive transformation?",
+    "options": [
+      "The scholarships will be announced tomorrow.",
+      "The scholarships will be announced tomorrow by someone.",
+      "Someone will be announced the scholarships tomorrow.",
+      "Tomorrow the scholarships announced will be."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Passive often omits the agent for naturalness; 'The scholarships will be announced tomorrow.' is the correct, grammatical passive equivalent."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_022",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Cloze-style (conditional form)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: \"If I ____ earlier, I would not have missed the bus.\"",
+    "options": [
+      "left",
+      "had left",
+      "would leave",
+      "will have left"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "This is a third conditional about a past unreal situation, requiring past perfect ('had left') in the if-clause."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_023",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Short interpretation (reading for attitude)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read the sentence: \"Tunde refused to sign because he doubted the figures were accurate.\" What quality does Tunde display?",
+    "options": [
+      "Laziness",
+      "Enthusiasm",
+      "Caution",
+      "Anger"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Doubting accuracy and refusing to sign show caution and carefulness, not laziness, enthusiasm or anger."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_024",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation (non-restrictive clause)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which punctuation is correct for the sentence \"My cousin who lives in Accra is visiting.\"?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "My cousin, who lives in Accra, is visiting."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The clause 'who lives in Accra' is non-restrictive (extra information) and requires commas before and after; punctuation must set off the clause completely."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_025",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ten years of careful study ____ behind Dr. Owusu's discovery.",
+    "options": [
+      "were",
+      "was",
+      "is",
+      "has been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The subject is the plural time period 'Ten years', so the plural verb 'were' agrees; time-span nouns take plural agreement here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_026",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense and aspect (future perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the end of August, I ____ the application form.",
+    "options": [
+      "will submit",
+      "will have submitted",
+      "submitted",
+      "am submitting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The future perfect 'will have submitted' expresses completion before a specified future time; simple future does not show prior completion."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_027",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Grammar — verb + preposition collocation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct preposition: 'She excels ____ public speaking.'",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "for"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The verb 'excel' commonly collocates with the preposition 'at' for skills: 'excel at public speaking' is the standard idiomatic choice."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_028",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Lexis / semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The word 'pervasive' most nearly means:",
+    "options": [
+      "confined",
+      "temporary",
+      "hidden",
+      "widespread"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Pervasive' means spreading widely or present throughout; it contrasts with 'confined' or 'hidden' and is not 'temporary'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_029",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Idioms / register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'Musa decided to hit the books tonight,' the idiom 'hit the books' means:",
+    "options": [
+      "study hard",
+      "go to the library",
+      "burn old books",
+      "buy many books"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The idiom 'hit the books' idiomatically means to study hard; other options are literal or unrelated interpretations."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_030",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version shows correct capitalization for this sentence: 'last summer, emi visited the national theatre in accra.'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "Last summer, Emi visited the National Theatre in Accra.",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sentence-initial word and proper nouns (names of people and places) must be capitalised: 'Last summer, Emi visited the National Theatre in Accra.' obeys these rules."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_031",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable receives primary stress in the verb 'conduct'?",
+    "options": [
+      "first (CON-duct)",
+      "both equally",
+      "second (con-DUCT)",
+      "no primary stress"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "As a verb, 'conduct' has primary stress on the second syllable (con-DUCT); as a noun the stress shifts to the first syllable (CON-duct). This is a common stress-shift pattern."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_032",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sounds (vowel quality)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the same vowel sound as 'kit'?",
+    "options": [
+      "seat",
+      "cat",
+      "cut",
+      "sit"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The vowel in 'kit' is the short high-front lax vowel (as in 'sit'); only 'sit' among the options shares that vowel quality, unlike 'seat','cat','cut'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_033",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Classify the utterance: 'You might want to ask for directions before you set off.'",
+    "options": [
+      "advice",
+      "request",
+      "compliment",
+      "threat"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The speaker is offering a suggestion about a prudent action; this is an instance of advice or recommendation rather than a request or threat."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_034",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sentence transformation (active to passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform into passive: 'The committee will announce the winners tomorrow.'",
+    "options": [
+      "The winners will announce by the committee tomorrow.",
+      "The winners will be announced by the committee tomorrow.",
+      "Tomorrow the committee will be announced winners.",
+      "The winners are announced by the committee tomorrow."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Correct passive formation: object becomes subject and use future passive 'will be announced'; option A correctly preserves meaning and time reference."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_035",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Cloze-style (phrasal verb selection)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: 'I need to ____ on the report before the meeting.'",
+    "options": [
+      "carry out",
+      "look to",
+      "work on",
+      "bring about"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The phrasal verb 'work on' fits context meaning 'to continue making progress or edit something'; other options do not collocate correctly here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_036",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Short interpretation (mini-passage)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Aisha returned the prize money after learning it had been awarded in error and declined a media interview. Which quality does Aisha most clearly display?",
+    "options": [
+      "ambition",
+      "indifference",
+      "showmanship",
+      "integrity"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Returning mistaken prize money and refusing publicity shows honesty and moral principle — integrity — rather than self-promotion or indifference."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_037",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither Samuel nor his friends ____ the missing forms.",
+    "options": [
+      "have",
+      "has",
+      "is",
+      "are"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Rule: In 'neither...nor' structures the verb agrees with the noun nearest to it; 'friends' is plural so use 'have'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_038",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By noon tomorrow she ____ the manuscript.",
+    "options": [
+      "finishes",
+      "will have finished",
+      "would finish",
+      "finished"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future perfect: use 'will have' + past participle to show completion before a future time: 'will have finished' is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_039",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following is correctly capitalised and punctuated? 'last week josephine visited the national archives in accra'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "Last week Josephine visited the National Archives in Accra.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Capitalise sentence-initial word and proper nouns: 'Last week Josephine visited the National Archives in Accra.' follows these rules."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_040",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The word 'ubiquitous' most nearly means:",
+    "options": [
+      "rare",
+      "difficult",
+      "temporary",
+      "everywhere"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Meaning: 'ubiquitous' = present everywhere; contrast with 'rare' or 'temporary' which are opposites or unrelated."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_041",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "In 'He decided to bite the bullet and apologise,' the idiom 'bite the bullet' means:",
+    "options": [
+      "face an unpleasant situation",
+      "avoid responsibility",
+      "delay action",
+      "celebrate success"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Idiom sense: 'bite the bullet' means to accept and endure something unpleasant rather than avoid it; thus 'face an unpleasant situation.'"
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_042",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which form of the word 'present' has primary stress on the first syllable?",
+    "options": [
+      "the verb meaning to show or introduce",
+      "the noun meaning a gift",
+      "the verb form 'to present' used in commands",
+      "the phrasal verb 'present on'"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Pronunciation rule: the noun 'present' (a gift) has stress on the first syllable (PRE-sent), whereas the verb has stress on the second."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_043",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the same vowel sound as 'go'?",
+    "options": [
+      "cat",
+      "book",
+      "coat",
+      "cup"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Vowel quality: 'go' has the diphthong /oʊ/ (or similar); 'coat' contains the same diphthong, unlike 'cat','book' or 'cup'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_044",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "sentence transformation (passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: 'The students completed the survey last week.' Which is the best passive form?",
+    "options": [
+      "Last week the students were completed the survey.",
+      "Completed was the survey by the students last week.",
+      "The students were completed the survey last week.",
+      "The survey was completed by the students last week."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Passive formation: object becomes subject + appropriate form of 'be' + past participle: 'The survey was completed by the students last week.'"
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_045",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "cloze (preposition)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: 'He was incapable ____ lying about the accident.'",
+    "options": [
+      "of",
+      "for",
+      "to",
+      "with"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Collocation rule: 'incapable' is followed by the preposition 'of' when linking to an action or gerund: 'incapable of lying.'"
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_046",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Classify: 'Would you mind turning down the radio?','",
+    "options": [
+      "offer",
+      "request",
+      "question about ability",
+      "command"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Speech act: 'Would you mind...?' is a polite way to make a request, not an offer or a direct command or ability question."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_047",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "short interpretation (mini-passage)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: 'Amaka declined the manager's offer to extend her contract despite needing the income.' What best describes Amaka?",
+    "options": [
+      "imprudent",
+      "timid",
+      "principled",
+      "opportunistic"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Interpretation: refusing a beneficial offer because of principle indicates she is 'principled' rather than timid or opportunistic."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_048",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "verb complementation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: 'She encouraged him ____ for the scholarship.'",
+    "options": [
+      "apply",
+      "applying",
+      "that he apply",
+      "to apply"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Verb pattern: 'encourage' is commonly followed by a direct object + to-infinitive: 'encouraged him to apply' is the grammatical choice."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_049",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the mayor or his advisors ____ the new policy by Monday.",
+    "options": [
+      "are implementing",
+      "is implementing",
+      "was implementing",
+      "implement"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Rule: with 'either...or' the verb agrees with the nearer noun; 'advisors' is plural so use plural verb 'are implementing'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_050",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By June she ___ the report and submitted it to the board.",
+    "options": [
+      "will finish",
+      "will have finished",
+      "had finished",
+      "finishes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future perfect expresses completion before a point in the future: 'will have finished' indicates the report is completed by June."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_051",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Relative pronouns",
+    "contentLabel": "Original exam-style practice",
+    "text": "The novel ___ won the regional prize will be translated next year.",
+    "options": [
+      "who",
+      "whom",
+      "which",
+      "whose"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use 'which' for things (a novel). 'Who'/'whom' refer to people and 'whose' shows possession; 'which' is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_052",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correctly capitalised and punctuated for this sentence: 'the professor of history, dr. banjo, will lecture on thursday.'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "The professor of history, Dr. Banjo, will lecture on Thursday."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Correct form: common noun 'professor' not capitalised; titles before names 'Dr.' and proper name 'Banjo' capitalised; days capitalised: 'Thursday'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_053",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Lexis / semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The bloom of the mountain lilies was ephemeral.",
+    "options": [
+      "short-lived",
+      "long-lasting",
+      "hazardous",
+      "fragrant"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ephemeral means lasting for a very short time; contrast with 'long-lasting' (opposite), so 'short-lived' is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_054",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Idioms / register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'She decided to throw in the towel,' the idiom 'throw in the towel' means:",
+    "options": [
+      "to celebrate a victory",
+      "to admit defeat or give up",
+      "to postpone action",
+      "to record an event"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Idiom meaning: 'throw in the towel' derives from boxing and means to concede defeat or give up, not to celebrate or delay."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_055",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable receives the primary stress in the word 'photograph'?",
+    "options": [
+      "second syllable (pho-TO-graph)",
+      "third syllable (pho-to-GRAPH)",
+      "first syllable (PHO-to-graph)",
+      "no primary stress"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Pronunciation rule: 'photograph' has primary stress on the first syllable: PHO-to-graph, unlike the related verb 'photograph' which may differ in stress patterns."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_056",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sounds (vowel quality)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the same vowel sound as 'cat'?",
+    "options": [
+      "cart",
+      "coat",
+      "cut",
+      "cap"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Vowel comparison: 'cat' and 'cap' share the short /æ/ vowel; 'cart' /ɑː/, 'coat' /oʊ/, 'cut' /ʌ/ are different sounds."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_057",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Speech functions (pragmatics)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Classify the utterance: 'Would you mind opening the door?'.",
+    "options": [
+      "a request",
+      "a complaint",
+      "an offer",
+      "a command"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Pragmatics: 'Would you mind...?' is a polite indirect request asking someone to perform an action, not a complaint or offer."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_058",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sentence transformation (voice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform into passive: 'Someone will deliver the package tomorrow.' Which is best?",
+    "options": [
+      "Tomorrow will the package be delivered by someone.",
+      "The package will be delivered tomorrow.",
+      "The package was delivered tomorrow.",
+      "The package will have been delivered tomorrow."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Passive voice keeps tense and object: active future simple 'will deliver' becomes passive 'will be delivered'; option 1 is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_059",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Cloze (subjunctive / conditional)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: 'If I ____ you, I would accept the position.'",
+    "options": [
+      "am",
+      "was",
+      "were",
+      "had been"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Second conditional uses subjunctive 'were' for hypothetical present situations: 'If I were you' is the standard form."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2022_060",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Short interpretation (character trait)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: 'Fatima returned a misdirected grant and refused publicity when thanked.' What quality best describes Fatima?",
+    "options": [
+      "ambition",
+      "negligence",
+      "superstition",
+      "integrity"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Behaviour shows honesty and moral principle; returning misdirected funds and refusing publicity illustrates integrity rather than ambition or negligence."
+  }
+]

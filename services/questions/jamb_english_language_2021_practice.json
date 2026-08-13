@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_001",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Concord (Subject-Verb Agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the students or the teacher ___ responsible for organising the rehearsal.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Rule: With 'either...or' the verb agrees with the nearer subject; 'teacher' is singular so use 'is'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_002",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the train arrived, we ___ waiting for two hours.",
+    "options": [
+      "have been",
+      "had been",
+      "were",
+      "will have been"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Rule: Past perfect continuous (had been + -ing) shows an action continuing up to a past moment; use 'had been' here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_003",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'The storm began to abate,' which word is closest in meaning to 'abate'?",
+    "options": [
+      "intensify",
+      "initiate",
+      "subside",
+      "contaminate"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Meaning contrast: 'abate' means 'to lessen or subside'; not 'intensify' or 'initiate' or 'contaminate'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_004",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the idiom: 'He prefers to keep his cards ___.'",
+    "options": [
+      "on the table",
+      "up front",
+      "in hand",
+      "close to his chest"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Idiom rule: 'keep one's cards close to one's chest' means to be secretive; 'close to his chest' matches the idiom."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_005",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following is the correct punctuation of the sentence: Ola said 'I'll see you at noon' ?",
+    "options": [
+      "Ola said, \"I'll see you at noon.\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Quotation punctuation: commas precede a quotation tag and closing punctuation stays inside the quotation marks; option A is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_006",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable receives primary stress in the word 'photograph'?",
+    "options": [
+      "second",
+      "first",
+      "third",
+      "fourth"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stress pattern: 'photograph' is pronounced 'PHO-to-graph' with primary stress on the first syllable."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_007",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Sounds (Rhyme)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word rhymes with the word 'rough'?",
+    "options": [
+      "though",
+      "trough",
+      "tough",
+      "dough"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Phonology: 'rough' and 'tough' share the /ʌf/ sound; the others have different vowel or consonant sounds."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_008",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following sentences functions primarily as a polite request?",
+    "options": [
+      "You must close the window.",
+      "I closed the window.",
+      "Close the window.",
+      "Would you mind closing the window?"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Pragmatics: 'Would you mind...' is a conventional polite request form; imperatives or commands are less polite."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_009",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Sentence Transformation (Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: 'They will announce the results tomorrow.'",
+    "options": [
+      "The results will be announced tomorrow.",
+      "The results will announce tomorrow.",
+      "Tomorrow will be announced the results.",
+      "The results will be being announced tomorrow."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Transformation rule: Object becomes subject and use 'will be' + past participle: 'The results will be announced tomorrow.' is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_010",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Cloze (Conditionals)",
+    "contentLabel": "Original exam-style practice",
+    "text": "If she ___ earlier, she would not have missed the meeting.",
+    "options": [
+      "arrived",
+      "had arrived",
+      "has arrived",
+      "will arrive"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Grammar rule: Third conditional requires past perfect in the if-clause ('had arrived') to express unreal past condition."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_011",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Punctuation (Comma Usage)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version correctly punctuates this sentence: 'For the picnic we need plates cups and cutlery.'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "For the picnic, we need plates, cups, and cutlery.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Comma rules: introductory phrase takes a comma and list items require commas; option B supplies both correctly (serial comma accepted)."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_012",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Short Interpretation (Vocabulary in Context)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In 'The manager's terse reply ended the debate,' what does 'terse' most nearly mean?",
+    "options": [
+      "long",
+      "friendly",
+      "misleading",
+      "curt"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Lexical competence: 'terse' means brief and possibly curt or abrupt; 'curt' matches this meaning exactly."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_013",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the coach nor the players ___ ready for the match.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "be"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer subject; 'players' is plural, so use 'are'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_014",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By midnight, she ___ the report.",
+    "options": [
+      "has finished",
+      "will have finished",
+      "had finished",
+      "will finish"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'By' with a future time requires the future perfect: 'will have finished' indicates completion before midnight."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_015",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'The committee reached a consensus,' which word is closest in meaning to 'consensus'?",
+    "options": [
+      "conflict",
+      "proposal",
+      "agreement",
+      "member"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Consensus' means general agreement or common opinion; it is the opposite of 'conflict' and not a proposal or person."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_016",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the idiom: 'To burn the midnight ___.'",
+    "options": [
+      "candle",
+      "lamp",
+      "match",
+      "oil"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom 'burn the midnight oil' means to work late into the night; 'oil' is the conventional collocation."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_017",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Correctly punctuate the sentence: Maria replied I cannot accept the invitation.",
+    "options": [
+      "Maria replied, \"I cannot accept the invitation.\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Direct speech requires a comma before the quotation and punctuation inside the closing quote: Maria replied, \"I cannot accept the invitation.\""
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_018",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable receives primary stress in the word 'economy'?",
+    "options": [
+      "first",
+      "second",
+      "third",
+      "fourth"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The pronunciation /ɪˈkɒnəmi/ places primary stress on the second syllable: e-CON-o-my."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_019",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "sounds/rhymes",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word rhymes with 'tough'?",
+    "options": [
+      "cough",
+      "though",
+      "enough",
+      "bough"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Tough' (/tʌf/) rhymes with 'enough' (/ɪˈnʌf/). 'Cough' and 'bough' have different vowel sounds; 'though' is a different vowel combination."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_020",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence functions primarily as an apology?",
+    "options": [
+      "Could you lend me a pen?",
+      "Let's meet at six.",
+      "I will send the file.",
+      "I'm sorry for arriving late."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The phrase 'I'm sorry' explicitly expresses regret or apology; the other sentences perform requests, suggestions or statements."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_021",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: 'The volunteers planted the trees last weekend.'",
+    "options": [
+      "The trees were planted by the volunteers last weekend.",
+      "The trees were planting by the volunteers last weekend.",
+      "The volunteers were planted the trees last weekend.",
+      "The trees had been planted by the volunteers last weekend."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Past simple passive is formed with 'were' + past participle: 'The trees were planted by the volunteers last weekend.' Other options show wrong tense or word order."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_022",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "cloze-style language use",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct word: If he ___ more careful, he would have avoided the accident.",
+    "options": [
+      "would be",
+      "had been",
+      "was",
+      "has been"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "This conditional refers to an unreal past situation and uses the past perfect in the 'if' clause: 'If he had been more careful...' is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_023",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence correctly capitalises this book title: 'the sun also rises'?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The Sun Also Rises",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Title case capitalises principal words including nouns and adverbs: 'The Sun Also Rises' correctly capitalises each main word."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_024",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: 'Nana left at dawn to catch the first bus; she returned only at dusk.' What can you most reasonably infer?",
+    "options": [
+      "She missed the bus.",
+      "She left in the evening.",
+      "She slept all day.",
+      "She spent the day away."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Leaving at dawn and returning at dusk implies she was gone throughout the day; the sentence does not suggest missing the bus or sleeping."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_025",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "The captain, together with his teammates, ___ at the meeting this morning.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "are"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'together with' the verb agrees with the head noun 'The captain' (singular), so use singular 'was' rather than plural forms."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_026",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By next month, the researchers ___ the preliminary data.",
+    "options": [
+      "have analysed",
+      "will have analysed",
+      "had analysed",
+      "will be analysing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The phrase 'By next month' requires the future perfect ('will have' + past participle) for completion before a future time."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_027",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'The tutor commended the student,' which word is closest in meaning to 'commended'?",
+    "options": [
+      "criticised",
+      "warned",
+      "praised",
+      "ignored"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Commended' means to express approval or praise; it is the opposite of criticised or ignored and different from warned."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_028",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the idiom: 'Don't count your chickens before they ___.'",
+    "options": [
+      "grow",
+      "fly",
+      "lay",
+      "hatch"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The proverb warns against assuming outcomes before they occur; the traditional completion is 'hatch', not the other verbs."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_029",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version correctly punctuates the sentence: Amina said I have finished the assignment.",
+    "options": [
+      "Amina said, 'I have finished the assignment.'",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use a comma after the reporting clause and enclose the direct speech in quotation marks with the final full stop inside the quotes."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_030",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable receives primary stress in the word 'banana'?",
+    "options": [
+      "first (BA-na-na)",
+      "second (ba-NA-na)",
+      "third (ba-na-NA)",
+      "no stress"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The standard pronunciation has primary stress on the second syllable: ba-NA-na; stress placement distinguishes pronunciation patterns."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_031",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word rhymes with 'bough'?",
+    "options": [
+      "through",
+      "high",
+      "cow",
+      "again"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Bough' is pronounced /baʊ/ and rhymes with 'cow' (/kaʊ/). 'Through', 'high', and 'again' have different vowel sounds."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_032",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these utterances expresses condolence?",
+    "options": [
+      "Congratulations on your promotion.",
+      "Could you pass the salt?",
+      "I'll see you tomorrow.",
+      "I am so sorry for your loss."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Condolence is expressing sympathy for someone's grief; 'I am so sorry for your loss' is an expression of sympathy."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_033",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: 'The committee will approve the policy next week.'",
+    "options": [
+      "The policy will be approved by the committee next week.",
+      "The policy will have been approved by the committee next week.",
+      "The policy will be approving by the committee next week.",
+      "The policy is approved by the committee next week."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Form passive with 'will be' + past participle: 'will be approved'. Option B is future perfect, C is ungrammatical, D wrong tense."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_034",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "How is this sentence reported? 'I will finish the essay tonight,' she said.",
+    "options": [
+      "She said she will finish the essay that night.",
+      "She said she would finish the essay that night.",
+      "She said she would finish the essay tonight.",
+      "She said she will finish the essay tonight."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Direct speech with past reporting verb requires backshift: 'will' → 'would', and deictic 'tonight' changes to 'that night' in reported speech."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_035",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "cloze/language use",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct preposition: She is accustomed ___ loud music.",
+    "options": [
+      "for",
+      "with",
+      "to",
+      "of"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The collocation is 'accustomed to' followed by a noun or gerund; 'accustomed for/with/of' are not the correct standard prepositions here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_036",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "After the meeting, Kemi stayed behind to speak with the dean; the others left immediately. What can you most reasonably infer?",
+    "options": [
+      "Kemi disagreed with the dean publicly.",
+      "The others were unhappy with the dean.",
+      "Kemi left before the others.",
+      "Kemi wanted a private conversation with the dean."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Staying behind to speak with the dean while others left suggests Kemi sought a private conversation; other options are not directly supported."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_037",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the manager or the employees ___ aware of the change.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "has been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Verb agrees with the nearer subject: 'employees' is plural so use 'are'. Agreement with the closest noun is the standard rule."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_038",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the supervisor checked, Ahmed ___ assembling the parts for three hours.",
+    "options": [
+      "has been assembling",
+      "had been assembling",
+      "was assembling",
+      "will have been assembling"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Past perfect continuous (had been + -ing) expresses an action continuing up to a past reference point; fits 'by the time' + past."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_039",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In 'She exhibited composure during the crisis,' which word is closest in meaning to 'composure'?",
+    "options": [
+      "anger",
+      "panic",
+      "poise",
+      "sadness"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Composure means calmness or poised control; 'poise' matches this. Anger and panic are opposites; sadness differs in meaning."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_040",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the idiom: 'He decided to bite the ___'.",
+    "options": [
+      "dust",
+      "seed",
+      "lip",
+      "bullet"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Bite the bullet' is the established idiom meaning to accept something unpleasant; the other words form different phrases or none."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_041",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Correctly punctuate this sentence: Alima said I will arrive at six.",
+    "options": [
+      "Alima said, \"I will arrive at six.\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use a comma before direct speech and place the final full stop inside the quotation marks: reporting verb + comma + quoted sentence is standard punctuation."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_042",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable receives primary stress in the word 'development'?",
+    "options": [
+      "first (de-)",
+      "second (ve-)",
+      "third (lop-)",
+      "fourth (ment)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The word 'development' has primary stress on the second syllable (de-VE-lop-ment); stress placement distinguishes meaning and pronunciation patterns."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_043",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Sound/Rhyme",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word rhymes with the word 'light'?",
+    "options": [
+      "lie",
+      "lot",
+      "might",
+      "late"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Light' and 'might' share the same vowel and final consonant sound (‑ight); rhyme requires matching stressed vowel and following sounds."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_044",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following sentences functions primarily as advice?",
+    "options": [
+      "You must finish that report by noon.",
+      "Could you pass the salt, please?",
+      "What time does the meeting start?",
+      "You should see a doctor about the cough."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'You should see a doctor' uses 'should' to recommend a course of action; the others perform obligation, request, or information functions."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_045",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Sentence Transformation (Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: 'They will deliver the package tomorrow.'",
+    "options": [
+      "The package will be delivered tomorrow.",
+      "The package will deliver tomorrow.",
+      "The package will have been delivered tomorrow.",
+      "The package was delivered tomorrow."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Future simple passive is formed with 'will be' + past participle: 'will be delivered'. Other forms are active, incorrect tense, or ungrammatical for the context."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_046",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Cloze-style (Preposition)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct preposition: She is proficient ___ Mandarin.",
+    "options": [
+      "at",
+      "in",
+      "with",
+      "on"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The collocation is 'proficient in' a language. 'Proficient at' is used for skills in some contexts, but standard usage for languages is 'in'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_047",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Short Interpretation (Inference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fola arrived at the meeting soaked and her umbrella was broken. What is the most reasonable inference?",
+    "options": [
+      "She had been swimming before arriving.",
+      "She did not own an umbrella.",
+      "It had rained heavily recently.",
+      "She purposely damaged the umbrella."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Being soaked with a broken umbrella most reasonably implies recent heavy rain; the other options are unlikely or unsupported by the details given."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_048",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Sentence Transformation (Conditional)",
+    "contentLabel": "Original exam-style practice",
+    "text": "If Olupe ___ the correct platform, he would have reached on time.",
+    "options": [
+      "takes",
+      "would have taken",
+      "had been taking",
+      "had taken"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "This is a past unreal conditional referring to a past counterfactual: use 'had' + past participle in the if-clause (third conditional form)."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_049",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the students nor the tutor ___ available for consultation.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "be"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the noun nearest it (the tutor), so singular 'is' is required."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_050",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By 9 pm they ___ the workshop.",
+    "options": [
+      "finished",
+      "will have finished",
+      "had finished",
+      "will finish"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use future perfect for an action completed before a future time: 'will have finished' expresses completion by 9 pm."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_051",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'Her explanation was lucid,' which word is closest in meaning to 'lucid'?",
+    "options": [
+      "brief",
+      "elaborate",
+      "clear",
+      "confusing"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Lucid' means easily understood or clear; it contrasts with 'confusing' and is not simply 'brief' or 'elaborate'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_052",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Idioms",
+    "contentLabel": "Original exam-style practice",
+    "text": "To 'bite the bullet' means to ___ .",
+    "options": [
+      "avoid responsibility",
+      "delay action",
+      "criticise openly",
+      "endure difficulty"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Bite the bullet' is an idiom meaning to face or endure a painful or difficult situation rather than avoid it."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_053",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Punctuation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version correctly punctuates: Ayo asked Can you pass the salt?",
+    "options": [
+      "Ayo asked, \"Can you pass the salt?\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Direct speech after a reporting verb needs a comma and quotation marks: Ayo asked, \"Can you pass the salt?\" (no extra period outside closing quote)."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_054",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable receives primary stress in the word 'documentary'?",
+    "options": [
+      "first syllable (DOC-)",
+      "third syllable (-men-)",
+      "second syllable (-u-)",
+      "fourth syllable (-tar-)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Pronunciation places primary stress on the third syllable: doc-u-MEN-tary (/ˌdɒk.jəˈmen.tər.i/), so '-men-' is stressed."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_055",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Sounds (Rhyme)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word rhymes with 'though'?",
+    "options": [
+      "rough",
+      "through",
+      "dough",
+      "house"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Though' rhymes with 'dough' (same /oʊ/ vowel sound); 'rough' and 'through' have different vowel/consonant sounds."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_056",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which utterance functions primarily as a polite request?",
+    "options": [
+      "Open the window now.",
+      "I wish the window were open.",
+      "The window needs to be opened.",
+      "Could you please open the window?"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Could you please open the window?' uses a modal question and politeness marker 'please', marking it as a polite request."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_057",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Sentence Transformation (Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: 'They submitted the thesis last Friday.'",
+    "options": [
+      "The thesis was submitted last Friday.",
+      "Last Friday they were submitted the thesis.",
+      "Last Friday the thesis submitted.",
+      "The thesis has been submitted last Friday."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Past simple active becomes past simple passive: 'They submitted the thesis' → 'The thesis was submitted last Friday.' Other options are ungrammatical or tense-mismatched."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_058",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Cloze (Prepositions)",
+    "contentLabel": "Original exam-style practice",
+    "text": "She was commended ___ her dedication.",
+    "options": [
+      "on",
+      "for",
+      "with",
+      "by"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Commend' with praise typically takes the preposition 'for' to indicate the reason: commended for her dedication."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_059",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Short Interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Kemi arrived at the lecture late but stayed until the end. What can you most reasonably infer?",
+    "options": [
+      "She disliked the lecture and stayed by mistake.",
+      "She left before important points were made.",
+      "She valued the lecture enough to stay.",
+      "She gave the concluding remarks."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Arriving late yet remaining until the end suggests Kemi chose to stay, implying she valued the lecture; other options are not supported by the sentence."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2021_060",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2021",
+    "topic": "Reported Speech",
+    "contentLabel": "Original exam-style practice",
+    "text": "How is this sentence reported? 'I have sent the files,' he said.",
+    "options": [
+      "He said he has sent the files.",
+      "He told he had sent the files.",
+      "He said that he will send the files.",
+      "He said he had sent the files."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "When reporting past utterances, present perfect shifts to past perfect: 'I have sent' → 'he had sent' in reported speech."
+  }
+]

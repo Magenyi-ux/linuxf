@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_001",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Concord (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the sentence with correct subject–verb agreement.",
+    "options": [
+      "Neither the manager nor the employees know the schedule.",
+      "Neither the manager nor the employees knows the schedule.",
+      "Neither the managers nor the employee know the schedule.",
+      "Neither the manager nor the employees is responsible for the schedule."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearest subject. 'Employees' (plural) requires 'know', so option 2 is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_002",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense/Aspect (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: \"By the time she arrived, we ___ dinner.\"",
+    "options": [
+      "have finished",
+      "had finished",
+      "finished",
+      "were finishing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use past perfect for an action completed before another past action: 'had finished' (past perfect) is required."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_003",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Lexis/Semantics (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym: \"He was reluctant to accept the award.\"",
+    "options": [
+      "eager",
+      "pleased",
+      "unwilling",
+      "proud"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Reluctant' means 'unwilling' or hesitant. 'Eager' and 'pleased' mean the opposite; 'proud' is different in meaning."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_004",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Idioms/Register (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "What does 'bit the bullet' mean in: \"After months of delay, she bit the bullet and signed the contract.\"",
+    "options": [
+      "She avoided the decision at last.",
+      "She postponed the signing again.",
+      "She celebrated signing with friends.",
+      "She accepted an unpleasant action and endured it."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Bite the bullet' means to accept and endure something unpleasant; it denotes facing a difficult necessity, so option 2 fits."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_005",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation & Capitalisation (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which option correctly punctuates and capitalises this sentence? \"mrs adeyemi who teaches mathematics will retire in June\"",
+    "options": [
+      "Mrs. Adeyemi, who teaches mathematics, will retire in June.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Non-restrictive clause needs commas and proper capitals: 'Mrs. Adeyemi, who teaches mathematics, will retire in June.' is correctly punctuated and capitalised."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_006",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Word Stress (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the second syllable: balloon, garden, music, little?",
+    "options": [
+      "garden",
+      "balloon",
+      "music",
+      "little"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'balloon' is pronounced ba-LOON with primary stress on the second syllable; the others have stress on their first syllable."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_007",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sounds/Phonology (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: bat, bad, bee, bag?",
+    "options": [
+      "bat",
+      "bad",
+      "bee",
+      "bag"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Bee' has the long /iː/ vowel; 'bat', 'bad' and 'bag' have the short /æ/ vowel, so 'bee' is phonetically different."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_008",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sentence Transformation (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive: \"The committee will announce the results tomorrow.\"",
+    "options": [
+      "Tomorrow, will announce the results by the committee.",
+      "The results will announce the committee tomorrow.",
+      "The committee will be announced the results tomorrow.",
+      "The results will be announced by the committee tomorrow."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Form passive with object as subject + auxiliary + past participle: 'The results will be announced by the committee tomorrow.' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_009",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Cloze/Conditionals (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fill the blank: \"If he ___ earlier, he would have caught the bus.\"",
+    "options": [
+      "had left",
+      "left",
+      "would have left",
+      "has left"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Third conditional for a past unreal condition uses past perfect in the 'if' clause: 'If he had left earlier, he would have caught the bus.'"
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_010",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Short Interpretation (WAEC 2022 Gen Set 1)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: \"Amaka watered the garden every evening. The vegetables flourished.\" What is the best inference?",
+    "options": [
+      "She neglected the garden and the plants died.",
+      "Regular care helped the plants to grow well.",
+      "The vegetables were artificial decorations.",
+      "Watering harmed the vegetables."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The passage links Amaka's regular evening watering with flourishing vegetables; the reasonable inference is that regular care helped them grow."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_011",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Concord/Subject–verb agreement",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb: 'Neither the teacher nor the students ___ ready for the test.'",
+    "options": [
+      "is",
+      "was",
+      "are",
+      "have been"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Rule: With 'neither...nor' the verb agrees with the noun nearest it. 'students' is plural, so use 'are'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_012",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: 'By six o'clock he ___ his homework.'",
+    "options": [
+      "will finish",
+      "had finished",
+      "was finishing",
+      "will have finished"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Future perfect is used for an action completed before a specified future time: 'will have finished' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_013",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Reading inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: 'After the sudden shower, Kemi dried the chair and left the umbrella on the balcony. The sun broke through the clouds.' What is the best inference?",
+    "options": [
+      "The rain had stopped.",
+      "The rain was getting heavier.",
+      "The umbrella was broken.",
+      "It would rain soon."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Inference: drying and putting the umbrella away while the sun appears indicate the shower had ended; the rain stopped."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_014",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Idioms/Meaning",
+    "contentLabel": "Original exam-style practice",
+    "text": "What does the idiom mean: 'She kept her cards close to her chest.'",
+    "options": [
+      "She shared her plans openly.",
+      "She was secretive about her plans.",
+      "She lost her playing cards.",
+      "She guarded a physical chest of cards."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Idiom explanation: 'keep one's cards close to one's chest' means to be secretive or to withhold information, not to share."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_015",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which option correctly punctuates and capitalises this sentence? 'professor okoro said the meeting starts at 9am'",
+    "options": [
+      "Professor Okoro said the meeting starts at 9am.",
+      "The stated rule does not apply in this context",
+      "Professor Okoro said, 'The meeting starts at 9 a.m.'",
+      "A different grammatical construction is required"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Correct form: capitalise the title and name, use a comma before a quotation, enclose speech in quotes, and write '9 a.m.' with periods."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_016",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the second syllable: arrival, balance, photograph, market?",
+    "options": [
+      "balance",
+      "photograph",
+      "market",
+      "arrival"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Pronunciation rule: 'arrival' is pronounced ə-RIVE-al with primary stress on the second syllable; the others have first-syllable stress."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_017",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Vowel sound discrimination",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound: cot, caught, cost, coat?",
+    "options": [
+      "coat",
+      "cot",
+      "caught",
+      "cost"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Phonetic contrast: 'coat' contains a diphthong /oʊ/ different from the open back vowel quality in cot/caught/cost."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_018",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the most appropriate reply to: 'Why are you leaving early?'",
+    "options": [
+      "I'll bring snacks tomorrow.",
+      "Because I have a doctor's appointment.",
+      "Yes, please.",
+      "No, I don't like it."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Speech function: The question asks for a reason; only the first option provides an appropriate explanation of why someone is leaving."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_019",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sentence transformation (reported speech)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to indirect speech: Tunde said, 'I will call you tomorrow morning.'",
+    "options": [
+      "Tunde said he will call me tomorrow morning.",
+      "Tunde said he calls you the next morning.",
+      "Tunde said he would call me the next morning.",
+      "Tunde said he had called you tomorrow morning."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Reported-speech rule: 'will' backshifts to 'would' and 'tomorrow morning' becomes 'the next morning'; pronoun 'you' becomes 'me'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_020",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Cloze: Conditional",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fill the blank: 'If it ___ tomorrow, the match will be postponed.'",
+    "options": [
+      "will rain",
+      "rained",
+      "raining",
+      "rains"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "First conditional structure: use present simple in the 'if' clause and future in the main clause. 'If it rains' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_021",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Concord (subject–verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: \"Each of the students ___ a locker.\"",
+    "options": [
+      "has",
+      "have",
+      "were given",
+      "are given"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Rule: 'each' with a plural-looking noun makes the noun phrase singular; use singular verb 'has' not plural 'have' or plural passive forms."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_022",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Tense and aspect (past/perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: \"By 8 p.m. last night, Chinedu ___ his report.\"",
+    "options": [
+      "finished",
+      "had finished",
+      "has finished",
+      "will have finished"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use past perfect ('had finished') for an action completed before a specific past time; simple past or present perfect do not express the same sequence."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_023",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Lexis / semantics (synonym)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word is closest in meaning to 'skeptical'?",
+    "options": [
+      "eager",
+      "certain",
+      "doubtful",
+      "admiring"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Skeptical' means doubtful or unbelieving; contrast: 'eager' (keen), 'certain' (sure), and 'admiring' (respectful) are not synonyms."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_024",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Idioms (meaning)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence: \"After weeks of secrecy, he finally spilled the beans.\" What does \"spilled the beans\" mean here?",
+    "options": [
+      "cooked a meal",
+      "dropped the cans",
+      "refused to speak",
+      "revealed a secret"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Idiom rule: 'spill the beans' means to reveal secret information; the other options are literal or opposite actions and do not match the idiom."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_025",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Punctuate and capitalise this sentence correctly: \"after lunch the teachers returned to the staffroom\"",
+    "options": [
+      "After lunch, the teachers returned to the staffroom.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Rule: introductory adverbial phrase 'After lunch' is followed by a comma; sentence must begin with a capital letter. Option with comma after phrase is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_026",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the second syllable: control, yellow, teacher, dinner?",
+    "options": [
+      "yellow",
+      "control",
+      "teacher",
+      "dinner"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stress pattern: con-TROL (second syllable stressed). 'Yellow', 'teacher' and 'dinner' have stress on the first syllable, so 'control' is the only second-syllable-stressed word."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_027",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sounds (vowel contrast)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: ship, chip, slip, sheep?",
+    "options": [
+      "ship",
+      "chip",
+      "sheep",
+      "slip"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Phoneme contrast: 'ship', 'chip', 'slip' have the short vowel /ɪ/; 'sheep' has the long vowel /iː/, so 'sheep' differs in vowel quality."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_028",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Speech function (appropriate reply)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Your neighbour asks, \"Would you mind feeding my cat while I'm away?\" Which reply is most appropriate?",
+    "options": [
+      "No, I won't do it.",
+      "I don't like cats.",
+      "Why are you asking me?",
+      "Sure, I'd be happy to."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Pragmatic rule: 'Would you mind...?' is a polite request; an appropriate polite acceptance is 'Sure, I'd be happy to.' Other options are refusal, irrelevant, or rude."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_029",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Sentence transformation (active → passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: \"Someone has stolen my bicycle.\"",
+    "options": [
+      "My bicycle has been stolen.",
+      "My bicycle was stolen.",
+      "My bicycle is stolen.",
+      "My bicycle had been stolen."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Grammar: active present perfect 'has stolen' converts to present perfect passive 'has been stolen.' Simple past or past perfect choices do not match the original aspect."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_030",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "Short interpretation / inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: \"Rao left embers from his stove on the floor overnight. At dawn the embers spread and a small fire began; neighbours brought water to help.\" What is the best inference?",
+    "options": [
+      "Rao was cooking breakfast.",
+      "Rao was careless with the embers.",
+      "Neighbours often start fires.",
+      "The stove was faulty."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Inference: the sequence (left embers, embers spread, fire started) supports careless handling. Other options are not supported by the described events."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_031",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "concord (subject–verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: 'A pair of scissors ___ on the table.'",
+    "options": [
+      "are",
+      "have been",
+      "is",
+      "were"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The phrase 'a pair of' is treated as a singular subject; verb agrees as singular: 'a pair of scissors is'. This contrasts with plural verbs like 'are'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_032",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "tense/aspect (past perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: 'By the time the play started, Lily and Jonah ___ to their seats.'",
+    "options": [
+      "went",
+      "were going",
+      "have gone",
+      "had gone"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use past perfect ('had gone') for an action completed before another past event (the play starting); other options do not mark the earlier completed action correctly."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_033",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "lexis/semantics (synonym)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'meticulous' in: 'The tailor was meticulous about every stitch.'",
+    "options": [
+      "precise",
+      "careless",
+      "hasty",
+      "vague"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Meticulous' means very careful and precise; 'precise' is the correct synonym. 'Careless', 'hasty' and 'vague' are antonyms and therefore incorrect."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_034",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "idioms/register",
+    "contentLabel": "Original exam-style practice",
+    "text": "What does 'keep your nose to the grindstone' mean in: 'During the term, Musa kept his nose to the grindstone and studied without breaks.'",
+    "options": [
+      "be noisy",
+      "work diligently",
+      "avoid people",
+      "travel often"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The idiom means to work hard and steadily; in context it means Musa worked diligently without breaks. The other options do not match the idiomatic meaning."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_035",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which option correctly punctuates and capitalises this sentence? 'last tuesday mrs. adu and mr. owusu visited the art gallery in accra'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "Last Tuesday Mrs. Adu and Mr. Owusu visited the art gallery in Accra.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Days, titles and proper nouns must be capitalised and abbreviations punctuated: 'Last Tuesday Mrs. Adu and Mr. Owusu visited the art gallery in Accra.' Other options fail in capitals or punctuation."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_036",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the second syllable: hotel, market, history, family?",
+    "options": [
+      "market",
+      "history",
+      "family",
+      "hotel"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Hotel' is pronounced ho-TEL with primary stress on the second syllable. 'Market', 'history' and 'family' have primary stress on the first syllable."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_037",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "phonology (vowel sound difference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: beat, seat, great, heat?",
+    "options": [
+      "great",
+      "beat",
+      "seat",
+      "heat"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Beat', 'seat' and 'heat' have the long /iː/ vowel, while 'great' has a diphthong /eɪ/; 'great' therefore has a different vowel sound."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_038",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "speech functions (responses)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the most supportive reply to: 'I scored only 45% on the exam.'",
+    "options": [
+      "I told you so.",
+      "At least you tried.",
+      "That's unbelievable — you're perfect.",
+      "Good for you!"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A supportive reply acknowledges effort and encourages: 'At least you tried.' Other replies are unsupportive, sarcastic, or inappropriate to the speaker's disappointment."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_039",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "sentence transformation (active → passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive voice: 'They will publish the announcement next Monday.'",
+    "options": [
+      "The announcement will publish next Monday.",
+      "Next Monday the announcement will publish by them.",
+      "The announcement will be published next Monday.",
+      "The announcement is published next Monday."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Passive of 'will publish' is formed with 'will be' + past participle: 'will be published'. Options with 'will publish' or present forms are incorrect."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_040",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "short interpretation/inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amina closed the market stall earlier than usual and carried a heavy bag to her bicycle. The street was almost empty. What is the best inference from these sentences?",
+    "options": [
+      "Amina was saving time by leaving early.",
+      "The market had been unusually crowded all day.",
+      "Amina likely planned to travel to another town tonight.",
+      "The area becomes quiet after the market closes, so few people remained."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Best inference: the empty street after she closed suggests the area is quiet once the market is closed. Other options are not directly supported by the given details."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_041",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "concord (subject–verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the increase in taxes nor the proposed policy ___ popular with voters.",
+    "options": [
+      "is",
+      "are",
+      "have been",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer noun; 'policy' is singular so use 'is'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_042",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Before the lights went out, the students ___ notes for an hour.",
+    "options": [
+      "took",
+      "had been taking",
+      "have taken",
+      "were taking"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use past perfect continuous 'had been taking' to show an action continuing up to a past point (lights going out)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_043",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "lexis/semantics (synonym)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'frugal' as used: 'Mrs. Ebo is frugal with household spending.'",
+    "options": [
+      "generous",
+      "lavish",
+      "economical",
+      "careless"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Frugal' means economical or sparing in expenditure; 'economical' matches meaning, others contrast by excess or neglect."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_044",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "idioms and register",
+    "contentLabel": "Original exam-style practice",
+    "text": "What does 'bent over backwards' mean in: 'When customers complained, the shopkeeper bent over backwards to help.'",
+    "options": [
+      "ignored the complaints",
+      "refused to assist",
+      "charged extra fees",
+      "made a great effort"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Bent over backwards' is an idiom meaning to make a great effort to help or accommodate someone."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_045",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised sentence: 'professor ntia announced the results would be released on monday'",
+    "options": [
+      "Professor Ntia announced the results would be released on Monday.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Capitals for titles and names and for days: 'Professor Ntia' and 'Monday' are correctly capitalised; punctuation is otherwise unchanged."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_046",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the second syllable: balance, decide, market, family?",
+    "options": [
+      "balance",
+      "decide",
+      "market",
+      "family"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Decide' has primary stress on the second syllable (de-CIDE). The other words have stress on the first syllable."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_047",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "sounds (vowel contrast)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: ship, clip, grin, sheep?",
+    "options": [
+      "ship",
+      "clip",
+      "sheep",
+      "grin"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Sheep' has the long /iː/ vowel, while 'ship', 'clip', and 'grin' use the short /ɪ/ vowel; so 'sheep' differs."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_048",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "speech functions (polite replies)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which reply is most appropriate to: 'Would you mind opening the window?'",
+    "options": [
+      "Yes, I mind.",
+      "I might open it later.",
+      "Why are you asking?",
+      "Not at all, I'll open it."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Polite request 'Would you mind...' expects a polite offer or permission; 'Not at all, I'll open it.' accepts and offers to act."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_049",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "sentence transformation (active → passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive voice: 'Someone will finish the painting tomorrow.'",
+    "options": [
+      "The painting will be finished tomorrow.",
+      "Tomorrow will be finished the painting by someone.",
+      "Someone will be finished with the painting tomorrow.",
+      "The painting will finish tomorrow."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Passive moves object to subject and uses appropriate auxiliary: 'The painting will be finished tomorrow.' is correct passive form."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2022_050",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2022",
+    "topic": "cloze (conditionals/modal verbs)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fill the blank: 'If he ___ the invitation, he would have met her.'",
+    "options": [
+      "accepted",
+      "had accepted",
+      "would accept",
+      "would have accepted"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Third conditional: unreal past uses 'If + past perfect' (had accepted) with 'would have' to show hypothetical past result."
+  }
+]
