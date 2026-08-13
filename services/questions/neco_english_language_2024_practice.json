@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_001",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "conditional structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "If she ____ earlier, she would have caught the bus.",
+    "options": [
+      "had left",
+      "left",
+      "has left",
+      "would have left"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Third conditional requires past perfect in the if-clause: 'If she had left' for an unreal past condition."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_002",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the manager nor the assistants ____ willing to sign the document.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "be"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer subject; 'assistants' is plural so use 'are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_003",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "reported speech (tense backshift)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Tom said, 'I will finish by noon.' → Tom said that he ____ finish by noon.",
+    "options": [
+      "will",
+      "has",
+      "would",
+      "had"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In reported speech backshift changes 'will' to 'would'; use 'would' to indicate future-in-the-past."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_004",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "lexis/semantics (synonym)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'abundant' in: 'The harvest was abundant this year.'",
+    "options": [
+      "scarce",
+      "meagre",
+      "barren",
+      "plentiful"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Abundant' means plentiful or in large quantity; 'scarce', 'meagre' and 'barren' are opposites."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_005",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "idioms/register",
+    "contentLabel": "Original exam-style practice",
+    "text": "The committee accepted the apology and the matter was finally ____.",
+    "options": [
+      "put to rest",
+      "swept under the carpet",
+      "left hanging",
+      "thrown out"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Put to rest' means to settle or resolve an issue; 'swept under the carpet' implies hiding rather than resolving."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_006",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correctly capitalised for this sentence: 'the governor of oyo state will arrive tomorrow.'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "The Governor of Oyo State will arrive tomorrow.",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Official titles and proper nouns take capitals: 'Governor' (as title) and 'Oyo State' (proper name) must be capitalised."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_007",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has the primary stress in the word 'photograph'?",
+    "options": [
+      "Second syllable (pho-TO-graph)",
+      "Third syllable (pho-to-GRAPH)",
+      "First syllable (PHO-to-graph)",
+      "It has no primary stress"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Photograph' carries primary stress on the first syllable (PHO-to-graph); compare 'photography' which shifts stress."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_008",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "speech functions (offer of help)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the most appropriate response to: 'My flight got delayed; I’ll be late.'",
+    "options": [
+      "Can you pass the salt?",
+      "I don't like flying.",
+      "You must be joking.",
+      "That's unfortunate — do you want me to wait?"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Responding with empathy and offering help is an appropriate speech act; the other options are irrelevant or dismissive."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_009",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "sentence transformation (active → passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'They will publish the report next week.'",
+    "options": [
+      "The report will be published next week.",
+      "Next week the report will have been published by them.",
+      "The report will publish next week.",
+      "Next week the report is publishing."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Passive uses the object as subject plus 'will' + past participle: 'The report will be published next week.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_010",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "cloze & short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Maya rescued an injured pigeon and nursed it back to health. When she finally released it, she felt ____.",
+    "options": [
+      "indifferent",
+      "triumphant",
+      "remorseful",
+      "perplexed"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Context shows successful rescue and release, so a positive feeling like 'triumphant' fits; others contradict the success described."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_011",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the students ____ a laptop for the exam.",
+    "options": [
+      "have",
+      "are having",
+      "has",
+      "were having"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Rule: 'Each' is singular and takes a singular verb; therefore use 'has' not 'have' or plural forms."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_012",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "conditional (third conditional)",
+    "contentLabel": "Original exam-style practice",
+    "text": "If Musa ____ the map, we would not have gotten lost.",
+    "options": [
+      "reads",
+      "would read",
+      "read",
+      "had read"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Third conditional requires past perfect in the if-clause ('had read') with a modal perfect in the main clause to show unreal past."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_013",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "tense/aspect (future perfect continuous)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the end of the year, the choir ____ together for five years.",
+    "options": [
+      "will have been singing",
+      "will have sung",
+      "will sing",
+      "will be singing"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Duration up to a future point uses the future perfect continuous: 'will have been singing' shows continuous action for five years."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_014",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "lexis/semantics (synonym)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'dwindle' in: 'The crowd began to dwindle after midnight.'",
+    "options": [
+      "flourish",
+      "shrink",
+      "increase",
+      "celebrate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Dwindle' means to become smaller or fewer; 'shrink' correctly matches decrease. 'Flourish' and 'increase' are opposites."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_015",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "idioms/register (appropriate response)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the most appropriate response to: 'Congratulations on your promotion!'",
+    "options": [
+      "Why did you do that?",
+      "I do not agree",
+      "Thanks a million",
+      "You are the boss."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Polite acknowledgement of congratulations uses a grateful response such as 'Thanks a million'; other options are irrelevant or rude."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_016",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correctly capitalised for this sentence: 'she will attend the university of ghana in september.'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "She will attend the University of Ghana in September."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Proper nouns and months are capitalised: 'University of Ghana' and 'September' require capitals; correct punctuation and case in option 1."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_017",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "word stress (primary stress)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has the primary stress in the word 'biography'?",
+    "options": [
+      "bi-O-gra-phy",
+      "The stated rule does not apply in this context",
+      "bio-gra-PHY",
+      "A different grammatical construction is required"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Pronunciation: 'biography' is /baɪˈɒɡrəfi/ with primary stress on the second syllable ('bi-O-gra-phy')."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_018",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "speech function (request/offer)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the most appropriate reply to: 'Could you lend me Naira 200 for the bus?'",
+    "options": [
+      "I suppose the weather is fine.",
+      "Yes, I will lend you Naira 200 right now.",
+      "Why are you asking me?",
+      "No, I borrowed it already."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Polite agreement to a direct request is a clear offer like 'Yes, I will lend you Naira 200 right now.' Other replies do not answer the request."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_019",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "sentence transformation (active → passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'Someone stole the teacher's laptop yesterday.'",
+    "options": [
+      "Someone was stolen the teacher's laptop yesterday.",
+      "The teacher's laptop stolen yesterday by someone.",
+      "The teacher's laptop was stolen yesterday.",
+      "Yesterday the teacher's laptop has been stolen."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Passive of simple past: object becomes subject and uses past simple passive 'was stolen'. Other options are ungrammatical or wrong tense."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_020",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "cloze (preposition with gerund)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: She insisted ____ paying for the broken window.",
+    "options": [
+      "in",
+      "about",
+      "with",
+      "on"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Verb pattern: 'insist' is followed by the preposition 'on' plus a gerund ('insisted on paying'); other prepositions are incorrect."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_021",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb to complete: \"A bunch of bananas ____ ready to sell.\"",
+    "options": [
+      "is",
+      "are",
+      "have",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Collective noun 'a bunch' is treated as a single unit; use singular verb 'is'. This contrasts with plural verbs used when the focus is on individual items."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_022",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best completion: \"By this time next year, I ____ the course.\"",
+    "options": [
+      "will complete",
+      "will have completed",
+      "am completing",
+      "had completed"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The future perfect ('will have' + past participle) expresses an action completed before a specified future time: 'will have completed' is required here."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_023",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'meticulous' in: \"He checked the figures with meticulous care.\"",
+    "options": [
+      "careless",
+      "hasty",
+      "thorough",
+      "indifferent"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Meticulous' means very careful and precise; 'thorough' matches this meaning. The other options are antonyms or unrelated."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_024",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "What does 'bite the bullet' mean in: \"After months of delay, the team decided to bite the bullet and start the project.\"",
+    "options": [
+      "postpone further",
+      "celebrate success",
+      "complain about problems",
+      "face an unpleasant task bravely"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom 'bite the bullet' means to accept and endure an unpleasant but necessary action; it does not mean to delay or celebrate."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_025",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Insert comma(s) correctly into this sentence: \"While cooking the children played in the yard\"",
+    "options": [
+      "While cooking, the children played in the yard.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "An introductory subordinate clause ('While cooking') should be followed by a comma before the main clause: 'While cooking, the children...' is correct punctuation."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_026",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has the primary stress in the word 'banana'?",
+    "options": [
+      "First syllable",
+      "Second syllable",
+      "Third syllable",
+      "No primary stress"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The word 'banana' has primary stress on the second syllable: ba-NA-na. Stress pattern affects pronunciation and distinguishes syllable prominence."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_027",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sounds (Phonology)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: 'coat', 'goat', 'boat', 'cough'?",
+    "options": [
+      "coat",
+      "goat",
+      "cough",
+      "boat"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Coat', 'goat' and 'boat' share the long vowel /oʊ/ (in many accents). 'Cough' has a different vowel and consonant ending (/ɒf/ or /ɔf/), so it differs."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_028",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the most appropriate response to: \"I failed my driving test today.\"",
+    "options": [
+      "That's great news!",
+      "Can you lend me your car?",
+      "Why did you take the test?",
+      "I'm sorry to hear that; you'll do better next time."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "An appropriate supportive response expresses sympathy and encouragement. Option 2 shows empathy and reassurance, unlike the other less relevant replies."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_029",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence Transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"The chef prepared the feast for the guests.\"",
+    "options": [
+      "The feast was prepared for the guests by the chef.",
+      "The guests were prepared the feast by the chef.",
+      "The chef was prepared the feast for the guests.",
+      "Preparations of the feast were made by the guests."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "In passive voice the object ('the feast') becomes subject and the verb uses 'was prepared' + agent 'by the chef': 'The feast was prepared for the guests by the chef.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_030",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze/Short Interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amina left her umbrella on the bus, and yet she arrived dry. What is the most plausible explanation?",
+    "options": [
+      "The bus had a roof and windows",
+      "It did not rain during her journey",
+      "She sat under a shelter all the time",
+      "The umbrella was heavier than her bag"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "If she left her umbrella but arrived dry, the simplest inference is that it did not rain during the journey. This is a direct and economical explanation compared with the others."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_031",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord (Subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the headteacher or the students ____ responsible for decorating the hall.",
+    "options": [
+      "is",
+      "was",
+      "are",
+      "have been"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "With subjects joined by 'either...or', the verb agrees with the nearer subject; 'students' is plural so use 'are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_032",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time we reached the station, the train ____ away.",
+    "options": [
+      "left",
+      "was leaving",
+      "will have left",
+      "had left"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use past perfect ('had left') for an action completed before another past action; simple past 'left' is incorrect here."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_033",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis / Word choice",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'sparse' in: 'The farmland had sparse crops this season.'",
+    "options": [
+      "scanty",
+      "abundant",
+      "plentiful",
+      "teeming"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Sparse' means few or thinly spread; 'scanty' matches this meaning, unlike 'abundant' or 'plentiful'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_034",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms / Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "What does the idiom mean in: 'Before we spend more money, let's run it up the flagpole.'",
+    "options": [
+      "publicly celebrate it",
+      "test the idea informally",
+      "criticise the plan openly",
+      "hide it from others"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Run it up the flagpole' is an idiom meaning to test or float an idea informally to see reactions."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_035",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation / Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correctly capitalised for this sentence: 'last week, governor adeola visited the federal hospital.'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "Last week, Governor Adeola visited the Federal Hospital.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Capitals: beginning of sentence + titles and proper nouns ('Governor Adeola') and institutions as proper nouns ('Federal Hospital')."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_036",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has the primary stress in the word 'community' ?",
+    "options": [
+      "first syllable",
+      "third syllable",
+      "fourth syllable",
+      "second syllable"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Community' is pronounced /kəˈmjuːnɪti/ with primary stress on the second syllable (mjuː)."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_037",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sounds (vowel contrast)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: 'cat', 'can', 'car', 'cap' ?",
+    "options": [
+      "car",
+      "cat",
+      "can",
+      "cap"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Car' has a different vowel (/ɑː/ or /a/) while 'cat', 'can', 'cap' share the short /æ/ vowel sound."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_038",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence transformation (Active → Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to passive: 'The committee will announce the winners tomorrow.'",
+    "options": [
+      "Tomorrow, will the winners be announced by the committee?",
+      "The winners will be announced by the committee tomorrow.",
+      "The winners will announce by the committee tomorrow.",
+      "The winners are being announced by the committee tomorrow."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Passive: object becomes subject + 'will be' + past participle: 'The winners will be announced by the committee tomorrow.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_039",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze / Grammar in context",
+    "contentLabel": "Original exam-style practice",
+    "text": "When the fire alarm sounded, everyone ____ to the nearest exit.",
+    "options": [
+      "rushes",
+      "is rushing",
+      "rushed",
+      "will rush"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Sequence of past events uses simple past for completed actions: 'sounded' and then 'rushed' (past simple) is correct."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_040",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Short interpretation / Pragmatics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amina put a note marked 'Confidential' on a stack of documents and left the room. Why did she write 'Confidential' on the note?",
+    "options": [
+      "to invite people to read them",
+      "to show they were old papers",
+      "to describe their physical weight",
+      "to indicate secrecy and restrict access"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Confidential' signals secrecy and restricted access; it does not indicate age, weight, or invitation to read."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_041",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the laptop nor the chargers ____ missing from the office.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer noun; 'chargers' is plural so use 'are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_042",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense and aspect (past perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time he arrived, they _____ dinner.",
+    "options": [
+      "finished",
+      "had finished",
+      "have finished",
+      "will have finished"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use past perfect ('had finished') to show an action completed before another past event ('he arrived')."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_043",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis / Semantics (synonym)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'frugal' in: 'She lives a frugal life to save for university.'",
+    "options": [
+      "extravagant",
+      "careless",
+      "thrifty",
+      "generous"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Frugal' means economical or 'thrifty'; the other choices contrast with careful saving (extravagant, careless, generous)."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_044",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms / Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "What does 'call the shots' mean in: 'As team captain, Bola calls the shots during training.'",
+    "options": [
+      "pays for equipment",
+      "keeps records",
+      "avoids training",
+      "gives orders"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom 'call the shots' means to make decisions or give orders; other options are unrelated roles."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_045",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correctly capitalised for this sentence: \"next monday, dr. lara adamu will speak at the auditorium.\"",
+    "options": [
+      "Next Monday, Dr. Lara Adamu will speak at the auditorium.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Capitals required for the day, title and each name: 'Next Monday, Dr. Lara Adamu...'. 'Auditorium' is a common noun and need not be capitalised here."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_046",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has the primary stress in the word 'economics'?",
+    "options": [
+      "first syllable",
+      "third syllable",
+      "second syllable",
+      "fourth syllable"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The primary stress in 'economics' falls on the third syllable (e-co-NOM-ics): phonetic pattern /ˌiːkəˈnɒmɪks/."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_047",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sounds (vowel contrast)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: 'clear', 'dear', 'here', 'heart'?",
+    "options": [
+      "clear",
+      "dear",
+      "heart",
+      "here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Clear', 'dear' and 'here' share a similar vowel (diphthong /ɪə/ or /ɪr/), while 'heart' uses a different vowel (/ɑː/), so 'heart' is different."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_048",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence transformation (passive voice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: 'They have completed the bridge.'",
+    "options": [
+      "The bridge had been completed.",
+      "The bridge is completed.",
+      "The bridge was completed.",
+      "The bridge has been completed."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Present perfect passive is formed with 'has/have been' + past participle. For singular 'bridge' use 'has been completed'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_049",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze (modal preference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "She would rather ____ at home than go out.",
+    "options": [
+      "stay",
+      "stays",
+      "to stay",
+      "staying"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "After 'would rather' use the base form of the verb without 'to' or -s; correct: 'would rather stay'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2024_050",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Short interpretation / inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ola returned the library book a week late and refused the fine, pointing to a torn page. What is the most plausible reason for her refusal?",
+    "options": [
+      "The librarian forgave her fine.",
+      "The book was already torn before she borrowed it.",
+      "She had lost the book earlier.",
+      "She had already paid the fine online."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ola's pointing to a torn page implies she claims the damage existed before her loan; therefore she refuses responsibility for the fine."
+  }
+]

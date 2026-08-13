@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_001",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the students ____ the assignment before the deadline.",
+    "options": [
+      "has completed",
+      "have completed",
+      "are completing",
+      "were completing"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'Each of the ...' the subject is singular, so singular verb 'has completed' is required (agreement rule)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_002",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time we reached the market, the stallholders ____ packing up.",
+    "options": [
+      "have already started",
+      "had already started",
+      "were starting",
+      "will have started"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Past perfect 'had already started' shows an action completed before another past action (sequence of past events)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_003",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "His report was concise and to the point; it showed great ____.",
+    "options": [
+      "verbosity",
+      "circumlocution",
+      "conciseness",
+      "loquacity"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Concise' means brief and clear; 'conciseness' is the appropriate noun contrasting with verbosity or circumlocution."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_004",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence uses the idiom 'cut his losses' correctly?",
+    "options": [
+      "She cut his losses by investing more money to double the risk.",
+      "When the rain started, he cut his losses and carried on with the picnic.",
+      "The team cut his losses and tried to win every remaining match at all costs.",
+      "After months of fighting the lawsuit, he cut his losses and accepted the settlement."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Cut his losses' means to stop a losing activity to avoid further loss; option 0 uses it correctly in that sense."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_005",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised sentence for reporting speech:",
+    "options": [
+      "The director said, \"We will start at nine.\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Correct form: lowercase 'director' after 'the', comma before quotation, and capital letter inside quotes for a full sentence."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_006",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word Stress and Sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable?",
+    "options": [
+      "arrange",
+      "photograph",
+      "control",
+      "oblige"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Photograph' has primary stress on the first syllable (PHO-to-graph). Others have stress on later syllables."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_007",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "A classmate asks, 'Could you lend me your notes for today?' Which is the most appropriate reply?",
+    "options": [
+      "No, you must not read them.",
+      "I think notes are unnecessary.",
+      "Yes, I will send them after class.",
+      "Why would you need notes?"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Polite agreement to a request is appropriate: 'Yes, I will send them after class' offers help directly."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_008",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence Transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'Farmers plant cassava every season.'",
+    "options": [
+      "Cassava was planted by farmers every season.",
+      "Every season farmers are planting cassava.",
+      "Cassava will be planted by farmers every season.",
+      "Cassava is planted by farmers every season."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Present simple active becomes present simple passive: 'Cassava is planted by farmers' keeps habitual aspect intact."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_009",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze-style Language Use",
+    "contentLabel": "Original exam-style practice",
+    "text": "Kwame arrived ____ Lagos ____ noon for the cultural fair.",
+    "options": [
+      "in / at",
+      "on / in",
+      "to / at",
+      "at / on"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use 'in' for cities and 'at' for specific times: 'in Lagos at noon' is the correct prepositional pair."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_010",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Short Interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mariam smiled politely but remained silent when asked about the missing money. What is the most likely interpretation?",
+    "options": [
+      "She admitted stealing the money openly.",
+      "She chose not to answer the sensitive question.",
+      "She forgot the details completely.",
+      "She laughed because she found the question funny."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A polite smile combined with silence most likely indicates a deliberate choice not to answer a sensitive question."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_011",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Grammar — Concord with mass nouns",
+    "contentLabel": "Original exam-style practice",
+    "text": "None of the rice ____ acceptable for sale.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "have been"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "With the uncountable noun 'rice', 'none' takes a singular verb; use 'is' for present singular agreement."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_012",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense/Aspect — Past perfect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the principal arrived, the invigilators ____ the question papers.",
+    "options": [
+      "distributed",
+      "have distributed",
+      "were distributing",
+      "had distributed"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Past perfect ('had distributed') is used for an action completed before another past event (the principal's arrival)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_013",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis/Semantics — Word choice",
+    "contentLabel": "Original exam-style practice",
+    "text": "The teacher praised Aisha for her ____ in finishing the community health project.",
+    "options": [
+      "perseverance",
+      "perspiration",
+      "punctuation",
+      "presentation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Perseverance' means continued effort despite difficulty; other options are unrelated or contextually wrong here."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_014",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms/Register — Meaning in context",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence uses the idiom 'play it by ear' correctly?",
+    "options": [
+      "He refused to play it by ear and insisted on learning the guitar.",
+      "We planned every detail, then decided to play it by ear.",
+      "She played it by ear, so she bought the tickets in advance.",
+      "After studying the map, they played it by ear to stay organized."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Play it by ear' means to improvise or decide as events unfold; sentence (a) correctly contrasts planning with choosing to improvise."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_015",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation & Capitalisation — Direct speech",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised version of the sentence: Kweku said 'i will return by five'.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "Kweku said, 'I will return by five.'",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Direct speech needs a capital 'I' and a comma before the quotation when it follows a reporting verb: Kweku said, 'I will return by five.'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_016",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word Stress — Syllable stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words has primary stress on the second syllable?",
+    "options": [
+      "tablet",
+      "window",
+      "music",
+      "control"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'control' has primary stress on the second syllable (conTROL). The others ('TAblet', 'WINdow', 'MU-sic') have first-syllable stress."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_017",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Phonology — Vowel contrast",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others?",
+    "options": [
+      "sheep",
+      "ship",
+      "sip",
+      "chip"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'sheep' has the long vowel /iː/ while 'ship', 'sip', and 'chip' have the short /ɪ/ vowel; sheep is the odd one out."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_018",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Speech Functions — Polite reply",
+    "contentLabel": "Original exam-style practice",
+    "text": "A guest asks, 'May I use your phone for a quick call?' Which is the most appropriate reply?",
+    "options": [
+      "No, I don't think so.",
+      "Yes, of course.",
+      "You will have to pay first.",
+      "Not unless you tell me why."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A polite, helpful response to a polite request is 'Yes, of course.' Other options are rude, irrelevant, or intrusive."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_019",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence Transformation — Passive voice",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'The committee will announce the results tomorrow.'",
+    "options": [
+      "The results are announced by the committee tomorrow.",
+      "Tomorrow the committee will be announced the results.",
+      "The results will be announced by the committee tomorrow.",
+      "The results will announce by the committee tomorrow."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Correct passive form uses auxiliary 'will be' + past participle: 'The results will be announced by the committee tomorrow.'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_020",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze — Sequence of past events",
+    "contentLabel": "Original exam-style practice",
+    "text": "After the rain stopped, the children ____ outside to play.",
+    "options": [
+      "gone out",
+      "will go out",
+      "had gone out",
+      "went out"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use simple past ('went out') to describe a subsequent past action after 'stopped'; 'had gone out' is past perfect and not required for this sequence."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_021",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the headmaster nor the students ____ prepared for the surprise inspection.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' agreement follows the noun closest to the verb; 'students' is plural so use 'are'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_022",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense and Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the convocation ceremony starts next year, I ____ my final project.",
+    "options": [
+      "will complete",
+      "will have completed",
+      "will be completing",
+      "completed"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use future perfect 'will have completed' to show an action finished before a future point in time."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_023",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis and Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "At the village meeting, the elders treated the newcomer with obvious ____.",
+    "options": [
+      "difference",
+      "inference",
+      "deference",
+      "reference"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Deference' means respectful submission or yielding to authority; other choices are unrelated meanings."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_024",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms and Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence uses the idiom 'call it a day' correctly?",
+    "options": [
+      "When the phone rang, he decided to call it a day and dialled his friend.",
+      "They told the crowd to call it a day meaning to shout loudly.",
+      "She called it a day by making a long telephone call.",
+      "After fixing the fence for hours, Sade said, 'Let's call it a day' and went inside."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Call it a day' idiomatically means to stop working for the day; option A uses it correctly, others use it literally or incorrectly."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_025",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Correctly punctuate and capitalise this reporting of speech: aman: 'we will leave at dawn'.",
+    "options": [
+      "Aman said, 'We will leave at dawn.'",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Proper nouns capitalised and quoted speech needs comma before the quote; sentence should read: Aman said, 'We will leave at dawn.'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_026",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the word 'photograph' which syllable carries the primary stress?",
+    "options": [
+      "Second syllable",
+      "First syllable",
+      "Third syllable",
+      "Fourth syllable"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Photograph' has primary stress on the first syllable: PHO-to-graph. Stress rule for this noun places stress on the first syllable."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_027",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sounds (Vowel Contrast)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others? ship, chip, sheep, sip",
+    "options": [
+      "ship",
+      "chip",
+      "sheep",
+      "sip"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Sheep' has the long /iː/ vowel while 'ship','chip','sip' have the short /ɪ/ vowel; sheep is the odd one."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_028",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Speech Function (Politeness/Reply)",
+    "contentLabel": "Original exam-style practice",
+    "text": "A neighbour asks, 'Would you mind turning down the music?' Which reply is the most appropriate and polite?",
+    "options": [
+      "No, I don't mind.",
+      "Maybe later.",
+      "Why should I?",
+      "Yes, I'll turn it down."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "To accept a polite request, respond positively and offer action: 'Yes, I'll turn it down.' is appropriate and courteous."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_029",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence Transformation (Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'Asha had finished the report before the meeting began.'",
+    "options": [
+      "The report had been finished by Asha before the meeting began.",
+      "The report was finished by Asha before the meeting had begun.",
+      "Asha had been finished the report before the meeting began.",
+      "Before the meeting began, the report finished by Asha had."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Past perfect passive requires 'had been' + past participle: 'The report had been finished by Asha...' is grammatically correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_030",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze-style Interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "During the drought the council rationed water; households received only one jerrycan per day. What is the most likely meaning of 'rationed' here?",
+    "options": [
+      "sold at a low price",
+      "distributed sparingly",
+      "banned for use",
+      "increased supply"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Rationed' means to limit allocation and distribute sparingly, especially during shortages; other options do not match this control meaning."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_031",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "The list of names ____ on the noticeboard.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "have been"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A noun phrase headed by 'list' is singular; use singular verb 'is'. Contrast with plural nouns which take 'are'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_032",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By 8 p.m. yesterday, they ____ the harvest.",
+    "options": [
+      "finish",
+      "have finished",
+      "were finishing",
+      "had finished"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use past perfect ('had finished') for an action completed before a specific past time; simple past or present perfect are incorrect here."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_033",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Vocabulary (word meaning)",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the closest meaning of 'meticulous' in 'Amina is meticulous about her notebook' ?",
+    "options": [
+      "thorough",
+      "careless",
+      "ordinary",
+      "quick"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Meticulous' means very careful and thorough; it contrasts directly with 'careless' and not with 'ordinary' or 'quick'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_034",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms and register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence uses the idiom 'bite the bullet' correctly?",
+    "options": [
+      "He bit the bullet every time he tasted the pepper.",
+      "After months of delay, she decided to bite the bullet and apologise.",
+      "They told him to bite the bullet to show no pain while eating.",
+      "She bit the bullet because the bread was hard."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Bite the bullet' means to accept an unpleasant action or decision; the first sentence shows this figurative meaning, others are literal or odd."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_035",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised version of this reporting of speech: mr oku said 'we will return at noon'.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "Mr Oku said, 'We will return at noon'.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Reporting verb needs a comma and the quoted sentence must begin with a capital letter: \"Mr Oku said, 'We will return at noon.'\" Other options mis-capitalise or omit the comma."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_036",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the word 'banana' which syllable carries the primary stress?",
+    "options": [
+      "first syllable",
+      "third syllable",
+      "no primary stress",
+      "second syllable"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Banana' is stressed on the second syllable: ba-NA-na. This distinguishes it from words stressed on first or third syllables."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_037",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sounds (vowel contrast)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: boat, throat, coat, book?",
+    "options": [
+      "book",
+      "boat",
+      "throat",
+      "coat"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Boat, throat and coat share the /oʊ/ vowel sound; 'book' uses a different short vowel (/ʊ/), so it contrasts phonetically."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_038",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Speech functions (politeness)",
+    "contentLabel": "Original exam-style practice",
+    "text": "A neighbour asks, 'Would you mind closing the gate when you leave?' Which is the most appropriate reply?",
+    "options": [
+      "No, I mind. Close it yourself.",
+      "Not at all; I'll close it before I go.",
+      "I might close it later if I remember.",
+      "Why are you asking me?"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Polite acceptance to 'Would you mind...?' is phrased positively (e.g. 'Not at all; I'll...'). The other replies are rude, hesitant or refuse."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_039",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence transformation (active to passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'The committee chose Rebecca as chairperson.'",
+    "options": [
+      "Rebecca is chosen as chairperson by the committee.",
+      "Was Rebecca chosen as chairperson by the committee?",
+      "Rebecca was chosen as chairperson by the committee.",
+      "The committee was chosen Rebecca as chairperson."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Active past simple ('chose') becomes passive 'was chosen'; the agent uses 'by the committee'. Other options misuse tense, form a question, or are ungrammatical."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_040",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Reading comprehension (short interpretation)",
+    "contentLabel": "Original exam-style practice",
+    "text": "After the storm, the town faced a shortage of clean water. People queued at the borehole for hours. What is the most likely meaning of 'queued' here?",
+    "options": [
+      "danced",
+      "collected water quickly",
+      "argued loudly",
+      "waited in a line"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Queued' commonly means 'waited in line' (stood in order to be served). The context of a borehole and shortage supports this meaning, not dancing or arguing."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_041",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither of the proposals ____ suitable for funding.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use singular verb with 'neither of the ...': 'neither' treats the noun phrase as singular, so 'is' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_042",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense and aspect (past perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "When I reached the lecture hall, the professor ____ the notes on the desk.",
+    "options": [
+      "left",
+      "had left",
+      "has left",
+      "leaves"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Past perfect (had left) shows the professor's action occurred before another past action (I reached), so 'had left' is required."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_043",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis / vocabulary",
+    "contentLabel": "Original exam-style practice",
+    "text": "The trek up the ridge was arduous.",
+    "options": [
+      "easy",
+      "expensive",
+      "exhausting",
+      "short"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Arduous' means difficult or tiring; 'exhausting' matches the sense, unlike 'easy', 'expensive' or 'short'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_044",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms / register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence uses the idiom 'beat around the bush' correctly?",
+    "options": [
+      "She beat around the bush when she rescued the kitten.",
+      "He beat around the bush to mean he fixed the fence.",
+      "They beat around the bush to cook dinner early.",
+      "Stop beating around the bush and tell me the truth."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Beat around the bush' means avoid saying something directly; only the first sentence uses it idiomatically (asking for directness)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_045",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation and capitalisation (reported question)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised version of this reported question: adjoa asked 'have you seen my umbrella'.",
+    "options": [
+      "Adjoa asked, \"Have you seen my umbrella?\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Direct speech begins with a capital and is introduced by a comma; the question mark stays inside the quotes, so A is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_046",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the word 'economy' which syllable carries the primary stress?",
+    "options": [
+      "First syllable (E-con-o-my)",
+      "Second syllable (e-CON-o-my)",
+      "Third syllable (e-con-O-my)",
+      "Fourth syllable (e-con-o-MY)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Economy' is stressed on the second syllable (e-CON-o-my); knowledge of common stress patterns confirms this placement."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_047",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sounds (vowel contrast)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: coat, goat, bone, cough?",
+    "options": [
+      "coat",
+      "goat",
+      "cough",
+      "bone"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Coat, goat, bone share the /oʊ/ diphthong; 'cough' has a different vowel (/ɒ/ or /ɔ/), so it differs from the others."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_048",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Speech functions (polite reply)",
+    "contentLabel": "Original exam-style practice",
+    "text": "A colleague asks, 'Could you cover my shift on Friday?' Which is the most appropriate polite reply?",
+    "options": [
+      "I can't, I'm busy Friday.",
+      "Why don't you ask someone else?",
+      "That's not my problem.",
+      "Sure, I can cover your shift on Friday."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A polite, helpful acceptance answers the request directly. 'Sure, I can cover...' is courteous and appropriate for that request."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_049",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence transformation (active to passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'The head gardener waters the seedlings every morning.'",
+    "options": [
+      "The seedlings are watered by the head gardener every morning.",
+      "The head gardener is watered by the seedlings every morning.",
+      "The seedlings were watered by the head gardener every morning.",
+      "The seedlings are being watered by the head gardener every morning."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Present simple passive: plural 'seedlings' requires 'are watered' and agent is 'by the head gardener'; adverbial 'every morning' stays at end."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2024_050",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze-style (preposition collocation)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct preposition: He is proficient ____ three programming languages.",
+    "options": [
+      "at",
+      "in",
+      "with",
+      "on"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The verb 'proficient' collocates with 'in' (proficient in a skill or subject); other prepositions are not standard with 'proficient'."
+  }
+]

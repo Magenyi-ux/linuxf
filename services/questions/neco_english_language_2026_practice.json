@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_001",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord (Subject-Verb Agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the manager nor the workers ____ willing to change the schedule.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "has been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearest subject; 'workers' is plural so use 'are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_002",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense and Aspect (Future Perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By this time next year, I ____ my degree.",
+    "options": [
+      "will complete",
+      "will have completed",
+      "will be completing",
+      "have completed"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future perfect ('will have completed') expresses an action completed before a specified future time; other forms do not show completion by then."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_003",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Cloze / Lexis (Word Choice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "He lives a very ____ life to save money.",
+    "options": [
+      "lavish",
+      "penurious",
+      "thrifty",
+      "extravagant"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Thrifty' means careful with money, matching 'to save money'. 'Lavish' and 'extravagant' are opposites; 'penurious' suggests extreme poverty."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_004",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms / Registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "During the meeting, she kept a poker face.",
+    "options": [
+      "She showed anger.",
+      "She laughed openly.",
+      "She asked many questions.",
+      "She remained expressionless."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Poker face' is an idiom meaning a blank or expressionless face; it does not mean anger, laughter, or questioning."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_005",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fix punctuation and capitals for: the president said 'we must act now,' and left.",
+    "options": [
+      "The president said, \"We must act now,\" and left.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Direct speech requires a comma before the quotation and the quoted sentence's first word capitalised; punctuation inside quotes remains with the quote."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_006",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: teacher, control, hotel, banana?",
+    "options": [
+      "control",
+      "teacher",
+      "hotel",
+      "banana"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Teacher' has primary stress on the first syllable (TEA-cher). 'Control', 'hotel' and 'banana' have stress on later syllables."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_007",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sounds (Vowel Phoneme)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the vowel sound in 'sit' (the short /ɪ/ sound)?",
+    "options": [
+      "beam",
+      "beat",
+      "bit",
+      "bait"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Bit' contains the short /ɪ/ vowel as in 'sit'. 'Beam' and 'beat' have /iː/; 'bait' has the diphthong /eɪ/."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_008",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech Functions (Appropriate Response)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Could you pass the salt?",
+    "options": [
+      "Yes, I washed it earlier.",
+      "No, I cannot cook.",
+      "Why are you asking?",
+      "Sure, here you are."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Request 'Could you pass the salt?' expects an action or handing over the salt; 'Sure, here you are.' is the appropriate offering response."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_009",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence Transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Rewrite using 'enough' without changing the meaning: He is too young to vote.",
+    "options": [
+      "He is not old enough to vote.",
+      "He is not young enough to vote.",
+      "He is enough not old to vote.",
+      "He is too old to vote."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Too...to' converts to 'not ... enough' keeping meaning: 'He is too young to vote' = 'He is not old enough to vote.' Other options alter meaning or are ungrammatical."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_010",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Short Interpretation (Inference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amara locked the door after she got a phone call. She put her bag on the table and closed the curtains.",
+    "options": [
+      "She wanted to invite friends in.",
+      "She wanted privacy.",
+      "She planned to go out again immediately.",
+      "She was showing her bag to visitors."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Locking the door and closing curtains, plus putting her bag down, signals she wanted privacy or to be alone; inviting guests or showing a bag is inconsistent with these actions."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_011",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the books ____ damaged.",
+    "options": [
+      "are",
+      "have been",
+      "is",
+      "were"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use singular verb with 'each'; 'each of the books' requires 'is' because 'each' is singular."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_012",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the show starts, they ____ for six hours.",
+    "options": [
+      "practised",
+      "will practise",
+      "will have practised",
+      "will have been practising"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Future perfect continuous (will have been + -ing) expresses duration up to a future point: 'will have been practising.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_013",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best replacement for 'deliberate' in: 'His actions were deliberate.'",
+    "options": [
+      "intentional",
+      "accidental",
+      "hasty",
+      "insignificant"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Deliberate' means done on purpose; 'intentional' matches this meaning, unlike 'accidental' or 'hasty.'"
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_014",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "If someone says 'I will bite the bullet' they mean:",
+    "options": [
+      "avoid a difficult decision",
+      "face something unpleasant bravely",
+      "delay doing something",
+      "pay a large fine"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Idiom 'bite the bullet' means to accept and endure something unpleasant; it implies facing difficulty bravely."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_015",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fix punctuation and capitals for: after the meeting john said 'we must review the plan'.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "After the meeting John said, 'We must review the plan.'",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Capitals for proper nouns and sentence starts, comma before quotation, and capitalise inside quote: \"After the meeting John said, 'We must review the plan.'\"."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_016",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: table, approve, become, inspect?",
+    "options": [
+      "approve",
+      "become",
+      "inspect",
+      "table"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Ta-ble' has stress on the first syllable. 'ap-PROVE', 'be-COME' and 'in-SPECT' have main stress on the second syllable."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_017",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "sounds/vowels",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words contains the same vowel sound as in 'fit'?",
+    "options": [
+      "kid",
+      "made",
+      "food",
+      "cart"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Fit' contains the short /ɪ/ vowel; 'kid' also contains /ɪ/. 'Made' /eɪ/, 'food' /uː/, 'cart' /ɑː/ differ."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_018",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "'You might want to call ahead.' The speaker is most likely giving:",
+    "options": [
+      "permission",
+      "advice",
+      "a warning",
+      "a promise"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The phrasing offers a suggestion about what to do; this is characteristic of giving advice, not permission or promise."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_019",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the sentence that correctly transforms: 'Although Nia was tired, she finished the report.'",
+    "options": [
+      "Being tired, Nia did not finish the report.",
+      "Nia finished the report because she was tired.",
+      "Nia finished the report despite being tired.",
+      "Since Nia was tired, she finished the report."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Despite being tired' preserves the contrast of 'although'. Other options reverse or change the meaning (cause or negation)."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_020",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Rita handed the keys to the new tenant and smiled. She felt content that the flat was in good hands. What does 'in good hands' mean here?",
+    "options": [
+      "locked safely",
+      "advertised widely",
+      "occasionally used",
+      "well looked after"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'In good hands' is an idiom meaning cared for responsibly or well looked after; it does not mean merely locked or advertised."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_021",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either Lina or the coaches ____ ready for the match.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'either...or' the verb agrees with the nearer subject; 'coaches' is plural so use 'are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_022",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By next Monday, I ____ the report.",
+    "options": [
+      "will finish",
+      "will have finished",
+      "will be finishing",
+      "have finished"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future perfect ('will have finished') shows an action completed before a stated future time; other forms do not express completion by that date."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_023",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "idioms",
+    "contentLabel": "Original exam-style practice",
+    "text": "He decided to 'call it a day.' What does he mean?",
+    "options": [
+      "to delay action",
+      "to celebrate success",
+      "to stop working",
+      "to ignore a problem"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Call it a day' is an idiom meaning to stop working or finish for the day; it does not mean delay, celebrate, or ignore."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_024",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fix punctuation and capitals for: 'please turn off your phones' said the lecturer.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "\"Please turn off your phones,\" said the lecturer."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Direct speech requires a capital at the start and a comma before the closing quote when followed by a dialogue tag: \"Please...,\" said the lecturer."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_025",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: hospital, control, committee, address?",
+    "options": [
+      "hospital",
+      "control",
+      "committee",
+      "address"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "HOS-pi-tal has primary stress on the first syllable; control, committee and address have primary stress on later syllables."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_026",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "phonetics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the vowel sound in 'ship'?",
+    "options": [
+      "cheese",
+      "chin",
+      "chair",
+      "shoe"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Ship' has the short /ɪ/ vowel; 'chin' also has /ɪ/. 'Cheese' = /iː/, 'chair' a diphthong, 'shoe' = /uː/."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_027",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "cloze",
+    "contentLabel": "Original exam-style practice",
+    "text": "When Aisha arrived, the meeting ____.",
+    "options": [
+      "has started",
+      "will have started",
+      "had started",
+      "was starting"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Past perfect ('had started') shows the meeting began before Aisha's arrival; simple past or present perfect do not show the earlier-before-earlier relation."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_028",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the sentence that correctly begins: 'In spite of the flooded road...' from: Although the road was flooded, the bus reached on time.",
+    "options": [
+      "In spite of the road flooded, the bus reached on time.",
+      "In spite of flooding the road, the bus reached on time.",
+      "In spite of that the road was flooded, the bus reached on time.",
+      "In spite of the flooded road, the bus reached on time."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'In spite of' must be followed by a noun phrase: 'the flooded road' is correct. Other options misuse verb forms or require 'the fact that'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_029",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Speaker says: 'You should check the engine light.' What is the main function?",
+    "options": [
+      "advice",
+      "threat",
+      "request",
+      "greeting"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The modal 'should' expresses recommendation or advice. It is not a threat, not a direct request (no please), and not a greeting."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_030",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mr Bello canceled the rehearsal because the lead singer was ill. What does 'lead singer' mean?",
+    "options": [
+      "the most experienced singer",
+      "the principal singer in the group",
+      "the singer who sings last",
+      "the singer who pays for the band"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Lead singer' refers to the principal or main vocalist in a group; it does not imply paying, order of singing, or necessarily most experienced."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_031",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Both the teacher and the students ____ excited about the trip.",
+    "options": [
+      "is",
+      "was",
+      "are",
+      "were"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A compound subject joined by and is plural and requires the plural verb 'are' for correct subject-verb agreement."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_032",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense/Aspect (past perfect continuous)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the manager arrived, they ____ for two hours.",
+    "options": [
+      "waited",
+      "had waited",
+      "were waiting",
+      "had been waiting"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Duration before a past reference uses past perfect continuous: 'had been waiting' shows an action continuing up to that past point."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_033",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best replacement for 'scarce' in: 'Water became scarce during the drought.'",
+    "options": [
+      "limited",
+      "abundant",
+      "plentiful",
+      "overflowing"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Scarce' means in short supply; 'limited' matches that sense. 'Abundant' and 'plentiful' are opposites."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_034",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "If someone says 'to bite off more than you can chew', they mean:",
+    "options": [
+      "to accept a manageable task",
+      "to take on more than one can handle",
+      "to eat quickly",
+      "to refuse help"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The idiom means to accept more responsibility or work than one can deal with; it is not about eating."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_035",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fix punctuation and capitals for: the headmistress announced 'school resumes monday' and smiled.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The headmistress announced, \"School resumes Monday,\" and smiled.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Correct punctuation: comma before the quotation, capitalise sentence inside quotes and Monday, and include the closing comma inside the quotation marks."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_036",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: window, agree, guitar, hotel?",
+    "options": [
+      "agree",
+      "guitar",
+      "hotel",
+      "window"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Window is stressed on the first syllable (WIN-dow). Agree, guitar and hotel have stress on the second syllable."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_037",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sound (vowel/diphthong)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the same vowel sound as in 'go' (the diphthong in 'go')?",
+    "options": [
+      "coat",
+      "got",
+      "put",
+      "hot"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Go' contains the diphthong /oʊ/ (or /əʊ/); 'coat' shares that diphthong. 'Got', 'put' and 'hot' have different vowel sounds."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_038",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main function of the sentence: 'Do you mind closing the window?'",
+    "options": [
+      "making a complaint",
+      "making a polite request",
+      "asking for permission",
+      "giving advice"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "This indirect question is a polite request form. It is not a complaint, permission question, or advice."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_039",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence Transformation (voice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: 'They had completed the survey before the meeting.'",
+    "options": [
+      "The survey was completed before the meeting.",
+      "The survey had completed before the meeting.",
+      "The survey had been completed before the meeting.",
+      "The survey had been completing before the meeting."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Past perfect passive requires 'had been' + past participle: 'had been completed' accurately preserves tense and voice."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_040",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Short Interpretation (vocabulary in context)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amid the storm, the rescue team worked tirelessly and saved every villager. What does 'tirelessly' mean here?",
+    "options": [
+      "slowly",
+      "with anger",
+      "reluctantly",
+      "without stopping"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Tirelessly' means working energetically without stopping or rest; here it shows persistent, continuous effort."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_041",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the coach or the players ____ the new training equipment after practice.",
+    "options": [
+      "have stored",
+      "has stored",
+      "stored",
+      "will store"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "When subjects are joined by 'either...or', verb agrees with the nearer subject 'players' (plural), so plural 'have stored' is correct."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_042",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By 9 o'clock tonight, Maria ____ the presentation twice to feel confident.",
+    "options": [
+      "will be practising",
+      "will have practised",
+      "practised",
+      "has practised"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The future perfect 'will have practised' expresses an action completed before a specified future time; other forms do not show completion by 9 pm."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_043",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which option correctly punctuates and capitalises the sentence: the teacher announced 'exams start monday'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The teacher announced, \"Exams start Monday.\"",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Reported speech uses a capital for the quoted sentence and closing punctuation; standard style uses double quotes in formal writing: The teacher announced, \"Exams start Monday.\"."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_044",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: mother, achieve, correct, attend?",
+    "options": [
+      "achieve",
+      "correct",
+      "attend",
+      "mother"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'mother' is stressed on the first syllable (MO-ther). 'achieve' (a-CHIEVE), 'correct' (cor-RECT) and 'attend' (at-TEND) have stress on later syllables."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_045",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sounds (Vowel)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word contains the vowel sound in 'back' (the short /æ/ sound)?",
+    "options": [
+      "back",
+      "father",
+      "hope",
+      "busy"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The short /æ/ vowel appears in 'back'. 'father' has /ɑː/, 'hope' /oʊ/, and 'busy' /ɪ/ in many varieties; only 'back' matches /æ/."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_046",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "If someone says 'She threw in the towel,' they most likely mean:",
+    "options": [
+      "She bought a towel.",
+      "She accepted defeat.",
+      "She finished cleaning.",
+      "She sent a signal."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Throw in the towel' is an idiom meaning to give up or accept defeat; literal meanings about towels or signals are not idiomatic."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_047",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence Transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the sentence that correctly transforms: 'Sam was too tired to continue.'",
+    "options": [
+      "Sam was tired enough to continue.",
+      "Sam was too tired, so he continued.",
+      "Sam was so tired that he could not continue.",
+      "Sam was tired, but he continued."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Too...to' transforms to 'so...that' to express consequence: 'Sam was so tired that he could not continue.' Other options change the meaning."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_048",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Cloze (Grammar/Use)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: The committee ___ the proposal after a lengthy debate yesterday.",
+    "options": [
+      "accepts",
+      "will accept",
+      "had accept",
+      "accepted"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Context 'yesterday' signals simple past; 'accepted' is the correct past form. 'Accepts' is present, 'will accept' future, 'had accept' is ungrammatical."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_049",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech Function",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main function of the sentence: 'Could you switch off the radio, please?'",
+    "options": [
+      "Request",
+      "Offer",
+      "Command",
+      "Information"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Could you...' plus 'please' is a polite request; it is not an offer, factual information, or a direct command."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2026_050",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Short Interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "After the flood, neighbours pulled together to clear debris. What does 'pulled together' mean here?",
+    "options": [
+      "argued loudly",
+      "co-operated closely",
+      "worked separately",
+      "left the area"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Pulled together' means to co-operate or work jointly; it implies cooperation, not arguing, separate work, or leaving."
+  }
+]

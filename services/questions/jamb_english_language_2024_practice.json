@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_001",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Grammar structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "She enjoys _____ early in the morning.",
+    "options": [
+      "jogging",
+      "to jog",
+      "jog",
+      "jogs"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "After verbs of preference such as 'enjoy', the gerund (verb+ing) is required. 'Enjoys jogging' follows the rule; infinitive 'to jog' is not used here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_002",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the students or the teacher _____ responsible for the notices.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "With 'either...or', the verb agrees with the nearer subject. 'Teacher' is singular and takes 'is'. This is the standard concord rule for compound subjects."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_003",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By next Friday we _____ the report for submission.",
+    "options": [
+      "will finish",
+      "have finished",
+      "will have finished",
+      "finished"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The future perfect 'will have finished' expresses completion before a future time ('by next Friday'). 'Will finish' does not indicate completion by that time."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_004",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'arduous'.",
+    "options": [
+      "easy",
+      "brief",
+      "pleasant",
+      "difficult"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Arduous' means requiring great effort or difficulty. 'Difficult' is the correct semantic match; 'easy', 'brief', and 'pleasant' are opposite or unrelated."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_005",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the idiom: 'To cut to the chase' means to _____ the main point.",
+    "options": [
+      "avoid details and state",
+      "chase someone quickly",
+      "cut something with a knife",
+      "postpone a decision"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The idiom 'to cut to the chase' means to skip preliminaries and go straight to the main point. The correct option identifies that pragmatic meaning."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_006",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which is the correctly capitalised sentence?\n\"john and I went to Lagos.\"",
+    "options": [
+      "The stated rule does not apply in this context",
+      "John and I went to Lagos.",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Proper nouns and the pronoun 'I' must be capitalised. 'John' and 'I' are correctly capitalised in option three; other options violate standard capitalisation rules."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_007",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word stress and sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: 'photograph', 'photography', 'photographer', 'photographic'?",
+    "options": [
+      "photography",
+      "photographer",
+      "photograph",
+      "photographic"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Photograph' has primary stress on the first syllable (PHO-to-graph). Forms like 'photography' and 'photographer' shift the stress; this is a regular stress-shift pattern."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_008",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "A: \"Could you lend me your notes from yesterday?\"\nB should reply with:",
+    "options": [
+      "I don't know the answer to that question.",
+      "Tell me more about your weekend plans.",
+      "Not at all.",
+      "Yes, I'd be happy to lend them to you."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The request asks for lending notes; an appropriate positive offer is 'Yes, I'd be happy to lend them.' Other options are irrelevant or inappropriate responses to the request."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_009",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence transformation (passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: \"They built the bridge in 2010.\" → \"The bridge _____ in 2010.\"",
+    "options": [
+      "was built",
+      "were built",
+      "had built",
+      "is built"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Active past tense 'built' becomes passive 'was built' to agree with singular 'bridge'. 'Were built' is plural, 'had built' is past perfect active, 'is built' is present tense."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_010",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze-style language use",
+    "contentLabel": "Original exam-style practice",
+    "text": "If he _____ earlier, he would have caught the train.",
+    "options": [
+      "left",
+      "had left",
+      "leaves",
+      "would leave"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "This is a third conditional structure about a past unreal event: 'If he had left earlier, he would have caught the train.' The past perfect in the if-clause is required."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_011",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Short interpretation prompt",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: \"During the meeting, Mary smiled but did not speak. Her colleagues took this as agreement.\" What is the best inference?",
+    "options": [
+      "Mary was confused and silent.",
+      "Mary was absent from the meeting.",
+      "Mary agreed with the proposal.",
+      "Mary left the meeting early."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The colleagues' interpretation is stated: they took her smile as agreement. The best inference consistent with the passage is that she agreed; other options contradict the described reaction."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_012",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word sounds (voiced/voiceless)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words ends with a voiced consonant sound?",
+    "options": [
+      "back",
+      "bath",
+      "bake",
+      "bad"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Final consonant sounds: 'bad' ends with /d/ which is voiced. 'Back' (/k/), 'bath' (/θ/), and 'bake' (/k/) end with voiceless sounds; this explains the correct choice."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_013",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Articles",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct article: \"I saw ___ unusual bird in the garden.\"",
+    "options": [
+      "an",
+      "a",
+      "the",
+      "Ø (no article)"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use 'an' before a word beginning with a vowel sound; 'unusual' begins with a vowel sound /ʌ/, so 'an unusual' is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_014",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb form: \"Neither the manager nor the interns _____ available.\"",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "have been"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "With 'neither...nor', the verb agrees with the nearer subject ('interns'), so plural 'are' is required."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_015",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best completion: \"By 8 pm tonight she _____ the assignment.\"",
+    "options": [
+      "will finish",
+      "has finished",
+      "will have finished",
+      "had finished"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use future perfect 'will have finished' to show completion before a future time; simple future 'will finish' does not indicate prior completion."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_016",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis and semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct collocation: \"Please make _____ decision quickly.\"",
+    "options": [
+      "quickly a",
+      "the quickly",
+      "quick a",
+      "a quick"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use adjective + noun collocation 'a quick decision'; 'quickly' is an adverb and cannot directly modify the noun 'decision'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_017",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms and register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the idiom: \"To bite the bullet\" means to _____",
+    "options": [
+      "accept and endure something unpleasant",
+      "avoid responsibility",
+      "postpone a decision",
+      "complain loudly"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Bite the bullet' idiomatically means to face and endure something unpleasant; other options do not match this idiom."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_018",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation and capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is correctly capitalised?\n\"the federal polytechnic of Oyo celebrated its anniversary.\"",
+    "options": [
+      "The stated rule does not apply in this context",
+      "The Federal Polytechnic of Oyo celebrated its anniversary.",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Proper nouns require capitals for major words: 'The Federal Polytechnic of Oyo...'; titles and names take initial capitals."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_019",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Where is the primary stress in the word \"development\"?",
+    "options": [
+      "First syllable",
+      "Third syllable",
+      "Second syllable",
+      "Fourth syllable"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Development' is stressed on the second syllable: de-VE-lop-ment. Primary stress falls on 've' in standard pronunciation."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_020",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sounds (vowels)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has the same vowel sound as the vowel in \"sit\"?",
+    "options": [
+      "seat",
+      "site",
+      "suit",
+      "sick"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The vowel in 'sit' is /ɪ/ as in 'sick'; 'seat' (/iː/), 'site' (/aɪ/), 'suit' (/uː/ or /juː/) differ."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_021",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "A: \"Could you type the minutes from yesterday?\"\nB should reply with:",
+    "options": [
+      "I'll be able to do that.",
+      "No thanks, I won't.",
+      "I typed them yesterday.",
+      "You must ask Sarah."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A suitable positive response to a request is 'I'll be able to do that.' It accepts the request politely and clearly."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_022",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence transformation (voice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"The committee will announce the results tomorrow.\" → \"The results _____ tomorrow.\"",
+    "options": [
+      "are announced by the committee",
+      "will be announced",
+      "will announce",
+      "were announced"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Active future 'will announce' becomes passive 'will be announced'. 'Will be announced' correctly matches future passive form."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_023",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze (phrasal verb)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Fill the blank: \"She decided to give _____ smoking.\"",
+    "options": [
+      "in",
+      "off",
+      "up",
+      "away"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The phrasal verb 'give up' means to stop a habit; 'give in', 'give off', 'give away' have different meanings and are incorrect here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_024",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: \"Samuel nodded but did not speak when the board approved the plan.\" What is the best inference?",
+    "options": [
+      "He disagreed openly.",
+      "He had no opinion at all.",
+      "He planned to file a complaint.",
+      "He agreed reluctantly."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A nod without comment typically signals silent or reluctant agreement; this is the best inference given the context."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_025",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the mayor or his aides _____ responsible for the event.",
+    "options": [
+      "are",
+      "is",
+      "has",
+      "have"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'either...or' the verb agrees with the nearer subject; 'aides' is plural so use 'are'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_026",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By this time next month, I _____ in the country for two years.",
+    "options": [
+      "will be living",
+      "will have been living",
+      "will have lived",
+      "will live"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The future perfect continuous ('will have been living') expresses duration up to a future point."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_027",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'candid'.",
+    "options": [
+      "secretive",
+      "ornate",
+      "frank",
+      "vague"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Candid' means honest and straightforward; 'frank' matches that meaning, others are opposite or unrelated."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_028",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the idiom: 'To take something with a grain of salt' means to _____",
+    "options": [
+      "accept it completely",
+      "ignore it always",
+      "praise it enthusiastically",
+      "treat it with scepticism"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom means to be doubtful or sceptical about the truth or accuracy of a statement."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_029",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following sentences is correctly punctuated?\nA: \"After the lecture, Amina asked a question.\" B: \"After, the lecture Amina asked a question.\" C: \"After the lecture Amina asked, a question.\" D: \"After the lecture Amina asked a question.\"",
+    "options": [
+      "After the lecture, Amina asked a question.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A comma after the introductory phrase 'After the lecture' correctly separates it from the main clause."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_030",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "word stress and sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: 'window', 'banana', 'about', 'continue'?",
+    "options": [
+      "banana",
+      "window",
+      "about",
+      "continue"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Window' is stressed on the first syllable (WIN-dow); the others have primary stress on later syllables."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_031",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "A: \"Could you pass the salt, please?\"\nB should reply with:",
+    "options": [
+      "Yes, I could.",
+      "No salt allowed.",
+      "Sure, here you are.",
+      "Why do you need it?"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A polite request expects an action-based reply such as 'Sure, here you are.' which fulfils the request."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_032",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: \"They expect the train to arrive on time.\" → \"The train _____ to arrive on time.\"",
+    "options": [
+      "expects to arrive on time.",
+      "was expected to arrive on time.",
+      "is expected arriving on time.",
+      "is expected to arrive on time."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The passive of 'they expect' is 'is expected' + infinitive: 'The train is expected to arrive on time.'"
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_033",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "cloze-style language use",
+    "contentLabel": "Original exam-style practice",
+    "text": "She is proud _____ her son's achievement.",
+    "options": [
+      "of",
+      "by",
+      "to",
+      "for"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The adjective 'proud' commonly collocates with the preposition 'of' to indicate the source of pride."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_034",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "collocation",
+    "contentLabel": "Original exam-style practice",
+    "text": "We must _____ progress before the deadline.",
+    "options": [
+      "do",
+      "make",
+      "take",
+      "have"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Make progress' is the standard collocation; 'do progress' and others are not idiomatic in English."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_035",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "short interpretation prompt",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: \"When the bell rang, Musa left quietly while others cheered.\" What is the best inference?",
+    "options": [
+      "He was the winner announced to cheers.",
+      "He forgot his bag and left quickly.",
+      "He wanted to avoid attention.",
+      "He started the celebration earlier."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Leaving quietly while others cheer suggests a desire to avoid attention; other options are not supported by the text."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_036",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "punctuation - possessive",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of the following is correctly written?",
+    "options": [
+      "The childrens' toys.",
+      "The stated rule does not apply in this context",
+      "The childrens's toys.",
+      "The children's toys."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "For the singular possessive of 'child' use the irregular plural 'children' plus apostrophe + s: 'children's'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_037",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the applicants _____ to submit two references.",
+    "options": [
+      "is required",
+      "are required",
+      "were required",
+      "have been required"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Each' is singular and requires a singular verb: 'is required'. With 'each of + plural noun' the verb agrees with 'each' (singular)."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_038",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time she arrives, we _____ dinner.",
+    "options": [
+      "have finished",
+      "will have finished",
+      "will finish",
+      "finished"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future perfect expresses completion before a future time: 'will have finished' is correct because the action is completed by the time she arrives."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_039",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'laconic'.",
+    "options": [
+      "talkative",
+      "hostile",
+      "brief",
+      "colorful"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Laconic' means using few words; synonyms include 'brief' or 'concise'. 'Talkative' and the others are opposites or unrelated."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_040",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the idiom: 'To beat around the bush' means to _____ .",
+    "options": [
+      "state something boldly",
+      "leave immediately",
+      "ask questions politely",
+      "speak indirectly"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'To beat around the bush' means to avoid the main point or speak indirectly rather than saying something directly."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_041",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is correctly capitalised?\n\"dr. amina bello attended the conference.\"",
+    "options": [
+      "Dr. Amina Bello attended the conference.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Titles and proper names must be capitalised: abbreviation 'Dr.' and the proper name 'Amina Bello' require initial capitals; sentence case is standard."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_042",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Where is the primary stress in the word 'balloon'?",
+    "options": [
+      "First syllable",
+      "Second syllable",
+      "No stress",
+      "Equal stress on both"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Balloon' has primary stress on the second syllable: ba-LOON. Two-syllable words can vary; this noun/verb places stress on the second syllable."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_043",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "A: \"Could you tell me the time?\"\nB should reply with:",
+    "options": [
+      "Yes, I will.",
+      "No, I can't.",
+      "It's half past three.",
+      "Please, tell me."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "This question is a request for information; an appropriate direct reply gives the time: 'It's half past three.' Other options do not answer the request."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_044",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Sentence Transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"They will hold the conference next month.\" → \"The conference _____ next month.\"",
+    "options": [
+      "will hold",
+      "is being held",
+      "was held",
+      "will be held"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Passive requires 'be' + past participle: 'will be held' is the future passive. 'Will hold' is active; others are wrong tense or aspect."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_045",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Cloze/Articles",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct article: \"He is ___ European by birth.\"",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use 'a' before 'European' because it begins with a consonant sound /j/ (y-), so 'a European' is correct; 'an' is for vowel sounds."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_046",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Short Interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: \"Habiba kept checking her phone during dinner and ate very little.\" What is the best inference?",
+    "options": [
+      "She disliked the food.",
+      "She was expecting an important message.",
+      "She fell asleep.",
+      "She was talking to others."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Frequent phone-checking during a meal most plausibly indicates she was expecting an important message; the other options are not strongly supported by the behaviour."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_047",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Punctuation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is correctly punctuated?\nA: \"After finishing the book he slept.\"\nB: \"After finishing the book, he slept.\"\nC: \"After, finishing the book he slept.\"\nD: \"After finishing the book he, slept.\"",
+    "options": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "An introductory clause 'After finishing the book' should be followed by a comma before the main clause: 'After finishing the book, he slept.' is the correct punctuation."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_048",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "Reported Speech",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to reported speech: \"She said, 'I will come tomorrow.'\" → \"She said that _____ .",
+    "options": [
+      "she will come tomorrow",
+      "she comes tomorrow",
+      "she had come yesterday",
+      "she would come the next day"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "In reported speech 'will' backshifts to 'would' and deictic 'tomorrow' changes to 'the next day': 'she would come the next day' is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_049",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Every one of the essays _____ carefully read by the tutor.",
+    "options": [
+      "is",
+      "are",
+      "have been",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Rule: 'Every one of' takes a singular verb; use 'is' for present singular agreement, not plural forms."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_050",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By this time next year, Adamu _____ his degree.",
+    "options": [
+      "will complete",
+      "will have completed",
+      "completes",
+      "has completed"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future perfect: use 'will have' + past participle to show completion before a specified future time."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_051",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best synonym for 'ephemeral'.",
+    "options": [
+      "durable",
+      "abiding",
+      "fleeting",
+      "steadfast"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Semantic contrast: 'ephemeral' means short-lived or fleeting; durable/abiding/steadfast mean long-lasting and are incorrect."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_052",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "idioms/register",
+    "contentLabel": "Original exam-style practice",
+    "text": "To keep someone at arm's length means to _____ them.",
+    "options": [
+      "invite",
+      "praise publicly",
+      "support financially",
+      "avoid a close relationship with"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Idiom meaning: 'keep at arm's length' = maintain emotional or social distance, i.e., avoid close relationship."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_053",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence is correctly capitalised?\n\"professor adeyemi visited the University of Ibadan last month.\"",
+    "options": [
+      "Professor Adeyemi visited the University of Ibadan last month.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Capitalisation rules: titles and proper nouns take initial capitals: 'Professor Adeyemi' and 'University of Ibadan' are capitalised."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_054",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Where is the primary stress in the word 'economy' ?",
+    "options": [
+      "First syllable",
+      "Second syllable",
+      "Third syllable",
+      "Fourth syllable"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Pronunciation rule: 'economy' is pronounced /ɪˈkɒnəmi/ with primary stress on the second syllable."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_055",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words ends with a voiced consonant sound? 'leaf', 'cab', 'mask', 'cup'",
+    "options": [
+      "leaf",
+      "mask",
+      "cab",
+      "cup"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Phonetics: final sounds: 'cab' ends with /b/ (voiced); 'leaf' /f/, 'mask' /k/, 'cup' /p/ are voiceless."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_056",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "A: \"Could you pass the handout, please?\"\nB should reply with:",
+    "options": [
+      "No, I never.",
+      "I usually do.",
+      "Handouts are useful.",
+      "Here you are."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Pragmatics: polite request expecting the item; 'Here you are.' is the appropriate brief offer/response."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_057",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "sentence transformation (passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"They will announce the winners tomorrow.\"",
+    "options": [
+      "The winners will be announced tomorrow.",
+      "Tomorrow the winners announce will be.",
+      "The winners will announce tomorrow.",
+      "Winners will have been announced tomorrow."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Passive formation: active 'will announce' → passive 'will be announced'; maintain future simple passive with 'will be' + past participle."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_058",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "cloze-style language use",
+    "contentLabel": "Original exam-style practice",
+    "text": "She is keen _____ learning new languages.",
+    "options": [
+      "in",
+      "on",
+      "for",
+      "about"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Collocation: 'keen on' is the correct prepositional pattern meaning enthusiastic about; other prepositions are incorrect here."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_059",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "short interpretation (mini-passage)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: \"During the interview, Samuel gave short answers and avoided eye contact.\" What is the best inference?",
+    "options": [
+      "He was extremely pleased.",
+      "He led the discussion confidently.",
+      "He felt uncomfortable or nervous.",
+      "He had prepared long speeches."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Inference: short answers and avoiding eye contact commonly indicate discomfort or nervousness rather than confidence or pleasure."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2024_060",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2024",
+    "topic": "sentence transformation (reported speech)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to reported speech: \"He asked, 'Have you finished the test?'\"",
+    "options": [
+      "He asked will I finish the test.",
+      "He asked that I have finished the test.",
+      "He asked do I finish the test.",
+      "He asked if I had finished the test."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Reported question formation: present perfect 'Have you finished?' backshifts to past perfect 'had finished' after 'asked' and uses 'if/whether' for yes/no questions."
+  }
+]

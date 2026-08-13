@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_001",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the principal nor the students ____ prepared for the inspection.",
+    "options": [
+      "are",
+      "is",
+      "has been",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer subject; 'students' is plural so use 'are'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_002",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By this time next year, I ____ my apprenticeship.",
+    "options": [
+      "will complete",
+      "will have completed",
+      "will be completing",
+      "would complete"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use the future perfect 'will have completed' to show an action finished before a specified future time."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_003",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "She felt a deep sense of ____ when she returned to her childhood home.",
+    "options": [
+      "apathy",
+      "dread",
+      "nostalgia",
+      "euphoria"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Nostalgia means a longing for the past, which matches returning to a childhood home; other choices conflict in meaning."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_004",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "He has a lot on his plate.",
+    "options": [
+      "He is eating too much.",
+      "He has an extra plate.",
+      "He owns many dishes.",
+      "He has many tasks to handle."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom 'has a lot on his plate' means being busy or overloaded with tasks; the first option accurately paraphrases it."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_005",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correct for: He said 'i will arrive at noon'.",
+    "options": [
+      "He said, \"I will arrive at noon.\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Correct punctuation: comma before direct speech, capital 'I', and the full stop inside closing quotation marks; semicolon is incorrect."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_006",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has primary stress in the word \"photograph\"?",
+    "options": [
+      "Second syllable (pho-TO-graph)",
+      "First syllable (PHO-to-graph)",
+      "Third syllable (pho-to-GRAPH)",
+      "No primary stress"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The noun 'photograph' has primary stress on the first syllable: 'PHO-to-graph'. Stress rules place main stress on the first syllable here."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_007",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Teacher: \"Could you please switch off your phone?\" Student reply:",
+    "options": [
+      "No, I won't switch it off.",
+      "I switched it off yesterday.",
+      "Sorry, I'll switch it off now.",
+      "Why should I switch it off?"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Polite request requires a polite, compliant response; 'Sorry, I'll switch it off now.' acknowledges and fulfils the request."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_008",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"The committee chose Amaka as secretary.\"",
+    "options": [
+      "Amaka chose as secretary by the committee.",
+      "Amaka was chosen by the committee as secretaryed.",
+      "Amaka had chosen the committee as secretary.",
+      "Amaka was chosen as secretary by the committee."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Passive requires 'be' + past participle: 'Amaka was chosen'; agent can follow with 'by the committee'. Other options are ungrammatical."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_009",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "cloze-style",
+    "contentLabel": "Original exam-style practice",
+    "text": "We must make room ____ innovative suggestions at the meeting.",
+    "options": [
+      "for",
+      "to",
+      "with",
+      "on"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Make room for' is the correct collocation meaning to allow space or opportunity; other prepositions do not fit this collocation."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_010",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amina watered the saplings every evening. Yet only a few survived the dry season.",
+    "options": [
+      "Amina's care was the reason many plants died.",
+      "The drought was severe despite Amina's care.",
+      "The saplings were already mature trees.",
+      "Amina overwatered the saplings and killed them."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The best inference is that environmental conditions (a severe dry season) overcame her care; it does not blame her actions directly."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_011",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each of the students ____ a copy of the handbook.",
+    "options": [
+      "have",
+      "were given",
+      "has",
+      "are given"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use singular verb after 'Each of the ...' because 'each' is singular; therefore 'has' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_012",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Tense and Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the exam starts, I ____ the revision.",
+    "options": [
+      "will complete",
+      "completed",
+      "have completed",
+      "will have completed"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Future perfect expresses completion before a future time: 'will have completed' shows the revision finished before the exam starts."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_013",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Lexis / Prepositions",
+    "contentLabel": "Original exam-style practice",
+    "text": "We should insist ____ a refund for the faulty radio.",
+    "options": [
+      "on",
+      "for",
+      "about",
+      "with"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The verb 'insist' collocates with the preposition 'on' when demanding something: 'insist on a refund' is standard usage."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_014",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Punctuation / Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is correct for the sentence: Peter shouted, \"the bus is leaving now.\"",
+    "options": [
+      "The stated rule does not apply in this context",
+      "Peter shouted, \"The bus is leaving now.\"",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Direct speech begins with a capital letter and normally follows a comma after the reporting verb: comma + capitalised quote is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_015",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Idioms / Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "When the manager said 'we are in the same boat', she meant:",
+    "options": [
+      "they shared the same office",
+      "they wore identical uniforms",
+      "they shared the same problem",
+      "they were on a boat together"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The idiom 'in the same boat' means sharing similar difficulties or problems, not a literal boat or uniform."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_016",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Sentence Transformation (Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"The teacher will announce the results tomorrow.\"",
+    "options": [
+      "Tomorrow the results will announce by the teacher.",
+      "The results were announced by the teacher tomorrow.",
+      "The teacher will be announcing the results tomorrow by.",
+      "The results will be announced by the teacher tomorrow."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Passive requires object as subject plus correct auxiliary: 'The results will be announced by the teacher tomorrow.' matches future passive form."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_017",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Cloze / Articles",
+    "contentLabel": "Original exam-style practice",
+    "text": "Kemi had never seen _____ elephant before the zoo trip.",
+    "options": [
+      "an",
+      "a",
+      "the",
+      "no article"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Before a singular noun beginning with vowel sound 'e' we use the indefinite article 'an': 'an elephant' is grammatically correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_018",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Word Stress / Phonology",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has primary stress in the word 'economy'?",
+    "options": [
+      "1st syllable (e-)",
+      "2nd syllable (con-)",
+      "3rd syllable (nom-)",
+      "4th syllable (-my)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The word 'economy' is pronounced e-CON-o-my; primary stress falls on the second syllable 'con'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_019",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Teacher: \"Could you hand me the chalk?\" Student reply:",
+    "options": [
+      "Yes, I have.",
+      "I will maybe later.",
+      "Certainly, here it is.",
+      "Why did you ask?"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A polite, direct fulfilment of the request is 'Certainly, here it is.' which appropriately hands over the chalk."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_020",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Short Interpretation / Inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Richard left early with a packed lunch and a bottle of water.",
+    "options": [
+      "He intended to host a picnic at home.",
+      "He forgot his wallet.",
+      "He was punctually going to school.",
+      "He planned to stay away for some hours."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Taking a packed lunch and water suggests planning to be away for several hours; this inference follows from the items he carried."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_021",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Concord (Subject-Verb Agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the coach nor the players ____ willing to postpone the match.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "am"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer noun ('players' plural), so use 'are'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_022",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Tense and Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time she graduates, she ____ at the university for four years.",
+    "options": [
+      "will study",
+      "will have been studying",
+      "has studied",
+      "will have studied"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The future perfect continuous (will have been studying) shows duration up to a future point."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_023",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Lexis / Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mr. Idris is admired in the village for his probity.",
+    "options": [
+      "bravery",
+      "cunning",
+      "honesty",
+      "laziness"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Probity means integrity or honesty; the other choices are semantically different qualities."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_024",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Idioms / Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "When Yara said she would 'eat humble pie', she meant she would:",
+    "options": [
+      "share a traditional dessert",
+      "throw a celebration",
+      "praise herself for success",
+      "admit wrongdoing and apologise"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Eat humble pie' is an idiom meaning to admit error and apologise; literal meanings are incorrect."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_025",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which is the correctly punctuated version of the sentence: \"Listen said aunty, we must leave now.\"",
+    "options": [
+      "'Listen,' said Aunty, 'we must leave now.'",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Direct speech needs commas inside quotes, Aunty is a proper noun here and must be capitalised."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_026",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has primary stress in the word 'dictionary'?",
+    "options": [
+      "second syllable",
+      "first syllable",
+      "third syllable",
+      "fourth syllable"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Dictionary is pronounced 'DIC-tion-a-ry' with primary stress on the first syllable (DIC-)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_027",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Sounds (Vowel Contrast)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the word that has a different vowel sound from the others: ship, chip, sheep, dip.",
+    "options": [
+      "ship",
+      "chip",
+      "sheep",
+      "dip"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Sheep' has the long vowel /i:/, while 'ship', 'chip' and 'dip' have the short /ɪ/ vowel sound."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_028",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Speech Function (Polite Requests)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Teacher: \"Could you fetch the register?\"\nWhich student reply is the most appropriate spoken response?",
+    "options": [
+      "I have fetched it.",
+      "I was fetching it.",
+      "No, I can't.",
+      "Yes, I'll fetch it."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Could you' is a polite request; a suitable immediate acceptance is 'Yes, I'll fetch it.'"
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_029",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Sentence Transformation (Active to Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"The janitor cleans the hall every morning.\"",
+    "options": [
+      "The hall is cleaned by the janitor every morning.",
+      "The hall was cleaned by the janitor every morning.",
+      "Every morning the hall is being cleaned by the janitor.",
+      "The janitor is cleaned the hall every morning."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Present simple passive uses 'is/are' + past participle: 'The hall is cleaned by the janitor every morning.'"
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_030",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Cloze / Collocation (Lexical Choice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "The scientist's theory was controversial, but her data gave it considerable ____.",
+    "options": [
+      "precedence",
+      "credence",
+      "absence",
+      "sequence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Credence means acceptance or belief; 'gave it credence' is the correct collocation; others are unrelated."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_031",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Concord (Subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the librarian or the students ____ responsible for rearranging the shelves.",
+    "options": [
+      "is",
+      "were",
+      "are",
+      "has been"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "With 'either...or' the verb agrees with the noun nearest it; 'students' is plural so use 'are'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_032",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Tense and aspect (Future perfect continuous)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By November, I ____ on the coastal survey for three months.",
+    "options": [
+      "will be working",
+      "will have worked",
+      "have been working",
+      "will have been working"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Future perfect continuous (will have been + -ing) expresses duration up to a specified future time: 'will have been working'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_033",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Lexis and semantics (Word choice for brevity)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Ruth's reply was terse; she offered no further ____.",
+    "options": [
+      "elaboration",
+      "excuse",
+      "concession",
+      "amplification"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A terse reply lacks extra detail; 'elaboration' (further detail or development) best fits the contrast."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_034",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Idioms and register",
+    "contentLabel": "Original exam-style practice",
+    "text": "When the manager told him to 'bite the bullet', she meant he should:",
+    "options": [
+      "tell an untruth to get by",
+      "accept and endure the difficult task",
+      "postpone decision until later",
+      "seek help from colleagues immediately"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Bite the bullet' is an idiom meaning to accept and endure something unpleasant rather than avoid it."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_035",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Punctuation and capitalisation (Direct speech)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is punctuated correctly for: The governor said 'we will rebuild the bridge'.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The governor said, \"We will rebuild the bridge.\"",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Direct speech needs a comma before the quotation and the quoted sentence begins with a capital letter; proper nouns not needed in 'bridge'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_036",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Word stress and sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has primary stress in the word 'photographer'?",
+    "options": [
+      "first syllable",
+      "third syllable",
+      "fourth syllable",
+      "second syllable"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Pronunciation: pho-TOG-ra-pher has primary stress on the second syllable 'TOG' (contrast with 'photograph' stressed on the first)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_037",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Speech functions (Appropriate spoken response)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Teacher: \"Please hand in your homework now.\" Which student reply is most appropriate?",
+    "options": [
+      "Here is my homework, sir.",
+      "I refuse to hand it in.",
+      "Maybe after school.",
+      "I lost it, but I might find it later."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Polite compliance suits the teacher's request; 'Here is my homework, sir.' shows appropriate, succinct spoken response."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_038",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Sentence transformation (Active to passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"They will deliver the textbooks on Monday.\"",
+    "options": [
+      "On Monday the textbooks will deliver.",
+      "The textbooks will be delivered on Monday.",
+      "The textbooks will deliver on Monday.",
+      "Textbooks will be delivered by they on Monday."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Passive uses object as subject plus 'be' + past participle: 'The textbooks will be delivered on Monday.' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_039",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Cloze (Preposition choice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "She congratulated him ____ securing the scholarship.",
+    "options": [
+      "for",
+      "about",
+      "on",
+      "with"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Verb+preposition collocation: 'congratulate someone on (something)' is the correct pattern, so use 'on'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_040",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Short interpretation (Inference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amina kept the old clock as a memento of her aunt. The clock rarely worked, but she checked it often. What inference is best?",
+    "options": [
+      "She believed the clock would increase in market value.",
+      "She used the clock as her main way of telling time.",
+      "She resented her aunt's taste in objects.",
+      "She valued the clock for emotional reasons."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The facts imply sentimental attachment: keeping a non-working clock and checking it often indicates emotional value rather than monetary or practical use."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_041",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By midnight tomorrow, I ____ the annual report.",
+    "options": [
+      "will have completed",
+      "will complete",
+      "have completed",
+      "will be completing"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use future perfect ('will have completed') for an action finished before a stated future time."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_042",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "A pair of scissors ____ on the workbench.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The head noun 'pair' is singular so the verb takes singular agreement: 'A pair ... is'. This differs from plural nouns."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_043",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable has primary stress in the word 'comfortable'?",
+    "options": [
+      "second syllable",
+      "third syllable",
+      "first syllable",
+      "fourth syllable"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Comfortable' is stressed on the first syllable: COM-fort-a-ble. Primary stress falls on 'COM'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_044",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Sounds (vowel)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the word that has a different vowel sound from the others: book, cook, boot, look.",
+    "options": [
+      "book",
+      "cook",
+      "look",
+      "boot"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'book', 'cook', 'look' use /ʊ/ while 'boot' uses /uː/; thus 'boot' has a different vowel quality."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_045",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which version is punctuated correctly for the sentence: The head said 'close the doors now'.",
+    "options": [
+      "The head said, \"Close the doors now.\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Direct quotation of a full sentence needs a comma before the quote and a capital letter inside: The head said, \"Close the doors now.\" Punctuation stays inside the quotation marks."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_046",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Sentence transformation (passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"The gardener will plant the mango trees next week.\"",
+    "options": [
+      "The mango trees will be planting by the gardener next week.",
+      "The mango trees will be planted by the gardener next week.",
+      "The gardener will have the mango trees planted next week.",
+      "Next week the gardener will be planting the mango trees."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Passive of 'will plant' is 'will be planted'; retain agent with 'by the gardener' and time phrase remains at end."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_047",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Cloze (preposition)",
+    "contentLabel": "Original exam-style practice",
+    "text": "We must guard public funds ____ misuse.",
+    "options": [
+      "for",
+      "against",
+      "from",
+      "with"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Collocation requires 'guard (something) from (harm)': 'guard public funds from misuse' is the correct prepositional choice."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_048",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Idioms/register",
+    "contentLabel": "Original exam-style practice",
+    "text": "When the director told the team to 'keep investors at arm's length', she meant:",
+    "options": [
+      "Arrange physical seating to keep them away.",
+      "Invite them to join every meeting.",
+      "Give investors unrestricted access.",
+      "Maintain a cautious professional distance."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom 'keep someone at arm's length' means to maintain a cautious or distant relationship, not literal distance or openness."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_049",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Speech function",
+    "contentLabel": "Original exam-style practice",
+    "text": "Teacher: \"Please summarise your answer in one sentence.\" Which student reply is most appropriate?",
+    "options": [
+      "Okay, I will do that.",
+      "No, I cannot.",
+      "Why must I?",
+      "Give me more time."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The teacher requests an action; an appropriate spoken reply is polite acceptance: 'Okay, I will do that.' This matches the speech function."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2025_050",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Reading inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amaka kept a faded concert ticket in her diary and read the date every year, though she never attended that show again. What is the best inference?",
+    "options": [
+      "She lost interest in attending concerts.",
+      "She cherished the memory of that event.",
+      "She could no longer afford tickets.",
+      "She used the ticket as a bookmark."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Keeping and revisiting a memento annually indicates sentimental value; the behaviour supports cherishing a memory rather than the other options."
+  }
+]

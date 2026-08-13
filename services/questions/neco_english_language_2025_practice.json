@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_001",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Grammatical structure",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the passive: \"They will deliver the parcel tomorrow.\" Choose the best passive: \"The parcel ___ tomorrow.\"",
+    "options": [
+      "will be delivered",
+      "will delivered be",
+      "is going to be delivered",
+      "will be deliver"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Future simple passive requires 'will be' + past participle: 'will be delivered'. Other options show wrong word order or missing participle."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_002",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb: \"Each of the students ___ a copy of the syllabus.\"",
+    "options": [
+      "have",
+      "has",
+      "are",
+      "were"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Each' is singular and takes a singular verb: use 'has'. Plural verbs like 'have' or 'are' do not agree with singular 'each'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_003",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: \"He ___ (work) at the hospital since June.\"",
+    "options": [
+      "worked",
+      "has worked",
+      "has been working",
+      "was working"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use present perfect continuous 'has been working' for an action that started in the past and continues to the present; simple past or perfect are incorrect here."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_004",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read these sentences: \"Tunde closed the windows and left without his umbrella. By noon the street was flooded. He arrived home soaked.\" What is most likely implied?",
+    "options": [
+      "Tunde enjoys rainy weather.",
+      "Tunde carried an umbrella but forgot it.",
+      "Tunde had driven through the flood.",
+      "Tunde expected no rain but was caught in it."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Inference: leaving without an umbrella then arriving soaked implies he did not expect rain and was caught in it, not that he enjoys rain or had an umbrella."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_005",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the memo: \"To save time some staff cut corners on the report.\" What does 'cut corners' mean here?",
+    "options": [
+      "do something poorly to save time",
+      "travel a shorter route",
+      "reduce costs legally",
+      "increase attention to detail"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Cut corners' is an idiom meaning to perform a task quickly but carelessly to save time or effort; it does not mean a legal cost reduction."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_006",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which is punctuated correctly for the sentence: \"Although he was tired he finished the assignment on time.\"?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "Although he was tired, he finished the assignment on time.",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A fronted subordinate clause ('Although he was tired') should be followed by a comma before the main clause. Comma placement here is the correct punctuation rule."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_007",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Word stress and sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: Photograph, Control, arrival, decision?",
+    "options": [
+      "Control",
+      "arrival",
+      "Photograph",
+      "decision"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Photograph' is stressed on the first syllable (PHO-to-graph). 'Control', 'arrival' and 'decision' have stress on the second syllable."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_008",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best spoken reply to the request: \"Could you lend me your pen, please?\"",
+    "options": [
+      "Yes, I can lend.",
+      "Sorry, I am.",
+      "Help yourself.",
+      "No problem — here you are."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Offering the item uses a natural phrase like 'No problem — here you are.' 'Help yourself' implies permission to take without offering; the others are awkward or incorrect."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_009",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Sentence Transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"Someone had painted the wall yesterday.\" Choose the correct passive sentence.",
+    "options": [
+      "The wall had been painted yesterday.",
+      "The wall was painted yesterday.",
+      "The wall has been painted yesterday.",
+      "The wall had painted yesterday."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Past perfect passive requires 'had been' + past participle: 'had been painted'. Simple past 'was painted' is a different tense; others are ungrammatical."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_010",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Cloze-style language use",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the blanks: \"Aisha left the station ___ six and arrived ___ Lagos by noon.\"",
+    "options": [
+      "at / to",
+      "at / in",
+      "on / in",
+      "from / in"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use 'at' for specific time: 'left ... at six'. Use 'in' for arrival in a city: 'arrived in Lagos'. The other preposition combinations are incorrect."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_011",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb: 'Neither Maria nor the students ___ available for the meeting.'",
+    "options": [
+      "is",
+      "was",
+      "are",
+      "were"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "With 'neither... nor' the verb agrees with the noun nearest to it; 'students' is plural, so use 'are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_012",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: 'By the time the coach arrived, the players ___ for forty minutes.'",
+    "options": [
+      "had trained",
+      "have trained",
+      "will have trained",
+      "had been training"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A past duration completed before another past moment calls for past perfect continuous: 'had been training'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_013",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the notice: 'The workshop will undergo renovation next month.' What does 'renovation' mean here?",
+    "options": [
+      "repairing and improving the space",
+      "a short meeting",
+      "selling old equipment",
+      "increasing prices"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Renovation' refers to repairing or improving a building or space, not holding a meeting or selling goods."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_014",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "idioms/register",
+    "contentLabel": "Original exam-style practice",
+    "text": "When the principal said 'We shall cross that bridge when we come to it', he meant that they would:",
+    "options": [
+      "physically cross a bridge soon",
+      "deal with a problem later",
+      "avoid the bridge completely",
+      "pay for bridge repairs"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "This idiom means postpone dealing with a problem until it actually happens; it does not mean literal bridging."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_015",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which option correctly punctuates and capitalises: before he left he whispered 'lock the gate' to Ama.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "Before he left, he whispered, 'Lock the gate,' to Ama.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Correct form uses comma after introductory clause and sets off the quoted imperative with commas and a capital letter: Before he left, he whispered, 'Lock the gate,' to Ama."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_016",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which notation shows the correct primary stress for the word 'balloon'?",
+    "options": [
+      "BAL-loon",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "ba-LOON"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Balloon' has primary stress on the second syllable (ba-LOON). The stress pattern is second-syllable stressed."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_017",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "sounds/pronunciation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct pronunciation of the plural '-s' in the word 'books'.",
+    "options": [
+      "/s/ as in 'cats'",
+      "/z/ as in 'dogs'",
+      "/ɪz/ as in 'watches'",
+      "/ks/ as in 'box'"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "After a voiceless consonant (/k/ in 'book'), the plural '-s' is pronounced /s/, as in 'cats', not /z/ or /ɪz/."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_018",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "A: 'Would you like to attend the alumni dinner?' B: '___'",
+    "options": [
+      "I have to study tonight.",
+      "I'd be delighted to come.",
+      "No, I never attend events.",
+      "Maybe I will think about it later."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'I'd be delighted to come.' is a polite, direct acceptance of an invitation and fits the speech function of accepting an offer."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_019",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'The committee will announce the winner tomorrow.' Choose the correct passive sentence.",
+    "options": [
+      "A winner will be announced by the committee tomorrow.",
+      "The winner will be announcing by the committee tomorrow.",
+      "The winner will be announced by the committee tomorrow.",
+      "The winner will announce by the committee tomorrow."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Correct passive places the object as subject and uses 'will be announced': 'The winner will be announced by the committee tomorrow.' The other forms are ungrammatical or indefinite."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_020",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "cloze/interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: 'Jide missed his bus. He walked to the station and bought a ticket for the next train. He arrived at the office only five minutes late.' What is most likely true?",
+    "options": [
+      "He planned to be late that morning.",
+      "He did not go to work after all.",
+      "He cycled to work instead of taking any transport.",
+      "Public transport delays can be overcome by alternative means."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The passage shows he missed one service but used other options (walking, next train) and reached work, so it implies that alternatives can overcome transport delays."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_021",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Each box of textbooks ___ heavy for the children to carry.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'each' the subject is singular, so the verb takes singular agreement: 'each ... is'. This contrasts with plural 'boxes are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_022",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Tense and Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: \"He ____ (study) French for three years before he moved to Paris.\"",
+    "options": [
+      "had studied",
+      "had been studying",
+      "was studying",
+      "studied"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use past perfect continuous to show an action ongoing up to a past point: 'had been studying' (duration) vs simple past or past perfect."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_023",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Passive Voice",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"They will celebrate the festival next week.\" Which is correct?",
+    "options": [
+      "The festival will celebrate next week.",
+      "Next week the festival will be celebrating.",
+      "The festival will be celebrated next week.",
+      "They will be celebrated the festival next week."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Passive: object becomes subject and take auxiliary 'be' + past participle: 'will be celebrated'. Other options misuse voice or word order."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_024",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Idioms / Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the memo: \"Our supplier cut us some slack last month.\" What does 'cut us some slack' mean here?",
+    "options": [
+      "reduced all their prices",
+      "refused to deliver goods",
+      "reported us to management",
+      "gave us extra time to pay"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Cut someone some slack' means show leniency or allow more time/less strictness, not price reduction or reporting."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_025",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated sentence: before the ceremony Reverend Musa said let us pray.",
+    "options": [
+      "Before the ceremony, Reverend Musa said, \"Let us pray.\"",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Direct speech requires comma + opening quote and capital letter for quoted sentence: 'said, \"Let us pray.\"' Other options fail punctuation or capitalization conventions."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_026",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which shows the correct primary stress for the word 'hospitality' (capitalised syllable indicates primary stress)?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "ho-spi-TAL-i-ty",
+      "A different grammatical construction is required",
+      "ho-spi-ta-li-TY"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hospitality has primary stress on the third syllable: ho-spi-TAL-i-ty. Stress placement changes pronunciation and meaning patterns."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_027",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Lexis / Cloze",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: \"If you want the scholarship, you must ________ the application by Monday.\"",
+    "options": [
+      "submission",
+      "submitted",
+      "submit",
+      "submitt"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Modal 'must' is followed by the base verb form: 'must submit'. 'Submission' is a noun and 'submitted' is past participle, not correct here."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_028",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Sentence Transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Direct speech: \"Lola said, 'I will call you tomorrow.'\" Choose the correct reported speech.",
+    "options": [
+      "Lola said she will call me tomorrow.",
+      "Lola said I will be called the next day.",
+      "Lola said she calls me tomorrow.",
+      "Lola said that she would call me the next day."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "In reported speech 'will' backshifts to 'would' and 'tomorrow' becomes 'the next day'; pronouns adjust to speaker: 'she would call me the next day'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_029",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Pronunciation / Plural -s",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which option describes the correct pronunciation of the plural '-s' in the word 'books' (the tested word is 'books')?",
+    "options": [
+      "It is pronounced like the 's' in 'cats' (a voiceless /s/).",
+      "It is pronounced like the 's' in 'dogs' (a voiced /z/).",
+      "It is pronounced like the extra syllable in 'buses' (/ɪz/).",
+      "The plural '-s' is silent in 'books'."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Book' ends with voiceless /k/, so plural '-s' is voiceless /s/ (as in 'cats'). Voiced endings take /z/ and sibilant endings take /ɪz/."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_030",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Short Inference",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini passage: \"Aisha left her umbrella on the bus. She waited at the stop until evening and walked home soaked.\" What is most likely true?",
+    "options": [
+      "Aisha kept her umbrella and stayed dry.",
+      "Aisha did not have an umbrella when she walked home.",
+      "The bus returned and gave her the umbrella.",
+      "She never went to the bus stop."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Passage states she left umbrella and arrived soaked; inference: she did not have the umbrella and got wet. Other options contradict the given events."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_031",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb: \"Neither the director nor the assistants ___ available.\"",
+    "options": [
+      "is",
+      "were",
+      "are",
+      "be"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Use the proximity rule: verb agrees with the noun nearest the verb (assistants = plural → are)."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_032",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the sentence: \"He ___ (work) at the clinic since March.\"",
+    "options": [
+      "has worked",
+      "worked",
+      "had been working",
+      "has been working"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use present perfect continuous for an action that began in the past and continues: 'has been working' signals ongoing activity since March."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_033",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "passive transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: \"The students wrote the report last week.\" Choose the correct passive sentence.",
+    "options": [
+      "The report was written by the students last week.",
+      "The report were written by the students last week.",
+      "The report written by the students last week.",
+      "Last week the students were written the report."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Past simple active (wrote) becomes was/were + past participle: 'The report was written by the students.' matches tense and voice."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_034",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which option correctly punctuates: before the meeting the manager said 'we must start on time'.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "Before the meeting, the manager said, 'We must start on time.'",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use comma after introductory phrase and before direct speech; capitalize first word of quoted sentence: standard punctuation and capitalization rules."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_035",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which shows the correct primary stress for the word 'banana' (capitalised syllable indicates primary stress)?",
+    "options": [
+      "BAna na",
+      "The stated rule does not apply in this context",
+      "baNAna",
+      "A different grammatical construction is required"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Banana' has primary stress on the second syllable: baNAna. The marked syllable must reflect standard lexical stress placement."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_036",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "sounds/pronunciation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which option describes the correct pronunciation of the plural '-s' in the word 'churches'?",
+    "options": [
+      "Pronounced /s/ as in 'cats'",
+      "Pronounced /z/ as in 'dogs'",
+      "Pronounced /tʃ/ as in 'church'",
+      "Pronounced /ɪz/ as in 'buses'"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Sibilant endings (ch, sh, s, x, z) take /ɪz/ for the plural: 'churches' is pronounced with an added syllable /ɪz/."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_037",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "prepositions/lexis",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: \"He divided the cake ___ four equal pieces and gave one ___ each child.\"",
+    "options": [
+      "into / to",
+      "among / for",
+      "into / among",
+      "among / to"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use 'divide into' for splitting into parts and 'give one to each child' for recipient; 'into / to' fits both grammar and meaning."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_038",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "idioms/register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the memo: \"Please green-light the plan.\" What does 'green-light' mean here?",
+    "options": [
+      "Paint the plan green",
+      "Approve the plan",
+      "Postpone the plan",
+      "Review the plan for errors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Green-light' is an idiom meaning to give official approval or permission; context of a memo supports approval, not literal painting."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_039",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "reported speech/sequence of tenses",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to reported speech: \"Kemi said, 'I will finish the job by Friday.'\"",
+    "options": [
+      "Kemi said she will finish the job by Friday.",
+      "Kemi said, 'I will finish the job by Friday.'",
+      "Kemi said she would finish the job by Friday.",
+      "Kemi said she has finished the job by Friday."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "With reporting verb in past, 'will' backshifts to 'would' in reported speech: correct sequence-of-tense conversion."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_040",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "reading interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini passage: \"Rafiq left early with his exam paper. He returned it at midday and then revised in the library.\" What is most likely true?",
+    "options": [
+      "He failed his exam and left the room.",
+      "He lost the exam paper and could not continue.",
+      "He refused to return the paper and was suspended.",
+      "He handed in his exam paper at midday."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Context shows Rafiq 'returned it at midday' which most naturally means he handed in the exam paper; other options contradict the explicit actions."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_041",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Concord (Subject-Verb Agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the coach nor the players ___ ready for the match.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "has been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer subject; the plural noun 'players' requires 'are'."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_042",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Tense and Aspect (Past Perfect Continuous)",
+    "contentLabel": "Original exam-style practice",
+    "text": "He ___ (study) Japanese for two years before he moved to Kyoto.",
+    "options": [
+      "had studied",
+      "had been studying",
+      "was studying",
+      "studied"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An action continuing up to a past point uses past perfect continuous: 'had been studying' shows duration before he moved."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_043",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Voice (Passive Transformation)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: 'Someone has sealed the envelope.' Which is correct?",
+    "options": [
+      "The envelope was sealed by someone.",
+      "Has the envelope been sealed by someone?",
+      "The envelope has been sealed.",
+      "The envelope is sealed by someone."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Active present perfect (has sealed) becomes passive present perfect 'has been sealed'; other choices give wrong tense or question form."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_044",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Punctuate correctly: before the lecture Dr. Adamu said 'please switch off your phones'.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here",
+      "Before the lecture, Dr. Adamu said, \"Please switch off your phones.\""
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use a comma after introductory phrase, a comma before direct quote, capitalise the first word inside quotes; 'Dr.' may keep the full stop."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_045",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which shows the correct primary stress for the word 'economy' (capitalised syllable shows primary stress)?",
+    "options": [
+      "eCONomy",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct stress pattern is e-CON-o-my, so the second syllable is primary; 'eCONomy' marks that second-syllable stress."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_046",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Pronunciation (plural -s ending)",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the pronunciation of the plural '-s' in the word 'bags'?",
+    "options": [
+      "/s/ as in 'cats'",
+      "/z/ as in 'dogs'",
+      "/ɪz/ as in 'buses'",
+      "/ks/ as in 'boxes'"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "After a voiced consonant (/g/ in 'bag'), the plural '-s' is voiced and pronounced /z/; voicing matches the preceding sound."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_047",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Speech Function (Polite Reply)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the best reply to: 'Would you mind opening the window?'",
+    "options": [
+      "Yes, I would.",
+      "No, you can't.",
+      "Not at all.",
+      "I suppose so."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Would you mind...' is a polite request; 'Not at all' (or 'No, not at all') politely agrees to comply. Other replies are incorrect or rude."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_048",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Cloze: Prepositions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: 'Mina left the office ___ six and arrived ___ Ilorin by noon.'",
+    "options": [
+      "on, at",
+      "by, to",
+      "in, by",
+      "at, in"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'At six' is the correct time expression, and we 'arrive in' a city: 'arrived in Ilorin'. Other prepositions are ungrammatical here."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_049",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Short Interpretation (Inference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini passage: 'Sade found the shop closed. She took a taxi home and cooked dinner from leftovers.' What is most likely true?",
+    "options": [
+      "She had to change her evening plans because the shop closed.",
+      "Sade bought fresh food after the shop closed.",
+      "The taxi driver recommended a restaurant.",
+      "Sade went back out to shop later."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "If the shop was closed she could not buy food and so used leftovers; this implies she changed evening plans. Other options are not supported by the passage."
+  },
+  {
+    "id": "NECO_ENGLISH_LANGUAGE_2025_050",
+    "examType": "NECO",
+    "subject": "English Language",
+    "year": "2025",
+    "topic": "Reported Speech (Sentence Transformation)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Change to reported speech: 'Femi said, \"I have finished writing the report.\"' Which is correct?",
+    "options": [
+      "Femi said that he has finished writing the report.",
+      "Femi said that he had finished writing the report.",
+      "Femi said he will finish writing the report.",
+      "Femi says that he had finished writing the report."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "With past reporting verb 'said', present perfect backshifts to past perfect: 'had finished' is the correct reported form; other options fail backshift or tense sequence."
+  }
+]

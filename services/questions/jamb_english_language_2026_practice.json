@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_001",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Grammar - Verb form",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb form: 'Neither of the students ______ ready.'",
+    "options": [
+      "was",
+      "are",
+      "were",
+      "be"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither' the subject is singular; use a singular verb. 'Neither of the students was ready' follows subject–verb agreement for singular indefinite pronouns."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_002",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord/Number",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence shows correct subject–verb concord?",
+    "options": [
+      "A number of teachers is attending the conference.",
+      "A number of teachers are attending the conference.",
+      "The number of teachers are impressive.",
+      "Every of the teachers were present."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'A number of' takes a plural verb ('are attending'); contrast with 'The number of' which takes a singular verb."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_003",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence correctly uses the past perfect?",
+    "options": [
+      "By the time she arrived, we have left.",
+      "By the time she had arrived, we left.",
+      "By the time she arrived, we had left.",
+      "By the time she arrives, we had left."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Past perfect ('had left') expresses an action completed before another past action ('she arrived'); this is the proper past perfect sequence."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_004",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word is closest in meaning to 'meticulous'?",
+    "options": [
+      "careless",
+      "hasty",
+      "sloppy",
+      "thorough"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Meticulous' means very careful and precise; 'thorough' is the closest synonym, unlike careless, hasty or sloppy."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_005",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'If you don't pull your weight, the team will suffer,' 'pull your weight' means:",
+    "options": [
+      "do one’s fair share of work",
+      "be physically strong",
+      "look after your belongings",
+      "complain loudly"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The idiom 'pull your weight' means to do your fair share of the work; it does not refer to strength, belongings, or complaining."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_006",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which is the correctly punctuated and capitalised sentence for: 'tomorrow we meet in lagos nigeria'?",
+    "options": [
+      "The stated rule does not apply in this context",
+      "Tomorrow we meet in Lagos, Nigeria.",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cities and countries are proper nouns and capitalised; a comma separates city and country: 'Lagos, Nigeria.' The sentence also needs initial capital 'Tomorrow'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_007",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: 'table', 'about', 'relax', 'include'?",
+    "options": [
+      "about",
+      "relax",
+      "table",
+      "include"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Table' has primary stress on the first syllable ('TA-ble'); 'about' and 'include' are stressed on the second syllable, and 'relax' on the second syllable as a verb."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_008",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sounds/Phonology",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: beat, seat, meat, mate?",
+    "options": [
+      "beat",
+      "seat",
+      "meat",
+      "mate"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Beat', 'seat', 'meat' share the /iː/ vowel sound; 'mate' has a diphthong /eɪ/, so it is the different vowel sound."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_009",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main speech function of: 'Could you pass the salt?'",
+    "options": [
+      "request",
+      "offer",
+      "apology",
+      "statement"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The modal question 'Could you pass the salt?' functions as a polite request, not an offer, apology, or simple declarative statement."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_010",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: 'They will finish the project next month.'",
+    "options": [
+      "The project will finish next month.",
+      "The project will be finished next month.",
+      "The project is finished next month by them.",
+      "The project will be being finished next month."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Future passive requires 'will be' + past participle: 'will be finished.' Option A correctly forms the passive for future tense."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_011",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Cloze",
+    "contentLabel": "Original exam-style practice",
+    "text": "If you _____ earlier, you would have caught the bus.",
+    "options": [
+      "left",
+      "have left",
+      "had left",
+      "leave"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Third conditional uses past perfect in the 'if' clause: 'If you had left earlier, you would have caught the bus.' 'Had left' is required."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_012",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Tolu watered the plant every morning but kept it in a dark cupboard. The plant died. What is the most likely reason?",
+    "options": [
+      "He over-watered it.",
+      "It was stolen.",
+      "The cupboard was too big.",
+      "It lacked sunlight."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Given the plant was kept in a dark cupboard, lack of sunlight is the most plausible cause of death; watering alone cannot substitute for light."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_013",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb form: 'Every one of the players ____ ready.'",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use singular verb with 'every one of' + plural noun; 'every one' is singular, so 'is' is required."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_014",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: 'By the time she arrived, we ______ for two hours.'",
+    "options": [
+      "had practised",
+      "had been practising",
+      "have been practising",
+      "practised"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Past perfect continuous ('had been practising') shows an action in progress that continued up to a past point."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_015",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word is closest in meaning to 'abridge'?",
+    "options": [
+      "expand",
+      "ignore",
+      "shorten",
+      "translate"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Abridge' means to shorten or condense a text; 'shorten' is the closest synonym among the options."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_016",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'Keep your nose to the grindstone,' what does the idiom mean?",
+    "options": [
+      "be curious about others",
+      "take frequent breaks",
+      "maintain good personal hygiene",
+      "work very hard and steadily"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom 'keep your nose to the grindstone' means to work hard and persistently; it refers to steady effort."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_017",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised version of: 'once upon a time in abuja, there lived a tailor.'",
+    "options": [
+      "Once upon a time in Abuja, there lived a tailor.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Capitals for sentence start and proper noun 'Abuja', comma after introductory place phrase is optional but option 1 is fully correct and ends with a period."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_018",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the second syllable: 'banana', 'apple', 'market', 'doctor'?",
+    "options": [
+      "apple",
+      "banana",
+      "market",
+      "doctor"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Banana' has primary stress on the second syllable (ba-NA-na); the others have stress on the first syllable."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_019",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "sounds/vowels",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: 'ship', 'sit', 'sip', 'sheep'?",
+    "options": [
+      "ship",
+      "sit",
+      "sheep",
+      "sip"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Sheep' has the long /iː/ vowel, while 'ship', 'sit' and 'sip' have the short /ɪ/ vowel; 'sheep' differs."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_020",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main speech function of: 'I can't make it on Friday; can we meet Monday?'",
+    "options": [
+      "refusing an invitation",
+      "giving a reason for absence",
+      "confirming a planned meeting",
+      "asking to reschedule a meeting"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The speaker cannot attend Friday and requests a different time; the primary function is to ask to reschedule."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_021",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'They will announce the results tomorrow.'",
+    "options": [
+      "The results will be announced tomorrow.",
+      "Tomorrow will announce the results.",
+      "The results were announced tomorrow.",
+      "The results will announce tomorrow."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Correct passive: 'The results will be announced tomorrow.' maintains future tense and places the object as subject."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_022",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "cloze",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete the conditional: 'If only he ____ earlier, he wouldn't be in trouble now.'",
+    "options": [
+      "calls",
+      "had called",
+      "would call",
+      "will call"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use third conditional for past regret affecting present: 'If only he had called earlier' expresses past action contrary to fact."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_023",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Read: 'The committee deferred the decision until further notice.' What is implied?",
+    "options": [
+      "The decision was rejected outright.",
+      "The decision was finalized in private.",
+      "The decision was postponed indefinitely.",
+      "The decision was passed to another group."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Deferred until further notice' implies postponement with no set date; it does not mean rejection or delegation."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_024",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "articles",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct article: 'He is ___ honourable man.'",
+    "options": [
+      "a",
+      "the",
+      "no article",
+      "an"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use 'an' before words beginning with a silent h (honourable) because the initial sound is a vowel; therefore 'an' is correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_025",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Grammar - Verb choice",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb form to complete: \"Either the manager or the assistants ____ responsible for the error.\"",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "be"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use singular verb with 'Either...or' when the nearer subject (assistants) is plural normally would take plural, but grammar guides often prefer agreement with the nearer noun; here formal preference is plural 'are'. However in this construction with 'Either the manager or the assistants' the correct singular/plural depends on nearest subject: since 'assistants' is plural the correct verb is 'are'. Explanation corrects to reflect nearest-subject agreement rule."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_026",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: \"By the time we arrived, the guests ____.\"",
+    "options": [
+      "have left",
+      "had left",
+      "left",
+      "will have left"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Use past perfect (had left) to show one past action completed before another past action; 'had left' precedes 'arrived'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_027",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Lexis / Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word is closest in meaning to 'sparse'?",
+    "options": [
+      "loud",
+      "lavish",
+      "thin",
+      "certain"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Sparse' means thinly distributed or scanty; 'thin' matches that semantic range whereas 'lavish' is the opposite and others unrelated."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_028",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms / Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In \"He spilled the beans during the meeting,\" what does 'spilled the beans' mean?",
+    "options": [
+      "dropped some plates",
+      "prepared a meal",
+      "watered the plants",
+      "confessed a secret"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom 'spill the beans' means to reveal a secret or disclose confidential information; context of meeting supports 'confessed a secret'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_029",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised version of: \"on saturday, mrs ade bought a new car from aso.\"",
+    "options": [
+      "On Saturday, Mrs Ade bought a new car from Aso.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Capitals for sentence start and proper names (On Saturday, Mrs Ade) and capitalisation for 'Aso' as a proper noun; commas after introductory adverbial optional but first option is conventional and correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_030",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the second syllable: 'around', 'market', 'memory', 'instant'?",
+    "options": [
+      "market",
+      "around",
+      "memory",
+      "instant"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Around' has primary stress on the second syllable (a-ROUND). The other words have primary stress on the first syllable (MAR-ket, MEM-o-ry, IN-stant). This tests syllable stress placement."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_031",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sounds - Vowel contrast",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: 'made', 'mate', 'maim', 'mat'?",
+    "options": [
+      "made",
+      "mate",
+      "mat",
+      "maim"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Made', 'mate' and 'maim' contain the /eɪ/ diphthong; 'mat' contains the short /æ/ vowel, so 'mat' differs by vowel quality."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_032",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main speech function of: \"Would you mind opening the window?\"",
+    "options": [
+      "offer",
+      "apology",
+      "complaint",
+      "request"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The form 'Would you mind...?' is a polite request asking someone to perform an action, not an offer, apology or complaint."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_033",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence transformation (passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: \"Someone stole the bicycle yesterday.\"",
+    "options": [
+      "The bicycle was stolen yesterday.",
+      "The bicycle stolen yesterday.",
+      "Yesterday was the bicycle stolen.",
+      "The bicycle is stolen yesterday."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Past simple passive uses 'was' + past participle: 'The bicycle was stolen yesterday.' Other options are ungrammatical or incorrect tense/form."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_034",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Cloze - Conditional",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: \"If she ____ harder last year, she would have passed.\"",
+    "options": [
+      "studied",
+      "had studied",
+      "were studying",
+      "would study"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Third conditional: past unreal in the past uses past perfect in the if-clause: 'If she had studied... she would have passed.' This contrasts completed past action and hypothetical result."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_035",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Samira left her umbrella at home. It started to rain and she waited under a shop's awning but reached home soaked. What is the most reasonable inference?",
+    "options": [
+      "The awning was made of fabric and absorbed water.",
+      "She preferred getting wet to carrying an umbrella.",
+      "She had no umbrella and got wet in the rain.",
+      "The shop owner refused her shelter."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Given she left her umbrella and later arrived soaked, the reasonable inference is lack of umbrella led to getting wet; other options add unsupported assumptions beyond text."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_036",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord with measures",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct verb: \"Five kilometres ____ a long walk for him.\"",
+    "options": [
+      "are",
+      "were",
+      "be",
+      "is"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Measurements used as a single distance are treated as singular subjects: 'Five kilometres is a long walk.' Rule: units of measurement as a whole take singular verb."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_037",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the chairman nor the members _____ aware of the amended schedule.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'neither...nor', verb agrees with the nearer subject 'members' (plural), so use 'are'. This is subject–verb proximity rule."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_038",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By 8 p.m. the students ______ their project for four hours.",
+    "options": [
+      "had worked on",
+      "had been working on",
+      "were working on",
+      "worked on"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Duration before a past reference uses past perfect continuous: 'had been working on' shows an action in progress up to a past time."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_039",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word is closest in meaning to 'perfunctory'?",
+    "options": [
+      "careful",
+      "enthusiastic",
+      "cursory",
+      "detailed"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Perfunctory' means done with minimal effort or attention; 'cursory' matches this, unlike 'careful' or 'detailed'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_040",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "idioms/registers",
+    "contentLabel": "Original exam-style practice",
+    "text": "In politics, to 'throw one's hat into the ring' most nearly means:",
+    "options": [
+      "criticise an opponent",
+      "withdraw from a race",
+      "celebrate a victory",
+      "announce one's candidacy"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The idiom means to enter a contest or declare candidacy; it does not mean to criticise, withdraw, or celebrate."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_041",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly capitalised sentence: 'on monday, chief adeoye visited the university of ibadan.'",
+    "options": [
+      "On Monday, Chief Adeoye visited the University of Ibadan.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Proper nouns, titles and days are capitalised: 'On Monday, Chief Adeoye visited the University of Ibadan.' is fully correct."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_042",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the second syllable: 'majority', 'teacher', 'market', 'library'?",
+    "options": [
+      "teacher",
+      "majority",
+      "market",
+      "library"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'majority' is stressed ma-JOR-i-ty (second syllable). 'teacher', 'market', 'library' have primary stress on the first syllable."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_043",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "sounds — vowel contrast",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel quality from the others: 'cat', 'cap', 'cart', 'cab'?",
+    "options": [
+      "cat",
+      "cap",
+      "cart",
+      "cab"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'cart' contains a long /ɑː/ or r-coloured vowel, while 'cat', 'cap', 'cab' use the short /æ/ vowel; thus 'cart' differs."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_044",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main speech function of: 'Don't forget to switch off the generator before you leave.'?",
+    "options": [
+      "a warning",
+      "an apology",
+      "a request for permission",
+      "a reminder"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "This sentence reminds someone to perform an action; it functions as a reminder rather than a warning, apology or permission-seeking."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_045",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "sentence transformation (passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct passive form of: 'They will hold the conference in Lagos next year.'",
+    "options": [
+      "The conference will be held in Lagos next year.",
+      "The conference will hold in Lagos next year.",
+      "Lagos will be held the conference next year.",
+      "The conference held will be in Lagos next year."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Active 'They will hold the conference' correctly becomes passive: 'The conference will be held in Lagos next year.' Other forms are ungrammatical."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_046",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "cloze — conditional",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: 'If I _____ you, I would accept the offer.'",
+    "options": [
+      "was",
+      "were",
+      "had been",
+      "am"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Present unreal conditional uses subjunctive 'were' for all persons: 'If I were you...' is the grammatically correct choice."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_047",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "reported speech",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct reported speech form of: 'Musa said, \"I will submit the essay tomorrow.\"'",
+    "options": [
+      "Musa said he will submit the essay tomorrow.",
+      "Musa said he has submitted the essay tomorrow.",
+      "Musa said he would submit the essay the next day.",
+      "Musa said he is going to submit the essay yesterday."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Backshift in reported speech changes 'will' to 'would' and 'tomorrow' to 'the next day': 'Musa said he would submit the essay the next day.'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_048",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Amina smiled and declined the compliment, saying, 'I just did what was needed.' What is the most likely tone?",
+    "options": [
+      "arrogant",
+      "hostile",
+      "bewildered",
+      "modest"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Declining a compliment while attributing success to duty suggests modesty; this fits 'modest' rather than arrogance, hostility, or bewilderment."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_049",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "The majority of the committee ____ in favour of the proposal.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "were"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "When 'majority of' refers to members, verb agrees with plural sense; use plural 'are'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_050",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense / Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By noon she ______ the report and sent it to her supervisor.",
+    "options": [
+      "has finished",
+      "had finished",
+      "finished",
+      "would finish"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Past perfect ('had finished') describes an action completed before another past time (by noon)."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_051",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Lexis / Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word is closest in meaning to 'tedious'?",
+    "options": [
+      "dangerous",
+      "short",
+      "boring",
+      "luxurious"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Tedious' denotes something dull or boring; semantic match is 'boring', not danger or brevity."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_052",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms / Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'He washed his hands of the matter,' 'washed his hands of' most nearly means:",
+    "options": [
+      "took full responsibility",
+      "commended the decision",
+      "compromised over details",
+      "refused further involvement"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Idiom 'wash one's hands of' means to refuse involvement or responsibility for something."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_053",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation / Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correctly punctuated and capitalised sentence for: 'at noon, dr. Olufemi arrived in abeokuta.'",
+    "options": [
+      "At noon, Dr. Olufemi arrived in Abeokuta.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Sentences start with a capital; titles 'Dr.' and proper noun 'Abeokuta' are capitalised; punctuation after 'Dr.' required."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_054",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has primary stress on the first syllable: 'clever', 'control', 'arrange', 'describe'?",
+    "options": [
+      "control",
+      "clever",
+      "arrange",
+      "describe"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Clever' has stress on the first syllable (CLE-ver); the others (con-TROL, a-RRANGE, de-SCRIBE) stress second syllable."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_055",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sounds (Vowels)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word has a different vowel sound from the others: ship, sheep, slip, sip?",
+    "options": [
+      "ship",
+      "slip",
+      "sheep",
+      "sip"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Sheep' has the long /iː/ vowel while 'ship', 'slip', 'sip' have the short /ɪ/ vowel; vowel quality differs."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_056",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the main speech function of: 'Would you mind closing the gate?'",
+    "options": [
+      "invitation",
+      "apology",
+      "refusal",
+      "request"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "This is a polite request form using 'Would you mind...?' to ask someone to perform an action."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_057",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence Transformation (Passive)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform to passive: 'The committee will approve the proposal tomorrow.' Which is correct?",
+    "options": [
+      "The proposal will be approved by the committee tomorrow.",
+      "Tomorrow the committee will be approved by the proposal.",
+      "The proposal will approve the committee tomorrow.",
+      "The proposal is approving the committee tomorrow."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Active 'will approve' becomes passive 'will be approved' with object promoted to subject and agent in 'by the committee'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_058",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Cloze / Conditional",
+    "contentLabel": "Original exam-style practice",
+    "text": "Complete: 'If I ____ earlier, I wouldn't have missed the exam.'",
+    "options": [
+      "woke up",
+      "had woken up",
+      "have woken up",
+      "would have woken up"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Third conditional requires past perfect in 'if' clause: 'had woken up' + result clause with 'would have'."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_059",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Short Interpretation (Inference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Rasheed hid his car keys in the house but the car would not start. He had left the battery disconnected for months. What is the most reasonable inference?",
+    "options": [
+      "The keys were the wrong ones.",
+      "The car's tyres were flat and stopped it from starting.",
+      "The battery was dead, preventing the car from starting.",
+      "He locked the doors and so the car refused to start."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Leaving a battery disconnected for months plausibly causes a dead battery; this explains failure to start by cause-and-effect inference."
+  },
+  {
+    "id": "JAMB_ENGLISH_LANGUAGE_2026_060",
+    "examType": "JAMB",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Articles",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the correct article: 'She became ___ editor of the magazine.'",
+    "options": [
+      "a",
+      "the",
+      "no article",
+      "an"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Before a noun beginning with vowel sound /ɛ/ (editor) use 'an'; rule: 'an' precedes vowel sounds for smooth pronunciation."
+  }
+]

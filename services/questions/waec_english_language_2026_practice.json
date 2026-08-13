@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_001",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the students or the teacher ___ responsible for the keys.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "has"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With 'either...or' the verb agrees with the nearest subject; 'teacher' is singular, so use 'is'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_002",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense/Aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time Funke arrived, they ___ already ___.",
+    "options": [
+      "have left",
+      "had left",
+      "left",
+      "were leaving"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Past perfect ('had left') shows an action completed before another past action; present perfect does not fit sequence."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_003",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Lexis/Semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The examiners found his answer to be succinct and ___.",
+    "options": [
+      "prolix",
+      "verbose",
+      "trenchant",
+      "longwinded"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Trenchant' means incisive and effective; 'prolix', 'verbose' and 'longwinded' mean wordy and contrast with 'succinct'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_004",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which phrase is most appropriate in a formal application letter: 'I am writing to ___ my interest in the position'.",
+    "options": [
+      "tell",
+      "show off",
+      "brag",
+      "express"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "In formal writing use 'express my interest'; 'tell', 'show off' and 'brag' are informal or inappropriate for applications."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_005",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation/Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the sentence with correct capitalization: my uncle visited Accra last summer.",
+    "options": [
+      "My uncle visited Accra last summer.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Proper nouns like 'Accra' are capitalised; common nouns like 'uncle' and seasons like 'summer' are not, so option two is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_006",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable carries the primary stress in the word 'photograph'?",
+    "options": [
+      "second syllable",
+      "first syllable",
+      "third syllable",
+      "no primary stress"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Photograph' is stressed on the first syllable: PHO-to-graph; English words have identifiable primary stress patterns."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_007",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence Transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: She said, 'I will finish the report tomorrow.' Choose the correct indirect form.",
+    "options": [
+      "She said that she will finish the report tomorrow.",
+      "She said she finished the report tomorrow.",
+      "She said she would finish the report the next day.",
+      "She said she is finishing the report tomorrow."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Report-verb in past requires backshifting: 'will' → 'would' and time 'tomorrow' changes to 'the next day' in indirect speech."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_008",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Cloze/Function Words",
+    "contentLabel": "Original exam-style practice",
+    "text": "There was not ___ sugar left, so Amina went to the market.",
+    "options": [
+      "some",
+      "many",
+      "few",
+      "any"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "In negative contexts use 'any' with uncountable nouns: 'not any sugar' is correct; 'some' is usually for positives."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_009",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech Functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Friend: 'Would you like to join us for a movie tonight?' Which reply politely accepts and confirms time?",
+    "options": [
+      "I would love to; what time?",
+      "No, I am not.",
+      "Maybe tomorrow?",
+      "I have seen that film last week."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A polite acceptance includes enthusiasm and a follow-up question: 'I would love to; what time?' other options decline or are irrelevant."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_010",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Short Interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: The community well ran dry within a month of the drought. What is the most likely effect on the community?",
+    "options": [
+      "Improved crop yields",
+      "Increased travel to fetch water",
+      "Decreased need for water",
+      "Less disease in the area"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "If the local water source dries up, residents are likely to travel farther to obtain water; other options contradict expected outcomes."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_011",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord (Subject-Verb Agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Neither the manager nor the employees ___ willing to sign the new contract.",
+    "options": [
+      "is",
+      "was",
+      "are",
+      "were"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "With 'neither...nor' the verb agrees with the nearer subject. 'Employees' is plural, so use 'are'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_012",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense and Aspect (Future Perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By lunchtime, Kemi ___ the first chapter of the novel.",
+    "options": [
+      "will finish",
+      "had finished",
+      "has finished",
+      "will have finished"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use the future perfect ('will have finished') to show an action completed before a specified future time."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_013",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Lexis/Semantics (Word Choice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "The manager's comment was meant to be __________, not insulting.",
+    "options": [
+      "constructive",
+      "construct",
+      "constructively",
+      "constructed"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "An adjective ('constructive') is needed to describe 'comment'. Other forms are verb, adverb or participle and do not fit."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_014",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms and Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which phrase is most appropriate in a formal report to mean 'make fundamental changes'?",
+    "options": [
+      "turn over a new leaf",
+      "overhaul",
+      "shake things up",
+      "go back to square one"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Overhaul' is formal and fits reports; the other options are informal idioms or mean different things."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_015",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation and Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "in 1994 the committee recommended Dr. Alabi for the award.",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "In 1994 the committee recommended Dr. Alabi for the award.",
+      "In 1994 the committee recommended doctor Alabi for the award."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Sentences begin with a capital letter; titles use correct form 'Dr.' and surnames are capitalised; 'award' need not be capitalised."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_016",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word Stress (Phonology)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which of these words has primary stress on the third syllable: university, computer, national, dimension.",
+    "options": [
+      "computer",
+      "national",
+      "dimension",
+      "university"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'university' has primary stress on the third syllable (u-ni-VER-si-ty). The others have stress earlier in the word."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_017",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech Functions (Polite Response)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Friend: 'Could you send me the minutes by 5 pm?' Which reply most politely accepts and confirms the time?",
+    "options": [
+      "Yes, I'll email them before five.",
+      "No, I won't be able to.",
+      "I'll think about it later.",
+      "Why don't you check the archive?"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A polite acceptance uses agreement and a clear time: 'I'll email them before five' confirms willingness and the deadline."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_018",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence Transformation (Reported Speech)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: She said, 'I don't know where the keys are.' Choose the correct indirect form.",
+    "options": [
+      "She said that she doesn't know where the keys are.",
+      "She said that she didn't know where the keys were.",
+      "She said she had not known where the keys are.",
+      "She said she won't know where the keys were."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In reported speech present becomes past: 'don't know' → 'didn't know', and 'are' becomes 'were' to match backshift rules."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_019",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Cloze (Conditional Structures)",
+    "contentLabel": "Original exam-style practice",
+    "text": "If the trains ___ on time tomorrow, we will arrive early.",
+    "options": [
+      "runs",
+      "will run",
+      "run",
+      "ran"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "First conditional requires present simple in the 'if' clause and future in the main clause: 'If the trains run... we will...'."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_020",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Short Interpretation (Inference)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Adenike turned down the invitation to the party, saying she had an early clinic appointment the next morning. Most likely reason Adenike refused the invitation?",
+    "options": [
+      "She wanted to save money for travel.",
+      "She disliked the host and avoided the party.",
+      "She had already made other social plans.",
+      "She had a medical appointment and needed rest."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A 'clinic appointment' implies a medical or health-related reason, so the most likely inference is a health-related need for rest."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_021",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "The team of volunteers ___ ready to help after the flood.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Collective noun 'team' is treated as a single unit here, so singular verb 'is' is required."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_022",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "tense/aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time the president spoke, the committee ___ its report.",
+    "options": [
+      "has finalised",
+      "had finalised",
+      "finalised",
+      "will have finalised"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Past perfect ('had finalised') indicates the committee completed the report before the later past event (the president speaking)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_023",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "lexis/semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The candidate's argument was coherent and ___.",
+    "options": [
+      "persuaded",
+      "persuasive-ness",
+      "persuasive",
+      "persuading"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Parallel adjectives are required: 'coherent and persuasive' pairs two adjectives; other options are incorrect word forms."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_024",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "idioms/register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which phrase is most appropriate in a formal reference letter to describe a reliable worker?",
+    "options": [
+      "kinda trustworthy",
+      "oddly dependable",
+      "sort of reliable",
+      "of unimpeachable integrity"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Formal register requires a precise formal phrase; 'of unimpeachable integrity' is suitably formal and positive unlike the informal options."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_025",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "punctuation/capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the sentence with correct capitalization: \"at the seminar, Professor Nnamani discussed 'climate policy in central ghaNa'.\"",
+    "options": [
+      "At the seminar, Professor Nnamani discussed 'Climate Policy in Central Ghana'.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Sentence-initial word, title words and proper nouns must be capitalised: 'At', title case for report, and 'Ghana' as a proper noun."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_026",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable carries the primary stress in the word 'department'?",
+    "options": [
+      "First",
+      "Second",
+      "Third",
+      "Fourth"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In 'department' the stress falls on the second syllable: de-PART-ment. This is the correct stressed syllable placement."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_027",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "phonetics/sounds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word rhymes with 'cut'?",
+    "options": [
+      "coat",
+      "cart",
+      "hut",
+      "cute"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'Cut' and 'hut' share the short /ʌ/ vowel sound and end rhyme; the other options have different vowel sounds."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_028",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "speech functions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Friend: 'Could you lend me your science notes for tonight?' Which reply politely accepts and confirms the return time?",
+    "options": [
+      "No, I can't, I'm using them.",
+      "Maybe, if you ask Kemi.",
+      "Yes, take them whenever.",
+      "Sure, I'll bring them — I'll need them back tomorrow morning."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Option A both accepts politely ('Sure') and specifies a clear return time, meeting the request appropriately; others refuse, hedge, or give no confirmation."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_029",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "sentence transformation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: She said, 'I must finish the project by Monday.' Choose the correct indirect form.",
+    "options": [
+      "She said that she had to finish the project by Monday.",
+      "She said that she must finish the project by Monday.",
+      "She said she will finish the project by Monday.",
+      "She said she finishes the project by Monday."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "In reported speech, 'must' usually backshifts to 'had to' when the reporting verb is in the past, so option with 'had to' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_030",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "cloze/short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: After the new bypass opened, fewer vehicles passed through the market street each day. Which is the most likely effect on stall owners in the market street?",
+    "options": [
+      "They employed more staff to serve extra customers.",
+      "They sold fewer goods and received less income.",
+      "They raised prices because demand increased.",
+      "They opened additional stalls along the bypass."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Reduced passing traffic normally lowers customer footfall, so stall owners are most likely to sell less and earn less income; other options contradict lower demand."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_031",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord (subject-verb agreement)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Either the governor or the delegates ___ expected to arrive before noon.",
+    "options": [
+      "is",
+      "was",
+      "are",
+      "be"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "With 'either...or' the verb agrees with the nearer subject ('delegates' plural), so use 'are' for agreement with plural subject."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_032",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense/Aspect (past perfect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "By the time Aisha reached the station, the bus ___.",
+    "options": [
+      "left",
+      "will have left",
+      "was leaving",
+      "had left"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use past perfect ('had left') to show one past action (bus leaving) occurred before another past action (Aisha reached)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_033",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Lexis/Semantics (word meaning)",
+    "contentLabel": "Original exam-style practice",
+    "text": "In the sentence 'The lawyer's tenacious approach persuaded the judge,' the word 'tenacious' most nearly means:",
+    "options": [
+      "persistent",
+      "careless",
+      "indifferent",
+      "talkative"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Tenacious' means holding firmly or persistent; it contrasts with careless or indifferent, so 'persistent' is correct."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_034",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms/Register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence uses the idiom 'hit the ground running' correctly?",
+    "options": [
+      "After the long holiday, he wanted to hit the ground running and relax for a week.",
+      "On her first day at work she hit the ground running and completed three important tasks.",
+      "He hit the ground running by arriving late to the orientation meeting.",
+      "The coach told the players to hit the ground running while they were sitting down."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Hit the ground running' means begin an activity energetically and effectively; only option B shows energetic, immediate effective action."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_035",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation / Capitalisation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the sentence with correct capitalization: 'last month, Dr. Sani presented his paper at the University of Ilorin.'",
+    "options": [
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "Last month, Dr. Sani presented his paper at the University of Ilorin.",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Capitalize the first word of a sentence and proper nouns ('Dr.', 'Sani', 'University of Ilorin'); only option 2 follows these rules."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_036",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word Stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable carries the primary stress in the word 'geography'?",
+    "options": [
+      "first syllable",
+      "third syllable",
+      "fourth syllable",
+      "second syllable"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'Geography' is stressed on the second syllable: ge-OG-ra-phy (pronounced /dʒiˈɒɡrəfi/), so the second syllable carries primary stress."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_037",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech Functions (polite refusal with alternative)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Friend: 'Would you like to attend the award ceremony on Friday?' Which reply politely declines and offers an alternative?",
+    "options": [
+      "I can't make it on Friday, but I could attend on Saturday evening if that helps.",
+      "No, I won't come; you go without me.",
+      "Sure, I'll be there and I'll bring snacks.",
+      "Maybe; I'll tell you later."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Option A politely declines ('I can't make it') and offers an alternative time, which is appropriate for polite refusal with suggestion."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_038",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence Transformation (reported speech)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: He said, 'I will not sign the document unless the errors are corrected.' Choose the correct indirect form.",
+    "options": [
+      "He said that he will not sign the document unless the errors are corrected.",
+      "He said that he would not sign the document unless the errors were corrected.",
+      "He said that he would not sign the document unless the errors are corrected.",
+      "He said that he will not sign the document unless the errors were corrected by then."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In reported speech, 'will' backshifts to 'would' and present tense 'are' backshifts to 'were'; option B correctly applies both shifts."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_039",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Cloze-style (verb choice)",
+    "contentLabel": "Original exam-style practice",
+    "text": "When the power failed, we ___ to the backup generator immediately.",
+    "options": [
+      "had switched",
+      "will switch",
+      "switched",
+      "switch"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The power failure and switching happened as a completed past action, so simple past 'switched' is correct; past perfect is unnecessary."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_040",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Short Interpretation (cause and effect)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: The town installed speed bumps along the main road after several accidents. What is the most likely effect on traffic speed?",
+    "options": [
+      "Traffic will increase because drivers prefer speed bumps.",
+      "Drivers will ignore speed limits and speed up.",
+      "Accident rates will immediately rise.",
+      "Motorists will drive more slowly along that road."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Speed bumps are designed to slow vehicles; the most likely effect is motorists driving more slowly, reducing speed-related accidents."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_041",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Concord",
+    "contentLabel": "Original exam-style practice",
+    "text": "The pair of gloves on the bench ___ hers.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Rule: 'pair' is a singular noun phrase functioning as the subject, so use the singular verb 'is' rather than plural forms."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_042",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Tense and aspect",
+    "contentLabel": "Original exam-style practice",
+    "text": "By dusk, the rescue team ___ the stranded hikers.",
+    "options": [
+      "located",
+      "had located",
+      "have located",
+      "will locate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Marking scheme: Use past perfect ('had located') to show an action completed before another past time (by dusk)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_043",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Lexis / semantics",
+    "contentLabel": "Original exam-style practice",
+    "text": "In 'The archivist published an exposé of the firm's practices', the word 'exposé' most nearly means:",
+    "options": [
+      "a musical performance",
+      "a formal complaint",
+      "a revealing report",
+      "a private letter"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Vocabulary rule: 'exposé' denotes a report that reveals wrongdoing or hidden facts, not a performance or private correspondence."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_044",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Idioms / register",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which sentence correctly uses the idiom 'cutting corners'?",
+    "options": [
+      "The chef is cutting corners with fresh vegetables.",
+      "She cut a corner while running to the bus.",
+      "The tailor is cutting corners to make a neat finish.",
+      "To save money, they started cutting corners on safety checks."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Idiom meaning: 'cutting corners' means doing something cheaply or hastily to save time or money; option A uses it figuratively about safety checks."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_045",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Punctuation / capitalization",
+    "contentLabel": "Original exam-style practice",
+    "text": "Choose the sentence with correct capitalization: 'next spring, Dr. Musa will present at the African Climate Forum.'",
+    "options": [
+      "Next spring, Dr. Musa will present at the African Climate Forum.",
+      "The stated rule does not apply in this context",
+      "A different grammatical construction is required",
+      "The sentence has no acceptable completion here"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Capitalization rules: Sentence-initial word and titles ('Dr.'), plus proper nouns ('African Climate Forum') must be capitalised; option 2 follows these rules."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_046",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Word stress",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which syllable carries the primary stress in the word 'commission'?",
+    "options": [
+      "first syllable",
+      "second syllable",
+      "third syllable",
+      "fourth syllable"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Pronunciation rule: 'commission' is pronounced /kəˈmɪʃən/, with primary stress on the second syllable (com-MIS-sion)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_047",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sound — rhyme",
+    "contentLabel": "Original exam-style practice",
+    "text": "Which word rhymes with 'tame'?",
+    "options": [
+      "time",
+      "team",
+      "game",
+      "tomb"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Phonology: 'tame' and 'game' share the same vowel (/eɪ/) and final consonant sound, so they rhyme; the others have different vowel sounds."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_048",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Speech function — polite refusal",
+    "contentLabel": "Original exam-style practice",
+    "text": "Friend: 'Would you like to join us for the debate competition on Saturday evening?' Which reply politely declines and offers an alternative?",
+    "options": [
+      "No, I won't be able to come.",
+      "Can't, too busy.",
+      "Yes, I will join you on Saturday.",
+      "Thanks, but I have another plan; perhaps we can practise on Sunday?"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Pragmatics: A polite refusal should thank or acknowledge, decline clearly, and offer an alternative (option 2 does all three)."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_049",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Sentence transformation (reported speech)",
+    "contentLabel": "Original exam-style practice",
+    "text": "Transform: She said, 'I have been teaching here since 2010.' Choose the correct reported form.",
+    "options": [
+      "She said that she had been teaching there since 2010.",
+      "She said that she has been teaching here since 2010.",
+      "She said she would been teaching there since 2010.",
+      "She said that she will have been teaching there since 2010."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Reported speech rule: Present perfect continuous backshifts to past perfect continuous ('had been teaching') and 'here' changes to 'there' in indirect speech."
+  },
+  {
+    "id": "WAEC_ENGLISH_LANGUAGE_2026_050",
+    "examType": "WAEC",
+    "subject": "English Language",
+    "year": "2026",
+    "topic": "Mini-passage — short interpretation",
+    "contentLabel": "Original exam-style practice",
+    "text": "Mini-passage: New streetlights were installed along the market road. Shoplifting incidents fell by half in the following months. What is the most likely reason?",
+    "options": [
+      "Vendors decided to close earlier.",
+      "Better visibility deterred potential thieves.",
+      "Streetlights made customers stay away.",
+      "Police presence had decreased."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Inference rule: Improved lighting increases visibility and surveillance, which deters opportunistic theft; this direct cause best explains the drop in incidents."
+  }
+]
