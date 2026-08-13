@@ -1,0 +1,852 @@
+[
+  {
+    "id": "JAMB_CHEMISTRY_2023_001",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: what is the relative formula mass of nitric acid, HNO3? [H=1, N=14, O=16]",
+    "options": [
+      "63",
+      "47",
+      "62",
+      "64"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The formula mass is 1 for hydrogen plus 14 for nitrogen plus 3 x 16 for oxygen, giving 63. Each element must be counted according to its subscript in the formula. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_002",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: how many moles are in 4.0 g of sodium hydroxide? [Na=23, O=16, H=1]",
+    "options": [
+      "0.05 mol",
+      "0.10 mol",
+      "0.20 mol",
+      "0.40 mol"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The molar mass of sodium hydroxide is 23 + 16 + 1 = 40 g mol-1. Moles equal mass divided by molar mass, so 4.0/40 = 0.10 mol. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_003",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: what amount of carbon dioxide is present in 22 g of CO2? [C=12, O=16]",
+    "options": [
+      "0.25 mol",
+      "0.40 mol",
+      "0.50 mol",
+      "1.00 mol"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Carbon dioxide has a molar mass of 12 + 2(16) = 44 g mol-1. Therefore 22 g represents 22/44 = 0.50 mol of carbon dioxide. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_004",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: what volume does 0.25 mol of an ideal gas occupy at STP? [Molar volume = 22.4 dm3 mol-1]",
+    "options": [
+      "2.8 dm3",
+      "11.2 dm3",
+      "22.4 dm3",
+      "5.6 dm3"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Gas volume at STP equals amount multiplied by molar volume. Thus 0.25 x 22.4 = 5.6 dm3. The other values correspond to different amounts of gas. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_005",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Atoms, molecules and stoichiometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: isotopes of an element have the same",
+    "options": [
+      "number of protons",
+      "number of neutrons",
+      "mass number",
+      "number of nucleons"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Isotopes are atoms of the same element, so they have the same atomic number and hence the same number of protons. They differ in neutron number and therefore in mass number. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_006",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which electron arrangement belongs to chlorine?",
+    "options": [
+      "2,7",
+      "2,8,7",
+      "2,8,8",
+      "2,8,1"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Chlorine has atomic number 17, so its electrons are arranged 2 in the first shell, 8 in the second, and 7 in the outer shell. This explains its tendency to gain one electron. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_007",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: an element in Group 2 has how many electrons in its outer shell?",
+    "options": [
+      "1",
+      "7",
+      "2",
+      "8"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "For main-group elements, the group number indicates the number of valence electrons. A Group 2 atom has two outer-shell electrons and commonly forms a 2+ ion by losing them. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_008",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: an element in Period 4 has how many occupied electron shells?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The period number gives the number of electron shells occupied in the ground-state atom. Therefore, a Period 4 element has four occupied shells. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_009",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Atomic structure and periodicity",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: which of the following is a halogen?",
+    "options": [
+      "Bromine",
+      "Calcium",
+      "Aluminium",
+      "Neon"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Bromine is a Group 17 halogen. Calcium is an alkaline-earth metal, aluminium is a metal in Group 13, and neon is a noble gas with a full outer electron shell. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_010",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which compound contains both ionic and covalent bonding?",
+    "options": [
+      "NaCl",
+      "NH4Cl",
+      "CH4",
+      "MgO"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ammonium chloride has ionic attraction between NH4+ and Cl- ions, while the N-H bonds within ammonium are covalent. NaCl and MgO are mainly ionic, and methane is covalent. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_011",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: which structure has each carbon atom bonded to four other atoms in a giant network?",
+    "options": [
+      "Graphite",
+      "Sodium chloride",
+      "Diamond",
+      "Iodine"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In diamond, every carbon atom forms four strong covalent bonds in a three-dimensional giant structure. This arrangement makes diamond exceptionally hard and prevents it from conducting electricity. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_012",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: which molecule has a linear shape?",
+    "options": [
+      "H2O",
+      "NH3",
+      "CH4",
+      "CO2"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Carbon dioxide has two regions of electron density around the central carbon and no lone pairs, producing a linear molecule. Water is bent, ammonia is trigonal pyramidal, and methane is tetrahedral. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_013",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Chemical bonding",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: why is sodium chloride brittle?",
+    "options": [
+      "Shifting layers bring like charges together",
+      "Its ions are too small to move",
+      "It contains weak molecules only",
+      "It melts at room temperature"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "When layers of an ionic crystal are forced to shift, ions of the same charge can become adjacent. Their strong repulsion causes the lattice to split, giving ionic solids their brittle nature. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_014",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which change releases heat to the surroundings?",
+    "options": [
+      "Melting",
+      "Freezing",
+      "Evaporation",
+      "Sublimation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Freezing converts a liquid to a more ordered solid and releases latent heat to the surroundings. Melting, evaporation and sublimation require heat input to overcome attractive forces. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_015",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: when a gas is compressed at constant temperature, the decrease in volume occurs because",
+    "options": [
+      "the molecules become larger",
+      "the molecules stop moving",
+      "the spaces between particles decrease",
+      "new particles are created"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Gas particles are widely spaced, so compression mainly reduces the empty space between them. Their sizes and number do not change, and they continue moving at the same average kinetic energy when temperature is constant. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_016",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: the direct conversion of a gas to a solid is called",
+    "options": [
+      "vaporisation",
+      "melting",
+      "sublimation",
+      "deposition"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Deposition is the direct change from gas to solid, as in frost formation. Sublimation is the reverse process, from solid directly to gas, while melting is solid to liquid. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_017",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "States of matter",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: at the same temperature, which gas diffuses fastest?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Chlorine",
+      "Carbon dioxide"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "According to Graham's law, lighter gases diffuse faster than heavier gases at the same temperature. Hydrogen has the lowest relative molecular mass among the options and therefore diffuses fastest. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_018",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which statement is true for an exothermic reaction?",
+    "options": [
+      "The products have higher enthalpy than reactants",
+      "The products have lower enthalpy than reactants",
+      "The reaction absorbs heat overall",
+      "Activation energy is zero"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An exothermic reaction releases energy, so the products lie at lower enthalpy than the reactants. A reaction can still require activation energy even if the overall enthalpy change is negative. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_019",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: increasing the pressure of reacting gases generally increases rate because it",
+    "options": [
+      "decreases particle number",
+      "reduces collision frequency",
+      "brings particles closer together",
+      "lowers the activation energy permanently"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Increasing gas pressure places particles in a smaller volume, so they collide more frequently. It does not itself change the activation energy or remove reactant particles. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_020",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: what is the effect of a catalyst on the enthalpy change of a reaction?",
+    "options": [
+      "It makes it more positive",
+      "It makes it zero",
+      "It reverses the sign",
+      "It does not change it"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A catalyst changes the pathway and lowers activation energy, but the enthalpy difference between the same reactants and products remains unchanged. Energy is a state function and does not depend on the route taken. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_021",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Energy and rates of reaction",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: which action would slow the reaction between marble chips and dilute hydrochloric acid?",
+    "options": [
+      "Cooling the mixture",
+      "Using powdered marble",
+      "Using a more concentrated acid",
+      "Stirring the mixture"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Cooling reduces particle kinetic energy and the proportion of collisions with enough energy to react. Powdering, increasing acid concentration and stirring generally increase the rate under comparable conditions. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_022",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: a solution with pH 11 is",
+    "options": [
+      "strongly acidic",
+      "alkaline",
+      "neutral",
+      "always a salt solution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A pH value above 7 at 25 degrees Celsius indicates an alkaline solution. A pH of 11 has a relatively low hydrogen-ion concentration and higher hydroxide-ion concentration than neutral water. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_023",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: which substance can act as both a proton donor and a proton acceptor?",
+    "options": [
+      "HCl",
+      "NaOH",
+      "HCO3-",
+      "NaCl"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Hydrogencarbonate ion can donate a proton to form carbonate ion or accept a proton to form carbonic acid. Such species are amphiprotic. Hydrochloric acid is mainly a donor, while sodium chloride is not amphiprotic. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_024",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: adding more reactant to a system at equilibrium generally causes the equilibrium to shift toward",
+    "options": [
+      "the added reactant only",
+      "the catalyst",
+      "lower pressure always",
+      "the products"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "By Le Chatelier's principle, adding a reactant disturbs equilibrium and the system tends to consume some of the added reactant by favouring the forward reaction, shifting toward products. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_025",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Equilibrium and acids-bases",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: which is a weak acid?",
+    "options": [
+      "Ethanoic acid",
+      "Hydrochloric acid",
+      "Nitric acid",
+      "Sulfuric acid"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ethanoic acid ionises only partly in water and is a weak acid. Hydrochloric, nitric and sulfuric acids are strong acids in their first ionisation stage under ordinary aqueous conditions. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_026",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which change represents oxidation?",
+    "options": [
+      "Cu2+ to Cu",
+      "Fe2+ to Fe3+",
+      "Cl2 to Cl-",
+      "H+ to H2"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Iron(II) changing to iron(III) loses one electron, increasing its oxidation number from +2 to +3. The other examples involve gain of electrons or reduction under the stated conditions. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_027",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: which is the correct half-equation for reduction of copper(II) ions?",
+    "options": [
+      "Cu to Cu2+ + 2e-",
+      "2Cl- to Cl2 + 2e-",
+      "Cu2+ + 2e- to Cu",
+      "Zn to Zn2+ + 2e-"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Reduction is gain of electrons. Copper(II) ions gain two electrons to become copper metal: Cu2+ + 2e- -> Cu. The other half-equations describe oxidation. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_028",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: in electrolysis of acidified water, hydrogen is produced at the",
+    "options": [
+      "anode",
+      "salt bridge",
+      "positive electrode only",
+      "cathode"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Hydrogen ions gain electrons at the cathode to form hydrogen gas. The cathode is the site of reduction, while oxygen is formed at the anode from oxidation of water or hydroxide ions. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_029",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Redox and electrochemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: which statement describes an oxidising agent?",
+    "options": [
+      "It accepts electrons",
+      "It donates electrons",
+      "It is always a metal",
+      "It is unchanged in a reaction"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "An oxidising agent accepts electrons from another species and is itself reduced. By accepting electrons it causes the other species to be oxidised. It need not be a metal. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_030",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which hydrocarbon has molecular formula C3H6?",
+    "options": [
+      "Propane",
+      "Propene",
+      "Propyne",
+      "Methane"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An alkene has the general formula CnH2n. With three carbon atoms, the formula is C3H6, which is propene. Propane is C3H8 and propyne is C3H4. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_031",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: what is the main product of complete combustion of ethanol?",
+    "options": [
+      "Carbon and water",
+      "Carbon monoxide and water only",
+      "Carbon dioxide and water",
+      "Hydrogen and oxygen"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Complete combustion in sufficient oxygen converts the carbon in ethanol to carbon dioxide and the hydrogen to water. Carbon monoxide and soot form only when combustion is incomplete. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_032",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: which reagent is used to oxidise ethanol to ethanoic acid in the laboratory?",
+    "options": [
+      "Bromine water",
+      "Dilute sodium hydroxide",
+      "Sodium chloride solution",
+      "Acidified potassium manganate(VII)"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Acidified potassium manganate(VII) is a strong oxidising agent that can oxidise a primary alcohol such as ethanol to ethanoic acid. Bromine water is mainly used for unsaturation tests. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_033",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: which monomer forms poly(chloroethene)?",
+    "options": [
+      "Chloroethene",
+      "Ethene",
+      "Propene",
+      "Chloroethane"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Poly(chloroethene), commonly called PVC, forms by addition polymerisation of chloroethene molecules. Chloroethane has no double bond for addition polymerisation, while ethene and propene form other polymers. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_034",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Organic chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which substance is used to test for an unsaturated hydrocarbon?",
+    "options": [
+      "Limewater",
+      "Bromine water",
+      "Acidified silver nitrate",
+      "Biuret reagent"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An unsaturated hydrocarbon containing a carbon-carbon double bond reacts with bromine water, removing its orange-brown colour. Limewater tests carbon dioxide, while the other reagents are used for different tests. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_035",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: which metal can displace copper from copper(II) sulfate solution?",
+    "options": [
+      "Silver",
+      "Gold",
+      "Zinc",
+      "Platinum"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Zinc is more reactive than copper and loses electrons more readily, so it displaces copper from copper(II) sulfate solution. Silver, gold and platinum are less reactive than copper and cannot make this displacement. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_036",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: which oxide is acidic?",
+    "options": [
+      "Magnesium oxide",
+      "Sodium oxide",
+      "Calcium oxide",
+      "Sulfur dioxide"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Sulfur dioxide is a non-metal oxide that forms acids in water and reacts with alkalis, so it is acidic. Magnesium, sodium and calcium oxides are basic metal oxides. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_037",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: brass is an alloy of copper and",
+    "options": [
+      "zinc",
+      "tin",
+      "iron",
+      "aluminium"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Brass is mainly an alloy of copper and zinc. Bronze is mainly copper and tin. Alloys often have improved hardness or corrosion resistance compared with pure metals. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_038",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Metals and non-metals",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which method prevents rusting by coating iron with a layer of plastic?",
+    "options": [
+      "Electrolysis",
+      "Painting",
+      "Cracking",
+      "Distillation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Painting or plastic coating prevents oxygen and water from reaching iron, thereby stopping the electrochemical conditions required for rusting. Electrolysis, cracking and distillation are different processes. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_039",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: which fraction of crude oil has the lowest boiling range?",
+    "options": [
+      "Bitumen",
+      "Diesel",
+      "Petrol",
+      "Lubricating oil"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Petrol consists of relatively small hydrocarbon molecules and has a lower boiling range than diesel, lubricating oil and bitumen. In fractional distillation it condenses higher in the column than the heavier fractions. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_040",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: the raw material that supplies nitrogen in the Haber process is",
+    "options": [
+      "Water",
+      "Natural gas only",
+      "Limestone",
+      "Air"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Nitrogen is obtained from air, commonly by fractional distillation of liquid air. Hydrogen is obtained from natural gas or water-related processes, while limestone is not the nitrogen source in Haber synthesis. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_041",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: which process converts large hydrocarbon molecules into smaller, more useful molecules?",
+    "options": [
+      "Cracking",
+      "Polymerisation",
+      "Hydrogenation",
+      "Neutralisation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Cracking breaks long-chain hydrocarbon molecules into shorter alkanes and alkenes. It helps meet demand for fuels such as petrol and produces alkenes for polymer manufacture. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_042",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which chemical is added to soil to increase its pH when the soil is too acidic?",
+    "options": [
+      "Ammonium sulfate",
+      "Calcium carbonate",
+      "Nitric acid",
+      "Sulfur dioxide"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Calcium carbonate, often applied as lime, neutralises acidic soil and raises its pH. Ammonium sulfate can make soil more acidic, while nitric acid and sulfur dioxide are acidic rather than corrective. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_043",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: a solution gives a brick-red precipitate with Fehling's solution on warming. It likely contains a",
+    "options": [
+      "carboxylic acid",
+      "chloride ion",
+      "reducing sugar or aldehyde",
+      "sulfate ion"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Reducing sugars and aldehydes reduce blue copper(II) ions in Fehling's solution to brick-red copper(I) oxide on warming. Chloride and sulfate ions do not give this test. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_044",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: which observation confirms the presence of water in a sample?",
+    "options": [
+      "Limewater turns milky",
+      "A glowing splint relights",
+      "Bromine water decolourises",
+      "Damp blue cobalt chloride paper turns pink"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Blue cobalt chloride paper turns pink in the presence of water. Limewater tests carbon dioxide, a glowing splint tests oxygen, and bromine water is commonly used to test unsaturation. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_045",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: what is the appropriate first separation method for a mixture of sand and water?",
+    "options": [
+      "Filtration",
+      "Distillation",
+      "Crystallisation",
+      "Chromatography"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Sand is insoluble in water, so filtration retains the sand as residue while water passes through as filtrate. Distillation would be unnecessary as an initial method and the other techniques are unsuitable for this insoluble mixture. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_046",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which gas produces a white precipitate with aqueous silver nitrate?",
+    "options": [
+      "Oxygen",
+      "Hydrogen chloride",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hydrogen chloride dissolves in water to provide chloride ions, which react with silver nitrate to form white silver chloride. Oxygen, carbon dioxide and nitrogen do not produce this chloride precipitate. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_047",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "A candidate preparing for 2023 JAMB answers this Chemistry practice question: which apparatus is most suitable for heating a small volume of liquid strongly?",
+    "options": [
+      "Volumetric flask",
+      "Measuring cylinder",
+      "Test tube",
+      "Burette"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A test tube is designed to hold and heat small amounts of liquid, using a test-tube holder for safety. Volumetric flasks and measuring cylinders are for accurate volumes, while a burette is for titration delivery. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_048",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a 2023 JAMB Chemistry revision session, determine this: a green precipitate formed with sodium hydroxide is characteristic of",
+    "options": [
+      "Cu2+",
+      "Fe3+",
+      "Al3+",
+      "Fe2+"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Iron(II) ions form a green precipitate of iron(II) hydroxide with aqueous sodium hydroxide. Copper(II) gives blue, iron(III) gives reddish-brown, and aluminium gives white precipitates. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_049",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Qualitative analysis",
+    "contentLabel": "Original exam-style practice",
+    "text": "For 2023 JAMB-oriented practice, answer the following Chemistry item: what is the purpose of a condenser in a distillation apparatus?",
+    "options": [
+      "To cool vapour into liquid",
+      "To heat the liquid",
+      "To measure temperature",
+      "To filter the mixture"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A condenser removes heat from vapour so that it changes back into liquid distillate. Heating is performed by the heat source, and filtering or measuring temperature are separate operations. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  },
+  {
+    "id": "JAMB_CHEMISTRY_2023_050",
+    "examType": "JAMB",
+    "subject": "Chemistry",
+    "year": "2023",
+    "topic": "Environmental and industrial chemistry",
+    "contentLabel": "Original exam-style practice",
+    "text": "For a 2023 JAMB-style Chemistry revision exercise, consider this item: which action best reduces the release of sulfur dioxide from a coal-fired power station?",
+    "options": [
+      "Adding more sulfur to the fuel",
+      "Using low-sulfur fuel or flue-gas desulfurisation",
+      "Cooling the chimney only",
+      "Increasing carbon monoxide emission"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Using lower-sulfur fuel or removing sulfur dioxide from exhaust gases reduces emissions that contribute to acid rain. Adding sulfur or changing unrelated emissions does not control the source of sulfur dioxide. This original exam-style practice item is adapted for JAMB 2023 revision and is not a reproduced examination question."
+  }
+]
