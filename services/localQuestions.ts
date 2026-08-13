@@ -131,7 +131,6 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.WAEC}:${Subject.BIOLOGY}:2011`]: "./questions/waec_biology_2011_practice.json",
   [`${ExamType.NECO}:${Subject.BIOLOGY}:2011`]: "./questions/neco_biology_2011_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2025`]: "./questions/jamb_physics_2025_practice.json",
-
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2026`]: "./questions/jamb_physics_2026_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2026`]: "./questions/waec_physics_2026_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2026`]: "./questions/neco_physics_2026_practice.json",
@@ -142,7 +141,6 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.NECO}:${Subject.PHYSICS}:2024`]: "./questions/neco_physics_2024_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2023`]: "./questions/jamb_physics_2023_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2023`]: "./questions/waec_physics_2023_practice.json",
-
   [`${ExamType.NECO}:${Subject.PHYSICS}:2023`]: "./questions/neco_physics_2023_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2022`]: "./questions/jamb_physics_2022_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2022`]: "./questions/waec_physics_2022_practice.json",
@@ -153,7 +151,6 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2020`]: "./questions/jamb_physics_2020_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2020`]: "./questions/waec_physics_2020_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2020`]: "./questions/neco_physics_2020_practice.json",
-
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2019`]: "./questions/jamb_physics_2019_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2019`]: "./questions/waec_physics_2019_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2019`]: "./questions/neco_physics_2019_practice.json",
@@ -164,7 +161,6 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2017`]: "./questions/waec_physics_2017_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2017`]: "./questions/neco_physics_2017_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2016`]: "./questions/jamb_physics_2016_practice.json",
-
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2016`]: "./questions/waec_physics_2016_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2016`]: "./questions/neco_physics_2016_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2015`]: "./questions/jamb_physics_2015_practice.json",
@@ -175,7 +171,6 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.NECO}:${Subject.PHYSICS}:2014`]: "./questions/neco_physics_2014_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2013`]: "./questions/jamb_physics_2013_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2013`]: "./questions/waec_physics_2013_practice.json",
-
   [`${ExamType.NECO}:${Subject.PHYSICS}:2013`]: "./questions/neco_physics_2013_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2012`]: "./questions/jamb_physics_2012_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2012`]: "./questions/waec_physics_2012_practice.json",
