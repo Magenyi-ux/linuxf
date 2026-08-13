@@ -1,4 +1,4 @@
-import { Question, Subject } from "../types";
+import { ExamType, Question, Subject } from "../types";
 import { visualQuestionsBySubject } from "./visualQuestions";
 
 // Import all JSON files from the questions directory.
@@ -30,6 +30,8 @@ interface RawQuestion {
   image_url?: string;
   imageAlt?: string;
   image_alt?: string;
+  year?: string | number;
+  examType?: string;
 }
 
 const subjectToFilename: Record<string, string> = {
@@ -51,6 +53,19 @@ const subjectToFilename: Record<string, string> = {
   [Subject.IRS]: "irs",
   [Subject.FRENCH]: "french",
   [Subject.ARABIC]: "arabic",
+};
+
+const boardQuestionFiles: Record<string, string> = {
+  [`${ExamType.JAMB}:${Subject.CHEMISTRY}:2025`]: "./questions/jamb_chemistry_2025_practice.json",
+  [`${ExamType.WAEC}:${Subject.CHEMISTRY}:2025`]: "./questions/waec_chemistry_2025_practice.json",
+  [`${ExamType.NECO}:${Subject.CHEMISTRY}:2025`]: "./questions/neco_chemistry_2025_practice.json",
+  [`${ExamType.JAMB}:${Subject.CHEMISTRY}:2026`]: "./questions/jamb_chemistry_2026_practice.json",
+  [`${ExamType.WAEC}:${Subject.CHEMISTRY}:2026`]: "./questions/waec_chemistry_2026_practice.json",
+  [`${ExamType.NECO}:${Subject.CHEMISTRY}:2026`]: "./questions/neco_chemistry_2026_practice.json",
+  [`${ExamType.JAMB}:${Subject.BIOLOGY}:2025`]: "./questions/jamb_biology_2025_practice.json",
+  [`${ExamType.WAEC}:${Subject.BIOLOGY}:2025`]: "./questions/waec_biology_2025_practice.json",
+  [`${ExamType.NECO}:${Subject.BIOLOGY}:2025`]: "./questions/neco_biology_2025_practice.json",
+  [`${ExamType.JAMB}:${Subject.PHYSICS}:2025`]: "./questions/jamb_physics_2025_practice.json",
 };
 
 const optionKeys = ["a", "b", "c", "d", "A", "B", "C", "D"] as const;
@@ -97,11 +112,12 @@ export const getLocalQuestions = (
   subject: Subject,
   year: string,
   count: number = 10,
+  examType?: ExamType,
 ): { questions: Question[]; sources: string[] } | null => {
   const filename = subjectToFilename[subject];
   if (!filename) return null;
 
-  const filePath = `./questions/${filename}_questions.json`;
+  const filePath = boardQuestionFiles[`${examType ?? ""}:${subject}:${year}`] ?? `./questions/${filename}_questions.json`;
   const fileData = (questionFiles[filePath] as { default?: RawQuestion[] } | undefined)?.default;
 
   if (!fileData || !Array.isArray(fileData)) {
@@ -122,7 +138,7 @@ const processRawData = (
   count: number,
   subject: Subject,
 ): { questions: Question[]; sources: string[] } | null => {
-  const filtered = year === "Random" ? data : data.filter((question) => String(question.year_id ?? "") === String(year));
+  const filtered = year === "Random" ? data : data.filter((question) => String(question.year_id ?? question.year ?? "") === String(year));
   const visualQuestions = year === "Random" ? (visualQuestionsBySubject[subject] ?? []) : [];
   if (filtered.length === 0 && visualQuestions.length === 0) return null;
 
@@ -150,5 +166,5 @@ const processRawData = (
 
   const combined = [...visualQuestions, ...transformed].slice(0, count);
   if (combined.length === 0) return null;
-  return { questions: combined, sources: ["Local Question Bank (Vetted)", "Offline Visual Question Set"] };
+  return { questions: combined, sources: ["Local Question Bank (Vetted)", "Original syllabus-aligned practice"] };
 };
