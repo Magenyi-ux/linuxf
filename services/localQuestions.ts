@@ -87,6 +87,17 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.NECO}:${Subject.PHYSICS}:2024`]: "./questions/neco_physics_2024_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2023`]: "./questions/jamb_physics_2023_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2023`]: "./questions/waec_physics_2023_practice.json",
+
+  [`${ExamType.NECO}:${Subject.PHYSICS}:2023`]: "./questions/neco_physics_2023_practice.json",
+  [`${ExamType.JAMB}:${Subject.PHYSICS}:2022`]: "./questions/jamb_physics_2022_practice.json",
+  [`${ExamType.WAEC}:${Subject.PHYSICS}:2022`]: "./questions/waec_physics_2022_practice.json",
+  [`${ExamType.NECO}:${Subject.PHYSICS}:2022`]: "./questions/neco_physics_2022_practice.json",
+  [`${ExamType.JAMB}:${Subject.PHYSICS}:2021`]: "./questions/jamb_physics_2021_practice.json",
+  [`${ExamType.WAEC}:${Subject.PHYSICS}:2021`]: "./questions/waec_physics_2021_practice.json",
+  [`${ExamType.NECO}:${Subject.PHYSICS}:2021`]: "./questions/neco_physics_2021_practice.json",
+  [`${ExamType.JAMB}:${Subject.PHYSICS}:2020`]: "./questions/jamb_physics_2020_practice.json",
+  [`${ExamType.WAEC}:${Subject.PHYSICS}:2020`]: "./questions/waec_physics_2020_practice.json",
+  [`${ExamType.NECO}:${Subject.PHYSICS}:2020`]: "./questions/neco_physics_2020_practice.json",
 };
 
 const optionKeys = ["a", "b", "c", "d", "A", "B", "C", "D"] as const;
