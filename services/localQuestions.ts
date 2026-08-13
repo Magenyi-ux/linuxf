@@ -102,6 +102,8 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.WAEC}:${Subject.CHEMISTRY}:2012`]: "./questions/waec_chemistry_2012_practice.json",
   [`${ExamType.NECO}:${Subject.CHEMISTRY}:2012`]: "./questions/neco_chemistry_2012_practice.json",
   [`${ExamType.JAMB}:${Subject.CHEMISTRY}:2011`]: "./questions/jamb_chemistry_2011_practice.json",
+  [`${ExamType.WAEC}:${Subject.CHEMISTRY}:2011`]: "./questions/waec_chemistry_2011_practice.json",
+  [`${ExamType.NECO}:${Subject.CHEMISTRY}:2011`]: "./questions/neco_chemistry_2011_practice.json",
   [`${ExamType.JAMB}:${Subject.BIOLOGY}:2025`]: "./questions/jamb_biology_2025_practice.json",
   [`${ExamType.WAEC}:${Subject.BIOLOGY}:2025`]: "./questions/waec_biology_2025_practice.json",
   [`${ExamType.NECO}:${Subject.BIOLOGY}:2025`]: "./questions/neco_biology_2025_practice.json",
