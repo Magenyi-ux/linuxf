@@ -120,6 +120,14 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.NECO}:${Subject.PHYSICS}:2014`]: "./questions/neco_physics_2014_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2013`]: "./questions/jamb_physics_2013_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2013`]: "./questions/waec_physics_2013_practice.json",
+
+  [`${ExamType.NECO}:${Subject.PHYSICS}:2013`]: "./questions/neco_physics_2013_practice.json",
+  [`${ExamType.JAMB}:${Subject.PHYSICS}:2012`]: "./questions/jamb_physics_2012_practice.json",
+  [`${ExamType.WAEC}:${Subject.PHYSICS}:2012`]: "./questions/waec_physics_2012_practice.json",
+  [`${ExamType.NECO}:${Subject.PHYSICS}:2012`]: "./questions/neco_physics_2012_practice.json",
+  [`${ExamType.JAMB}:${Subject.PHYSICS}:2011`]: "./questions/jamb_physics_2011_practice.json",
+  [`${ExamType.WAEC}:${Subject.PHYSICS}:2011`]: "./questions/waec_physics_2011_practice.json",
+  [`${ExamType.NECO}:${Subject.PHYSICS}:2011`]: "./questions/neco_physics_2011_practice.json",
 };
 
 const optionKeys = ["a", "b", "c", "d", "A", "B", "C", "D"] as const;
