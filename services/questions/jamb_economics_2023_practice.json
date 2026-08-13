@@ -1,0 +1,852 @@
+[
+  {
+    "id": "JAMB_ECONOMICS_2023_001",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Basic economic concepts",
+    "contentLabel": "Original exam-style practice",
+    "text": "Chinedu has limited income but several urgent wants. The economic problem illustrated is",
+    "options": [
+      "Scarcity",
+      "Inflation",
+      "Monopoly",
+      "Depreciation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Scarcity exists because human wants are numerous while the resources and income available to satisfy them are limited. Inflation, monopoly and depreciation describe different economic situations."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_002",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Basic economic concepts",
+    "contentLabel": "Original exam-style practice",
+    "text": "The value of the next best alternative forgone when a choice is made is called",
+    "options": [
+      "Marginal cost",
+      "Opportunity cost",
+      "Fixed cost",
+      "Social cost"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Opportunity cost is the benefit sacrificed from the most valuable alternative not chosen. It arises because resources can be used in competing ways."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_003",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Basic economic concepts",
+    "contentLabel": "Original exam-style practice",
+    "text": "A production possibility curve mainly shows the",
+    "options": [
+      "Amount of money in circulation",
+      "Price of imported goods",
+      "Maximum alternative output combinations from given resources",
+      "Population of a country"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A production possibility curve shows combinations of two goods that can be produced efficiently with available resources and technology. Points beyond it are unattainable with current capacity."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_004",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Demand, supply and price",
+    "contentLabel": "Original exam-style practice",
+    "text": "According to the law of demand, other things being equal, quantity demanded rises when price",
+    "options": [
+      "Rises",
+      "Is fixed by law",
+      "Equals supply",
+      "Falls"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The law of demand states that consumers buy more at a lower price and less at a higher price, assuming other determinants such as income and taste remain unchanged."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_005",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Demand, supply and price",
+    "contentLabel": "Original exam-style practice",
+    "text": "A change in quantity demanded caused solely by a change in the good’s own price is a",
+    "options": [
+      "Movement along the demand curve",
+      "Shift of the demand curve",
+      "Change in supply",
+      "Change in technology"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A price change causes movement from one point to another on the same demand curve. A shift occurs when a non-price determinant such as income or taste changes."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_006",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Demand, supply and price",
+    "contentLabel": "Original exam-style practice",
+    "text": "Price falls from ₦30 to ₦28, while quantity demanded rises from 120 to 140 units. The approximate price elasticity of demand is",
+    "options": [
+      "1.25",
+      "2.5",
+      "3.5",
+      "0.4"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Price elasticity of demand equals percentage change in quantity demanded divided by percentage change in price. The calculation measures responsiveness of quantity demanded to the price change."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_007",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Demand, supply and price",
+    "contentLabel": "Original exam-style practice",
+    "text": "The law of supply states that producers are generally willing to offer more for sale when price",
+    "options": [
+      "Falls",
+      "Is unrelated to cost",
+      "Rises",
+      "Becomes zero"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Higher prices usually make production more rewarding, so producers supply a larger quantity, other things being equal. This positive relationship is the law of supply."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_008",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Demand, supply and price",
+    "contentLabel": "Original exam-style practice",
+    "text": "Market equilibrium occurs at the price where",
+    "options": [
+      "Demand is zero",
+      "Supply is zero",
+      "Government fixes all prices",
+      "Quantity demanded equals quantity supplied"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "At equilibrium, buyers wish to purchase exactly the quantity sellers wish to offer. There is neither a persistent shortage nor a surplus at that price."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_009",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Demand, supply and price",
+    "contentLabel": "Original exam-style practice",
+    "text": "A maximum price fixed below the equilibrium price is most likely to create",
+    "options": [
+      "Excess demand",
+      "Excess supply",
+      "A balanced budget",
+      "Perfect competition"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A price ceiling below equilibrium makes the product cheaper, raising quantity demanded while reducing quantity supplied. The result is a shortage, also called excess demand."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_010",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Production and cost",
+    "contentLabel": "Original exam-style practice",
+    "text": "The factor of production that receives wages is",
+    "options": [
+      "Land",
+      "Labour",
+      "Capital",
+      "Enterprise"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Labour refers to human effort used in production, and its reward is wages or salaries. Land earns rent, capital earns interest, and enterprise earns profit."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_011",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Production and cost",
+    "contentLabel": "Original exam-style practice",
+    "text": "A payment for a factory building that does not vary with output in the short run is a",
+    "options": [
+      "Variable cost",
+      "Marginal revenue",
+      "Fixed cost",
+      "Opportunity benefit"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Fixed costs remain unchanged as output changes in the short run, such as rent on a factory building. Variable costs change with the level of production."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_012",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Production and cost",
+    "contentLabel": "Original exam-style practice",
+    "text": "A firm has fixed cost of ₦50 and variable cost of ₦100 when it produces 10 units. Its average cost is",
+    "options": [
+      "₦5.0",
+      "₦10.0",
+      "₦150.0",
+      "₦15.0"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Average cost is total cost divided by output. Total cost is fixed cost plus variable cost, so ₦50 plus ₦100 divided by 10 units gives the stated average cost."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_013",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Production and cost",
+    "contentLabel": "Original exam-style practice",
+    "text": "An internal economy of scale arises when a firm reduces average cost because it",
+    "options": [
+      "Expands its own scale of operation",
+      "Pays no wages",
+      "Stops producing",
+      "Faces more scarcity"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Internal economies arise within an expanding firm, for example through specialization, bulk buying or technical efficiency. They reduce average cost as the firm grows."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_014",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Market structures",
+    "contentLabel": "Original exam-style practice",
+    "text": "A market with many buyers and sellers, homogeneous products and free entry is closest to",
+    "options": [
+      "Monopoly",
+      "Perfect competition",
+      "Duopoly",
+      "Monopsony"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Perfect competition is characterised by many small firms, identical products, free entry and exit, and no single firm controlling price. A monopoly has one dominant seller."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_015",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Market structures",
+    "contentLabel": "Original exam-style practice",
+    "text": "A firm that is the sole supplier of a service with high barriers to entry is a",
+    "options": [
+      "Perfect competitor",
+      "Consumer cooperative",
+      "Monopoly",
+      "Partnership only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A monopoly exists where one firm is the sole seller and can restrict entry through legal, technical or economic barriers. It differs from a market with many competing firms."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_016",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "National income",
+    "contentLabel": "Original exam-style practice",
+    "text": "Gross Domestic Product measures the money value of final goods and services produced",
+    "options": [
+      "Only by citizens abroad",
+      "Only by government",
+      "Only in rural areas",
+      "Within a country during a period"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "GDP measures final output produced within a country’s geographical boundaries over a stated period. It includes output by resident and foreign-owned firms operating locally."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_017",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "National income",
+    "contentLabel": "Original exam-style practice",
+    "text": "Gross National Product differs from GDP because GNP includes",
+    "options": [
+      "Net factor income from abroad",
+      "Only indirect taxes",
+      "Only imports",
+      "Only depreciation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "GNP equals GDP plus net factor income from abroad. It accounts for income residents earn abroad minus income paid to foreign owners domestically."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_018",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Inflation and unemployment",
+    "contentLabel": "Original exam-style practice",
+    "text": "A sustained rise in the general price level is called",
+    "options": [
+      "Deflation",
+      "Inflation",
+      "Specialization",
+      "Depreciation only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Inflation is a persistent increase in average prices across the economy, reducing the purchasing power of money. Deflation is the opposite movement in the general price level."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_019",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Inflation and unemployment",
+    "contentLabel": "Original exam-style practice",
+    "text": "A person able and willing to work but actively seeking a job without finding one is",
+    "options": [
+      "Under age",
+      "Economically inactive",
+      "Unemployed",
+      "Self-employed"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Unemployment refers to people in the labour force who are willing and able to work, are seeking work, but cannot obtain a job. Students not seeking work are normally inactive."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_020",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Money and banking",
+    "contentLabel": "Original exam-style practice",
+    "text": "The function of money that makes prices easy to compare is",
+    "options": [
+      "Store of value only",
+      "Means of production",
+      "Factor of production",
+      "Unit of account"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Money serves as a unit of account by providing a common measure for expressing and comparing prices. It also acts as medium of exchange and store of value."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_021",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Money and banking",
+    "contentLabel": "Original exam-style practice",
+    "text": "The institution that issues legal tender and acts as banker to government is the",
+    "options": [
+      "Central bank",
+      "Commercial bank",
+      "Insurance company",
+      "Stock exchange"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A central bank issues currency, manages monetary policy and serves government and commercial banks. Commercial banks mainly accept deposits and make loans to customers."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_022",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Money and banking",
+    "contentLabel": "Original exam-style practice",
+    "text": "A commercial bank primarily creates credit by",
+    "options": [
+      "Printing legal tender",
+      "Granting loans from deposits",
+      "Collecting customs duty",
+      "Producing goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial banks create credit when they lend part of deposited funds while maintaining required reserves. They cannot independently print legal tender currency."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_023",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Money and banking",
+    "contentLabel": "Original exam-style practice",
+    "text": "Money held in a current account that can be withdrawn by cheque is called",
+    "options": [
+      "Time deposit only",
+      "Legal reserve",
+      "Demand deposit",
+      "Capital gain"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A demand deposit is payable on demand and is usually operated through cheques, transfers or cards. A time deposit is held for an agreed period before withdrawal."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_024",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "International trade",
+    "contentLabel": "Original exam-style practice",
+    "text": "A fall in the external value of a country’s currency is known as",
+    "options": [
+      "Appreciation",
+      "Deflation",
+      "Reflation",
+      "Depreciation"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Depreciation means the currency buys less foreign currency than before. It can make exports cheaper to foreigners and imports more expensive to domestic buyers."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_025",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "International trade",
+    "contentLabel": "Original exam-style practice",
+    "text": "A country exports goods worth ₦170 billion and imports goods worth ₦120 billion. Its balance of trade is",
+    "options": [
+      "₦50 billion surplus",
+      "₦50 billion deficit",
+      "₦290 billion surplus",
+      "Zero balance"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Balance of trade equals exports minus imports. Since exports exceed imports by ₦50 billion, the country records a trade surplus of that amount."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_026",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "International trade",
+    "contentLabel": "Original exam-style practice",
+    "text": "A tax imposed on imported goods to protect local producers is a",
+    "options": [
+      "Subsidy",
+      "Tariff",
+      "Quota",
+      "Dividend"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A tariff is a customs duty on imports. It raises the import price and may protect domestic producers, while a quota restricts quantity rather than imposing a tax."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_027",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "International trade",
+    "contentLabel": "Original exam-style practice",
+    "text": "An import quota is a policy that",
+    "options": [
+      "Fixes all wages",
+      "Raises export supply automatically",
+      "Limits the quantity of a good that may be imported",
+      "Abolishes exchange rates"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "An import quota sets a maximum physical quantity of a good allowed into the country. It differs from a tariff, which is a tax on imports."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_028",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Public finance",
+    "contentLabel": "Original exam-style practice",
+    "text": "Government revenue obtained from compulsory payments without direct benefit is",
+    "options": [
+      "Donation",
+      "Dividend",
+      "Transfer payment",
+      "Taxation"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Taxation consists of compulsory levies imposed by government to finance public expenditure. A taxpayer does not receive a direct benefit equal to the tax paid."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_029",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Public finance",
+    "contentLabel": "Original exam-style practice",
+    "text": "A tax system in which the proportion of income paid rises as income rises is",
+    "options": [
+      "Progressive",
+      "Regressive",
+      "Proportional only",
+      "Indirect only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A progressive tax takes a higher percentage of income from higher-income earners. A regressive tax takes a larger proportion from lower incomes, while proportional rates stay constant."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_030",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Public finance",
+    "contentLabel": "Original exam-style practice",
+    "text": "A government budget is in deficit when",
+    "options": [
+      "Revenue exceeds expenditure",
+      "Expenditure exceeds revenue",
+      "Exports equal imports",
+      "Prices are constant"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A budget deficit occurs when planned or actual public spending is greater than government revenue. Revenue greater than expenditure produces a budget surplus."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_031",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "National income",
+    "contentLabel": "Original exam-style practice",
+    "text": "If the marginal propensity to save is 0.50, the simple investment multiplier is",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "0.50"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In the simple Keynesian model, the multiplier equals 1 divided by the marginal propensity to save. Dividing 1 by 0.50 gives 2."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_032",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "National income",
+    "contentLabel": "Original exam-style practice",
+    "text": "Disposable income is income remaining to households after",
+    "options": [
+      "Imports have been added",
+      "Exports have been removed",
+      "All saving has been spent",
+      "Direct taxes have been deducted"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Disposable income is the income households can spend or save after direct taxes and compulsory deductions have been paid. It supports consumption and saving decisions."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_033",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Economic development",
+    "contentLabel": "Original exam-style practice",
+    "text": "A rise in real output per person together with improvement in welfare is best described as",
+    "options": [
+      "Economic development",
+      "Economic stagnation",
+      "Inflation only",
+      "A trade embargo"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Economic development includes sustained growth in real income and broader improvements in living standards, health, education and social welfare. Output growth alone may not capture these changes."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_034",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Economic development",
+    "contentLabel": "Original exam-style practice",
+    "text": "Investment in education and training improves the quality of",
+    "options": [
+      "Natural resources",
+      "Human capital",
+      "Physical weather",
+      "Import duties"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Human capital is the stock of skills, knowledge and health embodied in people. Education and training increase workers’ productivity and earning potential."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_035",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Production and cost",
+    "contentLabel": "Original exam-style practice",
+    "text": "The reward for an entrepreneur who organizes other factors and bears risk is",
+    "options": [
+      "Rent",
+      "Wages",
+      "Profit",
+      "Interest"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The entrepreneur coordinates land, labour and capital, takes business risk and receives profit as the reward. Rent, wages and interest reward land, labour and capital respectively."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_036",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Demand, supply and price",
+    "contentLabel": "Original exam-style practice",
+    "text": "A rightward shift of the demand curve for a normal good may result from",
+    "options": [
+      "A fall in the product price only",
+      "A fall in supply only",
+      "A rise in production cost only",
+      "An increase in consumer income"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "For a normal good, higher consumer income increases demand at every possible price, shifting the demand curve right. A change in the good’s own price causes movement along the curve."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_037",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Demand, supply and price",
+    "contentLabel": "Original exam-style practice",
+    "text": "An increase in the cost of raw materials is most likely to",
+    "options": [
+      "Shift supply to the left",
+      "Shift demand to the right",
+      "Increase quantity supplied at every price",
+      "Eliminate scarcity"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Higher input costs make production less profitable at each price, so producers offer less. This is shown by a leftward shift of the supply curve."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_038",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "International trade",
+    "contentLabel": "Original exam-style practice",
+    "text": "The balance of payments records",
+    "options": [
+      "Only domestic trade",
+      "A country’s economic transactions with the rest of the world",
+      "Only government salaries",
+      "Only agricultural output"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The balance of payments is a systematic record of transactions between residents of a country and the rest of the world, including goods, services, income and capital flows."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_039",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "International trade",
+    "contentLabel": "Original exam-style practice",
+    "text": "Terms of trade improve when",
+    "options": [
+      "Import prices rise faster than export prices",
+      "All exports cease",
+      "Export prices rise relative to import prices",
+      "The exchange rate is fixed"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Terms of trade compare export prices with import prices. When export prices rise relative to import prices, a country can obtain more imports for a given quantity of exports."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_040",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Public finance",
+    "contentLabel": "Original exam-style practice",
+    "text": "Government action that changes taxation or public expenditure to influence aggregate demand is",
+    "options": [
+      "Monetary policy",
+      "Commercial policy only",
+      "Population policy only",
+      "Fiscal policy"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Fiscal policy uses government spending and taxation to influence economic activity. Monetary policy uses money supply, interest rates and related central-bank instruments."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_041",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Money and banking",
+    "contentLabel": "Original exam-style practice",
+    "text": "A central bank can reduce excessive credit expansion by",
+    "options": [
+      "Increasing the bank rate",
+      "Printing more currency for all banks",
+      "Reducing reserve requirements",
+      "Removing all interest charges"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A higher bank rate makes borrowing by commercial banks more expensive and tends to raise lending rates, discouraging credit expansion. Lower reserves usually have the opposite effect."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_042",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Money and banking",
+    "contentLabel": "Original exam-style practice",
+    "text": "The minimum fraction of deposits commercial banks must keep instead of lending is the",
+    "options": [
+      "Marginal propensity to consume",
+      "Cash reserve requirement",
+      "Balance of trade",
+      "Budget surplus"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The reserve requirement is the legally or prudentially required portion of deposits that banks must retain as reserves. It helps protect liquidity and influences credit creation."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_043",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Market structures",
+    "contentLabel": "Original exam-style practice",
+    "text": "A consumer cooperative is formed mainly to",
+    "options": [
+      "Issue national currency",
+      "Control all imports",
+      "Buy goods for members at favourable terms",
+      "Collect income tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A consumer cooperative pools members’ buying power to obtain goods at fair prices and may return surplus to members. It is not a monetary or tax authority."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_044",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Market failure",
+    "contentLabel": "Original exam-style practice",
+    "text": "Pollution from a factory that affects nearby residents without compensation is a",
+    "options": [
+      "Public good",
+      "Positive price signal",
+      "Private benefit only",
+      "Negative externality"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A negative externality is an external cost imposed on third parties who are not directly involved in the transaction. Pollution can harm health and property without being included in market price."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_045",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Market failure",
+    "contentLabel": "Original exam-style practice",
+    "text": "Street lighting is often provided by government because it is largely",
+    "options": [
+      "Non-rival and non-excludable",
+      "A private monopoly",
+      "A demerit good",
+      "A factor of production"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Street lighting has public-good characteristics: one person’s use does not significantly reduce availability to others, and it is difficult to exclude non-payers."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_046",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "International trade",
+    "contentLabel": "Original exam-style practice",
+    "text": "A country gains from specialization when it concentrates on goods it can produce at",
+    "options": [
+      "The highest money price only",
+      "Lower opportunity cost",
+      "The lowest wage in every sector",
+      "Zero resource use"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Comparative advantage is based on lower opportunity cost. By specializing in such goods and trading, countries can increase total output and consumption possibilities."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_047",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Nigerian economic institutions",
+    "contentLabel": "Original exam-style practice",
+    "text": "The main statutory role of a central bank in an economy includes",
+    "options": [
+      "Producing farm crops",
+      "Operating every retail shop",
+      "Formulating and implementing monetary policy",
+      "Electing legislators"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The central bank manages monetary policy, currency and banking-system stability. Production decisions and elections lie outside its statutory monetary responsibilities."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_048",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Inflation and unemployment",
+    "contentLabel": "Original exam-style practice",
+    "text": "If a consumer price index rises from 110 to 122, the inflation rate is approximately",
+    "options": [
+      "5.5%",
+      "15.9%",
+      "122%",
+      "10.9%"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Inflation rate is the percentage rise in the price index: (122 − 110) divided by 110, multiplied by 100. This gives approximately 10.9%."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_049",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Demand, supply and price",
+    "contentLabel": "Original exam-style practice",
+    "text": "When demand exceeds supply at the prevailing price, the market experiences",
+    "options": [
+      "A shortage",
+      "A surplus",
+      "Equilibrium",
+      "A subsidy"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A shortage occurs when consumers wish to buy more than producers offer at the current price. Competitive pressure tends to push price upward toward equilibrium."
+  },
+  {
+    "id": "JAMB_ECONOMICS_2023_050",
+    "examType": "JAMB",
+    "subject": "Economics",
+    "year": "2023",
+    "topic": "Production and cost",
+    "contentLabel": "Original exam-style practice",
+    "text": "Division of labour tends to raise output because workers",
+    "options": [
+      "Use no capital",
+      "Become more specialized in particular tasks",
+      "Avoid all training",
+      "Eliminate all opportunity cost"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Division of labour allows workers to concentrate on tasks, develop skill and reduce time lost switching jobs. These effects can improve productivity and total output."
+  }
+]
