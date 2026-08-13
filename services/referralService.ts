@@ -73,9 +73,46 @@ export const fetchMyReferralSummary = async (): Promise<ReferralSummary | null> 
   return data as ReferralSummary;
 };
 
+export interface IssuedCollaboratorKey {
+  collaborator_id: string;
+  display_name: string;
+  collaborator_email: string;
+  referral_key: string;
+  referral_key_hint: string;
+  status: string;
+  term_start: string | null;
+  term_end: string | null;
+}
+
 export const fetchAdminReferralReport = async (): Promise<AdminReferralRow[]> => {
   if (!isSupabaseConfigured) return [];
   const { data, error } = await supabase.rpc('get_admin_referral_report');
   if (error) throw error;
   return (data || []) as AdminReferralRow[];
+};
+
+export const createCollaborator = async (input: {
+  email: string;
+  displayName: string;
+  termStart?: string;
+  termEnd?: string;
+}): Promise<IssuedCollaboratorKey> => {
+  if (!isSupabaseConfigured) throw new Error('Supabase is not configured');
+  const { data, error } = await supabase.rpc('create_collaborator', {
+    p_collaborator_email: input.email.trim(),
+    p_display_name: input.displayName.trim(),
+    p_term_start: input.termStart || null,
+    p_term_end: input.termEnd || null,
+  });
+  if (error) throw error;
+  return data as IssuedCollaboratorKey;
+};
+
+export const setCollaboratorStatus = async (collaboratorId: string, status: 'ACTIVE' | 'PAUSED' | 'ENDED'): Promise<void> => {
+  if (!isSupabaseConfigured) throw new Error('Supabase is not configured');
+  const { error } = await supabase.rpc('set_collaborator_status', {
+    p_collaborator_id: collaboratorId,
+    p_status: status,
+  });
+  if (error) throw error;
 };

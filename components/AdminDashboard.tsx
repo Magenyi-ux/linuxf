@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Users, Clock, Book, Ban, ShieldCheck, TrendingUp, Activity, Terminal, Lock, LogIn } from 'lucide-react';
+import { ArrowLeft, Users, Clock, Book, Ban, ShieldCheck, TrendingUp, Activity, Terminal, Lock, LogIn, UserPlus, KeyRound, Copy, PauseCircle, PlayCircle, XCircle } from 'lucide-react';
 import { UserProfile } from '../types';
 import { trackEvent } from '../services/analytics';
 import { useAuth } from '../contexts/AuthContext';
-import { fetchAdminReferralReport, type AdminReferralRow } from '../services/referralService';
+import { createCollaborator, fetchAdminReferralReport, setCollaboratorStatus, type AdminReferralRow, type IssuedCollaboratorKey } from '../services/referralService';
 
 interface AdminDashboardProps {
   onBack: () => void;
@@ -25,6 +25,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
   const [loading, setLoading] = useState(false);
   const [referralRows, setReferralRows] = useState<AdminReferralRow[]>([]);
   const [referralError, setReferralError] = useState('');
+  const [collaboratorEmail, setCollaboratorEmail] = useState('');
+  const [collaboratorName, setCollaboratorName] = useState('');
+  const [collaboratorTermEnd, setCollaboratorTermEnd] = useState('');
+  const [creatingCollaborator, setCreatingCollaborator] = useState(false);
+  const [issuedCollaboratorKey, setIssuedCollaboratorKey] = useState<IssuedCollaboratorKey | null>(null);
+  const [collaboratorManagementError, setCollaboratorManagementError] = useState('');
+  const [updatingCollaboratorId, setUpdatingCollaboratorId] = useState<string | null>(null);
 
   useEffect(() => {
     // Check if already authenticated in this session
@@ -103,6 +110,46 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
 
     setUsers(updatedUsers);
     localStorage.setItem('waExamPrep_users', JSON.stringify(updatedUsers));
+  };
+
+  const handleCreateCollaborator = async (event: React.FormEvent) => {
+    event.preventDefault();
+    if (authProfile?.role !== 'ADMIN') {
+      setCollaboratorManagementError('Only the protected Supabase admin account can issue collaborator keys.');
+      return;
+    }
+    setCreatingCollaborator(true);
+    setCollaboratorManagementError('');
+    try {
+      const issued = await createCollaborator({
+        email: collaboratorEmail,
+        displayName: collaboratorName,
+        termEnd: collaboratorTermEnd || undefined,
+      });
+      setIssuedCollaboratorKey(issued);
+      setCollaboratorEmail('');
+      setCollaboratorName('');
+      setCollaboratorTermEnd('');
+      await fetchAdminData();
+    } catch (error) {
+      setCollaboratorManagementError(error instanceof Error ? error.message : 'Could not create the collaborator key.');
+    } finally {
+      setCreatingCollaborator(false);
+    }
+  };
+
+  const handleCollaboratorStatus = async (collaboratorId: string, status: 'ACTIVE' | 'PAUSED' | 'ENDED') => {
+    if (authProfile?.role !== 'ADMIN') return;
+    setUpdatingCollaboratorId(collaboratorId);
+    setCollaboratorManagementError('');
+    try {
+      await setCollaboratorStatus(collaboratorId, status);
+      await fetchAdminData();
+    } catch (error) {
+      setCollaboratorManagementError(error instanceof Error ? error.message : 'Could not update collaborator status.');
+    } finally {
+      setUpdatingCollaboratorId(null);
+    }
   };
 
   const formatTime = (seconds: number) => {
@@ -267,6 +314,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
                 <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest">Collaborator</th>
                 <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest">Key</th>
                 <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest text-right">Student sign-ups</th>
+                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest">Status</th>
+                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest text-right">Actions</th>
               </tr></thead>
               <tbody className="divide-y divide-gray-50">
                 {referralRows.map((row) => (
@@ -274,6 +323,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
                     <td className="px-4 py-4 font-bold text-gray-900">{row.display_name}</td>
                     <td className="px-4 py-4 text-xs font-mono text-gray-500">••••{row.referral_key_hint}</td>
                     <td className="px-4 py-4 text-right text-xl font-black text-primary-600">{row.total_signups}</td>
+                    <td className="px-4 py-4"><span className={`text-[10px] font-black uppercase ${row.status === 'ACTIVE' ? 'text-emerald-700' : row.status === 'PAUSED' ? 'text-amber-700' : 'text-gray-400'}`}>{row.status}</span></td>
+                    <td className="px-4 py-4 text-right">
+                      <div className="flex justify-end gap-2">
+                        {row.status !== 'ACTIVE' && <button type="button" disabled={updatingCollaboratorId === row.collaborator_id} onClick={() => void handleCollaboratorStatus(row.collaborator_id, 'ACTIVE')} className="p-2 rounded-xl bg-emerald-50 text-emerald-700 disabled:opacity-50" title="Activate"><PlayCircle className="w-4 h-4" /></button>}
+                        {row.status === 'ACTIVE' && <button type="button" disabled={updatingCollaboratorId === row.collaborator_id} onClick={() => void handleCollaboratorStatus(row.collaborator_id, 'PAUSED')} className="p-2 rounded-xl bg-amber-50 text-amber-700 disabled:opacity-50" title="Pause"><PauseCircle className="w-4 h-4" /></button>}
+                        {row.status !== 'ENDED' && <button type="button" disabled={updatingCollaboratorId === row.collaborator_id} onClick={() => void handleCollaboratorStatus(row.collaborator_id, 'ENDED')} className="p-2 rounded-xl bg-red-50 text-red-700 disabled:opacity-50" title="End"><XCircle className="w-4 h-4" /></button>}
+                      </div>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -283,6 +340,52 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
           <p className="text-gray-400 font-medium italic">No collaborator sign-ups recorded yet.</p>
         )}
       </section>
+
+      {authProfile?.role === 'ADMIN' && (
+        <section className="bg-slate-50 p-8 rounded-[40px] border border-primary-100 shadow-sm mb-12">
+          <div className="flex items-start gap-3 mb-6">
+            <div className="bg-primary-100 text-primary-700 p-3 rounded-2xl"><UserPlus className="w-5 h-5" /></div>
+            <div>
+              <h3 className="text-xl font-black text-gray-900">Manage collaborators</h3>
+              <p className="text-sm text-gray-500 font-medium mt-1">The collaborator must register an account first. The raw key is shown only once.</p>
+            </div>
+          </div>
+          <form onSubmit={handleCreateCollaborator} className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+            <label className="block">
+              <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Registered email</span>
+              <input type="email" required value={collaboratorEmail} onChange={(event) => setCollaboratorEmail(event.target.value)} placeholder="collaborator@email.com" className="mt-2 w-full px-4 py-3 bg-white border border-gray-200 rounded-2xl outline-none focus:ring-2 focus:ring-primary-500" />
+            </label>
+            <label className="block">
+              <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Display name</span>
+              <input type="text" required minLength={2} value={collaboratorName} onChange={(event) => setCollaboratorName(event.target.value)} placeholder="Sis School Tips" className="mt-2 w-full px-4 py-3 bg-white border border-gray-200 rounded-2xl outline-none focus:ring-2 focus:ring-primary-500" />
+            </label>
+            <label className="block">
+              <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Term end (optional)</span>
+              <input type="date" value={collaboratorTermEnd} onChange={(event) => setCollaboratorTermEnd(event.target.value)} className="mt-2 w-full px-4 py-3 bg-white border border-gray-200 rounded-2xl outline-none focus:ring-2 focus:ring-primary-500" />
+            </label>
+            <button type="submit" disabled={creatingCollaborator} className="h-[50px] px-5 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 disabled:opacity-50 transition-all flex items-center justify-center gap-2">
+              <KeyRound className="w-4 h-4" /> {creatingCollaborator ? 'GENERATING…' : 'GENERATE KEY'}
+            </button>
+          </form>
+          {collaboratorManagementError && <p className="text-red-700 bg-red-50 border border-red-100 rounded-2xl px-4 py-3 text-xs font-bold mt-4">{collaboratorManagementError}</p>}
+          {issuedCollaboratorKey && (
+            <div className="mt-5 bg-emerald-50 border border-emerald-200 rounded-3xl p-5">
+              <div className="flex items-start gap-3">
+                <KeyRound className="w-5 h-5 text-emerald-700 mt-0.5" />
+                <div className="min-w-0 flex-1">
+                  <p className="font-black text-emerald-900">Save this referral key now</p>
+                  <p className="text-xs text-emerald-800 mt-1">It will not be shown again after you close this message.</p>
+                  <code className="block mt-3 bg-white border border-emerald-200 rounded-2xl px-4 py-3 text-lg font-black tracking-widest text-gray-900 break-all">{issuedCollaboratorKey.referral_key}</code>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <button type="button" onClick={() => void navigator.clipboard?.writeText(issuedCollaboratorKey.referral_key)} className="px-4 py-2 bg-white border border-emerald-200 rounded-xl text-xs font-black text-emerald-800 flex items-center gap-2"><Copy className="w-4 h-4" /> COPY KEY</button>
+                    <button type="button" onClick={() => setIssuedCollaboratorKey(null)} className="px-4 py-2 bg-emerald-700 text-white rounded-xl text-xs font-black">I HAVE SAVED IT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </section>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
         <section>

@@ -197,6 +197,128 @@ $referral$;
 
 grant execute on function public.get_admin_referral_report() to authenticated;
 
+create or replace function public.create_collaborator(
+  p_collaborator_email text,
+  p_display_name text,
+  p_term_start date default current_date,
+  p_term_end date default null
+)
+returns jsonb
+language plpgsql
+security definer
+set search_path = public, auth
+as $referral$
+declare
+  v_admin_id uuid := auth.uid();
+  v_is_admin boolean;
+  v_user_id uuid;
+  v_referral_key text;
+  v_collaborator public.collaborators%rowtype;
+begin
+  if v_admin_id is null then
+    raise exception 'not authenticated';
+  end if;
+
+  select upper(coalesce(role, 'USER')) = 'ADMIN' into v_is_admin
+  from public.profiles where id = v_admin_id;
+  if coalesce(v_is_admin, false) is not true then
+    raise exception 'admin access required';
+  end if;
+
+  if p_collaborator_email is null or position('@' in trim(p_collaborator_email)) < 2 then
+    raise exception 'a registered collaborator email is required';
+  end if;
+  if p_display_name is null or length(trim(p_display_name)) < 2 then
+    raise exception 'collaborator display name is required';
+  end if;
+  if p_term_end is not null and p_term_end < coalesce(p_term_start, current_date) then
+    raise exception 'term end cannot be before term start';
+  end if;
+
+  select id into v_user_id
+  from auth.users
+  where lower(email) = lower(trim(p_collaborator_email))
+  limit 1;
+  if v_user_id is null then
+    raise exception 'the collaborator must register an account first';
+  end if;
+
+  if exists (select 1 from public.collaborators where user_id = v_user_id) then
+    raise exception 'this account already has a collaborator key';
+  end if;
+
+  v_referral_key := 'SL-' || upper(replace(gen_random_uuid()::text, '-', ''));
+
+  insert into public.collaborators (
+    user_id, display_name, referral_key_hash, referral_key_hint, term_start, term_end
+  ) values (
+    v_user_id,
+    trim(p_display_name),
+    public.referral_key_hash(v_referral_key),
+    right(v_referral_key, 4),
+    coalesce(p_term_start, current_date),
+    p_term_end
+  ) returning * into v_collaborator;
+
+  return jsonb_build_object(
+    'collaborator_id', v_collaborator.id,
+    'display_name', v_collaborator.display_name,
+    'collaborator_email', lower(trim(p_collaborator_email)),
+    'referral_key', v_referral_key,
+    'referral_key_hint', v_collaborator.referral_key_hint,
+    'status', v_collaborator.status,
+    'term_start', v_collaborator.term_start,
+    'term_end', v_collaborator.term_end
+  );
+end;
+$referral$;
+grant execute on function public.create_collaborator(text, text, date, date) to authenticated;
+
+create or replace function public.set_collaborator_status(
+  p_collaborator_id uuid,
+  p_status text
+)
+returns jsonb
+language plpgsql
+security definer
+set search_path = public
+as $referral$
+declare
+  v_admin_id uuid := auth.uid();
+  v_is_admin boolean;
+  v_status text := upper(trim(coalesce(p_status, '')));
+  v_updated public.collaborators%rowtype;
+begin
+  if v_admin_id is null then
+    raise exception 'not authenticated';
+  end if;
+
+  select upper(coalesce(role, 'USER')) = 'ADMIN' into v_is_admin
+  from public.profiles where id = v_admin_id;
+  if coalesce(v_is_admin, false) is not true then
+    raise exception 'admin access required';
+  end if;
+  if v_status not in ('ACTIVE', 'PAUSED', 'ENDED') then
+    raise exception 'invalid collaborator status';
+  end if;
+
+  update public.collaborators
+  set status = v_status, updated_at = timezone('utc', now())
+  where id = p_collaborator_id
+  returning * into v_updated;
+  if not found then
+    raise exception 'collaborator not found';
+  end if;
+
+  return jsonb_build_object(
+    'collaborator_id', v_updated.id,
+    'status', v_updated.status,
+    'updated_at', v_updated.updated_at
+  );
+end;
+$referral$;
+grant execute on function public.set_collaborator_status(uuid, text) to authenticated;
+
 alter table public.collaborators enable row level security;
 alter table public.referral_attributions enable row level security;
 
