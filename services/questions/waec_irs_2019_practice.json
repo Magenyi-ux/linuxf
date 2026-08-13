@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_IRS_2019_001",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Surah Al-Baqarah is the",
+    "options": [
+      "first Surah",
+      "second Surah",
+      "third Surah",
+      "last Surah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Baqarah is the second chapter of the Qur'an. Therefore, option B (second Surah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_002",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ayatul Kursi is found in Surah",
+    "options": [
+      "Al-Fatihah",
+      "Al-Baqarah",
+      "Al-Imran",
+      "An-Nisa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ayatul Kursi is verse 255 of Surah Al-Baqarah. Therefore, option B (Al-Baqarah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_003",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Surah Al-Ikhlas is equivalent in reward to",
+    "options": [
+      "half of the Qur'an",
+      "one-third of the Qur'an",
+      "one-quarter of the Qur'an",
+      "the entire Qur'an"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet said Surah Al-Ikhlas equals one-third of the Qur'an. Therefore, option B (one-third of the Qur'an) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_004",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The two Surahs known as Al-Mu'awwidhatayn are",
+    "options": [
+      "Al-Fatihah and Al-Baqarah",
+      "Al-Falaq and An-Nas",
+      "Al-Ikhlas and Al-Kafirun",
+      "Al-Masad and Al-Quraysh"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Falaq and An-Nas are called Al-Mu'awwidhatayn (the two protectors). Therefore, option B (Al-Falaq and An-Nas) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_005",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Surah Al-Kafirun emphasizes",
+    "options": [
+      "fighting disbelievers",
+      "rejection of compromise in worship",
+      "economic cooperation",
+      "social justice"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Kafirun rejects mixing monotheism with polytheism. Therefore, option B (rejection of compromise in worship) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_006",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'anic chapter named after a woman is",
+    "options": [
+      "Al-Fatihah",
+      "Maryam",
+      "An-Nisa",
+      "Al-Imran"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Maryam is named after Mary, mother of Isa. Therefore, option B (Maryam) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_007",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Surah An-Nisa deals largely with",
+    "options": [
+      "inheritance and family law",
+      "warfare",
+      "trade",
+      "prophethood"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "An-Nisa addresses family, marriage, and inheritance laws. Therefore, option A (inheritance and family law) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_008",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah that begins with 'By the time' is",
+    "options": [
+      "Al-Asr",
+      "Al-Fajr",
+      "Al-Layl",
+      "Ad-Duha"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Surah Al-Asr opens with 'Wal-'Asr' (By the time). Therefore, option A (Al-Asr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_009",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Surah Al-Asr teaches that",
+    "options": [
+      "man is always in loss except the righteous",
+      "wealth is everything",
+      "time is meaningless",
+      "only prayer saves"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Al-Asr states mankind is in loss except those with faith, good deeds, truth, and patience. Therefore, option A (man is always in loss except the righteous) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_010",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah that encourages seeking refuge in Allah from evil is",
+    "options": [
+      "Al-Kafirun",
+      "Al-Falaq",
+      "Al-Quraysh",
+      "Al-Ma'un"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Falaq seeks protection from evil. Therefore, option B (Al-Falaq) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_011",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Surah Al-Ma'un warns against",
+    "options": [
+      "neglecting the needy and being hypocritical in worship",
+      "excessive trade",
+      "eating too much",
+      "travelling too much"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Al-Ma'un condemns those who neglect orphans and the poor. Therefore, option A (neglecting the needy and being hypocritical in worship) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_012",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet who was a king and prophet was",
+    "options": [
+      "Musa",
+      "Dawud",
+      "Sulayman",
+      "B and C"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Both Dawud and Sulayman were prophet-kings. Therefore, option D (B and C) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_013",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The story of Prophet Yusuf is detailed in Surah",
+    "options": [
+      "Al-Baqarah",
+      "Yusuf",
+      "Hud",
+      "Ar-Ra'd"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Yusuf narrates the complete story of Prophet Joseph. Therefore, option B (Yusuf) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_014",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The wife of Prophet Ibrahim who bore Ishaq was",
+    "options": [
+      "Hajar",
+      "Sarah",
+      "Maryam",
+      "Asiyah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sarah bore Ishaq (Isaac); Hajar bore Isma'il. Therefore, option B (Sarah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_015",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The mother of Prophet Isma'il was",
+    "options": [
+      "Sarah",
+      "Hajar",
+      "Maryam",
+      "Khadijah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hajar (Hagar) was the mother of Isma'il. Therefore, option B (Hajar) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_016",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The well that appeared for Hajar and Isma'il is",
+    "options": [
+      "Arafat",
+      "Zamzam",
+      "Kawthar",
+      "Salsabil"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Zamzam well sprang forth under Isma'il. Therefore, option B (Zamzam) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_017",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Prophet Ibrahim and Isma'il rebuilt the",
+    "options": [
+      "mosque in Madinah",
+      "Ka'bah",
+      "Masjid al-Aqsa",
+      "Quba mosque"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "They rebuilt the Ka'bah as the first house of worship. Therefore, option B (Ka'bah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_018",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet who could interpret dreams was",
+    "options": [
+      "Musa",
+      "Yusuf",
+      "Isa",
+      "Nuh"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Yusuf (Joseph) was gifted with dream interpretation. Therefore, option B (Yusuf) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_019",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet who parted the Red Sea was",
+    "options": [
+      "Isa",
+      "Musa",
+      "Dawud",
+      "Sulayman"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Musa parted the sea to escape Pharaoh. Therefore, option B (Musa) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_020",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The brother of Prophet Musa who assisted him was",
+    "options": [
+      "Yusuf",
+      "Harun",
+      "Ishaq",
+      "Yaqub"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Harun (Aaron) was Musa's brother and assistant. Therefore, option B (Harun) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_021",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an mentions the mother of Musa placing him in a",
+    "options": [
+      "boat",
+      "basket in the river",
+      "cave",
+      "well"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Musa's mother placed him in a basket on the Nile. Therefore, option B (basket in the river) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_022",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The name 'Islam' means",
+    "options": [
+      "peace",
+      "submission to the will of Allah",
+      "love",
+      "unity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islam means submission to Allah's will. Therefore, option B (submission to the will of Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_023",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "A Muslim is one who",
+    "options": [
+      "was born in Arabia",
+      "submits to Allah",
+      "speaks Arabic",
+      "lives in the Middle East"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A Muslim is anyone who submits to the will of Allah. Therefore, option B (submits to Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_024",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The five pillars of Islam begin with",
+    "options": [
+      "Salah",
+      "Zakat",
+      "Shahadah",
+      "Sawm"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The first pillar is Shahadah (declaration of faith). Therefore, option C (Shahadah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_025",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Ka'bah was originally built by",
+    "options": [
+      "Musa and Harun",
+      "Ibrahim and Isma'il",
+      "Dawud and Sulayman",
+      "Isa and Maryam"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Qur'an states Ibrahim and Isma'il raised the foundations of the Ka'bah. Therefore, option B (Ibrahim and Isma'il) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_026",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Black Stone (Hajr al-Aswad) is located at the",
+    "options": [
+      "Prophet's Mosque",
+      "Ka'bah",
+      "Mount Arafat",
+      "Masjid al-Aqsa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Black Stone is embedded in the corner of the Ka'bah. Therefore, option B (Ka'bah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_027",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The standing at Arafat is called",
+    "options": [
+      "Tawaf",
+      "Wuquf",
+      "Sa'i",
+      "Rami"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wuquf (standing) at Arafat is the most important Hajj rite. Therefore, option B (Wuquf) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_028",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Rami al-Jamarat involves",
+    "options": [
+      "circling the Ka'bah",
+      "throwing pebbles at three pillars",
+      "walking between Safa and Marwa",
+      "standing at Arafat"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Rami is the symbolic stoning of the devil. Therefore, option B (throwing pebbles at three pillars) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_029",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tawaf al-Ifadah is performed",
+    "options": [
+      "before Hajj",
+      "during Hajj after standing at Arafat",
+      "after Ramadan",
+      "before Umrah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tawaf al-Ifadah is a pillar of Hajj performed after Arafat. Therefore, option B (during Hajj after standing at Arafat) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_030",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first ten days of Dhul-Hijjah are",
+    "options": [
+      "for fasting only",
+      "the best days of the year",
+      "days of mourning",
+      "for celebrating only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The first ten days of Dhul-Hijjah are highly virtuous. Therefore, option B (the best days of the year) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_031",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The fast of Ashura commemorates",
+    "options": [
+      "the first revelation",
+      "the day Musa was saved from Pharaoh",
+      "the conquest of Makkah",
+      "the birth of the Prophet"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Muslims fast on Ashura to commemorate Musa's deliverance. Therefore, option B (the day Musa was saved from Pharaoh) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_032",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet recommended fasting on",
+    "options": [
+      "Mondays and Thursdays",
+      "Saturdays only",
+      "Fridays only",
+      "Sundays"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Prophet fasted voluntarily on Mondays and Thursdays. Therefore, option A (Mondays and Thursdays) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_033",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The prayer offered during eclipse is called",
+    "options": [
+      "Istisqa",
+      "Salat al-Kusuf",
+      "Tarawih",
+      "Tahajjud"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Salat al-Kusuf is performed during a solar eclipse. Therefore, option B (Salat al-Kusuf) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_034",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The prayer for rain is called",
+    "options": [
+      "Istisqa",
+      "Kusuf",
+      "Khusuf",
+      "Janazah"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Salat al-Istisqa is offered to seek rain from Allah. Therefore, option A (Istisqa) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_035",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Janazah prayer is",
+    "options": [
+      "a daily prayer",
+      "the funeral prayer",
+      "an eclipse prayer",
+      "a rain prayer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Salat al-Janazah is the funeral prayer for the deceased. Therefore, option B (the funeral prayer) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_036",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of Takbirs in Janazah prayer is",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Janazah prayer consists of four Takbirs. Therefore, option C (4) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_037",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ghusl of the deceased is",
+    "options": [
+      "optional",
+      "obligatory (Fard Kifayah)",
+      "disliked",
+      "forbidden"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Washing the deceased is a communal obligation. Therefore, option B (obligatory (Fard Kifayah)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_038",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The shroud for a deceased Muslim is called",
+    "options": [
+      "Hijab",
+      "Kafan",
+      "Ihram",
+      "Jilbab"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Kafan is the white cloth used to wrap the deceased. Therefore, option B (Kafan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_039",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Burial in Islam should be done",
+    "options": [
+      "after several days",
+      "as soon as possible",
+      "only at night",
+      "after one month"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islam encourages prompt burial of the deceased. Therefore, option B (as soon as possible) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_040",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The grave should face the",
+    "options": [
+      "East",
+      "Qiblah (Makkah)",
+      "North",
+      "West"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The deceased is buried facing the Qiblah. Therefore, option B (Qiblah (Makkah)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_041",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Iddah is the waiting period for",
+    "options": [
+      "a new Muslim",
+      "a widow or divorced woman",
+      "a traveller",
+      "a student"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Iddah is the prescribed waiting period before remarriage. Therefore, option B (a widow or divorced woman) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_042",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The waiting period for a widow is",
+    "options": [
+      "1 month",
+      "2 months",
+      "3 months and 10 days",
+      "1 year"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A widow waits 4 months and 10 days (3 lunar months + 10 days). Therefore, option C (3 months and 10 days) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_043",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The waiting period for a divorced woman is",
+    "options": [
+      "3 menstrual cycles",
+      "10 days",
+      "2 months",
+      "6 months"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Iddah for divorce is three menstrual cycles. Therefore, option A (3 menstrual cycles) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_044",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Divorce initiated by the husband is called",
+    "options": [
+      "Khul",
+      "Talaq",
+      "Faskh",
+      "Iddah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Talaq is the husband-initiated divorce. Therefore, option B (Talaq) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_045",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Divorce initiated by the wife with compensation is",
+    "options": [
+      "Talaq",
+      "Khul",
+      "Faskh",
+      "Iddah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Khul is wife-initiated divorce with financial compensation. Therefore, option B (Khul) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_046",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Mahr is",
+    "options": [
+      "dowry paid by the husband to the wife",
+      "dowry paid by the wife",
+      "a tax",
+      "an inheritance share"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Mahr is the mandatory bridal gift from husband to wife. Therefore, option A (dowry paid by the husband to the wife) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_047",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Polygamy in Islam is limited to a maximum of",
+    "options": [
+      "2 wives",
+      "3 wives",
+      "4 wives",
+      "5 wives"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A Muslim man may marry up to four wives with just treatment. Therefore, option C (4 wives) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_048",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Nafaqah refers to",
+    "options": [
+      "inheritance",
+      "maintenance of wife and children",
+      "prayer",
+      "fasting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Nafaqah is the husband's duty to maintain his family. Therefore, option B (maintenance of wife and children) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_049",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The relatives entitled to inherit are called",
+    "options": [
+      "Asabah",
+      "Dhawul Furud",
+      "Dhawul Arham",
+      "A and B"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Heirs include Dhawul Furud (fixed shares) and Asabah (residuary heirs). Therefore, option D (A and B) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2019_050",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2019",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The share of the husband in inheritance when there are children is",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "1/8"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Husband receives 1/4 if the wife left children. Therefore, option C (1/4) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

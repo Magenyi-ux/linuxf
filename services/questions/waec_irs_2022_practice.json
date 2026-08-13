@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_IRS_2022_001",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The obligatory nature of the five daily prayers is based on",
+    "options": [
+      "Sunnah",
+      "The Qur'an and Hadith",
+      "Ijma only",
+      "Qiyas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Prayer is commanded in the Qur'an and detailed in the Sunnah. Therefore, option B (The Qur'an and Hadith) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_002",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Friday prayer (Jumu'ah) is obligatory on",
+    "options": [
+      "all Muslims",
+      "adult male residents",
+      "only the Imam",
+      "children only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Jumu'ah is obligatory on adult, free, resident males. Therefore, option B (adult male residents) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_003",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The khutbah (sermon) before Jumu'ah is",
+    "options": [
+      "optional",
+      "obligatory",
+      "disliked",
+      "forbidden"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The khutbah is a requirement for the validity of Jumu'ah. Therefore, option B (obligatory) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_004",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of raka'at in Dhuhr prayer is",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Dhuhr (noon prayer) has 4 raka'at. Therefore, option C (4) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_005",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of raka'at in Asr prayer is",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Asr (afternoon prayer) has 4 raka'at. Therefore, option C (4) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_006",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of raka'at in Isha prayer is",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Isha (night prayer) has 4 raka'at. Therefore, option C (4) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_007",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Witr prayer is",
+    "options": [
+      "obligatory",
+      "a strongly recommended odd-numbered prayer after Isha",
+      "forbidden",
+      "only for the Imam"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Witr is a confirmed Sunnah prayer of odd raka'at. Therefore, option B (a strongly recommended odd-numbered prayer after Isha) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_008",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Qiblah is the direction of",
+    "options": [
+      "Jerusalem",
+      "the Ka'bah in Makkah",
+      "Madinah",
+      "the sun"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Muslims face the Ka'bah in Makkah during prayer. Therefore, option B (the Ka'bah in Makkah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_009",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first Qiblah was",
+    "options": [
+      "Makkah",
+      "Madinah",
+      "Jerusalem",
+      "Cairo"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Initially Muslims faced Jerusalem before the Qiblah changed to Makkah. Therefore, option C (Jerusalem) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_010",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Adhan is",
+    "options": [
+      "the call to prayer",
+      "the prayer itself",
+      "a sermon",
+      "a supplication"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Adhan is the Islamic call to the five daily prayers. Therefore, option A (the call to prayer) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_011",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Iqamah is",
+    "options": [
+      "the call to prayer",
+      "the second call indicating prayer is about to begin",
+      "a sermon",
+      "a supplication"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Iqamah is recited immediately before the prayer begins. Therefore, option B (the second call indicating prayer is about to begin) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_012",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Sujud means",
+    "options": [
+      "standing",
+      "prostration",
+      "sitting",
+      "bowing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sujud is prostration with forehead on the ground. Therefore, option B (prostration) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_013",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ruku means",
+    "options": [
+      "prostration",
+      "bowing",
+      "standing",
+      "sitting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ruku is bowing with hands on knees. Therefore, option B (bowing) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_014",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of Sujud in each raka'ah is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Each raka'ah contains two prostrations. Therefore, option B (2) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_015",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tashahhud is recited",
+    "options": [
+      "at the beginning of prayer",
+      "while sitting in prayer",
+      "after Wudu",
+      "before Adhan"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tashahhud is the testimony recited in the sitting position. Therefore, option B (while sitting in prayer) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_016",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Taslim ends the prayer by saying",
+    "options": [
+      "Allahu Akbar",
+      "As-Salamu Alaykum wa Rahmatullah",
+      "Alhamdulillah",
+      "Bismillah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Taslim is the salutation at the end of prayer. Therefore, option B (As-Salamu Alaykum wa Rahmatullah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_017",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Sujud as-Sahw is performed to",
+    "options": [
+      "lengthen prayer",
+      "compensate for forgetfulness in prayer",
+      "start prayer",
+      "end prayer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Prostration of forgetfulness corrects mistakes in prayer. Therefore, option B (compensate for forgetfulness in prayer) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_018",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Wudu is invalidated by",
+    "options": [
+      "eating",
+      "sleeping deeply, passing wind, or using the toilet",
+      "talking",
+      "walking"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Nullifiers of Wudu include urination, defecation, flatulence, and deep sleep. Therefore, option B (sleeping deeply, passing wind, or using the toilet) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_019",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ghusl is required for",
+    "options": [
+      "reading Qur'an",
+      "entering mosque",
+      "major impurity such as sexual intercourse and after menstruation",
+      "making Dua"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Ghusl is obligatory after major impurity. Therefore, option C (major impurity such as sexual intercourse and after menstruation) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_020",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tayammum is allowed when",
+    "options": [
+      "water is available",
+      "water is unavailable or harmful",
+      "always",
+      "only during Ramadan"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tayammum (dry ablution) is a substitute when water is absent or harmful. Therefore, option B (water is unavailable or harmful) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_021",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qiblah for Muslims is determined using",
+    "options": [
+      "the sun only",
+      "the direction of the Ka'bah",
+      "the moon",
+      "the stars only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Muslims calculate direction towards the Ka'bah for prayer. Therefore, option B (the direction of the Ka'bah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_022",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The place of worship for Muslims is called a",
+    "options": [
+      "Church",
+      "Synagogue",
+      "Masjid (Mosque)",
+      "Temple"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Muslims worship in a Masjid (mosque). Therefore, option C (Masjid (Mosque)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_023",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first mosque in Islam is",
+    "options": [
+      "Masjid an-Nabawi",
+      "Masjid al-Haram",
+      "Masjid Quba",
+      "Masjid al-Aqsa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Masjid al-Haram around the Ka'bah is the first mosque. Therefore, option B (Masjid al-Haram) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_024",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Masjid al-Aqsa is located in",
+    "options": [
+      "Makkah",
+      "Madinah",
+      "Jerusalem",
+      "Cairo"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Al-Aqsa Mosque is in Jerusalem. Therefore, option C (Jerusalem) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_025",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet said that prayer in Masjid al-Haram is rewarded",
+    "options": [
+      "10 times",
+      "100 times",
+      "1000 times",
+      "100,000 times"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Prayer in al-Haram is 100,000 times better than elsewhere. Therefore, option D (100,000 times) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_026",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The holy month in which fasting is obligatory is",
+    "options": [
+      "Dhul-Hijjah",
+      "Muharram",
+      "Ramadan",
+      "Shawwal"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Ramadan is the month of obligatory fasting. Therefore, option C (Ramadan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_027",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "A person who breaks the fast deliberately must",
+    "options": [
+      "do nothing",
+      "perform Kaffarah",
+      "only pray",
+      "pay money only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Deliberate breaking requires Kaffarah (fasting 60 days or feeding 60 poor). Therefore, option B (perform Kaffarah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_028",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Zakat al-Fitr is given",
+    "options": [
+      "at the beginning of Ramadan",
+      "before Eid al-Fitr prayer",
+      "after Hajj",
+      "any time"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Zakat al-Fitr is paid before Eid prayer at the end of Ramadan. Therefore, option B (before Eid al-Fitr prayer) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_029",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The amount of Zakat al-Fitr is",
+    "options": [
+      "one Sa' of food",
+      "one kilogram of gold",
+      "one litre of oil",
+      "ten kilograms of rice"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "It is one Sa' (about 2.5-3 kg) of staple food per person. Therefore, option A (one Sa' of food) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_030",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Eid prayer is",
+    "options": [
+      "obligatory",
+      "highly recommended (Sunnah Mu'akkadah)",
+      "forbidden",
+      "only for men"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Eid prayer is a confirmed Sunnah. Therefore, option B (highly recommended (Sunnah Mu'akkadah)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_031",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of Takbirs in the first raka'ah of Eid prayer is",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The first raka'ah has 7 additional Takbirs. Therefore, option C (7) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_032",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Qurbani (sacrifice) is performed during",
+    "options": [
+      "Ramadan",
+      "Eid al-Adha",
+      "Eid al-Fitr",
+      "Ashura"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sacrifice is done on Eid al-Adha (10th Dhul-Hijjah). Therefore, option B (Eid al-Adha) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_033",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The meat of the sacrifice is divided into",
+    "options": [
+      "one part",
+      "two parts",
+      "three parts (self, family, poor)",
+      "four parts"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The meat is shared among self, relatives, and the needy. Therefore, option C (three parts (self, family, poor)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_034",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The obligatory acts of Hajj are called",
+    "options": [
+      "Rukn",
+      "Wajib",
+      "Sunnah",
+      "Makruh"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The pillars (Rukn) of Hajj must be performed for validity. Therefore, option A (Rukn) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_035",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The pillars of Hajj include",
+    "options": [
+      "Tawaf and Wuquf at Arafat",
+      "eating and sleeping",
+      "shopping",
+      "fasting"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Tawaf al-Ifadah and Wuquf at Arafat are pillars of Hajj. Therefore, option A (Tawaf and Wuquf at Arafat) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_036",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ihram is",
+    "options": [
+      "a type of food",
+      "the sacred state and attire for Hajj/Umrah",
+      "a prayer",
+      "a location"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ihram is the consecrated state with specific clothing for pilgrimage. Therefore, option B (the sacred state and attire for Hajj/Umrah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_037",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The place where pilgrims enter Ihram is called",
+    "options": [
+      "Arafat",
+      "Miqat",
+      "Mina",
+      "Muzdalifah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Miqat is the designated boundary for assuming Ihram. Therefore, option B (Miqat) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_038",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Talbiyah is",
+    "options": [
+      "a prayer",
+      "the pilgrim's chant 'Labbayk Allahumma Labbayk'",
+      "a type of food",
+      "a location"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Talbiyah is the invocation of response during Hajj. Therefore, option B (the pilgrim's chant 'Labbayk Allahumma Labbayk') is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_039",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Mina is associated with",
+    "options": [
+      "stoning the Jamarat",
+      "circling the Ka'bah",
+      "standing at Arafat",
+      "Sa'i"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Pilgrims stone the Jamarat at Mina. Therefore, option A (stoning the Jamarat) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_040",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Muzdalifah is where pilgrims",
+    "options": [
+      "circle the Ka'bah",
+      "spend the night and collect pebbles",
+      "slaughter animals",
+      "perform Sa'i"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Pilgrims stay at Muzdalifah after Arafat and gather pebbles. Therefore, option B (spend the night and collect pebbles) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_041",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The days of Tashriq are",
+    "options": [
+      "8th-10th Dhul-Hijjah",
+      "11th-13th Dhul-Hijjah",
+      "1st-3rd Ramadan",
+      "9th-10th Muharram"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Days of Tashriq are the 11th, 12th, and 13th of Dhul-Hijjah. Therefore, option B (11th-13th Dhul-Hijjah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_042",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Sa'i commemorates",
+    "options": [
+      "Ibrahim's sacrifice",
+      "Hajar's search for water between Safa and Marwa",
+      "Musa's escape",
+      "Nuh's ark"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sa'i recalls Hajar's running between Safa and Marwa. Therefore, option B (Hajar's search for water between Safa and Marwa) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_043",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Maqam Ibrahim is",
+    "options": [
+      "a mountain",
+      "the station of Ibrahim near the Ka'bah",
+      "a city",
+      "a well"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Maqam Ibrahim is the stone associated with Prophet Ibrahim. Therefore, option B (the station of Ibrahim near the Ka'bah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_044",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The well of Zamzam is located in",
+    "options": [
+      "Madinah",
+      "Makkah",
+      "Jerusalem",
+      "Ta'if"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Zamzam is within Masjid al-Haram in Makkah. Therefore, option B (Makkah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_045",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Mount Safa and Marwa are located in",
+    "options": [
+      "Madinah",
+      "Makkah",
+      "Arafat",
+      "Mina"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Safa and Marwa are in the Masjid al-Haram complex. Therefore, option B (Makkah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_046",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Mount Arafat is also called",
+    "options": [
+      "Jabal an-Nur",
+      "Jabal ar-Rahmah",
+      "Jabal Uhud",
+      "Jabal Thawr"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Arafat is known as Jabal ar-Rahmah (Mount of Mercy). Therefore, option B (Jabal ar-Rahmah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_047",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The sermon of Arafat is delivered on the",
+    "options": [
+      "8th Dhul-Hijjah",
+      "9th Dhul-Hijjah",
+      "10th Dhul-Hijjah",
+      "11th Dhul-Hijjah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Hajj sermon is delivered at Arafat on the 9th of Dhul-Hijjah. Therefore, option B (9th Dhul-Hijjah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_048",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of circuits in Tawaf is",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Tawaf consists of seven circuits around the Ka'bah. Therefore, option C (7) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_049",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of trips in Sa'i is",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Sa'i is seven trips between Safa and Marwa. Therefore, option C (7) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2022_050",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first ten days of Dhul-Hijjah are most virtuous for",
+    "options": [
+      "sleeping",
+      "good deeds including fasting and remembrance",
+      "trading",
+      "travelling"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "These days are highly recommended for increased worship. Therefore, option B (good deeds including fasting and remembrance) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

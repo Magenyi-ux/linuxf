@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_IRS_2020_001",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first Islamic state was established in",
+    "options": [
+      "Makkah",
+      "Madinah",
+      "Jerusalem",
+      "Cairo"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet established the first Islamic state in Madinah. Therefore, option B (Madinah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_002",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first constitution in Islam was",
+    "options": [
+      "the Treaty of Hudaybiyyah",
+      "the Constitution of Madinah",
+      "the Farewell Sermon",
+      "the Qur'an only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Constitution of Madinah governed relations among communities. Therefore, option B (the Constitution of Madinah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_003",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The second Rashidun Caliph expanded Islam to",
+    "options": [
+      "Persia and Syria",
+      "China",
+      "India",
+      "Europe"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Umar ibn al-Khattab's caliphate saw expansion into Persia and Syria. Therefore, option A (Persia and Syria) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_004",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first Muslim navy was built during the caliphate of",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Uthman",
+      "Ali"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Uthman ibn Affan established the first Muslim navy. Therefore, option C (Uthman) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_005",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Battle of Siffin was fought between",
+    "options": [
+      "Muslims and Romans",
+      "Ali and Mu'awiyah",
+      "Umar and Persians",
+      "Abu Bakr and rebels"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Siffin was between forces of Ali and Mu'awiyah. Therefore, option B (Ali and Mu'awiyah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_006",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Umayyad dynasty was founded by",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Mu'awiyah",
+      "Ali"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Mu'awiyah ibn Abi Sufyan founded the Umayyad dynasty. Therefore, option C (Mu'awiyah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_007",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Umayyad capital was",
+    "options": [
+      "Baghdad",
+      "Damascus",
+      "Cairo",
+      "Madinah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Umayyads ruled from Damascus. Therefore, option B (Damascus) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_008",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Abbasid dynasty moved the capital to",
+    "options": [
+      "Damascus",
+      "Baghdad",
+      "Cordoba",
+      "Istanbul"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Abbasids established Baghdad as their capital. Therefore, option B (Baghdad) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_009",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The golden age of Islamic civilization was during the",
+    "options": [
+      "Umayyad dynasty",
+      "Abbasid dynasty",
+      "Fatimid dynasty",
+      "Ottoman dynasty"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Abbasid era saw a flourishing of science and culture. Therefore, option B (Abbasid dynasty) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_010",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Bayt al-Hikmah (House of Wisdom) was established in",
+    "options": [
+      "Damascus",
+      "Baghdad",
+      "Cairo",
+      "Cordoba"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bayt al-Hikmah in Baghdad was a major intellectual centre. Therefore, option B (Baghdad) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_011",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The famous Muslim physician and philosopher Ibn Sina was known in the West as",
+    "options": [
+      "Averroes",
+      "Avicenna",
+      "Alhazen",
+      "Rhazes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ibn Sina is known as Avicenna in the West. Therefore, option B (Avicenna) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_012",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ibn Rushd is known in the West as",
+    "options": [
+      "Avicenna",
+      "Averroes",
+      "Alhazen",
+      "Al-Ghazali"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ibn Rushd is known as Averroes, famed for philosophy and medicine. Therefore, option B (Averroes) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_013",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Al-Khwarizmi is known for contributions to",
+    "options": [
+      "medicine",
+      "algebra and mathematics",
+      "poetry",
+      "astronomy only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Khwarizmi is considered the father of algebra. Therefore, option B (algebra and mathematics) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_014",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The famous Muslim historian Ibn Khaldun wrote",
+    "options": [
+      "Al-Qanun",
+      "Muqaddimah",
+      "Al-Shifa",
+      "Ihya Ulum ad-Din"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ibn Khaldun wrote the Muqaddimah on sociology and history. Therefore, option B (Muqaddimah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_015",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Al-Ghazali wrote",
+    "options": [
+      "Al-Qanun fi at-Tibb",
+      "Ihya Ulum ad-Din",
+      "Kitab al-Manazir",
+      "Ar-Risalah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Ghazali authored Ihya Ulum ad-Din (Revival of Religious Sciences). Therefore, option B (Ihya Ulum ad-Din) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_016",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Islamic civilization contributed to Europe through",
+    "options": [
+      "Spain (Al-Andalus) and Sicily",
+      "China",
+      "Japan",
+      "Australia"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Al-Andalus and Sicily were channels of Islamic knowledge to Europe. Therefore, option A (Spain (Al-Andalus) and Sicily) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_017",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Ottoman Empire conquered Constantinople in",
+    "options": [
+      "1258",
+      "1453",
+      "1492",
+      "1517"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Constantinople fell to Sultan Mehmet II in 1453. Therefore, option B (1453) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_018",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The last caliphate was abolished in",
+    "options": [
+      "1900",
+      "1918",
+      "1924",
+      "1945"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Ottoman Caliphate was abolished in 1924. Therefore, option C (1924) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_019",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Islam was introduced to West Africa mainly through",
+    "options": [
+      "war only",
+      "trade and scholars",
+      "colonization",
+      "missionaries only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trans-Saharan trade and scholars spread Islam in West Africa. Therefore, option B (trade and scholars) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_020",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first West African empire to embrace Islam was",
+    "options": [
+      "Mali",
+      "Songhai",
+      "Ghana",
+      "Kanem-Borno"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Kanem-Borno rulers adopted Islam early. Therefore, option D (Kanem-Borno) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_021",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Mansa Musa of Mali is famous for",
+    "options": [
+      "building the Ka'bah",
+      "his pilgrimage to Makkah and wealth",
+      "conquering Europe",
+      "writing the Qur'an"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Mansa Musa's famous Hajj showcased his immense wealth. Therefore, option B (his pilgrimage to Makkah and wealth) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_022",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The University of Sankore was in",
+    "options": [
+      "Ghana",
+      "Timbuktu",
+      "Cairo",
+      "Baghdad"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sankore University was a centre of Islamic learning in Timbuktu. Therefore, option B (Timbuktu) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_023",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Usman dan Fodio led a jihad in",
+    "options": [
+      "Ghana",
+      "Northern Nigeria",
+      "Senegal",
+      "Mali"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Usman dan Fodio established the Sokoto Caliphate in Northern Nigeria. Therefore, option B (Northern Nigeria) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_024",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Sokoto Caliphate was founded in",
+    "options": [
+      "1700",
+      "1804",
+      "1850",
+      "1900"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Sokoto Caliphate was established in 1804. Therefore, option B (1804) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_025",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Sokoto Caliphate collapsed due to",
+    "options": [
+      "internal conflict",
+      "British colonial conquest",
+      "natural disaster",
+      "economic decline only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "British colonial forces defeated the Caliphate in 1903. Therefore, option B (British colonial conquest) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_026",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Islam reached Nigeria through",
+    "options": [
+      "the Atlantic Ocean",
+      "trans-Saharan trade routes",
+      "the Nile River",
+      "the Indian Ocean"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade routes across the Sahara brought Islam to Nigeria. Therefore, option B (trans-Saharan trade routes) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_027",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Jihad of Usman dan Fodio aimed to",
+    "options": [
+      "establish colonial rule",
+      "purify Islamic practice and establish justice",
+      "promote trade",
+      "build a military empire only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The jihad sought religious reform and social justice. Therefore, option B (purify Islamic practice and establish justice) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_028",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Borno Empire was known for its",
+    "options": [
+      "naval power",
+      "Islamic scholarship and military strength",
+      "gold production",
+      "coffee trade"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Borno was a centre of Islamic learning and military might. Therefore, option B (Islamic scholarship and military strength) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_029",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The founder of the Borno Islamic dynasty was",
+    "options": [
+      "Mai Idris Alooma",
+      "Usman dan Fodio",
+      "Mansa Musa",
+      "Askia Muhammad"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Mai Idris Alooma strengthened Islam in Borno. Therefore, option A (Mai Idris Alooma) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_030",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Songhai Empire reached its peak under",
+    "options": [
+      "Mansa Musa",
+      "Askia Muhammad",
+      "Sonni Ali",
+      "Usman dan Fodio"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Askia Muhammad expanded and Islamized Songhai. Therefore, option B (Askia Muhammad) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_031",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The term 'Sufism' refers to",
+    "options": [
+      "Islamic law",
+      "Islamic mysticism and spirituality",
+      "Islamic politics",
+      "Islamic economics"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sufism (Tasawwuf) is the mystical dimension of Islam. Therefore, option B (Islamic mysticism and spirituality) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_032",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "A Sufi order is called a",
+    "options": [
+      "Madhhab",
+      "Tariqah",
+      "Masjid",
+      "Khalifah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tariqah is a Sufi spiritual order or brotherhood. Therefore, option B (Tariqah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_033",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qadiriyyah Sufi order was founded by",
+    "options": [
+      "Ahmad al-Tijani",
+      "Abdul Qadir al-Jilani",
+      "Rumi",
+      "Al-Ghazali"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Abdul Qadir al-Jilani founded the Qadiriyyah order. Therefore, option B (Abdul Qadir al-Jilani) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_034",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Tijaniyyah Sufi order was founded by",
+    "options": [
+      "Abdul Qadir al-Jilani",
+      "Ahmad al-Tijani",
+      "Ibn Arabi",
+      "Al-Hallaj"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ahmad al-Tijani founded the Tijaniyyah order. Therefore, option B (Ahmad al-Tijani) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_035",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Sufism emphasizes",
+    "options": [
+      "worldly wealth",
+      "purification of the soul and love of Allah",
+      "political power",
+      "tribal loyalty"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sufism focuses on spiritual purification and devotion. Therefore, option B (purification of the soul and love of Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_036",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Dhikr means",
+    "options": [
+      "fasting",
+      "remembrance of Allah through repetition of His names",
+      "pilgrimage",
+      "charity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Dhikr is the devotional remembrance of Allah. Therefore, option B (remembrance of Allah through repetition of His names) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_037",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Islamic Ethics and Social Life",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Islamic concept of brotherhood teaches",
+    "options": [
+      "isolation",
+      "unity and mutual support among Muslims",
+      "competition",
+      "tribalism"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islamic brotherhood (Ukhuwwah) promotes unity and mutual care. Therefore, option B (unity and mutual support among Muslims) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_038",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The greeting 'As-Salamu Alaykum' means",
+    "options": [
+      "goodbye",
+      "peace be upon you",
+      "welcome",
+      "thank you"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It means 'Peace be upon you'. Therefore, option B (peace be upon you) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_039",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The response to 'As-Salamu Alaykum' is",
+    "options": [
+      "Alhamdulillah",
+      "Wa Alaykum as-Salam",
+      "Bismillah",
+      "Astaghfirullah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The response is 'Wa Alaykum as-Salam' (And peace be upon you too). Therefore, option B (Wa Alaykum as-Salam) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_040",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "'Bismillah' means",
+    "options": [
+      "praise be to Allah",
+      "in the name of Allah",
+      "Allah is great",
+      "peace be upon you"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bismillah means 'In the name of Allah'. Therefore, option B (in the name of Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_041",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "'Alhamdulillah' means",
+    "options": [
+      "in the name of Allah",
+      "praise be to Allah",
+      "Allah is great",
+      "if Allah wills"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Alhamdulillah means 'All praise is due to Allah'. Therefore, option B (praise be to Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_042",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "'Allahu Akbar' means",
+    "options": [
+      "praise Allah",
+      "Allah is the Greatest",
+      "peace be upon you",
+      "I seek forgiveness"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Allahu Akbar means 'Allah is the Greatest'. Therefore, option B (Allah is the Greatest) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_043",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "'Insha'Allah' means",
+    "options": [
+      "praise Allah",
+      "if Allah wills",
+      "Allah is great",
+      "thank Allah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Insha'Allah means 'If Allah wills'. Therefore, option B (if Allah wills) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_044",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "'Astaghfirullah' means",
+    "options": [
+      "praise Allah",
+      "I seek forgiveness from Allah",
+      "Allah is great",
+      "peace be upon you"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Astaghfirullah means 'I seek forgiveness from Allah'. Therefore, option B (I seek forgiveness from Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_045",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "'SubhanAllah' means",
+    "options": [
+      "Glory be to Allah",
+      "Allah is great",
+      "Praise Allah",
+      "Thank Allah"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "SubhanAllah means 'Glory be to Allah'. Therefore, option A (Glory be to Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_046",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "'JazakAllahu Khayran' means",
+    "options": [
+      "may Allah reward you with good",
+      "peace be upon you",
+      "Allah is great",
+      "praise Allah"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "It is an expression of gratitude: 'May Allah reward you with goodness'. Therefore, option A (may Allah reward you with good) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_047",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "'La ilaha illallah' means",
+    "options": [
+      "Muhammad is the messenger",
+      "there is no god but Allah",
+      "Allah is great",
+      "praise Allah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "This is the core of Islamic monotheism. Therefore, option B (there is no god but Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_048",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The full Shahadah is",
+    "options": [
+      "'Ash-hadu an la ilaha illallah wa ash-hadu anna Muhammadan rasulullah'",
+      "'Allahu Akbar'",
+      "'Alhamdulillah'",
+      "'Bismillah'"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Shahadah testifies to Allah's oneness and Muhammad's prophethood. Therefore, option A ('Ash-hadu an la ilaha illallah wa ash-hadu anna Muhammadan rasulullah') is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_049",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "A person who commits Shirk is called a",
+    "options": [
+      "Muslim",
+      "Mushrik",
+      "Munafiq",
+      "Kafir only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A Mushrik is one who associates partners with Allah. Therefore, option B (Mushrik) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2020_050",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2020",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "A hypocrite in Islam is called a",
+    "options": [
+      "Kafir",
+      "Mushrik",
+      "Munafiq",
+      "Murtad"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A Munafiq is a hypocrite who claims faith but hides disbelief. Therefore, option C (Munafiq) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

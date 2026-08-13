@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_IRS_2021_001",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first revelation received by Prophet Muhammad (SAW) was in",
+    "options": [
+      "610 CE",
+      "612 CE",
+      "615 CE",
+      "620 CE"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The first revelation came in 610 CE at Cave Hira when the Prophet was 40 years old. Therefore, option A (610 CE) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_002",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The angel responsible for delivering revelations to prophets is",
+    "options": [
+      "Mikail",
+      "Israfil",
+      "Jibril",
+      "Izrail"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Angel Jibril (Gabriel) is the angel of revelation who delivered Allah's messages to prophets. Therefore, option C (Jibril) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_003",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first chapter of the Qur'an is called",
+    "options": [
+      "Al-Ikhlas",
+      "Al-Fatihah",
+      "Al-Baqarah",
+      "Al-Nas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Fatihah (The Opening) is the first chapter of the Qur'an with 7 verses. Therefore, option B (Al-Fatihah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_004",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of Surahs in the Holy Qur'an is",
+    "options": [
+      "110",
+      "112",
+      "114",
+      "116"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Qur'an contains 114 chapters (Surahs). Therefore, option C (114) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_005",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The longest Surah in the Qur'an is",
+    "options": [
+      "Al-Fatihah",
+      "Al-Baqarah",
+      "Al-Imran",
+      "Al-Nisa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Baqarah is the longest Surah with 286 verses. Therefore, option B (Al-Baqarah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_006",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an was revealed over a period of approximately",
+    "options": [
+      "20 years",
+      "21 years",
+      "22 years",
+      "23 years"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The Qur'an was revealed gradually over approximately 23 years. Therefore, option D (23 years) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_007",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first Khalifah of Islam was",
+    "options": [
+      "Umar ibn al-Khattab",
+      "Abu Bakr as-Siddiq",
+      "Uthman ibn Affan",
+      "Ali ibn Abi Talib"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Abu Bakr was the first caliph after the death of Prophet Muhammad (SAW). Therefore, option B (Abu Bakr as-Siddiq) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_008",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The migration of Prophet Muhammad (SAW) from Makkah to Madinah is called",
+    "options": [
+      "Hajj",
+      "Hijrah",
+      "Umrah",
+      "Mi'raj"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Hijrah (migration) in 622 CE marked the beginning of the Islamic calendar. Therefore, option B (Hijrah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_009",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first Mu'adh-dhin (caller to prayer) in Islam was",
+    "options": [
+      "Salman al-Farsi",
+      "Bilal ibn Rabah",
+      "Abu Hurayrah",
+      "Zayd ibn Thabit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bilal ibn Rabah was appointed by the Prophet as the first mu'adhdhin. Therefore, option B (Bilal ibn Rabah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_010",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The battle in which Muslims defeated the Quraysh despite being outnumbered was",
+    "options": [
+      "Battle of Uhud",
+      "Battle of Badr",
+      "Battle of Khandaq",
+      "Battle of Hunayn"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Battle of Badr (624 CE) was a decisive Muslim victory. Therefore, option B (Battle of Badr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_011",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Salah performed after midnight during Ramadan is called",
+    "options": [
+      "Tarawih",
+      "Tahajjud",
+      "Witr",
+      "Ishraq"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tahajjud is the voluntary night prayer, especially in the last third of the night. Therefore, option B (Tahajjud) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_012",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Islamic term for almsgiving is",
+    "options": [
+      "Sawm",
+      "Salah",
+      "Zakat",
+      "Hajj"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Zakat is the compulsory charity and the third pillar of Islam. Therefore, option C (Zakat) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_013",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of times a Muslim prays daily is",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Muslims perform five daily obligatory prayers (Salah). Therefore, option C (5) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_014",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Islamic month of fasting is",
+    "options": [
+      "Shawwal",
+      "Ramadan",
+      "Rajab",
+      "Muharram"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ramadan is the ninth month of the Islamic calendar, dedicated to fasting. Therefore, option B (Ramadan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_015",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The pilgrimage to Makkah is known as",
+    "options": [
+      "Umrah",
+      "Hajj",
+      "Tawaf",
+      "Sa'i"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hajj is the fifth pillar of Islam, performed in the month of Dhul-Hijjah. Therefore, option B (Hajj) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_016",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The declaration of faith in Islam is called",
+    "options": [
+      "Salah",
+      "Shahadah",
+      "Zakat",
+      "Sawm"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Shahadah ('There is no god but Allah, and Muhammad is His messenger') is the first pillar. Therefore, option B (Shahadah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_017",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet's Night Journey from Makkah to Jerusalem is called",
+    "options": [
+      "Hijrah",
+      "Mi'raj",
+      "Isra",
+      "Tawaf"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Isra is the night journey from Makkah to Jerusalem; Mi'raj is the ascension to heaven. Therefore, option C (Isra) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_018",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The book revealed to Prophet Dawud (David) is",
+    "options": [
+      "Tawrah",
+      "Injil",
+      "Zabur",
+      "Suhuf"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Zabur (Psalms) was revealed to Prophet Dawud (AS). Therefore, option C (Zabur) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_019",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of prophets mentioned in the Qur'an by name is",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Twenty-five prophets are mentioned by name in the Qur'an. Therefore, option B (25) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_020",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The father of Prophet Ibrahim (Abraham) was",
+    "options": [
+      "Adam",
+      "Nuh",
+      "Azar",
+      "Ishaq"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Qur'an mentions Azar as the father of Ibrahim (AS). Therefore, option C (Azar) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_021",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet who was swallowed by a whale was",
+    "options": [
+      "Musa",
+      "Harun",
+      "Yunus",
+      "Yusuf"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Prophet Yunus (Jonah) was swallowed by a whale. Therefore, option C (Yunus) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_022",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The wife of Pharaoh who cared for Prophet Musa was",
+    "options": [
+      "Khadijah",
+      "Aishah",
+      "Asiyah",
+      "Maryam"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Asiyah, the wife of Pharaoh, adopted and protected Musa (AS). Therefore, option C (Asiyah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_023",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first wife of Prophet Muhammad (SAW) was",
+    "options": [
+      "Aishah",
+      "Hafsa",
+      "Khadijah",
+      "Zaynab"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Khadijah bint Khuwaylid was the first wife of the Prophet. Therefore, option C (Khadijah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_024",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet's uncle who opposed him strongly was",
+    "options": [
+      "Hamza",
+      "Abbas",
+      "Abu Lahab",
+      "Abu Talib"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Abu Lahab is specifically cursed in Surah Al-Masad for his opposition. Therefore, option C (Abu Lahab) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_025",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first person to accept Islam was",
+    "options": [
+      "Abu Bakr",
+      "Ali",
+      "Khadijah",
+      "Zayd"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Khadijah, the Prophet's wife, was the first to accept Islam. Therefore, option C (Khadijah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_026",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'anic chapter that has no Bismillah at its beginning is",
+    "options": [
+      "Al-Fatihah",
+      "Al-Baqarah",
+      "At-Tawbah",
+      "Al-Ikhlas"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Surah At-Tawbah (Chapter 9) does not begin with Bismillah. Therefore, option C (At-Tawbah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_027",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tawhid means",
+    "options": [
+      "fasting",
+      "the oneness of Allah",
+      "pilgrimage",
+      "charity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tawhid is the Islamic concept of monotheism—the oneness of Allah. Therefore, option B (the oneness of Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_028",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an was compiled into a single book during the caliphate of",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Uthman",
+      "Ali"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Uthman ibn Affan ordered the compilation of the standard copy of the Qur'an. Therefore, option C (Uthman) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_029",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Arabic term for ablution before prayer is",
+    "options": [
+      "Tayammum",
+      "Ghusl",
+      "Wudu",
+      "Istinja"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Wudu is the ritual washing before Salah. Therefore, option C (Wudu) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_030",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tayammum is performed with",
+    "options": [
+      "water",
+      "clean sand or dust",
+      "leaves",
+      "stones"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tayammum is dry ablution using clean earth when water is unavailable. Therefore, option B (clean sand or dust) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_031",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ghusl is required after",
+    "options": [
+      "eating",
+      "sleeping",
+      "sexual intercourse",
+      "talking"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Ghusl (full bath) is required after major impurity such as sexual intercourse. Therefore, option C (sexual intercourse) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_032",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of raka'at in Fajr prayer is",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Fajr (dawn prayer) consists of 2 raka'at. Therefore, option A (2) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_033",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of raka'at in Maghrib prayer is",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Maghrib (sunset prayer) has 3 raka'at. Therefore, option B (3) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_034",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Jumu'ah prayer is performed on",
+    "options": [
+      "Monday",
+      "Wednesday",
+      "Friday",
+      "Sunday"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Jumu'ah (congregational Friday prayer) replaces Dhuhr on Fridays. Therefore, option C (Friday) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_035",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Imam leads the prayer while the congregation",
+    "options": [
+      "prays separately",
+      "follows him",
+      "watches him",
+      "remains silent throughout"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The congregation follows the Imam in prayer movements. Therefore, option B (follows him) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_036",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Zakat is payable on",
+    "options": [
+      "all earnings",
+      "savings above nisab held for one year",
+      "only gold",
+      "only crops"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Zakat is due on wealth above nisab threshold held for a lunar year. Therefore, option B (savings above nisab held for one year) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_037",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The rate of Zakat on savings is",
+    "options": [
+      "1%",
+      "2.5%",
+      "5%",
+      "10%"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Zakat on monetary savings is 2.5% (1/40) of the total wealth. Therefore, option B (2.5%) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_038",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The recipients of Zakat are mentioned in Surah",
+    "options": [
+      "Al-Baqarah",
+      "At-Tawbah",
+      "Al-Ma'un",
+      "Al-Ikhlas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah At-Tawbah (9:60) lists the eight categories of Zakat recipients. Therefore, option B (At-Tawbah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_039",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Fasting during Ramadan begins at",
+    "options": [
+      "sunrise",
+      "midday",
+      "dawn (Fajr)",
+      "sunset"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Fasting starts at Fajr (dawn) and ends at Maghrib (sunset). Therefore, option C (dawn (Fajr)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_040",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The meal taken before dawn during Ramadan is called",
+    "options": [
+      "Iftar",
+      "Suhur",
+      "Lunch",
+      "Dinner"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Suhur is the pre-dawn meal before the fast begins. Therefore, option B (Suhur) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_041",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The meal taken at sunset to break the fast is called",
+    "options": [
+      "Suhur",
+      "Iftar",
+      "Sahur",
+      "Futur"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Iftar is the evening meal to break the fast at sunset. Therefore, option B (Iftar) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_042",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Eid al-Fitr is celebrated after",
+    "options": [
+      "Hajj",
+      "Ramadan",
+      "Shawwal",
+      "Muharram"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Eid al-Fitr marks the end of Ramadan fasting. Therefore, option B (Ramadan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_043",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Eid al-Adha is celebrated on the 10th of",
+    "options": [
+      "Ramadan",
+      "Shawwal",
+      "Dhul-Hijjah",
+      "Muharram"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Eid al-Adha falls on the 10th of Dhul-Hijjah, during Hajj season. Therefore, option C (Dhul-Hijjah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_044",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The animal sacrificed at Eid al-Adha commemorates",
+    "options": [
+      "Prophet Musa",
+      "Prophet Ibrahim's willingness to sacrifice his son",
+      "Prophet Nuh",
+      "Prophet Adam"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The sacrifice commemorates Prophet Ibrahim's obedience to Allah. Therefore, option B (Prophet Ibrahim's willingness to sacrifice his son) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_045",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Tawaf during Hajj involves",
+    "options": [
+      "running between Safa and Marwa",
+      "circling the Ka'bah seven times",
+      "standing at Arafat",
+      "throwing stones"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tawaf is circumambulating the Ka'bah seven times. Therefore, option B (circling the Ka'bah seven times) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_046",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Sa'i in Hajj refers to",
+    "options": [
+      "circling the Ka'bah",
+      "walking between Safa and Marwa seven times",
+      "standing at Arafat",
+      "stoning the Jamarat"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sa'i is the seven-times walk between the hills of Safa and Marwa. Therefore, option B (walking between Safa and Marwa seven times) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_047",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The day of Arafat falls on the",
+    "options": [
+      "8th of Dhul-Hijjah",
+      "9th of Dhul-Hijjah",
+      "10th of Dhul-Hijjah",
+      "11th of Dhul-Hijjah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Day of Arafat is the 9th of Dhul-Hijjah, the climax of Hajj. Therefore, option B (9th of Dhul-Hijjah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_048",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Ka'bah is located in",
+    "options": [
+      "Madinah",
+      "Jerusalem",
+      "Makkah",
+      "Ta'if"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Ka'bah is in the Masjid al-Haram in Makkah. Therefore, option C (Makkah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_049",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet's Mosque is located in",
+    "options": [
+      "Makkah",
+      "Madinah",
+      "Jerusalem",
+      "Cairo"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Masjid an-Nabawi is in Madinah. Therefore, option B (Madinah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2021_050",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first mosque built by the Prophet in Madinah was",
+    "options": [
+      "Masjid al-Haram",
+      "Masjid Quba",
+      "Masjid al-Aqsa",
+      "Masjid an-Nabawi"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Masjid Quba was the first mosque built upon the Prophet's arrival in Madinah. Therefore, option B (Masjid Quba) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_IRS_2022_001",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an was revealed in which language?",
+    "options": [
+      "Hebrew",
+      "Aramaic",
+      "Arabic",
+      "Syriac"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Qur'an was revealed in Arabic. Therefore, option C (Arabic) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_002",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The literal meaning of 'Qur'an' is",
+    "options": [
+      "the book",
+      "the recitation",
+      "the law",
+      "the guidance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Qur'an means 'the recitation' or 'that which is recited'. Therefore, option B (the recitation) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_003",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first revealed verses of the Qur'an are in Surah",
+    "options": [
+      "Al-Fatihah",
+      "Al-Alaq",
+      "Al-Muddaththir",
+      "Al-Baqarah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The first five verses of Surah Al-Alaq (96:1-5) were the first revelation. Therefore, option B (Al-Alaq) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_004",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Surah Al-Ikhlas emphasizes",
+    "options": [
+      "prayer",
+      "the oneness of Allah",
+      "charity",
+      "fasting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Ikhlas declares the absolute oneness of Allah. Therefore, option B (the oneness of Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_005",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an is divided into how many Juz (parts)?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "40"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Qur'an is divided into 30 Juz (parts). Therefore, option C (30) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_006",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The science of Tajwid deals with",
+    "options": [
+      "Islamic law",
+      "correct recitation of the Qur'an",
+      "Islamic history",
+      "Arabic grammar"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tajwid is the science of proper pronunciation and recitation of the Qur'an. Therefore, option B (correct recitation of the Qur'an) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_007",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'anic verses revealed in Makkah are called",
+    "options": [
+      "Madaniyyah",
+      "Makkiyyah",
+      "Mutashabihat",
+      "Muhkamat"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Makkiyyah refers to chapters revealed before the Hijrah in Makkah. Therefore, option B (Makkiyyah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_008",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The verses revealed in Madinah are called",
+    "options": [
+      "Makkiyyah",
+      "Madaniyyah",
+      "Mutashabihat",
+      "Muhkamat"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Madaniyyah refers to chapters revealed after the Hijrah in Madinah. Therefore, option B (Madaniyyah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_009",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Hadith is the",
+    "options": [
+      "revealed word of Allah",
+      "sayings and actions of Prophet Muhammad (SAW)",
+      "biography of the Prophet",
+      "Islamic law code"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hadith comprises the sayings, actions, and approvals of the Prophet. Therefore, option B (sayings and actions of Prophet Muhammad (SAW)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_010",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The most authentic collection of Hadith is",
+    "options": [
+      "Sunan Abu Dawud",
+      "Sahih al-Bukhari",
+      "Jami at-Tirmidhi",
+      "Sunan Ibn Majah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sahih al-Bukhari is considered the most authentic Hadith collection. Therefore, option B (Sahih al-Bukhari) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_011",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The six authentic Hadith collections are called",
+    "options": [
+      "Kutub al-Sittah",
+      "Sahihayn",
+      "Muwatta",
+      "Musnad"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The six major Hadith books are known as Kutub al-Sittah. Therefore, option A (Kutub al-Sittah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_012",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The chain of narrators in a Hadith is called",
+    "options": [
+      "Matn",
+      "Isnad",
+      "Sahih",
+      "Da'if"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Isnad is the chain of transmission of a Hadith. Therefore, option B (Isnad) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_013",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The text or content of a Hadith is called",
+    "options": [
+      "Isnad",
+      "Matn",
+      "Sahih",
+      "Hassan"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Matn is the actual text or content of the Hadith. Therefore, option B (Matn) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_014",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "A Hadith with a continuous chain of reliable narrators is classified as",
+    "options": [
+      "Da'if",
+      "Sahih",
+      "Maudu",
+      "Mursal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sahih Hadith has an unbroken chain of trustworthy narrators. Therefore, option B (Sahih) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_015",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "A fabricated Hadith is termed",
+    "options": [
+      "Da'if",
+      "Maudu",
+      "Hassan",
+      "Sahih"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Maudu refers to a fabricated or forged Hadith. Therefore, option B (Maudu) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_016",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The second Khalifah of Islam was",
+    "options": [
+      "Abu Bakr",
+      "Umar ibn al-Khattab",
+      "Uthman ibn Affan",
+      "Ali ibn Abi Talib"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Umar ibn al-Khattab succeeded Abu Bakr as the second caliph. Therefore, option B (Umar ibn al-Khattab) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_017",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The third Khalifah of Islam was",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Uthman ibn Affan",
+      "Ali"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Uthman ibn Affan was the third Rightly Guided Caliph. Therefore, option C (Uthman ibn Affan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_018",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The fourth Khalifah of Islam was",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Uthman",
+      "Ali ibn Abi Talib"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Ali ibn Abi Talib was the fourth Rightly Guided Caliph. Therefore, option D (Ali ibn Abi Talib) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_019",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Rightly Guided Caliphs are known as",
+    "options": [
+      "Khulafa ar-Rashidun",
+      "Imams",
+      "Mujtahids",
+      "Ulama"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The first four caliphs are called Khulafa ar-Rashidun (Rightly Guided). Therefore, option A (Khulafa ar-Rashidun) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_020",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Battle of Uhud occurred in",
+    "options": [
+      "624 CE",
+      "625 CE",
+      "627 CE",
+      "630 CE"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Battle of Uhud took place in 625 CE. Therefore, option B (625 CE) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_021",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Battle of Khandaq is also known as the Battle of",
+    "options": [
+      "Badr",
+      "Trench",
+      "Hunayn",
+      "Tabuk"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Khandaq means trench; Muslims dug a trench to defend Madinah. Therefore, option B (Trench) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_022",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Treaty of Hudaybiyyah was signed in",
+    "options": [
+      "625 CE",
+      "627 CE",
+      "628 CE",
+      "630 CE"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Treaty of Hudaybiyyah was signed in 628 CE. Therefore, option C (628 CE) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_023",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The conquest of Makkah occurred in",
+    "options": [
+      "628 CE",
+      "629 CE",
+      "630 CE",
+      "632 CE"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Makkah was conquered peacefully in 630 CE. Therefore, option C (630 CE) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_024",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet's farewell pilgrimage took place in",
+    "options": [
+      "630 CE",
+      "631 CE",
+      "632 CE",
+      "633 CE"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Farewell Hajj was in 632 CE, the year of the Prophet's death. Therefore, option C (632 CE) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_025",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet Muhammad (SAW) died in",
+    "options": [
+      "630 CE",
+      "631 CE",
+      "632 CE",
+      "633 CE"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Prophet died in 632 CE in Madinah. Therefore, option C (632 CE) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_026",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Shirk means",
+    "options": [
+      "belief in one God",
+      "associating partners with Allah",
+      "disbelief",
+      "hypocrisy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Shirk is the sin of associating partners with Allah—the opposite of Tawhid. Therefore, option B (associating partners with Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_027",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The unforgivable sin in Islam is",
+    "options": [
+      "lying",
+      "theft",
+      "Shirk",
+      "backbiting"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Shirk is declared unforgivable if one dies without repenting from it. Therefore, option C (Shirk) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_028",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Iman means",
+    "options": [
+      "prayer",
+      "faith or belief",
+      "charity",
+      "fasting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Iman is faith in Allah, His angels, books, prophets, the Last Day, and destiny. Therefore, option B (faith or belief) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_029",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of articles of faith in Islam is",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "There are six articles of faith (Iman). Therefore, option C (6) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_030",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Belief in the Day of Judgment is called",
+    "options": [
+      "Tawhid",
+      "Risalah",
+      "Akhirah",
+      "Qadar"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Akhirah is belief in the Hereafter and Day of Judgment. Therefore, option C (Akhirah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_031",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Belief in divine predestination is called",
+    "options": [
+      "Tawhid",
+      "Qadar",
+      "Risalah",
+      "Akhirah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Qadar is belief in Allah's decree and predestination. Therefore, option B (Qadar) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_032",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The angels are created from",
+    "options": [
+      "clay",
+      "fire",
+      "light",
+      "water"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Angels are created from light (Nur). Therefore, option C (light) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_033",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Jinn are created from",
+    "options": [
+      "clay",
+      "smokeless fire",
+      "light",
+      "water"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Jinn were created from smokeless fire. Therefore, option B (smokeless fire) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_034",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Human beings were created from",
+    "options": [
+      "light",
+      "fire",
+      "clay",
+      "air"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Adam (AS) was created from clay. Therefore, option C (clay) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_035",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The angel of death is",
+    "options": [
+      "Jibril",
+      "Mikail",
+      "Israfil",
+      "Izrail"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Izrail (Azrael) is the angel of death. Therefore, option D (Izrail) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_036",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The angel who will blow the trumpet on the Day of Judgment is",
+    "options": [
+      "Jibril",
+      "Israfil",
+      "Mikail",
+      "Izrail"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Israfil will blow the trumpet to announce the Day of Judgment. Therefore, option B (Israfil) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_037",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The angel responsible for sustenance and rain is",
+    "options": [
+      "Jibril",
+      "Izrail",
+      "Mikail",
+      "Israfil"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Mikail (Michael) oversees sustenance and natural phenomena. Therefore, option C (Mikail) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_038",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Zabur was revealed to Prophet",
+    "options": [
+      "Musa",
+      "Isa",
+      "Dawud",
+      "Ibrahim"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Prophet Dawud (David) received the Zabur (Psalms). Therefore, option C (Dawud) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_039",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Tawrah was revealed to Prophet",
+    "options": [
+      "Musa",
+      "Isa",
+      "Dawud",
+      "Nuh"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Prophet Musa (Moses) received the Tawrah (Torah). Therefore, option A (Musa) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_040",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Injil was revealed to Prophet",
+    "options": [
+      "Musa",
+      "Isa",
+      "Dawud",
+      "Ibrahim"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Prophet Isa (Jesus) received the Injil (Gospel). Therefore, option B (Isa) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_041",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Suhuf were revealed to Prophet",
+    "options": [
+      "Musa",
+      "Ibrahim",
+      "Adam",
+      "Nuh"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Suhuf (scrolls) were revealed to Prophet Ibrahim (AS). Therefore, option B (Ibrahim) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_042",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first man and prophet was",
+    "options": [
+      "Nuh",
+      "Ibrahim",
+      "Adam",
+      "Musa"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Adam (AS) was the first human and first prophet. Therefore, option C (Adam) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_043",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet who built the Ark was",
+    "options": [
+      "Musa",
+      "Nuh",
+      "Ibrahim",
+      "Yusuf"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Prophet Nuh (Noah) built the Ark to save believers from the flood. Therefore, option B (Nuh) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_044",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet who was thrown into the fire but remained unharmed was",
+    "options": [
+      "Musa",
+      "Nuh",
+      "Ibrahim",
+      "Yusuf"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Prophet Ibrahim was thrown into fire by his people but Allah saved him. Therefore, option C (Ibrahim) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_045",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet who was sold into slavery by his brothers was",
+    "options": [
+      "Musa",
+      "Yusuf",
+      "Harun",
+      "Ishaq"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Prophet Yusuf (Joseph) was sold into slavery by his brothers. Therefore, option B (Yusuf) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_046",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Prophet Musa was given the miracle of",
+    "options": [
+      "healing the sick",
+      "turning his staff into a snake",
+      "raising the dead",
+      "controlling the wind"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Musa's staff turning into a snake was one of his miracles. Therefore, option B (turning his staff into a snake) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_047",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Prophet Isa was given the miracle of",
+    "options": [
+      "splitting the sea",
+      "healing the sick and raising the dead",
+      "surviving the fire",
+      "controlling the jinn"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Isa (Jesus) healed the sick and raised the dead by Allah's permission. Therefore, option B (healing the sick and raising the dead) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_048",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Prophet Sulayman was given control over",
+    "options": [
+      "the sea",
+      "the wind and jinn",
+      "the fire",
+      "the animals only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sulayman (Solomon) controlled the wind and jinn. Therefore, option B (the wind and jinn) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_049",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The mother of Prophet Isa was",
+    "options": [
+      "Asiyah",
+      "Maryam",
+      "Khadijah",
+      "Aishah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Maryam (Mary) was the mother of Prophet Isa (AS). Therefore, option B (Maryam) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2022_050",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2022",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet who lived for 950 years was",
+    "options": [
+      "Adam",
+      "Nuh",
+      "Ibrahim",
+      "Musa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Nuh (Noah) preached for 950 years. Therefore, option B (Nuh) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

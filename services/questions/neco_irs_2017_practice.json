@@ -1,0 +1,852 @@
+[
+  {
+    "id": "NECO_IRS_2017_001",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The source of all Islamic teachings is",
+    "options": [
+      "culture",
+      "the Qur'an and Sunnah",
+      "politics",
+      "philosophy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islam is founded on the Qur'an and the Prophet's Sunnah. Therefore, option B (the Qur'an and Sunnah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_002",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an was preserved through",
+    "options": [
+      "oral and written means",
+      "only oral",
+      "only written",
+      "paintings"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Qur'an was memorized and written down from the beginning. Therefore, option A (oral and written means) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_003",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The companions who memorized the Qur'an fully are called",
+    "options": [
+      "Muhaddithun",
+      "Huffaz",
+      "Mufassirun",
+      "Fuqaha"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Huffaz are those who have memorized the entire Qur'an. Therefore, option B (Huffaz) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_004",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first Hafiz of the Qur'an was",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Prophet Muhammad (SAW)",
+      "Ali"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Prophet was the first to memorize and preserve the Qur'an. Therefore, option C (Prophet Muhammad (SAW)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_005",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The writing down of the Qur'an began",
+    "options": [
+      "during the Prophet's lifetime",
+      "only after the first caliphate ended",
+      "only when Uthman produced standard copies",
+      "after every companion who memorised it had died"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Revelations were written down during the lifetime of Prophet Muhammad (SAW) by appointed scribes. The later caliphal efforts gathered and standardised those written and memorised materials rather than beginning the writing process. Therefore, option A (during the Prophet's lifetime) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_006",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The official compilation of the Qur'an was completed during the caliphate of",
+    "options": [
+      "Abu Bakr",
+      "Umar",
+      "Uthman",
+      "Ali"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Uthman standardized the Mushaf. Therefore, option C (Uthman) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_007",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The chief scribe of the Prophet was",
+    "options": [
+      "Ali",
+      "Zayd ibn Thabit",
+      "Ibn Mas'ud",
+      "Abu Hurayrah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Zayd ibn Thabit was the main scribe of revelation. Therefore, option B (Zayd ibn Thabit) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_008",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an is divided into how many Manzil (parts) for weekly recitation?",
+    "options": [
+      "5",
+      "7",
+      "10",
+      "30"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Qur'an is often divided into 7 Manzils. Therefore, option B (7) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_009",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an contains how many verses (Ayah)?",
+    "options": [
+      "6000",
+      "6236",
+      "6500",
+      "7000"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Qur'an contains approximately 6236 verses. Therefore, option B (6236) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_010",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The longest verse in the Qur'an is in Surah",
+    "options": [
+      "Al-Fatihah",
+      "Al-Baqarah",
+      "An-Nisa",
+      "Al-Ma'idah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ayat al-Dayn (2:282) is the longest verse. Therefore, option B (Al-Baqarah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_011",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The shortest Surah in the Qur'an is",
+    "options": [
+      "Al-Ikhlas",
+      "Al-Kawthar",
+      "An-Nas",
+      "Al-Falaq"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Kawthar has only 3 verses, making it the shortest. Therefore, option B (Al-Kawthar) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_012",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after a mountain is",
+    "options": [
+      "At-Tur",
+      "Al-Fil",
+      "Al-Quraysh",
+      "Al-Masad"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "At-Tur (The Mount) is named after Mount Sinai. Therefore, option A (At-Tur) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_013",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after the Ant is",
+    "options": [
+      "An-Nahl",
+      "An-Naml",
+      "Al-Ankabut",
+      "An-Nur"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An-Naml means 'The Ant'. Therefore, option B (An-Naml) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_014",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after the Bee is",
+    "options": [
+      "An-Naml",
+      "An-Nahl",
+      "Al-Ankabut",
+      "An-Nur"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An-Nahl means 'The Bee'. Therefore, option B (An-Nahl) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_015",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after the Spider is",
+    "options": [
+      "An-Nahl",
+      "An-Naml",
+      "Al-Ankabut",
+      "An-Nur"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Al-Ankabut means 'The Spider'. Therefore, option C (Al-Ankabut) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_016",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after the Cow is",
+    "options": [
+      "Al-Fatihah",
+      "Al-Baqarah",
+      "Al-Imran",
+      "An-Nisa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Baqarah means 'The Cow'. Therefore, option B (Al-Baqarah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_017",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after Light is",
+    "options": [
+      "An-Nahl",
+      "An-Nur",
+      "Al-Fajr",
+      "Ad-Duha"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An-Nur means 'The Light'. Therefore, option B (An-Nur) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_018",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after Iron is",
+    "options": [
+      "Al-Hadid",
+      "An-Nahl",
+      "Al-Fil",
+      "Al-Qamar"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Al-Hadid means 'The Iron'. Therefore, option A (Al-Hadid) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_019",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after the Moon is",
+    "options": [
+      "Ash-Shams",
+      "Al-Qamar",
+      "An-Najm",
+      "Al-Fajr"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Qamar means 'The Moon'. Therefore, option B (Al-Qamar) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_020",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after the Sun is",
+    "options": [
+      "Al-Qamar",
+      "Ash-Shams",
+      "An-Najm",
+      "Al-Layl"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ash-Shams means 'The Sun'. Therefore, option B (Ash-Shams) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_021",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah named after the Star is",
+    "options": [
+      "Ash-Shams",
+      "An-Najm",
+      "Al-Qamar",
+      "At-Tariq"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An-Najm means 'The Star'. Therefore, option B (An-Najm) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_022",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah that begins with 'Say: He is Allah, the One' is",
+    "options": [
+      "Al-Fatihah",
+      "Al-Ikhlas",
+      "Al-Kafirun",
+      "An-Nas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Ikhlas declares Allah's oneness. Therefore, option B (Al-Ikhlas) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_023",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Surah that begins with 'Say: O disbelievers' is",
+    "options": [
+      "Al-Ikhlas",
+      "Al-Kafirun",
+      "Al-Falaq",
+      "An-Nas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Kafirun addresses disbelievers. Therefore, option B (Al-Kafirun) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_024",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The two protective Surahs are recited for",
+    "options": [
+      "wealth",
+      "protection from evil",
+      "health",
+      "success"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Falaq and An-Nas seek protection from evil. Therefore, option B (protection from evil) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_025",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ayat al-Kursi is famous for",
+    "options": [
+      "its length",
+      "describing Allah's sovereignty and protection",
+      "laws of inheritance",
+      "stories of prophets"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ayat al-Kursi (2:255) exalts Allah's majesty and protection. Therefore, option B (describing Allah's sovereignty and protection) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_026",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The last Surah of the Qur'an is",
+    "options": [
+      "Al-Falaq",
+      "An-Nas",
+      "Al-Ikhlas",
+      "Al-Fatihah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An-Nas is the 114th and final Surah. Therefore, option B (An-Nas) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_027",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an is a source of",
+    "options": [
+      "entertainment",
+      "guidance and law",
+      "myths",
+      "poetry only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Qur'an provides spiritual and legal guidance. Therefore, option B (guidance and law) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_028",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an explicitly forbids",
+    "options": [
+      "charity",
+      "murder, theft, and injustice",
+      "prayer",
+      "fasting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Qur'an prohibits major sins including murder and theft. Therefore, option B (murder, theft, and injustice) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_029",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an commands justice and fairness in",
+    "options": [
+      "only family matters",
+      "all dealings",
+      "only trade",
+      "only prayer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Justice is enjoined in all aspects of life. Therefore, option B (all dealings) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_030",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an encourages believers to",
+    "options": [
+      "seek knowledge and reflect on creation",
+      "avoid learning beyond daily routines",
+      "accept every claim without thought",
+      "separate knowledge from worship and moral conduct"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Qur'an repeatedly calls people to read, observe, reflect and use understanding responsibly. Seeking beneficial knowledge is therefore encouraged, while ignorance and uncritical acceptance are not presented as Islamic ideals. Therefore, option A (seek knowledge and reflect on creation) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_031",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet said, 'The best among you are those who learn the Qur'an and teach it.' This is in",
+    "options": [
+      "Sahih al-Bukhari",
+      "Sunan Abu Dawud",
+      "Muwatta Malik",
+      "Musnad Ahmad"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Hadith is recorded in Sahih al-Bukhari. Therefore, option A (Sahih al-Bukhari) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_032",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The science of reciting the Qur'an correctly is",
+    "options": [
+      "Fiqh",
+      "Tajwid",
+      "Tafsir",
+      "Hadith"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tajwid ensures proper pronunciation and recitation. Therefore, option B (Tajwid) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_033",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The science of Qur'anic exegesis is",
+    "options": [
+      "Tajwid",
+      "Tafsir",
+      "Fiqh",
+      "Aqidah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tafsir explains the meanings of Qur'anic verses. Therefore, option B (Tafsir) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_034",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an was revealed through the angel",
+    "options": [
+      "Mikail",
+      "Israfil",
+      "Jibril",
+      "Izrail"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Jibril delivered the Qur'an to Prophet Muhammad. Therefore, option C (Jibril) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_035",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an is considered the literal word of",
+    "options": [
+      "the Prophet",
+      "Angel Jibril",
+      "Allah",
+      "the Companions"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Muslims believe the Qur'an is Allah's verbatim word. Therefore, option C (Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_036",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an's preservation is guaranteed by",
+    "options": [
+      "human effort only",
+      "Allah's promise in Surah Al-Hijr",
+      "the government",
+      "scholars only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Allah says: 'Indeed, We sent down the Reminder, and We will preserve it' (15:9). Therefore, option B (Allah's promise in Surah Al-Hijr) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_037",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an addresses",
+    "options": [
+      "Arabs only",
+      "all of humanity",
+      "men only",
+      "scholars only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Qur'an is a universal message for all people. Therefore, option B (all of humanity) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_038",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The main theme of the Qur'an is",
+    "options": [
+      "trade",
+      "the oneness of Allah and guidance for humanity",
+      "poetry",
+      "warfare only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The central message is Tawhid and divine guidance. Therefore, option B (the oneness of Allah and guidance for humanity) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_039",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an prohibits alcohol and gambling in Surah",
+    "options": [
+      "Al-Baqarah",
+      "Al-Ma'idah",
+      "An-Nisa",
+      "Al-An'am"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Al-Ma'idah (5:90-91) prohibits intoxicants and gambling. Therefore, option B (Al-Ma'idah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_040",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an commands lowering the gaze for modesty in Surah",
+    "options": [
+      "An-Nur",
+      "Al-Ahzab",
+      "Maryam",
+      "Al-Baqarah"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Surah An-Nur commands believing men and women to lower their gaze. Therefore, option A (An-Nur) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_041",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Hijab is prescribed for women in Surah",
+    "options": [
+      "An-Nur and Al-Ahzab",
+      "Al-Fatihah",
+      "Al-Baqarah",
+      "Al-Ikhlas"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Verses on modest dress are in An-Nur (24:31) and Al-Ahzab (33:59). Therefore, option A (An-Nur and Al-Ahzab) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_042",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an describes man's creation from",
+    "options": [
+      "fire",
+      "light",
+      "a clinging clot (Alaq)",
+      "water only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Surah Al-Alaq mentions creation from a clinging clot. Therefore, option C (a clinging clot (Alaq)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_043",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an scientific references include",
+    "options": [
+      "the water cycle",
+      "embryology",
+      "the expanding universe",
+      "all of the above"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The Qur'an contains verses consistent with scientific phenomena. Therefore, option D (all of the above) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_044",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an calls upon humans to reflect on",
+    "options": [
+      "only the sky",
+      "the universe and nature",
+      "only mountains",
+      "only animals"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Qur'an encourages contemplation of creation. Therefore, option B (the universe and nature) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_045",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an says 'Indeed, with hardship comes ease' in Surah",
+    "options": [
+      "Al-Fatihah",
+      "Ash-Sharh",
+      "Ad-Duha",
+      "Al-Asr"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Ash-Sharh (94:5-6) contains this promise. Therefore, option B (Ash-Sharh) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_046",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an encourages spending in charity in Surah",
+    "options": [
+      "Al-Baqarah",
+      "Al-Ma'un",
+      "Al-Falaq",
+      "An-Nas"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Al-Baqarah contains many verses on charity (e.g., 2:261). Therefore, option A (Al-Baqarah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_047",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an forbids backbiting in Surah",
+    "options": [
+      "Al-Hujurat",
+      "Al-Baqarah",
+      "Al-Fatihah",
+      "Al-Kafirun"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Surah Al-Hujurat (49:12) prohibits backbiting and suspicion. Therefore, option A (Al-Hujurat) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_048",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an commands respect for parents in Surah",
+    "options": [
+      "Al-Isra and Luqman",
+      "Al-Falaq",
+      "An-Nas",
+      "Al-Ikhlas"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Al-Isra (17:23) and Luqman (31:14) enjoin kindness to parents. Therefore, option A (Al-Isra and Luqman) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_049",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an describes the purpose of creation as",
+    "options": [
+      "wealth",
+      "worship of Allah",
+      "power",
+      "fame"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Adh-Dhariyat (51:56) says humans and jinn were created to worship Allah. Therefore, option B (worship of Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "NECO_IRS_2017_050",
+    "examType": "NECO",
+    "subject": "IRS",
+    "year": "2017",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an is best understood with reference to",
+    "options": [
+      "only personal opinion",
+      "the Sunnah and Tafsir",
+      "culture",
+      "poetry"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Sunnah explains and contextualizes the Qur'an. Therefore, option B (the Sunnah and Tafsir) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

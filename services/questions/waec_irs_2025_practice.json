@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_IRS_2025_001",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The main objective of Islamic education is to",
+    "options": [
+      "acquire wealth",
+      "produce God-conscious individuals",
+      "gain power",
+      "win arguments"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islamic education aims at holistic development with Taqwa. Therefore, option B (produce God-conscious individuals) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_002",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first word of the first revelation emphasizes",
+    "options": [
+      "prayer",
+      "knowledge and reading",
+      "fasting",
+      "charity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Iqra' (Read) highlights the importance of knowledge. Therefore, option B (knowledge and reading) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_003",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an advises seeking knowledge",
+    "options": [
+      "only in childhood",
+      "throughout life",
+      "only for men",
+      "only for scholars"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islam encourages lifelong learning. Therefore, option B (throughout life) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_004",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet said seeking knowledge is",
+    "options": [
+      "optional",
+      "obligatory on every Muslim",
+      "only for scholars",
+      "discouraged"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Hadith: 'Seeking knowledge is obligatory on every Muslim'. Therefore, option B (obligatory on every Muslim) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_005",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The scholars are described in the Qur'an as those who",
+    "options": [
+      "fear Allah most",
+      "are wealthy",
+      "are politicians",
+      "are warriors"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Surah Fatir (35:28): 'Those truly fear Allah among His servants are the knowledgeable.' Therefore, option A (fear Allah most) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_006",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first Islamic university was",
+    "options": [
+      "Oxford",
+      "Al-Qarawiyyin",
+      "Harvard",
+      "Cambridge"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Qarawiyyin in Fez, Morocco, was founded by Fatima al-Fihri. Therefore, option B (Al-Qarawiyyin) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_007",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Al-Azhar University is located in",
+    "options": [
+      "Baghdad",
+      "Cairo",
+      "Damascus",
+      "Istanbul"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Azhar is in Cairo, Egypt. Therefore, option B (Cairo) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_008",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The contribution of Muslims to mathematics includes",
+    "options": [
+      "Roman numerals",
+      "algebra, algorithm, and zero",
+      "the abacus",
+      "geometry only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Muslim scholars developed algebra and popularized zero. Therefore, option B (algebra, algorithm, and zero) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_009",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ibn al-Haytham is famous for contributions to",
+    "options": [
+      "medicine",
+      "optics and the scientific method",
+      "poetry",
+      "astronomy only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ibn al-Haytham (Alhazen) is considered the father of modern optics. Therefore, option B (optics and the scientific method) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_010",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Al-Biruni contributed to",
+    "options": [
+      "geography and astronomy",
+      "poetry",
+      "law only",
+      "music only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Al-Biruni made significant contributions to geography, astronomy, and mathematics. Therefore, option A (geography and astronomy) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_011",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ibn Nafis discovered",
+    "options": [
+      "gravity",
+      "pulmonary circulation of blood",
+      "the atom",
+      "electricity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ibn Nafis described pulmonary circulation centuries before European scholars. Therefore, option B (pulmonary circulation of blood) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_012",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Al-Razi (Rhazes) was famous in",
+    "options": [
+      "physics",
+      "medicine",
+      "law",
+      "poetry"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Razi was a renowned physician and wrote extensively on medicine. Therefore, option B (medicine) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_013",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Canon of Medicine (Al-Qanun fi at-Tibb) was written by",
+    "options": [
+      "Al-Razi",
+      "Ibn Sina",
+      "Ibn Rushd",
+      "Al-Khwarizmi"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ibn Sina (Avicenna) authored the Canon of Medicine. Therefore, option B (Ibn Sina) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_014",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Islamic art is characterized by",
+    "options": [
+      "human portraits",
+      "geometric patterns and calligraphy",
+      "landscapes only",
+      "statues"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islamic art emphasizes calligraphy, arabesque, and geometry. Therefore, option B (geometric patterns and calligraphy) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_015",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Islamic architecture features",
+    "options": [
+      "minarets, domes, and mihrabs",
+      "only towers",
+      "only gardens",
+      "only gates"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Mosques typically have minarets, domes, and mihrabs. Therefore, option A (minarets, domes, and mihrabs) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_016",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The mihrab in a mosque is",
+    "options": [
+      "a pulpit",
+      "a niche indicating the Qiblah",
+      "a tower",
+      "a courtyard"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The mihrab indicates the direction of prayer. Therefore, option B (a niche indicating the Qiblah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_017",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The minbar is",
+    "options": [
+      "the prayer niche",
+      "the pulpit for sermons",
+      "the minaret",
+      "the ablution area"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The minbar is the stepped pulpit for the khutbah. Therefore, option B (the pulpit for sermons) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_018",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The minaret is used for",
+    "options": [
+      "storage",
+      "the call to prayer",
+      "meetings",
+      "education"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The minaret is the tower from which the Adhan is called. Therefore, option B (the call to prayer) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_019",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Arabic calligraphy is used to beautify",
+    "options": [
+      "only books",
+      "Qur'anic verses and mosque interiors",
+      "only coins",
+      "only clothing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Calligraphy is central to Islamic art, especially for Qur'anic text. Therefore, option B (Qur'anic verses and mosque interiors) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_020",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The mosques of Timbuktu are examples of",
+    "options": [
+      "modern architecture",
+      "Sudano-Sahelian Islamic architecture",
+      "European style",
+      "Chinese style"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Timbuktu mosques reflect West African Islamic architectural style. Therefore, option B (Sudano-Sahelian Islamic architecture) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_021",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Great Mosque of Djenne is located in",
+    "options": [
+      "Nigeria",
+      "Mali",
+      "Egypt",
+      "Morocco"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Great Mosque of Djenne is in Mali. Therefore, option B (Mali) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_022",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Sokoto Caliphate promoted Islamic education through",
+    "options": [
+      "only trade",
+      "Quranic schools and scholarship",
+      "military training only",
+      "farming"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Caliphate emphasized learning and scholarship. Therefore, option B (Quranic schools and scholarship) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_023",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first known written Islamic constitution is",
+    "options": [
+      "the Magna Carta",
+      "the Constitution of Madinah",
+      "the Code of Hammurabi",
+      "the Treaty of Westphalia"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Constitution of Madinah was the first written constitution in Islam. Therefore, option B (the Constitution of Madinah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_024",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Constitution of Madinah guaranteed",
+    "options": [
+      "oppression of minorities",
+      "rights and duties for all communities",
+      "only Muslim rights",
+      "only Arab rights"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It protected the rights of Muslims, Jews, and other residents. Therefore, option B (rights and duties for all communities) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_025",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Islamic state under the Prophet was based on",
+    "options": [
+      "tribal supremacy",
+      "justice, consultation, and the rule of law",
+      "dictatorship",
+      "monarchy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islamic governance is founded on justice and Shura. Therefore, option B (justice, consultation, and the rule of law) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_026",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Shura in governance means",
+    "options": [
+      "one-man rule",
+      "consultation with the people",
+      "hereditary rule",
+      "military rule"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Shura is mutual consultation in decision-making. Therefore, option B (consultation with the people) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_027",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Islamic Ethics and Social Life",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The concept of justice in Islam applies to",
+    "options": [
+      "Muslims only",
+      "all people regardless of religion",
+      "only the rich",
+      "only men"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islam enjoins justice for all humanity. Therefore, option B (all people regardless of religion) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_028",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an says to give testimony with justice even against",
+    "options": [
+      "friends",
+      "oneself and relatives",
+      "strangers",
+      "enemies only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah An-Nisa (4:135) commands standing firmly for justice. Therefore, option B (oneself and relatives) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_029",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Islamic economic system prohibits",
+    "options": [
+      "trade",
+      "exploitation and hoarding",
+      "charity",
+      "partnership"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islam forbids exploitation, hoarding, and fraud. Therefore, option B (exploitation and hoarding) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_030",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Hoarding essential goods is",
+    "options": [
+      "encouraged",
+      "prohibited",
+      "recommended",
+      "neutral"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hoarding to inflate prices is forbidden in Islam. Therefore, option B (prohibited) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_031",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Islamic social system emphasizes",
+    "options": [
+      "individualism",
+      "family and community welfare",
+      "isolation",
+      "class division"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islam promotes strong family and community bonds. Therefore, option B (family and community welfare) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_032",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The family is considered in Islam as",
+    "options": [
+      "an obstacle",
+      "the foundation of society",
+      "a burden",
+      "unnecessary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The family is the basic unit and foundation of Islamic society. Therefore, option B (the foundation of society) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_033",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Marriage in Islam is",
+    "options": [
+      "discouraged",
+      "a sacred contract and Sunnah",
+      "only a social event",
+      "forbidden"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Marriage is highly recommended and a sacred covenant. Therefore, option B (a sacred contract and Sunnah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_034",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The consent of both parties is required for",
+    "options": [
+      "trade",
+      "marriage",
+      "fasting",
+      "prayer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Forced marriage is invalid in Islam; consent is essential. Therefore, option B (marriage) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_035",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Divorce is described in Islam as",
+    "options": [
+      "encouraged",
+      "the most disliked permissible act",
+      "forbidden",
+      "always sinful"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet said divorce is the most hated permissible act. Therefore, option B (the most disliked permissible act) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_036",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Reconciliation between spouses is",
+    "options": [
+      "forbidden",
+      "encouraged",
+      "neutral",
+      "discouraged"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Qur'an encourages reconciliation before divorce. Therefore, option B (encouraged) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_037",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The waiting period after divorce is to",
+    "options": [
+      "punish the woman",
+      "determine pregnancy and allow reconciliation",
+      "delay remarriage only",
+      "waste time"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Iddah checks for pregnancy and allows possible reconciliation. Therefore, option B (determine pregnancy and allow reconciliation) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_038",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The husband is responsible for",
+    "options": [
+      "only his own needs",
+      "the maintenance and protection of the family",
+      "only praying",
+      "only working"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The husband is the provider and protector (Qawwam). Therefore, option B (the maintenance and protection of the family) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_039",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The wife in Islam has the right to",
+    "options": [
+      "be treated with kindness and respect",
+      "be beaten",
+      "be ignored",
+      "have no rights"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Wives have rights to kind treatment, maintenance, and respect. Therefore, option A (be treated with kindness and respect) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_040",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The mother in Islam deserves",
+    "options": [
+      "no respect",
+      "three times more care than the father",
+      "equal only",
+      "less than the father"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet said the mother deserves three times the good companionship. Therefore, option B (three times more care than the father) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_041",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Paradise lies under the feet of",
+    "options": [
+      "fathers",
+      "mothers",
+      "teachers",
+      "rulers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet said, 'Paradise lies under the feet of mothers.' Therefore, option B (mothers) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_042",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Kindness to parents is emphasized in Surah",
+    "options": [
+      "Al-Fatihah",
+      "Al-Isra and Luqman",
+      "Al-Kafirun",
+      "An-Nas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Isra (17:23-24) and Luqman (31:14) command kindness to parents. Therefore, option B (Al-Isra and Luqman) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_043",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The rights of neighbours in Islam include",
+    "options": [
+      "ignoring them",
+      "helping and not harming them",
+      "competing with them",
+      "isolating them"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet stressed the importance of good neighbourly relations. Therefore, option B (helping and not harming them) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_044",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet said the best companion is one who",
+    "options": [
+      "is wealthy",
+      "is best to his neighbour",
+      "is powerful",
+      "talks a lot"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The best neighbour is one who is best to their neighbour. Therefore, option B (is best to his neighbour) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_045",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Islam teaches believers to",
+    "options": [
+      "maintain ties of kinship",
+      "end family relations after ordinary disagreements",
+      "ignore responsibilities toward close relatives",
+      "treat relatives as though they are unrelated strangers"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Maintaining kinship ties, known as Silat ar-Rahim, is a major Islamic ethical obligation. Islam encourages care, reconciliation and responsibility within families rather than unnecessary estrangement or neglect. Therefore, option A (maintain ties of kinship) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_046",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Visiting the sick is in Islam",
+    "options": [
+      "discouraged",
+      "a highly rewarded act",
+      "forbidden",
+      "only for doctors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Visiting the sick is a Sunnah and a right of a Muslim. Therefore, option B (a highly rewarded act) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_047",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The concept of 'Ummah' refers to",
+    "options": [
+      "a tribe",
+      "the global Muslim community",
+      "a nation-state",
+      "a family"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Ummah is the worldwide community of Muslims. Therefore, option B (the global Muslim community) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_048",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Muslims are described in the Qur'an as",
+    "options": [
+      "the best of nations",
+      "a weak nation",
+      "a divided people",
+      "only Arabs"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Surah Al-Imran (3:110): 'You are the best of nations raised for mankind.' Therefore, option A (the best of nations) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_049",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The bond of faith among Muslims is",
+    "options": [
+      "based on race",
+      "based on belief in Allah",
+      "based on wealth",
+      "based on language"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Muslim brotherhood is founded on shared faith. Therefore, option B (based on belief in Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2025_050",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2025",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an commands Muslims to hold firmly to",
+    "options": [
+      "the rope of Allah together",
+      "their differences",
+      "tribal loyalty",
+      "individual opinions"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Surah Al-Imran (3:103) urges unity through Allah's guidance. Therefore, option A (the rope of Allah together) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

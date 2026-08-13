@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_IRS_2026_001",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The primary purpose of Jihad in Islam is",
+    "options": [
+      "forced conversion",
+      "self-defence and striving in Allah's cause",
+      "territorial expansion",
+      "personal glory"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Jihad means striving, including self-defence and spiritual struggle. Therefore, option B (self-defence and striving in Allah's cause) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_002",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The greater Jihad is",
+    "options": [
+      "fighting enemies",
+      "struggling against one's own desires",
+      "debating others",
+      "political activism"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet called self-purification the greater Jihad. Therefore, option B (struggling against one's own desires) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_003",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Islam permits fighting only in",
+    "options": [
+      "all situations",
+      "self-defence and against oppression",
+      "to gain wealth",
+      "to conquer others"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fighting is permitted only to repel aggression and end oppression. Therefore, option B (self-defence and against oppression) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_004",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an forbids aggression because",
+    "options": [
+      "war is always wrong",
+      "Allah does not love transgressors",
+      "Muslims are weak",
+      "treaties are unnecessary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Al-Baqarah (2:190): 'Allah does not love the aggressors.' Therefore, option B (Allah does not love transgressors) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_005",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The rights of non-Muslims in an Islamic state include",
+    "options": [
+      "no rights",
+      "protection and freedom of religion",
+      "forced conversion",
+      "only economic rights"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Non-Muslims (Dhimmis) enjoy protection and religious freedom. Therefore, option B (protection and freedom of religion) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_006",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an explicitly states there is no compulsion in",
+    "options": [
+      "trade",
+      "religion",
+      "education",
+      "marriage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Al-Baqarah (2:256): 'There is no compulsion in religion.' Therefore, option B (religion) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_007",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The concept of 'Aman' in Islamic law refers to",
+    "options": [
+      "a tax",
+      "protection granted to non-Muslims",
+      "a prayer",
+      "a contract"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Aman is safe conduct or protection given to non-Muslims. Therefore, option B (protection granted to non-Muslims) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_008",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Jizyah was",
+    "options": [
+      "a charity",
+      "a tax paid by non-Muslims in exchange for protection",
+      "a prayer",
+      "a punishment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Jizyah was levied on non-Muslim citizens in lieu of military service. Therefore, option B (a tax paid by non-Muslims in exchange for protection) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_009",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The protection of life, property, and honour is",
+    "options": [
+      "optional",
+      "among the objectives of Shariah (Maqasid)",
+      "not Islamic",
+      "only for Muslims"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Maqasid ash-Shariah includes protection of life, religion, intellect, lineage, and property. Therefore, option B (among the objectives of Shariah (Maqasid)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_010",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The five objectives of Shariah are called",
+    "options": [
+      "Usul al-Fiqh",
+      "Maqasid ash-Shariah",
+      "Qawa'id Fiqhiyyah",
+      "Ahkam"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Maqasid ash-Shariah are the higher objectives of Islamic law. Therefore, option B (Maqasid ash-Shariah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_011",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The protection of religion (Hifz ad-Din) is achieved through",
+    "options": [
+      "abandoning worship",
+      "preserving faith and religious practice",
+      "forced conversion",
+      "banning all religions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It involves safeguarding the freedom to practice one's faith. Therefore, option B (preserving faith and religious practice) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_012",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The protection of life (Hifz an-Nafs) prohibits",
+    "options": [
+      "trade",
+      "murder and harm",
+      "marriage",
+      "travel"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islam sanctifies life and prohibits unlawful killing. Therefore, option B (murder and harm) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_013",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The protection of intellect (Hifz al-Aql) prohibits",
+    "options": [
+      "education",
+      "intoxicants and drugs",
+      "reading",
+      "debate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Protecting the mind forbids substances that impair reason. Therefore, option B (intoxicants and drugs) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_014",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The protection of lineage (Hifz an-Nasl) promotes",
+    "options": [
+      "immorality",
+      "lawful marriage and family",
+      "divorce",
+      "isolation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It safeguards family structure through lawful marriage. Therefore, option B (lawful marriage and family) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_015",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The protection of property (Hifz al-Mal) prohibits",
+    "options": [
+      "trade",
+      "theft and fraud",
+      "charity",
+      "inheritance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It protects ownership and prohibits unlawful acquisition. Therefore, option B (theft and fraud) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_016",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The term 'Usul al-Fiqh' refers to",
+    "options": [
+      "branches of law",
+      "principles of Islamic jurisprudence",
+      "Islamic history",
+      "Islamic mysticism"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Usul al-Fiqh are the sources and methodologies of deriving law. Therefore, option B (principles of Islamic jurisprudence) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_017",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The primary sources of Shariah are",
+    "options": [
+      "Qiyas and Ijma only",
+      "Qur'an and Sunnah",
+      "culture and tradition",
+      "government laws only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Qur'an and Sunnah are the foundational sources. Therefore, option B (Qur'an and Sunnah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_018",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The secondary sources of Shariah include",
+    "options": [
+      "only Qiyas",
+      "Ijma and Qiyas",
+      "only Ijma",
+      "only personal opinion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ijma (consensus) and Qiyas (analogy) are secondary sources. Therefore, option B (Ijma and Qiyas) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_019",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Maslahah Mursalah refers to",
+    "options": [
+      "corruption",
+      "public interest not explicitly mentioned in the texts",
+      "fixed laws",
+      "punishment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It is consideration of unstated public good in legal rulings. Therefore, option B (public interest not explicitly mentioned in the texts) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_020",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Urf in Islamic law refers to",
+    "options": [
+      "religion",
+      "custom and practice",
+      "prayer",
+      "charity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Urf is acceptable custom used in legal interpretation. Therefore, option B (custom and practice) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_021",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The term 'Fatwa' means",
+    "options": [
+      "a court sentence",
+      "a legal ruling or opinion by a qualified scholar",
+      "a prayer",
+      "a tax"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A Fatwa is an Islamic legal opinion. Therefore, option B (a legal ruling or opinion by a qualified scholar) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_022",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "A Mufti is",
+    "options": [
+      "a judge",
+      "a scholar qualified to issue Fatwas",
+      "a king",
+      "a soldier"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A Mufti issues authoritative legal opinions. Therefore, option B (a scholar qualified to issue Fatwas) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_023",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "A Qadi in Islam is a",
+    "options": [
+      "teacher",
+      "judge",
+      "governor",
+      "soldier"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A Qadi is a judge in an Islamic court. Therefore, option B (judge) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_024",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The qualifications of a Qadi include",
+    "options": [
+      "wealth",
+      "knowledge of Shariah and integrity",
+      "military power",
+      "family lineage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A judge must be knowledgeable and just. Therefore, option B (knowledge of Shariah and integrity) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_025",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Witnesses in Islamic law must be",
+    "options": [
+      "biased",
+      "upright and truthful",
+      "wealthy",
+      "related to one party"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Witnesses must be just and reliable. Therefore, option B (upright and truthful) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_026",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of witnesses required for financial transactions in the Qur'an is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah Al-Baqarah (2:282) requires two male witnesses or equivalent. Therefore, option B (2) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_027",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The punishment for theft under Shariah is",
+    "options": [
+      "a fine only",
+      "amputation of the hand under strict conditions",
+      "death",
+      "imprisonment only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hudud for theft is hand amputation with stringent proof requirements. Therefore, option B (amputation of the hand under strict conditions) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_028",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Hudud punishments are",
+    "options": [
+      "flexible",
+      "fixed by Allah for specific crimes",
+      "optional",
+      "human-made"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hudud are divinely fixed penalties for certain offences. Therefore, option B (fixed by Allah for specific crimes) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_029",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The punishment for adultery (Zina) under strict conditions is",
+    "options": [
+      "a warning",
+      "flogging or stoning depending on marital status",
+      "imprisonment only",
+      "a fine only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Qur'an prescribes flogging for unmarried; Hadith specifies stoning for married adulterers. Therefore, option B (flogging or stoning depending on marital status) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_030",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Qisas means",
+    "options": [
+      "retribution for murder or injury",
+      "charity",
+      "fasting",
+      "prayer"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Qisas is equal retaliation, but forgiveness is encouraged. Therefore, option A (retribution for murder or injury) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_031",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Diyyah is",
+    "options": [
+      "a prayer",
+      "blood money paid to the victim's family",
+      "a tax",
+      "an oath"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Diyyah is compensation for unintentional killing or injury. Therefore, option B (blood money paid to the victim's family) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_032",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tazir punishments are",
+    "options": [
+      "fixed",
+      "discretionary penalties for offences not covered by Hudud",
+      "only fines",
+      "only imprisonment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tazir allows judges discretion to punish appropriately. Therefore, option B (discretionary penalties for offences not covered by Hudud) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_033",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The burden of proof in Islamic criminal law is on the",
+    "options": [
+      "defendant",
+      "accuser",
+      "judge",
+      "family"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The accuser must prove the allegation. Therefore, option B (accuser) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_034",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The standard of proof for Hudud offences is",
+    "options": [
+      "suspicion",
+      "very high with credible witnesses",
+      "hearsay",
+      "assumption"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hudud require rigorous proof, e.g., four witnesses for adultery. Therefore, option B (very high with credible witnesses) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_035",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Islamic Ethics and Social Life",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Islamic concept of justice requires",
+    "options": [
+      "favouritism",
+      "impartiality and fairness",
+      "discrimination",
+      "revenge"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islamic justice is impartial and equal for all. Therefore, option B (impartiality and fairness) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_036",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Qur'an commands giving testimony with",
+    "options": [
+      "bias",
+      "truthfulness and justice",
+      "emotion",
+      "uncertainty"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Witnesses must be truthful and just. Therefore, option B (truthfulness and justice) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_037",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Islamic legal maxim 'Certainty is not overruled by doubt' means",
+    "options": [
+      "assume guilt",
+      "established facts remain unless proven otherwise",
+      "always doubt",
+      "ignore evidence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "This maxim (Al-Yaqin la Yazulu bil-Shakk) upholds certainty. Therefore, option B (established facts remain unless proven otherwise) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_038",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The maxim 'Harm must be eliminated' reflects",
+    "options": [
+      "causing harm",
+      "the principle of avoiding injury to oneself and others",
+      "ignoring harm",
+      "promoting harm"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islamic law seeks to remove and prevent harm (La Darar wa la Dirar). Therefore, option B (the principle of avoiding injury to oneself and others) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_039",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The maxim 'Hardship brings about ease' is based on",
+    "options": [
+      "Qur'an and Sunnah",
+      "opinion only",
+      "culture",
+      "politics"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "This maxim (Al-Mashaqqah Tajlib at-Taysir) is derived from texts. Therefore, option A (Qur'an and Sunnah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_040",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Islamic banking operates on the principle of",
+    "options": [
+      "interest",
+      "profit-and-loss sharing",
+      "gambling",
+      "speculation only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islamic banking avoids Riba and uses profit-sharing. Therefore, option B (profit-and-loss sharing) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_041",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The main difference between Islamic and conventional banking is the prohibition of",
+    "options": [
+      "trade",
+      "interest (Riba)",
+      "savings",
+      "loans"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Conventional banking is interest-based; Islamic banking is asset-based. Therefore, option B (interest (Riba)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_042",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Sukuk are often referred to as",
+    "options": [
+      "conventional bonds",
+      "Islamic investment certificates",
+      "stocks",
+      "currencies"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sukuk are Shariah-compliant investment certificates. Therefore, option B (Islamic investment certificates) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_043",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Takaful is based on",
+    "options": [
+      "mutual assistance and shared responsibility",
+      "interest",
+      "gambling",
+      "exploitation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Takaful is cooperative insurance. Therefore, option A (mutual assistance and shared responsibility) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_044",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Islamic Ethics and Social Life",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The prohibition of Riba aims to",
+    "options": [
+      "enrich the rich",
+      "prevent exploitation and ensure fairness",
+      "discourage savings",
+      "promote gambling"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Riba is banned to maintain economic justice. Therefore, option B (prevent exploitation and ensure fairness) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_045",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Zakat purifies wealth by",
+    "options": [
+      "reducing it",
+      "redistributing to the needy and blessing the remainder",
+      "hiding it",
+      "investing it"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Zakat cleanses wealth and helps the poor. Therefore, option B (redistributing to the needy and blessing the remainder) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_046",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The minimum amount for Zakat is called",
+    "options": [
+      "Mahr",
+      "Nisab",
+      "Iddah",
+      "Khul"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Nisab is the minimum wealth threshold for Zakat. Therefore, option B (Nisab) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_047",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Wealth subject to Zakat includes",
+    "options": [
+      "only cash",
+      "gold, silver, cash, business goods, and livestock",
+      "only crops",
+      "only jewellery"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Zakat applies to various asset categories above nisab. Therefore, option B (gold, silver, cash, business goods, and livestock) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_048",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Zakat on business goods is calculated at",
+    "options": [
+      "1%",
+      "2.5%",
+      "5%",
+      "10%"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Business inventory attracts 2.5% Zakat. Therefore, option B (2.5%) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_049",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Acts of Worship",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The recipients of Zakat include",
+    "options": [
+      "only the rich",
+      "the poor, needy, debtors, and wayfarers",
+      "only relatives",
+      "only scholars"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Surah At-Tawbah (9:60) lists eight categories. Therefore, option B (the poor, needy, debtors, and wayfarers) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2026_050",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2026",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The overarching goal of Islamic teachings is to",
+    "options": [
+      "create division",
+      "achieve justice, mercy, and human well-being",
+      "accumulate wealth",
+      "gain power"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Islam seeks comprehensive human welfare and justice. Therefore, option B (achieve justice, mercy, and human well-being) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]

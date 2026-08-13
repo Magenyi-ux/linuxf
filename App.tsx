@@ -325,7 +325,7 @@ const AppShell: React.FC = () => {
     }
   };
 
-  const years = Array.from({ length: 16 }, (_, i) => (2025 - i).toString());
+  const years = Array.from({ length: 12 }, (_, i) => (2026 - i).toString());
 
   const allSubjectsWithExams = Object.values(ExamType).flatMap(exam =>
     Object.values(Subject).map(subject => ({ exam, subject }))
@@ -363,7 +363,8 @@ const AppShell: React.FC = () => {
      
      setScreen('LOADING');
      try {
-        const result = await fetchExamQuestions(selectedExam, selectedSubject, year, 15);
+        const questionCount = selectedExam === ExamType.JAMB && selectedSubject === Subject.ENGLISH ? 60 : 50;
+        const result = await fetchExamQuestions(selectedExam, selectedSubject, year, questionCount);
         
         const newBook: Book = {
             id: bookId,

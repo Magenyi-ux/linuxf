@@ -1,0 +1,852 @@
+[
+  {
+    "id": "WAEC_IRS_2021_001",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Arabic term for Islamic jurisprudence is",
+    "options": [
+      "Aqidah",
+      "Fiqh",
+      "Tafsir",
+      "Hadith"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fiqh deals with practical legal rulings in Islam. Therefore, option B (Fiqh) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_002",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tafsir is the science of",
+    "options": [
+      "Islamic law",
+      "Qur'anic exegesis",
+      "Hadith criticism",
+      "Islamic history"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tafsir is the interpretation and explanation of the Qur'an. Therefore, option B (Qur'anic exegesis) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_003",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Aqidah refers to",
+    "options": [
+      "Islamic creed and beliefs",
+      "Islamic law",
+      "Islamic history",
+      "Islamic economics"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Aqidah is the core doctrine and articles of faith. Therefore, option A (Islamic creed and beliefs) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_004",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Seerah is the study of",
+    "options": [
+      "the Qur'an",
+      "the Prophet's biography",
+      "Islamic law",
+      "Islamic mysticism"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Seerah is the life and biography of Prophet Muhammad (SAW). Therefore, option B (the Prophet's biography) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_005",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Qur'an and Revelation",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The most renowned Tafsir of the Qur'an is",
+    "options": [
+      "Sahih al-Bukhari",
+      "Tafsir at-Tabari",
+      "Ihya Ulum ad-Din",
+      "Al-Muwatta"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tafsir at-Tabari is one of the earliest and most respected exegeses. Therefore, option B (Tafsir at-Tabari) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_006",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Hadith Qudsi refers to",
+    "options": [
+      "Qur'anic verses",
+      "a Hadith whose meaning is from Allah, words from the Prophet",
+      "fabricated Hadith",
+      "a weak Hadith"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hadith Qudsi conveys Allah's message through the Prophet's words. Therefore, option B (a Hadith whose meaning is from Allah, words from the Prophet) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_007",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Sunnah refers to",
+    "options": [
+      "the Qur'an only",
+      "the Prophet's sayings, actions, and approvals",
+      "Islamic poetry",
+      "Islamic medicine"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sunnah is the Prophet's example and teachings. Therefore, option B (the Prophet's sayings, actions, and approvals) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_008",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Bid'ah means",
+    "options": [
+      "good practice",
+      "innovation in religion",
+      "charity",
+      "prayer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bid'ah is unwarranted innovation in religious matters. Therefore, option B (innovation in religion) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_009",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet warned that every Bid'ah leads to",
+    "options": [
+      "reward",
+      "misguidance",
+      "unity",
+      "progress"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet said every innovation (Bid'ah) is misguidance. Therefore, option B (misguidance) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_010",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The concept of Shura means",
+    "options": [
+      "dictatorship",
+      "mutual consultation",
+      "monarchy",
+      "isolation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Shura is the Islamic principle of consultation in governance. Therefore, option B (mutual consultation) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_011",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Adl means",
+    "options": [
+      "justice",
+      "charity",
+      "fasting",
+      "pilgrimage"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Adl is justice and fairness in all dealings. Therefore, option A (justice) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_012",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Ihsan means",
+    "options": [
+      "perfection and excellence in worship",
+      "charity",
+      "fasting",
+      "pilgrimage"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ihsan is worshipping Allah as if you see Him. Therefore, option A (perfection and excellence in worship) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_013",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Taqwa means",
+    "options": [
+      "knowledge",
+      "God-consciousness and piety",
+      "wealth",
+      "bravery"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Taqwa is being mindful of Allah and avoiding sin. Therefore, option B (God-consciousness and piety) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_014",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tawakkul means",
+    "options": [
+      "reliance on Allah",
+      "self-reliance only",
+      "prayer",
+      "charity"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Tawakkul is trusting in Allah after effort. Therefore, option A (reliance on Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_015",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Sabr means",
+    "options": [
+      "anger",
+      "patience and perseverance",
+      "speed",
+      "wealth"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sabr is patience in trials and obedience. Therefore, option B (patience and perseverance) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_016",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Shukr means",
+    "options": [
+      "complaint",
+      "gratitude to Allah",
+      "forgetfulness",
+      "pride"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Shukr is thankfulness to Allah for His blessings. Therefore, option B (gratitude to Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_017",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tawbah means",
+    "options": [
+      "repentance",
+      "charity",
+      "fasting",
+      "prayer"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Tawbah is sincere repentance to Allah. Therefore, option A (repentance) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_018",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Istighfar means",
+    "options": [
+      "praising Allah",
+      "seeking forgiveness",
+      "giving charity",
+      "making pilgrimage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Istighfar is asking Allah for forgiveness. Therefore, option B (seeking forgiveness) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_019",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Dua means",
+    "options": [
+      "supplication or prayer to Allah",
+      "fasting",
+      "charity",
+      "pilgrimage"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Dua is personal supplication to Allah. Therefore, option A (supplication or prayer to Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_020",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Tawassul means",
+    "options": [
+      "seeking nearness to Allah through permissible means",
+      "shirk",
+      "a type of prayer",
+      "a type of fasting"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Tawassul is seeking closeness to Allah through good deeds, His names, or intercession of the righteous. Therefore, option A (seeking nearness to Allah through permissible means) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_021",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Barakah means",
+    "options": [
+      "punishment",
+      "divine blessing and abundance",
+      "poverty",
+      "debt"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Barakah is Allah's blessing that brings increase and goodness. Therefore, option B (divine blessing and abundance) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_022",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Rizq means",
+    "options": [
+      "punishment",
+      "sustenance from Allah",
+      "charity",
+      "prayer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Rizq is the provision and sustenance granted by Allah. Therefore, option B (sustenance from Allah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_023",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The concept of Qadr (predestination) means",
+    "options": [
+      "humans have no will",
+      "Allah knows and decrees everything, but humans have free will",
+      "fate cannot change",
+      "only Allah acts"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Qadr acknowledges Allah's knowledge and decree alongside human responsibility. Therefore, option B (Allah knows and decrees everything, but humans have free will) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_024",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Day of Judgment is called",
+    "options": [
+      "Yawm al-Qiyamah",
+      "Laylatul Qadr",
+      "Eid",
+      "Ashura"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Yawm al-Qiyamah is the Day of Resurrection and Judgment. Therefore, option A (Yawm al-Qiyamah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_025",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Paradise in Islam is called",
+    "options": [
+      "Jahannam",
+      "Jannah",
+      "Barzakh",
+      "A'raf"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Jannah is the eternal abode of reward for the righteous. Therefore, option B (Jannah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_026",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Hell in Islam is called",
+    "options": [
+      "Jannah",
+      "Jahannam",
+      "Barzakh",
+      "A'raf"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Jahannam is the abode of punishment for the wicked. Therefore, option B (Jahannam) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_027",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Barzakh is",
+    "options": [
+      "paradise",
+      "the period between death and resurrection",
+      "hell",
+      "the Day of Judgment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Barzakh is the intermediate realm after death. Therefore, option B (the period between death and resurrection) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_028",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Sirat is",
+    "options": [
+      "a prayer",
+      "the bridge over Hell on the Day of Judgment",
+      "a book",
+      "an angel"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sirat is the narrow bridge all will cross on Judgment Day. Therefore, option B (the bridge over Hell on the Day of Judgment) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_029",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Mizan refers to",
+    "options": [
+      "the book of deeds",
+      "the scale for weighing deeds",
+      "the trumpet",
+      "the bridge"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Mizan is the scale used to weigh good and bad deeds. Therefore, option B (the scale for weighing deeds) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_030",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The book of deeds is called",
+    "options": [
+      "Mizan",
+      "Kitab al-A'mal",
+      "Sirat",
+      "Barzakh"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Every person's deeds are recorded in their book. Therefore, option B (Kitab al-A'mal) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_031",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The angel who records good deeds is",
+    "options": [
+      "Munkar",
+      "Raqib",
+      "Nakir",
+      "Malik"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Raqib records good deeds; Atid records bad deeds. Therefore, option B (Raqib) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_032",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The angels who question the dead in the grave are",
+    "options": [
+      "Jibril and Mikail",
+      "Munkar and Nakir",
+      "Israfil and Izrail",
+      "Raqib and Atid"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Munkar and Nakir question the deceased about their faith. Therefore, option B (Munkar and Nakir) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_033",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The guardian of Hell is",
+    "options": [
+      "Jibril",
+      "Malik",
+      "Mikail",
+      "Israfil"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Angel Malik is the keeper of Hell. Therefore, option B (Malik) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_034",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The guardian of Paradise is",
+    "options": [
+      "Malik",
+      "Ridwan",
+      "Jibril",
+      "Mikail"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Angel Ridwan is the guardian of Paradise. Therefore, option B (Ridwan) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_035",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of doors of Paradise is",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Paradise has eight doors according to Hadith. Therefore, option C (8) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_036",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The number of doors of Hell is",
+    "options": [
+      "5",
+      "7",
+      "8",
+      "10"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hell has seven doors as mentioned in the Qur'an. Therefore, option B (7) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_037",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The highest level of Paradise is",
+    "options": [
+      "Firdaws",
+      "Adn",
+      "Na'im",
+      "Dar al-Khuld"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Firdaws is the highest garden of Paradise. Therefore, option A (Firdaws) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_038",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The tree in Paradise that the Prophet saw is",
+    "options": [
+      "Sidrat al-Muntaha",
+      "Olive tree",
+      "Palm tree",
+      "Fig tree"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Sidrat al-Muntaha is the Lote Tree of the Utmost Boundary. Therefore, option A (Sidrat al-Muntaha) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_039",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Kawthar is",
+    "options": [
+      "a mountain",
+      "a river in Paradise given to the Prophet",
+      "an angel",
+      "a book"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Al-Kawthar is the abundant river in Paradise granted to the Prophet. Therefore, option B (a river in Paradise given to the Prophet) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_040",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The drink of Paradise is called",
+    "options": [
+      "Salsabil",
+      "Zamzam",
+      "Milk",
+      "Honey"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Salsabil is a spring in Paradise mentioned in the Qur'an. Therefore, option A (Salsabil) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_041",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Prophet's intercession on the Day of Judgment is called",
+    "options": [
+      "Shafa'ah",
+      "Dua",
+      "Tawassul",
+      "Istighfar"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Shafa'ah is the Prophet's intercession for believers. Therefore, option A (Shafa'ah) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_042",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first to intercede on the Day of Judgment will be",
+    "options": [
+      "angels",
+      "Prophet Muhammad (SAW)",
+      "martyrs",
+      "scholars"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Prophet will be the first intercessor. Therefore, option B (Prophet Muhammad (SAW)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_043",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Hawd is",
+    "options": [
+      "the Prophet's fountain on Judgment Day",
+      "a mountain",
+      "a book",
+      "an angel"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Al-Hawd is the Prophet's fountain from which believers drink. Therefore, option A (the Prophet's fountain on Judgment Day) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_044",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Mahdi is",
+    "options": [
+      "a prophet",
+      "a guided leader expected before the end times",
+      "an angel",
+      "a book"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Mahdi is a righteous leader who will appear before the end. Therefore, option B (a guided leader expected before the end times) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_045",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Dajjal is",
+    "options": [
+      "a prophet",
+      "the false messiah (anti-Christ)",
+      "an angel",
+      "a book"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Dajjal is the false messiah who will deceive many before the end. Therefore, option B (the false messiah (anti-Christ)) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_046",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Prophets and Messengers",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Prophet Isa will return to",
+    "options": [
+      "claim divinity",
+      "defeat Dajjal and establish justice",
+      "start a new religion",
+      "destroy the Ka'bah"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Isa (Jesus) will return to defeat Dajjal and rule justly. Therefore, option B (defeat Dajjal and establish justice) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_047",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "Gog and Magog are called in Arabic",
+    "options": [
+      "Ya'juj and Ma'juj",
+      "Munkar and Nakir",
+      "Dajjal and Mahdi",
+      "Harut and Marut"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ya'juj and Ma'juj (Gog and Magog) are mentioned in the Qur'an. Therefore, option A (Ya'juj and Ma'juj) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_048",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The Beast that will appear before the end is called",
+    "options": [
+      "Dabbat al-Ard",
+      "Dajjal",
+      "Mahdi",
+      "Ya'juj"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Dabbat al-Ard is the Beast of the Earth mentioned in the Qur'an. Therefore, option A (Dabbat al-Ard) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_049",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Sirah and Islamic History",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The sun rising from the West is a sign of",
+    "options": [
+      "the beginning of the world",
+      "the end times",
+      "Ramadan",
+      "Eid"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The sun rising from the West is a major sign of the Hour. Therefore, option B (the end times) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  },
+  {
+    "id": "WAEC_IRS_2021_050",
+    "examType": "WAEC",
+    "subject": "IRS",
+    "year": "2021",
+    "topic": "Hadith and Sunnah",
+    "contentLabel": "Original syllabus-aligned exam-style practice",
+    "text": "The first sign of the Hour, according to some Hadith, is",
+    "options": [
+      "the smoke",
+      "the appearance of Dajjal",
+      "the rising of sun from West",
+      "the fire from Yemen"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Some traditions cite the smoke (Dukhan) as an early sign. Therefore, option A (the smoke) is the correct answer. The other options do not match the specific Islamic teaching, term, event, or historical fact identified in the question."
+  }
+]
