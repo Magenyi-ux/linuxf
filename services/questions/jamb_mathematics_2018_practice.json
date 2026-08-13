@@ -1,0 +1,852 @@
+[
+  {
+    "id": "JAMB_MATHEMATICS_2018_001",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Number bases and fractions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Express 29 in base 5.",
+    "options": [
+      "104",
+      "103",
+      "114",
+      "29"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Divide 29 repeatedly by 5 and read the remainders from last to first. This gives 104_5; the other choices either use an incorrect remainder pattern or leave the number in base ten."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_002",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Number bases and fractions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Evaluate 2/5 + 1/5.",
+    "options": [
+      "2/5",
+      "3/5",
+      "3/6",
+      "1/5"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The fractions already have denominator 5, so add only the numerators: 2 + 1 = 3. The denominator remains 5; adding denominators is not a valid fraction rule."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_003",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Number bases and fractions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Simplify the ratio 12:24.",
+    "options": [
+      "2:4",
+      "12:6",
+      "1:2",
+      "2:1"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Divide both terms of 12:24 by their common factor 12. The simplest equivalent ratio is 1:2, whereas the other choices are either unsimplified or reverse the order."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_004",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Number bases and fractions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Increase 30 by 20%.",
+    "options": [
+      "50",
+      "24",
+      "60",
+      "36"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Twenty percent of 30 is 6. Adding this increase gives 30 + 6 = 36. Adding 20 directly treats a percentage as a fixed number rather than a fraction of the original amount."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_005",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Number bases and fractions",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the simple interest on ₦4000 at 8% per annum for 2 years.",
+    "options": [
+      "₦640",
+      "₦320",
+      "₦8000",
+      "₦4320"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use I = PRT/100. Thus I = 4000 × 8 × 2/100 = ₦640. The principal itself and a one-year interest value do not answer the stated question."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_006",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Indices, logarithms and surds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Simplify 2^6 × 2^4.",
+    "options": [
+      "2^24",
+      "2^10",
+      "4^10",
+      "2^2"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "When multiplying powers with the same base, add the indices. Therefore 2^6 × 2^4 = 2^10; multiplying or subtracting indices would apply different laws."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_007",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Indices, logarithms and surds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Evaluate √16.",
+    "options": [
+      "16",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The principal square root of 16 is the positive number whose square is 16. Since 4 × 4 = 16, the value is 4, not the square itself."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_008",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Indices, logarithms and surds",
+    "contentLabel": "Original exam-style practice",
+    "text": "If log₁₀ N = 2, find N.",
+    "options": [
+      "20",
+      "2",
+      "10",
+      "100"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "log₁₀ N = 2 means 10 raised to the power 2 equals N. Hence N = 100; the logarithm is an exponent, not a multiplier."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_009",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Indices, logarithms and surds",
+    "contentLabel": "Original exam-style practice",
+    "text": "Rationalise the denominator of 3/√3.",
+    "options": [
+      "√3",
+      "3√3",
+      "1/√3",
+      "1"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Multiply numerator and denominator by √3: 3√3/(√3 × √3) = 3√3/3 = √3. This removes the irrational denominator without changing the value of the fraction."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_010",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Algebraic expressions and equations",
+    "contentLabel": "Original exam-style practice",
+    "text": "Solve 4x + 7 = 35.",
+    "options": [
+      "8",
+      "7",
+      "6",
+      "28"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Subtract 7 from both sides to obtain 4x = 28. Dividing by 4 gives x = 7; the un-divided value is not the value of x."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_011",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Algebraic expressions and equations",
+    "contentLabel": "Original exam-style practice",
+    "text": "Factorise x² + 6x + 8.",
+    "options": [
+      "(x - 1)(x - 8)",
+      "(x + 6)(x + 1)",
+      "(x + 2)(x + 4)",
+      "(x + 8)(x + 1)"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The required numbers add to 6 and multiply to 8. They are 2 and 4, giving (x + 2)(x + 4); the signs must be positive because both middle and constant terms are positive."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_012",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Algebraic expressions and equations",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the positive root of x² − 4x = 0.",
+    "options": [
+      "0 only",
+      "2",
+      "5",
+      "4"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Factorise as x(x − 4) = 0. The roots are x = 0 and x = 4; therefore the positive non-zero root is 4."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_013",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Algebraic expressions and equations",
+    "contentLabel": "Original exam-style practice",
+    "text": "Expand (x + 2)(x + 4).",
+    "options": [
+      "x² + 6x + 8",
+      "x² + 8x + 6",
+      "x² + 5x + 8",
+      "x² + 6"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Multiply each term: x·x = x², the cross terms total (2+4)x = 6x, and the constants multiply to 8. All three terms are required."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_014",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Algebraic expressions and equations",
+    "contentLabel": "Original exam-style practice",
+    "text": "Simplify 3(6x − 2) − 6x.",
+    "options": [
+      "24x − 2",
+      "12x − 6",
+      "12x − 2",
+      "6x − 6"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Distribute 3 first: 3(6x − 2) = 18x − 6. Subtracting 6x leaves 12x − 6; failing to distribute 3 produces an incorrect coefficient or constant."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_015",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Sequences and series",
+    "contentLabel": "Original exam-style practice",
+    "text": "An arithmetic progression has first term 8 and common difference 2. Find its 8th term.",
+    "options": [
+      "24",
+      "64",
+      "22",
+      "20"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "For an arithmetic progression, Tₙ = a + (n − 1)d. Hence T_8 = 8 + (8 − 1)(2) = 22. Using n instead of n − 1 moves one term too far."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_016",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Sequences and series",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the next term in the geometric progression 2, 4, 8, …",
+    "options": [
+      "10",
+      "6",
+      "32",
+      "16"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Each term is obtained by multiplying by 2. The next term is 8 × 2 = 16; addition does not preserve this geometric pattern."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_017",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Sequences and series",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the sum of the first 5 terms of the arithmetic progression 8, 10, 12, …",
+    "options": [
+      "60",
+      "50",
+      "16",
+      "48"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Use Sₙ = n/2[2a + (n − 1)d]. Thus S₅ = 5/2[2(8) + 4(2)] = 60. The fifth term alone is not the requested sum."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_018",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Variation and inequalities",
+    "contentLabel": "Original exam-style practice",
+    "text": "y varies directly as x. If y = 14 when x = 7, find y when x = 9.",
+    "options": [
+      "16",
+      "18",
+      "126",
+      "9"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Direct variation gives y = kx. Here k = 14/7 = 2, so for x = 9, y = 2(9) = 18. Adding 2 to y ignores the constant of variation."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_019",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Variation and inequalities",
+    "contentLabel": "Original exam-style practice",
+    "text": "y varies inversely as x. If y = 12 when x = 2, find y when x = 4.",
+    "options": [
+      "24",
+      "12",
+      "6",
+      "8"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "For inverse variation, xy is constant. Here xy = 2 × 12 = 24; therefore y = 24/(4) = 6. Directly reusing the old y ignores the changed x."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_020",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Variation and inequalities",
+    "contentLabel": "Original exam-style practice",
+    "text": "Solve the inequality 3x − 6 > 12.",
+    "options": [
+      "all x less than 6",
+      "x greater than 12",
+      "x equals 6",
+      "x > 6"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Add 6 to both sides to get 3x > 18. Dividing by the positive number 3 preserves the inequality sign, giving x > 6. Equality is excluded because the original sign is strictly greater than."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_021",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Geometry and mensuration",
+    "contentLabel": "Original exam-style practice",
+    "text": "The angles of a triangle are 54°, 64° and x°. Find x.",
+    "options": [
+      "62°",
+      "106°",
+      "176°",
+      "64°"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Interior angles of any triangle total 180°. Thus x = 180 − [54 + 64] = 62°. The other values do not make the three angles sum to 180°."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_022",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Geometry and mensuration",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the sum of the interior angles of a hexagon.",
+    "options": [
+      "540°",
+      "720°",
+      "360°",
+      "1080°"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "For an n-sided polygon, interior-angle sum = (n − 2) × 180°. With n = 6, this is 4 × 180° = 720°. A full turn of 360° is not the sum of the hexagon’s interior angles."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_023",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Geometry and mensuration",
+    "contentLabel": "Original exam-style practice",
+    "text": "Using π = 22/7, find the circumference of a circle of radius 7 cm.",
+    "options": [
+      "22 cm",
+      "154 cm",
+      "44 cm",
+      "14 cm"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Circumference C = 2πr. Substituting π = 22/7 and r = 7 gives 2 × 22/7 × 7 = 44 cm. πr² would calculate area, not circumference."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_024",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Geometry and mensuration",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the area of a triangle with base 8 cm and perpendicular height 5 cm.",
+    "options": [
+      "40 cm²",
+      "13 cm²",
+      "13.3333 cm²",
+      "20 cm²"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Area of a triangle is ½bh. Therefore ½ × 8 × 5 = 20 cm². Multiplying base by height without halving gives the area of the related rectangle."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_025",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Geometry and mensuration",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the volume of a cylinder of radius 3 cm and height 5 cm, in terms of π.",
+    "options": [
+      "45π cm³",
+      "30π cm³",
+      "9π cm²",
+      "15π cm³"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Cylinder volume is πr²h. Hence π × 3² × 5 = 45π cm³. A formula with 2πrh calculates curved surface area, not volume."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_026",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Trigonometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a right-angled triangle, sin θ is defined as",
+    "options": [
+      "adjacent/hypotenuse",
+      "opposite/hypotenuse",
+      "opposite/adjacent",
+      "hypotenuse/opposite"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The sine ratio is opposite side divided by hypotenuse. Adjacent over hypotenuse is cosine, and opposite over adjacent is tangent; the hypotenuse is always the longest side in a right triangle."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_027",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Trigonometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "In a right-angled triangle, the side opposite θ is 6 cm and the adjacent side is 8 cm. Find tan θ.",
+    "options": [
+      "8/6",
+      "6/10",
+      "6/8",
+      "8/10"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Tangent is opposite divided by adjacent. Therefore tan θ = 6/8. Ratios containing the hypotenuse would describe sine or cosine rather than tangent."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_028",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Trigonometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the value of cos 60°?",
+    "options": [
+      "√3/2",
+      "1",
+      "0",
+      "1/2"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The standard trigonometric value is cos 60° = 1/2. The value √3/2 belongs to cos 30°, while 1 and 0 occur for other special angles."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_029",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Coordinate geometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the gradient of the line through (1, 2) and (5, 8).",
+    "options": [
+      "3/2",
+      "2/3",
+      "6/4",
+      "negative 3/2"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Gradient = change in y/change in x = (8 − 2)/(5 − 1) = 6/4 = 3/2. The reciprocal reverses the ratio, while the negative sign would be used only for a descending line."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_030",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Coordinate geometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the midpoint of the line segment joining (1, 2) and (5, 8).",
+    "options": [
+      "(6, 10)",
+      "(3, 5)",
+      "(4, 6)",
+      "(1, 8)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The midpoint is found by averaging corresponding coordinates: ((1+5)/2, (2+8)/2) = (3, 5). Adding coordinates without dividing by two gives a different point."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_031",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Coordinate geometry",
+    "contentLabel": "Original exam-style practice",
+    "text": "What is the equation of the y-axis?",
+    "options": [
+      "y = 0",
+      "x = y",
+      "x = 0",
+      "x = 1"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Every point on the y-axis has horizontal coordinate zero, so its equation is x = 0. The equation y = 0 describes the x-axis instead."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_032",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Statistics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the mean of 4, 6, 8, 10 and 12.",
+    "options": [
+      "40",
+      "10",
+      "0",
+      "8"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Add the five observations to obtain 40, then divide by 5. The mean is 40/5 = 8; the middle observation is the median, not the mean."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_033",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Statistics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the median of the ordered data 4, 6, 8, 10, 12.",
+    "options": [
+      "8",
+      "6",
+      "10",
+      "16"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "With five ordered values, the median is the third value. The central observation is 8; the mean is a different measure based on the total divided by the number of values."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_034",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Statistics",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the range of the data 4, 6, 8, 10, 12.",
+    "options": [
+      "12",
+      "8",
+      "4",
+      "0"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Range equals largest value minus smallest value. Therefore 12 − 4 = 8; selecting a single endpoint does not measure the spread of the data."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_035",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Statistics",
+    "contentLabel": "Original exam-style practice",
+    "text": "The value that occurs most frequently in a data set is the",
+    "options": [
+      "Median",
+      "Mean",
+      "Mode",
+      "Range"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The mode is the observation with the highest frequency. The median is the central ordered value, the mean is an average, and the range is the difference between the largest and smallest observations."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_036",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Probability",
+    "contentLabel": "Original exam-style practice",
+    "text": "A bag contains 3 red and 5 blue counters. Find the probability of choosing a red counter at random.",
+    "options": [
+      "5/8",
+      "3/5",
+      "8/3",
+      "3/8"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The favourable outcomes are the 3 red counters and the total is 8. Thus P(red) = 3/8; probability uses favourable outcomes divided by all equally likely outcomes."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_037",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Probability",
+    "contentLabel": "Original exam-style practice",
+    "text": "A fair coin is tossed once. What is the probability that it does not show a head?",
+    "options": [
+      "1/2",
+      "1",
+      "0",
+      "2"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A fair coin has two equally likely outcomes: head and tail. “Not a head” means tail, so there is one favourable outcome out of two, giving probability 1/2."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_038",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Probability",
+    "contentLabel": "Original exam-style practice",
+    "text": "If P(A) = 0.35, find P(not A).",
+    "options": [
+      "0.35",
+      "0.65",
+      "1.35",
+      "0"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An event and its complement have total probability 1. Therefore P(not A) = 1 − 0.35 = 0.65. Keeping 0.35 would give the probability of A itself, not its complement."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_039",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Vectors and transformations",
+    "contentLabel": "Original exam-style practice",
+    "text": "If a = (2, −1) and b = (3, 4), find a + b.",
+    "options": [
+      "(1, −5)",
+      "(6, −4)",
+      "(5, 3)",
+      "(5, negative 3)"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Add corresponding vector components: (2 + 3, −1 + 4) = (5, 3). Subtracting components or changing a sign describes a different vector operation."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_040",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Vectors and transformations",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the magnitude of the vector (3, 4).",
+    "options": [
+      "7",
+      "1",
+      "25",
+      "5"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Magnitude is √(3² + 4²) = √25 = 5. Adding the components gives 7, while 25 is the squared magnitude rather than the required length."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_041",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Vectors and transformations",
+    "contentLabel": "Original exam-style practice",
+    "text": "Add the matrices [[1, 2], [2, 1]] and [[1, 2], [3, 4]].",
+    "options": [
+      "[[2, 4], [5, 5]]",
+      "[[1, 2], [6, 4]]",
+      "[[2, 4], [6, 4]]",
+      "[[1, 4], [6, 4]]"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Matrix addition is component by component: [[1+1, 2+2], [2+3, 1+4]] = [[2, 4], [5, 5]]. Matrix multiplication is not used here."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_042",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Vectors and transformations",
+    "contentLabel": "Original exam-style practice",
+    "text": "A point (x, y) is reflected in the x-axis. Its image is",
+    "options": [
+      "(negative x, y)",
+      "(x, negative y)",
+      "(negative x, negative y)",
+      "(y, x)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Reflection in the x-axis preserves the horizontal coordinate and changes the sign of the vertical coordinate. Hence (x, y) maps to (x, −y); changing x would describe reflection in the y-axis."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_043",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Geometry and mensuration",
+    "contentLabel": "Original exam-style practice",
+    "text": "Find the perimeter of a rectangle 12 cm long and 4 cm wide.",
+    "options": [
+      "48 cm",
+      "16 cm",
+      "32 cm",
+      "96 cm"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Perimeter is the total boundary length: 2(l + w) = 2(12 + 4) = 32 cm. The product lw would give area in square centimetres, not perimeter."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_044",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Geometry and mensuration",
+    "contentLabel": "Original exam-style practice",
+    "text": "On a map with scale 1 cm to 6 km, what real distance does 6 cm represent?",
+    "options": [
+      "6 km",
+      "12 km",
+      "1 km",
+      "36 km"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Each centimetre represents 6 km, so 6 cm represents 6 × 6 = 36 km. A scale statement requires multiplication by the map measurement."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_045",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Algebraic expressions and equations",
+    "contentLabel": "Original exam-style practice",
+    "text": "Solve 2(x + 6) = 20.",
+    "options": [
+      "4",
+      "10",
+      "8",
+      "3"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Divide both sides by 2 to obtain x + 6 = 10. Subtracting 6 gives x = 4; retaining the right-hand total would fail to isolate x."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_046",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Variation and inequalities",
+    "contentLabel": "Original exam-style practice",
+    "text": "If 5 workers complete a task in 12 days at the same rate, how many days would 10 workers take?",
+    "options": [
+      "24 days",
+      "6 days",
+      "12 days",
+      "2.4 days"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "For a fixed task, workers and time vary inversely. The work is 5 × 12 = 60 worker-days; with 10 workers, time = 60/10 = 6 days. Doubling workers halves, rather than doubles, the time."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_047",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Geometry and mensuration",
+    "contentLabel": "Original exam-style practice",
+    "text": "When two parallel lines are cut by a transversal, alternate angles are",
+    "options": [
+      "Supplementary in every case",
+      "Always 90°",
+      "Equal",
+      "Unrelated"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Alternate angles formed by a transversal with parallel lines are equal. They need not be right angles, and the supplementary relationship instead applies to certain co-interior angle pairs."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_048",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Probability",
+    "contentLabel": "Original exam-style practice",
+    "text": "If n(A) = 18, n(B) = 15 and n(A ∩ B) = 6, find n(A ∪ B).",
+    "options": [
+      "39",
+      "9",
+      "6",
+      "27"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Use n(A ∪ B) = n(A) + n(B) − n(A ∩ B). Thus 18 + 15 − 6 = 27. Adding 18 and 15 without subtracting counts the common six elements twice."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_049",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Number bases and fractions",
+    "contentLabel": "Original exam-style practice",
+    "text": "A trader buys an item for ₦1000 and sells it for ₦1300. Find the profit.",
+    "options": [
+      "₦300",
+      "₦1000",
+      "₦1300",
+      "₦130"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Profit equals selling price minus cost price: ₦1300 − ₦1000 = ₦300. The cost and selling prices themselves are not the gain."
+  },
+  {
+    "id": "JAMB_MATHEMATICS_2018_050",
+    "examType": "JAMB",
+    "subject": "Mathematics",
+    "year": "2018",
+    "topic": "Vectors and transformations",
+    "contentLabel": "Original exam-style practice",
+    "text": "A rotation of 90° clockwise about the origin maps (x, y) to",
+    "options": [
+      "(negative y, x)",
+      "(y, negative x)",
+      "(negative x, negative y)",
+      "(x, negative y)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "For a 90° clockwise rotation about the origin, the new coordinates are (y, −x). The rule (−y, x) is for a 90° anticlockwise rotation, so direction matters."
+  }
+]
