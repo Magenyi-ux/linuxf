@@ -65,6 +65,16 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.JAMB}:${Subject.BIOLOGY}:2025`]: "./questions/jamb_biology_2025_practice.json",
   [`${ExamType.WAEC}:${Subject.BIOLOGY}:2025`]: "./questions/waec_biology_2025_practice.json",
   [`${ExamType.NECO}:${Subject.BIOLOGY}:2025`]: "./questions/neco_biology_2025_practice.json",
+  [`${ExamType.JAMB}:${Subject.BIOLOGY}:2026`]: "./questions/jamb_biology_2026_practice.json",
+  [`${ExamType.WAEC}:${Subject.BIOLOGY}:2026`]: "./questions/waec_biology_2026_practice.json",
+  [`${ExamType.NECO}:${Subject.BIOLOGY}:2026`]: "./questions/neco_biology_2026_practice.json",
+  [`${ExamType.JAMB}:${Subject.BIOLOGY}:2024`]: "./questions/jamb_biology_2024_practice.json",
+  [`${ExamType.WAEC}:${Subject.BIOLOGY}:2024`]: "./questions/waec_biology_2024_practice.json",
+  [`${ExamType.NECO}:${Subject.BIOLOGY}:2024`]: "./questions/neco_biology_2024_practice.json",
+  [`${ExamType.JAMB}:${Subject.BIOLOGY}:2023`]: "./questions/jamb_biology_2023_practice.json",
+  [`${ExamType.WAEC}:${Subject.BIOLOGY}:2023`]: "./questions/waec_biology_2023_practice.json",
+  [`${ExamType.NECO}:${Subject.BIOLOGY}:2023`]: "./questions/neco_biology_2023_practice.json",
+  [`${ExamType.JAMB}:${Subject.BIOLOGY}:2022`]: "./questions/jamb_biology_2022_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2025`]: "./questions/jamb_physics_2025_practice.json",
 };
 
