@@ -111,6 +111,7 @@ const AppShell: React.FC = () => {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [referralSummary, setReferralSummary] = useState<ReferralSummary | null>(null);
+  const [apkMetadata, setApkMetadata] = useState<{ version: string; updatedAt: string } | null>(null);
   const [offlineDarkMode, setOfflineDarkMode] = useState(() => {
     try {
       return localStorage.getItem('spherelearn_offline_dark_mode') === 'true';
@@ -127,6 +128,10 @@ const AppShell: React.FC = () => {
 
   useEffect(() => {
     captureReferralKeyFromUrl();
+    fetch('/builds/metadata.json')
+      .then(res => res.json())
+      .then(data => setApkMetadata(data))
+      .catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -642,9 +647,35 @@ const AppShell: React.FC = () => {
                 {displayText}
                 <span className="text-primary-600 animate-pulse ml-1">_</span>
               </h1>
-              <p className="text-lg text-gray-500 font-medium leading-relaxed max-w-xl mx-auto mb-10">
+              <p className="text-lg text-gray-500 font-medium leading-relaxed max-w-xl mx-auto mb-8">
                 The smartest way to prepare for WAEC, JAMB & NECO. Download practice packs and study anywhere.
               </p>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <a 
+                  href="/builds/SphereLearn-latest.apk" 
+                  download 
+                  className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-2xl font-bold hover:bg-black transition-all shadow-xl hover:shadow-gray-200"
+                >
+                  <div className="bg-white/10 p-2 rounded-xl group-hover:scale-110 transition-transform">
+                    <DownloadCloud className="w-5 h-5 text-emerald-400" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-[10px] font-black uppercase tracking-widest text-gray-400 leading-none mb-1">Android App</div>
+                    <div className="text-sm">Download APK {apkMetadata?.version && `v${apkMetadata.version}`}</div>
+                  </div>
+                </a>
+                <button 
+                  onClick={() => {
+                    const el = document.getElementById('exam-browse');
+                    el?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-white border border-gray-200 text-gray-600 rounded-2xl font-bold hover:border-primary-500 hover:text-primary-600 transition-all shadow-sm"
+                >
+                  <BookOpen className="w-5 h-5" />
+                  <span>Browse Subjects</span>
+                </button>
+              </div>
 
               <div className="relative max-w-xl mx-auto">
                 <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none">
@@ -701,7 +732,7 @@ const AppShell: React.FC = () => {
               </div>
             </div>
 
-            <div className="mb-12">
+            <div id="exam-browse" className="mb-12">
               <div className="flex items-center gap-4 mb-8">
                 <h2 className="text-sm font-bold text-gray-400 uppercase tracking-[0.2em] whitespace-nowrap">
                   Browse by Exam
