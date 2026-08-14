@@ -19,19 +19,25 @@ export interface AdminReferralRow {
   overall_signups: number;
 }
 
+export interface AdminReferralCodeSummary {
+  code: string;
+  total_signups: number;
+}
+
+export const FIXED_REFERRAL_CODE = 'sis234';
 const REFERRAL_STORAGE_KEY = 'spherelearn_referral_key';
 const REFERRAL_CAPTURED_AT_KEY = 'spherelearn_referral_captured_at';
 const REFERRAL_TTL_MS = 30 * 24 * 60 * 60 * 1000;
 
-const normaliseKey = (value: string): string => value.trim().replace(/\s+/g, '').slice(0, 128);
+const normaliseKey = (value: string): string => value.trim().replace(/\s+/g, '').toLowerCase().slice(0, 128);
 
 export const captureReferralKeyFromUrl = (): string | null => {
   const params = new URLSearchParams(window.location.search);
   const key = params.get('ref') || params.get('referral') || params.get('referral_key');
   if (!key) return getStoredReferralKey();
   const normalised = normaliseKey(key);
-  if (normalised.length < 6) return getStoredReferralKey();
-  localStorage.setItem(REFERRAL_STORAGE_KEY, normalised);
+  if (normalised !== FIXED_REFERRAL_CODE) return getStoredReferralKey();
+  localStorage.setItem(REFERRAL_STORAGE_KEY, FIXED_REFERRAL_CODE);
   localStorage.setItem(REFERRAL_CAPTURED_AT_KEY, String(Date.now()));
   return normalised;
 };
@@ -44,7 +50,7 @@ export const getStoredReferralKey = (): string | null => {
     localStorage.removeItem(REFERRAL_CAPTURED_AT_KEY);
     return null;
   }
-  return key;
+  return normaliseKey(key) === FIXED_REFERRAL_CODE ? FIXED_REFERRAL_CODE : null;
 };
 
 export const clearStoredReferralKey = (): void => {
@@ -57,8 +63,8 @@ export const attributeStoredReferral = async (sourceApp: 'pwa' | 'android' = 'pw
   const key = getStoredReferralKey();
   if (!key) return false;
 
-  const { data, error } = await supabase.rpc('attribute_referral', {
-    p_referral_key: key,
+  const { data, error } = await supabase.rpc('record_referral_code_signup', {
+    p_referral_code: key,
     p_source_app: sourceApp,
   });
   if (error) throw error;
@@ -89,6 +95,17 @@ export const fetchAdminReferralReport = async (): Promise<AdminReferralRow[]> =>
   const { data, error } = await supabase.rpc('get_admin_referral_report');
   if (error) throw error;
   return (data || []) as AdminReferralRow[];
+};
+
+export const fetchAdminReferralCodeSummary = async (): Promise<AdminReferralCodeSummary> => {
+  if (!isSupabaseConfigured) return { code: FIXED_REFERRAL_CODE, total_signups: 0 };
+  const { data, error } = await supabase.rpc('get_admin_referral_code_summary');
+  if (error) throw error;
+  const row = Array.isArray(data) ? data[0] : data;
+  return {
+    code: row?.code || FIXED_REFERRAL_CODE,
+    total_signups: Number(row?.total_signups || 0),
+  };
 };
 
 export const createCollaborator = async (input: {

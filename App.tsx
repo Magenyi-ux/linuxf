@@ -19,7 +19,7 @@ import {
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
-  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Map, X, Trophy, Home, ArrowLeft, Search, User, LogOut, LogIn
+  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Sun, Map, X, Trophy, Home, ArrowLeft, Search, User, LogOut, LogIn
 } from 'lucide-react';
 
 // Stream Definitions
@@ -111,6 +111,19 @@ const AppShell: React.FC = () => {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [referralSummary, setReferralSummary] = useState<ReferralSummary | null>(null);
+  const [offlineDarkMode, setOfflineDarkMode] = useState(() => {
+    try {
+      return localStorage.getItem('spherelearn_offline_dark_mode') === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  const offlineStudySurface = offlineDarkMode && !['AUTH', 'ADMIN', 'PROFILE'].includes(screen);
+
+  useEffect(() => {
+    localStorage.setItem('spherelearn_offline_dark_mode', String(offlineDarkMode));
+  }, [offlineDarkMode]);
 
   useEffect(() => {
     captureReferralKeyFromUrl();
@@ -489,16 +502,16 @@ const AppShell: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col relative pb-24 md:pb-8">
+    <div className={`min-h-screen font-sans flex flex-col relative pb-24 md:pb-8 transition-colors duration-300 ${offlineStudySurface ? 'bg-slate-950 text-slate-100' : 'bg-white text-gray-900'}`}>
       {/* Dynamic Header */}
-      <header className={`sticky top-0 z-40 w-full glass-panel border-b border-gray-100 transition-all duration-500 ${screen === 'PRACTICE' ? '-translate-y-full opacity-0 invisible h-0' : 'translate-y-0 opacity-100 visible'}`}>
+      <header className={`sticky top-0 z-40 w-full glass-panel transition-all duration-500 ${offlineStudySurface ? 'bg-slate-950/90 border-slate-800' : 'border-gray-100'} ${screen === 'PRACTICE' ? '-translate-y-full opacity-0 invisible h-0' : 'translate-y-0 opacity-100 visible'}`}>
         <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer group" onClick={resetApp}>
             <div className="bg-primary-600 p-2.5 rounded-xl transition-transform">
                 <GraduationCap className="w-7 h-7 text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900 leading-tight tracking-tight">Examply</span>
+              <span className={`text-xl font-bold leading-tight tracking-tight ${offlineStudySurface ? 'text-slate-100' : 'text-gray-900'}`}>Examply</span>
               <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest">Mastery</span>
             </div>
           </div>
@@ -506,7 +519,7 @@ const AppShell: React.FC = () => {
           <div className="hidden md:flex items-center gap-8">
              <button
                 onClick={resetApp}
-                className={`text-sm font-semibold transition-colors ${screen === 'HOME' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
+                className={`text-sm font-semibold transition-colors ${screen === 'HOME' ? 'text-primary-600' : offlineStudySurface ? 'text-slate-400 hover:text-white' : 'text-gray-500 hover:text-gray-900'}`}
              >
                 Home
              </button>
@@ -515,6 +528,14 @@ const AppShell: React.FC = () => {
                 className={`text-sm font-semibold transition-colors ${showLibrary ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
              >
                 My Library
+             </button>
+             <button
+                onClick={() => setOfflineDarkMode((previous) => !previous)}
+                className={`inline-flex items-center justify-center w-9 h-9 rounded-xl border transition-colors ${offlineStudySurface ? 'bg-slate-800 border-slate-700 text-amber-300' : 'bg-gray-50 border-gray-100 text-gray-500 hover:text-primary-600'}`}
+                title={offlineDarkMode ? 'Use light study theme' : 'Use dark study theme'}
+                aria-label={offlineDarkMode ? 'Use light study theme' : 'Use dark study theme'}
+             >
+                {offlineDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
              </button>
              <button
                 onClick={() => setScreen('PROFILE')}
@@ -547,22 +568,32 @@ const AppShell: React.FC = () => {
              )}
           </div>
 
-          <button 
-            onClick={() => setScreen('PROFILE')}
-            className="md:hidden p-2.5 bg-gray-50 rounded-xl relative border border-gray-100"
-          >
-             <Library className="w-5 h-5 text-gray-600" />
-             {Object.keys(books).length > 0 && (
-               <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary-600 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
-                 {Object.keys(books).length}
-               </span>
-             )}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <button
+              onClick={() => setOfflineDarkMode((previous) => !previous)}
+              className={`p-2.5 rounded-xl relative border transition-colors ${offlineStudySurface ? 'bg-slate-800 border-slate-700 text-amber-300' : 'bg-gray-50 border-gray-100 text-gray-600'}`}
+              title={offlineDarkMode ? 'Use light study theme' : 'Use dark study theme'}
+              aria-label={offlineDarkMode ? 'Use light study theme' : 'Use dark study theme'}
+            >
+              {offlineDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
+            <button
+              onClick={() => setScreen('PROFILE')}
+              className={`p-2.5 rounded-xl relative border transition-colors ${offlineStudySurface ? 'bg-slate-800 border-slate-700' : 'bg-gray-50 border-gray-100'}`}
+            >
+              <Library className={`w-5 h-5 ${offlineStudySurface ? 'text-slate-200' : 'text-gray-600'}`} />
+              {Object.keys(books).length > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary-600 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
+                  {Object.keys(books).length}
+                </span>
+              )}
+            </button>
+          </div>
         </div>
       </header>
 
       {/* Bottom Nav for Mobile */}
-      <nav className={`fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-gray-100 bg-white px-6 py-3 transition-all duration-500 ${screen === 'PRACTICE' ? 'translate-y-full opacity-0 invisible' : 'translate-y-0 opacity-100 visible'}`}>
+      <nav className={`fixed bottom-0 left-0 right-0 z-50 md:hidden border-t px-6 py-3 transition-all duration-500 ${offlineStudySurface ? 'border-slate-800 bg-slate-950' : 'border-gray-100 bg-white'} ${screen === 'PRACTICE' ? 'translate-y-full opacity-0 invisible' : 'translate-y-0 opacity-100 visible'}`}>
         <div className="flex items-center justify-around">
           <button
             onClick={resetApp}
@@ -597,7 +628,7 @@ const AppShell: React.FC = () => {
         </div>
       </nav>
 
-      <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-12 relative">
+      <main className={`flex-1 max-w-5xl mx-auto w-full px-6 py-12 relative ${offlineStudySurface ? 'offline-dark-surface' : ''}`}>
         
         {screen === 'HOME' && (
           <div className="animate-fade-in max-w-3xl mx-auto">
@@ -1007,7 +1038,7 @@ const AppShell: React.FC = () => {
       {/* Library Modal */}
       {showLibrary && (
         <div className="fixed inset-0 bg-gray-900/60 backdrop-blur-md z-50 flex items-center justify-center p-6 animate-fade-in" onClick={(e) => { if(e.target === e.currentTarget) setShowLibrary(false); }}>
-            <div className="bg-[#fafafa] rounded-[40px] w-full max-w-xl max-h-[85vh] flex flex-col shadow-[0_0_50px_rgba(0,0,0,0.1)] overflow-hidden animate-scale-in border border-white">
+            <div className={`${offlineStudySurface ? 'offline-dark-surface bg-slate-900 border-slate-800' : 'bg-[#fafafa] border-white'} rounded-[40px] w-full max-w-xl max-h-[85vh] flex flex-col shadow-[0_0_50px_rgba(0,0,0,0.1)] overflow-hidden animate-scale-in border`}>
                 <div className="px-8 py-6 border-b border-gray-100 flex justify-between items-center bg-white">
                     <div className="flex items-center gap-4">
                         <div className="bg-primary-50 p-3 rounded-2xl">

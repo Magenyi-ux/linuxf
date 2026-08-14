@@ -1,470 +1,346 @@
-
-import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Users, Clock, Book, Ban, ShieldCheck, TrendingUp, Activity, Terminal, Lock, LogIn, UserPlus, KeyRound, Copy, PauseCircle, PlayCircle, XCircle } from 'lucide-react';
-import { UserProfile } from '../types';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import {
+  Activity,
+  ArrowLeft,
+  Check,
+  Copy,
+  GraduationCap,
+  KeyRound,
+  RefreshCw,
+  Search,
+  Share2,
+  ShieldCheck,
+  UserCheck,
+  Users,
+} from 'lucide-react';
+import type { UserProfile } from '../types';
 import { trackEvent } from '../services/analytics';
 import { useAuth } from '../contexts/AuthContext';
-import { createCollaborator, fetchAdminReferralReport, setCollaboratorStatus, type AdminReferralRow, type IssuedCollaboratorKey } from '../services/referralService';
+import { isSupabaseConfigured, supabase } from '../services/supabaseClient';
+import {
+  FIXED_REFERRAL_CODE,
+  fetchAdminReferralCodeSummary,
+  type AdminReferralCodeSummary,
+} from '../services/referralService';
 
 interface AdminDashboardProps {
   onBack: () => void;
 }
 
+type AdminSection = 'OVERVIEW' | 'USERS' | 'REFERRAL';
+type AdminUserRow = {
+  id: string;
+  display_name: string | null;
+  role: string | null;
+};
+
+const roleLabel = (role: string | null | undefined): string =>
+  role?.toUpperCase() === 'ADMIN' ? 'ADMIN' : 'STUDENT';
+
+const roleClasses = (role: string | null | undefined): string =>
+  role?.toUpperCase() === 'ADMIN'
+    ? 'bg-red-50 text-red-700 border-red-100'
+    : 'bg-emerald-50 text-emerald-700 border-emerald-100';
+
+const formatId = (id: string): string => `${id.slice(0, 8)}…${id.slice(-4)}`;
+
 export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
   const { profile: authProfile } = useAuth();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-
-  const [users, setUsers] = useState<(UserProfile & { password?: string })[]>([]);
-  const [globalUsage, setGlobalUsage] = useState<Record<string, number>>({});
-  const [events, setEvents] = useState<any[]>([]);
-  const [stats, setStats] = useState<any>({});
-  const [featureUsage, setFeatureUsage] = useState<Record<string, number>>({});
+  const [section, setSection] = useState<AdminSection>('OVERVIEW');
+  const [users, setUsers] = useState<AdminUserRow[]>([]);
+  const [referralSummary, setReferralSummary] = useState<AdminReferralCodeSummary>({
+    code: FIXED_REFERRAL_CODE,
+    total_signups: 0,
+  });
+  const [userSearch, setUserSearch] = useState('');
+  const [roleFilter, setRoleFilter] = useState<'ALL' | 'ADMIN' | 'STUDENT'>('ALL');
   const [loading, setLoading] = useState(false);
-  const [referralRows, setReferralRows] = useState<AdminReferralRow[]>([]);
-  const [referralError, setReferralError] = useState('');
-  const [collaboratorEmail, setCollaboratorEmail] = useState('');
-  const [collaboratorName, setCollaboratorName] = useState('');
-  const [collaboratorTermEnd, setCollaboratorTermEnd] = useState('');
-  const [creatingCollaborator, setCreatingCollaborator] = useState(false);
-  const [issuedCollaboratorKey, setIssuedCollaboratorKey] = useState<IssuedCollaboratorKey | null>(null);
-  const [collaboratorManagementError, setCollaboratorManagementError] = useState('');
-  const [updatingCollaboratorId, setUpdatingCollaboratorId] = useState<string | null>(null);
+  const [error, setError] = useState('');
+  const [copied, setCopied] = useState(false);
 
-  useEffect(() => {
-    // Check if already authenticated in this session
-    const isAuth = sessionStorage.getItem('admin_authenticated') === 'true';
-    if (isAuth) {
-      setIsAuthenticated(true);
-      fetchAdminData();
-    }
-  }, []);
+  const isAdmin = authProfile?.role === 'ADMIN';
 
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email === 'admin@magenyi' && password === 'magenyi123') {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('admin_authenticated', 'true');
-      fetchAdminData();
-    } else {
-      setError('Invalid admin credentials');
-    }
-  };
-
-  const fetchAdminData = async () => {
+  const fetchAdminData = useCallback(async () => {
+    if (!isAdmin || !isSupabaseConfigured) return;
     setLoading(true);
+    setError('');
     try {
-      // Local storage data
-      const savedUsers = JSON.parse(localStorage.getItem('waExamPrep_users') || '[]');
-      setUsers(savedUsers);
-      const savedUsage = JSON.parse(localStorage.getItem('waExamPrep_global_usage') || '{}');
-      setGlobalUsage(savedUsage);
+      const [summary, profileResult] = await Promise.all([
+        fetchAdminReferralCodeSummary(),
+        supabase
+          .from('profiles')
+          .select('id, display_name, role')
+          .order('display_name', { ascending: true })
+          .limit(1000),
+      ]);
 
-      // Backend data (Secured with Basic Auth)
-      const credentials = btoa('admin@magenyi:magenyi123');
-      const response = await fetch('/api/admin/logs', {
-        headers: {
-          'Authorization': `Basic ${credentials}`
-        }
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        setEvents(data.events || []);
-        setStats(data.stats || {});
-        setFeatureUsage(data.featureUsage || {});
-      }
-
-      if (authProfile?.role === 'ADMIN') {
-        try {
-          setReferralError('');
-          setReferralRows(await fetchAdminReferralReport());
-        } catch (referralErr) {
-          console.error('Failed to fetch referral report:', referralErr);
-          setReferralError('Referral report unavailable. Apply the Supabase referral migration.');
-        }
-      } else {
-        setReferralRows([]);
-        setReferralError('Sign in with the protected Supabase admin account to view referral totals.');
-      }
-    } catch (err) {
-      console.error('Failed to fetch admin data:', err);
+      if (profileResult.error) throw profileResult.error;
+      setReferralSummary(summary);
+      setUsers((profileResult.data || []) as AdminUserRow[]);
+      trackEvent('admin_dashboard_refresh', { total_profiles: profileResult.data?.length || 0 });
+    } catch (fetchError) {
+      console.error('Failed to load admin dashboard:', fetchError);
+      setError(fetchError instanceof Error ? fetchError.message : 'Could not load the admin dashboard.');
     } finally {
       setLoading(false);
     }
-  };
+  }, [isAdmin]);
 
-  const toggleBan = (email: string) => {
-    let newStatus = false;
-    const updatedUsers = users.map(u => {
-      if (u.email === email) {
-        newStatus = !u.isBanned;
-        return { ...u, isBanned: newStatus };
-      }
-      return u;
+  useEffect(() => {
+    void fetchAdminData();
+  }, [fetchAdminData]);
+
+  const totalAdmins = useMemo(
+    () => users.filter((user) => roleLabel(user.role) === 'ADMIN').length,
+    [users],
+  );
+
+  const totalStudents = Math.max(users.length - totalAdmins, 0);
+
+  const filteredUsers = useMemo(() => {
+    const query = userSearch.trim().toLowerCase();
+    return users.filter((user) => {
+      const matchesRole = roleFilter === 'ALL' || roleLabel(user.role) === roleFilter;
+      const matchesQuery = !query
+        || (user.display_name || '').toLowerCase().includes(query)
+        || user.id.toLowerCase().includes(query);
+      return matchesRole && matchesQuery;
     });
+  }, [roleFilter, userSearch, users]);
 
-    trackEvent(newStatus ? 'user_banned' : 'user_unbanned', { targetEmail: email });
-
-    setUsers(updatedUsers);
-    localStorage.setItem('waExamPrep_users', JSON.stringify(updatedUsers));
-  };
-
-  const handleCreateCollaborator = async (event: React.FormEvent) => {
-    event.preventDefault();
-    if (authProfile?.role !== 'ADMIN') {
-      setCollaboratorManagementError('Only the protected Supabase admin account can issue collaborator keys.');
-      return;
-    }
-    setCreatingCollaborator(true);
-    setCollaboratorManagementError('');
+  const copyReferralCode = async () => {
     try {
-      const issued = await createCollaborator({
-        email: collaboratorEmail,
-        displayName: collaboratorName,
-        termEnd: collaboratorTermEnd || undefined,
-      });
-      setIssuedCollaboratorKey(issued);
-      setCollaboratorEmail('');
-      setCollaboratorName('');
-      setCollaboratorTermEnd('');
-      await fetchAdminData();
-    } catch (error) {
-      setCollaboratorManagementError(error instanceof Error ? error.message : 'Could not create the collaborator key.');
-    } finally {
-      setCreatingCollaborator(false);
+      await navigator.clipboard.writeText(FIXED_REFERRAL_CODE);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1800);
+    } catch {
+      setError('The referral code could not be copied. Please select and copy it manually.');
     }
   };
 
-  const handleCollaboratorStatus = async (collaboratorId: string, status: 'ACTIVE' | 'PAUSED' | 'ENDED') => {
-    if (authProfile?.role !== 'ADMIN') return;
-    setUpdatingCollaboratorId(collaboratorId);
-    setCollaboratorManagementError('');
-    try {
-      await setCollaboratorStatus(collaboratorId, status);
-      await fetchAdminData();
-    } catch (error) {
-      setCollaboratorManagementError(error instanceof Error ? error.message : 'Could not update collaborator status.');
-    } finally {
-      setUpdatingCollaboratorId(null);
-    }
-  };
-
-  const formatTime = (seconds: number) => {
-    const hours = Math.floor(seconds / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
-    if (hours > 0) return `${hours}h ${minutes}m`;
-    return `${minutes}m`;
-  };
-
-  if (!isAuthenticated) {
+  if (!isAdmin) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center animate-fade-in">
-        <div className="bg-white p-10 rounded-[40px] border border-gray-100 shadow-xl max-w-md w-full">
-          <div className="flex flex-col items-center mb-8">
-            <div className="bg-primary-600 p-4 rounded-3xl text-white mb-4 shadow-lg shadow-primary-500/20">
-              <Lock className="w-8 h-8" />
-            </div>
-            <h2 className="text-2xl font-black text-gray-900">Admin Access</h2>
-            <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mt-2">Protected Area</p>
+        <div className="max-w-md w-full bg-white p-10 rounded-[40px] border border-gray-100 shadow-xl text-center">
+          <div className="mx-auto mb-5 w-16 h-16 rounded-3xl bg-red-50 text-red-600 flex items-center justify-center">
+            <ShieldCheck className="w-8 h-8" />
           </div>
-
-          <form onSubmit={handleLogin} className="space-y-4">
-            <div>
-              <label className="text-xs font-black text-gray-400 uppercase tracking-widest mb-2 block">Email</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:bg-white outline-none transition-all font-medium"
-                placeholder="admin@magenyi"
-                required
-              />
-            </div>
-            <div>
-              <label className="text-xs font-black text-gray-400 uppercase tracking-widest mb-2 block">Password</label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:bg-white outline-none transition-all font-medium"
-                placeholder="••••••••"
-                required
-              />
-            </div>
-            {error && <p className="text-red-500 text-xs font-bold">{error}</p>}
-            <button
-              type="submit"
-              className="w-full py-4 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all flex items-center justify-center gap-2"
-            >
-              <LogIn className="w-5 h-5" /> SIGN IN
-            </button>
-          </form>
-
-          <button onClick={onBack} className="w-full mt-6 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
-            Back to Home
+          <h2 className="text-2xl font-black text-gray-900">Admin access required</h2>
+          <p className="mt-3 text-sm leading-relaxed text-gray-500 font-medium">
+            This portal is protected by the Supabase admin role. Sign in with the approved administrator account to continue.
+          </p>
+          <button onClick={onBack} className="mt-7 inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-gray-100 text-gray-700 text-sm font-black hover:bg-primary-50 hover:text-primary-700 transition-colors">
+            <ArrowLeft className="w-4 h-4" /> Back to dashboard
           </button>
         </div>
       </div>
     );
   }
 
-  const totalUsers = users.length;
-  const totalTimeSpent = users.reduce((acc, u) => acc + (u.timeSpent || 0), 0);
-  const mostUsedBooks = Object.entries(globalUsage)
-    .sort(([, a], [, b]) => b - a)
-    .slice(0, 5);
-
   return (
-    <div className="animate-fade-in max-w-6xl mx-auto pb-12">
-      <div className="flex items-center justify-between mb-8">
-        <button onClick={onBack} className="flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
-          <ArrowLeft className="w-4 h-4" /> Back to Dashboard
+    <div className="animate-fade-in max-w-6xl mx-auto pb-16">
+      <div className="flex items-center justify-between gap-4 mb-5">
+        <button onClick={onBack} className="inline-flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
+          <ArrowLeft className="w-4 h-4" /> Back to dashboard
         </button>
-        <button onClick={fetchAdminData} className="px-4 py-2 bg-gray-100 text-gray-600 rounded-xl text-xs font-black hover:bg-primary-50 hover:text-primary-600 transition-all">
-          REFRESH DATA
+        <button
+          onClick={() => void fetchAdminData()}
+          disabled={loading}
+          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gray-100 text-gray-600 text-xs font-black hover:bg-primary-50 hover:text-primary-700 disabled:opacity-50 transition-colors"
+        >
+          <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
+          {loading ? 'REFRESHING…' : 'REFRESH DATA'}
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="bg-primary-50 p-3 rounded-2xl text-primary-600">
-              <Users className="w-6 h-6" />
+      <section className="bg-white rounded-[28px] border border-primary-100 shadow-sm p-5 md:p-6 mb-5">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+          <div className="flex items-center gap-3">
+            <div className="w-11 h-11 rounded-full bg-primary-50 text-primary-600 flex items-center justify-center">
+              <ShieldCheck className="w-6 h-6" />
             </div>
             <div>
-              <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest">Total Users</h3>
-              <p className="text-3xl font-black text-gray-900">{totalUsers}</p>
+              <h1 className="text-xl font-black text-gray-900">Admin Portal &amp; RBAC</h1>
+              <p className="text-xs font-medium text-gray-400">Role-Based Access Control System</p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="bg-amber-50 p-3 rounded-2xl text-amber-600">
-              <Clock className="w-6 h-6" />
+          <div className="flex items-center gap-2 text-xs font-black text-emerald-700 bg-emerald-50 border border-emerald-100 rounded-xl px-3 py-2">
+            <Check className="w-4 h-4" /> SUPABASE ADMIN
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+          <AdminStatCard title="Total Users" value={users.length} color="text-primary-600" icon={<Users className="w-4 h-4" />} />
+          <AdminStatCard title="Admins" value={totalAdmins} color="text-red-600" icon={<ShieldCheck className="w-4 h-4" />} />
+          <AdminStatCard title="Moderators" value={0} color="text-blue-600" icon={<UserCheck className="w-4 h-4" />} />
+          <AdminStatCard title="Students" value={totalStudents} color="text-emerald-600" icon={<GraduationCap className="w-4 h-4" />} />
+        </div>
+      </section>
+
+      <nav className="flex gap-2 overflow-x-auto pb-1 mb-5" aria-label="Admin sections">
+        {([
+          ['OVERVIEW', 'Overview', Activity],
+          ['USERS', 'Users', Users],
+          ['REFERRAL', 'Referral', Share2],
+        ] as const).map(([value, label, Icon]) => (
+          <button
+            key={value}
+            onClick={() => setSection(value)}
+            className={`shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-black transition-colors ${section === value ? 'bg-primary-600 text-white shadow-lg shadow-primary-500/20' : 'bg-white text-gray-500 border border-gray-100 hover:border-primary-200 hover:text-primary-700'}`}
+          >
+            <Icon className="w-4 h-4" /> {label}
+          </button>
+        ))}
+      </nav>
+
+      {error && (
+        <div className="mb-5 flex items-start gap-3 p-4 rounded-2xl bg-amber-50 border border-amber-100 text-amber-800 text-xs font-bold">
+          <span className="mt-0.5">!</span>
+          <span>{error}</span>
+        </div>
+      )}
+
+      {section === 'OVERVIEW' && (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <section className="bg-white rounded-[28px] border border-gray-100 shadow-sm p-6">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="p-3 rounded-2xl bg-primary-50 text-primary-600"><Share2 className="w-5 h-5" /></div>
+              <div>
+                <h2 className="text-lg font-black text-gray-900">Referral sign-ups</h2>
+                <p className="text-xs text-gray-500 font-medium">Overall student sign-ups using the approved code.</p>
+              </div>
             </div>
+            <div className="rounded-2xl bg-primary-50 border border-primary-100 p-5 flex items-center justify-between gap-4">
+              <div>
+                <p className="text-[10px] uppercase tracking-widest font-black text-primary-700">Total sign-ups</p>
+                <p className="text-4xl font-black text-primary-700 mt-1">{referralSummary.total_signups}</p>
+              </div>
+              <div className="text-right">
+                <p className="text-[10px] uppercase tracking-widest font-black text-primary-700">Fixed code</p>
+                <p className="mt-1 inline-flex items-center gap-2 font-mono font-black text-gray-900 bg-white rounded-xl px-3 py-2 border border-primary-100">{referralSummary.code || FIXED_REFERRAL_CODE}</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-white rounded-[28px] border border-gray-100 shadow-sm p-6">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="p-3 rounded-2xl bg-emerald-50 text-emerald-600"><KeyRound className="w-5 h-5" /></div>
+              <div>
+                <h2 className="text-lg font-black text-gray-900">Share the referral code</h2>
+                <p className="text-xs text-gray-500 font-medium">There is one active code for this campaign.</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 rounded-2xl border border-gray-100 bg-gray-50 p-4">
+              <code className="flex-1 font-mono text-2xl font-black tracking-widest text-gray-900">{FIXED_REFERRAL_CODE}</code>
+              <button onClick={() => void copyReferralCode()} className="p-3 rounded-xl bg-white border border-gray-200 text-gray-600 hover:text-primary-700 hover:border-primary-200 transition-colors" title="Copy referral code">
+                {copied ? <Check className="w-5 h-5 text-emerald-600" /> : <Copy className="w-5 h-5" />}
+              </button>
+            </div>
+            <p className="mt-4 text-xs text-gray-400 font-medium">Only accounts authenticated through Supabase are included in the total.</p>
+          </section>
+
+          <section className="lg:col-span-2 bg-white rounded-[28px] border border-gray-100 shadow-sm p-6">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="p-3 rounded-2xl bg-blue-50 text-blue-600"><GraduationCap className="w-5 h-5" /></div>
+              <div>
+                <h2 className="text-lg font-black text-gray-900">Question bank &amp; study platform</h2>
+                <p className="text-xs text-gray-500 font-medium">The PWA uses the same year-and-subject question bank as the learner experience.</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <StatusRow label="Offline study packs" value="Available" />
+              <StatusRow label="Authentication" value={isSupabaseConfigured ? 'Connected' : 'Not configured'} />
+              <StatusRow label="Analytics" value="PostHog enabled" />
+            </div>
+          </section>
+        </div>
+      )}
+
+      {section === 'USERS' && (
+        <section className="bg-white rounded-[28px] border border-gray-100 shadow-sm p-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
             <div>
-              <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest">Platform Time</h3>
-              <p className="text-3xl font-black text-gray-900">{formatTime(totalTimeSpent)}</p>
+              <h2 className="text-xl font-black text-gray-900">User profiles</h2>
+              <p className="text-sm text-gray-500 font-medium">Search accounts and review their Supabase roles.</p>
+            </div>
+            <div className="flex gap-2">
+              {(['ALL', 'ADMIN', 'STUDENT'] as const).map((role) => (
+                <button key={role} onClick={() => setRoleFilter(role)} className={`px-3 py-2 rounded-xl text-[10px] font-black ${roleFilter === role ? 'bg-primary-600 text-white' : 'bg-gray-100 text-gray-500'}`}>
+                  {role}
+                </button>
+              ))}
             </div>
           </div>
-        </div>
-
-        <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
-          <h3 className="text-lg font-black text-gray-900 mb-6 flex items-center gap-2">
-            <TrendingUp className="w-5 h-5 text-primary-600" />
-            Most Used Packs
-          </h3>
-          <div className="space-y-4">
-            {mostUsedBooks.length === 0 ? (
-              <p className="text-gray-400 font-medium italic">No usage data yet</p>
-            ) : (
-              mostUsedBooks.map(([title, count]) => (
-                <div key={title} className="flex items-center justify-between">
-                  <span className="text-sm font-bold text-gray-700">{title}</span>
-                  <span className="text-xs font-black bg-primary-50 text-primary-600 px-3 py-1 rounded-full">{count} plays</span>
-                </div>
-              ))
-            )}
+          <div className="relative mb-5">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <input value={userSearch} onChange={(event) => setUserSearch(event.target.value)} placeholder="Search by name or user ID" className="w-full pl-11 pr-4 py-3 rounded-2xl bg-gray-50 border border-gray-100 outline-none focus:ring-2 focus:ring-primary-500 text-sm font-medium" />
           </div>
-        </div>
-
-        <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
-          <h3 className="text-lg font-black text-gray-900 mb-6 flex items-center gap-2">
-            <Activity className="w-5 h-5 text-green-600" />
-            Feature Usage (Real-time)
-          </h3>
-          <div className="space-y-4">
-            {Object.keys(featureUsage).length === 0 ? (
-              <p className="text-gray-400 font-medium italic">Waiting for events...</p>
-            ) : (
-              Object.entries(featureUsage).map(([name, count]) => (
-                <div key={name} className="flex items-center justify-between">
-                  <span className="text-sm font-bold text-gray-700 capitalize">{name.replace('_', ' ')}</span>
-                  <span className="text-xs font-black bg-green-50 text-green-600 px-3 py-1 rounded-full">{count}</span>
-                </div>
-              ))
-            )}
-            {stats.total_questions && (
-               <div className="flex items-center justify-between pt-2 border-t border-gray-50">
-                  <span className="text-sm font-bold text-gray-900">Total AI Questions</span>
-                  <span className="text-sm font-black text-primary-600">{stats.total_questions}</span>
-               </div>
-            )}
-          </div>
-        </div>
-      </div>
-
-      <section className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm mb-12">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-          <div>
-            <h3 className="text-xl font-black text-gray-900 flex items-center gap-2"><Users className="w-6 h-6 text-primary-600" /> Referral Sign-ups</h3>
-            <p className="text-sm text-gray-500 font-medium mt-1">Student accounts attributed to each collaborator key.</p>
-          </div>
-          <div className="bg-primary-50 text-primary-700 px-5 py-3 rounded-2xl">
-            <div className="text-[10px] font-black uppercase tracking-widest">Overall sign-ups</div>
-            <div className="text-3xl font-black">{referralRows[0]?.overall_signups ?? 0}</div>
-          </div>
-        </div>
-        {referralError && <p className="text-amber-700 bg-amber-50 border border-amber-100 rounded-2xl px-4 py-3 text-xs font-bold mb-4">{referralError}</p>}
-        {referralRows.length > 0 ? (
           <div className="overflow-x-auto">
             <table className="w-full text-left">
               <thead><tr className="border-b border-gray-100">
-                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest">Collaborator</th>
-                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest">Key</th>
-                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest text-right">Student sign-ups</th>
-                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest">Status</th>
-                <th className="px-4 py-3 text-[10px] font-black text-gray-400 uppercase tracking-widest text-right">Actions</th>
+                <th className="px-3 py-3 text-[10px] uppercase tracking-widest font-black text-gray-400">Student</th>
+                <th className="px-3 py-3 text-[10px] uppercase tracking-widest font-black text-gray-400">User ID</th>
+                <th className="px-3 py-3 text-[10px] uppercase tracking-widest font-black text-gray-400">Role</th>
               </tr></thead>
               <tbody className="divide-y divide-gray-50">
-                {referralRows.map((row) => (
-                  <tr key={row.collaborator_id}>
-                    <td className="px-4 py-4 font-bold text-gray-900">{row.display_name}</td>
-                    <td className="px-4 py-4 text-xs font-mono text-gray-500">••••{row.referral_key_hint}</td>
-                    <td className="px-4 py-4 text-right text-xl font-black text-primary-600">{row.total_signups}</td>
-                    <td className="px-4 py-4"><span className={`text-[10px] font-black uppercase ${row.status === 'ACTIVE' ? 'text-emerald-700' : row.status === 'PAUSED' ? 'text-amber-700' : 'text-gray-400'}`}>{row.status}</span></td>
-                    <td className="px-4 py-4 text-right">
-                      <div className="flex justify-end gap-2">
-                        {row.status !== 'ACTIVE' && <button type="button" disabled={updatingCollaboratorId === row.collaborator_id} onClick={() => void handleCollaboratorStatus(row.collaborator_id, 'ACTIVE')} className="p-2 rounded-xl bg-emerald-50 text-emerald-700 disabled:opacity-50" title="Activate"><PlayCircle className="w-4 h-4" /></button>}
-                        {row.status === 'ACTIVE' && <button type="button" disabled={updatingCollaboratorId === row.collaborator_id} onClick={() => void handleCollaboratorStatus(row.collaborator_id, 'PAUSED')} className="p-2 rounded-xl bg-amber-50 text-amber-700 disabled:opacity-50" title="Pause"><PauseCircle className="w-4 h-4" /></button>}
-                        {row.status !== 'ENDED' && <button type="button" disabled={updatingCollaboratorId === row.collaborator_id} onClick={() => void handleCollaboratorStatus(row.collaborator_id, 'ENDED')} className="p-2 rounded-xl bg-red-50 text-red-700 disabled:opacity-50" title="End"><XCircle className="w-4 h-4" /></button>}
-                      </div>
-                    </td>
+                {filteredUsers.map((user) => (
+                  <tr key={user.id}>
+                    <td className="px-3 py-4 font-bold text-gray-900">{user.display_name || 'Unnamed user'}</td>
+                    <td className="px-3 py-4 text-xs font-mono text-gray-500">{formatId(user.id)}</td>
+                    <td className="px-3 py-4"><span className={`inline-flex px-2.5 py-1 rounded-lg border text-[10px] font-black ${roleClasses(user.role)}`}>{roleLabel(user.role)}</span></td>
                   </tr>
                 ))}
               </tbody>
             </table>
+            {filteredUsers.length === 0 && <p className="py-10 text-center text-sm text-gray-400 font-medium">No profiles match this filter.</p>}
           </div>
-        ) : (
-          <p className="text-gray-400 font-medium italic">No collaborator sign-ups recorded yet.</p>
-        )}
-      </section>
-
-      {authProfile?.role === 'ADMIN' && (
-        <section className="bg-slate-50 p-8 rounded-[40px] border border-primary-100 shadow-sm mb-12">
-          <div className="flex items-start gap-3 mb-6">
-            <div className="bg-primary-100 text-primary-700 p-3 rounded-2xl"><UserPlus className="w-5 h-5" /></div>
-            <div>
-              <h3 className="text-xl font-black text-gray-900">Manage collaborators</h3>
-              <p className="text-sm text-gray-500 font-medium mt-1">The collaborator must register an account first. The raw key is shown only once.</p>
-            </div>
-          </div>
-          <form onSubmit={handleCreateCollaborator} className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
-            <label className="block">
-              <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Registered email</span>
-              <input type="email" required value={collaboratorEmail} onChange={(event) => setCollaboratorEmail(event.target.value)} placeholder="collaborator@email.com" className="mt-2 w-full px-4 py-3 bg-white border border-gray-200 rounded-2xl outline-none focus:ring-2 focus:ring-primary-500" />
-            </label>
-            <label className="block">
-              <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Display name</span>
-              <input type="text" required minLength={2} value={collaboratorName} onChange={(event) => setCollaboratorName(event.target.value)} placeholder="Sis School Tips" className="mt-2 w-full px-4 py-3 bg-white border border-gray-200 rounded-2xl outline-none focus:ring-2 focus:ring-primary-500" />
-            </label>
-            <label className="block">
-              <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Term end (optional)</span>
-              <input type="date" value={collaboratorTermEnd} onChange={(event) => setCollaboratorTermEnd(event.target.value)} className="mt-2 w-full px-4 py-3 bg-white border border-gray-200 rounded-2xl outline-none focus:ring-2 focus:ring-primary-500" />
-            </label>
-            <button type="submit" disabled={creatingCollaborator} className="h-[50px] px-5 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 disabled:opacity-50 transition-all flex items-center justify-center gap-2">
-              <KeyRound className="w-4 h-4" /> {creatingCollaborator ? 'GENERATING…' : 'GENERATE KEY'}
-            </button>
-          </form>
-          {collaboratorManagementError && <p className="text-red-700 bg-red-50 border border-red-100 rounded-2xl px-4 py-3 text-xs font-bold mt-4">{collaboratorManagementError}</p>}
-          {issuedCollaboratorKey && (
-            <div className="mt-5 bg-emerald-50 border border-emerald-200 rounded-3xl p-5">
-              <div className="flex items-start gap-3">
-                <KeyRound className="w-5 h-5 text-emerald-700 mt-0.5" />
-                <div className="min-w-0 flex-1">
-                  <p className="font-black text-emerald-900">Save this referral key now</p>
-                  <p className="text-xs text-emerald-800 mt-1">It will not be shown again after you close this message.</p>
-                  <code className="block mt-3 bg-white border border-emerald-200 rounded-2xl px-4 py-3 text-lg font-black tracking-widest text-gray-900 break-all">{issuedCollaboratorKey.referral_key}</code>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <button type="button" onClick={() => void navigator.clipboard?.writeText(issuedCollaboratorKey.referral_key)} className="px-4 py-2 bg-white border border-emerald-200 rounded-xl text-xs font-black text-emerald-800 flex items-center gap-2"><Copy className="w-4 h-4" /> COPY KEY</button>
-                    <button type="button" onClick={() => setIssuedCollaboratorKey(null)} className="px-4 py-2 bg-emerald-700 text-white rounded-xl text-xs font-black">I HAVE SAVED IT</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
         </section>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-        <section>
-          <h3 className="text-xl font-black text-gray-900 mb-6 flex items-center gap-2">
-            <Users className="w-6 h-6 text-primary-600" />
-            User Management
-          </h3>
-          <div className="bg-white rounded-[40px] border border-gray-100 shadow-sm overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-left">
-                <thead>
-                  <tr className="bg-gray-50 border-b border-gray-100">
-                    <th className="px-6 py-5 text-[10px] font-black text-gray-400 uppercase tracking-widest">User</th>
-                    <th className="px-6 py-5 text-[10px] font-black text-gray-400 uppercase tracking-widest">Status</th>
-                    <th className="px-6 py-5 text-[10px] font-black text-gray-400 uppercase tracking-widest text-right">Actions</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-50">
-                  {users.map((user) => (
-                    <tr key={user.email} className="hover:bg-gray-50/50 transition-colors">
-                      <td className="px-6 py-5">
-                        <div className="font-bold text-gray-900 text-sm">{user.name || 'Anonymous'}</div>
-                        <div className="text-[10px] text-gray-400">{user.email}</div>
-                      </td>
-                      <td className="px-6 py-5">
-                        {user.isBanned ? (
-                          <span className="text-red-600 text-[10px] font-black uppercase">Banned</span>
-                        ) : (
-                          <span className="text-green-600 text-[10px] font-black uppercase">Active</span>
-                        )}
-                      </td>
-                      <td className="px-6 py-5 text-right">
-                        {user.email !== 'admin@magenyi' && (
-                          <button
-                            onClick={() => toggleBan(user.email!)}
-                            className={`px-3 py-1.5 rounded-lg text-[10px] font-black transition-all ${
-                              user.isBanned
-                                ? 'bg-green-50 text-green-600'
-                                : 'bg-red-50 text-red-600'
-                            }`}
-                          >
-                            {user.isBanned ? 'UNBAN' : 'BAN'}
-                          </button>
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+      {section === 'REFERRAL' && (
+        <section className="bg-white rounded-[28px] border border-gray-100 shadow-sm p-6">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+            <div className="flex items-center gap-3">
+              <div className="p-3 rounded-2xl bg-primary-50 text-primary-600"><Share2 className="w-5 h-5" /></div>
+              <div>
+                <h2 className="text-xl font-black text-gray-900">Referral campaign</h2>
+                <p className="text-sm text-gray-500 font-medium">The campaign is intentionally simplified to one code.</p>
+              </div>
+            </div>
+            <button onClick={() => void fetchAdminData()} className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-100 text-gray-600 text-xs font-black hover:bg-primary-50 hover:text-primary-700"><RefreshCw className="w-4 h-4" /> Refresh</button>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="rounded-3xl bg-primary-50 border border-primary-100 p-6">
+              <p className="text-[10px] uppercase tracking-widest font-black text-primary-700">Total student sign-ups</p>
+              <p className="text-5xl font-black text-primary-700 mt-2">{referralSummary.total_signups}</p>
+              <p className="mt-3 text-xs font-medium text-primary-700">This number is counted once per authenticated user.</p>
+            </div>
+            <div className="rounded-3xl bg-gray-50 border border-gray-100 p-6">
+              <p className="text-[10px] uppercase tracking-widest font-black text-gray-500">Active referral code</p>
+              <p className="font-mono text-4xl font-black tracking-widest text-gray-900 mt-2">{FIXED_REFERRAL_CODE}</p>
+              <button onClick={() => void copyReferralCode()} className="mt-5 inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white border border-gray-200 text-xs font-black text-gray-700 hover:border-primary-200 hover:text-primary-700">{copied ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />} {copied ? 'COPIED' : 'COPY CODE'}</button>
             </div>
           </div>
+          <div className="mt-5 p-4 rounded-2xl border border-blue-100 bg-blue-50 text-blue-800 text-xs font-bold">Legacy collaborator keys are no longer accepted by the PWA. New referral attribution is recorded through the fixed code only.</div>
         </section>
-
-        <section>
-          <h3 className="text-xl font-black text-gray-900 mb-6 flex items-center gap-2">
-            <Terminal className="w-6 h-6 text-gray-900" />
-            Live Event Stream
-          </h3>
-          <div className="bg-gray-900 rounded-[40px] p-6 shadow-2xl h-[400px] overflow-y-auto sidebar-scrollbar font-mono text-[11px]">
-            {events.length === 0 ? (
-              <p className="text-gray-500 italic">No events captured yet...</p>
-            ) : (
-              <div className="space-y-3">
-                {events.map((ev, i) => (
-                  <div key={i} className="border-l-2 border-primary-500 pl-3 py-1">
-                    <div className="flex items-center justify-between text-gray-500 mb-1">
-                      <span>{new Date(ev.timestamp).toLocaleTimeString()}</span>
-                      <span className="text-primary-400 font-bold">{ev.event}</span>
-                    </div>
-                    <div className="text-gray-300">
-                      <span className="text-amber-400">{ev.email || 'anon'}</span>: {JSON.stringify(ev.data)}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </section>
-      </div>
+      )}
     </div>
   );
 };
+
+const AdminStatCard: React.FC<{ title: string; value: number; color: string; icon: React.ReactNode }> = ({ title, value, color, icon }) => (
+  <div className="rounded-2xl bg-gray-50 border border-gray-100 p-4">
+    <div className={`flex items-center gap-2 ${color}`}>
+      {icon}
+      <span className="text-[10px] uppercase tracking-widest font-black text-gray-500">{title}</span>
+    </div>
+    <p className={`mt-2 text-2xl font-black ${color}`}>{value}</p>
+  </div>
+);
+
+const StatusRow: React.FC<{ label: string; value: string }> = ({ label, value }) => (
+  <div className="flex items-center justify-between gap-3 rounded-2xl border border-gray-100 bg-gray-50 px-4 py-3">
+    <span className="text-xs font-bold text-gray-600">{label}</span>
+    <span className="text-[10px] uppercase tracking-widest font-black text-emerald-700">{value}</span>
+  </div>
+);

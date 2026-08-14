@@ -16,8 +16,8 @@ interface AuthContextValue {
   session: Session | null;
   profile: UserProfile | null;
   loading: boolean;
-  signIn: (email: string, password: string) => Promise<void>;
-  signUp: (name: string, email: string, password: string) => Promise<{ needsEmailConfirmation: boolean }>;
+  signIn: (email: string, password: string) => Promise<UserProfile>;
+  signUp: (name: string, email: string, password: string) => Promise<{ needsEmailConfirmation: boolean; profile?: UserProfile }>;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
 }
@@ -104,13 +104,18 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
     loading,
     signIn: async (email, password) => {
       if (!isSupabaseConfigured) throw new Error('Authentication is not configured yet.');
-      const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
+      const { data, error } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
       if (error) throw error;
+      const row = await getProfileRow(data.user.id).catch((profileError) => {
+        console.warn('Could not load profile immediately after sign-in:', profileError);
+        return null;
+      });
       try {
         await attributeStoredReferral('pwa');
       } catch (referralError) {
         console.warn('Referral attribution was not completed after sign-in:', referralError);
       }
+      return buildProfile(data.user, row);
     },
     signUp: async (name, email, password) => {
       if (!isSupabaseConfigured) throw new Error('Authentication is not configured yet.');
@@ -120,14 +125,18 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
         options: { data: { full_name: name.trim() } },
       });
       if (error) throw error;
-      if (data.session) {
-        try {
-          await attributeStoredReferral('pwa');
-        } catch (referralError) {
-          console.warn('Referral attribution was not completed after sign-up:', referralError);
-        }
+      if (!data.session || !data.user) return { needsEmailConfirmation: true };
+
+      const row = await getProfileRow(data.user.id).catch((profileError) => {
+        console.warn('Could not load profile immediately after sign-up:', profileError);
+        return null;
+      });
+      try {
+        await attributeStoredReferral('pwa');
+      } catch (referralError) {
+        console.warn('Referral attribution was not completed after sign-up:', referralError);
       }
-      return { needsEmailConfirmation: !data.session };
+      return { needsEmailConfirmation: false, profile: buildProfile(data.user, row) };
     },
     signOut: async () => {
       if (!isSupabaseConfigured) return;

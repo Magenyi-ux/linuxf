@@ -336,3 +336,95 @@ revoke all on table public.collaborators from anon, authenticated;
 revoke all on table public.referral_attributions from anon, authenticated;
 
 -- The RPCs above remain callable by authenticated users while table rows remain hidden.
+
+
+-- Fixed referral campaign migration.
+-- The PWA and Android clients accept only sis234. Attribution is kept in a
+-- separate table so legacy collaborator-key rows remain readable but cannot
+-- receive new sign-ups.
+create table if not exists public.referral_code_signups (
+  user_id uuid primary key references auth.users(id) on delete cascade,
+  referral_code text not null default 'sis234' check (lower(trim(referral_code)) = 'sis234'),
+  source_app text not null default 'unknown' check (source_app in ('pwa', 'android', 'unknown')),
+  signed_up_at timestamptz not null default timezone('utc', now())
+);
+
+create index if not exists referral_code_signups_code_idx
+  on public.referral_code_signups(referral_code);
+
+create or replace function public.record_referral_code_signup(
+  p_referral_code text,
+  p_source_app text default 'unknown'
+)
+returns jsonb
+language plpgsql
+security definer
+set search_path = public
+as $fixed_referral$
+declare
+  v_user_id uuid := auth.uid();
+  v_code text := lower(trim(coalesce(p_referral_code, '')));
+  v_source_app text := case when p_source_app in ('pwa', 'android') then p_source_app else 'unknown' end;
+  v_inserted integer := 0;
+begin
+  if v_user_id is null then
+    raise exception 'not authenticated';
+  end if;
+
+  if v_code <> 'sis234' then
+    raise exception 'invalid referral code';
+  end if;
+
+  insert into public.referral_code_signups (user_id, referral_code, source_app)
+  values (v_user_id, 'sis234', v_source_app)
+  on conflict (user_id) do nothing;
+
+  get diagnostics v_inserted = row_count;
+
+  return jsonb_build_object(
+    'attributed', v_inserted > 0,
+    'referral_code', 'sis234'
+  );
+end;
+$fixed_referral$;
+
+grant execute on function public.record_referral_code_signup(text, text) to authenticated;
+
+create or replace function public.get_admin_referral_code_summary()
+returns table (
+  code text,
+  total_signups bigint
+)
+language plpgsql
+security definer
+set search_path = public
+as $fixed_referral$
+declare
+  v_admin_id uuid := auth.uid();
+  v_is_admin boolean;
+begin
+  if v_admin_id is null then
+    raise exception 'not authenticated';
+  end if;
+
+  select upper(coalesce(role, 'USER')) = 'ADMIN'
+    into v_is_admin
+  from public.profiles
+  where id = v_admin_id;
+
+  if coalesce(v_is_admin, false) is not true then
+    raise exception 'admin access required';
+  end if;
+
+  return query
+  select 'sis234'::text, count(*)::bigint
+  from public.referral_code_signups;
+end;
+$fixed_referral$;
+
+grant execute on function public.get_admin_referral_code_summary() to authenticated;
+
+alter table public.referral_code_signups enable row level security;
+revoke all on table public.referral_code_signups from anon, authenticated;
+
+-- Apply this block in the Supabase SQL Editor before deploying the client.

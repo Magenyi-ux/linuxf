@@ -3,7 +3,7 @@ import { Mail, Lock, User, ArrowRight, GraduationCap, ArrowLeft, Eye, EyeOff, Gi
 import type { UserProfile } from '../types';
 import { useAuth } from '../contexts/AuthContext';
 import { trackEvent } from '../services/analytics';
-import { getStoredReferralKey } from '../services/referralService';
+import { FIXED_REFERRAL_CODE, getStoredReferralKey } from '../services/referralService';
 
 interface AuthProps {
   onAuthComplete: (profile: UserProfile) => void;
@@ -36,9 +36,12 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
 
     try {
       if (mode === 'SIGN_UP') {
-        const trimmedReferralKey = referralKey.trim();
+        const trimmedReferralKey = referralKey.trim().toLowerCase();
+        if (trimmedReferralKey && trimmedReferralKey !== FIXED_REFERRAL_CODE) {
+          throw new Error(`The only valid referral code is ${FIXED_REFERRAL_CODE}.`);
+        }
         if (trimmedReferralKey) {
-          localStorage.setItem('spherelearn_referral_key', trimmedReferralKey);
+          localStorage.setItem('spherelearn_referral_key', FIXED_REFERRAL_CODE);
           localStorage.setItem('spherelearn_referral_captured_at', String(Date.now()));
         }
         if (formData.password.length < 8) {
@@ -52,26 +55,13 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
           setFormData((previous) => ({ ...previous, password: '' }));
           return;
         }
-      } else {
-        await signIn(formData.email, formData.password);
-        trackEvent('sign_in', { method: 'email_password' });
+        if (result.profile) onAuthComplete(result.profile);
+        return;
       }
 
-      const resolvedUser = user;
-      const resolvedProfile: UserProfile = profile || {
-        id: resolvedUser?.id,
-        name: formData.name || undefined,
-        email: resolvedUser?.email || formData.email,
-        level: 1,
-        xp: 0,
-        streak: 0,
-        role: 'USER',
-        timeSpent: 0,
-        isBanned: false,
-        showChatBot: true,
-        chatBotPosition: null,
-      };
-      onAuthComplete(resolvedProfile);
+      const signedInProfile = await signIn(formData.email, formData.password);
+      trackEvent('sign_in', { method: 'email_password' });
+      onAuthComplete(signedInProfile);
     } catch (authError) {
       setError(friendlyAuthError(authError));
     } finally {
@@ -126,12 +116,12 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
               <input
                 type="text"
                 autoComplete="off"
-                placeholder="Referral Key (optional)"
+                placeholder="Referral code (sis234 only)"
                 className="w-full pl-14 pr-6 py-4 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all font-medium text-gray-900"
                 value={referralKey}
                 onChange={(event) => setReferralKey(event.target.value)}
               />
-              <p className="mt-2 px-2 text-[11px] font-medium text-gray-400">Enter the key shared by your collaborator.</p>
+              <p className="mt-2 px-2 text-[11px] font-medium text-gray-400">Use sis234 if you were invited by SphereLearn.</p>
             </div>
           )}
 

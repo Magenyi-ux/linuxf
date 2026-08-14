@@ -40,3 +40,80 @@
     @apply font-bold text-gray-800;
   }
 }
+
+
+/* Offline/study dark theme. The scope is applied only by AppShell, so auth,
+   profile, and admin screens keep their dedicated light layouts. */
+.offline-dark-surface {
+  color-scheme: dark;
+}
+
+.offline-dark-surface .bg-white {
+  background-color: #0f172a !important;
+}
+
+.offline-dark-surface .bg-gray-50,
+.offline-dark-surface .bg-gray-50\/50 {
+  background-color: #111827 !important;
+}
+
+.offline-dark-surface .bg-gray-100 {
+  background-color: #1f2937 !important;
+}
+
+.offline-dark-surface .border-gray-50,
+.offline-dark-surface .border-gray-100,
+.offline-dark-surface .border-gray-200 {
+  border-color: #263449 !important;
+}
+
+.offline-dark-surface .text-gray-900,
+.offline-dark-surface .text-brand-900 {
+  color: #f8fafc !important;
+}
+
+.offline-dark-surface .text-gray-800,
+.offline-dark-surface .text-gray-700,
+.offline-dark-surface .text-gray-600 {
+  color: #cbd5e1 !important;
+}
+
+.offline-dark-surface .text-gray-500,
+.offline-dark-surface .text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+.offline-dark-surface .text-gray-300 {
+  color: #64748b !important;
+}
+
+.offline-dark-surface input,
+.offline-dark-surface textarea,
+.offline-dark-surface select {
+  color: #f8fafc !important;
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+}
+
+.offline-dark-surface input::placeholder,
+.offline-dark-surface textarea::placeholder {
+  color: #64748b !important;
+}
+
+.offline-dark-surface .shadow-sm,
+.offline-dark-surface .shadow-xl,
+.offline-dark-surface .shadow-2xl {
+  --tw-shadow-color: rgb(2 6 23 / 0.65);
+}
+
+.offline-dark-surface .bg-primary-50 {
+  background-color: rgb(79 70 229 / 0.18) !important;
+}
+
+.offline-dark-surface .text-primary-900 {
+  color: #e0e7ff !important;
+}
+
+.offline-dark-surface .sidebar-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+}
