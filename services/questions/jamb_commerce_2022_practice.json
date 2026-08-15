@@ -1,0 +1,744 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' in the context of business activities?",
+    "options": [
+      "The production of goods and services for sale",
+      "Activities that facilitate the exchange and distribution of goods and services",
+      "The legal registration of a business",
+      "Accounting and financial reporting of a business"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce includes all activities that facilitate the movement, distribution, and exchange of goods and services from producers to consumers, such as transport, banking, insurance and warehousing, not the actual production or legal registration alone.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is a primary function of warehousing in commerce?",
+    "options": [
+      "Promotion of goods to consumers",
+      "Providing short-term credit to customers",
+      "Storage and preservation of goods to ensure continuous supply",
+      "Fixing retail prices for goods"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Warehousing stores and preserves goods safely, enabling firms to maintain continuous supply, stabilize prices, and protect stock from deterioration; it does not directly promote goods, provide credit, or fix retail prices.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "A bill of exchange drawn by an exporter on an importer is an example of which commercial instrument?",
+    "options": [
+      "Promissory note",
+      "Cheque",
+      "Bill of exchange",
+      "Letter of credit"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of exchange is a written order by one party (drawer) requiring another (drawee/importer) to pay a fixed sum to a third party; it differs from promissory notes, cheques and letters of credit by its three-party character.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which principle of insurance requires that the insured must disclose all material facts to the insurer?",
+    "options": [
+      "Uberrimae fidei (utmost good faith)",
+      "Indemnity",
+      "Proximate cause",
+      "Subrogation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Uberrimae fidei, or utmost good faith, obliges both parties, especially the insured, to disclose all material facts affecting the risk. Failure to disclose can void the policy; other principles address indemnity, cause and substitution.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is NOT a feature of a sole proprietorship?",
+    "options": [
+      "Unlimited liability",
+      "Separate legal personality",
+      "Owner receives all profits",
+      "Easy to set up"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A sole proprietorship does not have separate legal personality: the owner and business are legally the same, hence unlimited liability. Other features include easy setup and receipt of all profits by the owner.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which marketing mix element is primarily concerned with deciding where products should be available to customers?",
+    "options": [
+      "Product",
+      "Price",
+      "Place",
+      "Promotion"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Place in the marketing mix refers to distribution channels and locations where products are made available to consumers. It covers logistics, retailing, and wholesaling, distinct from product, price, and promotion decisions.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "If the price of a commodity falls and its demand rises significantly, this demand is said to be:",
+    "options": [
+      "Inelastic",
+      "Unitary elastic",
+      "Elastic",
+      "Perfectly inelastic"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "When quantity demanded responds strongly to a price change, demand is elastic. Inelastic demand shows little response; unitary is proportional, and perfectly inelastic shows no response to price changes.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which document issued by a carrier acknowledges receipt of goods and serves as a document of title for international trade?",
+    "options": [
+      "Invoice",
+      "Bill of lading",
+      "Customs declaration",
+      "Packing list"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is issued by a carrier when goods are loaded and it acknowledges receipt, indicates terms of carriage, and serves as a document of title. Invoices and packing lists are commercial documents, not titles.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which type of bank account best suits daily transactions and cheque usage for a trader?",
+    "options": [
+      "Savings account",
+      "Current (checking) account",
+      "Fixed deposit account",
+      "Call deposit account"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Current or checking accounts are designed for frequent transactions and cheque usage without interest focus. Savings and fixed deposit accounts are for saving with restrictions, while call deposits have notice requirements.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best explains the role of 'middlemen' in trade?",
+    "options": [
+      "They manufacture goods for consumers",
+      "They finance government activities",
+      "They facilitate the distribution and sale of goods between producers and consumers",
+      "They regulate market prices by law"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Middlemen such as wholesalers and retailers bridge producers and consumers by buying, storing, transporting and selling goods, improving market reach and efficiency; they do not manufacture, finance government, or legally regulate prices.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is a short-term money market instrument issued by governments to raise short-term funds?",
+    "options": [
+      "Treasury bills (T-bills)",
+      "Debentures",
+      "Equity shares",
+      "Mortgages"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Treasury bills are short-term government securities (usually under one year) issued to raise immediate funds. Debentures and equity are longer-term capital market instruments; mortgages are long-term loans secured on property.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "In insurance, the principle of indemnity means:",
+    "options": [
+      "The insurer must pay any amount the insured desires",
+      "The insured should be restored to the same financial position as before the loss, no better, no worse",
+      "Losses should be shared among all insurers",
+      "Insurance must be compulsory"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Indemnity ensures the insured is compensated only to the extent of the actual loss suffered, restoring the prior financial position without profit. It prevents enrichment from insurance claims and limits payments accordingly.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which pricing method sets the price by adding a fixed percentage to the cost price?",
+    "options": [
+      "Penetration pricing",
+      "Cost-plus (mark-up) pricing",
+      "Skimming pricing",
+      "Dynamic pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cost-plus or mark-up pricing involves adding a fixed percentage or amount to the cost of a product to determine selling price. Penetration and skimming are market-entry strategies; dynamic pricing varies by demand.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best defines 'working capital' for a trading firm?",
+    "options": [
+      "Total long-term investments",
+      "Capital invested by shareholders only",
+      "Current assets minus current liabilities",
+      "Net profit after tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Working capital equals current assets less current liabilities and indicates a firm's short-term liquidity to meet operational needs. It is distinct from long-term investments, shareholders' equity, or net profit.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "A merchant who sells goods to retailers in small quantities is called a:",
+    "options": [
+      "Wholesaler",
+      "Retailer",
+      "Broker",
+      "Manufacturer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A retailer buys goods, often from wholesalers, and sells in small quantities directly to final consumers. Wholesalers sell in bulk to retailers; brokers facilitate deals; manufacturers produce goods.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of these is a disadvantage of import substitution policy for a developing economy?",
+    "options": [
+      "Growth of domestic industries",
+      "Increased employment in import-competing sectors",
+      "Potential inefficiency and higher consumer prices due to protection",
+      "Reduction in import dependency"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Import substitution can protect domestic industries, but prolonged protection may cause inefficiency, lack of competitiveness, and higher prices for consumers. Other options are intended advantages, not disadvantages.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which document from a bank guarantees payment to an exporter if the importer fails to pay?",
+    "options": [
+      "Letter of credit (LC)",
+      "Statement of account",
+      "Promissory note",
+      "Invoice"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A letter of credit is a bank's undertaking to pay the exporter when specified documents are presented, protecting exporters against importer default. Invoices and promissory notes do not provide this bank guarantee.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of these best describes 'franchising' in commerce?",
+    "options": [
+      "A franchisee grants rights to a franchisor to operate under its name",
+      "A franchisor licences a franchisee to use its brand and business model for a fee",
+      "A joint venture where profits are shared equally",
+      "An informal agreement between traders"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Franchising involves a franchisor granting the right to a franchisee to use its brand, systems and support in exchange for fees and royalties. It is a formal commercial arrangement, not a joint venture or informal agreement.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which term refers to the physical movement of goods from place of production to place of consumption?",
+    "options": [
+      "Storage",
+      "Transport",
+      "Marketing",
+      "Insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Transport concerns the physical movement of goods, enabling geographic separation between production and consumption. Storage preserves goods, marketing promotes them, and insurance protects against risks during movement.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "In commercial correspondence, what is the primary purpose of a 'pro forma invoice'?",
+    "options": [
+      "A final bill for customs clearance",
+      "An estimated invoice sent before goods are dispatched to declare price and terms",
+      "A receipt for payment received",
+      "A document transferring title to goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A pro forma invoice is a preliminary bill sent to advise the buyer of goods, price and terms prior to shipment, often used for import documentation and to obtain financial arrangements. It is not a final customs bill.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is a direct tax commonly collected by governments?",
+    "options": [
+      "Customs duty",
+      "Value Added Tax (VAT)",
+      "Personal income tax",
+      "Sales tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Personal income tax is a direct tax levied on individuals' income and paid directly to the government. Customs duties and VAT/sales taxes are indirect taxes collected via transactions on goods and services.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best describes a cooperative society?",
+    "options": [
+      "A profit-maximizing corporation owned by outside investors",
+      "An association of persons who voluntarily cooperate to meet common economic needs through jointly-owned enterprise",
+      "A government agency that controls commerce",
+      "A sole proprietorship with many branches"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cooperative society is formed by members who voluntarily pool resources to meet common needs, operate democratically, and share benefits. It differs from profit-maximizing corporations, government agencies, or sole proprietorships.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which mode of transport is most suitable for heavy, bulky, low-value goods over long distances at low cost?",
+    "options": [
+      "Air transport",
+      "Road transport",
+      "Rail transport",
+      "Courier services"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Rail transport is ideal for heavy, bulky, low-value goods over long distances because it offers high load capacity and lower cost per tonne-kilometer compared with road or air transport, which are faster but costlier.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best explains 'economies of scale'?",
+    "options": [
+      "Increase in average cost with more production",
+      "Decrease in average cost as production increases due to spreading fixed costs",
+      "Increase in total revenue when prices rise",
+      "Decrease in output due to poor management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Economies of scale occur when average costs fall as production expands, often because fixed costs are spread over more units and operational efficiencies increase. It is not about increased costs or reduced output.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of these is a primary objective of advertising in marketing?",
+    "options": [
+      "To reduce production costs",
+      "To inform, persuade and remind potential customers about products",
+      "To determine company tax liabilities",
+      "To warehouse goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising aims to inform potential buyers about products, persuade them to purchase, and remind them of product benefits, thereby stimulating demand. It does not directly reduce production costs or handle taxes or warehousing.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following statements about shares is correct?",
+    "options": [
+      "Preference shareholders always participate in management decisions",
+      "Ordinary shareholders have limited liability and may receive dividends that vary with profit",
+      "Shares represent debt owed by the company",
+      "Shareholders must personally guarantee company debts"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ordinary (equity) shareholders have limited liability and may receive dividends which are variable based on profits and company policy. They do not necessarily participate in daily management and shares are equity, not debt.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "If a merchant offers a trade discount of 20% on goods costing N10,000, the price after discount is:",
+    "options": [
+      "N8,000",
+      "N9,800",
+      "N10,200",
+      "N2,000"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A 20% trade discount on N10,000 equals N2,000 off, so the price after discount is N10,000 - N2,000 = N8,000. Trade discounts reduce the list price, unlike cash discounts which affect payment terms.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which financial institution primarily mobilizes small savings from the public and provides loans to businesses and individuals?",
+    "options": [
+      "Central bank",
+      "Commercial banks",
+      "Stock exchange",
+      "Insurance companies"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial banks mobilize deposits from the public (savings, current accounts) and provide loans and credit facilities to businesses and individuals, unlike central banks that regulate monetary policy or stock exchanges that trade securities.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following trade terms places the maximum responsibility on the seller to deliver goods to the buyer\u2019s premises, cleared for import?",
+    "options": [
+      "Ex Works (EXW)",
+      "Free on Board (FOB)",
+      "Cost, Insurance and Freight (CIF)",
+      "Delivered Duty Paid (DDP)"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Delivered Duty Paid (DDP) requires the seller to deliver goods to the buyer\u2019s premises and clear them for import, bearing all risks and costs including duties. EXW places most responsibility on buyer, CIF/FOB have seller responsibilities limited.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is a characteristic of a public limited liability company?",
+    "options": [
+      "Shares cannot be transferred",
+      "Limited liability and shares offered to the public",
+      "Formation only by government",
+      "Unlimited liability of shareholders"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A public limited liability company has limited liability for shareholders and can offer shares to the public, enabling share transferability and raising capital. It is not government-only nor does it have unlimited shareholder liability.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best describes 'commercial risk' faced by traders?",
+    "options": [
+      "Risk of physical injury to workers only",
+      "Uncertainty of profit due to market fluctuations, competition and customer default",
+      "Risk of flood damage only",
+      "Tax compliance risk exclusively"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial risk refers broadly to business uncertainties such as demand fluctuations, competition, customer insolvency, and market changes that affect profitability. It is not limited to physical hazards, floods, or tax risks alone.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which stock control method values closing inventory based on the earliest costs assumed to be sold first?",
+    "options": [
+      "LIFO (Last In, First Out)",
+      "FIFO (First In, First Out)",
+      "Weighted average",
+      "Specific identification"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FIFO assumes the earliest (first) goods purchased are the first sold, so closing inventory is valued at the most recent costs. LIFO uses last-in costs as cost of sales, different from weighted average or specific identification.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of these best explains 'counter trade' in international commerce?",
+    "options": [
+      "Trade in counterfeit goods",
+      "Barter or reciprocal trade where goods are exchanged partly or wholly for other goods rather than money",
+      "Trade that takes place only within one country",
+      "Illegal smuggling of goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Counter trade involves exchange of goods/services for other goods/services (barter or counter-purchase) rather than full monetary payment, often used when foreign exchange is scarce or to balance trade accounts.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best describes 'advertising elasticity of demand'?",
+    "options": [
+      "Change in demand caused by government regulations",
+      "Percentage change in demand due to percentage change in advertising expenditure",
+      "Change in supply due to advertising",
+      "Demand change due to price change"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising elasticity measures how responsive demand is to changes in advertising expenditure: the percentage change in quantity demanded divided by the percentage change in advertising spend. It is distinct from price elasticity or supply responses.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "A trader purchased goods for N80,000 and wants a 25% mark-up on cost. The selling price should be:",
+    "options": [
+      "N100,000",
+      "N90,000",
+      "N85,000",
+      "N120,000"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A 25% mark-up on cost of N80,000 is N20,000 (0.25 \u00d7 80,000). Therefore the selling price = cost + mark-up = N80,000 + N20,000 = N100,000. Mark-up is based on cost, not selling price.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is a benefit of specialization in trade and production?",
+    "options": [
+      "Reduced efficiency due to repetitive tasks",
+      "Lower productivity due to worker boredom",
+      "Higher output and improved skill from repetitive focus on specific tasks",
+      "Increased production costs always"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Specialization allows workers or firms to concentrate on tasks they perform best, leading to increased skill, higher productivity and often lower unit costs. While monotony can be a concern, the economic benefit is improved efficiency.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is a primary motive for companies to go public (float shares)?",
+    "options": [
+      "Reduce liquidity and restrict capital",
+      "Access new capital for expansion and enhance public profile",
+      "Avoid regulatory scrutiny",
+      "Prevent share trading"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Companies go public to raise capital by selling shares to the public for expansion, debt reduction, and improved visibility. Listing increases regulatory scrutiny rather than avoids it, and generally increases liquidity of shares.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following types of insurance would cover a shopowner against loss from burst pipes damaging stock?",
+    "options": [
+      "Life insurance",
+      "Fire and perils (property) insurance",
+      "Health insurance",
+      "Liability insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fire and perils or property insurance typically covers physical loss or damage to stock from defined risks like fire, flood, or burst pipes if included in the policy. Life, health and liability insurances cover other risks.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following correctly distinguishes wholesale from retail trade?",
+    "options": [
+      "Wholesalers sell directly to consumers in small quantities",
+      "Retailers sell in bulk to manufacturers",
+      "Wholesalers buy in bulk from producers and sell in smaller lots to retailers",
+      "Retailers purchase goods from consumers"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Wholesalers buy in large quantities from producers and supply retailers with smaller lots; retailers sell directly to final consumers. This distribution chain differentiates their functions in the marketing system.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is an advantage of e-commerce over traditional commerce?",
+    "options": [
+      "Restricted operating hours",
+      "Limited market reach",
+      "Reduced physical distribution costs and wider market access",
+      "Higher paper-based transaction costs"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "E-commerce can reduce some physical distribution costs and give sellers access to wider markets and 24/7 operations, overcoming geographic limitations of traditional commerce. It tends to lower, not increase, paper-based costs.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best defines 'trade discount'?",
+    "options": [
+      "A discount allowed for prompt payment",
+      "A reduction from list price given to trade buyers usually for purchasing in bulk",
+      "A government subsidy on exports",
+      "A percentage of tax refunded to businesses"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade discount is a reduction from the list or catalog price given to traders (e.g., wholesalers, retailers) for bulk purchases or trade relationships. It differs from cash discounts, subsidies, or tax refunds.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is most likely to increase demand for a normal good?",
+    "options": [
+      "A fall in consumer income",
+      "A rise in the price of a complementary good",
+      "An increase in consumer income",
+      "An increase in supply"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "For a normal good, demand increases when consumer income rises because people can now afford more of that good. A fall in income or higher complementary prices would reduce demand; supply changes affect price/quantity equilibrium.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best explains 'subrogation' in insurance?",
+    "options": [
+      "The insurer takes over the legal rights of the insured to recover from third parties after paying a valid claim",
+      "The insured must always lie about material facts",
+      "The insurer cannot investigate a claim",
+      "The insured receives more than the loss"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Subrogation allows an insurer, after indemnifying the insured, to step into the insured's legal shoes to sue third parties responsible for the loss, enabling recovery of paid amounts and preventing double compensation.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best describes a 'promissory note'?",
+    "options": [
+      "An unconditional written promise by one party to pay a sum to another party",
+      "A request to pay by a third party",
+      "A receipt for goods sold",
+      "A document used only for importing goods"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A promissory note is a written, unconditional promise by the maker to pay a specified sum to a payee either on demand or at a future date. It is a two-party negotiable instrument, not an import-only document.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following actions would most directly improve a firm's current ratio (current assets / current liabilities)?",
+    "options": [
+      "Taking out a long-term loan and using it to pay short-term creditors",
+      "Converting inventory into cash through sales",
+      "Reclassifying fixed assets as current assets without change in liquidity",
+      "Purchasing more fixed assets on credit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Converting inventory to cash increases current assets and likely improves the current ratio. Paying short-term creditors with long-term loans could change liabilities composition but not necessarily improve liquidity as effectively.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which instrument is commonly used by traders to settle international trade when neither party wants to take payment risk?",
+    "options": [
+      "Open account",
+      "Cash on delivery",
+      "Letter of credit",
+      "Consignment"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Letters of credit mitigate payment risk by involving the buyer's bank guaranteeing payment to the exporter upon presentation of stipulated documents, making it widely used in international trade when parties seek security.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best describes 'balance of trade'?",
+    "options": [
+      "The difference between the value of exports and imports of goods only",
+      "The overall balance including services, investment and transfers",
+      "A country's domestic budget surplus",
+      "The difference between exports and government spending"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Balance of trade measures the difference between a country's exports and imports of goods (visible trade). It excludes services and other items which are captured in the broader balance of payments.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which statement correctly defines 'commercial viability' of a business project?",
+    "options": [
+      "A project that is enjoyable to run",
+      "A project that can be implemented without any capital",
+      "A project that is likely to be profitable, sustainable and able to meet market demand",
+      "A project approved by government regardless of market prospects"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Commercial viability means a project is financially feasible: it can be profitably operated, sustain itself over time, and meet market demand. It is not determined solely by enjoyment, zero capital, or government approval.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best describes 'trade credit' as a source of short-term finance?",
+    "options": [
+      "A loan from a bank secured by real estate",
+      "A supplier's agreement to deliver goods now and be paid later",
+      "Issuing shares to the public",
+      "A long-term bond issued by the firm"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade credit occurs when suppliers allow buyers to purchase now and pay at a later date, providing short-term financing for working capital. It differs from bank loans, equity issuance, or long-term bonds.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is the primary function of advertising via a 'unique selling proposition' (USP)?",
+    "options": [
+      "To copy competitors exactly",
+      "To offer a distinct advantage or benefit that differentiates the product from competitors",
+      "To reduce product durability",
+      "To increase manufacturing costs"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A USP highlights a specific advantage that sets a product apart, persuading customers to choose it over competitors. It focuses on differentiation and value communication, not copying competitors or increasing costs intentionally.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best describes 'commercial bank clearing'?",
+    "options": [
+      "The process of calculating taxes owed by a bank",
+      "The method by which banks settle cheques and interbank payments through the clearing house",
+      "A bank's liquidation process",
+      "The same as issuing a promissory note"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Clearing is the process where banks exchange and settle cheques and other payment instruments via a clearing house to adjust interbank claims. It differs from liquidation, tax calculation, or promissory note issuance.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following is a primary reason governments impose tariffs on imported goods?",
+    "options": [
+      "To increase exports by reducing import prices",
+      "To raise revenue and protect domestic industries from foreign competition",
+      "To eliminate domestic production",
+      "To provide free goods to citizens"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tariffs are taxes on imports used to generate government revenue and protect domestic industries by making imports relatively more expensive, helping local producers compete. They do not directly increase exports or provide free goods.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Which of the following best defines 'market segmentation'?",
+    "options": [
+      "Selling the same product to all consumers without differentiation",
+      "Dividing a broad consumer market into sub-groups with similar needs and characteristics",
+      "Setting a single price for all markets",
+      "Avoiding research into customer preferences"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation divides a broad market into smaller groups with shared characteristics or needs so firms can target their marketing strategies more effectively. It is the opposite of undifferentiated marketing and requires customer research.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2022
+  }
+]

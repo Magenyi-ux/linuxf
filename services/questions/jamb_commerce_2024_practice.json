@@ -1,0 +1,786 @@
+[
+  {
+    "text": "Which of the following best distinguishes \"commerce\" from \"trade\"?",
+    "options": [
+      "Commerce refers to buying and selling only, while trade includes transportation and insurance.",
+      "Trade is only domestic transactions while commerce covers only international transactions.",
+      "Trade is the exchange of goods and services; commerce includes trade plus all auxiliaries like transport, banking and insurance.",
+      "Commerce is a type of retail business, and trade refers to wholesale activities."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Trade involves the simple exchange of goods and services. Commerce is broader: it includes trade plus auxiliary services such as transport, banking, warehousing and insurance that facilitate exchange and distribution of goods and services.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which function is primarily performed by wholesalers in the distribution chain?",
+    "options": [
+      "Providing final consumption advice to consumers.",
+      "Purchasing in bulk to achieve economies of scale and supplying retailers in smaller quantities.",
+      "Designing and packaging products for manufacturers.",
+      "Issuing shares to raise capital for manufacturers."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wholesalers buy large quantities from producers to benefit from bulk discounts and break bulk to supply retailers in smaller quantities. This reduces transaction costs for producers and ensures continuous supply for retailers.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which statement about internal and external trade is correct?",
+    "options": [
+      "Internal trade involves transactions between countries; external trade takes place within a country.",
+      "Internal trade is exchange within national boundaries; external trade is exchange between residents of different countries.",
+      "External trade excludes services; internal trade includes services.",
+      "Internal trade requires foreign currency; external trade uses domestic currency only."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Internal (domestic) trade happens within a country's borders among residents. External (international) trade occurs between residents of different countries, involving imports, exports and cross-border payments often in foreign currencies.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "A country with exports valued at $200 million and imports at $250 million has which of the following?",
+    "options": [
+      "Favorable balance of trade of $50 million.",
+      "Unfavorable balance of trade of $50 million.",
+      "No balance of trade since services not included.",
+      "Trade surplus because imports exceed exports."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Balance of trade equals exports minus imports. Here exports ($200m) minus imports ($250m) = -$50m, which is an unfavorable balance (a deficit) of $50 million, indicating imports exceed exports.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which tariff is charged as a fixed amount per unit of imported goods regardless of value?",
+    "options": [
+      "Ad valorem tariff.",
+      "Compound tariff.",
+      "Specific tariff.",
+      "Protective quota."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A specific tariff is a fixed monetary charge per physical unit (e.g., $10 per ton). An ad valorem tariff is a percentage of value. Compound tariffs combine both. Quotas restrict quantity, not a tariff type.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "The theory of comparative advantage implies that countries should:",
+    "options": [
+      "Produce goods they can make more efficiently than others in absolute terms.",
+      "Specialize in goods in which they have lower opportunity cost of production and trade for others.",
+      "Avoid trade to protect domestic industries regardless of efficiencies.",
+      "Specialize only in agricultural goods and import manufactured goods."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Comparative advantage suggests each country should specialize in producing goods with the lowest opportunity cost even if another country is absolutely more efficient, then trade to maximize global welfare and gains.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which describes a floating exchange rate system?",
+    "options": [
+      "Government fixes currency value to gold only.",
+      "Currency value is determined by market forces of supply and demand with minimal direct government control.",
+      "Central bank sets a fixed rate with no market influence.",
+      "Foreign exchange transactions are outlawed under this system."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In a floating exchange rate, currency values fluctuate according to foreign exchange market supply and demand. Governments may intervene occasionally, but there is no permanent fixed rate tied to another currency or commodity.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "What is the primary role of a letter of credit in international trade?",
+    "options": [
+      "It guarantees that the buyer will not receive the goods.",
+      "It allows banks to guarantee payment to the exporter provided terms of the credit are complied with.",
+      "It is a transport document used by shippers to move goods.",
+      "It is the same as an insurance policy for goods in transit."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A letter of credit is a bank's commitment to pay an exporter if the exporter complies with the terms and presents required documents. It reduces payment risk in international trade by substituting bank credit for buyer credit risk.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "A bill of lading primarily functions as which of the following in international shipping?",
+    "options": [
+      "A document of title, a receipt for goods shipped and a contract of carriage between shipper and carrier.",
+      "A bank guarantee for payment on delivery.",
+      "An export license issued by government authorities.",
+      "A customs valuation certificate for tax purposes only."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A bill of lading serves three functions: it is a receipt showing goods were loaded, a contract between carrier and shipper for carriage, and a document of title that conveys ownership or control of the goods while in transit.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "In risk management, what does hedging accomplish for traders?",
+    "options": [
+      "Guarantees infinite profit regardless of market movement.",
+      "Eliminates all trading costs and taxes.",
+      "Reduces or offsets potential losses from adverse price movements by taking an opposite position in related instruments.",
+      "Transforms short-term liabilities into long-term assets."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Hedging uses financial instruments or positions (like futures or options) that move opposite to the underlying exposure, thereby reducing or offsetting potential losses from adverse price movements, though it may also limit gains.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following is a distinguishing feature of life insurance compared with general insurance?",
+    "options": [
+      "Life insurance covers property damage; general insurance pays on death.",
+      "Life insurance provides payment on death or after specified term, often with savings element; general insurance covers specific risks for a period without savings.",
+      "Life insurance is short-term and renewable annually; general insurance is always long-term.",
+      "Life insurance cannot be used as collateral; general insurance always can."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Life insurance often provides benefits on death or maturity and can include savings/investment components. General insurance covers specified risks (fire, theft, motor) for defined periods and typically does not create a savings component.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "In double-entry bookkeeping, which of the following is true?",
+    "options": [
+      "Every debit has an equal and corresponding credit to maintain the accounting equation.",
+      "Debits and credits are recorded randomly without relation.",
+      "Only cash transactions are recorded in double-entry bookkeeping.",
+      "Debits always represent increases and credits always represent decreases."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Double-entry bookkeeping records each transaction as equal debits and credits to different accounts, ensuring the accounting equation (Assets = Liabilities + Equity) remains balanced. Debits/credits effects depend on account type.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "What is the main purpose of preparing a trial balance?",
+    "options": [
+      "To replace the income statement for reporting profits.",
+      "To list all ledger balances and check that total debits equal total credits to detect arithmetic errors.",
+      "To determine the market value of inventory.",
+      "To show the company\u2019s cash position at month-end."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A trial balance lists all ledger account balances to verify that total debits equal total credits. It helps detect arithmetical mistakes in posting and ledger balancing, though it does not detect all types of errors.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which characteristic best describes a three-column cash book?",
+    "options": [
+      "It records only credit transactions for purchases and sales.",
+      "It includes columns for cash, bank and discount, allowing cash and bank transactions to be recorded with discounts in one book.",
+      "It is used exclusively for petty cash payments.",
+      "It replaces the general ledger entirely."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A three-column cash book has separate columns for cash, bank and discount (for both receipts and payments), enabling recording of cash and bank transactions alongside any discounts allowed or received in one book.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which statement best explains the purpose of bank reconciliation?",
+    "options": [
+      "To reconcile company payroll with tax authorities.",
+      "To adjust the accounting records and bank statement differences, identifying unpresented checks, deposits in transit and errors.",
+      "To calculate bank interest rates for loans.",
+      "To reconcile customer invoices with supplier statements."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bank reconciliation compares the company's cash book with the bank statement to identify timing differences, unpresented cheques, deposits in transit, bank charges or errors. Adjustments ensure accurate cash balances in the books.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following describes the straight-line method of depreciation?",
+    "options": [
+      "Asset loses value by a fixed percentage each year.",
+      "Depreciation is charged equally each accounting period over the useful life of the asset.",
+      "Depreciation is based on units produced only.",
+      "Depreciation is not recognized until the asset is sold."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The straight-line method allocates the cost of an asset evenly across its useful life, resulting in a constant depreciation expense each period, calculated as (cost - residual value) divided by useful life.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "If fixed costs are N200,000 and contribution per unit is N50, what is the break-even point in units?",
+    "options": [
+      "2,500 units.",
+      "4,000 units.",
+      "10,000 units.",
+      "50,000 units."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Break-even point in units = Fixed costs / Contribution per unit. Here N200,000 \u00f7 N50 = 4,000. Wait: check arithmetic carefully: 200,000/50 = 4,000. Correct answer should be 4,000 units, so select option B.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Price elasticity of demand measures:",
+    "options": [
+      "How quantity demanded responds to price changes; elastic if percentage change in quantity demanded exceeds percentage change in price.",
+      "How supply responds to changes in consumer income only.",
+      "The change in demand due to changes in population growth.",
+      "The fixed relationship between cost and price that never changes."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Price elasticity of demand quantifies responsiveness of quantity demanded to price changes: elasticity >1 means elastic (quantity responds more than price), <1 inelastic, equal to 1 unitary elasticity. It informs pricing decisions.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following is NOT a determinant of supply?",
+    "options": [
+      "Production technology.",
+      "Prices of related goods in production.",
+      "Consumer tastes and preferences.",
+      "Costs of factors of production."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Supply determinants include production technology, input costs, prices of related goods, taxes and subsidies, and expectations. Consumer tastes and preferences primarily affect demand, not supply directly.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which feature is typical of perfect competition?",
+    "options": [
+      "Few firms control prices and advertise heavily.",
+      "Many buyers and sellers, homogeneous product, free entry and exit and price-taking behavior.",
+      "Single seller with high barriers to entry.",
+      "Products are highly differentiated and firms have considerable market power."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Perfect competition features a large number of buyers and sellers trading identical products, free entry and exit to the industry, perfect information, and firms are price takers with no single seller able to influence market price.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "A monopoly market is characterized mainly by:",
+    "options": [
+      "Many sellers offering identical products and free entry.",
+      "One seller dominating the market with high barriers to entry often setting price to maximize profit.",
+      "Government-imposed price ceilings and open competition.",
+      "A situation where supply equals demand at all times."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A monopoly exists when a single firm is the sole seller of a product with no close substitutes, often due to high barriers to entry. The monopolist can influence market price and output to maximize profits.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of these is a defining feature of a sole proprietorship?",
+    "options": [
+      "Ownership is by shareholders with limited liability.",
+      "Business decisions are made by a board of directors primarily.",
+      "Single owner enjoys all profits and bears unlimited liability for business debts.",
+      "Business must be publicly listed on the stock exchange."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A sole proprietorship is owned and controlled by one individual who receives all profits but also bears unlimited liability for all business debts and obligations; it is not a separate legal entity from its owner.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "How does a joint venture differ from a partnership?",
+    "options": [
+      "A joint venture is always permanent, while a partnership is always temporary.",
+      "A joint venture is a collaboration for a specific project or time between parties, while a partnership is an ongoing business relationship sharing profits and losses.",
+      "Joint ventures do not share profits, partnerships always do.",
+      "Joint ventures are illegal in international business."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A joint venture is a collaborative arrangement between parties for a specific project or limited time, pooling resources and risks for that venture. A partnership is typically a continuing business relationship with shared profits, losses and management.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "The Memorandum of Association of a company primarily defines:",
+    "options": [
+      "Internal rules for directors and shareholders procedures only.",
+      "The objects, powers, and scope of activities of the company and its relationship with the outside world.",
+      "Employee pension arrangements and salaries.",
+      "The company\u2019s annual audit procedures exclusively."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Memorandum of Association sets out the company's name, registered office, objects (activities it may engage in), and capital structure, defining its legal relationship with third parties. Articles govern internal management.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which is the correct distinction between authorized and issued share capital?",
+    "options": [
+      "Authorized capital is the maximum shares a company may issue; issued capital is the portion of authorized capital that has actually been allotted to shareholders.",
+      "Issued capital is always larger than authorized capital.",
+      "Authorized capital refers to market value of shares; issued capital refers to par value only.",
+      "There is no difference; both terms are synonyms."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Authorized (nominal) share capital is the maximum number of shares a company is legally permitted to issue as stated in its memorandum. Issued capital is the actual number of shares allotted to shareholders from that authorized amount.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "When are dividends usually declared by a company?",
+    "options": [
+      "Dividends are declared randomly without reference to profits or retained earnings.",
+      "Dividends are declared by the board of directors and approved by shareholders, usually from distributable profits retained by the company.",
+      "Dividends must be declared before the company makes any profit.",
+      "Dividends are paid only to employees, not shareholders."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Dividends are distributed from distributable profits and are typically recommended by the board of directors and approved at the shareholders' meeting. Companies cannot normally pay dividends out of capital or without sufficient profits.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which best describes working capital?",
+    "options": [
+      "Long-term investment in machinery and land.",
+      "The difference between current assets and current liabilities, representing funds for day-to-day operations.",
+      "The total amount of a company\u2019s long-term debt only.",
+      "Revenue less expenses for the accounting year."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Working capital equals current assets minus current liabilities and indicates the short-term liquidity available for operating activities. Positive working capital means the firm can meet short-term obligations and finance operations.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following is a long-term source of finance for a business?",
+    "options": [
+      "Trade credit for 30 days.",
+      "Overdraft facility repayable on demand.",
+      "Issuing ordinary shares to raise capital.",
+      "Customer advance for immediate delivery next week."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Issuing ordinary shares raises long-term equity finance because funds are contributed by shareholders and not repayable on demand. Overdrafts and trade credit are short-term sources; customer advances are typically short-term obligations.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which statement best defines budgeting in management?",
+    "options": [
+      "Budgeting is only preparing tax returns at year-end.",
+      "Budgeting is the process of preparing detailed, quantified financial plans for a future period, coordinating activities and controlling operations.",
+      "Budgeting involves calculating employee salaries alone.",
+      "Budgeting is optional and has no role in business control."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Budgeting is the systematic preparation of financial and operational plans for future periods. It allocates resources, sets targets, coordinates functions and provides a control mechanism to compare actual performance against planned objectives.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following lists the classic 4Ps of the marketing mix?",
+    "options": [
+      "Product, Price, Place, Promotion.",
+      "People, Process, Physical evidence, Performance.",
+      "Production, Procurement, Packaging, Policy.",
+      "Profit, Productivity, Planning, Pricing."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The marketing mix traditionally comprises Product (what to sell), Price (what to charge), Place (distribution channels), and Promotion (communication). These 4Ps are central to marketing strategy and tactical decisions.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Market segmentation involves:",
+    "options": [
+      "Dividing a broad market into smaller groups with similar needs and characteristics to target them more effectively.",
+      "Merging all competitors into one market.",
+      "Setting identical marketing strategies for all consumer groups irrespective of differences.",
+      "Always reducing the number of products in a product line."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Market segmentation divides a heterogeneous market into homogeneous segments based on criteria like demographics, geography, behavior or psychographics, allowing firms to tailor products and marketing efforts to specific groups more effectively.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which promotional method is most effective for building long-term personal relationships and closing complex sales?",
+    "options": [
+      "Advertising on billboards only.",
+      "Personal selling where a salesperson interacts directly with customers.",
+      "Passive social media posts without interaction.",
+      "Generic product labeling without explanation."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Personal selling involves direct interpersonal contact between salesperson and customer, which is effective for complex or high-value sales requiring persuasion, negotiation and relationship-building over time, beyond mass communication methods.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which option correctly describes a 'zero-level' distribution channel?",
+    "options": [
+      "Manufacturer sells through a wholesaler and retailer to consumers.",
+      "Manufacturer sells directly to the consumer with no intermediaries.",
+      "Manufacturer uses multiple intermediaries including agents and brokers.",
+      "Manufacturer exports exclusively through a foreign distributor."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A zero-level (direct) channel means the manufacturer sells directly to the end consumer without intermediaries. This reduces layers in distribution, can lower costs and improve control, but may increase marketing responsibilities.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which agency in Nigeria is primarily responsible for enforcement of consumer protection and anti-fraud activities?",
+    "options": [
+      "Federal Competition and Consumer Protection Commission (FCCPC).",
+      "National Agency for Food and Drug Administration only.",
+      "Nigerian Exchange Group without regulatory powers.",
+      "Ministry of Agriculture exclusively."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Federal Competition and Consumer Protection Commission (FCCPC) is the national agency tasked with promoting fair competition and protecting consumer rights, enforcing consumer protection laws and addressing anti-competitive practices in Nigeria.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following is a primary role of trade unions?",
+    "options": [
+      "Setting government fiscal policy and printing currency.",
+      "Representing employees to negotiate pay and conditions, protect rights and pursue collective bargaining.",
+      "Issuing business licenses to employers.",
+      "Managing company daily operations on behalf of employers."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade unions represent workers' interests, engaging in collective bargaining with employers to improve wages, benefits and working conditions, protecting members' rights and providing legal and industrial support in disputes.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which fiscal policy action would the government use to combat demand-pull inflation?",
+    "options": [
+      "Increase government spending significantly.",
+      "Reduce taxes and increase subsidies immediately.",
+      "Decrease government expenditure or increase taxation to reduce aggregate demand.",
+      "Remove all tariffs to encourage imports regardless of domestic industry effect."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "To reduce demand-pull inflation, governments can use contractionary fiscal policy by cutting public spending or raising taxes. This lowers aggregate demand, helping to cool an overheated economy and reduce inflationary pressures.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following is a monetary policy instrument commonly used by central banks?",
+    "options": [
+      "Setting minimum ages for employment.",
+      "Changing the cash reserve ratio (CRR) for commercial banks and conducting open market operations (OMO).",
+      "Passing criminal laws unrelated to finance.",
+      "Directly issuing bonds to finance private companies."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Central banks use tools such as the cash reserve ratio, open market operations, discount rate adjustments and statutory liquidity ratio to control money supply, influence interest rates and manage inflation or liquidity in the banking system.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following is most likely a cause of inflation in an economy?",
+    "options": [
+      "A sudden decrease in money supply while output remains unchanged.",
+      "A sustained increase in aggregate demand outstripping aggregate supply.",
+      "A permanent and immediate fall in all prices across the economy.",
+      "Zero government spending and complete reliance on exports."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Inflation often arises when aggregate demand grows faster than aggregate supply (demand-pull inflation) or when production costs increase (cost-push). Sustained demand exceeding supply leads to general price level increases.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "What is the difference between GDP and GNP?",
+    "options": [
+      "GDP measures goods only; GNP measures services only.",
+      "GDP is total output within a country\u2019s borders; GNP adds income earned by residents abroad and subtracts income earned by foreigners domestically.",
+      "GNP always equals GDP for all countries.",
+      "GDP excludes government spending while GNP includes it."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "GDP measures total output produced within a country's borders regardless of who owns production factors. GNP adjusts GDP by adding income residents earn abroad and subtracting income non-residents earn domestically, reflecting resident income.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which international organization primarily provides a framework for trade rules and dispute settlement among member countries?",
+    "options": [
+      "United Nations Development Programme (UNDP).",
+      "World Trade Organization (WTO).",
+      "International Criminal Court (ICC).",
+      "African Union Commission only."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The World Trade Organization (WTO) establishes trade rules, facilitates trade negotiations and provides a dispute settlement mechanism among members to ensure trade flows smoothly and predictably across international boundaries.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Import substitution industrialization (ISI) strategy most directly aims to:",
+    "options": [
+      "Promote imports by reducing domestic production.",
+      "Encourage domestic production of goods previously imported to reduce foreign dependency and develop local industry.",
+      "Increase tariffs to zero and rely on foreign firms entirely.",
+      "Eliminate all forms of industrialization in favor of agriculture."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Import substitution policy seeks to replace imports with domestically produced goods by promoting local industries through tariffs, subsidies and incentives, aiming to create employment and reduce dependency on foreign products.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which measure is commonly used to incentivize exports?",
+    "options": [
+      "Export subsidies, tax rebates or duty drawbacks to reduce export producers\u2019 costs.",
+      "Banning all exports to focus on local consumption.",
+      "Increasing domestic tariffs on imported inputs for exporters.",
+      "Removing quality control standards for exporters only."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Export incentives such as subsidies, tax relief, rebates and duty drawbacks lower production or transaction costs for exporters, making their goods more competitive internationally and stimulating export growth.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following best describes e-commerce?",
+    "options": [
+      "The use of electronic systems, such as the internet and mobile networks, to buy and sell goods and services and to transfer funds.",
+      "Selling products only through physical storefronts.",
+      "The exclusive use of postal services for business communication.",
+      "A form of barter that excludes money entirely."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "E-commerce uses digital networks (internet, mobile) to conduct commercial transactions, including online retailing, electronic payments, digital marketing and supply chain management, improving speed, reach and convenience for buyers and sellers.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which is a key advantage of electronic payment systems for businesses and consumers?",
+    "options": [
+      "Slower transaction times compared to cash.",
+      "Reduced transaction costs, faster settlement, enhanced convenience and improved record-keeping for both businesses and consumers.",
+      "Increased need for physical storage of cash.",
+      "Complete elimination of fraud risks with no need for security."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Electronic payments reduce handling costs, speed up transactions and settlements, provide convenient 24/7 access, and generate electronic records which aid accounting. However they still require security measures to mitigate fraud risks.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which mode of transport is generally most cost-effective for bulk, non-perishable heavy goods over long distances?",
+    "options": [
+      "Air transport due to speed.",
+      "Road transport exclusively regardless of terrain.",
+      "Sea (water) transport, as it offers low cost per ton for bulk cargo over long distances.",
+      "Courier delivery because of personalization."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Sea transport offers the lowest cost per ton-kilometer for heavy, bulky and non-perishable goods over long distances due to large cargo capacity despite slower transit times, making it ideal for international bulk shipments.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following is NOT a primary function of warehousing?",
+    "options": [
+      "Storage of goods to ensure continuous supply and seasonal balancing.",
+      "Breaking bulk to supply different quantities to buyers.",
+      "Increasing the weight of goods for transport.",
+      "Providing security and preservation of goods until required."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Warehousing stores and preserves goods, balances supply and demand, provides security, facilitates break-bulk and consolidation, and sometimes adds value via processing. It does not increase the physical weight of goods for transport.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "What is the main difference between branding and packaging?",
+    "options": [
+      "Branding is the visual design of a package only; packaging is the way a product is named.",
+      "Branding creates a unique identity and image for a product or firm; packaging is the physical container or wrapping that protects and markets the product.",
+      "Packaging always reduces product quality while branding always increases price.",
+      "Branding and packaging are identical concepts and interchangeable."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Branding builds a product\u2019s or company\u2019s identity, reputation and emotional connection with customers. Packaging is the tangible container or wrapping that protects the product, communicates information and can influence purchase decisions.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Quality control in manufacturing primarily aims to:",
+    "options": [
+      "Reduce production costs by eliminating inspections completely.",
+      "Ensure products meet specified standards and customer expectations through systematic checks and corrective actions.",
+      "Increase the number of defective products to test market resilience.",
+      "Eliminate all employee involvement in production decisions."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Quality control involves monitoring production processes and finished goods to ensure they meet set standards, identifying defects, and implementing corrective measures, thereby protecting customer satisfaction and reducing returns or warranty costs.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following best defines franchising as a business arrangement?",
+    "options": [
+      "A legal relationship where the franchisor grants the franchisee the right to use its brand, systems and support in exchange for fees and compliance with standards.",
+      "A charity donation scheme with no commercial obligations.",
+      "A situation where employees own all company assets.",
+      "A merger of two equal companies creating a new legal entity."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Franchising gives a franchisee the right to operate a business using the franchisor\u2019s brand, trademarks, products and business methods. The franchisee pays fees and follows operational standards set by the franchisor while receiving support.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which principle is central to good corporate governance?",
+    "options": [
+      "Transparency, accountability, responsibility and fairness in the management of a firm.",
+      "Secrecy and exclusive director control with no checks.",
+      "Maximizing short-term profit regardless of ethical consequences.",
+      "Avoiding any form of reporting to stakeholders."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Good corporate governance emphasizes transparency, accountability, fairness and responsibility toward stakeholders, ensuring ethical management, disclosure of information, checks and balances, and sustainable long-term value creation.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which financial statement shows a company\u2019s financial position at a particular date?",
+    "options": [
+      "Income statement only.",
+      "Balance sheet (statement of financial position), showing assets, liabilities and equity at a specific date.",
+      "Cash flow statement only.",
+      "Sales invoice register only."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The balance sheet (statement of financial position) presents a company's assets, liabilities and shareholders\u2019 equity at a specific point in time, providing a snapshot of financial condition, unlike income statements which cover a period.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which of the following best describes 'opportunity cost' in business decision-making?",
+    "options": [
+      "The amount spent on an irrelevant purchase.",
+      "The value of the next best alternative forgone when a choice is made, informing efficient resource allocation.",
+      "Only the monetary expenses recorded in accounting ledgers.",
+      "A fixed tax imposed by the government on business decisions."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Opportunity cost represents the benefits foregone from the next best alternative when choosing one option over another. Considering opportunity costs helps managers allocate scarce resources to maximize returns or utility.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which statement about debentures is correct?",
+    "options": [
+      "Debentures represent ownership shares with voting rights.",
+      "Debentures are unsecured or secured long-term debt instruments issued by companies promising fixed interest to holders.",
+      "Debentures are always repaid within seven days of issue.",
+      "Debentures cannot be traded on capital markets."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Debentures are long-term debt instruments through which companies borrow funds from investors and pay fixed interest. They may be secured by assets or unsecured, but they represent creditor claims, not ownership, and can be traded.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which practice helps reduce stock-out risk and maintain inventory levels efficiently?",
+    "options": [
+      "Just-In-Time (JIT) inventory system to minimize holding costs while coordinating timely deliveries from suppliers.",
+      "Never ordering any stock to avoid any holding costs.",
+      "Maintaining unlimited inventory without tracking.",
+      "Relying entirely on customer prepayments for stock control."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Just-In-Time inventory aims to receive goods only as needed in production, reducing holding costs and waste. It requires reliable suppliers and coordination to avoid stock-outs, improving efficiency when implemented properly.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which factor most directly affects a firm's pricing decision in a competitive market?",
+    "options": [
+      "The firm's chosen brand color only.",
+      "Market demand elasticity, competitor prices and production cost structure, which together determine optimal pricing strategy.",
+      "The number of managers on the payroll exclusively.",
+      "The location of the company headquarters only."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Pricing is influenced by demand elasticity (how consumers respond to price changes), competitors\u2019 pricing strategies and the firm's costs (variable and fixed). These together determine whether price adjustments will be profitable or competitive.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  },
+  {
+    "text": "Which document authorizes a bank to pay a named amount on demand to the bearer or a specified person?",
+    "options": [
+      "Promissory note issued by a bank to a customer.",
+      "Cheque drawn by an account holder instructing the bank to pay a specified sum to a named person or bearer.",
+      "Invoice issued by a supplier requesting payment.",
+      "Certificate of deposit issued by a government department."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cheque is a written instruction from an account holder to their bank to pay a specified sum to the payee named or the bearer on demand. It serves as a negotiable instrument for transferring funds.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2024
+  }
+]

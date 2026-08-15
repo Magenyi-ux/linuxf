@@ -1,0 +1,800 @@
+[
+  {
+    "text": "Which of the following best defines 'commerce' in the context of business activities?",
+    "options": [
+      "A set of laws that regulate industrial relations",
+      "All activities that facilitate the exchange of goods and services between producers and consumers",
+      "The production of goods and services using factors of production",
+      "A method of raising capital for industrial enterprise"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce comprises activities that make production saleable and available to consumers, such as transport, banking, insurance, warehousing and advertising. It is distinct from production, as it facilitates exchange rather than producing goods.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is NOT a function of commercial banks?",
+    "options": [
+      "Accepting deposits from the public",
+      "Granting loans and advances",
+      "Issuing coinage for national currency",
+      "Operating money transfer and payment services"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Issuing coinage is a function of the central bank or mint, not commercial banks. Commercial banks accept deposits, give loans, and provide payment services, but they do not create legal tender coins.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which document is most commonly used in international trade to guarantee payment by the buyer's bank to the seller?",
+    "options": [
+      "Promissory note",
+      "Bill of lading",
+      "Letter of credit",
+      "Invoice"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A letter of credit is issued by the buyer's bank to guarantee payment to the seller upon presentation of stipulated documents. It reduces payment risk in international transactions and is widely used in foreign trade.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes a sole proprietorship?",
+    "options": [
+      "A business owned and managed by two or more persons",
+      "A business where ownership is separated from management",
+      "A business owned and managed by one person with unlimited liability",
+      "A business owned by the state for public interest"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A sole proprietorship is owned and controlled by one person who bears unlimited liability for business debts. It lacks separate legal personality and decisions are made by the proprietor alone.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of these is a characteristic feature of a limited liability company?",
+    "options": [
+      "Owners have unlimited liability for company debts",
+      "Shares are not transferable under any circumstance",
+      "The company is a separate legal entity from its owners",
+      "It cannot enter into contracts in its own name"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A limited liability company is a separate legal entity, distinct from its shareholders. This provides shareholders with limited liability and allows the company to own property and enter contracts in its own name.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which principle of insurance states that the insured must disclose all material facts to the insurer?",
+    "options": [
+      "Indemnity",
+      "Utmost good faith (uberrimae fidei)",
+      "Proximate cause",
+      "Subrogation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Utmost good faith requires full disclosure of all material facts by the proposer to the insurer. Failure to disclose such information may invalidate the policy, as the insurer relies on accurate information to assess risk.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is an example of indirect tax?",
+    "options": [
+      "Pay As You Earn (PAYE)",
+      "Company income tax",
+      "Value Added Tax (VAT)",
+      "Capital gains tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "VAT is an indirect tax collected by sellers from buyers and remitted to the government. It is passed on in the price of goods and services rather than being paid directly by taxpayers to authorities.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'wholesale trade'?",
+    "options": [
+      "Selling goods directly to final consumers in small quantities",
+      "Selling goods in large quantities to retailers or industrial users",
+      "Manufacturing consumer goods from raw materials",
+      "Transporting goods from producers to warehouses"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wholesale trade involves buying goods in bulk from producers and selling them in large quantities to retailers, industrial users or other wholesalers. It bridges producers and retailers, dealing in bulk transactions.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is the main objective of advertising?",
+    "options": [
+      "To increase taxation on goods",
+      "To persuade and inform potential customers about products",
+      "To regulate the allocation of scarce resources",
+      "To ensure quality control of manufacturing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising aims to inform potential customers about products and persuade them to buy. It stimulates demand, builds brand awareness, and communicates product features, prices and availability to target audiences.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which one of the following is NOT a primary function of marketing?",
+    "options": [
+      "Product design and development",
+      "Market research and segmentation",
+      "Price fixing by government",
+      "Distribution and promotion of goods"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Price fixing by government is a regulatory government activity, not a core marketing function. Marketing focuses on product development, research, pricing strategies, distribution and promotion to meet consumer needs.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'working capital'?",
+    "options": [
+      "Long-term funds used to finance fixed assets",
+      "Funds used for day-to-day operations of a business",
+      "Government grants for industrialization",
+      "Capital invested by shareholders only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Working capital is the capital used to finance short-term operational needs such as buying inventory, paying wages and meeting other current liabilities. It ensures a firm has liquidity for daily operations.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which transport mode is most suitable for bulky and non-perishable goods over long inland distances at low cost?",
+    "options": [
+      "Air transport",
+      "Road transport",
+      "Pipeline transport",
+      "Rail transport"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Rail transport efficiently carries bulky, heavy and non-perishable goods over long inland distances at relatively low cost per ton. It is less flexible than road but more economical for bulk transport.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of these shows the correct order of distribution channels from producer to consumer?",
+    "options": [
+      "Producer -> Retailer -> Wholesaler -> Consumer",
+      "Producer -> Agent -> Wholesaler -> Retailer -> Consumer",
+      "Consumer -> Retailer -> Wholesaler -> Producer",
+      "Producer -> Consumer -> Retailer -> Wholesaler"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A common distribution channel has producers selling to agents or wholesalers, who sell to retailers, and retailers sell to final consumers. Agents may facilitate transactions between producers and wholesalers.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is the primary purpose of warehousing in commerce?",
+    "options": [
+      "To reduce production costs by increasing workforce",
+      "To store goods and regulate supply to meet seasonal demand",
+      "To replace retail functions in the market",
+      "To issue credit to wholesalers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Warehousing enables goods storage, protects goods from damage, and regulates supply especially for seasonal products. It helps maintain stable supply, reduce stockouts and support price stabilization strategies.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best explains the 'law of demand'?",
+    "options": [
+      "As price falls, quantity demanded also falls",
+      "As price rises, quantity demanded rises",
+      "As price falls, quantity demanded rises, ceteris paribus",
+      "Demand is independent of price changes"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The law of demand states that, ceteris paribus (all other things equal), a fall in price leads to an increase in quantity demanded, while a rise in price reduces quantity demanded.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which instrument is used by a buyer to instruct his bank to pay a specified sum to a seller on demand?",
+    "options": [
+      "Cheque",
+      "Letter of credit",
+      "Bill of lading",
+      "Policy of insurance"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A cheque is an order by an account holder instructing his bank to pay a specified sum from his account to the bearer or payee on demand. It is a common payment instrument in commercial transactions.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of these best describes a trade union's primary objective?",
+    "options": [
+      "To promote the sales of employers' products",
+      "To protect and advance the economic interests of workers",
+      "To standardize national currency",
+      "To issue licenses to businesses"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade unions primarily aim to protect and advance workers' economic interests through collective bargaining, improved wages and working conditions. They act on behalf of employees in negotiations with employers.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'market segmentation'?",
+    "options": [
+      "Dividing a market into distinct groups of buyers with similar needs or characteristics",
+      "Merging different markets into one homogenous market",
+      "Reducing the number of products offered by a company",
+      "Fixing prices across all market segments"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Market segmentation divides a heterogeneous market into smaller, homogeneous sub-groups with common needs or characteristics. This enables firms to target marketing efforts and tailor products to specific segments.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is a major disadvantage of a partnership business?",
+    "options": [
+      "Limited capital compared to sole proprietorship",
+      "Difficulty in decision making due to multiple owners",
+      "Limited managerial expertise compared to corporations",
+      "Unlimited liability of partners for business debts"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "In a partnership, partners generally have unlimited liability, meaning personal assets can be used to settle business debts. This exposes partners to risk beyond their capital contributions.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is true about 'bill of lading'?",
+    "options": [
+      "It is an insurance contract covering cargo loss",
+      "It is a transport document which acts as receipt and title to goods in shipping",
+      "It is a monetary instrument issued by a central bank",
+      "It is an invoice used only in domestic trade"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is issued by a carrier to acknowledge receipt of cargo, serving as a contract of carriage and as a document of title. It is central to maritime and international shipments.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which pricing method involves adding a predetermined percentage to the cost of a product to determine its selling price?",
+    "options": [
+      "Penetration pricing",
+      "Cost-plus pricing (markup pricing)",
+      "Price skimming",
+      "Psychological pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cost-plus pricing, or markup pricing, sets price by adding a fixed percentage over the cost of production. It ensures a certain profit margin but may ignore demand and competition.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'elasticity of demand'?",
+    "options": [
+      "The proportionate change in supply to a change in demand",
+      "The responsiveness of quantity demanded to a change in price",
+      "The fixed relationship between price and demand",
+      "The responsiveness of supply to government policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Elasticity of demand measures how quantity demanded responds to price changes. If demand is elastic, quantity demanded changes greatly with price; if inelastic, quantity changes little.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of these is a characteristic of a public corporation?",
+    "options": [
+      "It is financed only by private investors",
+      "It is aimed primarily at making large dividends for shareholders",
+      "It is owned and managed by the government to provide public goods or services",
+      "It cannot operate independently of government"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A public corporation is owned wholly or partly by the government and established to provide essential public services or goods. While it may make profits, its main aim is public welfare and service provision.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is the main purpose of the Central Bank in Nigeria?",
+    "options": [
+      "To provide retail banking services to the public",
+      "To issue licenses to private companies",
+      "To regulate the banking sector and manage national monetary policy",
+      "To run manufacturing industries"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Central Bank regulates the banking system, formulates and implements monetary policy, issues currency, acts as banker to the government and commercial banks, and promotes financial stability.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'stock exchange'?",
+    "options": [
+      "An institution for trading currencies only",
+      "A marketplace where securities such as shares and bonds are bought and sold",
+      "A warehouse for perishable goods exported abroad",
+      "A facility for issuing cheques and drafts"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A stock exchange provides a regulated marketplace for buying and selling securities like shares and bonds, enabling companies to raise capital and investors to trade ownership claims.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of these documents evidences ownership of a specified number of shares issued by a company?",
+    "options": [
+      "Share certificate",
+      "Promissory note",
+      "Invoice",
+      "Delivery note"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A share certificate is issued to shareholders as proof of ownership of a specified number of shares in a company. It records shareholder details and rights associated with the shares.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is an advantage of forming a cooperative society?",
+    "options": [
+      "Unlimited liability for members",
+      "Members can pool resources to obtain credit and services at better terms",
+      "It is solely controlled by the government",
+      "Profits are not shared among members"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cooperatives enable members to pool resources, access credit, buy in bulk at lower prices, and receive services collectively. They operate democratically and distribute surpluses to members.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which form of advertising focuses on creating goodwill and a positive image for a firm rather than promoting specific products?",
+    "options": [
+      "Product advertising",
+      "Institutional advertising",
+      "Direct-response advertising",
+      "Comparative advertising"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Institutional advertising aims to build a favorable image and goodwill for the firm itself, rather than promoting particular products. It helps shape public perception and corporate reputation over time.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best explains 'subrogation' in insurance?",
+    "options": [
+      "The insurer takes over the rights of the insured to recover from a third party after indemnifying the loss",
+      "The insured must reveal all material facts to insurer",
+      "The principle that prevents insured from profiting from a claim",
+      "The sharing of premium between insurers"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Subrogation allows the insurer, after paying a claim, to assume the insured's legal rights to recover loss from a third party responsible for the damage. This helps insurers recoup indemnity payments.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of these best describes 'import duty'?",
+    "options": [
+      "A subsidy paid to exporters",
+      "A tax levied on goods brought into a country",
+      "A domestic sales tax on produced goods",
+      "A license fee for wholesalers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Import duty is a tax imposed by a country on goods imported across its borders. It raises government revenue and can protect local industries by increasing the price of foreign goods.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is a mercantile document that serves as an order to pay specified sum at a future date?",
+    "options": [
+      "Promissory note",
+      "Cheque",
+      "Bill of exchange",
+      "Insurance policy"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of exchange is a written, unconditional order by one person to another to pay a specified sum either on demand or at a fixed future date. It is commonly used in trade credit arrangements.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which trade policy tool restricts the physical quantity of imports allowed into a country?",
+    "options": [
+      "Tariff",
+      "Subsidy",
+      "Quota",
+      "Export promotion"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A quota limits the physical quantity of a particular good that may be imported into a country during a specified period. It directly restricts import volumes rather than altering prices.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'dividend' in corporate finance?",
+    "options": [
+      "A fee paid to the government for business registration",
+      "A share of profits distributed to shareholders by a company",
+      "A loan given to suppliers by a company",
+      "A penalty for late payment of taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Dividends are portions of company profits distributed to shareholders as returns on their investment. The board decides on dividend payments, balancing reinvestment needs and shareholder returns.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is NOT an element of the marketing mix (4Ps)?",
+    "options": [
+      "Product",
+      "Price",
+      "Place",
+      "Policy"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The traditional marketing mix comprises Product, Price, Place (distribution) and Promotion. 'Policy' is not one of the 4Ps, although marketing policies may guide strategy indirectly.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is a reason for government to intervene in commerce?",
+    "options": [
+      "To eliminate all private enterprise",
+      "To correct market failures and protect consumers",
+      "To ensure maximum profits for specific firms",
+      "To prevent production of public goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Government intervenes to correct market failures (like externalities, monopolies), protect consumers, regulate commerce, provide public goods and ensure fair competition, thereby promoting overall welfare.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'e-commerce'?",
+    "options": [
+      "Commerce conducted through physical market stalls only",
+      "Electronic buying and selling of goods and services over the internet",
+      "The use of cheques in rural trade",
+      "A form of cooperative business"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "E-commerce is the electronic conduct of trade using internet platforms, allowing buying, selling, marketing and payment processes online. It increases reach, convenience and reduces traditional trade barriers.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is the primary aim of consumer protection agencies like the Consumer Protection Council (now FCCPC) in Nigeria?",
+    "options": [
+      "To impose tariffs on imports",
+      "To protect consumers from exploitation and ensure fair trade practices",
+      "To promote only domestic producers",
+      "To manage monetary policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consumer protection agencies safeguard consumers from unfair trade practices, misleading advertising and unsafe goods. They enforce standards, handle complaints and promote fair competition in the marketplace.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which type of bank account usually pays interest and allows unlimited withdrawals by the account holder?",
+    "options": [
+      "Fixed deposit account",
+      "Savings account",
+      "Current (demand) account",
+      "Loan account"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A savings account typically pays interest and permits depositors to withdraw funds as needed, although some limits may apply. Current accounts are mainly for businesses and may not pay interest.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is a benefit of good inventory control for a business?",
+    "options": [
+      "Increased holding costs and stock obsolescence",
+      "Reduced stockouts, improved cash flow and better customer service",
+      "Guaranteed monopoly in the market",
+      "Elimination of need for market research"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Effective inventory control reduces stockouts, minimizes holding costs, improves cash flow and ensures products are available to satisfy customers. It also reduces losses from spoilage and obsolescence.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'capital' in business?",
+    "options": [
+      "Only the physical buildings used by a firm",
+      "Money and assets used to start and operate a business",
+      "Obligations payable to creditors",
+      "The number of employees in a firm"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Capital refers to funds and assets (cash, machinery, buildings) invested in a business to facilitate production and operations. It includes both fixed and working capital used for different purposes.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which type of insurance provides cover in case goods are lost or damaged during maritime transit?",
+    "options": [
+      "Life insurance",
+      "Fire insurance",
+      "Marine insurance",
+      "Health insurance"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Marine insurance covers loss or damage to goods while in transit over sea or inland waterways. It protects shippers and consignees from perils of the sea and related transit risks.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which one of the following is a primary market activity of a stock exchange?",
+    "options": [
+      "Trading of existing shares between investors",
+      "Issuance of new securities to raise capital for companies",
+      "Storing securities in a warehouse",
+      "Providing insurance for shares"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The primary market involves the issuance of new securities (shares or bonds) by companies to raise capital. The stock exchange may facilitate listing, but primary issuance raises fresh funds from investors.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'brand loyalty'?",
+    "options": [
+      "Customers always switching to cheaper alternatives",
+      "A consumer's consistent preference for a particular brand over time",
+      "The practice of imposing brand taxes on consumers",
+      "A legal obligation to purchase from a single supplier"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Brand loyalty is when consumers repeatedly choose a particular brand due to satisfaction, trust or perceived value. Loyal customers provide stable demand and can be less price-sensitive.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which agency in Nigeria is primarily responsible for regulating food, drugs and related products?",
+    "options": [
+      "Central Bank of Nigeria (CBN)",
+      "Standard Organization of Nigeria (SON)",
+      "National Agency for Food and Drug Administration and Control (NAFDAC)",
+      "Corporate Affairs Commission (CAC)"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "NAFDAC regulates and controls the manufacture, importation, exportation, distribution and use of food, drugs, cosmetics and medical devices to ensure safety and protect public health in Nigeria.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'promotion' in the context of marketing?",
+    "options": [
+      "Activities aimed solely at lowering production costs",
+      "Efforts to inform, persuade and remind consumers about products",
+      "The physical distribution of goods only",
+      "Setting the price of goods without regard to demand"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Promotion encompasses advertising, sales promotion, personal selling and public relations used to inform and persuade target customers, stimulate demand and build brand awareness.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which one of the following is a characteristic of money?",
+    "options": [
+      "It must be produced in unlimited quantities",
+      "It must have intrinsic value equal to its face value",
+      "It must be accepted as a medium of exchange and a store of value",
+      "It must only be made of precious metals"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Money functions as a medium of exchange, unit of account and store of value. It should be widely accepted, durable and reasonably scarce, but need not have intrinsic value equal to face value.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best describes 'market research'?",
+    "options": [
+      "A study of internal cash flows only",
+      "An analysis aimed at identifying and understanding consumer needs and market opportunities",
+      "A government process to set national prices",
+      "A method of tax collection"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market research gathers and analyses information about consumers, competitors and market trends to inform business decisions, reduce risk and identify opportunities for product development and marketing strategies.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is a basic principle of bookkeeping?",
+    "options": [
+      "Single entry system records both sides of each transaction",
+      "Double entry system requires that total debits equal total credits",
+      "Transactions need not be recorded until audited",
+      "Only expenses should be recorded in the books"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The double entry system records each transaction in two accounts (debit and credit), ensuring total debits equal total credits. This provides a balanced and accurate record of financial activities.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best explains 'price skimming' as a pricing strategy?",
+    "options": [
+      "Setting a low initial price to penetrate the market",
+      "Setting high initial price to target customers willing to pay premium, later lowering it",
+      "Charging the same price in all markets regardless of demand",
+      "Pricing only based on production costs"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Price skimming involves introducing a product at a high price to capture consumer surplus from buyers willing to pay more, then lowering price over time to attract additional market segments.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following identifies the main difference between 'trade' and 'commerce'?",
+    "options": [
+      "Trade includes services like insurance and transport, commerce only involves buying and selling",
+      "Commerce includes auxiliary services (insurance, transport, banking) that facilitate trade; trade is buying and selling of goods",
+      "There is no difference; both terms are synonymous",
+      "Trade deals only with export, commerce deals only with import"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade refers primarily to the buying and selling of goods and services, while commerce includes trade plus auxiliary services like transportation, warehousing, banking and insurance that make trade possible.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following business documents shows the quantity and description of goods delivered to a buyer?",
+    "options": [
+      "Invoice",
+      "Delivery note (dispatch note)",
+      "Promissory note",
+      "Bank statement"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A delivery note accompanies goods delivered and lists quantities and descriptions. The buyer signs to acknowledge receipt. It differs from an invoice which requests payment for goods supplied.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is an advantage of chain stores over independent retailers?",
+    "options": [
+      "Inability to buy in bulk",
+      "Lower bargaining power with suppliers",
+      "Economies of scale leading to lower unit costs",
+      "Less standardization of service and product range"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Chain stores benefit from economies of scale in purchasing, distribution and promotion, enabling lower unit costs, standardized service and wider product ranges compared to independent retailers.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best explains 'credit creation' by commercial banks?",
+    "options": [
+      "Banks printing money to lend to customers",
+      "The process by which banks lend out a portion of deposits, thereby increasing money supply through multiple deposits",
+      "Banks confiscating customers' deposits for use by government",
+      "A means by which banks eliminate all forms of lending"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Credit creation occurs when banks lend part of received deposits, which becomes deposits in other banks; through the multiplier process this expands the total money supply in the economy.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following is true about 'consumer goods' and 'capital goods'?",
+    "options": [
+      "Consumer goods are used to produce other goods; capital goods are for final consumption",
+      "Capital goods are used in production to create consumer goods; consumer goods satisfy final wants",
+      "Both are exclusively produced by the government",
+      "Neither affects national income"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Capital goods, like machinery and equipment, are used to produce other goods and services. Consumer goods are final products consumed to satisfy immediate wants of consumers.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which factor is most likely to increase the supply of a product, ceteris paribus?",
+    "options": [
+      "An increase in production cost",
+      "Introduction of a tax on producers",
+      "Technological improvement in production processes",
+      "A decrease in number of producers"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Technological improvement typically raises productivity, reducing costs per unit and enabling producers to supply more at each price. This shifts the supply curve to the right, increasing supply.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following documents is primarily used by exporters to prove shipment of goods to the importer?",
+    "options": [
+      "Warehouse receipt",
+      "Bill of lading",
+      "Promissory note",
+      "Insurance proposal form"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is issued by the carrier to the exporter upon loading goods onto a ship or vessel. It serves as evidence of shipment and can be used to claim payment under letters of credit.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Which of the following best explains 'price discrimination'?",
+    "options": [
+      "Charging the same price to all customers",
+      "Charging different prices to different customers for the same product without cost differences",
+      "Government setting different prices across regions",
+      "Price increases only during inflation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Price discrimination occurs when a seller charges different prices to different customers for identical goods or services based on willingness to pay, not cost differences, to maximize profits.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2023
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "text": "The primary function of the legislature is to",
+    "options": [
+      "execute laws",
+      "make laws",
+      "interpret laws",
+      "enforce judgments"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The legislature is the law-making arm of government.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Nigerian National Assembly is bicameral because it consists of",
+    "options": [
+      "the President and Vice President",
+      "the Senate and House of Representatives",
+      "the Governor and Deputy Governor",
+      "the Supreme Court and Court of Appeal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bicameralism in Nigeria comprises the Senate and the House of Representatives.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Senate has how many members?",
+    "options": [
+      "36",
+      "109",
+      "360",
+      "774"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Senate has 109 members: three per state and one for the FCT.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The House of Representatives has how many members?",
+    "options": [
+      "109",
+      "360",
+      "240",
+      "774"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The House of Representatives has 360 members.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The presiding officer of the Senate is the",
+    "options": [
+      "Speaker",
+      "Senate President",
+      "Chief Whip",
+      "Clerk"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Senate President presides over Senate proceedings.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Speaker of the House of Representatives is elected by",
+    "options": [
+      "the President",
+      "members of the House",
+      "the Senate",
+      "the judiciary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Speaker is elected by members of the House.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "A bill goes through how many readings in the National Assembly before passage?",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill undergoes first, second, and third readings.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The committee stage of a bill involves",
+    "options": [
+      "final voting only",
+      "detailed examination and amendment",
+      "presidential assent",
+      "public announcement"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Committees scrutinize and amend bills in detail.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The power of the purse belongs to the",
+    "options": [
+      "executive",
+      "legislature",
+      "judiciary",
+      "civil service"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The legislature controls public funds through appropriation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Appropriation is the process of",
+    "options": [
+      "collecting taxes",
+      "authorizing government expenditure",
+      "printing money",
+      "borrowing loans"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Appropriation is the legislative approval of spending.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Oversight function of the legislature means",
+    "options": [
+      "making laws",
+      "monitoring the executive",
+      "interpreting laws",
+      "conducting elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The legislature monitors executive implementation of policies.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The executive in Nigeria is headed by the",
+    "options": [
+      "Chief Justice",
+      "President",
+      "Senate President",
+      "Speaker"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President heads the executive arm.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Vice President of Nigeria is elected",
+    "options": [
+      "separately",
+      "on the same ticket as the President",
+      "by the Senate",
+      "by the House of Representatives"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Vice President runs on a joint ticket with the President.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The minimum age to contest for President in Nigeria is",
+    "options": [
+      "30 years",
+      "35 years",
+      "40 years",
+      "45 years"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Presidential candidates must be at least 40 years old.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The minimum age to contest for Governor is",
+    "options": [
+      "30 years",
+      "35 years",
+      "40 years",
+      "45 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Gubernatorial candidates must be at least 35 years old.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The minimum age to contest for Senator is",
+    "options": [
+      "25 years",
+      "30 years",
+      "35 years",
+      "40 years"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Senatorial candidates must be at least 35 years old.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The minimum age to contest for House of Representatives is",
+    "options": [
+      "21 years",
+      "25 years",
+      "30 years",
+      "35 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "House of Representatives candidates must be at least 25.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The President can be removed from office through",
+    "options": [
+      "referendum",
+      "impeachment",
+      "recall",
+      "resignation only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Impeachment is the constitutional removal process.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Chief Justice of Nigeria is appointed by the",
+    "options": [
+      "Senate alone",
+      "President on the recommendation of the NJC",
+      "House of Representatives",
+      "Governors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President appoints the CJN on NJC advice, subject to Senate confirmation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The National Judicial Council is chaired by the",
+    "options": [
+      "President",
+      "Chief Justice of Nigeria",
+      "Attorney General",
+      "Senate President"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The CJN chairs the National Judicial Council.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Judges of the Supreme Court retire at the age of",
+    "options": [
+      "60",
+      "65",
+      "70",
+      "75"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Supreme Court justices retire at 70 years.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Judges of the Court of Appeal retire at",
+    "options": [
+      "60 years",
+      "65 years",
+      "70 years",
+      "75 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Court of Appeal judges retire at 65.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The doctrine of judicial precedent is also called",
+    "options": [
+      "habeas corpus",
+      "stare decisis",
+      "audi alteram partem",
+      "nemo judex"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stare decisis means lower courts follow higher court decisions.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "A court with original jurisdiction hears cases",
+    "options": [
+      "on appeal only",
+      "for the first time",
+      "only constitutional matters",
+      "only criminal matters"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Original jurisdiction means first-instance hearing.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Appellate jurisdiction allows a court to",
+    "options": [
+      "conduct trials",
+      "review decisions of lower courts",
+      "execute judgments",
+      "arrest offenders"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Appellate courts hear appeals from lower courts.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The highest court in Nigeria is the",
+    "options": [
+      "Court of Appeal",
+      "Federal High Court",
+      "Supreme Court",
+      "Sharia Court of Appeal"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Supreme Court is the apex court.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Federal High Court has jurisdiction over",
+    "options": [
+      "state criminal cases",
+      "federal matters including taxation and banking",
+      "customary law",
+      "Sharia law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Federal High Court handles federal causes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "A magistrate court handles",
+    "options": [
+      "constitutional matters",
+      "minor criminal and civil cases",
+      "election petitions",
+      "admiralty law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Magistrate courts are summary courts.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Director of Public Prosecutions is responsible for",
+    "options": [
+      "defending the accused",
+      "prosecuting criminal cases for the state",
+      "appointing judges",
+      "making laws"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The DPP conducts public prosecutions.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Legal aid provides",
+    "options": [
+      "free legal services to the wealthy",
+      "free or subsidized legal services to the indigent",
+      "loans to lawyers",
+      "payment for judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Legal aid ensures access to justice for the poor.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Legal Aid Council of Nigeria was established to",
+    "options": [
+      "prosecute all cases",
+      "provide legal assistance to the poor",
+      "train judges",
+      "write the constitution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It ensures indigent citizens have legal representation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Alternative Dispute Resolution (ADR) includes",
+    "options": [
+      "only litigation",
+      "mediation, arbitration, and conciliation",
+      "military trials",
+      "legislative hearings"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "ADR resolves disputes outside court.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Arbitration involves",
+    "options": [
+      "a judge deciding a case",
+      "a neutral third party making a binding decision",
+      "the president intervening",
+      "public voting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An arbitrator issues a binding award.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Mediation differs from arbitration because",
+    "options": [
+      "it is more expensive",
+      "the mediator does not impose a decision",
+      "it requires a judge",
+      "it is always public"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Mediators facilitate agreement; parties decide.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Multi-Door Courthouse concept promotes",
+    "options": [
+      "only litigation",
+      "multiple dispute resolution options",
+      "only arbitration",
+      "only mediation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It offers various ADR mechanisms.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The National Human Rights Commission can",
+    "options": [
+      "make laws",
+      "investigate human rights violations",
+      "conduct elections",
+      "appoint judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NHRC investigates and addresses rights violations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Public Defender's Office provides",
+    "options": [
+      "legal representation for the government",
+      "free legal services to indigent persons",
+      "prosecution services",
+      "prison management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It offers pro bono legal defence.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The concept of 'innocent until proven guilty' is known as",
+    "options": [
+      "presumption of guilt",
+      "presumption of innocence",
+      "judicial bias",
+      "executive privilege"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The accused is presumed innocent until proven guilty.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Double jeopardy means",
+    "options": [
+      "being tried twice for different offences",
+      "being tried again for the same offence after acquittal",
+      "appealing a conviction",
+      "plea bargaining"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Double jeopardy prohibits retrial after acquittal.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The term 'sub judice' refers to",
+    "options": [
+      "a concluded case",
+      "a matter under judicial consideration",
+      "an executive order",
+      "a legislative debate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sub judice restricts public comment on ongoing cases.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Contempt of court includes",
+    "options": [
+      "obeying court orders",
+      "disobeying or disrespecting the court",
+      "praising the judiciary",
+      "filing a lawsuit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Contempt punishes defiance of court authority.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Chief Judge of a state is appointed by the",
+    "options": [
+      "President",
+      "Governor on recommendation of NJC",
+      "Senate",
+      "House of Assembly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Governor appoints the Chief Judge on NJC advice.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The Grand Khadi of the Sharia Court of Appeal is appointed by the",
+    "options": [
+      "President",
+      "Governor",
+      "Chief Justice",
+      "Senate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Governor appoints the Grand Khadi on NJC recommendation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The President of the Customary Court of Appeal is appointed by the",
+    "options": [
+      "Senate",
+      "Governor",
+      "President",
+      "Local Government Chairman"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Governor makes the appointment based on NJC recommendation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The judiciary is independent when it is",
+    "options": [
+      "controlled by the executive",
+      "free from interference by other arms of government",
+      "subject to military control",
+      "funded by private individuals"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Judicial independence ensures impartial adjudication.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The National Judicial Institute (NJI) trains",
+    "options": [
+      "police officers",
+      "judicial officers",
+      "soldiers",
+      "civil servants"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NJI provides continuing education for judges and magistrates.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The body that disciplines erring judges is the",
+    "options": [
+      "EFCC",
+      "National Judicial Council",
+      "Police",
+      "Senate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NJC recommends disciplinary action against judges.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "Security of tenure for judges ensures",
+    "options": [
+      "political interference",
+      "judicial independence",
+      "reduced salaries",
+      "easy removal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Security of tenure protects judges from arbitrary removal.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "A judicial officer can be removed for",
+    "options": [
+      "making fair judgments",
+      "gross misconduct or incapacity",
+      "being impartial",
+      "upholding the constitution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Removal requires proven misconduct.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  },
+  {
+    "text": "The rule of law requires that",
+    "options": [
+      "the president is above the law",
+      "laws are applied equally to all",
+      "only the rich are protected",
+      "judges make all laws"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Equality before the law is a core element.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2017
+  }
+]

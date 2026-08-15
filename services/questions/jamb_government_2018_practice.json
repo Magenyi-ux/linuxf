@@ -1,0 +1,702 @@
+[
+  {
+    "text": "The principle of natural justice demands",
+    "options": [
+      "trial without defence",
+      "fair hearing and absence of bias",
+      "conviction without evidence",
+      "secret proceedings"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Natural justice ensures impartiality and the right to be heard.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "'Audi alteram partem' means",
+    "options": [
+      "hear the other side",
+      "judge alone",
+      "ignore the accused",
+      "punish without trial"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "It means no one should be judged without a hearing.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "'Nemo judex in causa sua' means",
+    "options": [
+      "a person can judge their own case",
+      "no one should be a judge in their own cause",
+      "judges are above the law",
+      "the president is the final judge"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It ensures impartiality by preventing conflict of interest.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The first executive president of Nigeria under the 1979 Constitution was",
+    "options": [
+      "Nnamdi Azikiwe",
+      "Shehu Shagari",
+      "Tafawa Balewa",
+      "Obafemi Awolowo"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Shehu Shagari became president in 1979.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The Nigerian Second Republic lasted from",
+    "options": [
+      "1960-1966",
+      "1979-1983",
+      "1993-1998",
+      "1999-2007"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Second Republic was from 1979 to 1983.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The Third Republic in Nigeria was aborted in",
+    "options": [
+      "1990",
+      "1993",
+      "1995",
+      "1998"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Third Republic was truncated after the annulment of the 1993 election.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The annulled June 12, 1993 election was won by",
+    "options": [
+      "Shehu Shagari",
+      "MKO Abiola",
+      "Olusegun Obasanjo",
+      "Muhammadu Buhari"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Chief MKO Abiola won the annulled election.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "Nigeria returned to democratic rule in",
+    "options": [
+      "1993",
+      "1995",
+      "1998",
+      "1999"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Nigeria returned to democracy in May 1999.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The first president of the Fourth Republic was",
+    "options": [
+      "Shehu Shagari",
+      "Olusegun Obasanjo",
+      "Umaru Yar'Adua",
+      "Muhammadu Buhari"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Olusegun Obasanjo was inaugurated in 1999.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The Fourth Republic began in",
+    "options": [
+      "1993",
+      "1995",
+      "1999",
+      "2003"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Fourth Republic commenced in 1999.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The number of political parties that first contested the 1999 elections was",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "10"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Three parties: PDP, APP, and AD contested the 1999 elections.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The People's Democratic Party (PDP) was formed in",
+    "options": [
+      "1995",
+      "1998",
+      "1999",
+      "2003"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "PDP was formed in 1998 ahead of the transition.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The All Progressives Congress (APC) was formed from the merger of",
+    "options": [
+      "PDP and AD",
+      "ACN, CPC, ANPP, and a faction of APGA",
+      "APGA and PDP",
+      "Labour Party and PDP"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "APC resulted from the 2013 merger of major opposition parties.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The first Nigerian to become Secretary-General of the Commonwealth was",
+    "options": [
+      "Emeka Anyaoku",
+      "Ibrahim Gambari",
+      "Ngozi Okonjo-Iweala",
+      "Amina Mohammed"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Chief Emeka Anyaoku served as Commonwealth Secretary-General.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "Nigeria's foreign policy is anchored on",
+    "options": [
+      "isolationism",
+      "Afrocentrism and non-alignment",
+      "imperialism",
+      "colonialism"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Nigeria's foreign policy centres on Africa and non-alignment.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The Economic Community of West African States (ECOWAS) was established in",
+    "options": [
+      "1963",
+      "1975",
+      "1980",
+      "1999"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "ECOWAS was founded in 1975 by the Treaty of Lagos.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The headquarters of ECOWAS is in",
+    "options": [
+      "Lagos",
+      "Accra",
+      "Abuja",
+      "Dakar"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "ECOWAS headquarters is in Abuja, Nigeria.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The African Union (AU) replaced the Organisation of African Unity in",
+    "options": [
+      "1999",
+      "2001",
+      "2002",
+      "2005"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The AU was launched in 2002, succeeding the OAU.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The headquarters of the African Union is in",
+    "options": [
+      "Lagos",
+      "Addis Ababa",
+      "Nairobi",
+      "Cairo"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The AU is headquartered in Addis Ababa, Ethiopia.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The United Nations was established in",
+    "options": [
+      "1945",
+      "1948",
+      "1950",
+      "1955"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The UN was founded in 1945 after World War II.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The headquarters of the United Nations is in",
+    "options": [
+      "London",
+      "Paris",
+      "New York",
+      "Geneva"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The UN headquarters is in New York City.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The Security Council of the UN has how many permanent members?",
+    "options": [
+      "3",
+      "5",
+      "10",
+      "15"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Five permanent members: US, UK, France, Russia, China.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The International Court of Justice is located in",
+    "options": [
+      "New York",
+      "Geneva",
+      "The Hague",
+      "Paris"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The ICJ sits at The Hague, Netherlands.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The Commonwealth of Nations is made up of",
+    "options": [
+      "all African countries",
+      "former British colonies and the UK",
+      "all UN members",
+      "European countries only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Commonwealth consists mainly of former British territories.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The head of the Commonwealth is",
+    "options": [
+      "The British Monarch",
+      "The UN Secretary General",
+      "The AU Chairman",
+      "The President of Nigeria"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The British monarch serves as symbolic head.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "Nigeria is a member of OPEC because it is a major producer of",
+    "options": [
+      "gold",
+      "diamonds",
+      "crude oil",
+      "cocoa"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Nigeria is a major oil producer and OPEC member.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The United Nations has how many principal organs?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The UN has six principal organs.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The UNICEF is concerned with",
+    "options": [
+      "trade and development",
+      "children's welfare",
+      "environmental protection",
+      "military alliance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "UNICEF promotes children's rights and welfare.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The WHO is responsible for",
+    "options": [
+      "global trade",
+      "international health",
+      "world peace",
+      "cultural exchange"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The World Health Organization coordinates health issues.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The IMF provides",
+    "options": [
+      "military support",
+      "financial assistance to countries",
+      "educational grants",
+      "food aid"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The IMF provides financial stability and loans.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The World Bank focuses on",
+    "options": [
+      "military defence",
+      "development projects and poverty reduction",
+      "space exploration",
+      "cultural festivals"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The World Bank funds development projects.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "A responsible parent is expected to",
+    "options": [
+      "abandon the family",
+      "provide for the needs of the children",
+      "only discipline children",
+      "leave children to themselves"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Responsible parenting involves providing for children's needs.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The family that includes parents, children, grandparents, and other relatives is called",
+    "options": [
+      "nuclear family",
+      "extended family",
+      "single-parent family",
+      "compound family"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An extended family includes multiple generations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The institution of marriage is primarily meant for",
+    "options": [
+      "procreation and companionship",
+      "business partnership",
+      "political alliance",
+      "tax benefits"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Marriage provides a framework for procreation and companionship.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a consequence of broken homes?",
+    "options": [
+      "Emotional stability",
+      "Juvenile delinquency",
+      "Academic excellence",
+      "Social harmony"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Broken homes may lead to delinquency.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The process of teaching children values and norms of society is called",
+    "options": [
+      "education",
+      "socialization",
+      "indoctrination",
+      "training"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Socialization transmits cultural norms and values.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The first agent of socialization is the",
+    "options": [
+      "school",
+      "peer group",
+      "family",
+      "mass media"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The family is the primary agent of socialization.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "Peer pressure can lead to",
+    "options": [
+      "positive influence only",
+      "negative influence only",
+      "both positive and negative influence",
+      "no influence at all"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Peer pressure can encourage good or bad behaviours.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The mass media influences society by",
+    "options": [
+      "keeping people isolated",
+      "shaping public opinion",
+      "preventing communication",
+      "encouraging ignorance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Mass media shapes attitudes and opinions.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "A cult group is characterized by",
+    "options": [
+      "open membership",
+      "secretive and illegal activities",
+      "promotion of peace",
+      "respect for human rights"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cult groups engage in secret and unlawful practices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "Drug abuse can lead to",
+    "options": [
+      "improved health",
+      "mental illness and death",
+      "academic success",
+      "social approval"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Drug abuse causes health deterioration.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The National Drug Law Enforcement Agency (NDLEA) is responsible for",
+    "options": [
+      "promoting drug use",
+      "combating drug trafficking",
+      "selling drugs",
+      "manufacturing drugs"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NDLEA enforces laws against drug trafficking.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "HIV/AIDS is transmitted through",
+    "options": [
+      "handshake",
+      "sharing of sharp objects and unprotected sex",
+      "mosquito bites",
+      "sharing food"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "HIV spreads through blood and sexual fluids.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The stigma associated with HIV/AIDS leads to",
+    "options": [
+      "support for victims",
+      "discrimination against infected persons",
+      "cure for the disease",
+      "increased funding"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stigma causes discrimination and isolation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The primary purpose of the NYSC is to",
+    "options": [
+      "generate revenue",
+      "promote national unity and integration",
+      "train soldiers",
+      "provide free labour"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NYSC fosters unity by posting graduates to different states.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "National integration means",
+    "options": [
+      "dividing the country",
+      "unifying diverse groups",
+      "promoting ethnic rivalry",
+      "encouraging secession"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "National integration brings diverse groups together.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The Federal Character Principle ensures",
+    "options": [
+      "domination by one ethnic group",
+      "equitable distribution of positions",
+      "exclusion of minorities",
+      "appointment based on wealth"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The principle ensures fair representation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "A major challenge to national unity in Nigeria is",
+    "options": [
+      "inter-ethnic marriage",
+      "religious tolerance",
+      "ethnic and religious conflicts",
+      "national sports"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Ethnic and religious tensions threaten unity.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "The Nigerian national anthem was adopted in",
+    "options": [
+      "1960",
+      "1963",
+      "1978",
+      "1999"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The current anthem was adopted in 1978.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  },
+  {
+    "text": "Respect for national symbols demonstrates",
+    "options": [
+      "ignorance",
+      "patriotism",
+      "rebellion",
+      "apathy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Honouring national symbols shows patriotism.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2018
+  }
+]
