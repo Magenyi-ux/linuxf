@@ -110,5 +110,593 @@
     "subject": "Government",
     "examType": "JAMB",
     "examYear": 2016
+  },
+  {
+    "text": "A federal state is best suited for a country with",
+    "options": [
+      "a homogeneous population",
+      "diverse ethnic and cultural groups",
+      "a small territory",
+      "one religion only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Federalism accommodates diversity by sharing powers.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "One advantage of federalism is",
+    "options": [
+      "centralization of power",
+      "promotion of local autonomy and unity in diversity",
+      "elimination of state governments",
+      "faster decision-making at the centre"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Federalism balances central unity with regional autonomy.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A disadvantage of federalism is",
+    "options": [
+      "unity",
+      "duplication of functions and inter-state conflict",
+      "efficiency",
+      "quick decisions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Federalism can lead to administrative duplication and disputes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The supremacy of the constitution means",
+    "options": [
+      "the executive is above the law",
+      "the constitution is the highest law",
+      "parliament can ignore the constitution",
+      "judges make laws"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The constitution is the grundnorm; all laws must conform.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A flexible constitution is one that",
+    "options": [
+      "cannot be amended",
+      "can be amended by ordinary legislative process",
+      "is unwritten only",
+      "is rigid"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Flexible constitutions are easily amendable.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The Nigerian Constitution is described as rigid because",
+    "options": [
+      "amendment requires a special majority",
+      "it cannot be changed",
+      "it is unwritten",
+      "only the president can amend it"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Special procedures are required for amendment.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A constitution that exists in documents, statutes, and judicial decisions is",
+    "options": [
+      "written",
+      "unwritten",
+      "rigid",
+      "flexible"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An unwritten constitution is derived from multiple sources, as in the UK.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The primary function of the executive is to",
+    "options": [
+      "make laws",
+      "implement and enforce laws",
+      "interpret laws",
+      "adjudicate disputes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The executive carries out and enforces legislation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The power of the executive to pardon offenders is called",
+    "options": [
+      "judicial review",
+      "prerogative of mercy",
+      "veto",
+      "impeachment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The executive can grant pardons under the prerogative of mercy.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The legislature can check the executive through",
+    "options": [
+      "issuing decrees",
+      "confirmation of appointments and impeachment",
+      "commanding the army",
+      "declaring war unilaterally"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The legislature confirms appointments and can impeach the executive.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Judicial independence is important because",
+    "options": [
+      "judges can be bribed",
+      "it ensures impartial adjudication",
+      "the executive controls judges",
+      "the legislature appoints judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Independence guarantees fair and impartial justice.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The doctrine of separation of powers prevents",
+    "options": [
+      "efficiency",
+      "concentration of power in one branch",
+      "elections",
+      "economic development"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It prevents tyranny by dividing governmental powers.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Checks and balances refer to",
+    "options": [
+      "the fusion of powers",
+      "mechanisms by which each branch limits the others",
+      "the supremacy of the executive",
+      "judicial supremacy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Each branch has oversight over the others to prevent abuse.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Delegated legislation is made by",
+    "options": [
+      "only the legislature",
+      "authorized bodies under powers given by the legislature",
+      "the president alone",
+      "judges only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ministers, agencies, and local authorities make rules under enabling Acts.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A bill becomes law after",
+    "options": [
+      "first reading",
+      "presidential assent",
+      "committee stage",
+      "publication in newspapers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill requires presidential assent to become law.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The final stage before a bill becomes law in Nigeria is",
+    "options": [
+      "first reading",
+      "second reading",
+      "third reading",
+      "presidential assent"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Presidential assent completes the lawmaking process.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The National Assembly can override a presidential veto with",
+    "options": [
+      "simple majority",
+      "two-thirds majority of both houses",
+      "unanimous vote",
+      "presidential consent"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A two-thirds majority can override a veto.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Impeachment is the process of",
+    "options": [
+      "appointing officials",
+      "removing the president or governor for misconduct",
+      "dissolving parliament",
+      "declaring war"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Impeachment removes high officials for gross misconduct.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A vote of no confidence is associated with the",
+    "options": [
+      "presidential system",
+      "parliamentary system",
+      "military regime",
+      "monarchy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In parliamentary systems, a no-confidence vote removes the government.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The Attorney General of the Federation is also the",
+    "options": [
+      "Chief Justice",
+      "Minister of Justice",
+      "Inspector General of Police",
+      "Head of Civil Service"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Attorney General serves as Minister of Justice.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The civil service is expected to be",
+    "options": [
+      "partisan",
+      "neutral and permanent",
+      "political",
+      "temporary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Civil servants serve impartially and enjoy permanence.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A major characteristic of the civil service is",
+    "options": [
+      "political activity",
+      "anonymity and neutrality",
+      "partisanship",
+      "election of officials"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Civil servants are anonymous and politically neutral.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The head of the Nigerian civil service is appointed by the",
+    "options": [
+      "Senate",
+      "President",
+      "Chief Justice",
+      "Public Service Commission"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President appoints the Head of Civil Service.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Red-tapism in the civil service refers to",
+    "options": [
+      "efficiency",
+      "excessive bureaucracy and delay",
+      "quick service",
+      "transparency"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Red-tapism is rigid adherence to rules causing delays.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The public service includes",
+    "options": [
+      "only civil servants",
+      "all government employees in ministries, agencies, and parastatals",
+      "only political appointees",
+      "only military personnel"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Public service encompasses all government employment.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A parastatal is",
+    "options": [
+      "a private company",
+      "a government-owned corporation",
+      "a religious organization",
+      "a political party"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Parastatals are state-owned enterprises.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The Ombudsman in Nigeria is called the",
+    "options": [
+      "EFCC",
+      "Public Complaints Commission",
+      "ICPC",
+      "NOA"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Public Complaints Commission serves as the ombudsman.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The primary role of the police is to",
+    "options": [
+      "make laws",
+      "maintain law and order",
+      "interpret laws",
+      "collect taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The police maintain public order and safety.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The armed forces are under the control of the",
+    "options": [
+      "Chief Justice",
+      "President as Commander-in-Chief",
+      "Senate President",
+      "Speaker"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President is Commander-in-Chief of the Armed Forces.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The police force is headed by the",
+    "options": [
+      "Chief of Army Staff",
+      "Inspector General of Police",
+      "Chief Justice",
+      "Minister of Defence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The IGP heads the Nigeria Police Force.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The National Security Adviser is appointed by the",
+    "options": [
+      "Senate",
+      "President",
+      "Chief of Defence Staff",
+      "National Assembly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President appoints the National Security Adviser.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The body that hears election petitions is the",
+    "options": [
+      "Supreme Court",
+      "Election Petition Tribunal",
+      "Federal High Court",
+      "Sharia Court"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Election Petition Tribunals adjudicate election disputes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Voter registration is important because it",
+    "options": [
+      "prevents citizens from voting",
+      "qualifies eligible citizens to vote",
+      "allows foreigners to vote",
+      "is optional"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Registration qualifies a citizen to exercise voting rights.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A credible election is characterized by",
+    "options": [
+      "vote buying",
+      "free, fair, and transparent processes",
+      "manipulation of results",
+      "intimidation of voters"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Credible elections reflect the free will of the people.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "One man, one vote means",
+    "options": [
+      "only men can vote",
+      "all votes have equal weight",
+      "the rich have more votes",
+      "women cannot vote"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It ensures political equality regardless of status.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The secret ballot system protects voters from",
+    "options": [
+      "participation",
+      "intimidation and victimization",
+      "registration",
+      "counting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Secret voting shields voters from coercion.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A referendum is a vote by citizens on",
+    "options": [
+      "electing representatives",
+      "a specific issue or law",
+      "appointing judges",
+      "declaring war"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A referendum allows direct decision on a proposal.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Plebiscite is similar to",
+    "options": [
+      "election of officials",
+      "a referendum",
+      "appointment",
+      "impeachment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A plebiscite is a direct vote on an issue, like a referendum.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The term 'franchise' is also known as",
+    "options": [
+      "mandate",
+      "suffrage",
+      "constituency",
+      "manifesto"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Franchise and suffrage both mean the right to vote.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Political apathy means",
+    "options": [
+      "active participation",
+      "lack of interest in political affairs",
+      "support for government",
+      "voting regularly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Political apathy is indifference to politics.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "A major consequence of political apathy is",
+    "options": [
+      "good governance",
+      "election of incompetent leaders",
+      "increased voter turnout",
+      "peaceful elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Apathy allows unqualified leaders to emerge.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The first military Head of State in Nigeria was",
+    "options": [
+      "Yakubu Gowon",
+      "Aguiyi-Ironsi",
+      "Murtala Mohammed",
+      "Olusegun Obasanjo"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Major-General Aguiyi-Ironsi became Head of State in January 1966.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
   }
 ]
