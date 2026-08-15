@@ -1,0 +1,156 @@
+[
+  {
+    "text": "The primary source of government revenue in Nigeria is",
+    "options": [
+      "agriculture",
+      "crude oil exports",
+      "tourism",
+      "manufacturing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Oil accounts for the majority of Nigeria's government revenue.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "Tax evasion is",
+    "options": [
+      "lawful avoidance of tax",
+      "illegal failure to pay taxes",
+      "payment of taxes",
+      "tax refund"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tax evasion is the illegal non-payment or underpayment of taxes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Federal Inland Revenue Service (FIRS) is responsible for",
+    "options": [
+      "state tax collection",
+      "federal tax assessment and collection",
+      "local government revenue",
+      "printing money"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FIRS administers federal taxes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "Value Added Tax (VAT) is a tax on",
+    "options": [
+      "income",
+      "goods and services",
+      "property",
+      "imports only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "VAT is a consumption tax on goods and services.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The body that investigates and prosecutes corrupt practices is the",
+    "options": [
+      "NAFDAC",
+      "EFCC and ICPC",
+      "NYSC",
+      "NOA"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "EFCC and ICPC are anti-corruption agencies.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Freedom of Information Act was enacted in Nigeria in",
+    "options": [
+      "1999",
+      "2007",
+      "2011",
+      "2015"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The FOI Act was signed into law in 2011.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The primary objective of the FOI Act is to",
+    "options": [
+      "restrict information",
+      "make public records accessible",
+      "increase secrecy",
+      "punish journalists"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Act promotes transparency by granting access to public information.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The National Identity Management Commission (NIMC) issues",
+    "options": [
+      "international passport",
+      "national identity card",
+      "driver's licence",
+      "voter's card"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NIMC manages the national identity database and issues ID cards.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Nigerian Security and Civil Defence Corps (NSCDC) is primarily responsible for",
+    "options": [
+      "military operations",
+      "protection of critical infrastructure",
+      "election conduct",
+      "tax collection"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NSCDC protects pipelines, government assets, and critical infrastructure.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The National Emergency Management Agency (NEMA) responds to",
+    "options": [
+      "elections",
+      "disasters and emergencies",
+      "tax issues",
+      "criminal cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NEMA coordinates disaster response and management.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Consumer Protection Council protects",
+    "options": [
+      "government agencies",
+      "consumers from unfair trade practices",
+      "politicians",
+      "foreign investors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The CPC ensures consumer rights and fair market practices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  }
+]

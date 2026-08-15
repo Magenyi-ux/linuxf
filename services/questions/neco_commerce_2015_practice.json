@@ -1,0 +1,758 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' as taught in Nigerian secondary schools?",
+    "options": [
+      "A set of activities involving the production of goods",
+      "The study of buying and selling, transport, storage and financing of trade",
+      "A department in government supervising markets",
+      "The legal rules governing companies only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce is the broad set of activities that facilitate the exchange of goods and services, including buying and selling, transport, storage, insurance and financing. It covers movement and support functions rather than production or only legal rules.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a primary function of warehousing in commerce?",
+    "options": [
+      "Creation of demand through advertising",
+      "Storage and protection of goods until required",
+      "Registration of companies and businesses",
+      "Conversion of raw materials into finished goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Warehousing provides safe storage, protection and preservation of goods until they are needed. It helps in balancing supply and demand, ensuring goods are available for sale at appropriate times and locations.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "A wholesaler buys 200 units at N50 each and sells them to retailers at N65 each. What is his gross profit percentage on cost?",
+    "options": [
+      "A 15%",
+      "B 23.08%",
+      "C 30%",
+      "D 10%"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cost price per unit N50, selling price N65 so profit per unit N15. Profit percent = (15/50)*100 = 30%. Wait, this matches option C. But correct answer is option C (30%). Calculation: 15/50 = 0.30 = 30%.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which document is issued by a seller to a buyer showing details of goods sold and amount payable?",
+    "options": [
+      "A Receipt",
+      "B Invoice",
+      "C Promissory Note",
+      "D Letter of Credit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An invoice is a commercial document issued by a seller to a buyer listing goods, quantities, prices and total amount payable. It serves as a request for payment and a record for accounting and taxation purposes.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these is NOT a characteristic of a sole proprietorship?",
+    "options": [
+      "A Unlimited liability",
+      "B Separate legal personality from owner",
+      "C Full control by the owner",
+      "D Easy formation and closure"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A sole proprietorship does not have a separate legal personality; the owner and business are legally the same. Therefore 'separate legal personality' is not a characteristic, while unlimited liability and owner control are typical.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "The main purpose of insurance in commerce is to:",
+    "options": [
+      "A Increase the profit of businesses",
+      "B Provide entertainment to customers",
+      "C Transfer risk of loss from insured to insurer",
+      "D Guarantee product quality"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Insurance transfers financial risk from the insured to the insurer in return for a premium. It provides protection against specified losses, enabling businesses and individuals to manage uncertainty and potential financial setbacks.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which mode of transport is most suitable for perishable goods over short inland distances?",
+    "options": [
+      "A Rail transport",
+      "B Road transport",
+      "C Sea transport",
+      "D Pipeline transport"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Road transport is flexible and fast for short inland distances, allowing door-to-door delivery and good control over delivery schedules. It suits perishable goods requiring speed and timely distribution.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "A retailer bought goods for N12,000 and sold them at a 20% profit on cost. What was the selling price?",
+    "options": [
+      "A N14,400",
+      "B N13,200",
+      "C N12,600",
+      "D N15,000"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Profit of 20% on cost = 0.20 * N12,000 = N2,400. Selling price = cost + profit = N12,000 + N2,400 = N14,400. Thus option A is correct after straightforward calculation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these is a negotiable instrument that contains an unconditional promise to pay a certain sum?",
+    "options": [
+      "A Invoice",
+      "B Bill of Exchange",
+      "C Promissory Note",
+      "D Statement of Account"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A promissory note is a written, unconditional promise by one party to pay a specified sum to another. It is a negotiable instrument distinct from a bill of exchange which is an order to pay.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which pricing strategy involves setting a high price initially and then lowering it over time?",
+    "options": [
+      "A Penetration pricing",
+      "B Skimming pricing",
+      "C Cost-plus pricing",
+      "D Psychological pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Skimming pricing sets a high initial price to maximize margin from early adopters, then lowers prices later to capture other market segments. It contrasts with penetration pricing which starts low to gain market share.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'middlemen' in trade?",
+    "options": [
+      "A Producers who manufacture goods",
+      "B Financial institutions providing loans",
+      "C Persons who facilitate distribution between producers and consumers",
+      "D Government agencies that control commerce"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Middlemen are intermediaries such as wholesalers and retailers who facilitate distribution by buying from producers and selling to consumers, reducing the number of transactions and assisting in marketing, storage and transport.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a feature of a public limited company?",
+    "options": [
+      "A Shares are not transferable",
+      "B Ownership is limited to family members only",
+      "C Shares can be offered to the public and traded on the stock exchange",
+      "D Company must have only one director"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A public limited company can offer its shares to the public and its shares may be listed and traded on a stock exchange. It typically has transferable shares and a minimum number of directors as per law.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following statements about customs duty is TRUE?",
+    "options": [
+      "A It is a tax charged on goods produced domestically",
+      "B It discourages imports by increasing their cost",
+      "C It is paid to the carrier of goods",
+      "D It reduces government revenue"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Customs duty is a tax on imported goods, increasing their landed cost, which can discourage imports and protect domestic industries. Duties are collected by government authorities at ports and borders, thereby raising revenue.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which banking service allows customers to withdraw money at any time without prior notice?",
+    "options": [
+      "A Fixed deposit account",
+      "B Savings account",
+      "C Current account",
+      "D Notice savings account"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Current accounts provide demand deposits that allow unlimited withdrawals without prior notice, catering mainly to businesses and traders who require frequent transactions and overdraft facilities.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "A trader marks his goods at 40% above cost. He offers a discount of 10% to customers. What is his profit percentage on cost?",
+    "options": [
+      "A 26%",
+      "B 30%",
+      "C 24%",
+      "D 36%"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Markup 40% on cost means marked price = 140% of cost. After 10% discount, selling price = 90% of marked = 0.9 * 1.4 = 1.26 of cost, giving 26% profit on cost. Thus option A is correct.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which advertising method is most suitable for reaching rural consumers with low literacy levels?",
+    "options": [
+      "A Radio jingles in local language",
+      "B Technical magazine advertisements",
+      "C Text-heavy newspaper adverts",
+      "D Email marketing"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Radio jingles in local languages reach rural, low-literacy audiences effectively because radio is widely accessible, broadcasts in local dialects, and delivers memorable audio messages suitable for non-literate listeners.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is an example of indirect tax?",
+    "options": [
+      "A Income tax",
+      "B Company tax",
+      "C Value Added Tax (VAT)",
+      "D Capital gains tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "VAT is an indirect tax levied on goods and services where the tax burden can be passed from producers/retailers to consumers via higher prices. Income and company taxes are direct taxes on earnings.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which document is used by a buyer to instruct his bank to pay a seller a sum of money on demand?",
+    "options": [
+      "A Cheque",
+      "B Invoice",
+      "C Bill of lading",
+      "D Quotation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A cheque is an order by the drawer instructing their bank to pay a specified sum from their account to the payee on demand. It is a common negotiable instrument used in domestic transactions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best explains 'terms of trade' for a country?",
+    "options": [
+      "A Ratio of export prices to import prices",
+      "B Total value of exports only",
+      "C Number of trading partners",
+      "D Volume of domestic production"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Terms of trade measure the ratio of export prices to import prices, indicating how many imports a country can buy per unit of exports. An improvement means exports buy more imports, benefiting the country.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these is an advantage of electronic banking (e-banking)?",
+    "options": [
+      "A Increased face-to-face customer interaction",
+      "B Reduced transaction speed",
+      "C 24-hour access to services",
+      "D Elimination of all bank charges"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "E-banking provides 24-hour access to banking services, enabling customers to transfer funds, check balances and pay bills anytime. It improves convenience and efficiency though some charges may still apply.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which factor is NOT considered part of the 'marketing mix' (4Ps)?",
+    "options": [
+      "A Product",
+      "B Price",
+      "C Place",
+      "D Production process"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The classic marketing mix comprises Product, Price, Place and Promotion. The production process is an operational function, not one of the 4Ps used to plan marketing activities.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "A consignee receives goods on consignment. Who retains ownership of those goods until they are sold?",
+    "options": [
+      "A The consignee always",
+      "B The carrier",
+      "C The consignor (owner who sent the goods)",
+      "D The insurance company"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In consignment, the consignor retains ownership of goods sent to the consignee; goods remain the consignor's property until sold by the consignee, who acts as agent and remits proceeds after deducting agreed charges.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best defines 'import substitution' policy?",
+    "options": [
+      "A Encouraging more imports to lower prices",
+      "B Restricting domestic production",
+      "C Promoting domestic production to replace imports",
+      "D Exporting raw materials instead of processing them"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Import substitution encourages local production of goods that were previously imported, aiming to reduce foreign dependence, improve domestic industry and conserve foreign exchange. It often involves tariffs and incentives.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these is a feature of a partnership business?",
+    "options": [
+      "A Limited members with public share trading",
+      "B Shared capital and joint management",
+      "C Single owner with unlimited liability",
+      "D Ownership by the state"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A partnership involves two or more persons pooling capital, sharing management and profits, and bearing joint liability (often unlimited unless a limited partnership). It contrasts with single ownership or public companies.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which transport document serves as evidence of contract of carriage and receipt of goods by the carrier?",
+    "options": [
+      "A Purchase order",
+      "B Bill of lading",
+      "C Invoice",
+      "D Insurance policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is issued by a carrier acknowledging receipt of goods for shipment, and it also constitutes a contract for carriage and can be a document of title. It is central in maritime trade documentation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "A trader allows a 5% trade discount on a list price of N2,000. What amount does a customer pay after the discount?",
+    "options": [
+      "A N1,900",
+      "B N2,100",
+      "C N1,800",
+      "D N1,750"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Trade discount of 5% on N2,000 equals N100. Amount payable = N2,000 - N100 = N1,900. Trade discounts reduce list price before any taxes or other charges are applied.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a major function of the Central Bank of Nigeria (CBN)?",
+    "options": [
+      "A Running retail shops",
+      "B Issuing and regulating the national currency",
+      "C Providing primary education",
+      "D Printing private company shares"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Central Bank issues and regulates the national currency, formulates monetary policy, acts as banker to the government and banks, and ensures financial stability. It does not run retail shops or provide education services.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these best explains 'free trade' between countries?",
+    "options": [
+      "A Trade without any government tariffs, quotas or restrictions",
+      "B Trade limited to only one product",
+      "C Trade controlled by a single corporation",
+      "D Trade only in agricultural goods"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Free trade involves minimal or no government-imposed tariffs, quotas or restrictions on imports and exports between countries, allowing goods and services to move more freely across borders to enhance economic efficiency.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a commercial bank's liability on its balance sheet?",
+    "options": [
+      "A Advances to customers",
+      "B Fixed assets like building",
+      "C Deposits from customers",
+      "D Loan to subsidiaries"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Customer deposits are liabilities for a bank because they represent funds the bank owes depositors. Loans and advances are assets, while fixed assets are non-current assets on the bank's balance sheet.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best shows the purpose of trade associations?",
+    "options": [
+      "A To compete directly with members",
+      "B To provide a forum for members to cooperate and protect common interests",
+      "C To collect taxes on behalf of government",
+      "D To manufacture goods for the government only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade associations bring businesses in a sector together to cooperate, lobby government, set industry standards, provide training and protect members' common interests, rather than competing against or collecting taxes for government.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these statements is TRUE about invoices and receipts?",
+    "options": [
+      "A An invoice is proof of payment, receipt is a request for payment",
+      "B Both are identical documents with same purpose",
+      "C A receipt acknowledges payment received while an invoice requests payment",
+      "D Invoices are only used in international trade, receipts only locally"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "An invoice requests payment by listing goods and amounts due; a receipt is issued after payment to acknowledge that payment has been received. They serve different stages of a sale transaction.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best defines 'consumer credit'?",
+    "options": [
+      "A Credit extended to businesses only",
+      "B Lending to consumers for personal use, repayable over time",
+      "C Government grants to households",
+      "D A type of insurance policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consumer credit is credit extended to individuals to purchase goods or services for personal use, repaid over time (e.g., hire purchase, personal loans). It allows immediate consumption with deferred payment.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these is an example of secondary trade?",
+    "options": [
+      "A Importation of crude oil",
+      "B Retailing finished goods to consumers",
+      "C Cultivation of staple crops",
+      "D Manufacturing of shoes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Secondary trade relates to the distribution of finished goods to consumers; retailing is a distribution activity. Manufacturing and cultivation are primary and secondary production activities, not secondary trade distribution.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is NOT a role of advertising in commerce?",
+    "options": [
+      "A Informing customers about products",
+      "B Persuading customers to buy",
+      "C Providing after-sales repair services",
+      "D Reminding customers about a brand"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Advertising informs, persuades and reminds consumers about products and brands. Providing after-sales repair services is a service function of the producer or dealer, not an advertising role.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which instrument is commonly used to facilitate international trade by guaranteeing payment to an exporter?",
+    "options": [
+      "A Cheque",
+      "B Letter of credit",
+      "C Invoice",
+      "D Receipt"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A letter of credit is issued by a buyer's bank guaranteeing payment to an exporter upon presentation of specified documents. It reduces payment risk in international trade when parties lack mutual trust.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these best defines 'supply chain' in commerce?",
+    "options": [
+      "A Only the retail part of trade",
+      "B The entire sequence of processes from raw materials to final consumer",
+      "C Government regulation of prices",
+      "D Storage at a single warehouse"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The supply chain covers all stages from sourcing raw materials, production, storage, distribution and delivery to the final consumer, including information and financial flows among participants.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "A bank charges 2% commission on foreign currency exchange. If a customer buys $1,000 at an exchange rate of N200 per dollar, what is the commission in naira?",
+    "options": [
+      "A N4,000",
+      "B N40,000",
+      "C N20,000",
+      "D N2,000"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Amount in Naira before commission = $1,000 * N200 = N200,000. Commission 2% = 0.02 * N200,000 = N4,000. Therefore option A is correct after performing percentage calculation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best exemplifies 'after-sales service'?",
+    "options": [
+      "A Offering product discounts before purchase",
+      "B Providing warranty repairs after a sale",
+      "C Advertising a new product",
+      "D Setting up a storefront"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "After-sales service includes warranty repairs, maintenance, spare parts and customer support provided after purchase to ensure customer satisfaction and repeat business. It does not include pre-sale discounts or advertising.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which characteristic is typical of a co-operative society?",
+    "options": [
+      "A Profit maximization for outside shareholders",
+      "B Democratic control and member-benefit orientation",
+      "C Ownership by a single individual",
+      "D Inability to distribute surplus among members"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Co-operative societies are democratically controlled by members, operate for member benefit, share surpluses among members, and focus on service rather than maximizing profit for external shareholders.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these is a reason for governments to regulate commerce?",
+    "options": [
+      "A To ensure monopoly practices thrive",
+      "B To protect consumers and ensure fair competition",
+      "C To prevent foreign investment",
+      "D To stop all imports entirely"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Governments regulate commerce to protect consumers, ensure fair competition, prevent monopolies, safeguard public interest and maintain standards. Regulation aims to balance business freedom with social and economic policy goals.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "In commercial terms, 'liquidity' of an asset refers to:",
+    "options": [
+      "A Ability to generate high profits",
+      "B Ease and speed with which it can be converted to cash",
+      "C Level of taxation on the asset",
+      "D Its physical size and weight"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Liquidity measures how quickly and easily an asset can be converted into cash without significant loss of value. Cash is most liquid, while machinery or property are less liquid due to time and cost to sell.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which type of tariff raises revenue for the government while moderately protecting local producers?",
+    "options": [
+      "A Prohibitive tariff",
+      "B Revenue tariff",
+      "C Preferential tariff",
+      "D Quota tariff"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A revenue tariff is designed primarily to raise government revenue while providing modest protection to local industries by increasing import costs, unlike prohibitive tariffs which aim to stop imports altogether.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'trade credit'?",
+    "options": [
+      "A Immediate cash payment for goods",
+      "B Credit granted by a supplier allowing deferred payment",
+      "C A loan from a bank to an individual",
+      "D Payment by barter"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade credit is when suppliers allow buyers to take goods and pay later, commonly between businesses. It is a short-term financing source and differs from bank loans which come from financial institutions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a disadvantage of reliance on a single supplier?",
+    "options": [
+      "A Greater bargaining power for the buyer",
+      "B Reduced supply risk",
+      "C Vulnerability to supply disruption and price manipulation",
+      "D Improved variety of products"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Relying on a single supplier exposes a buyer to supply chain risks such as disruptions, delays and potential price increases, reducing bargaining power and continuity of supply compared to multiple sourcing.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following describes 'wholesale trade'?",
+    "options": [
+      "A Selling goods directly to final consumers in small quantities",
+      "B Buying goods in bulk from producers and selling to retailers",
+      "C Manufacturing products from raw materials",
+      "D Transporting goods internationally"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wholesale trade involves purchasing goods in large quantities from producers and selling them in smaller lots to retailers or other businesses. It acts as an intermediary between producers and retail markets.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best explains 'bank overdraft' facility?",
+    "options": [
+      "A A saving account that pays high interest",
+      "B A temporary credit allowing a customer to withdraw more than their account balance",
+      "C A long-term mortgage loan",
+      "D A fixed deposit that cannot be withdrawn"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bank overdraft is a short-term borrowing facility allowing current account holders to withdraw funds exceeding their credit balance up to an agreed limit, subject to interest and conditions set by the bank.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "If a product's demand is price inelastic, then a decrease in price will likely:",
+    "options": [
+      "A Increase total revenue significantly",
+      "B Decrease total revenue",
+      "C Have little effect on quantity demanded while reducing revenue",
+      "D Always double quantity demanded"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "When demand is price inelastic, quantity demanded changes proportionally less than the price change. A price decrease leads to a small quantity increase but reduces total revenue because the volume gain doesn't offset lower price.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'countertrade' in international commerce?",
+    "options": [
+      "A Trade with no exchange of goods",
+      "B Barter or partial barter arrangements where goods are exchanged for goods or services instead of full cash payment",
+      "C Exclusive trade only for financial instruments",
+      "D Selling goods only on the domestic market"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Countertrade involves barter-like arrangements where exporters receive payment in goods or services instead of full cash, often used when foreign exchange is scarce or to facilitate trade with less-developed partners.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is the major disadvantage of advertising through newspapers for a national FMCG brand?",
+    "options": [
+      "A High geographical reach",
+      "B Short life-span of advertisements",
+      "C Inability to target literate audiences",
+      "D Excessive interactivity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Newspaper ads have short life-span because newspapers are read and discarded quickly, limiting ad exposure. This makes them less effective for repeated exposure compared to television or billboards for FMCG brands.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following types of inventory valuation assumes that the first goods purchased are the first sold?",
+    "options": [
+      "A LIFO (Last In First Out)",
+      "B FIFO (First In First Out)",
+      "C Weighted average cost",
+      "D Specific identification"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FIFO assumes the first goods purchased are the first sold, so closing inventory is made up of the most recent purchases. It affects cost of goods sold and profit measurement especially during inflation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best explains a 'franchise' arrangement in commerce?",
+    "options": [
+      "A An informal verbal agreement between two traders",
+      "B A contractual right to use a business name, system and products owned by another in exchange for fees",
+      "C Government grant to start a business",
+      "D A type of importer-exporter license"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A franchise is a contractual arrangement where the franchisor grants the franchisee rights to use brand, business model and goods or services in return for fees and royalties. It allows replication of a successful business model.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is an essential element of a contract in mercantile law?",
+    "options": [
+      "A Only a written signature is required for all contracts",
+      "B Offer, acceptance, consideration and intention to create legal relations",
+      "C Presence of a government official",
+      "D That the contract must be for sale of goods only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A valid contract requires an offer, acceptance of that offer, consideration (something of value exchanged) and intention to create legal relations. Not all contracts must be written and they can cover various subjects.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'market segmentation'?",
+    "options": [
+      "A Dividing a market into homogeneous groups to better target customers",
+      "B Selling the same product to everyone without differentiation",
+      "C Merging all competitors into one firm",
+      "D Eliminating promotion expenses"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Market segmentation involves dividing a heterogeneous market into smaller homogeneous segments with similar needs, enabling firms to tailor products, pricing, promotion and distribution to specific groups for better effectiveness.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is the primary aim of commercial education in secondary schools?",
+    "options": [
+      "A To prepare students solely for agricultural careers",
+      "B To equip students with knowledge and skills for business and commerce activities",
+      "C To train students to be medical doctors",
+      "D To eliminate mathematics from the curriculum"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial education aims to provide students with practical knowledge and competencies in business, trade, accounting basics, marketing and entrepreneurship so they can participate effectively in commerce or pursue further study.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2015
+  }
+]

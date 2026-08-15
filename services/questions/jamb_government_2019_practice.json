@@ -1,0 +1,702 @@
+[
+  {
+    "text": "The concept of separation of powers implies that",
+    "options": [
+      "the three arms of government are independent of one another",
+      "the executive controls the legislature",
+      "the judiciary makes laws",
+      "the legislature executes laws"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Separation of powers ensures the three arms operate independently.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The main function of the judiciary is to",
+    "options": [
+      "make laws",
+      "interpret laws and adjudicate disputes",
+      "implement policies",
+      "conduct elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The judiciary interprets laws and settles disputes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The doctrine of checks and balances prevents",
+    "options": [
+      "effective governance",
+      "concentration of power in one arm of government",
+      "the legislature from making laws",
+      "the executive from enforcing laws"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Checks and balances prevent any branch from becoming too powerful.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The executive can check the legislature through",
+    "options": [
+      "judicial review",
+      "veto power",
+      "impeachment",
+      "elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The president can veto bills passed by the legislature.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The legislature checks the executive through",
+    "options": [
+      "making appointments",
+      "confirmation of appointments and impeachment",
+      "commanding the army",
+      "declaring war unilaterally"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Senate confirms appointments and can impeach the president.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The rule of law was popularized by",
+    "options": [
+      "V. Dicey",
+      "Karl Marx",
+      "Jean-Jacques Rousseau",
+      "John Locke"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A.V. Dicey articulated the principles of the rule of law.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is a principle of the rule of law?",
+    "options": [
+      "Executive supremacy",
+      "Equality before the law",
+      "Judicial supremacy",
+      "Legislative immunity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Equality before the law is a core principle.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The absence of the rule of law leads to",
+    "options": [
+      "good governance",
+      "dictatorship and abuse of power",
+      "economic prosperity",
+      "judicial independence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Without the rule of law, leaders may act arbitrarily.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "A fundamental human right guaranteed in the Nigerian Constitution is",
+    "options": [
+      "right to employment",
+      "right to life",
+      "right to free housing",
+      "right to free education"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The right to life is guaranteed under Section 33.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The right to freedom of expression is guaranteed under",
+    "options": [
+      "Section 33",
+      "Section 35",
+      "Section 39",
+      "Section 42"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Section 39 guarantees freedom of expression and the press.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The right to private and family life is protected under",
+    "options": [
+      "Section 37",
+      "Section 33",
+      "Section 40",
+      "Section 45"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Section 37 guarantees privacy.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The right against discrimination is guaranteed under",
+    "options": [
+      "Section 42",
+      "Section 33",
+      "Section 39",
+      "Section 45"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Section 42 prohibits discrimination.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "A citizen whose right has been breached can seek",
+    "options": [
+      "revenge",
+      "redress in court",
+      "migration",
+      "bribery"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The judiciary provides remedy for rights violations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Fundamental Rights Enforcement Procedure Rules ensure",
+    "options": [
+      "slow trial",
+      "speedy hearing of human rights cases",
+      "discrimination",
+      "unlawful detention"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "They ensure quick determination of rights violation cases.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The body responsible for the protection of human rights in Nigeria is the",
+    "options": [
+      "EFCC",
+      "NHRC",
+      "ICPC",
+      "NDLEA"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The National Human Rights Commission (NHRC) promotes and protects human rights.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Universal Declaration of Human Rights was adopted in",
+    "options": [
+      "1945",
+      "1948",
+      "1950",
+      "1960"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The UDHR was proclaimed in 1948.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The National Human Rights Commission can",
+    "options": [
+      "make laws",
+      "investigate human rights violations",
+      "conduct elections",
+      "appoint judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NHRC investigates and addresses rights violations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "Citizenship by birth is based on",
+    "options": [
+      "naturalization",
+      "jus sanguinis or jus soli",
+      "registration",
+      "marriage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Jus sanguinis (right of blood) and jus soli (right of soil).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The process by which a non-citizen becomes a citizen is called",
+    "options": [
+      "registration",
+      "naturalization",
+      "election",
+      "nomination"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Naturalization is the legal process of acquiring citizenship.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "Dual citizenship in Nigeria is allowed for",
+    "options": [
+      "citizens by birth",
+      "naturalized citizens",
+      "all citizens",
+      "only the president"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Citizens by birth can hold dual nationality.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "A person who is not a citizen of any country is described as",
+    "options": [
+      "an alien",
+      "a refugee",
+      "stateless",
+      "an immigrant"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Stateless persons have no nationality recognized by any state.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The primary purpose of the National Orientation Agency (NOA) is to",
+    "options": [
+      "conduct elections",
+      "promote patriotism and national values",
+      "enforce laws",
+      "collect census data"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NOA promotes national consciousness and civic responsibility.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The National Youth Service Corps (NYSC) was established in",
+    "options": [
+      "1960",
+      "1963",
+      "1973",
+      "1999"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "NYSC was created in 1973 to promote national unity.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The primary purpose of the NYSC is to",
+    "options": [
+      "generate revenue",
+      "promote national unity and integration",
+      "train soldiers",
+      "provide free labour"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NYSC fosters unity by posting graduates to different states.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Federal Character Principle ensures",
+    "options": [
+      "domination by one ethnic group",
+      "equitable distribution of positions",
+      "exclusion of minorities",
+      "appointment based on wealth"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The principle ensures fair representation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "A major challenge to national unity in Nigeria is",
+    "options": [
+      "inter-ethnic marriage",
+      "religious tolerance",
+      "ethnic and religious conflicts",
+      "national sports"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Ethnic and religious tensions threaten unity.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Nigerian national anthem was adopted in",
+    "options": [
+      "1960",
+      "1963",
+      "1978",
+      "1999"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The current anthem was adopted in 1978.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Nigerian flag was designed by",
+    "options": [
+      "Nnamdi Azikiwe",
+      "Taiwo Akinkunmi",
+      "Obafemi Awolowo",
+      "Ahmadu Bello"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Taiwo Akinkunmi designed the Nigerian flag in 1959.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The green colour on the Nigerian flag represents",
+    "options": [
+      "peace",
+      "agriculture and natural wealth",
+      "unity",
+      "hope"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Green symbolizes agriculture and natural wealth.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The white colour on the Nigerian flag stands for",
+    "options": [
+      "purity and peace",
+      "unity and faith",
+      "peace and unity",
+      "strength"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "White represents peace and unity.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The motto on the Nigerian coat of arms is",
+    "options": [
+      "Peace and Unity",
+      "Unity and Faith",
+      "Unity and Faith, Peace and Progress",
+      "One Nigeria"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The motto is 'Unity and Faith, Peace and Progress'.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Nigerian national pledge was written by",
+    "options": [
+      "Taiwo Akinkunmi",
+      "Felix Idiga",
+      "Professor Felicia Adebola Adedoyin",
+      "John Pepper Clark"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Professor Felicia Adebola Adedoyin authored the National Pledge.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "Respect for national symbols demonstrates",
+    "options": [
+      "ignorance",
+      "patriotism",
+      "rebellion",
+      "apathy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Honouring national symbols shows patriotism.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Code of Conduct Bureau is responsible for",
+    "options": [
+      "conducting elections",
+      "enforcing ethical standards for public officers",
+      "interpreting laws",
+      "collecting taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Bureau enforces the code of conduct for public officers.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Economic and Financial Crimes Commission (EFCC) was established in",
+    "options": [
+      "1999",
+      "2000",
+      "2003",
+      "2007"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "EFCC was created in 2003 to fight financial crimes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Independent Corrupt Practices Commission (ICPC) was established in",
+    "options": [
+      "1999",
+      "2000",
+      "2003",
+      "2010"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "ICPC was created by the Corrupt Practices Act 2000.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "A citizen who reports corrupt practices is called a",
+    "options": [
+      "prosecutor",
+      "whistleblower",
+      "witness",
+      "plaintiff"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A whistleblower exposes wrongdoing.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Freedom of Information Act was enacted in Nigeria in",
+    "options": [
+      "1999",
+      "2007",
+      "2011",
+      "2015"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The FOI Act was signed into law in 2011.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The primary objective of the FOI Act is to",
+    "options": [
+      "restrict information",
+      "make public records accessible",
+      "increase secrecy",
+      "punish journalists"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Act promotes transparency by granting access to public information.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The National Identity Management Commission (NIMC) issues",
+    "options": [
+      "international passport",
+      "national identity card",
+      "driver's licence",
+      "voter's card"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NIMC manages the national identity database and issues ID cards.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Nigerian Security and Civil Defence Corps (NSCDC) is primarily responsible for",
+    "options": [
+      "military operations",
+      "protection of critical infrastructure",
+      "election conduct",
+      "tax collection"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NSCDC protects pipelines, government assets, and critical infrastructure.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The National Emergency Management Agency (NEMA) responds to",
+    "options": [
+      "elections",
+      "disasters and emergencies",
+      "tax issues",
+      "criminal cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NEMA coordinates disaster response and management.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Consumer Protection Council protects",
+    "options": [
+      "government agencies",
+      "consumers from unfair trade practices",
+      "politicians",
+      "foreign investors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The CPC ensures consumer rights and fair market practices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The National Agency for Food and Drug Administration and Control (NAFDAC) regulates",
+    "options": [
+      "elections",
+      "food, drugs, and cosmetics",
+      "oil and gas",
+      "education"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NAFDAC ensures safety and quality of consumable products.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The Standards Organisation of Nigeria (SON) sets",
+    "options": [
+      "political standards",
+      "quality standards for products",
+      "educational curriculum",
+      "military standards"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "SON develops and enforces industrial standards.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The National Assembly can override a presidential veto with",
+    "options": [
+      "simple majority",
+      "two-thirds majority",
+      "unanimous vote",
+      "presidential consent"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A two-thirds majority in both chambers can override a veto.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "A vote of no confidence can lead to",
+    "options": [
+      "promotion of the executive",
+      "removal of the executive in a parliamentary system",
+      "declaration of war",
+      "amendment of the constitution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In parliamentary systems, a no-confidence vote forces government resignation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The term 'lobbying' refers to",
+    "options": [
+      "voting in elections",
+      "seeking to influence legislators on specific issues",
+      "protesting violently",
+      "running for office"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Lobbying involves advocacy to persuade lawmakers.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The 'spoils system' in government refers to",
+    "options": [
+      "merit-based appointments",
+      "giving government jobs to political supporters",
+      "competitive exams",
+      "civil service neutrality"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The spoils system rewards loyalists with public offices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  },
+  {
+    "text": "The merit system in civil service emphasizes",
+    "options": [
+      "nepotism",
+      "qualification and competence",
+      "political loyalty",
+      "ethnicity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The merit system promotes based on ability and qualifications.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2019
+  }
+]

@@ -1,0 +1,744 @@
+[
+  {
+    "text": "Which of the following best describes \"commerce\" as used in the JAMB Commerce syllabus?",
+    "options": [
+      "The production of goods and services for consumption",
+      "The exchange of goods and services including auxiliary services that facilitate trade",
+      "The legal framework governing business organisations",
+      "The study of financial accounting principles and ledger keeping"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce encompasses the exchange of goods and services together with auxiliary services such as transport, banking, insurance and warehousing that facilitate trade. It is broader than production or accounting and covers the entire chain that enables trade to occur.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which document is primarily used by a supplier to request payment from a buyer after goods have been delivered on credit?",
+    "options": [
+      "Invoice",
+      "Receipt",
+      "Delivery note",
+      "Purchase order"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "An invoice is a commercial document issued by a seller to a buyer listing goods supplied and requesting payment. Receipts acknowledge payment, delivery notes confirm dispatch, and purchase orders are buyer-issued requests to suppliers.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which type of insurance policy protects a firm against losses from non-payment by customers due to insolvency or protracted default?",
+    "options": [
+      "Fire insurance",
+      "Credit insurance",
+      "Marine insurance",
+      "Accident insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Credit insurance protects businesses from losses arising when customers fail to pay due to insolvency or prolonged default. It transfers the risk of debtor non-payment to the insurer, unlike fire or marine insurance which cover other perils.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "In banking, what does the term 'clearing house' primarily refer to?",
+    "options": [
+      "An institution that issues currency notes",
+      "A place where cheques and other payment instruments are exchanged between banks for settlement",
+      "A government agency regulating banks",
+      "A repository for customers' valuables"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A clearing house is an institution or arrangement where banks exchange cheques and payment instruments to determine net positions for settlement. It facilitates interbank clearing, unlike regulatory agencies or currency issuance authorities.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which measure by government would most directly reduce the money supply in the economy?",
+    "options": [
+      "Reduction in interest rates by the Central Bank",
+      "Purchase of government securities in the open market",
+      "Increase in taxation and sale of government bonds",
+      "Lowering reserve requirements for commercial banks"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "An increase in taxation withdraws disposable income from the economy and sale of government bonds absorbs bank reserves and liquidity, directly reducing the money supply. Buying securities or lowering reserves increases money supply.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best describes 'limited liability' in a company?",
+    "options": [
+      "Shareholders are liable only up to the amount unpaid on their shares",
+      "Directors are personally liable for company debts",
+      "Creditors cannot sue a limited liability company",
+      "Shareholders must guarantee all company debts"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Limited liability means shareholders are responsible only to the extent of any unpaid portion of the shares they hold; personal assets are protected. Directors may have duties but are not automatically personally liable for company debts.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which pricing strategy involves setting a low price initially to gain market share quickly?",
+    "options": [
+      "Price skimming",
+      "Psychological pricing",
+      "Penetration pricing",
+      "Cost-plus pricing"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Penetration pricing sets a low initial price to attract customers rapidly and gain market share. Price skimming uses high initial prices for early adopters. Cost-plus adds margin to cost; psychological uses pricing cues.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which agency in Nigeria is primarily responsible for regulating and supervising banks and other financial institutions?",
+    "options": [
+      "National Insurance Commission (NAICOM)",
+      "Central Bank of Nigeria (CBN)",
+      "Nigerian Stock Exchange",
+      "Corporate Affairs Commission (CAC)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Central Bank of Nigeria (CBN) is the main regulator and supervisor of banks and monetary policy. NAICOM oversees insurance, the NSE handles securities trading, and CAC registers companies.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which form of business ownership allows for public trading of shares on the stock exchange?",
+    "options": [
+      "Sole proprietorship",
+      "Partnership",
+      "Private limited company",
+      "Public limited company"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A public limited company can offer its shares to the public and list on the stock exchange. Private limited companies restrict share transfers; sole proprietorships and partnerships do not issue tradable public shares.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following is the main purpose of a bill of lading in international trade?",
+    "options": [
+      "It is an insurance policy against theft",
+      "It serves as a receipt for goods shipped and as a document of title",
+      "It is a certificate of origin issued by customs",
+      "It is a price quotation from the exporter"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is a carrier's receipt for goods shipped, evidence of the contract of carriage and often a negotiable document of title enabling transfer of ownership. It is not an insurance policy or price quote.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which cost remains constant per unit when production volume changes in the short run?",
+    "options": [
+      "Total fixed cost",
+      "Total variable cost",
+      "Fixed cost per unit",
+      "Variable cost per unit"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Variable cost per unit typically remains roughly constant in the short run; total variable cost changes with volume. Total fixed cost remains constant in aggregate, but fixed cost per unit varies with output.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which indicator is most appropriate for measuring the general price level change in an economy over time?",
+    "options": [
+      "Balance of payments",
+      "Gross Domestic Product (GDP)",
+      "Consumer Price Index (CPI)",
+      "Unemployment rate"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Consumer Price Index (CPI) measures changes in the general price level of a basket of consumer goods and services over time, thus indicating inflation. GDP measures output, while unemployment is labor market related.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best explains 'opportunity cost' in business decision-making?",
+    "options": [
+      "The amount spent to acquire an asset",
+      "The explicit cost recorded in accounting books",
+      "The value of the best alternative forgone when a choice is made",
+      "The depreciation charged annually on fixed assets"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Opportunity cost is the value of the next best alternative that must be forgone when a decision is taken. It captures implicit trade-offs and is crucial in resource allocation but is not recorded as an explicit accounting cost.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which marketing element focuses on decisions about modes of communication between seller and buyer?",
+    "options": [
+      "Product",
+      "Price",
+      "Place",
+      "Promotion"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Promotion concerns the methods and channels used to communicate with target customers, including advertising, sales promotion, and public relations. Product, price, and place address attributes, cost and distribution respectively.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following is a characteristic feature of a cooperative society?",
+    "options": [
+      "Profit maximization for external shareholders",
+      "Democratic control with 'one member, one vote'",
+      "Members have unlimited liability for losses",
+      "Share transferability on the stock exchange"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cooperatives are democratically controlled with equal voting rights for members (one member, one vote), focus on member benefits rather than external shareholder profit maximization, and normally have limited liability but not public share trading.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which document initiates the import process by instructing a supplier to deliver specified goods?",
+    "options": [
+      "Insurance policy",
+      "Credit note",
+      "Purchase order",
+      "Delivery receipt"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A purchase order is a buyer-issued document that formally instructs a supplier to deliver specified goods under indicated terms. It initiates procurement, unlike insurance policies or delivery receipts which occur later in the process.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "When a bank grants an overdraft facility, the main risk to the bank is:",
+    "options": [
+      "Liquidity risk due to sudden withdrawals by depositors",
+      "Credit risk arising from borrower default",
+      "Operational risk from system failure",
+      "Market risk from interest rate fluctuations"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An overdraft exposes the bank to credit risk if the borrower cannot repay the overdrawn amount. While liquidity and market risks matter for banks generally, the primary concern with overdrafts is borrower default.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which accounting document is used to record all business transactions chronologically as they occur?",
+    "options": [
+      "Ledger",
+      "Trial balance",
+      "Journal",
+      "Balance sheet"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The journal (book of original entry) records transactions in chronological order before they are posted to ledger accounts. The ledger organises transactions by account, while trial balance and balance sheet are summaries.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following trade barriers is a quantitative restriction on imports?",
+    "options": [
+      "Tariff",
+      "Quota",
+      "Subsidy",
+      "Export promotion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A quota is a quantitative restriction limiting the volume or value of imports allowed, directly restricting supply. Tariffs are taxes, subsidies support local producers, and export promotion encourages outbound sales.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which financial statement shows a company's financial position at a specific date?",
+    "options": [
+      "Income statement (Profit and loss account)",
+      "Cash flow statement",
+      "Balance sheet (Statement of financial position)",
+      "Sales ledger"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The balance sheet presents assets, liabilities and equity at a specific point in time, showing financial position. Income statement covers performance over a period; cash flow reports movement of cash over a period.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which economic function is primarily performed by wholesalers in the distribution chain?",
+    "options": [
+      "Providing retail display services to consumers",
+      "Buying in bulk and breaking into smaller lots for retailers",
+      "Manufacturing finished products",
+      "Providing after-sales service to end-users"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wholesalers purchase goods in large quantities from producers and break bulk into smaller lots for retailers, facilitating distribution efficiency. They usually do not focus on retail displays, manufacturing, or direct after-sales service to end users.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of these is a non-price determinant of demand for a product?",
+    "options": [
+      "Price of the product itself",
+      "Consumer income level",
+      "Number of units produced by suppliers",
+      "Production cost per unit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consumer income is a non-price determinant affecting demand; as income rises, demand for normal goods typically increases. Price of the product is a price determinant; production and cost per unit influence supply.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which type of market structure is characterised by many sellers offering differentiated products and easy entry?",
+    "options": [
+      "Perfect competition",
+      "Monopoly",
+      "Monopolistic competition",
+      "Oligopoly"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Monopolistic competition involves many sellers, product differentiation and relatively free entry and exit. Perfect competition features identical products; monopoly has a single seller; oligopoly has few dominant firms.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which instrument of payment is guaranteed by a bank and often used in high-value trade transactions?",
+    "options": [
+      "Bank draft",
+      "Post-dated cheque",
+      "Cash on delivery",
+      "Personal cheque"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A bank draft is issued and guaranteed by a bank, providing a secure payment instrument commonly used for high-value transactions. Personal cheques are not guaranteed, and post-dated cheques or COD arrangements are less secure.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which statutory body registers companies in Nigeria and maintains company records?",
+    "options": [
+      "Central Bank of Nigeria (CBN)",
+      "Corporate Affairs Commission (CAC)",
+      "Securities and Exchange Commission (SEC)",
+      "National Directorate of Employment (NDE)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Corporate Affairs Commission (CAC) is responsible for company registration and maintaining related records in Nigeria. CBN supervises banks, SEC regulates capital markets, and NDE handles employment initiatives.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best describes 'working capital'?",
+    "options": [
+      "Total long-term assets of a business",
+      "Capital provided by shareholders only",
+      "Current assets minus current liabilities, indicating short-term liquidity",
+      "Net profit after tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Working capital equals current assets minus current liabilities and measures a firm's ability to meet short-term obligations and operate smoothly. It is distinct from long-term assets, shareholder capital, or net profit.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which role does 'advertising' play in the promotion mix primarily?",
+    "options": [
+      "Establishing long-term brand awareness and reaching large audiences",
+      "Handling customer complaints face-to-face",
+      "Setting the product distribution channels",
+      "Deciding the final selling price"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Advertising is used to build brand awareness and reach broad audiences over time through mass media. It is not primarily for personal complaint handling, distribution channel selection, or pricing decisions though it influences demand.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which term describes income earned from letting out land or buildings to others?",
+    "options": [
+      "Wages",
+      "Rent",
+      "Dividend",
+      "Interest"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Rent is income earned from renting land or buildings to others. Wages are payments for labor, dividends are returns to shareholders, and interest is paid for borrowing funds.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which factor would most likely cause the supply curve for a commodity to shift to the right?",
+    "options": [
+      "An increase in production costs",
+      "Introduction of a per-unit tax on the commodity",
+      "Technological improvement in production",
+      "A decrease in the number of producers"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Technological improvements reduce production costs and increase productivity, causing the supply curve to shift right (increase supply). Higher costs, taxes, or fewer producers reduce supply and shift left.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best explains 'dividend yield' for a share?",
+    "options": [
+      "The total profit of the issuing company",
+      "Annual dividend per share divided by market price per share",
+      "Face value of the share",
+      "The price paid for a new issue of shares"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Dividend yield is calculated as annual dividend per share divided by the current market price per share; it shows return from dividends relative to market investment, unlike face value or company profit totals.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which logistical function reduces stockholding costs by holding goods until demand materialises?",
+    "options": [
+      "Speculation",
+      "Warehousing",
+      "Manufacturing",
+      "Advertising"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Warehousing stores goods until demanded, enabling firms to reduce stockouts and balance supply with demand timing. This function helps manage inventory and distribution, unlike manufacturing or advertising which play different roles.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best defines 'gross profit' in trading activities?",
+    "options": [
+      "Sales revenue minus operating expenses",
+      "Net profit before tax",
+      "Sales revenue minus cost of goods sold",
+      "Total assets minus total liabilities"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Gross profit equals sales revenue less cost of goods sold (COGS). It measures trading profitability before deducting operating expenses, taxes and interest. Net profit and balance sheet items are different measures.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which bank product allows a customer to receive interest and provides easy access to funds, usually with withdrawal limits?",
+    "options": [
+      "Current account",
+      "Fixed deposit account",
+      "Savings account",
+      "Overdraft facility"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A savings account typically pays interest and allows withdrawals with some limitations. Current accounts focus on transactions with little or no interest, fixed deposits restrict access for higher interest, overdrafts are borrowings.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best describes 'vertical integration' as a business growth strategy?",
+    "options": [
+      "Acquiring competitors in the same market stage",
+      "Expanding into unrelated product lines",
+      "Controlling successive stages of production or distribution",
+      "Franchising operations to independent operators"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Vertical integration involves a firm controlling successive stages of production or distribution (backward into suppliers or forward into retailers), improving coordination and reducing transaction costs, unlike horizontal integration or diversification.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following is the primary goal of stock (inventory) control in businesses?",
+    "options": [
+      "Maximising inventory levels at all times",
+      "Minimising stockouts while keeping holding costs reasonable",
+      "Eliminating the need for suppliers",
+      "Ensuring obsolete stocks accumulate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stock control aims to avoid stockouts that disrupt operations while minimising holding costs and obsolescence. It balances service levels and cost efficiency, not maximising stocks or encouraging obsolescence.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which trade term indicates that the seller delivers goods and places them at the buyer's disposal at the seller's premises with the buyer responsible for export clearing?",
+    "options": [
+      "FOB (Free on Board)",
+      "EXW (Ex Works)",
+      "CIF (Cost, Insurance and Freight)",
+      "DDP (Delivered Duty Paid)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "EXW (Ex Works) means the seller makes goods available at their premises; the buyer bears costs and risks for export and transport. FOB, CIF and DDP allocate responsibilities differently regarding shipping and import duties.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which agency controls tariffs and customs matters at Nigeria's borders?",
+    "options": [
+      "Nigeria Customs Service (NCS)",
+      "Standards Organisation of Nigeria (SON)",
+      "National Agency for Food and Drug Administration (NAFDAC)",
+      "Federal Inland Revenue Service (FIRS)"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Nigeria Customs Service (NCS) administers customs duties, controls imports and exports, and enforces tariff regulations at borders. SON, NAFDAC, and FIRS have different regulatory roles related to standards, health, and taxation respectively.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which ratio would best indicate how efficiently a business uses its assets to generate sales?",
+    "options": [
+      "Current ratio",
+      "Debt-equity ratio",
+      "Asset turnover ratio",
+      "Gross profit margin"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Asset turnover ratio measures sales revenue relative to total assets, showing efficiency of asset use in generating revenue. Current ratio gauges liquidity, debt-equity measures leverage, and gross profit margin shows profitability.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following is an example of a primary market transaction?",
+    "options": [
+      "Purchase of shares on the stock exchange",
+      "Initial public offering (IPO) of a company's new shares",
+      "Trading government bonds between investors",
+      "Buying a used car from another individual"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An IPO is a primary market transaction where a company issues new shares directly to investors to raise capital. Secondary market transactions involve trading existing securities between investors on exchanges.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which term refers to the practice of dividing production into simple repetitive tasks to increase productivity?",
+    "options": [
+      "Capital accumulation",
+      "Division of labour",
+      "Diversification",
+      "Marginal analysis"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Division of labour allocates production into distinct simple tasks for workers, improving skill, speed and productivity. It differs from capital accumulation, diversification of products, or marginal economic analysis techniques.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following is most likely to be classified as a current liability on the balance sheet?",
+    "options": [
+      "Machinery purchased for long-term use",
+      "Bank overdraft repayable on demand",
+      "Shareholders' equity",
+      "Goodwill"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bank overdraft repayable on demand is a current liability as it represents short-term obligation. Machinery and goodwill are non-current assets; shareholders' equity represents owners' residual interest, not a liability.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which payment method in international trade ensures that documents are released to the importer only upon payment or acceptance of a bill?",
+    "options": [
+      "Open account",
+      "Cash in advance",
+      "Documentary collection",
+      "Consignment"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Documentary collection involves the bank releasing shipping documents to the importer only upon payment (D/P) or acceptance of a bill of exchange (D/A). It offers more control than open account but is less secure than letters of credit.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best represents 'market segmentation'?",
+    "options": [
+      "Producing a single product for a mass market",
+      "Dividing a market into distinct groups of buyers with common needs",
+      "Merging with a competitor to increase market share",
+      "Setting the lowest price in the industry"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation divides a market into groups with shared characteristics to better target marketing efforts. It contrasts with mass marketing, mergers, or pricing strategies, enabling tailored product and promotion choices.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which concept describes the reduction in per-unit cost as the scale of production increases?",
+    "options": [
+      "Diminishing returns",
+      "Economies of scale",
+      "Opportunity cost",
+      "Price elasticity of demand"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Economies of scale refer to cost advantages arising from increased production scale, lowering average cost per unit. Diminishing returns relates to variable inputs; opportunity cost and elasticity are different economic concepts.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following is an example of a direct tax commonly used by governments?",
+    "options": [
+      "Customs duties",
+      "Value Added Tax (VAT)",
+      "Personal income tax",
+      "Excise duty"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Personal income tax is a direct tax levied on individuals' earnings and paid directly to government. VAT, customs duties and excise duties are indirect taxes applied to goods and services or imports.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following is a primary function of a stock exchange?",
+    "options": [
+      "Providing short-term loans to individuals",
+      "Facilitating the buying and selling of securities to raise capital",
+      "Issuing currency on behalf of the government",
+      "Regulating non-bank financial institutions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A stock exchange provides a platform for buying and selling securities, allowing companies to raise capital from the public and giving investors liquidity. It does not issue currency or provide personal loans directly.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "In the context of business ethics, which action most directly reduces agency problem between managers and shareholders?",
+    "options": [
+      "Providing managers with large salaries only",
+      "Aligning managers' incentives with shareholders via performance-based pay and monitoring",
+      "Eliminating all forms of managerial discretion",
+      "Reducing shareholder voting rights"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Aligning managers' incentives through performance-based pay, stock options and strengthened monitoring reduces agency conflicts by tying managers' rewards to shareholder interests and improving accountability, rather than extreme or counterproductive measures.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best defines 'trade credit' as a source of short-term finance for businesses?",
+    "options": [
+      "A long-term bank loan secured on fixed assets",
+      "Credit extended by suppliers allowing deferred payment for purchases",
+      "Funds obtained by selling equity to investors",
+      "Government grants for export promotion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade credit is when suppliers allow buyers to receive goods and pay at a later agreed date, providing short-term financing to businesses. It is distinct from bank loans, equity finance, or government grants.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best describes a \"letter of credit\" in international trade?",
+    "options": [
+      "A unilateral contract between buyer and seller with no bank involvement",
+      "A guarantee by a bank to pay the seller provided documentary conditions are met",
+      "An insurance policy covering goods in transit",
+      "A receipt issued by the shipping company"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A letter of credit is a bank's undertaking to pay the seller if the seller presents documents complying with the letter's terms, reducing payment risk in international trade. It is not insurance or a shipping receipt.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which consumer protection principle requires businesses to provide truthful information about products and services?",
+    "options": [
+      "Right to choice",
+      "Right to safety",
+      "Right to be informed",
+      "Right to redress"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The right to be informed obliges businesses to give accurate, sufficient information about products and services so consumers can make informed choices. Other rights relate to safety, choice and remedies for faulty goods.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which of the following best describes \"franchise\" as a method of business expansion?",
+    "options": [
+      "A parent company wholly owning a foreign subsidiary",
+      "An agreement where a franchisor licenses a franchisee to operate under its brand and system for a fee",
+      "Merging two competing firms into one entity",
+      "A short-term loan from a franchiser to a small firm"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Franchising involves the franchisor granting rights to a franchisee to operate using its brand, systems and support in return for fees and royalties. It enables rapid expansion with lower capital outlay compared to ownership or mergers.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which accounting principle requires that revenues and expenses be recorded in the period in which they are earned or incurred, regardless of cash flows?",
+    "options": [
+      "Business entity concept",
+      "Accruals (matching) principle",
+      "Historical cost principle",
+      "Going concern principle"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The accruals or matching principle states that revenues and related expenses should be recognised in the same accounting period when they are earned or incurred, not necessarily when cash is received or paid, ensuring accurate period reporting.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  },
+  {
+    "text": "Which logistical mode is most suitable for transporting large bulky commodities over long inland distances at relatively low cost?",
+    "options": [
+      "Air freight",
+      "Road transport",
+      "Rail transport",
+      "Courier services"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Rail transport is cost-effective for moving bulky commodities over long inland distances due to high capacity and lower per-unit costs compared with road or air. Air freight is expensive, and courier services suit small parcels.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2026
+  }
+]

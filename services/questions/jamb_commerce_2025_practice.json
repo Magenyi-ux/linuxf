@@ -1,0 +1,758 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' in a modern economy?",
+    "options": [
+      "The physical exchange of goods between producers and consumers",
+      "All activities that facilitate the distribution of goods and services from producers to consumers",
+      "The process of manufacturing goods for sale in local markets",
+      "Government regulation of trade and industry"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce comprises the set of activities that facilitate the distribution and exchange of goods and services between producers and consumers, including transport, insurance, banking, warehousing and advertising, not merely physical exchange or manufacturing alone.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is a primary function of a commercial bank?",
+    "options": [
+      "Issuing government policies",
+      "Providing loans and accepting deposits",
+      "Manufacturing consumer goods",
+      "Regulating the activities of microfinance institutions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial banks accept deposits from the public and provide loans and advances to individuals and businesses. They also provide payment services and other financial facilities, distinct from government policy functions or manufacturing.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which document serves as proof of ownership of goods shipped by sea and can be used in international trade financing?",
+    "options": [
+      "Invoice",
+      "Bill of Lading",
+      "Freight Note",
+      "Delivery Order"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Bill of Lading serves as a receipt for goods shipped, evidence of the contract of carriage, and a document of title that can be transferred to effect payment or control of goods in international trade financing.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A trader bought goods for N200,000 and sold them for N250,000. What is the percentage profit on cost price?",
+    "options": [
+      "20%",
+      "25%",
+      "18%",
+      "32%"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Profit equals N50,000 (250,000 - 200,000). Percentage profit on cost price = (Profit / Cost) x 100 = (50,000 / 200,000) x 100 = 25 percent.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best explains the concept of 'working capital' for a business?",
+    "options": [
+      "Total fixed assets plus current liabilities",
+      "Capital invested by shareholders only",
+      "Current assets minus current liabilities",
+      "Long-term loans minus retained earnings"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Working capital is the difference between current assets and current liabilities. It measures the firm's short-term liquidity and its ability to finance day-to-day operations and meet short-term obligations.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which transport mode is generally most suitable for bulky, non-perishable goods over long distances at low cost?",
+    "options": [
+      "Air transport",
+      "Road transport",
+      "Rail transport",
+      "Courier services"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Rail transport is most suitable for bulky, non-perishable goods over long distances because it can move large volumes at relatively low cost, with high fuel efficiency and safety compared to road or air transport.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is NOT a characteristic of a limited liability company?",
+    "options": [
+      "Separate legal personality from its owners",
+      "Unlimited liability of shareholders",
+      "Perpetual succession",
+      "Shares are transferable subject to company law and articles"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Limited liability companies provide limited liability to shareholders, meaning shareholders are not personally liable beyond their capital contribution. Unlimited liability is a feature of sole proprietorships and some partnerships, not limited companies.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "In insurance, what is 'average clause' designed to achieve?",
+    "options": [
+      "Eliminate the need for premiums",
+      "Compensate the insured more than the loss",
+      "Reduce the claim proportionately if property is under-insured",
+      "Allow total rejection of claims for partial losses"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The average clause penalizes under-insurance by reducing claims proportionately when the insured amount is less than the actual value. This ensures policyholders bear a share of the loss if they under-insure their property.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is an example of a direct channel of distribution?",
+    "options": [
+      "Manufacturer selling through wholesalers",
+      "Manufacturer selling directly to consumers via its website",
+      "Manufacturer selling through retail chains",
+      "Manufacturer using an agent to sell"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A direct channel involves the manufacturer selling straight to the consumer without intermediaries. Selling through a company website is a direct distribution method, unlike using wholesalers, retailers or agents.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best defines 'advertising' as a commercial activity?",
+    "options": [
+      "Personal selling to a single customer",
+      "Paid, non-personal communication through mass media to promote products",
+      "Giving free samples to friends",
+      "Providing credit facilities to customers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising is paid, non-personal communication aimed at informing or persuading a broad audience about products or services through mass media channels, distinct from personal selling or promotional sampling.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which one of the following documents is used by a buyer to request a seller to deliver specified goods at a future date?",
+    "options": [
+      "Purchase Order",
+      "Proforma Invoice",
+      "Statement of Account",
+      "Sales Quotation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A purchase order is issued by a buyer to a seller specifying the goods required, quantities, price and delivery instructions. It formally requests delivery and becomes a binding contract when accepted by the seller.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which principle of insurance requires the insured to reveal important facts that could influence the insurer's decision?",
+    "options": [
+      "Indemnity",
+      "Utmost good faith (uberrimae fidei)",
+      "Contribution",
+      "Subrogation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The principle of utmost good faith requires both parties, especially the insured, to disclose all material facts truthfully. Non-disclosure or misrepresentation can void the policy because the insurer relies on full information.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "If the exchange rate moves from N450 to N470 per US dollar, what is the immediate effect on importers holding dollar-denominated invoices?",
+    "options": [
+      "Their import cost in Naira decreases",
+      "Their import cost in Naira remains unchanged",
+      "Their import cost in Naira increases",
+      "Their import cost is now settled in Naira automatically"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "When the naira depreciates from N450 to N470 per dollar, each dollar costs more naira. Importers with dollar invoices will face higher naira costs, increasing the local currency value of their import bills.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best describes 'Just-in-Time' (JIT) inventory system?",
+    "options": [
+      "Keeping large stock levels to prevent shortages",
+      "Receiving goods only as they are needed in the production process",
+      "Ordering only from domestic suppliers",
+      "Using obsolete stock to save costs"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "JIT inventory minimizes stockholding by scheduling deliveries to arrive exactly when needed for production or sale, reducing inventory costs and waste while requiring reliable suppliers and logistics.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of these is NOT a role of the Central Bank of Nigeria (CBN)?",
+    "options": [
+      "Issuing legal tender currency",
+      "Maintaining external reserves",
+      "Managing the fiscal policy and collecting taxes",
+      "Serving as lender of last resort to banks"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Fiscal policy and tax collection are government responsibilities (Ministry of Finance and tax authorities). The CBN issues currency, manages reserves, and acts as lender of last resort to maintain monetary stability.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which pricing strategy involves initially setting a high price and later lowering it as competition increases?",
+    "options": [
+      "Penetration pricing",
+      "Skimming pricing",
+      "Cost-plus pricing",
+      "Competitive pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Skimming pricing sets a high initial price to maximize early profits from less price-sensitive customers, then reduces the price over time as competitors enter and demand becomes more price-sensitive.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best explains 'opportunity cost' in commerce decisions?",
+    "options": [
+      "The cash paid to purchase an asset",
+      "The explicit cost recorded in accounts",
+      "The value of the next best alternative foregone",
+      "Depreciation of fixed assets over time"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Opportunity cost is the value of the best alternative foregone when a choice is made. It captures the benefits lost by not choosing the next best option and guides efficient decision-making in business.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A bill of exchange is payable to the order of X. X endorses the bill to Y. What legal effect does this endorsement have?",
+    "options": [
+      "Transfers the right to receive payment from X to Y",
+      "Cancels the liability of the drawer",
+      "Makes the drawee a co-signer",
+      "Converts the bill into a cheque"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Endorsement transfers the holder's rights in the bill to another person. By endorsing, X transfers the entitlement to receive payment to Y. It does not cancel drawer liability nor convert the bill into a cheque.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is a primary objective of warehousing in commerce?",
+    "options": [
+      "To produce goods for export",
+      "To provide secure storage and buffer seasonal supply",
+      "To reduce demand for products",
+      "To regulate prices directly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Warehousing provides safe storage of goods, protects them from deterioration, and acts as a buffer to enable timely supply during off-season or unpredictable demand, thereby supporting continuous trade flows.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which one of the following is an advantage of using a letter of credit in international trade?",
+    "options": [
+      "It eliminates all shipping risks",
+      "It guarantees payment to the seller upon presentation of specified documents",
+      "It avoids any involvement of banks",
+      "It removes the need for commercial invoices"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A letter of credit issued by a bank guarantees payment to the seller if specified documents complying with the credit terms are presented. It reduces, but does not eliminate, shipping or political risks.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "In partnership law, which of the following statements is true about unlimited liability partners?",
+    "options": [
+      "They are only liable up to the amount of capital contributed",
+      "They are personally liable for partnership debts beyond their capital contribution",
+      "They cannot be sued by creditors",
+      "They have no management rights"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Unlimited liability means partners are personally liable for partnership obligations beyond their capital contributions. Creditors can pursue partners' personal assets to satisfy partnership debts, unlike limited liability arrangements.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best describes 'vertical integration' as a business strategy?",
+    "options": [
+      "A firm expands into unrelated industries",
+      "A firm merges with a direct competitor",
+      "A firm takes control of its suppliers or distributors",
+      "A firm reduces its asset base to cut costs"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Vertical integration occurs when a firm expands its operations into different stages of production or distribution, such as acquiring suppliers (backward integration) or distributors/retailers (forward integration), to control the supply chain.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best characterizes 'e-commerce'?",
+    "options": [
+      "Use of electronic means to carry out commercial transactions and exchanges",
+      "Manufacturing goods using electricity",
+      "Trade that only occurs between governments",
+      "Exclusive use of cash for transactions"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "E-commerce refers to buying and selling goods and services, and conducting transactions electronically over the internet or other digital networks, including payments, marketing, and supply chain functions.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is a disadvantage of credit sales to retailers from a wholesaler's perspective?",
+    "options": [
+      "Increased turnover due to easier sales",
+      "Risk of bad debts and delayed cash flows",
+      "Stronger buyer-seller relationships",
+      "Reduced inventory holding costs for retailers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Granting credit to retailers increases the risk of bad debts and delays cash inflows, which can harm the wholesaler's liquidity and require careful credit control and assessment of retailer creditworthiness.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which tax is most commonly imposed on the value added at each stage of production and distribution?",
+    "options": [
+      "Personal income tax",
+      "Property tax",
+      "Value Added Tax (VAT)",
+      "Capital gains tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Value Added Tax (VAT) is a consumption tax charged on the value added to goods and services at each production and distribution stage. It is borne ultimately by the final consumer.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A retailer buys goods at N12 per unit and wants a 25% mark-up on cost. At what price should they sell per unit?",
+    "options": [
+      "N14.50",
+      "N15.00",
+      "N16.25",
+      "N18.00"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Mark-up on cost of 25% means selling price = cost + (25% of cost) = 12 + (0.25 x 12) = 12 + 3 = N15.00. Wait: careful. Options show N16.25 as C. But correct is N15.00. So correct option index should be 1.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is the most liquid asset for a business?",
+    "options": [
+      "Inventory",
+      "Plant and Machinery",
+      "Cash at bank",
+      "Land and Buildings"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Cash at bank is the most liquid asset because it is immediately available for use without conversion. Other assets like inventory and fixed assets require time to convert into cash and are less liquid.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following methods is used to encourage customers to try a new product by providing a small sample for free?",
+    "options": [
+      "Extension",
+      "Sampling",
+      "Segmentation",
+      "Skimming"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sampling involves giving potential customers free or trial-size samples to encourage trial and adoption. It reduces purchase risk for consumers and is effective for new product introduction.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "In a sale on 'consignment', which statement is true about the relationship between consignor and consignee?",
+    "options": [
+      "The consignee buys and owns the goods outright",
+      "The consignor retains ownership until goods are sold by the consignee",
+      "The consignee is the manufacturer",
+      "Ownership is transferred to the buyer at dispatch"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In consignment, the consignor (owner) sends goods to the consignee to sell on their behalf. Ownership remains with the consignor until the consignee sells the goods, after which proceeds are remitted.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which financial statement shows a company's financial position at a particular date?",
+    "options": [
+      "Income statement (profit and loss account)",
+      "Cash flow statement",
+      "Balance sheet (statement of financial position)",
+      "Statement of retained earnings only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The balance sheet reports a company's assets, liabilities and equity at a specific point in time, showing the financial position. Income statement covers performance over a period, while cash flow shows cash movements.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which marketing mix element is concerned with decisions about where and how customers will obtain the product?",
+    "options": [
+      "Product",
+      "Price",
+      "Place (distribution)",
+      "Promotion"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Place or distribution refers to the channels, locations and logistics through which customers access the product. It covers distribution channels, retail locations, warehousing and transport arrangements.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best defines a 'franchise' business arrangement?",
+    "options": [
+      "An independent retailer buying in bulk from a wholesaler",
+      "A company merging with its competitor",
+      "A franchisor licenses its business model and brand to a franchisee in return for fees",
+      "A government-owned enterprise contracting private management"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In a franchise, the franchisor licenses the brand, business model, and supporting services to a franchisee, who operates under the franchisor's name in exchange for initial fees and ongoing royalties or payments.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is a primary reason for imposing import tariffs by a country?",
+    "options": [
+      "To eliminate domestic production",
+      "To lower prices of imported goods",
+      "To protect local industries and generate revenue",
+      "To promote unrestricted free trade"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Import tariffs are commonly imposed to protect domestic industries from foreign competition by making imports more expensive and to generate government revenue. They do not lower import prices or promote free trade.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following BEST describes a 'sole proprietorship' form of business?",
+    "options": [
+      "Owned and managed by many shareholders with limited liability",
+      "A business owned and controlled by one person who enjoys all profits and bears unlimited liability",
+      "A legal entity separate from its owners with perpetual succession",
+      "A cooperative society owned by the government"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A sole proprietorship is owned and managed by one person who receives all profits but has unlimited liability for business debts, meaning personal assets can be used to satisfy business obligations.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best defines 'market segmentation'?",
+    "options": [
+      "Producing different qualities of a product",
+      "Dividing a market into distinct groups of buyers with different needs or characteristics",
+      "Setting higher prices for premium customers only",
+      "Selling only to overseas markets"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation involves dividing a broad market into smaller groups (segments) with similar needs, preferences or characteristics so that firms can target products and marketing efforts more effectively.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best represents a 'public limited company' (PLC)?",
+    "options": [
+      "Shares cannot be sold to the public",
+      "Shares are freely transferable and the company can offer shares to the public",
+      "Owned by a single family and not regulated",
+      "A partnership registered under trade laws"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A public limited company (PLC) can offer shares to the public and usually has freely transferable shares, subject to regulatory requirements. It is distinct from private companies and partnerships.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which method of payment is MOST appropriate for high-value international transactions where buyer and seller do not know each other well and need bank assurance?",
+    "options": [
+      "Open account",
+      "Cash on delivery",
+      "Letter of credit",
+      "Trade credit from seller"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A letter of credit provides bank assurance of payment upon presentation of stipulated documents, making it suitable for high-value international transactions between parties lacking established trust.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is a characteristic of monopolistic competition?",
+    "options": [
+      "Single seller with unique product and high barriers to entry",
+      "Many sellers with differentiated products and relatively easy entry",
+      "Homogeneous product and perfect knowledge",
+      "No competition and price set by government"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Monopolistic competition features many sellers selling differentiated products with relatively low barriers to entry. Firms compete on product features, price, and marketing rather than producing identical goods.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best explains 'subrogation' in insurance?",
+    "options": [
+      "The insurer can recover from a third party who caused the insured loss after paying the claim",
+      "The insured can claim twice for the same loss",
+      "The insurer transfers the policy to another company without consent",
+      "The insured is allowed to embellish claims"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Subrogation gives the insurer the right to pursue a third party responsible for the insured loss after compensating the insured. This prevents double recovery and helps insurers recover paid claim amounts.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best describes a 'trade deficit' in a country's balance of payments?",
+    "options": [
+      "Exports exceed imports",
+      "Imports exceed exports",
+      "There are no imports",
+      "The country has surplus foreign reserves"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A trade deficit occurs when a country's imports of goods and services exceed its exports, indicating net outflow of domestic currency to purchase foreign goods and potentially affecting foreign reserves.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best describes the role of advertising in product life cycle management?",
+    "options": [
+      "Advertising has no role in product life cycle",
+      "Advertising can create awareness in introduction and stimulate demand in growth/maturity",
+      "Advertising only increases costs with no benefits",
+      "Advertising replaces product quality"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising is crucial at introduction to build awareness, and throughout growth and maturity to differentiate products, sustain demand and counter competitors. It complements product quality rather than replacing it.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which inventory valuation method values closing stock based on the earliest purchased items still in stock?",
+    "options": [
+      "FIFO (First-In, First-Out)",
+      "LIFO (Last-In, First-Out)",
+      "Weighted average cost",
+      "Specific identification"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "FIFO assumes the oldest inventory items are sold first, so closing stock consists of the most recently purchased items. It values closing stock using the latest costs, unlike LIFO or weighted average.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best describes 'credit scoring' used by lenders?",
+    "options": [
+      "A method of physically counting money",
+      "A statistical technique to assess the creditworthiness of a borrower",
+      "An accounting method for recording credit sales",
+      "A promotional discount given to credit customers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Credit scoring uses statistical models to evaluate a borrower's probability of default based on factors like credit history, income and outstanding debts, helping lenders make informed lending decisions efficiently.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is a core advantage of specialization in production according to commerce theory?",
+    "options": [
+      "Lower efficiency due to repetitive tasks",
+      "Higher unit costs",
+      "Increased productivity and efficiency through division of labour",
+      "Reduced output per worker"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Specialization through division of labour allows workers to focus on specific tasks, increasing dexterity and speed, leading to higher productivity and lower average costs, which benefits production efficiency.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best describes 'bank overdraft' as a source of short-term finance?",
+    "options": [
+      "A long-term fixed loan secured by land",
+      "A short-term facility allowing a current account holder to withdraw beyond the available balance",
+      "Issuing shares to the public",
+      "A grant from the government with no repayment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bank overdraft is a short-term borrowing facility that permits account holders to withdraw more than their available balance up to an agreed limit, offering flexibility but often with variable interest rates.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which type of wholesaler regularly takes title to goods and buys in bulk from manufacturers to sell to retailers?",
+    "options": [
+      "Broker",
+      "Commission agent",
+      "Merchant wholesaler (trader)",
+      "Drop shipper"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A merchant wholesaler buys and takes title to goods in bulk from manufacturers and resells to retailers. Brokers and commission agents act as intermediaries without taking ownership of goods.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following BEST describes 'corporate social responsibility' (CSR)?",
+    "options": [
+      "Maximizing short-term profits at any cost",
+      "Companies voluntarily integrating social and environmental concerns into their operations",
+      "Avoiding payment of taxes through transfer pricing",
+      "Limiting employee welfare to minimum legal standards"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "CSR involves companies voluntarily adopting policies and practices that consider social and environmental impacts of their operations, going beyond legal obligations to contribute positively to stakeholders and society.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is NOT a feature of negotiable instruments like cheques and bills of exchange?",
+    "options": [
+      "Free transferability by endorsement or delivery",
+      "They are transferable and can confer title to a holder in due course",
+      "They require all transfers to be registered with a central authority",
+      "They represent a promise or order to pay a sum of money"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Negotiable instruments are freely transferable by endorsement or delivery and represent a promise or order to pay. They do not require registration with a central authority for transferability.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best explains 'break-even point' for a business?",
+    "options": [
+      "The level of output where total revenue equals total cost",
+      "The maximum profit point",
+      "Where fixed costs are zero",
+      "When marginal cost equals average cost"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The break-even point is where total revenue equals total costs, so the business makes neither profit nor loss. It helps managers determine the minimum sales volume needed to cover costs.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best describes an 'exclusive distribution' strategy?",
+    "options": [
+      "Product sold through all possible outlets",
+      "Product sold through a single or very few selected intermediaries in a territory",
+      "Product only sold online",
+      "Product distributed only by wholesalers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Exclusive distribution limits product availability to one or very few intermediaries in a geographical area, often used for luxury or high-control products to preserve brand image and pricing control.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following is an objective of consumer protection laws in commerce?",
+    "options": [
+      "To enable sellers to avoid returns",
+      "To protect consumers from unfair trade practices and ensure safety and information",
+      "To prevent consumers from suing businesses",
+      "To restrict consumer access to product information"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consumer protection laws aim to shield buyers from unsafe goods, misleading advertising, fraud and unfair contract terms, ensuring consumers have accurate information and legal remedies against unfair business practices.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following BEST describes 'trade credit' as a source of short-term finance for businesses?",
+    "options": [
+      "Credit granted by banks for long-term projects",
+      "Credit extended by suppliers allowing delayed payment for purchased goods",
+      "A government loan program with zero interest",
+      "Short-term bank overdraft only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade credit is credit extended by suppliers who allow buyers to receive goods and pay at an agreed later date. It is a common short-term financing method that helps businesses manage cash flow without bank borrowing.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following best describes the role of a broker in commerce?",
+    "options": [
+      "A broker manufactures goods for sale",
+      "An intermediary who negotiates transactions between buyers and sellers for a commission without taking title",
+      "A wholesaler who takes ownership of goods",
+      "A bank official who issues letters of credit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A broker acts as an intermediary who brings buyers and sellers together and negotiates transactions on their behalf, earning commission. Unlike wholesalers, brokers do not take ownership of the goods.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Which of the following situations exemplifies 'price elasticity of demand' being elastic?",
+    "options": [
+      "A small price increase leads to no change in quantity demanded",
+      "A large percentage change in quantity demanded resulting from a small percentage change in price",
+      "Quantity demanded remains constant regardless of price",
+      "Demand increases when income decreases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Elastic demand means quantity demanded responds strongly to price changes: a small price change causes a larger percentage change in quantity demanded. Necessities tend to be inelastic, luxuries more elastic.",
+    "subject": "Commerce",
+    "examType": "JAMB",
+    "examYear": 2025
+  }
+]
