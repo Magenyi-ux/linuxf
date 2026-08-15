@@ -1,0 +1,128 @@
+[
+  {
+    "text": "The National Judicial Institute (NJI) trains",
+    "options": [
+      "police officers",
+      "judicial officers",
+      "soldiers",
+      "civil servants"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NJI provides continuing education for judges and magistrates.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The body that disciplines erring judges is the",
+    "options": [
+      "EFCC",
+      "National Judicial Council",
+      "Police",
+      "Senate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NJC recommends disciplinary action against judges.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The NJC is chaired by the",
+    "options": [
+      "President",
+      "Chief Justice of Nigeria",
+      "Attorney General",
+      "Senate President"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The CJN chairs the National Judicial Council.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The constitution guarantees security of tenure for judges to",
+    "options": [
+      "allow political interference",
+      "ensure judicial independence",
+      "reduce their salaries",
+      "allow easy removal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Security of tenure protects judges from arbitrary removal.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "A judicial officer can be removed for",
+    "options": [
+      "making fair judgments",
+      "gross misconduct or incapacity",
+      "being impartial",
+      "upholding the constitution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Removal requires proven misconduct as recommended by NJC and approved by the legislature.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The rule of law requires that",
+    "options": [
+      "the president is above the law",
+      "laws are applied equally to all",
+      "only the rich are protected",
+      "judges make all laws"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Equality before the law is a core element of the rule of law.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The principle of natural justice demands",
+    "options": [
+      "trial without defence",
+      "fair hearing and absence of bias",
+      "conviction without evidence",
+      "secret proceedings"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Natural justice ensures impartiality and the right to be heard.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The concept of 'audi alteram partem' means",
+    "options": [
+      "hear the other side",
+      "judge alone",
+      "ignore the accused",
+      "punish without trial"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "It is the principle that no one should be judged without a hearing.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The principle 'nemo judex in causa sua' means",
+    "options": [
+      "a person can judge their own case",
+      "no one should be a judge in their own cause",
+      "judges are above the law",
+      "the president is the final judge"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It ensures impartiality by preventing conflict of interest.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  }
+]

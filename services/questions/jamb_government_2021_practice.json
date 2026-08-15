@@ -1,0 +1,702 @@
+[
+  {
+    "text": "The Universal Basic Education (UBE) programme provides",
+    "options": [
+      "university education only",
+      "free and compulsory basic education",
+      "military training",
+      "vocational skills only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "UBE ensures nine years of free basic education.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Nomadic education is designed for",
+    "options": [
+      "urban children",
+      "children of migrant communities",
+      "only girls",
+      "wealthy families"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It caters to the educational needs of nomadic pastoralists and fisherfolk.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The National Health Insurance Scheme (NHIS) aims to",
+    "options": [
+      "provide free treatment for all",
+      "ensure access to affordable healthcare",
+      "privatize hospitals",
+      "train traditional healers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NHIS pools resources to provide health coverage for contributors.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The primary healthcare system in Nigeria is managed by",
+    "options": [
+      "federal government",
+      "state government",
+      "local government",
+      "private sector"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Local governments are responsible for primary healthcare.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The National Population Commission (NPC) conducts",
+    "options": [
+      "elections",
+      "census",
+      "trials",
+      "road construction"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NPC is responsible for population census and demographic data.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Population data is important for",
+    "options": [
+      "election rigging",
+      "planning and resource allocation",
+      "increasing corruption",
+      "reducing education"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Census data guides government policy and development planning.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The movement of people from rural to urban areas is called",
+    "options": [
+      "immigration",
+      "rural-urban migration",
+      "emigration",
+      "tourism"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Rural-urban migration involves relocation from countryside to cities.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Overpopulation in cities leads to",
+    "options": [
+      "improved living standards",
+      "housing shortages and traffic congestion",
+      "less pollution",
+      "more farmland"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Urban congestion results in inadequate housing and infrastructure pressure.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Brain drain refers to",
+    "options": [
+      "increase in intelligence",
+      "emigration of skilled professionals",
+      "import of technology",
+      "decline in education"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Brain drain is the loss of highly skilled workers to other countries.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The National Directorate of Employment (NDE) was created to",
+    "options": [
+      "provide loans to banks",
+      "reduce unemployment through skills acquisition",
+      "conduct elections",
+      "regulate oil companies"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NDE implements programmes to create employment opportunities.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Poverty alleviation programmes in Nigeria include",
+    "options": [
+      "N-Power and Tradermoni",
+      "election campaigns",
+      "military operations",
+      "tax collection"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "N-Power and Tradermoni are social intervention programmes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Sustainable Development Goals (SDGs) replaced the",
+    "options": [
+      "AU Charter",
+      "Millennium Development Goals (MDGs)",
+      "ECOWAS Treaty",
+      "UN Charter"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "SDGs succeeded the MDGs in 2015 with 17 global goals.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Goal 4 of the SDGs focuses on",
+    "options": [
+      "poverty",
+      "quality education",
+      "clean water",
+      "climate action"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "SDG 4 aims to ensure inclusive and equitable quality education.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Goal 1 of the SDGs aims to",
+    "options": [
+      "promote war",
+      "end poverty in all its forms",
+      "increase inequality",
+      "reduce education"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "SDG 1 targets the eradication of extreme poverty.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Goal 16 of the SDGs promotes",
+    "options": [
+      "corruption",
+      "peace, justice, and strong institutions",
+      "violence",
+      "dictatorship"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "SDG 16 focuses on peaceful societies and accountable institutions.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The largest ethnic group in Nigeria is the",
+    "options": [
+      "Igbo",
+      "Hausa-Fulani",
+      "Yoruba",
+      "Ijaw"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Hausa-Fulani are the largest ethnic group in Nigeria.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Nigeria has over how many ethnic groups?",
+    "options": [
+      "100",
+      "250",
+      "400",
+      "500"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Nigeria is estimated to have over 250 ethnic groups.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The major languages in Nigeria are",
+    "options": [
+      "English, French, Spanish",
+      "Hausa, Igbo, Yoruba",
+      "Swahili, Zulu, Twi",
+      "Arabic, Chinese, Russian"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Hausa, Igbo, and Yoruba are the three major indigenous languages.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Religious tolerance means",
+    "options": [
+      "forcing everyone to one religion",
+      "respecting others' religious beliefs",
+      "banning all religions",
+      "promoting only one faith"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tolerance allows coexistence of diverse religious beliefs.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The two major religions in Nigeria are",
+    "options": [
+      "Hinduism and Buddhism",
+      "Christianity and Islam",
+      "Judaism and Taoism",
+      "Shinto and Sikhism"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Christianity and Islam are the most practiced religions.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The National Hajj Commission of Nigeria (NAHCON) coordinates",
+    "options": [
+      "Christian pilgrimages",
+      "Muslim pilgrimages to Mecca",
+      "traditional festivals",
+      "election campaigns"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NAHCON organizes the annual Hajj for Nigerian Muslims.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Nigerian Christian Pilgrim Commission (NCPC) oversees",
+    "options": [
+      "Hajj operations",
+      "Christian pilgrimages to Jerusalem and Rome",
+      "traditional rites",
+      "political rallies"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NCPC facilitates pilgrimages for Nigerian Christians.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Sharia legal system is practiced in some",
+    "options": [
+      "Southern states",
+      "Northern states",
+      "Eastern states",
+      "all states"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sharia law applies mainly in predominantly Muslim northern states.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The customary law is based on",
+    "options": [
+      "English law",
+      "traditions and customs of a community",
+      "Roman law",
+      "international law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Customary law derives from accepted local customs and practices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The received English law in Nigeria includes",
+    "options": [
+      "Sharia law",
+      "common law, equity, and statutes of general application",
+      "customary law",
+      "traditional law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "English law forms part of Nigerian law through colonial heritage.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Judicial precedent means",
+    "options": [
+      "ignoring previous judgments",
+      "lower courts following decisions of higher courts",
+      "judges making new laws",
+      "the president deciding cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stare decisis requires courts to follow established precedents.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "A court with original jurisdiction hears cases",
+    "options": [
+      "on appeal only",
+      "for the first time",
+      "only constitutional matters",
+      "only criminal matters"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Original jurisdiction means the court hears the case initially.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Appellate jurisdiction allows a court to",
+    "options": [
+      "conduct trials",
+      "review decisions of lower courts",
+      "execute judgments",
+      "arrest offenders"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Appellate courts hear appeals from lower courts.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Supreme Court has how many justices?",
+    "options": [
+      "7",
+      "15",
+      "21",
+      "30"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Supreme Court can have up to 21 justices as prescribed by law.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Federal High Court has jurisdiction over",
+    "options": [
+      "state criminal cases",
+      "federal matters including taxation and banking",
+      "customary law",
+      "Sharia law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Federal High Court handles cases arising from federal laws.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "A magistrate court handles",
+    "options": [
+      "constitutional matters",
+      "minor criminal and civil cases",
+      "election petitions",
+      "admiralty law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Magistrate courts are courts of summary jurisdiction.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Director of Public Prosecutions (DPP) is responsible for",
+    "options": [
+      "defending the accused",
+      "prosecuting criminal cases on behalf of the state",
+      "appointing judges",
+      "making laws"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The DPP initiates and conducts public prosecutions.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Legal aid provides",
+    "options": [
+      "free legal services to the wealthy",
+      "free or subsidized legal services to the indigent",
+      "loans to lawyers",
+      "payment for judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Legal aid ensures access to justice for those who cannot afford it.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Legal Aid Council of Nigeria was established to",
+    "options": [
+      "prosecute all cases",
+      "provide legal assistance to the poor",
+      "train judges",
+      "write the constitution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Council ensures indigent citizens have access to legal representation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Alternative Dispute Resolution (ADR) includes",
+    "options": [
+      "only litigation",
+      "mediation, arbitration, and conciliation",
+      "military trials",
+      "legislative hearings"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "ADR resolves disputes outside the traditional court system.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Arbitration involves",
+    "options": [
+      "a judge deciding a case",
+      "a neutral third party making a binding decision",
+      "the president intervening",
+      "public voting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Arbitration is a private process where an arbitrator issues a binding award.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Mediation differs from arbitration because",
+    "options": [
+      "it is more expensive",
+      "the mediator does not impose a decision",
+      "it requires a judge",
+      "it is always public"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Mediation facilitates negotiation; the parties reach their own agreement.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Multi-Door Courthouse concept promotes",
+    "options": [
+      "only litigation",
+      "multiple dispute resolution options",
+      "only arbitration",
+      "only mediation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It offers various ADR mechanisms under one roof.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The National Human Rights Commission can",
+    "options": [
+      "make laws",
+      "investigate human rights violations",
+      "conduct elections",
+      "appoint judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NHRC investigates and addresses human rights complaints.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Public Defender's Office provides",
+    "options": [
+      "legal representation for the government",
+      "free legal services to indigent persons",
+      "prosecution services",
+      "prison management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It offers pro bono legal defense for those who cannot pay.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The concept of 'innocent until proven guilty' is known as",
+    "options": [
+      "presumption of guilt",
+      "presumption of innocence",
+      "judicial bias",
+      "executive privilege"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An accused is considered innocent until proven guilty by a court.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Double jeopardy means",
+    "options": [
+      "being tried twice for different offences",
+      "being tried again for the same offence after acquittal",
+      "appealing a conviction",
+      "plea bargaining"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The constitution prohibits double jeopardy; no retrial after acquittal.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The term 'sub judice' refers to",
+    "options": [
+      "a concluded case",
+      "a matter under judicial consideration",
+      "an executive order",
+      "a legislative debate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sub judice restricts public comment on ongoing court cases.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Contempt of court includes",
+    "options": [
+      "obeying court orders",
+      "disobeying or disrespecting the court",
+      "praising the judiciary",
+      "filing a lawsuit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Contempt punishes actions that defy or undermine court authority.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Chief Judge of a state is appointed by the",
+    "options": [
+      "President",
+      "Governor on recommendation of NJC",
+      "Senate",
+      "House of Assembly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Governor appoints the Chief Judge based on NJC advice, subject to House confirmation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The Grand Khadi of the Sharia Court of Appeal is appointed by the",
+    "options": [
+      "President",
+      "Governor",
+      "Chief Justice",
+      "Senate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Governor appoints the Grand Khadi on NJC recommendation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The President of the Customary Court of Appeal is appointed by the",
+    "options": [
+      "Senate",
+      "Governor",
+      "President",
+      "Local Government Chairman"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Governor makes the appointment based on NJC recommendation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Judges of the Supreme Court retire at the age of",
+    "options": [
+      "60",
+      "65",
+      "70",
+      "75"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Supreme Court justices retire at 70 years.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "Judges of the Court of Appeal and High Court retire at",
+    "options": [
+      "60",
+      "65",
+      "70",
+      "75"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "These judges retire at 65 years of age.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  },
+  {
+    "text": "The judiciary is independent when it is",
+    "options": [
+      "controlled by the executive",
+      "free from interference by other arms of government",
+      "subject to military control",
+      "funded by private individuals"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Judicial independence ensures impartial adjudication.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2021
+  }
+]

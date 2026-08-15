@@ -308,6 +308,8 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2018`]: "./questions/jamb_government_2018_practice.json",
   [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2019`]: "./questions/jamb_government_2019_practice.json",
   [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2020`]: "./questions/jamb_government_2020_practice.json",
+  [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2021`]: "./questions/jamb_government_2021_practice.json",
+  [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2022`]: "./questions/jamb_government_2022_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2021`]: "./questions/jamb_physics_2021_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2021`]: "./questions/waec_physics_2021_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2021`]: "./questions/neco_physics_2021_practice.json",
