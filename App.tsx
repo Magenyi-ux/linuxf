@@ -654,7 +654,7 @@ const AppShell: React.FC = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
                 <a 
                   href="/builds/SphereLearn-latest.apk" 
-                  download 
+                  download="SphereLearn.apk" 
                   className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-2xl font-bold hover:bg-black transition-all shadow-xl hover:shadow-gray-200"
                 >
                   <div className="bg-white/10 p-2 rounded-xl group-hover:scale-110 transition-transform">
@@ -662,7 +662,7 @@ const AppShell: React.FC = () => {
                   </div>
                   <div className="text-left">
                     <div className="text-[10px] font-black uppercase tracking-widest text-gray-400 leading-none mb-1">Android App</div>
-                    <div className="text-sm">Download APK {apkMetadata?.version && `v${apkMetadata.version}`}</div>
+                    <div className="text-sm">Download Application {apkMetadata?.version && `v${apkMetadata.version}`}</div>
                   </div>
                 </a>
                 <button 
