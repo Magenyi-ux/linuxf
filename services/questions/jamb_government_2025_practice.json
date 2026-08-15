@@ -558,5 +558,537 @@
     "subject": "Government",
     "examType": "JAMB",
     "examYear": 2025
+  },
+  {
+    "text": "The National Security Adviser is appointed by the",
+    "options": [
+      "Senate",
+      "President",
+      "Chief of Defence Staff",
+      "National Assembly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The National Security Adviser (NSA) is appointed by the President to coordinate security and intelligence matters. The Senate (A) does not appoint the NSA. The Chief of Defence Staff (C) is a military officer, not the appointing authority. The National Assembly (D) does not appoint the NSA.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The body that hears election petition cases is the",
+    "options": [
+      "Supreme Court",
+      "Election Petition Tribunal",
+      "Federal High Court",
+      "Sharia Court"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Election Petition Tribunals are special courts established to hear and determine disputes arising from elections. The Supreme Court (A) hears appeals from the tribunals. The Federal High Court (C) handles other federal matters. Sharia Court (D) handles Islamic personal law, not election disputes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Voter registration is important because it",
+    "options": [
+      "prevents citizens from voting",
+      "enables eligible citizens to vote",
+      "allows foreigners to vote",
+      "is optional"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Voter registration qualifies eligible citizens to exercise their right to vote. It does not prevent voting (A). It does not allow foreigners to vote (C) because only citizens can register. It is not optional for those who wish to vote (D); registration is mandatory for participation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A credible election is characterized by",
+    "options": [
+      "vote buying",
+      "free, fair, and transparent process",
+      "manipulation of results",
+      "intimidation of voters"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A credible election is free, fair, transparent, and reflects the genuine will of the people. Vote buying (A), result manipulation (C), and voter intimidation (D) undermine the credibility of elections and are forms of electoral malpractice.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The concept of 'One Man, One Vote' implies",
+    "options": [
+      "only men can vote",
+      "all votes have equal weight",
+      "the rich have more votes",
+      "women cannot vote"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The principle of 'One Man, One Vote' ensures political equality\u2014every citizen's vote carries the same weight regardless of gender, wealth, or status. It does not mean only men can vote (A), that the rich have more votes (C), or that women cannot vote (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The secret ballot system ensures",
+    "options": [
+      "public voting",
+      "voter intimidation",
+      "privacy and freedom of choice",
+      "vote buying"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The secret ballot protects the privacy of voters, allowing them to vote without fear of intimidation or victimization. It does not encourage public voting (A), intimidation (B), or vote buying (D); rather, it prevents these malpractices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "An electoral constituency is",
+    "options": [
+      "a political party office",
+      "a geographic area represented by an elected official",
+      "the president's office",
+      "the national assembly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A constituency is a geographic area whose residents elect a representative to the legislature. It is not a party office (A), the president's office (C), or the National Assembly itself (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The returning officer in an election is responsible for",
+    "options": [
+      "voting on behalf of citizens",
+      "announcing election results",
+      "campaigning for candidates",
+      "printing ballot papers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The returning officer is the electoral official responsible for collating and announcing the official results of an election in a constituency. They do not vote for citizens (A), campaign for candidates (C), or print ballot papers (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A coalition government is formed when",
+    "options": [
+      "one party wins majority",
+      "no party wins an absolute majority",
+      "the president dissolves parliament",
+      "the military takes over"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A coalition government is formed when no single party wins an absolute majority, leading two or more parties to combine to form a working majority. If one party wins a majority (A), no coalition is needed. Dissolution of parliament (C) and military takeover (D) are not coalition scenarios.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The opposition in a democracy serves to",
+    "options": [
+      "support all government policies",
+      "criticize and check the government",
+      "form a parallel government",
+      "dissolve the legislature"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The opposition provides alternative policies, criticizes government actions, and holds the government accountable. It does not blindly support government policies (A), form a parallel government (C), or dissolve the legislature (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The doctrine of separation of powers is practiced to prevent",
+    "options": [
+      "efficiency",
+      "dictatorship",
+      "development",
+      "elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Separation of powers prevents the concentration of power in one arm of government, thereby guarding against dictatorship and abuse of power. It is not primarily about efficiency (A), development (C), or elections (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The executive can check the legislature through",
+    "options": [
+      "judicial review",
+      "veto power",
+      "impeachment",
+      "elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The executive (President or Governor) can check the legislature by withholding assent to bills (veto power). Judicial review (A) is a check by the judiciary on both. Impeachment (C) is a check by the legislature on the executive. Elections (D) are a check by the people on all.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The legislature checks the executive through",
+    "options": [
+      "making appointments",
+      "confirmation of appointments and impeachment",
+      "commanding the army",
+      "declaring war"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The legislature checks the executive by confirming key appointments, approving budgets, and exercising the power of impeachment. Making appointments (A) is an executive function, not legislative. Commanding the army (C) and declaring war (D) are executive powers subject to legislative oversight, not checks by the legislature.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Delegated legislation refers to laws made by",
+    "options": [
+      "the legislature only",
+      "authorized bodies or individuals under powers given by the legislature",
+      "the president alone",
+      "judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Delegated legislation is made by ministers, agencies, local authorities, or other bodies to whom the legislature has delegated law-making powers through an enabling Act. It is not made by the legislature itself (A), the president alone (C), or judges (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The Attorney General of the Federation is also the",
+    "options": [
+      "Chief Justice",
+      "Minister of Justice",
+      "Inspector General of Police",
+      "Head of Civil Service"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Attorney General of the Federation serves as the chief law officer of the country and also holds the position of Minister of Justice. The Chief Justice (A) heads the judiciary. The Inspector General of Police (C) heads the police. The Head of Civil Service (D) oversees the civil service.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The civil service is expected to be",
+    "options": [
+      "partisan",
+      "neutral and permanent",
+      "political",
+      "temporary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The civil service is expected to be politically neutral and permanent, serving successive governments impartially. It should not be partisan (A), political (C), or temporary (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The head of the civil service is appointed by the",
+    "options": [
+      "Senate",
+      "President",
+      "Chief Justice",
+      "Public Service Commission"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President appoints the Head of the Civil Service of the Federation, who oversees the federal civil service. The Senate (A) confirms some appointments but does not appoint. The Chief Justice (C) heads the judiciary. The Public Service Commission (D) advises on appointments but does not appoint.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Red-tapism in the civil service refers to",
+    "options": [
+      "efficiency",
+      "excessive bureaucracy and delay",
+      "quick service",
+      "transparency"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Red-tapism is the excessive adherence to rules, procedures, and formalities that causes delays and inefficiency in the civil service. It is the opposite of efficiency (A), quick service (C), and transparency (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The public service includes",
+    "options": [
+      "only civil servants",
+      "all government employees in ministries, agencies, and parastatals",
+      "only political appointees",
+      "only military personnel"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The public service encompasses all employees of government\u2014civil servants, parastatal staff, and other public sector workers\u2014who deliver public services. It is broader than only civil servants (A), political appointees (C), or military personnel (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A parastatal is",
+    "options": [
+      "a private company",
+      "a government-owned corporation",
+      "a religious organization",
+      "a political party"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A parastatal is a government-owned corporation or enterprise established by law to provide public services or commercial activities on behalf of the state. It is not a private company (A), religious organization (C), or political party (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The National Assembly has the power to",
+    "options": [
+      "execute laws",
+      "appropriate funds",
+      "interpret laws",
+      "command the army"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The National Assembly exercises the power of the purse\u2014authorizing government revenue and expenditure through appropriation. Executing laws (A) is an executive function. Interpreting laws (C) is a judicial function. Commanding the army (D) is a presidential power.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A bill becomes law after",
+    "options": [
+      "first reading",
+      "presidential assent",
+      "committee stage",
+      "publication in newspapers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill passed by the National Assembly becomes law only after receiving presidential assent. First reading (A) and committee stage (C) are earlier stages in the legislative process. Publication (D) is for information, not enactment.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The doctrine of covering the field applies when",
+    "options": [
+      "state laws conflict with federal laws",
+      "the president is absent",
+      "the courts are on strike",
+      "the legislature is dissolved"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The doctrine of covering the field provides that where state laws conflict with federal laws in areas of concurrent jurisdiction, federal law prevails and 'covers the field'. It does not relate to presidential absence (B), court strikes (C), or legislative dissolution (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Citizenship can be acquired in Nigeria through",
+    "options": [
+      "birth, registration, and naturalization",
+      "only birth",
+      "purchase",
+      "marriage only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The 1999 Constitution provides three ways to acquire Nigerian citizenship: by birth, by registration, and by naturalization. Purchase (C) and marriage alone (D) do not confer citizenship.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Dual citizenship in Nigeria is allowed for",
+    "options": [
+      "citizens by birth",
+      "naturalized citizens",
+      "all citizens",
+      "only the president"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Nigerian citizens by birth may hold dual citizenship. However, naturalized citizens (B) must renounce their previous citizenship. It is not allowed for all citizens (C) or only the president (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The right to education is classified as a",
+    "options": [
+      "political right",
+      "social and economic right",
+      "legal right",
+      "natural right"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The right to education is a social and economic right, contained in Chapter II of the Nigerian Constitution (Fundamental Objectives and Directive Principles of State Policy). It is not a political right (A), legal right (C), or natural right (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The fundamental rights are contained in which chapter of the 1999 Constitution?",
+    "options": [
+      "Chapter I",
+      "Chapter II",
+      "Chapter IV",
+      "Chapter VI"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Fundamental human rights are guaranteed in Chapter IV of the 1999 Constitution of Nigeria (Sections 33\u201346). Chapter I (A) deals with general provisions. Chapter II (B) contains directive principles. Chapter VI (D) deals with the executive.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The right to life can be deprived in",
+    "options": [
+      "no circumstance",
+      "execution of a court sentence",
+      "peaceful protest",
+      "civil cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The right to life may be lawfully deprived in execution of a death sentence imposed by a competent court after due process. It cannot be deprived arbitrarily (A), during peaceful protest (C), or in civil cases (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The right to freedom of movement can be restricted during",
+    "options": [
+      "elections",
+      "public holidays",
+      "state of emergency or curfew",
+      "weekends"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Freedom of movement may be restricted in the interest of public safety, public order, public health, or during a state of emergency or curfew. It is not restricted during elections (A), public holidays (B), or weekends (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A writ of habeas corpus requires",
+    "options": [
+      "payment of debt",
+      "production of a detained person before a court",
+      "arrest of a judge",
+      "dissolution of parliament"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A writ of habeas corpus is a legal order requiring that a person who is detained be brought before a court to determine the legality of their detention. It does not relate to debt payment (A), arresting a judge (C), or dissolving parliament (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The fundamental right to dignity of the human person prohibits",
+    "options": [
+      "free speech",
+      "torture and inhuman treatment",
+      "voting",
+      "fair hearing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Section 34 of the Constitution guarantees the right to dignity of the human person and prohibits torture, slavery, forced labour, and inhuman or degrading treatment. It does not prohibit free speech (A), voting (C), or fair hearing (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Freedom of association allows citizens to",
+    "options": [
+      "commit crimes",
+      "form or join political parties and trade unions",
+      "disobey the law",
+      "destroy public property"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Freedom of association (Section 40) allows citizens to freely form or join political parties, trade unions, and other lawful associations. It does not permit crimes (A), disobedience of law (C), or destruction of property (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The right to fair hearing includes",
+    "options": [
+      "trial in secret",
+      "trial within a reasonable time by an impartial court",
+      "punishment without trial",
+      "self-help"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fair hearing (Section 36) guarantees that a person is tried within a reasonable time by an impartial court and is given an opportunity to defend themselves. Secret trials (A), punishment without trial (C), and self-help (D) are contrary to fair hearing.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The right against discrimination is guaranteed under",
+    "options": [
+      "Section 42",
+      "Section 33",
+      "Section 39",
+      "Section 45"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Section 42 of the Constitution prohibits discrimination on grounds of ethnicity, religion, sex, place of origin, or political opinion. Section 33 (B) is right to life. Section 39 (C) is freedom of expression. Section 45 (D) deals with restrictions on rights.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A citizen whose right has been breached can seek",
+    "options": [
+      "revenge",
+      "redress in court",
+      "migration",
+      "bribery"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A person whose fundamental right has been violated can seek redress in a court of law, which may award damages or issue appropriate orders. Revenge (A), migration (C), and bribery (D) are not lawful remedies.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The Fundamental Rights Enforcement Procedure Rules allow",
+    "options": [
+      "slow trial",
+      "speedy hearing of human rights cases",
+      "discrimination",
+      "unlawful detention"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Fundamental Rights (Enforcement Procedure) Rules provide a simplified and speedy process for the determination of human rights violation cases. They do not encourage slow trial (A), discrimination (C), or unlawful detention (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The Nigerian Constitution is described as rigid because",
+    "options": [
+      "it cannot be amended",
+      "its amendment requires a special procedure",
+      "it is flexible",
+      "it is unwritten"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A rigid constitution requires a special, often difficult, procedure for amendment\u2014such as a two-thirds majority in the National Assembly and state assemblies. It can be amended (A is wrong). It is not flexible (C) or unwritten (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The preamble to the constitution states that sovereignty belongs to",
+    "options": [
+      "the president",
+      "the people of Nigeria",
+      "the military",
+      "the judiciary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The preamble to the 1999 Constitution declares that sovereignty belongs to the people of Nigeria, from whom government derives its authority. It does not belong to the president (A), military (C), or judiciary (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
   }
 ]

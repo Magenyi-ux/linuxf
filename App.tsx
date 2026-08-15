@@ -653,7 +653,7 @@ const AppShell: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
                 <a 
-                  href="/builds/SphereLearn-latest.apk" 
+                  href="https://github.com/Magenyi-ux/icn/releases/download/v1.0.7-fix/SphereLearn-latest.apk" 
                   download="SphereLearn.apk" 
                   className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-2xl font-bold hover:bg-black transition-all shadow-xl hover:shadow-gray-200"
                 >
