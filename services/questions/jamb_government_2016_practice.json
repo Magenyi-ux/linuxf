@@ -1,0 +1,30 @@
+[
+  {
+    "text": "The term 'state' in political science refers to",
+    "options": [
+      "a government department",
+      "a politically organized community with sovereignty",
+      "a province",
+      "a local government"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A state has a defined territory, population, government, and sovereignty.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Legitimacy in government refers to",
+    "options": [
+      "the use of force",
+      "the acceptance of authority by the people",
+      "military rule",
+      "economic power"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Legitimacy is the popular acceptance of government's right to rule.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  }
+]

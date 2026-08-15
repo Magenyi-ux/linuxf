@@ -1,0 +1,758 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' as taught in the WAEC Commerce syllabus?",
+    "options": [
+      "The buying and selling of goods only",
+      "All activities that facilitate the exchange of goods and services, including trade and auxiliary services",
+      "Production of goods in factories",
+      "Government regulation of business activities"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce is the broad set of activities that facilitate exchange; it includes trade (buying and selling) and auxiliary services like banking, insurance, transport and warehousing which support business transactions and distribution of goods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is an example of an auxiliary service of commerce?",
+    "options": [
+      "Manufacturing of textiles",
+      "Retail sale of shoes",
+      "Providing insurance cover for goods in transit",
+      "Cultivating cash crops"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Auxiliary services are supportive services that aid trade; insurance for goods in transit protects against loss or damage and therefore facilitates trade by reducing risks involved in transporting and selling goods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which form of business ownership is characterized by limited liability and separate legal personality?",
+    "options": [
+      "Sole proprietorship",
+      "Partnership",
+      "Cooperative society",
+      "Private limited company"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A private limited company has a separate legal identity from its owners and offers limited liability to shareholders, protecting personal assets from company debts; this differs from sole proprietorship and partnership.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which document typically evidences ownership of goods stored in a warehouse and is used as collateral in commercial transactions?",
+    "options": [
+      "Invoice",
+      "Bill of lading",
+      "Warehouse receipt",
+      "Import licence"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A warehouse receipt is issued by a warehouse to acknowledge goods stored and can serve as evidence of ownership; it is often used as collateral for loans, whereas invoice and bill of lading serve different functions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best describes the role of a commercial bank in commerce?",
+    "options": [
+      "Only to accept deposits",
+      "To accept deposits, provide loans, and facilitate payments",
+      "To manufacture consumer goods",
+      "To regulate prices of commodities"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial banks perform several key functions: accepting deposits, granting loans and advances, facilitating payments and transfers, and providing other services like letters of credit that support business activities and commerce.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which type of insurance policy would a trader buy to protect stock against fire and theft?",
+    "options": [
+      "Life insurance",
+      "Marine insurance",
+      "Fire and special perils insurance",
+      "Health insurance"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Fire and special perils insurance covers risks such as fire, theft, explosions, and other specified perils affecting goods or property; marine insurance covers sea transit specifically while life and health cover persons.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "In trade terminology, what is a 'counter trade' transaction?",
+    "options": [
+      "A transaction between government and private sector",
+      "Trading done only using digital currencies",
+      "A barter-like international transaction involving goods exchanged for goods or services instead of currency",
+      "A transaction cancelled by mutual consent"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Counter trade involves international transactions where goods or services are exchanged, wholly or partly, for other goods or services rather than cash; it helps when foreign exchange is scarce or currencies are non-convertible.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is a primary function of advertising in commerce?",
+    "options": [
+      "Producing goods",
+      "Controlling prices",
+      "Creating awareness and stimulating demand for products",
+      "Registering a business name"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Advertising aims to inform potential customers about products, create awareness, persuade buyers, and stimulate demand. It is a promotional tool that supports marketing objectives rather than production or legal registration functions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which document is issued by a carrier to acknowledge receipt of goods for shipment and acts as a document of title?",
+    "options": [
+      "Invoice",
+      "Bill of exchange",
+      "Bill of lading",
+      "Company memorandum"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of lading is issued by the carrier to the shipper acknowledging receipt of goods, specifying terms of carriage; it also serves as a document of title and evidence of contract of carriage.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which pricing strategy involves setting prices low to gain market share and then raising them later?",
+    "options": [
+      "Skimming pricing",
+      "Penetration pricing",
+      "Cost-plus pricing",
+      "Premium pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Penetration pricing sets initially low prices to attract customers and quickly build market share, with the aim of raising prices later once customer loyalty or economies of scale reduce costs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best explains the term 'bill of exchange'?",
+    "options": [
+      "A written order by a creditor directing a debtor to pay a sum immediately",
+      "A negotiable instrument ordering a person to pay a fixed sum to another at a specified future date",
+      "A receipt issued by a warehouse",
+      "An insurance certificate for marine cargo"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of exchange is a negotiable instrument in which one party (drawer) orders another (drawee) to pay a specified sum to a third party (payee) at a determinable future date; it facilitates credit transactions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which practice is an advantage of forming a partnership rather than a sole proprietorship?",
+    "options": [
+      "Unlimited number of owners",
+      "Limited liability for partners",
+      "Shared decision-making and combined capital resources",
+      "Continual existence despite death of a partner"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Partnerships allow owners to combine capital, skills and share management responsibilities, which can improve business capacity. However, partners normally have unlimited liability unless special arrangements are made.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is NOT a feature of a cooperative society?",
+    "options": [
+      "Voluntary membership and democratic control",
+      "Distribution of surplus among members based on patronage",
+      "Aim to maximize profit for external shareholders",
+      "Provision of services to members at low cost"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Cooperatives are democratic organizations serving member needs, distributing surplus based on usage, and providing services affordably. They are not primarily aimed at maximizing profits for external shareholders unlike commercial companies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is a primary difference between wholesale and retail trade?",
+    "options": [
+      "Wholesalers sell in bulk to retailers; retailers sell in small quantities to final consumers",
+      "Retailers only sell to businesses; wholesalers to consumers",
+      "Wholesalers charge higher unit prices than retailers",
+      "Retail trade involves shipment of goods overseas"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Wholesalers typically purchase in large quantities from producers and sell in bulk to retailers or other businesses, while retailers sell in smaller quantities directly to final consumers and focus on convenience and display.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which body is primarily responsible for licensing and supervising banks in Nigeria?",
+    "options": [
+      "Federal Inland Revenue Service (FIRS)",
+      "Central Bank of Nigeria (CBN)",
+      "Securities and Exchange Commission (SEC)",
+      "National Insurance Commission (NAICOM)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Central Bank of Nigeria (CBN) is the apex monetary authority responsible for the licensing, regulation and supervision of banks, ensuring financial stability, monetary policy implementation, and safeguarding the banking system.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "What is the main purpose of a letter of credit in international trade?",
+    "options": [
+      "To provide insurance against cargo loss",
+      "To guarantee payment to the exporter by the importer's bank",
+      "To certify product quality by the importer",
+      "To transport goods across borders"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A letter of credit is issued by the importer's bank guaranteeing payment to the exporter provided the exporter meets the specified documentary conditions; it reduces payment risk in international trade.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which marketing mix element is primarily concerned with channels of distribution?",
+    "options": [
+      "Product",
+      "Price",
+      "Place",
+      "Promotion"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Place refers to distribution channels and logistics used to make the product available to the target market, including wholesalers, retailers, and transport, distinguishing it from product, price and promotion.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "In accounting for a sole trader, which of the following entries increases both an asset and a liability?",
+    "options": [
+      "Owner's capital invested in cash",
+      "Purchase of inventory for cash",
+      "Acquiring equipment on credit",
+      "Payment of rent expense by cash"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Buying equipment on credit increases a non-current asset (equipment) and a liability (creditors or loan payable). Owner's capital increases asset (cash) and equity, not liability.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is a merit of using specialization in production?",
+    "options": [
+      "Increase in production time and costs",
+      "Improved worker skill leading to higher productivity",
+      "Complete elimination of training costs",
+      "Reduced output due to monotony"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Specialization concentrates workers on specific tasks, enhancing skill, speed and efficiency, thereby increasing productivity and output. It may have downsides like monotony, but boosts performance and reduces unit costs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which trade barrier is imposed by a government to protect domestic industries by making imports more expensive?",
+    "options": [
+      "Quota",
+      "Tariff (customs duty)",
+      "Export subsidy",
+      "Standards and quality control"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A tariff or customs duty is a tax on imported goods that raises their prices, aiming to protect domestic industries by making foreign products less competitive compared to local goods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best describes 'e-commerce'?",
+    "options": [
+      "Production of goods in electronic factories",
+      "Buying and selling of goods and services over the internet and other electronic networks",
+      "Government regulation of trade",
+      "Traditional face-to-face retailing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "E-commerce refers to commercial transactions conducted electronically, especially over the internet, including online buying, selling, electronic payments, and digital marketing as opposed to physical retail transactions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is an advantage of branding to manufacturers?",
+    "options": [
+      "Increased cost of production only",
+      "Higher product recognition and customer loyalty",
+      "Guaranteed monopoly without competition",
+      "Elimination of the need for advertising"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Branding builds recognition, differentiates products, fosters customer loyalty, and can allow premium pricing. It does not guarantee monopoly and typically requires advertising and investment.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best defines 'market segmentation'?",
+    "options": [
+      "Mass production for a single market",
+      "Dividing a broad market into subsets of consumers with common needs or characteristics",
+      "Charging the same price to all customers",
+      "Selling only to wholesalers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation splits a heterogeneous market into distinct groups with similar preferences, enabling firms to tailor products, pricing, and promotion to target specific segments and improve marketing effectiveness.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is an example of direct tax?",
+    "options": [
+      "Customs duty",
+      "Value Added Tax (VAT)",
+      "Personal income tax",
+      "Excise duty"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Personal income tax is a direct tax levied on individuals' income and paid directly to the government by the taxpayer, whereas VAT, customs and excise are indirect taxes levied on goods and services.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which document confirms acceptance of an offer in a sale transaction?",
+    "options": [
+      "Quotations",
+      "Acceptance letter or sales contract",
+      "Catalogue",
+      "Price list"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Acceptance is usually signified by a signed acceptance letter or a sales contract which confirms the buyer's agreement to the seller's offer and forms the basis of a legally binding sales agreement.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following functions is performed by a wholesaler but not typically by a retailer?",
+    "options": [
+      "Breaking bulk",
+      "Providing credit to final consumers",
+      "Displaying goods for end consumers",
+      "Providing after-sales service"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Breaking bulk means buying in large quantities from producers and selling in smaller lots to retailers or businesses; wholesalers perform this function whereas retailers focus on selling directly to final consumers.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "What is the principal objective of working capital management in a business?",
+    "options": [
+      "Maximize fixed assets",
+      "Ensure that a firm has sufficient liquidity to meet short-term obligations while minimizing cost",
+      "Eliminate long-term borrowing",
+      "Ignore inventory levels"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Working capital management aims to balance liquidity and profitability by ensuring enough short-term assets to meet obligations and maintain operations, while minimizing costs of holding excess cash or inventory.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following statements about imports and exports is TRUE?",
+    "options": [
+      "Imports always increase a country's foreign reserves",
+      "Exports reduce the nation's GDP",
+      "Exports earn foreign exchange for a country while imports involve spending foreign exchange",
+      "Imports and exports have no effect on a country's balance of payments"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Exports generate foreign exchange inflows by selling domestic goods abroad; imports require outflow of foreign exchange to pay foreign suppliers. These flows directly affect a country's balance of payments and reserves.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best describes the role of an agent in commerce?",
+    "options": [
+      "Buys and takes title to goods from the principal",
+      "Acts on behalf of another (principal) to negotiate or sell goods without taking title",
+      "Only provides credit services",
+      "Manufactures goods for the principal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An agent acts on behalf of a principal to negotiate, promote or sell goods or services without taking ownership; they earn commission and the principal bears the commercial risks related to ownership.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is a disadvantage of credit sales to sellers?",
+    "options": [
+      "Immediate cash inflow",
+      "Risk of bad debts and late payments",
+      "Reduction in customer base",
+      "Increased liquidity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Credit sales can increase sales volume but expose sellers to risks such as bad debts, delayed collections and additional administrative costs for credit control, adversely affecting cash flow and profitability.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is an element of internal trade?",
+    "options": [
+      "Export of crude oil",
+      "Inter-state wholesale distribution of goods",
+      "Importation of machinery",
+      "Foreign direct investment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Internal trade refers to trade within a country's borders, including wholesale distribution across states. Exports and imports are international trade and FDI is an investment flow, not internal trade.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is defined as the process of selecting, training, appraising and compensating employees?",
+    "options": [
+      "Marketing management",
+      "Human resource management",
+      "Production management",
+      "Financial management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Human resource management (HRM) involves recruiting, selecting, training, performance appraisal, compensation and welfare of employees; it ensures the right personnel are available and motivated to achieve organizational goals.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following transport modes is most suitable for transporting perishable goods over short distances within cities?",
+    "options": [
+      "Air freight",
+      "Pipeline",
+      "Road transport",
+      "Sea freight"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Road transport offers flexibility, speed and door-to-door delivery ideal for perishable goods in urban areas. Air and sea are used for longer distances, while pipeline suits liquids and gases, not urban perishables.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following statements accurately describes the 'division of labour'?",
+    "options": [
+      "Each worker does all tasks in production",
+      "Workers are assigned specific tasks to increase efficiency and productivity",
+      "Work is performed only by machines",
+      "It eliminates the need for management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Division of labour breaks down production into specialized tasks assigned to different workers, increasing skill, speed and output per worker. It enhances efficiency but requires coordination and management.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which method of stock valuation values closing inventory at the price at which it was most recently purchased?",
+    "options": [
+      "FIFO (First In First Out)",
+      "LIFO (Last In First Out)",
+      "Specific identification",
+      "Weighted average"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "LIFO assumes the last items purchased are the first sold, so closing inventory is valued at earlier purchase prices. This contrasts with FIFO (oldest costs remain in inventory) and weighted average methods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is a responsibility of management in a business organization?",
+    "options": [
+      "Setting business objectives and coordinating resources to achieve them",
+      "Guaranteeing profit regardless of market conditions",
+      "Doing all manual work in the firm",
+      "Avoiding any changes in organizational structure"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Management is responsible for planning, setting objectives, organizing, directing and controlling resources to achieve organizational goals while adapting to market conditions; it cannot guarantee profits irrespective of circumstances.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is a key objective of international trade for developing countries?",
+    "options": [
+      "To reduce exports and increase imports",
+      "To earn foreign exchange, access technology and expand markets for domestic products",
+      "To prevent foreign direct investment",
+      "To ban all cross-border transactions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "International trade enables developing countries to earn foreign exchange, import capital goods and technology, and access larger markets for exports, which can stimulate economic growth and development.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best defines 'business ethics'?",
+    "options": [
+      "Strictly maximizing profits at any cost",
+      "Moral principles and standards guiding behaviour in business conduct",
+      "Avoiding taxes through illegal means",
+      "Using deception to increase sales"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Business ethics refers to moral principles guiding business behaviour, ensuring fairness, honesty and responsibility in dealings with stakeholders; unethical practices undermine trust and can lead to legal and reputational risks.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best describes 'market economy'?",
+    "options": [
+      "Resources are allocated by government decree",
+      "Production and prices are determined by supply and demand with minimal government intervention",
+      "All industries are publicly owned",
+      "No private ownership exists"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A market economy relies on supply and demand forces to allocate resources and determine prices, with limited government intervention, in contrast to command economies where government makes allocation decisions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which type of bank account typically allows unlimited deposits and withdrawals, and is suitable for business transactions?",
+    "options": [
+      "Fixed deposit account",
+      "Savings account with withdrawal restrictions",
+      "Current (checking) account",
+      "Dormant account"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Current or checking accounts are designed for businesses and individuals who need frequent transactions; they allow unlimited deposits and withdrawals and often provide cheque facilities and overdraft options.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best explains 'after-sales service' as a marketing tool?",
+    "options": [
+      "Services provided before the sale to attract customers",
+      "Maintenance, support and warranty provided after purchase to ensure customer satisfaction and loyalty",
+      "Discounts given during sales promotions",
+      "Product recalls only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "After-sales service includes maintenance, repairs, warranties, and customer support after purchase, improving customer satisfaction, encouraging repeat purchases, and enhancing brand reputation over time.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is the main objective of price discrimination by a firm?",
+    "options": [
+      "To sell the same product to all customers at one price",
+      "To increase profits by charging different prices to different customer groups based on willingness to pay",
+      "To reduce market coverage",
+      "To standardize product quality"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Price discrimination allows firms to segment the market and charge different prices to different groups according to elasticity of demand, thereby capturing consumer surplus and increasing overall profits.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best describes an invoice?",
+    "options": [
+      "A document issued by the buyer to acknowledge receipt of goods",
+      "A document issued by the seller requesting payment and detailing goods sold",
+      "A bank's promise to pay on behalf of a customer",
+      "A certificate of insurance for goods in transit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An invoice is prepared by the seller listing goods supplied, quantities, prices, and payment terms; it serves as a request for payment and a record for accounting purposes for both seller and buyer.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best explains the term 'overtrading' in business finance?",
+    "options": [
+      "Expanding business operations gradually with adequate capital",
+      "Excessive business expansion without adequate working capital leading to liquidity problems",
+      "Trading only with overseas customers",
+      "Avoiding credit sales completely"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Overtrading occurs when a firm expands sales or operations faster than available finance, causing strain on working capital, resulting in liquidity shortages and difficulty meeting short-term obligations.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is NOT a characteristic of a sole proprietorship?",
+    "options": [
+      "Single owner with full control",
+      "Limited liability for the owner",
+      "Business income taxed as personal income",
+      "Easier formation and low regulatory requirement"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sole proprietorships usually involve unlimited liability, meaning the owner is personally responsible for business debts. Limited liability is a feature of corporations, not sole proprietorships.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best defines 'franchising' as a form of business expansion?",
+    "options": [
+      "A parent company lending money to another firm",
+      "An arrangement where one party grants another the right to use its brand and business model for a fee",
+      "A merger between two companies",
+      "A cooperative buying arrangement among retailers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Franchising involves a franchisor granting a franchisee rights to operate under its brand and system in exchange for fees and royalties; it enables rapid expansion while leveraging local operators.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is NOT a role of the Nigeria Customs Service in international trade?",
+    "options": [
+      "Collection of import duties and taxes",
+      "Prevention of smuggling and enforcement of trade regulations",
+      "Regulation of banking interest rates",
+      "Facilitation of legitimate trade through customs clearance"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Customs handle duties, control smuggling, and facilitate legal trade at borders. Regulation of banking interest rates falls under the Central Bank or financial regulators, not customs authorities.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of these represents the correct sequence of stages in the product life cycle?",
+    "options": [
+      "Decline, Growth, Introduction, Maturity",
+      "Introduction, Growth, Maturity, Decline",
+      "Maturity, Introduction, Growth, Decline",
+      "Growth, Introduction, Decline, Maturity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The product life cycle typically follows Introduction (product launch), Growth (rising sales), Maturity (peak/steady sales), and Decline (falling sales) as market saturation and competition increase.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best describes the concept of 'opportunity cost' in business decision-making?",
+    "options": [
+      "The financial cost recorded in the accounts",
+      "The cost of a missed alternative when a choice is made",
+      "A government imposed tax on profits",
+      "Only the explicit monetary expenses"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Opportunity cost is the value of the next best alternative forgone when a decision is taken; it includes non-monetary benefits and is crucial for evaluating resource allocation in business.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following legal documents establishes a limited liability company?",
+    "options": [
+      "Partnership deed",
+      "Memorandum and Articles of Association",
+      "Certificate of occupancy",
+      "Bill of lading"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A company's establishment is formalized by the Memorandum and Articles of Association which set out its objectives, capital structure, and internal regulations; partnership deeds are for partnerships, not limited companies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following statements about inflation is CORRECT?",
+    "options": [
+      "Inflation refers to a sustained decrease in the general price level",
+      "Inflation reduces the purchasing power of money over time",
+      "Inflation makes every citizen richer in real terms",
+      "Inflation only affects foreign exchange rates and not domestic prices"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Inflation is a sustained rise in general price levels, which erodes the purchasing power of money: with inflation, each unit of currency buys fewer goods and services over time.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best explains 'vertical integration' as a corporate strategy?",
+    "options": [
+      "A company diversifies into unrelated businesses",
+      "A firm expands by acquiring firms at different stages of the same production or distribution chain",
+      "A business sells off all its assets",
+      "Merging with a competitor in the same industry at the same stage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Vertical integration occurs when a company acquires or merges with suppliers (backward) or distributors/retailers (forward) to control more stages of production and distribution, improving coordination and reducing costs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best describes the role of 'business plan' for entrepreneurs?",
+    "options": [
+      "A casual note about daily sales only",
+      "A detailed document outlining business objectives, strategies, financial forecasts and operational plans to guide and attract investors",
+      "Only required for obtaining a bank account",
+      "A legal certificate issued by the government"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A business plan outlines objectives, market analysis, strategy, operational and financial projections. It guides management decisions and is essential for attracting investors and lenders by demonstrating viability.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following best describes 'counterfoil' in the context of cheque payment?",
+    "options": [
+      "The part of a cheque retained by the bank",
+      "A part of the cheque kept by the drawer for record after issuing the cheque",
+      "The bank's stamp on a cleared cheque",
+      "A cancelled cheque used as identity proof"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A counterfoil is the stub or part of the cheque book that the drawer keeps as a record of cheques issued. It helps the drawer track payments and reconcile bank statements.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2019
+  }
+]

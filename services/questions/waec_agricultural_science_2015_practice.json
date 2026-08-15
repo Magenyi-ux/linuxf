@@ -1,0 +1,296 @@
+[
+  {
+    "text": "Which soil texture generally has the highest field capacity and thus holds the most plant-available water?",
+    "options": [
+      "Sandy soil",
+      "Loamy soil",
+      "Clay soil",
+      "Gravelly soil"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Clay soils have very small pores that hold water tightly and thus generally exhibit the highest field capacity. Although some water is held too tightly for roots, overall clay retains more water than sand or gravel, increasing available water storage in the soil profile.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Rhizobium bacteria form a symbiotic relationship with legumes primarily to:",
+    "options": [
+      "Decompose crop residues in the soil",
+      "Fix atmospheric nitrogen into forms usable by the plant",
+      "Increase soil acidity to release nutrients",
+      "Protect legumes against fungal diseases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Rhizobium bacteria infect legume roots and form nodules where they convert atmospheric nitrogen (N2) into ammonia or related compounds usable by the plant. This biological nitrogen fixation enriches soil nitrogen and reduces need for synthetic N fertilizers.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "One major agronomic benefit of rotating cereal crops with legumes is to:",
+    "options": [
+      "Increase the soil's sand content",
+      "Eliminate the need for irrigation",
+      "Break pest and disease cycles while improving soil nitrogen",
+      "Shorten the growing season of cereals"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Rotating cereals with legumes interrupts pest and pathogen life cycles specific to a crop and introduces biological nitrogen fixation from legumes, improving soil fertility. This reduces pest pressure and lowers nitrogen fertilizer requirements for following cereal crops.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which practice is most effective in reducing infestation of Striga (witchweed) in cereals?",
+    "options": [
+      "Continuous cereal monoculture",
+      "Frequent shallow hoeing",
+      "Crop rotation with trap or legume crops and use of resistant varieties",
+      "Increased nitrogen fertilizer without rotation"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Striga management relies on integrated approaches: crop rotation with non-host or trap crops and planting resistant varieties reduce Striga seed bank and parasitism. Sole reliance on fertilizer or shallow cultivation is insufficient to control Striga long-term.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "What is the ideal incubator temperature (approximate) for hatching chicken eggs?",
+    "options": [
+      "34.0\u00b0C",
+      "37.5\u00b0C",
+      "40.5\u00b0C",
+      "42.0\u00b0C"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The commonly recommended incubator temperature for chicken eggs is about 37.5\u00b0C (99.5\u00b0F). This temperature supports proper embryonic development; deviations can slow growth or increase malformations and mortality during incubation.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Excessive application of nitrogen fertilizer on cereal crops most commonly leads to:",
+    "options": [
+      "Improved resistance to lodging",
+      "Increased seed dormancy",
+      "Lodging and increased vegetative growth",
+      "Permanent soil acidity correction"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Too much nitrogen promotes excessive vegetative growth, producing tall, succulent stems that are more prone to lodging (falling over). Lodging reduces yield and complicates harvest; nitrogen must be balanced with plant needs and crop type.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "The main purpose of pasteurization of milk is to:",
+    "options": [
+      "Remove all fat completely",
+      "Sterilize milk for indefinite storage at room temperature",
+      "Reduce pathogenic microorganisms to safe levels",
+      "Concentrate milk solids"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Pasteurization involves heating milk to a specific temperature for a set time to kill or reduce pathogenic microorganisms. It improves safety and shelf life under refrigeration but does not sterilize milk for indefinite room-temperature storage.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a leguminous cover crop commonly used to fix nitrogen?",
+    "options": [
+      "Cowpea",
+      "Maize",
+      "Sorghum",
+      "Millet"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Cowpea is a leguminous crop that forms symbiosis with Rhizobium bacteria to fix atmospheric nitrogen into the soil. Unlike maize, sorghum, or millet (non-legumes), cowpea adds nitrogen and improves soil fertility as a cover or rotation crop.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which plant hormone is primarily responsible for apical dominance and cell elongation?",
+    "options": [
+      "Gibberellin",
+      "Cytokinin",
+      "Auxin (Indole-3-acetic acid)",
+      "Abscisic acid"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Auxins, especially indole-3-acetic acid (IAA), regulate apical dominance by suppressing lateral bud growth and promote cell elongation. Other hormones like gibberellins affect stem elongation differently, while ABA is involved in stress responses.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Most arable crops perform best in soils with a pH close to:",
+    "options": [
+      "4.5 (strongly acidic)",
+      "5.0 (acidic)",
+      "6.5 (slightly acidic to neutral)",
+      "8.5 (alkaline)"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A soil pH around 6.5 is slightly acidic to near neutral and is ideal for nutrient availability and root growth for many arable crops. Extreme acidity or alkalinity can limit nutrient uptake and harm crop performance.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a fundamental component of Integrated Pest Management (IPM)?",
+    "options": [
+      "Unlimited use of broad-spectrum pesticides",
+      "Complete elimination of natural enemies",
+      "Use of biological control methods and monitoring",
+      "Monoculture cropping without rotation"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "IPM emphasizes the use of multiple tactics, including biological control (natural enemies), cultural practices, monitoring pest levels, and selective pesticides only when necessary. This reduces reliance on broad-spectrum pesticides and conserves beneficial organisms.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "In animal breeding, continued inbreeding (mating of close relatives) most commonly results in:",
+    "options": [
+      "Increased heterozygosity and hybrid vigor",
+      "Increased homozygosity and expression of deleterious recessive traits",
+      "Immediate increase in productive lifespan",
+      "Automatic immunity to common diseases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Inbreeding increases the proportion of homozygous gene pairs, which can expose recessive deleterious alleles and lead to inbreeding depression\u2014reduced fitness, fertility, and vigor\u2014not increased heterozygosity or guaranteed disease immunity.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Green manure crops are used primarily to:",
+    "options": [
+      "Increase weed problems",
+      "Reduce soil organic matter",
+      "Improve soil structure and add organic nutrients when incorporated",
+      "Produce high cash income at harvest"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Green manure crops are grown to be incorporated into the soil, where they decompose and increase soil organic matter, improve structure, and supply nutrients (especially nitrogen from legumes), enhancing fertility rather than producing immediate cash income.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which group of microorganisms is mainly responsible for lactic silage fermentation?",
+    "options": [
+      "Fungi such as Aspergillus",
+      "Lactic acid bacteria (LAB)",
+      "Denitrifying bacteria",
+      "Nitrogen-fixing bacteria"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Lactic acid bacteria ferment plant sugars to lactic acid under anaerobic conditions, lowering pH and preserving the silage. Fungi and aerobic bacteria are undesirable in silage; LAB are essential for stable and palatable fermented forage.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Ideal planting depth for maize seeds under average Nigerian conditions is about:",
+    "options": [
+      "1 cm",
+      "3 cm",
+      "5 cm",
+      "10 cm"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Maize seeds are typically sown about 4\u20136 cm deep (around 5 cm) to ensure good soil contact and adequate moisture for germination without burying the seed too deep, which can delay emergence or exhaust seed reserves.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "In ruminant animals, the rumen is primarily important because it:",
+    "options": [
+      "Produces hydrochloric acid for digestion",
+      "Is the primary site of microbial fermentation of fibrous feeds",
+      "Stores bile for fat digestion",
+      "Is where eggs are formed"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The rumen hosts diverse microbes that ferment cellulose and other fibrous carbohydrates into volatile fatty acids for energy. This microbial fermentation enables ruminants to utilize fibrous feeds that monogastric animals cannot digest as effectively.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "A balanced NPK fertilizer such as 15-15-15 indicates:",
+    "options": [
+      "15% nitrogen, 15% phosphorus (as P2O5), 15% potassium (as K2O)",
+      "15 kg nitrogen, 15 kg phosphorus, 15 kg potassium per hectare",
+      "15% nitrogen only; phosphorus and potassium are trace elements",
+      "Fertilizer meant for only leafy vegetables"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "NPK labels indicate percentages of nitrogen (N), phosphorus expressed as P2O5, and potassium expressed as K2O. Thus 15-15-15 means each of the three primary nutrients is present at 15% by weight, providing balanced nutrition to crops.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Why is aeration (oxygen supply) important in fish pond management?",
+    "options": [
+      "It increases pond alkalinity only",
+      "Low dissolved oxygen can cause fish stress and mortality",
+      "It reduces water temperature to freezing",
+      "It eliminates all aquatic plant growth"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Dissolved oxygen is critical for fish respiration; low DO levels stress fish, reduce growth, increase disease susceptibility, and can cause mass mortalities. Aeration maintains adequate oxygen levels and supports a healthy pond ecosystem.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which cultural practice best reduces soil erosion on steep farmland slopes?",
+    "options": [
+      "Contour farming (planting along slope contours)",
+      "Clearing all vegetation for planting",
+      "Ploughing up and down the slope",
+      "Continuous burning of crop residue"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Contour farming places crop rows along natural contour lines, slowing water runoff and encouraging infiltration, which reduces erosion. Ploughing up and down slopes, clearing vegetation, or burning residues increases runoff and soil loss.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Curing yams before storage is done primarily to:",
+    "options": [
+      "Increase their immediate water content",
+      "Heal wounds and reduce storage rots by drying the skin",
+      "Make them sprout faster for planting",
+      "Soak them in water to enlarge size"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Curing yams\u2014keeping them in a warm, moderately dry place\u2014allows wound healing and skin hardening, which reduces invasion by pathogens and lowers rot incidence in storage. This extends shelf life and reduces post-harvest losses.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a recommended measure to conserve water and increase efficiency in smallholder irrigation?",
+    "options": [
+      "Flood irrigation over entire field with high frequency",
+      "Use of drip or furrow irrigation and scheduling based on crop needs",
+      "Irrigate only at night regardless of crop stage",
+      "Water only once at the beginning of the season"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Drip or well-managed furrow irrigation combined with scheduling according to crop water requirements reduces wastage, improves application efficiency, and conserves water compared to indiscriminate flood irrigation or single, untimed applications.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2015
+  }
+]

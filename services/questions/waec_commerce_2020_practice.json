@@ -1,0 +1,758 @@
+[
+  {
+    "text": "Which of the following best defines commerce?",
+    "options": [
+      "The buying and selling of goods only",
+      "All activities that facilitate the exchange of goods and services",
+      "Manufacturing of goods for local consumption",
+      "The study of money and banking exclusively"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce includes all activities that facilitate the exchange of goods and services such as transport, banking, insurance, warehousing and advertising. It is broader than mere buying and selling and covers auxiliaries to trade.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is an auxiliary to trade rather than trade itself?",
+    "options": [
+      "Retailing",
+      "Wholesaling",
+      "Transport",
+      "Exporting"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Transport is an auxiliary to trade because it helps move goods from producer to consumer. Unlike retailing and wholesaling which are direct trading activities, transport facilitates trade by providing physical movement.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "A sole proprietorship is best described as:",
+    "options": [
+      "A business owned by shareholders and managed by directors",
+      "A business where ownership and management are separate",
+      "A business owned and managed by one person with unlimited liability",
+      "A business formed by two or more people with limited liability"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A sole proprietorship is owned and managed by one person who has unlimited liability. The owner bears all risks and decisions, unlike companies where shareholders or partners share ownership or have limited liability.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains a cooperative society?",
+    "options": [
+      "A profit-maximizing company owned by investors",
+      "An organization formed to provide mutual help to members on democratic principles",
+      "A government-owned monopoly for public utilities",
+      "A partnership where all partners have equal liability"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cooperative society is formed to provide mutual assistance to members on democratic principles of one member one vote. It focuses on member welfare rather than pure profit maximization, unlike investor-owned companies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which document is normally required by a bank to open a current account for a company?",
+    "options": [
+      "Birth certificate of proprietor",
+      "Company Memorandum and Articles of Association",
+      "A copy of the shop lease only",
+      "Certificate of origin for goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Banks require the Memorandum and Articles of Association to open a corporate current account. These documents prove the company's legal existence, objectives and internal regulations and are essential for verification.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a primary function of advertising?",
+    "options": [
+      "To provide transport for goods",
+      "To inform and persuade potential customers about products or services",
+      "To act as a legal representative for businesses",
+      "To manage the internal finances of a firm"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising primarily informs and persuades potential customers about products and services, creating awareness, stimulating demand and differentiating brands. It is not responsible for transport, legal representation, or internal financial management.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which method of transport is most suitable for delivering perishable goods quickly over long distances?",
+    "options": [
+      "Rail transport",
+      "Water transport",
+      "Air transport",
+      "Pipeline transport"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Air transport provides the fastest delivery over long distances and is particularly suitable for perishable goods that require quick transit times, despite higher costs compared with rail or water transport.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "What is the main advantage of warehousing for producers?",
+    "options": [
+      "Increases production costs",
+      "Helps stabilize prices and ensures steady supply",
+      "Causes goods to perish faster",
+      "Eliminates need for marketing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Warehousing allows producers to store goods until demand rises, helping stabilize prices and ensure a steady supply. It reduces seasonal gluts and secures availability, contrary to increasing perishability or removing marketing needs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is NOT a characteristic of a joint stock company?",
+    "options": [
+      "Separate legal personality",
+      "Perpetual succession",
+      "Unlimited liability of members",
+      "Ability to sue and be sued"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Joint stock companies typically have limited liability for shareholders, not unlimited liability. They possess separate legal personality, perpetual succession, and can sue or be sued in their corporate name.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which negotiable instrument contains an unconditional order to pay a certain sum to a specified person or bearer?",
+    "options": [
+      "Promissory note",
+      "Cheque",
+      "Bill of exchange",
+      "Invoice"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of exchange is an unconditional written order by one party directing another to pay a certain sum to a specified person or bearer. A promissory note is a promise to pay, while an invoice is a commercial document.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following describes the primary market in the stock exchange context?",
+    "options": [
+      "Trading of existing shares among investors",
+      "Issuance of new securities to the public",
+      "Where government bonds are redeemed only",
+      "A market for commodities like cocoa"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The primary market deals with the issuance of new securities to the public, allowing companies to raise fresh capital. Trading existing securities happens in the secondary market, not the primary market.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a function of commercial banks?",
+    "options": [
+      "To mint currency",
+      "To accept deposits and grant loans",
+      "To set fiscal policy",
+      "To adjudicate trade disputes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial banks accept deposits, provide various types of accounts and grant loans and overdrafts. They do not mint currency, set fiscal policy or act as courts for trade disputes, which are government functions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which type of insurance covers loss or damage to goods while in transit by sea?",
+    "options": [
+      "Life insurance",
+      "Marine insurance",
+      "Fire insurance",
+      "Liability insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Marine insurance specifically covers loss or damage to goods during transit by sea and sometimes other transport modes. It protects cargo owners against perils of sea transport unlike life or fire insurance.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes a debit card?",
+    "options": [
+      "A card that allows borrowing from a bank up to a credit limit",
+      "A card that allows immediate withdrawal from the holder's bank account",
+      "A guarantee of payment from a bank to a seller",
+      "A long-term investment certificate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A debit card permits immediate withdrawal or payment directly from the cardholder's bank account. It is not a borrowing facility like a credit card, nor a payment guarantee or investment certificate.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is an example of indirect tax relevant to commerce students?",
+    "options": [
+      "Income tax",
+      "Capital gains tax",
+      "Value Added Tax (VAT)",
+      "Personal relief"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Value Added Tax is an indirect tax charged on the sale of goods and services and is ultimately borne by the consumer. Income and capital gains taxes are direct taxes on individuals or entities.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which pricing method sets prices based on the cost of production plus a desired profit margin?",
+    "options": [
+      "Penetration pricing",
+      "Cost-plus pricing",
+      "Psychological pricing",
+      "Price skimming"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cost-plus pricing involves calculating the total cost of production and adding a predetermined profit margin to set the selling price. Other methods like penetration or skimming use market strategies rather than direct cost calculations.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which document serves as proof of ownership and shipment of goods in international trade?",
+    "options": [
+      "Invoice",
+      "Certificate of incorporation",
+      "Bill of lading",
+      "Insurance proposal form"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of lading serves as evidence of the contract of carriage, receipt of goods and document of title to the goods. It is essential in international trade for ownership and shipment verification.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains market segmentation?",
+    "options": [
+      "Selling the same product to all consumers",
+      "Dividing a market into distinct groups with similar needs",
+      "Merging two markets into one large market",
+      "Collecting taxes from consumers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation is dividing a broad market into groups of consumers with similar characteristics or needs, allowing firms to target products and marketing more effectively than selling one product to everyone.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is the primary aim of public corporations in Nigeria?",
+    "options": [
+      "Maximizing shareholder dividends",
+      "Serving public interest and providing essential services",
+      "Operating as small private businesses",
+      "Avoiding government oversight"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Public corporations are established to provide essential public services and pursue social objectives rather than maximizing shareholder dividends. They operate under government oversight to serve public interest.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a correct statement about preference shares?",
+    "options": [
+      "They always carry voting rights",
+      "They entitle holders to fixed dividends before ordinary shareholders",
+      "They represent a loan with fixed interest",
+      "They are redeemable only after 100 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Preference shares usually entitle holders to fixed dividends that are paid before any dividends to ordinary shareholders. They may or may not carry voting rights and are equity, not loans with interest.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best defines balance of trade?",
+    "options": [
+      "Difference between a country's imports and exports of goods",
+      "Total amount of foreign reserves held by a country",
+      "Sum of all domestic taxes collected",
+      "Net inflow of foreign direct investment"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Balance of trade measures the difference between the value of a country's exports and imports of goods. A surplus occurs when exports exceed imports and a deficit when imports exceed exports.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which one of the following trade documents indicates the unit price, quality and quantity of goods sold and terms of sale?",
+    "options": [
+      "Delivery note",
+      "Proforma invoice",
+      "Certificate of origin",
+      "Packing list"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A proforma invoice details the unit price, quality, quantity and terms of sale as a preliminary bill sent to buyers before shipment. Other documents such as delivery notes and packing lists do not set prices and terms.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is an advantage of branding to a company?",
+    "options": [
+      "Reduces product differentiation",
+      "Lowers consumer loyalty",
+      "Enhances recognition and enables premium pricing",
+      "Eliminates need for customer service"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Branding enhances product recognition, builds customer loyalty, differentiates products and often allows firms to charge premium prices. It does not reduce differentiation or replace customer service needs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is true about a cheque?",
+    "options": [
+      "It is a written order by the payee to the drawer to pay a sum",
+      "It is an unconditional order drawn on a bank by a customer to pay a specified sum",
+      "It is a guarantee of payment by the government",
+      "It cannot be crossed"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cheque is an unconditional written order by a bank customer (drawer) directing the bank to pay a specified sum to the payee. Cheques can be crossed to limit payment to a bank account.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains the term 'liquidity' in business finance?",
+    "options": [
+      "Ability to generate long-term profits",
+      "Ability to meet short-term obligations with available assets",
+      "Total value of fixed assets owned",
+      "Level of market share held by the firm"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Liquidity refers to a firm's ability to meet short-term obligations using available current assets. High liquidity means obligations can be paid promptly; it is not a measure of long-term profits or fixed asset value.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a feature of effective distribution channels?",
+    "options": [
+      "They increase the number of intermediaries unnecessarily",
+      "They create gaps between producer and consumer",
+      "They ensure products are available to consumers at the right place and time",
+      "They focus exclusively on production efficiency"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Effective distribution channels ensure that products reach consumers at the right place and time, improving availability and customer satisfaction. They streamline intermediaries rather than increasing gaps between producer and consumer.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes a trade union?",
+    "options": [
+      "An association of employers seeking to fix wages",
+      "A government agency regulating imports",
+      "An organization of workers formed to protect their interests",
+      "A company policy document about employment"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A trade union is an organization of workers formed to protect and advance their economic and social interests through collective bargaining, representation and industrial actions if necessary.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'working capital'?",
+    "options": [
+      "Capital used to buy long-term assets only",
+      "The excess of current assets over current liabilities, used in day-to-day operations",
+      "Funds invested by shareholders as paid-up capital",
+      "Retained earnings held for future expansion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Working capital is the excess of current assets over current liabilities and is crucial for financing day-to-day operations, such as paying suppliers and meeting short-term obligations.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a disadvantage of import substitution policy for a developing country?",
+    "options": [
+      "Encourages dependence on foreign goods",
+      "May lead to inefficient local industries protected from competition",
+      "Reduces employment locally",
+      "Increases export revenues immediately"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Import substitution can protect local industries from competition which may lead to inefficiency, higher costs and poor quality. It does not encourage foreign dependence; rather it aims to reduce imports but may have negative long-term effects.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which financial statement shows the financial position of a business at a particular date?",
+    "options": [
+      "Income statement",
+      "Cash flow statement",
+      "Balance sheet (statement of financial position)",
+      "Budget report"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The balance sheet presents the financial position of a business at a specific date, showing assets, liabilities and owners equity. Income statements cover performance over a period, not a point in time.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'franchise' as a form of business expansion?",
+    "options": [
+      "A franchisor purchases outlets from franchisees",
+      "A business model where a franchisor grants a license to operate using its brand and methods",
+      "A government monopoly on essential services",
+      "A form of partnership between two equal companies"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A franchise involves a franchisor granting a license to a franchisee to use its brand, systems and business model in return for fees or royalties. It enables rapid expansion without owning all outlets directly.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a role of a freight forwarder in international trade?",
+    "options": [
+      "Manufacturing goods for export",
+      "Arranging shipment, documentation and customs clearance for exporters",
+      "Acting as a bank to finance export shipments",
+      "Issuing insurance policies to cargo owners"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Freight forwarders arrange transport, prepare shipping documents, coordinate customs clearance and handle logistics for exporters. They do not manufacture goods, provide banking finance or directly issue insurance policies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains 'psychological pricing'?",
+    "options": [
+      "Setting high prices to indicate premium quality",
+      "Using price points like 99.99 to make prices seem lower",
+      "Pricing solely based on production cost",
+      "Charging different countries different prices only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Psychological pricing involves setting prices like 99.99 to make them seem lower than they are, influencing consumer perception. It is a marketing tactic and differs from cost-based pricing or international price differentiation.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a reason for government to impose tariffs on imports?",
+    "options": [
+      "To promote free trade without restrictions",
+      "To protect domestic industries from foreign competition",
+      "To discourage local production",
+      "To decrease government revenue"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tariffs are taxes on imports often imposed to protect domestic industries from cheaper foreign competition, promote local production and raise government revenue, not to promote free trade or discourage local production.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best defines 'consumer protection' in commerce?",
+    "options": [
+      "Protecting producers from competition",
+      "Laws and practices that safeguard buyers from fraud, unsafe goods and unfair trade practices",
+      "Ensuring retailers maximize profits",
+      "Providing loans to consumers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consumer protection comprises laws and practices to shield buyers from harmful products, fraud, false advertising and unfair trade. It promotes safety, fair contracts and remedies, not the protection of producers or retailers.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is an example of direct export promotion by government?",
+    "options": [
+      "Providing export credit guarantees to exporters",
+      "Raising import tariffs",
+      "Limiting foreign exchange availability to exporters",
+      "Imposing quota on exports"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Providing export credit guarantees is a direct government measure to encourage exports by reducing financial risk for exporters. Raising import tariffs or imposing quotas are trade protection measures with different aims.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a key advantage of e-commerce for businesses?",
+    "options": [
+      "Limited market reach",
+      "24-hour availability and wider market access",
+      "Higher fixed overhead in physical stores",
+      "Guaranteed avoidance of all fraud"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "E-commerce offers round-the-clock availability, wider customer reach across regions, and lower marginal costs for scaling. It does not guarantee elimination of fraud and may reduce the need for large physical store overheads.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following statements about merchant bankers is correct?",
+    "options": [
+      "They act only as deposit-taking institutions for the public",
+      "They advise on corporate finance, underwriting and share issues",
+      "They exclusively issue insurance policies",
+      "They only provide cashiering services to retailers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Merchant bankers specialize in corporate finance services such as underwriting new issues, advising on mergers, acquisitions and capital restructuring. They are not generic deposit-taking banks or insurance issuers.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains 'just-in-time' inventory management?",
+    "options": [
+      "Maintaining large safety stocks to avoid shortages",
+      "Ordering and receiving goods only as they are needed for production",
+      "Storing goods for long-term appreciation",
+      "Rejecting all supplier deliveries"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Just-in-time inventory systems reduce holding costs by ordering and receiving inputs only when needed for production, minimizing stock levels and waste. It contrasts with maintaining large safety stocks or long-term storage.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a major role of advertising agencies?",
+    "options": [
+      "Manufacturing consumer goods",
+      "Planning, creating and placing advertisements on behalf of clients",
+      "Controlling government trade policies",
+      "Operating retail outlets"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising agencies plan, create, produce and place advertisements across media for client firms. They do not manufacture goods, control government policies or run retail outlets, though they may advise clients on marketing strategies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes a memorandum of association of a company?",
+    "options": [
+      "A document that contains internal rules and procedures of a company",
+      "A document stating the constitution, objectives and scope of a company",
+      "A quarterly financial report",
+      "A marketing plan for the company"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The memorandum of association sets out a company's constitution, objectives and authorized capital. It defines the scope of the company's activities, whereas internal rules are in the articles of association.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best exemplifies a service provided by insurance companies to businesses?",
+    "options": [
+      "Underwriting risk for property and casualty losses",
+      "Manufacturing safety equipment",
+      "Setting exchange rates",
+      "Issuing trading licenses to retailers"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Insurance companies underwrite risks by assuming potential losses for property, casualty or other perils in exchange for premiums. They provide risk management services rather than manufacturing equipment or regulating exchange rates.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which form of communication is most appropriate for detailed product information and technical specifications?",
+    "options": [
+      "Billboard advertisement",
+      "Technical brochure or catalogue",
+      "Short radio jingle",
+      "Banner at a trade fair entrance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A technical brochure or catalogue allows for detailed explanations of product features, specifications and usage. Short formats like radio jingles or billboards are better for awareness but cannot convey detailed technical data.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'price elasticity of demand'?",
+    "options": [
+      "Change in supply due to price change",
+      "Responsiveness of quantity demanded to a change in price",
+      "Tax on luxury goods",
+      "Consumer preference for branded goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Price elasticity of demand measures how sensitive the quantity demanded is to a change in price. High elasticity indicates consumers respond strongly to price changes, while low elasticity indicates weak response.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is NOT a responsibility of the Central Bank in Nigeria relevant to commerce?",
+    "options": [
+      "Issuing currency",
+      "Formulating and implementing monetary policy",
+      "Regulating commercial banks",
+      "Collecting direct taxes on behalf of federal government"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The Central Bank issues currency, regulates banks and implements monetary policy. It does not collect direct taxes; tax collection is the responsibility of tax authorities such as the Federal Inland Revenue Service.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following statements is true about business ethics?",
+    "options": [
+      "Business ethics only concerns legality and ignores morality",
+      "Business ethics involves moral principles guiding business conduct to gain public trust",
+      "Ethical behavior always reduces profitability",
+      "Ethics are irrelevant in international trade"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Business ethics involves moral principles guiding company behavior to build trust, ensure fair dealings and foster sustainability. Ethical practices can enhance reputation and profitability rather than always reducing it.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'foreign exchange rate' impact on exporters?",
+    "options": [
+      "A weaker domestic currency makes exports cheaper to foreign buyers",
+      "A stronger domestic currency makes exports cheaper abroad",
+      "Exchange rates have no effect on international sales",
+      "Exporters are always unaffected by currency fluctuations"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A weaker domestic currency lowers the price of exported goods in foreign currency terms, potentially boosting competitiveness. Exchange rate fluctuations do affect exporters and can alter profit margins and demand.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a principle of insurance?",
+    "options": [
+      "Insurable interest must exist at the time of claim only",
+      "Indemnity principle ensures insured is restored to original financial position after loss",
+      "Insurance encourages fraud",
+      "Double compensation is allowed for the same loss"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The principle of indemnity states the insured should not profit from a claim but be restored financially to the position before the loss. Insurable interest must exist at inception or claim depending on policy type.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following would be classified as working capital for a trading firm?",
+    "options": [
+      "Factory building",
+      "Long-term loan taken for expansion",
+      "Cash and stock of goods for resale",
+      "Land held for future use"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Working capital includes current assets like cash and stock of goods for resale used in daily operations. Fixed assets like buildings and land are not working capital, nor are long-term loans for expansion.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is most effective for promoting impulse purchases in retailing?",
+    "options": [
+      "Window displays and point-of-sale placements",
+      "Annual audited financial statements",
+      "Company articles of association",
+      "Long technical manuals"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Window displays and point-of-sale placements attract attention and encourage impulse buying by making products visible and appealing at the moment of purchase, unlike financial statements or technical manuals.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'franchisor' responsibilities in a franchise agreement?",
+    "options": [
+      "Providing the brand, training, and ongoing support to franchisees",
+      "Managing each individual franchise outlet directly",
+      "Financing every franchisee's operations entirely",
+      "Issuing legal judgments in trade disputes"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The franchisor supplies the brand, business system, initial training and ongoing support to franchisees. They do not manage each outlet directly or act as financier for all operations or a judicial authority.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which document is typically used to claim insurance for goods lost at sea?",
+    "options": [
+      "Insurance policy and bill of lading as proof of shipment and loss",
+      "Articles of association",
+      "Invoice to the buyer only",
+      "Certificate of incorporation"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "To claim marine insurance, the insured presents the insurance policy plus documents like the bill of lading and commercial invoice proving shipment and loss. Corporate documents like articles are not relevant.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best illustrates price discrimination?",
+    "options": [
+      "Charging students lower fares than adults for the same service",
+      "Charging everyone the same price for a product",
+      "Selling goods only in bulk",
+      "Offering a single loyalty discount to all customers"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Price discrimination involves charging different prices to different customer groups for the same product or service, such as student discounts. It differs from uniform pricing or universal discounts.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains the role of a clearing house in banking?",
+    "options": [
+      "Manufacturing coins and notes",
+      "Facilitating the settlement of cheques and interbank transfers",
+      "Issuing loans to retail customers directly",
+      "Regulating national fiscal policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A clearing house processes and settles cheques and interbank payments between banks, ensuring smooth transfer of funds. It does not manufacture currency, issue retail loans or set fiscal policy.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2020
+  }
+]

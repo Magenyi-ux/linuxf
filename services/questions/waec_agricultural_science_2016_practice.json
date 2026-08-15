@@ -1,0 +1,282 @@
+[
+  {
+    "text": "1. At which soil pH is phosphorus generally most available to most crops?",
+    "options": [
+      "A. 4.5",
+      "B. 5.0",
+      "C. 6.5",
+      "D. 8.0"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Phosphorus availability is highest in neutral to slightly acidic soils, around pH 6.0\u20137.0. At very low pH phosphorus is fixed by iron and aluminium; at high pH it precipitates with calcium, reducing availability.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "2. A maize field shows general yellowing beginning on the lower older leaves and stunted growth. Which nutrient deficiency is most likely?",
+    "options": [
+      "A. Phosphorus deficiency",
+      "B. Nitrogen deficiency",
+      "C. Potassium deficiency",
+      "D. Magnesium deficiency"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Nitrogen is mobile in the plant, so deficiency symptoms appear first on older leaves as uniform yellowing (chlorosis) and stunted growth. Phosphorus and potassium symptoms differ in distribution and color.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "3. Which farm practice will most directly increase nitrogen fixation in a legume crop?",
+    "options": [
+      "A. Inoculating seeds with appropriate Rhizobium strains",
+      "B. Applying high rates of inorganic nitrogen fertilizer",
+      "C. Deep ploughing before planting",
+      "D. Irrigating immediately after sowing"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Inoculating legume seed with suitable Rhizobium introduces effective bacteria that form root nodules and fix atmospheric nitrogen, directly increasing biological nitrogen fixation and improving plant nitrogen status.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "4. Which of the following clinical signs is most typical of anthrax in cattle?",
+    "options": [
+      "A. Chronic weight loss and coughing",
+      "B. Lameness and swollen joints",
+      "C. Skin crusts and scabs",
+      "D. Sudden death often with bleeding from natural orifices"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Anthrax often causes sudden death in susceptible animals; post-mortem bleeding from mouth, nose and other orifices and rapid decomposition are characteristic. It is an acute, highly fatal bacterial disease.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "5. What is the principal benefit of practicing crop rotation on a farm?",
+    "options": [
+      "A. Breaks pest and disease cycles and improves soil fertility",
+      "B. Increases the population of the same pests",
+      "C. Causes rapid soil erosion if done frequently",
+      "D. Reduces labour requirements dramatically"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Crop rotation alternates crops with different pest and nutrient requirements; this interrupts pest and disease life cycles and can improve soil fertility (for example by including legumes), thereby improving yields sustainably.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "6. Which irrigation method is generally the most water-efficient for row crops in dry conditions?",
+    "options": [
+      "A. Flood irrigation",
+      "B. Furrow irrigation",
+      "C. Sprinkler irrigation",
+      "D. Drip irrigation"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Drip irrigation applies water directly to the root zone at low rates, reducing evaporation and runoff. It is the most efficient in water use compared with flood, furrow, or typical sprinkler systems.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "7. The law of diminishing returns states that:",
+    "options": [
+      "A. Total output falls as more of a variable input is added",
+      "B. Average cost increases indefinitely as production rises",
+      "C. Additional output from successive equal increases in a variable input will eventually decrease",
+      "D. Fixed inputs can be increased without affecting marginal returns"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The law of diminishing returns means that after a certain point, adding more of a variable input (e.g., labour) to fixed inputs yields smaller increases in output; marginal product per unit of input declines.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "8. Which pasteurization condition is typical of High Temperature Short Time (HTST) milk pasteurization?",
+    "options": [
+      "A. 63\u00b0C for 30 minutes",
+      "B. 72\u00b0C for 15 seconds",
+      "C. 100\u00b0C for 1 second",
+      "D. 55\u00b0C for 2 minutes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "HTST pasteurization commonly uses 72\u00b0C for 15 seconds to effectively reduce pathogenic microorganisms while preserving milk quality. The lower-temperature long-time method is 63\u00b0C for 30 minutes.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "9. Which statement best describes a systemic pesticide?",
+    "options": [
+      "A. It remains only on the treated surface and kills on contact",
+      "B. It is absorbed and translocated within the plant, controlling pests feeding on the plant",
+      "C. It only repels insects but does not kill them",
+      "D. It degrades immediately on exposure to sunlight"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Systemic pesticides are absorbed by plant tissues and move internally through xylem or phloem, so pests feeding on the plant ingest the chemical. Contact pesticides remain on surfaces and act externally.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "10. Among the following soil textures, which generally has the highest available water-holding capacity?",
+    "options": [
+      "A. Sand",
+      "B. Silt",
+      "C. Clay",
+      "D. Loam"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Clay soils have very fine particles and a large surface area, allowing them to hold more water per unit volume than sand or silt. However, much of this water may be tightly held and less available to plants.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "11. What is the recommended age for first calving of a well-managed dairy heifer under tropical conditions?",
+    "options": [
+      "A. 18 months",
+      "B. 24 months",
+      "C. 30 months",
+      "D. 36 months"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A first calving at about 24 months is a common target for dairy heifers under good management. It balances growth and reproductive maturity, optimising lifetime productivity and reducing rearing costs.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "12. Which plant hormone is most directly involved in stimulating root formation in cuttings?",
+    "options": [
+      "A. Auxin",
+      "B. Cytokinin",
+      "C. Gibberellin",
+      "D. Ethylene"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Auxins (for example IBA or IAA) promote root initiation and formation in cuttings. Cytokinins promote shoot growth, gibberellins stimulate stem elongation, and ethylene influences ripening and stress responses.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "13. The common primary insect pest of stored maize in smallholder farms is:",
+    "options": [
+      "A. Lesser grain borer (Rhyzopertha dominica)",
+      "B. Flour beetle (Tribolium castaneum)",
+      "C. Maize weevil (Sitophilus zeamais)",
+      "D. Rodent (Rattus spp.)"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The maize weevil (Sitophilus zeamais) is a frequent primary pest of stored maize in tropical smallholder settings, attacking whole grains and causing significant post-harvest losses if not controlled.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "14. Interveinal chlorosis on young leaves while older leaves remain green is most indicative of deficiency of which element?",
+    "options": [
+      "A. Nitrogen (N)",
+      "B. Phosphorus (P)",
+      "C. Potassium (K)",
+      "D. Iron (Fe)"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Iron is immobile in plants, so deficiency symptoms appear first on young leaves as interveinal chlorosis while older leaves remain green. Nitrogen deficiency shows uniform yellowing on older leaves first.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "15. Which factor commonly causes stomatal closure in plants?",
+    "options": [
+      "A. High light intensity",
+      "B. Excess soil water",
+      "C. High atmospheric humidity",
+      "D. Water deficit (drought) in the soil"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "During water deficit or drought, plants close stomata to reduce transpiration and conserve water. This response is mediated by signals such as abscisic acid and helps prevent dehydration but limits CO2 uptake.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "16. Which best describes a fixed cost on a farm?",
+    "options": [
+      "A. A cost that does not change with the level of production",
+      "B. A cost that varies directly with output",
+      "C. A cost that can be adjusted daily",
+      "D. A cost incurred only when production stops"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Fixed costs (e.g., rent, machinery depreciation) remain constant irrespective of production level within a relevant range. They do not vary with short-term changes in output, unlike variable costs such as feed or seed.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "17. Which grass is commonly recommended as a good perennial pasture for the humid tropics of Nigeria?",
+    "options": [
+      "A. Pennisetum purpureum (Napier grass)",
+      "B. Panicum maximum (Guinea grass)",
+      "C. Stylosanthes guianensis (Stylo)",
+      "D. Centrosema pubescens"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Panicum maximum (Guinea grass) is widely used as a perennial pasture in humid tropical regions because of its adaptability, good forage yield and quality. Napier is also used but is more suitable for cut-and-carry systems.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "18. Which soil conservation practice is most appropriate to reduce runoff and erosion on sloping farmland?",
+    "options": [
+      "A. Heavy application of fertilizers",
+      "B. Contour ploughing (ploughing along contours)",
+      "C. Overgrazing to reduce vegetation",
+      "D. Continuous monocropping upslope"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Contour ploughing follows the slope contours and creates furrows that slow water flow, reduce runoff velocity and soil loss. It is a practical conservation practice on slopes compared with the destructive alternatives listed.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "19. In the Kjeldahl method for estimating crude protein, which conversion factor is commonly used to convert nitrogen percentage to protein percentage?",
+    "options": [
+      "A. 5.7",
+      "B. 6.25",
+      "C. 7.14",
+      "D. 4.16"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Kjeldahl method measures nitrogen; crude protein is estimated by multiplying percent nitrogen by a conversion factor, commonly 6.25, based on average nitrogen content of proteins (approximately 16%).",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "20. Which type of plough is most suitable for primary tillage on heavy clay soils to invert and bury residues?",
+    "options": [
+      "A. Disc harrow",
+      "B. Chisel plough",
+      "C. Mouldboard plough",
+      "D. Rotavator"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The mouldboard plough is designed to cut, lift and invert soil, burying residues and breaking up heavy clay soils for seedbed preparation. Disc and chisel ploughs have different actions and uses.",
+    "subject": "Agricultural Science",
+    "examType": "WAEC",
+    "examYear": 2016
+  }
+]

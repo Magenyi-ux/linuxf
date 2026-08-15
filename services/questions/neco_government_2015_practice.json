@@ -1,0 +1,170 @@
+[
+  {
+    "text": "Which of the following is an essential feature of a state?",
+    "options": [
+      "A written constitution",
+      "Sovereignty",
+      "A president",
+      "Political parties"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sovereignty is a defining attribute of a state.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "The legislature is primarily concerned with",
+    "options": [
+      "executing policies",
+      "lawmaking and oversight",
+      "judging cases",
+      "collecting taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The legislature makes laws and holds the executive accountable.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "The Nigerian Constitution is described as rigid because",
+    "options": [
+      "it cannot be amended",
+      "its amendment requires a special procedure",
+      "it is written by the military",
+      "it is unwritten"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Rigid constitutions require special amendment procedures.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "The rule of law means",
+    "options": [
+      "rule by the president",
+      "equality before the law and supremacy of the law",
+      "rule by the military",
+      "rule by the rich"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The rule of law ensures no one is above the law.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "In a parliamentary system, the head of government is the",
+    "options": [
+      "president",
+      "prime minister",
+      "chief justice",
+      "monarch"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The prime minister heads the executive in a parliamentary system.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "The Nigerian legislature is bicameral because it has",
+    "options": [
+      "the President and Vice President",
+      "the Senate and House of Representatives",
+      "the Governor and Deputy",
+      "the Supreme Court and Appeal Court"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The National Assembly comprises the Senate and House of Representatives.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "A political party is an organization that",
+    "options": [
+      "builds roads",
+      "seeks to capture and exercise political power",
+      "provides healthcare",
+      "collects taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Political parties aim to gain governmental power through elections.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "Franchise is the right to",
+    "options": [
+      "free speech",
+      "vote in elections",
+      "own property",
+      "bear arms"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Franchise (suffrage) is the right to vote.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "The first-past-the-post electoral system awards victory to",
+    "options": [
+      "the candidate with the highest votes",
+      "all candidates",
+      "the party with most seats",
+      "the president's choice"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "First-past-the-post is a plurality system.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "The secret ballot system ensures",
+    "options": [
+      "public voting",
+      "voter privacy and freedom from intimidation",
+      "vote buying",
+      "open counting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Secret ballot protects voters' choices.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "The opposition in a democracy serves to",
+    "options": [
+      "support all government policies",
+      "check and challenge the government",
+      "form a parallel government",
+      "dissolve the legislature"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The opposition provides alternatives and accountability.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  },
+  {
+    "text": "The first executive president of Nigeria was",
+    "options": [
+      "Nnamdi Azikiwe",
+      "Tafawa Balewa",
+      "Shehu Shagari",
+      "Olusegun Obasanjo"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Shehu Shagari was the first executive president under the 1979 Constitution.",
+    "subject": "Government",
+    "examType": "NECO",
+    "examYear": 2015
+  }
+]

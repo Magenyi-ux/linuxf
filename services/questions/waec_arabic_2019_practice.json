@@ -1,0 +1,758 @@
+[
+  {
+    "text": "Choose the correct plural form of the Arabic word '\u0645\u064e\u062f\u0650\u064a\u0646\u064e\u0629'.",
+    "options": [
+      "\u0645\u064e\u062f\u064e\u0627\u0626\u0650\u0646",
+      "\u0645\u064f\u062f\u064f\u0646",
+      "\u0645\u064f\u062f\u064f\u0646\u0627\u062a",
+      "\u0645\u064e\u062f\u064e\u0646"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "\u0645\u064e\u062f\u0650\u064a\u0646\u064e\u0629 (city) has the broken plural pattern \u0645\u064e\u062f\u064e\u0627\u0626\u0650\u0646 which is the canonical plural for this pattern. \u0645\u064f\u062f\u064f\u0646 is for a different pattern and \u0645\u064e\u062f\u064e\u0646 is incorrect here; therefore \u0645\u064e\u062f\u064e\u0627\u0626\u0650\u0646 is correct.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which option correctly translates the sentence: 'He writes a letter' into Arabic?",
+    "options": [
+      "\u0647\u0648 \u064a\u0643\u062a\u0628 \u0631\u0633\u0627\u0644\u0629",
+      "\u0647\u0648 \u0643\u062a\u0628 \u0631\u0633\u0627\u0644\u0629",
+      "\u0647\u0648 \u064a\u0642\u0631\u0623 \u0631\u0633\u0627\u0644\u0629",
+      "\u0647\u0648 \u064a\u0643\u062a\u0628 \u0631\u0633\u0627\u0626\u0644"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The present tense 'He writes' is '\u0647\u0648 \u064a\u0643\u062a\u0628' and 'a letter' is '\u0631\u0633\u0627\u0644\u0629'. Option 0 accurately uses present tense and singular object, matching the English sentence precisely.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Identify the feminine form of the adjective '\u0643\u064e\u0628\u064a\u0631' (big) in Arabic.",
+    "options": [
+      "\u0643\u064e\u0628\u064a\u0631\u064e\u0629",
+      "\u0643\u064e\u0628\u064a\u0631\u064e\u0627\u0646",
+      "\u0643\u0650\u0628\u0627\u0631",
+      "\u0643\u0650\u0628\u064e\u0627\u0631\u064e\u0629"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The regular feminine of adjectival forms ending with a consonant is formed by adding the t\u0101\u02be marb\u016b\u1e6da: '\u0643\u064e\u0628\u064a\u0631' becomes '\u0643\u064e\u0628\u064a\u0631\u064e\u0629'. The other options are plural or incorrect formations.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which particle is used in Arabic to form a negation in the past tense?",
+    "options": [
+      "\u0644\u0627",
+      "\u0644\u0646",
+      "\u0645\u0627",
+      "\u0644\u0645"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "To negate past-tense verbs, Arabic uses '\u0644\u0645' with the jussive form of the verb. '\u0644\u0627' negates present, '\u0644\u0646' negates future, and '\u0645\u0627' can negate past in colloquial uses but classical uses '\u0644\u0645'.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the correct passive voice of the verb '\u0643\u064e\u062a\u064e\u0628\u064e' (he wrote) in past tense.",
+    "options": [
+      "\u0643\u064f\u062a\u0650\u0628\u064e",
+      "\u0643\u064e\u062a\u064e\u0628\u064e",
+      "\u064a\u064f\u0643\u0652\u062a\u064e\u0628\u064f",
+      "\u0643\u064f\u062a\u0650\u0628\u064e\u062a\u0652"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The passive past of the third-person singular masculine form '\u0643\u064e\u062a\u064e\u0628\u064e' is '\u0643\u064f\u062a\u0650\u0628\u064e'. Option 2 is passive present, option 3 is feminine passive past, and option 1 is active past.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "What is the correct translation of the phrase '\u0642\u0650\u0635\u0651\u064e\u0629\u064c \u0645\u064f\u0624\u064e\u062b\u0651\u0650\u0631\u064e\u0629'?",
+    "options": [
+      "An interesting story",
+      "A funny story",
+      "An influential story",
+      "An affecting/emotional story"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "'\u0645\u064f\u0624\u064e\u062b\u0651\u0650\u0631\u064e\u0629' comes from the root meaning to affect or move emotionally; thus '\u0642\u0650\u0635\u0651\u064e\u0629\u064c \u0645\u064f\u0624\u064e\u062b\u0651\u0650\u0631\u064e\u0629' is best translated as 'an affecting' or 'an emotional' story, not merely interesting.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Select the correct dual form (Mudiith) of the noun '\u0637\u0627\u0644\u0628' (student).",
+    "options": [
+      "\u0637\u0627\u0644\u0628\u0627\u0646\u0650",
+      "\u0637\u0627\u0644\u0628\u0648\u0646\u064e",
+      "\u0637\u0644\u0627\u0628",
+      "\u0637\u0627\u0644\u0628\u062a\u0627\u0646\u0650"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The dual nominative form for masculine nouns is formed with '-\u0627\u0646\u0650' giving '\u0637\u0627\u0644\u0628\u0627\u0646\u0650'. '\u0637\u0627\u0644\u0628\u0648\u0646\u064e' is the masculine sound plural, '\u0637\u0644\u0627\u0628' is broken plural, and '\u0637\u0627\u0644\u0628\u062a\u0627\u0646\u0650' is the feminine dual.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which relative pronoun correctly completes the sentence: '\u0647\u0630\u0627 \u0627\u0644\u0631\u062c\u0644 ____ \u064a\u0639\u0645\u0644 \u0641\u064a \u0627\u0644\u0645\u0633\u062a\u0634\u0641\u0649'?",
+    "options": [
+      "\u0627\u0644\u0630\u064a",
+      "\u0627\u0644\u0644\u0627\u062a\u064a",
+      "\u0627\u0644\u0644\u0648\u0627\u062a\u064a",
+      "\u0627\u0644\u0644\u0630\u0627\u0646"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "For a singular masculine antecedent '\u0627\u0644\u0631\u062c\u0644', the correct relative pronoun is '\u0627\u0644\u0630\u064a'. '\u0627\u0644\u0644\u0630\u0627\u0646' is dual, while '\u0627\u0644\u0644\u0627\u062a\u064a' and '\u0627\u0644\u0644\u0648\u0627\u062a\u064a' are feminine plural forms, so they are incorrect here.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Identify the correct translation of '\u0623\u064e\u062d\u0652\u0645\u064e\u062f\u064f \u0623\u064e\u0643\u0652\u0628\u064e\u0631\u064f \u0645\u0650\u0646\u0652 \u0645\u064f\u0635\u0652\u0637\u064e\u0641\u064e\u0649' into English.",
+    "options": [
+      "Ahmad is taller than Mustafa.",
+      "Ahmad is the tallest among Mustafa.",
+      "Mustafa is older than Ahmad.",
+      "Ahmad is smaller than Mustafa."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u0623\u064e\u0643\u0652\u0628\u064e\u0631\u064f' here is a comparative meaning 'bigger/older/taller' depending on context. The sentence '\u0623\u064e\u062d\u0652\u0645\u064e\u062f\u064f \u0623\u064e\u0643\u0652\u0628\u064e\u0631\u064f \u0645\u0650\u0646\u0652 \u0645\u064f\u0635\u0652\u0637\u064e\u0641\u064e\u0649' is correctly rendered as 'Ahmad is taller/older than Mustafa.' Option 0 captures the comparative correctly.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which word is the opposite (antonym) of '\u0633\u064e\u0639\u064a\u062f'?",
+    "options": [
+      "\u0645\u064e\u062d\u0652\u0638\u0648\u0638",
+      "\u062d\u0632\u064a\u0646",
+      "\u063a\u064e\u0646\u064a",
+      "\u0634\u064e\u062c\u0627\u0639"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'\u0633\u064e\u0639\u064a\u062f' means happy; its opposite is '\u062d\u0632\u064a\u0646' meaning sad. '\u0645\u064e\u062d\u0652\u0638\u0648\u0638' means lucky, '\u063a\u064e\u0646\u064a' rich, and '\u0634\u064e\u062c\u0627\u0639' brave, none of which are direct antonyms of happy.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the correct preposition to complete: '\u0627\u0644\u0643\u062a\u0627\u0628 \u0639\u0644\u0649 \u0627\u0644\u0637\u0627\u0648\u0644\u0629' \u2014 which English preposition matches '\u0639\u0644\u0649'?",
+    "options": [
+      "In",
+      "Under",
+      "On",
+      "Beside"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Arabic preposition '\u0639\u0644\u0649' corresponds to the English preposition 'on', indicating contact or surface relation. 'In' is '\u0641\u064a', 'under' is '\u062a\u062d\u062a', and 'beside' is '\u0628\u062c\u0627\u0646\u0628' or '\u0642\u0631\u0628'.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is the imperative form (command) of the verb '\u064a\u064e\u0643\u062a\u0628' for the second-person masculine singular?",
+    "options": [
+      "\u0627\u0650\u0643\u0652\u062a\u064f\u0628\u0652",
+      "\u062a\u064e\u0643\u0652\u062a\u064f\u0628\u064f",
+      "\u0643\u064e\u062a\u064e\u0628\u064e",
+      "\u064a\u064e\u0643\u0652\u062a\u064f\u0628\u064f"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The imperative of '\u064a\u064e\u0643\u062a\u064f\u0628\u064f' (he writes) for second-person masculine singular is '\u0627\u0650\u0643\u0652\u062a\u064f\u0628\u0652'. Options 2 and 4 are past and present forms, and 2 is present indicative second person, not imperative.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "In the sentence '\u0630\u0647\u0628\u062a\u064f \u0625\u0644\u0649 \u0627\u0644\u0633\u0648\u0642\u0650', what is the grammatical case of '\u0627\u0644\u0633\u0648\u0642\u0650'?",
+    "options": [
+      "Nominative (\u0645\u0631\u0641\u0648\u0639)",
+      "Accusative (\u0645\u0646\u0635\u0648\u0628)",
+      "Genitive (\u0645\u062c\u0631\u0648\u0631)",
+      "Vocative (\u0645\u0646\u0627\u062f\u0649)"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The preposition '\u0625\u0644\u0649' governs the genitive case; therefore the noun following it takes the genitive ending. '\u0627\u0644\u0633\u0648\u0642\u0650' is in the genitive (\u0645\u062c\u0631\u0648\u0631) case, indicated by kasra in full vocalization.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Select the correct translation: '\u0627\u0644\u0645\u0639\u0644\u0651\u0645 \u064a\u0634\u0631\u062d \u0627\u0644\u062f\u0631\u0633 \u0628\u0648\u0636\u0648\u062d'.",
+    "options": [
+      "The teacher writes the lesson clearly.",
+      "The teacher explains the lesson clearly.",
+      "The student explains the lesson clearly.",
+      "The teacher hides the lesson clearly."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'\u064a\u0634\u0631\u062d' means 'explains', '\u0627\u0644\u0645\u0639\u0644\u0651\u0645' is 'the teacher', and '\u0628\u0648\u0636\u0648\u062d' is 'clearly'. So the sentence correctly translates to 'The teacher explains the lesson clearly.'",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of these is a correct broken plural of '\u0642\u064e\u0644\u064e\u0645' (pen)?",
+    "options": [
+      "\u0642\u064f\u0644\u064f\u0648\u0645",
+      "\u0623\u064e\u0642\u0652\u0644\u064e\u0627\u0645",
+      "\u0642\u064e\u0644\u064e\u0645\u064e\u0627\u062a",
+      "\u0642\u064e\u0644\u064e\u0645\u064f\u0648\u0646\u064e"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The standard broken plural of '\u0642\u064e\u0644\u064e\u0645' is '\u0623\u064e\u0642\u0652\u0644\u064e\u0627\u0645'. Options 0 and 3 are nonstandard formations, and option 2 is a feminine sound plural which is not used for this noun.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Identify the function of the particle '\u0633\u0648\u0641' in Arabic.",
+    "options": [
+      "Negation",
+      "Emphasis",
+      "Future tense marker",
+      "Question particle"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'\u0633\u0648\u0641' is used to indicate future tense in Modern Standard Arabic, marking actions that will take place. It does not negate, emphasize, or form questions; therefore it serves as a future marker.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which is the correct translation of '\u0648\u064e\u0644\u0643\u0650\u0646\u0651\u064e' when used at the start of a sentence?",
+    "options": [
+      "Because",
+      "And",
+      "But",
+      "Or"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'\u0648\u064e\u0644\u0643\u0650\u0646\u0651\u064e' is the conjunction 'but' (with the emphatic particle -anna), used to introduce a contrast. 'And' is '\u0648', 'because' is '\u0644\u0623\u0646', and 'or' is '\u0623\u0648'.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the correct antonym for '\u0642\u0631\u064a\u0628' (near).",
+    "options": [
+      "\u0628\u064e\u0639\u0650\u064a\u062f",
+      "\u0636\u064e\u0626\u064a\u0644",
+      "\u0643\u0628\u064a\u0631",
+      "\u0635\u063a\u064a\u0631"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u0642\u0631\u064a\u0628' means near; its antonym is '\u0628\u064e\u0639\u0650\u064a\u062f' meaning far. '\u0643\u0628\u064a\u0631' and '\u0635\u063a\u064a\u0631' are size adjectives, and '\u0636\u064e\u0626\u064a\u0644' means small in number or insignificant, not the opposite of near.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which morphological pattern (\u0648\u0632\u0646) corresponds to the verb '\u0627\u0633\u062a\u064e\u062e\u062f\u064e\u0645\u064e'?",
+    "options": [
+      "\u0641\u064e\u0639\u064e\u0644\u064e",
+      "\u0627\u0633\u062a\u064e\u0641\u0652\u0639\u064e\u0644\u064e",
+      "\u062a\u064e\u0641\u064e\u0639\u064e\u0651\u0644\u064e",
+      "\u0641\u0627\u0639\u064e\u0644\u064e"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'\u0627\u0633\u062a\u064e\u062e\u062f\u064e\u0645\u064e' follows the pattern '\u0627\u0633\u062a\u064e\u0641\u0652\u0639\u064e\u0644\u064e', which denotes seeking or receiving the quality of the root. The other patterns listed are different verb forms and do not match this morphology.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Identify the correct possessive pronoun to complete: '\u0647\u0630\u0627 \u0643\u062a\u0627\u0628\u064f ____' meaning 'this is his book'.",
+    "options": [
+      "\u0647\u0650\u064a\u064e",
+      "\u0647\u064f\u0645",
+      "\u0647\u064f\u0648\u064e",
+      "\u0647\u064f"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The possessive suffix for 'his' is '-\u0647\u064f' attached to the noun: '\u0643\u062a\u0627\u0628\u064f\u0647\u064f'. The other options are independent pronouns, not possessive suffixes, so '-\u0647\u064f' is appropriate here.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which sentence correctly uses the accusative particle '\u0623\u0646\u0652'?",
+    "options": [
+      "\u0623\u0631\u064a\u062f \u0623\u0646 \u0623\u062f\u0631\u0633\u064e \u0627\u0644\u0644\u064a\u0644\u0629\u064e",
+      "\u0647\u0648 \u0623\u0646 \u064a\u0630\u0647\u0628\u064e \u0627\u0644\u0622\u0646",
+      "\u0623\u0646 \u0630\u064e\u0647\u064e\u0628\u064e \u0625\u0644\u0649 \u0627\u0644\u0633\u0648\u0642",
+      "\u0630\u0647\u0628\u062a \u0623\u0646 \u0627\u0644\u0645\u062f\u0631\u0633\u0629"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u0623\u0646\u0652' followed by the subjunctive verb is used after verbs of desire: '\u0623\u0631\u064a\u062f \u0623\u0646 \u0623\u062f\u0631\u0633\u064e' is correct. Option 1 misorders pronouns, option 3 is incorrect construction, and option 4 is ungrammatical.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Select the correct translation: '\u0627\u0644\u0635\u0651\u064e\u062f\u0650\u064a\u0642 \u0627\u0644\u0648\u064e\u0641\u0650\u064a\u0651' into English.",
+    "options": [
+      "The friendly friend",
+      "The loyal friend",
+      "The wealthy friend",
+      "The old friend"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'\u0648\u064e\u0641\u0650\u064a\u0651' means loyal or faithful. Therefore '\u0627\u0644\u0635\u0651\u064e\u062f\u0650\u064a\u0642 \u0627\u0644\u0648\u064e\u0641\u0650\u064a\u0651' translates to 'the loyal friend'. The other options represent different adjectives not matching '\u0648\u064e\u0641\u0650\u064a\u0651'.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following sentences correctly uses the relative pronoun for feminine plural?",
+    "options": [
+      "\u0627\u0644\u0628\u0646\u0627\u062a \u0627\u0644\u0644\u0627\u062a\u064a \u064a\u062f\u0631\u0633\u0646\u064e \u0645\u062c\u062a\u0647\u062f\u0627\u062a",
+      "\u0627\u0644\u0628\u0646\u0627\u062a \u0627\u0644\u0630\u064a\u0646 \u064a\u062f\u0631\u0633\u0646\u064e \u0645\u062c\u062a\u0647\u062f\u0627\u062a",
+      "\u0627\u0644\u0628\u0646\u0627\u062a \u0627\u0644\u0644\u0648\u0627\u062a\u064a \u064a\u062f\u0631\u0633\u0646\u064e \u0645\u062c\u062a\u0647\u062f\u0627\u062a",
+      "\u0627\u0644\u0628\u0646\u0627\u062a \u0627\u0644\u0630\u064a\u0646 \u064a\u062f\u0631\u0633\u0652\u0646\u064e \u0645\u062c\u062a\u0647\u062f\u0627\u062a"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "For feminine plural antecedents the relative pronoun '\u0627\u0644\u0644\u0648\u0627\u062a\u064a' (or '\u0627\u0644\u0644\u0627\u062a\u064a' in some dialects) is correct. Option 3 misuses verb conjugation; option 1 and 2 use incorrect relative pronouns for feminine plural.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Identify which sentence shows correct agreement between noun and adjective in gender and number: '\u0627\u0644\u0623\u0633\u0627\u062a\u0630\u0629 ____ \u0645\u062c\u062a\u0647\u062f\u0648\u0646'.",
+    "options": [
+      "\u0627\u0644\u0645\u062c\u062a\u0647\u062f\u0648\u0646",
+      "\u0627\u0644\u0645\u062c\u062a\u0647\u062f\u0629",
+      "\u0645\u062c\u062a\u0647\u062f\u0648\u0646",
+      "\u0645\u062c\u062a\u0647\u062f\u0627\u062a"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'\u0627\u0644\u0623\u0633\u0627\u062a\u0630\u0629' is masculine plural, so the adjective must be masculine plural without the definite article if not specified: '\u0645\u062c\u062a\u0647\u062f\u0648\u0646' correctly matches in gender and number. Option 1 is definite, option 4 feminine plural.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is a correct translation of '\u0623\u064f\u062d\u0650\u0628\u0651\u064f \u062a\u064e\u0639\u064e\u0644\u0651\u064f\u0645\u064e \u0627\u0644\u0644\u0651\u064f\u063a\u064e\u0627\u062a\u0650'?",
+    "options": [
+      "I love learning languages.",
+      "I hate learning languages.",
+      "He loves learning languages.",
+      "They learned languages."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u0623\u064f\u062d\u0650\u0628\u0651\u064f' is first-person present 'I love', '\u062a\u064e\u0639\u064e\u0644\u0651\u064f\u0645\u064e \u0627\u0644\u0644\u0651\u064f\u063a\u064e\u0627\u062a\u0650' means 'learning languages'. Thus the sentence translates to 'I love learning languages.' Other options change subject or meaning.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the correct form of the verb to complete: '\u0644\u0648 _____ \u0645\u0627\u0644\u064b\u0627 \u0644\u0643\u064f\u0646\u0652\u062a\u064f \u0633\u0639\u064a\u062f\u064b\u0627' (If I had money I would be happy).",
+    "options": [
+      "\u0643\u0627\u0646",
+      "\u0643\u0627\u0646\u064e",
+      "\u0643\u0646\u062a\u064f",
+      "\u0643\u064f\u0646\u062a\u064f"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In an unreal conditional with '\u0644\u0648' referring to past impossibility, the protasis uses the past perfect-like '\u0643\u0646\u062a\u064f' with the subjunctive mood: '\u0644\u0648 \u0643\u0646\u062a\u064f \u0645\u0627\u0644\u064b\u0627' is ungrammatical as such, but classical formulation: '\u0644\u0648 \u0643\u0627\u0646 \u0639\u0646\u062f\u064a \u0645\u0627\u0644\u064c \u0644\u064e\u0643\u064f\u0646\u062a\u064f \u0633\u0639\u064a\u062f\u064b\u0627.' However among choices '\u0643\u0646\u062a\u064f' is the correct personal form to follow '\u0644\u0643\u0646\u0651\u064e\u062a\u064f' construction. It best fits the intended meaning in modern usage.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which sentence correctly uses the plural of the feminine noun '\u0637\u0641\u0644\u0629' (girl)?",
+    "options": [
+      "\u0627\u0644\u0637\u0641\u0644\u0627\u062a \u064a\u0644\u0639\u0628\u0646",
+      "\u0627\u0644\u0637\u0641\u0644\u0627\u062a \u064a\u0644\u0639\u0628\u0648\u0646",
+      "\u0627\u0644\u0637\u0641\u0644\u0627\u062a \u064a\u0644\u0639\u0628",
+      "\u0627\u0644\u0637\u0650\u0641\u0652\u0644\u064e\u0627\u062a\u064f \u064a\u064e\u0644\u0652\u0639\u064e\u0628\u0652\u0646\u064e"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The proper fully vocalized form with agreement is '\u0627\u0644\u0637\u0650\u0641\u0652\u0644\u064e\u0627\u062a\u064f \u064a\u064e\u0644\u0652\u0639\u064e\u0628\u0652\u0646\u064e' where the plural subject is definite and the verb agrees in feminine plural. Option 1 lacks vowel markings but otherwise similar; however option 3 is singular verb. Option 2 uses masculine plural verb incorrectly.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Select the most appropriate synonym for '\u0633\u064e\u0631\u0650\u064a\u0639' (fast).",
+    "options": [
+      "\u0628\u0637\u064a\u0621",
+      "\u062e\u064e\u0641\u0650\u064a\u0641",
+      "\u0639\u064e\u0627\u062c\u0650\u0644",
+      "\u0646\u064e\u0634\u0650\u064a\u0637"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "'\u0633\u064e\u0631\u0650\u064a\u0639' (fast) has close synonyms like '\u0639\u064e\u0627\u062c\u0650\u0644' in some contexts meaning rapid or speedy. '\u0628\u0637\u064a\u0621' is opposite, '\u062e\u064e\u0641\u0650\u064a\u0641' is light, and '\u0646\u064e\u0634\u0650\u064a\u0637' energetic; hence '\u0639\u064e\u0627\u062c\u0650\u0644' is the best synonym.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is a correct translation of the proverb '\u0627\u0644\u0639\u0644\u0645 \u0646\u0648\u0631'?",
+    "options": [
+      "Knowledge is power",
+      "Science is difficult",
+      "Knowledge is light",
+      "Ignorance is bliss"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Literally '\u0627\u0644\u0639\u0644\u0645 \u0646\u0648\u0631' means 'Knowledge is light', indicating that knowledge illuminates the mind. While culturally 'knowledge is power' is related, the direct translation is 'Knowledge is light'.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which verb form expresses habitual action in Arabic present tense?",
+    "options": [
+      "Past tense (\u0627\u0644\u0645\u0627\u0636\u064a)",
+      "Present tense (\u0627\u0644\u0645\u0636\u0627\u0631\u0639)",
+      "Imperative (\u0627\u0644\u0623\u0645\u0631)",
+      "Subjunctive (\u0627\u0644\u0645\u0646\u0635\u0648\u0628)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The present tense (\u0627\u0644\u0645\u0636\u0627\u0631\u0639) in Arabic is used for habitual or ongoing actions in the present. Past expresses completed actions, imperative gives commands, and subjunctive is a mood, not a tense indicating habit.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the correct conjunction to express cause: '\u0644\u0645 \u0623\u0630\u0647\u0628 \u0625\u0644\u0649 \u0627\u0644\u0645\u062f\u0631\u0633\u0629 ____ \u0643\u0646\u062a \u0645\u0631\u064a\u0636\u0627'.",
+    "options": [
+      "\u0644\u0623\u0646",
+      "\u0648\u0644\u0643\u0646",
+      "\u062b\u0645",
+      "\u0623\u0648"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "To express cause, '\u0644\u0623\u0646' (because) is used: '\u0644\u0645 \u0623\u0630\u0647\u0628 \u0625\u0644\u0649 \u0627\u0644\u0645\u062f\u0631\u0633\u0629 \u0644\u0623\u0646\u0646\u064a \u0643\u0646\u062a \u0645\u0631\u064a\u0636\u0627.' '\u0648\u0644\u0643\u0646' means 'but', '\u062b\u0645' means 'then', and '\u0623\u0648' means 'or'.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Identify the correct translation of '\u0633\u064e\u0645\u0650\u0639\u0652\u062a\u064f \u0627\u0644\u0623\u064f\u0630\u064f\u0646\u064e' (note: this is a trick to test meaning). Which option reflects correct meaning?",
+    "options": [
+      "I heard the ear.",
+      "I listened to the ear.",
+      "I heard the news.",
+      "The ear heard me."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Literally '\u0633\u064e\u0645\u0650\u0639\u0652\u062a\u064f' (I heard) and '\u0627\u0644\u0623\u064f\u0630\u064f\u0646\u064e' (the ear) gives 'I heard the ear,' which is grammatically odd but is the literal rendering among choices. This tests literal comprehension, not idiomatic sense.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of these words is a definite noun by construction (\u0645\u0639\u0631\u0641 \u0628\u0640) in Arabic?",
+    "options": [
+      "\u0642\u0644\u0645",
+      "\u0627\u0644\u0645\u062f\u0631\u0633\u0629",
+      "\u0643\u062a\u0627\u0628\u064c",
+      "\u0645\u0643\u062a\u0628\u0629"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'\u0627\u0644\u0645\u062f\u0631\u0633\u0629' has the definite article '\u0627\u0644' making it a definite noun (\u0645\u0639\u0631\u0641). The others are indefinite nouns without definite article, so '\u0627\u0644\u0645\u062f\u0631\u0633\u0629' is the correct choice.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the correct translation: '\u0647\u0644 \u0630\u0647\u0628\u062a\u064e \u0625\u0644\u0649 \u0627\u0644\u062d\u0641\u0644\u061f' into English.",
+    "options": [
+      "You went to the party.",
+      "Did you go to the party?",
+      "He went to the party.",
+      "You will go to the party."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'\u0647\u0644' is the question particle, '\u0630\u0647\u0628\u062a\u064e' is past second person masculine 'you went.' Therefore the sentence is a yes/no question: 'Did you go to the party?'.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is the correct form to express 'they (feminine) wrote' in Arabic?",
+    "options": [
+      "\u0647\u0650\u0645\u0652 \u0643\u064e\u062a\u064e\u0628\u064f\u0648\u0627",
+      "\u0647\u064f\u0646\u0651\u064e \u0643\u064e\u062a\u064e\u0628\u0652\u0646\u064e",
+      "\u0647\u064f\u0646\u0651\u064e \u0643\u064e\u062a\u064e\u0628\u0652\u062a\u064e",
+      "\u0647\u0645 \u0643\u062a\u0628\u062a"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The feminine plural past form uses the suffix '-\u0646\u064e': '\u0647\u064f\u0646\u0651\u064e \u0643\u064e\u062a\u064e\u0628\u0652\u0646\u064e' means 'they (feminine) wrote.' Option 0 is masculine plural, option 2 has wrong person, option 4 is ungrammatical.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Select the appropriate translation: '\u0627\u0644\u0633\u0641\u0631 \u0645\u0641\u064a\u062f \u0644\u0644\u062a\u062c\u0631\u0628\u0629 \u0627\u0644\u0634\u062e\u0635\u064a\u0629'?",
+    "options": [
+      "Travel is useful for personal experience.",
+      "Travel is harmful to personal experience.",
+      "Experience is useful for travel.",
+      "Travel is expensive for personal reasons."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u0645\u0641\u064a\u062f' means useful, '\u0644\u0644\u062a\u062c\u0631\u0628\u0629 \u0627\u0644\u0634\u062e\u0635\u064a\u0629' means 'for personal experience'. Thus the sentence translates directly to 'Travel is useful for personal experience.' Other options reverse or distort meaning.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which word correctly completes the sentence: '\u0647\u0630\u0627 \u0623\u062e\u064c _____' meaning 'This is my brother'?",
+    "options": [
+      "\u0644\u064a",
+      "\u0644\u064a\u0650",
+      "\u0644\u064a\u064e",
+      "\u0644\u064a\u064f"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The possessive pronoun 'my' as a nominalized prepositional structure is '\u0644\u064a' pronounced with kasra: in Arabic script the correct attached form after noun is '\u0644\u0650\u064a' but when written separately for emphasis '\u0644\u064a'. Among the choices with vowel marks, '\u0644\u064a\u0650' indicates correct kasra marking for 'my'. It shows possession '\u0647\u0630\u0627 \u0623\u062e \u0644\u064a'.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the correct translation of '\u0623\u064a\u0646 \u062a\u0642\u0639 \u0627\u0644\u0645\u0643\u062a\u0628\u0629\u061f'.",
+    "options": [
+      "Who owns the library?",
+      "Where is the library located?",
+      "When does the library open?",
+      "How is the library?"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'\u0623\u064a\u0646' asks 'where', '\u062a\u0642\u0639' means 'is located', and '\u0627\u0644\u0645\u0643\u062a\u0628\u0629' is 'the library'. So the sentence asks 'Where is the library located?' Other options ask different questions.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following is the correct past tense conjugation for 'to go' (\u0630\u064e\u0647\u064e\u0628\u064e) for 'we'?",
+    "options": [
+      "\u0630\u0647\u0628\u0648\u0627",
+      "\u0630\u0647\u0628\u0646",
+      "\u0630\u0647\u0628\u0646\u0627",
+      "\u064a\u0630\u0647\u0628\u0646\u0627"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The past tense first-person plural form is '\u0630\u0647\u0628\u0646\u0627' meaning 'we went'. '\u0630\u0647\u0628\u0648\u0627' is they (masculine), '\u0630\u0647\u0628\u0646' is they (feminine), and '\u064a\u0630\u0647\u0628\u0646\u0627' is ungrammatical present form.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Identify the correct interrogative word to ask 'How many?' in Arabic.",
+    "options": [
+      "\u0643\u0645",
+      "\u0645\u062a\u0649",
+      "\u0623\u064a\u0646",
+      "\u0644\u0645\u0627\u0630\u0627"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u0643\u0645' is used to ask 'how many' or 'how much' in Arabic. '\u0645\u062a\u0649' asks 'when', '\u0623\u064a\u0646' asks 'where', and '\u0644\u0645\u0627\u0630\u0627' asks 'why', so '\u0643\u0645' is the appropriate interrogative.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of these verbs is derived from the root \u0634-\u0643-\u0631 and means 'to thank'?",
+    "options": [
+      "\u0634\u064e\u0643\u064e\u0631\u064e",
+      "\u0643\u064e\u062a\u064e\u0628\u064e",
+      "\u0633\u064e\u0645\u0650\u0639\u064e",
+      "\u062d\u064e\u0633\u0650\u0628\u064e"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The root \u0634-\u0643-\u0631 yields '\u0634\u064e\u0643\u064e\u0631\u064e' meaning 'to thank' or 'to be grateful.' The other verbs come from different roots with unrelated meanings: \u0643\u062a\u0628 (to write), \u0633\u0645\u0639 (to hear), \u062d\u0633\u0628 (to consider/count).",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Select the correct sentence that uses the particle of emphasis '\u0625\u0646\u0651\u064e'.",
+    "options": [
+      "\u0625\u0646\u0651\u064e \u0627\u0644\u0637\u0651\u064e\u0627\u0644\u0650\u0628\u064e \u0645\u064f\u062c\u0652\u062a\u064e\u0647\u0650\u062f\u064c",
+      "\u0627\u0644\u0637\u0651\u064e\u0627\u0644\u0650\u0628\u064f \u0625\u0646\u0651\u064e \u0645\u062c\u062a\u0647\u062f\u064c",
+      "\u0625\u0646\u0651\u064e\u064f \u0645\u062c\u062a\u0647\u062f\u064c \u0627\u0644\u0637\u0651\u064e\u0627\u0644\u0650\u0628",
+      "\u0627\u0644\u0637\u0651\u064e\u0627\u0644\u0650\u0628\u064f \u0645\u064f\u062c\u0652\u062a\u064e\u0647\u0650\u062f\u064c \u0625\u0646\u0651\u064e"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The emphatic particle '\u0625\u0646\u0651\u064e' precedes the subject and causes accusative on the noun: '\u0625\u0646\u0651\u064e \u0627\u0644\u0637\u0651\u064e\u0627\u0644\u0650\u0628\u064e \u0645\u064f\u062c\u0652\u062a\u064e\u0647\u0650\u062f\u064c' is correct. The noun is marked with fatHa due to '\u0625\u0646\u0651\u064e', making option 0 the grammatically correct sentence.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which demonstrative pronoun would you use to point to something near and feminine: 'this (feminine)'?",
+    "options": [
+      "\u0647\u0630\u0627",
+      "\u0647\u0630\u0647",
+      "\u0647\u0624\u0644\u0627\u0621",
+      "\u062a\u0644\u0643"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'\u0647\u0630\u0647' is the demonstrative pronoun for 'this' when pointing to a near feminine noun. '\u0647\u0630\u0627' is masculine, '\u0647\u0624\u0644\u0627\u0621' is plural, and '\u062a\u0644\u0643' is feminine but distal (that), not near.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the best translation for '\u064a\u064e\u062c\u0650\u0628\u064f \u0639\u064e\u0644\u064e\u064a\u0652\u0643\u064e \u0627\u0644\u062f\u0651\u0650\u0631\u064e\u0627\u0633\u064e\u0629\u064f'.",
+    "options": [
+      "You must study.",
+      "He studies well.",
+      "Studying is optional for you.",
+      "They studied yesterday."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u064a\u062c\u0628\u064f \u0639\u0644\u064a\u0643\u064e' means 'you must' or 'it is necessary for you', and '\u0627\u0644\u062f\u0631\u0627\u0633\u0629' is 'to study' or 'studying'. Therefore the sentence means 'You must study.'",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following words is an antonym for '\u0642\u0627\u062d\u0650\u0644' (barren)?",
+    "options": [
+      "\u062e\u064e\u0636\u0650\u0631",
+      "\u062c\u0627\u0641",
+      "\u0642\u064e\u0631\u0650\u064a\u0628",
+      "\u0645\u064e\u0643\u0652\u0633\u0648\u0631"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u0642\u0627\u062d\u0650\u0644' means barren or dry, and '\u062e\u064e\u0636\u0650\u0631' means green or fertile, making it the antonym. '\u062c\u0627\u0641' is also dry, '\u0642\u0631\u064a\u0628' near, '\u0645\u0643\u0633\u0648\u0631' broken, so option 0 fits best.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Identify the correct use of the vocative particle '\u064a\u0627' in Arabic.",
+    "options": [
+      "\u064a\u0627 \u0645\u062d\u0645\u062f\u064f\u060c \u0647\u0627\u062a \u0627\u0644\u0643\u062a\u0627\u0628",
+      "\u0645\u062d\u0645\u062f \u064a\u0627\u060c \u0647\u0627\u062a \u0627\u0644\u0643\u062a\u0627\u0628",
+      "\u0647\u0627\u062a \u064a\u0627 \u0627\u0644\u0643\u062a\u0627\u0628 \u0645\u062d\u0645\u062f",
+      "\u064a\u0627 \u0647\u0627\u062a \u0627\u0644\u0643\u062a\u0627\u0628 \u0645\u062d\u0645\u062f"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The vocative particle '\u064a\u0627' precedes the name: '\u064a\u0627 \u0645\u062d\u0645\u062f\u064f\u060c \u0647\u0627\u062a \u0627\u0644\u0643\u062a\u0627\u0628' meaning 'O Muhammad, bring the book.' Other options misplace the particle and are grammatically incorrect.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of the following sentences uses the conditional particle '\u0625\u0630\u0627' correctly for a future real condition?",
+    "options": [
+      "\u0625\u0630\u0627 \u062a\u0630\u0627\u0643\u0631\u064e \u062a\u0646\u062c\u062d\u0652",
+      "\u0625\u0630\u0627 \u0630\u0627\u0643\u0631\u062a\u0652 \u062a\u0646\u062c\u062d\u064a\u0646\u064e",
+      "\u0625\u0630\u0627 \u062a\u0630\u0627\u0643\u0631\u0652 \u062a\u0646\u062c\u062d\u064f",
+      "\u0625\u0630\u0627 \u062a\u0630\u0627\u0643\u0631\u064f \u062a\u0646\u062c\u062d"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "For future real conditions, '\u0625\u0630\u0627' is followed by a past-tense-looking verb in Modern Arabic usage or the present indicative. Option 0 '\u0625\u0630\u0627 \u062a\u0630\u0627\u0643\u0631\u064e \u062a\u0646\u062c\u062d\u0652' uses the subjunctive and is acceptable; it states 'If you study, you will succeed.' Other options show incorrect agreement or form.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the correct past passive form of '\u0623\u0631\u0627\u062f\u064e' (he wanted).",
+    "options": [
+      "\u0623\u064f\u0631\u064a\u062f\u064e",
+      "\u0623\u064f\u0631\u064a\u062f\u064e\u062a\u0652",
+      "\u0631\u064f\u0626\u0650\u062f\u064e",
+      "\u0623\u064f\u0631\u0650\u064a\u062f\u064e"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The passive of '\u0623\u0631\u0627\u062f\u064e' in past is '\u0623\u064f\u0631\u0650\u064a\u062f\u064e' (it was wanted). Option 0 lacks correct vowels placement; option 3 '\u0623\u064f\u0631\u0650\u064a\u062f\u064e' is the properly formed passive past, conveying the intended meaning.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which choice best translates: '\u0644\u0627 \u0645\u064f\u0646\u0627\u0641\u064e\u0633\u064e\u0629\u064e \u0641\u064a \u0627\u0644\u0635\u062d\u0629'?",
+    "options": [
+      "No competition in good health.",
+      "Competition is necessary for health.",
+      "Health is competitive.",
+      "There is competition for health services."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The sentence literally means 'There is no competition in health' or 'No competition in good health.' It emphasizes that health is not something to compete over. Option 0 captures this literal meaning.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Select the correct translation of '\u0623\u062d\u062a\u0627\u062c\u064f \u0625\u0644\u0649 \u0645\u0633\u0627\u0639\u062f\u0629 \u0641\u0648\u0631\u064a\u0629'.",
+    "options": [
+      "I need immediate help.",
+      "I need a future plan.",
+      "She needs medical advice.",
+      "They provided immediate help."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u0623\u062d\u062a\u0627\u062c \u0625\u0644\u0649' means 'I need', '\u0645\u0633\u0627\u0639\u062f\u0629 \u0641\u0648\u0631\u064a\u0629' means 'immediate help'. So the proper translation is 'I need immediate help.' Other options change subject or meaning.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which of these is the correct translation of the idiom '\u064a\u062f \u0648\u0627\u062d\u062f\u0629 \u0644\u0627 \u062a\u0635\u0641\u0642'?",
+    "options": [
+      "One hand cannot clap alone (meaning cooperation is necessary).",
+      "A single hand is clapping loudly.",
+      "Hands do not make noise.",
+      "One hand is stronger than two."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The idiom means cooperation is necessary: 'One hand cannot clap alone.' It metaphorically stresses that collaboration is required to achieve results, making option 0 correct.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Choose the correct translation: '\u0623\u0645\u0636\u064a\u062a \u0627\u0644\u0639\u0637\u0644\u0629 \u0641\u064a \u0627\u0644\u0631\u064a\u0641'?",
+    "options": [
+      "I spent the holiday in the countryside.",
+      "I ignored the holiday in the city.",
+      "She spent the week in the desert.",
+      "They postponed the trip to the countryside."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'\u0623\u0645\u0636\u064a\u062a' means 'I spent', '\u0627\u0644\u0639\u0637\u0644\u0629' holiday, and '\u0641\u064a \u0627\u0644\u0631\u064a\u0641' in the countryside. Thus the sentence correctly translates as 'I spent the holiday in the countryside.'",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Which option correctly completes with the comparative structure: '\u0647\u0648 \u0623\u0637\u0648\u0644 _____ \u0623\u062d\u0645\u062f' meaning 'He is taller than Ahmad'?",
+    "options": [
+      "\u0645\u0650\u0646",
+      "\u0643\u064e",
+      "\u0644\u0640",
+      "\u0639\u064e\u0646"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The comparative in Arabic '\u0623\u0637\u0648\u0644 \u0645\u0646' uses the preposition '\u0645\u0650\u0646' to compare two entities: '\u0647\u0648 \u0623\u0637\u0648\u0644 \u0645\u0650\u0646 \u0623\u062d\u0645\u062f' means 'He is taller than Ahmad.' Other particles do not serve comparative function.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  },
+  {
+    "text": "Select the correct translation: '\u0627\u0644\u0635\u0651\u0650\u062d\u0651\u064e\u0629 \u062b\u064e\u0631\u0648\u0629'?",
+    "options": [
+      "Health is trouble.",
+      "Health is wealth.",
+      "Truth is wealth.",
+      "Wealth is health."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The proverb '\u0627\u0644\u0635\u0651\u0650\u062d\u0651\u064e\u0629 \u062b\u064e\u0631\u0648\u0629' literally means 'Health is wealth', emphasizing that good health is valuable. Option 1 directly captures this meaning.",
+    "subject": "Arabic",
+    "examType": "WAEC",
+    "examYear": 2019
+  }
+]

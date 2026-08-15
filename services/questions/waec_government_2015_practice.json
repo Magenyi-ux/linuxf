@@ -1,0 +1,184 @@
+[
+  {
+    "text": "The primary purpose of government is to",
+    "options": [
+      "collect taxes",
+      "maintain law and order and provide welfare",
+      "build roads only",
+      "conduct elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Government exists to ensure order, security, and citizens' welfare.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Sovereignty refers to",
+    "options": [
+      "the power to make laws",
+      "the supreme and final authority of the state",
+      "military power",
+      "economic power"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sovereignty is the ultimate authority over a territory and people.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "The executive arm of government is responsible for",
+    "options": [
+      "making laws",
+      "interpreting laws",
+      "implementing laws",
+      "punishing offenders"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The executive implements and enforces laws.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "A constitution is best described as",
+    "options": [
+      "a set of customs",
+      "the fundamental laws and principles of a state",
+      "a political manifesto",
+      "an election guideline"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A constitution is the supreme body of laws governing a state.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Representative democracy is practiced when",
+    "options": [
+      "all citizens vote on every issue",
+      "citizens elect representatives to make decisions",
+      "the military rules",
+      "one party rules"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In representative democracy, elected officials act for the people.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "In a unitary system of government, power is concentrated in the",
+    "options": [
+      "local governments",
+      "central government",
+      "state governments",
+      "regional councils"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A unitary system centralizes authority in the national government.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "A major feature of a confederation is",
+    "options": [
+      "a strong central government",
+      "a weak centre and strong component units",
+      "a military government",
+      "a one-party system"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In a confederation, component units retain significant autonomy.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "The minimum voting age in Nigeria is",
+    "options": [
+      "16 years",
+      "18 years",
+      "21 years",
+      "25 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The 1999 Constitution sets voting age at 18.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Public opinion refers to",
+    "options": [
+      "the views of the president",
+      "the collective attitudes and beliefs of citizens on issues",
+      "government policies",
+      "media reports only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Public opinion is the aggregate of individual views on matters of concern.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "A bye-election is held to",
+    "options": [
+      "elect a new president",
+      "fill a vacancy in the legislature",
+      "change the constitution",
+      "dissolve parliament"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Bye-elections fill seats vacated between general elections.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "The body that registers political parties in Nigeria is",
+    "options": [
+      "National Assembly",
+      "INEC",
+      "Supreme Court",
+      "Presidency"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "INEC registers and regulates political parties.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "The returning officer in an election is responsible for",
+    "options": [
+      "campaigning",
+      "announcing results",
+      "printing ballots",
+      "appointing judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The returning officer declares official results.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Nigeria became a republic in",
+    "options": [
+      "1960",
+      "1963",
+      "1979",
+      "1999"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Nigeria became a republic on 1 October 1963.",
+    "subject": "Government",
+    "examType": "WAEC",
+    "examYear": 2015
+  }
+]

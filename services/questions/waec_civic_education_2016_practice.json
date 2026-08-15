@@ -1,0 +1,310 @@
+[
+  {
+    "text": "Which of the following best describes the primary aim of Civic Education in Nigerian secondary schools?",
+    "options": [
+      "To train students only for political office",
+      "To inculcate knowledge, skills and values for responsible citizenship",
+      "To promote partisan political campaigns among youths",
+      "To replace social studies with law courses"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Civic Education aims to develop informed, responsible and participatory citizens by providing knowledge, skills and values about rights, duties, democratic principles and the workings of government. It is not about partisan politics or only training leaders.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which principle of government requires that the legislative, executive and judicial powers be exercised by different organs?",
+    "options": [
+      "Judicial review",
+      "Separation of powers",
+      "Federal character",
+      "Universal adult suffrage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Separation of powers divides government into legislative, executive and judicial branches to prevent concentration of power and to provide checks and balances, ensuring no single organ controls all functions of government.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which body is constitutionally charged with the conduct and supervision of elections in Nigeria?",
+    "options": [
+      "The National Assembly",
+      "The Independent National Electoral Commission (INEC)",
+      "The Federal Ministry of Justice",
+      "The Economic and Financial Crimes Commission (EFCC)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Independent National Electoral Commission (INEC) is constitutionally responsible for organizing, conducting and supervising elections in Nigeria, including voter registration, candidate nomination and result collation.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "What is the total membership of the Nigerian National Assembly (Senate and House of Representatives)?",
+    "options": [
+      "109 and 360 respectively",
+      "200 and 300 respectively",
+      "36 and 774 respectively",
+      "109 and 109 respectively"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Nigerian National Assembly comprises a Senate of 109 members (three per state plus one for the FCT) and a House of Representatives of 360 members, reflecting representation by population and states.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is a justiciable fundamental right under the Nigerian Constitution?",
+    "options": [
+      "Directive Principles of State Policy",
+      "Right to life",
+      "National objectives and policies",
+      "Non-justiciable social goals"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The right to life is a fundamental, enforceable (justiciable) right guaranteed by the Nigerian Constitution. Directive Principles and certain national objectives are non-justiciable and not directly enforceable by courts.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which statement best describes the Directive Principles of State Policy in the Nigerian Constitution?",
+    "options": [
+      "They are legally enforceable in courts",
+      "They are guidelines for government policy and non-justiciable",
+      "They are rights that citizens can sue to enforce",
+      "They are punishments for state officials who fail"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Directive Principles are policy guidelines for government to promote social welfare and development; they are non-justiciable, meaning courts cannot enforce them as individual rights despite their importance in governance.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which chamber of the National Assembly has the power to try cases of impeachment after the initiation by the House of Representatives?",
+    "options": [
+      "The Senate",
+      "The Federal High Court",
+      "The State Houses of Assembly",
+      "The National Judicial Council"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Impeachment proceedings are initiated in the House of Representatives and the trial is conducted by the Senate. The Senate acts as the tribunal to determine whether to remove the officer from office.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "What is the minimum voting age for citizens in Nigeria eligible to register and vote in elections?",
+    "options": [
+      "16 years",
+      "18 years",
+      "21 years",
+      "25 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Nigeria practices universal adult suffrage with a minimum voting age of 18 years. This allows adult citizens aged 18 and above to register, vote and participate in democratic elections.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "The Federal Character Principle in Nigeria is intended primarily to:",
+    "options": [
+      "Promote equal distribution of public offices across states and groups",
+      "Allow the president to appoint unlimited officials",
+      "Centralize power in the federal government",
+      "Discourage representation of minorities"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Federal Character Principle seeks equitable representation of diverse ethnic, regional and religious groups in public service and appointments to promote national unity and reduce monopolization by any one group.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best describes the role of local government councils in Nigeria?",
+    "options": [
+      "To replace state governments",
+      "To provide grassroots administration and basic services",
+      "To draft the national budget",
+      "To conduct federal elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Local government councils are meant to bring governance closer to the people by providing primary healthcare, primary education support, waste management and community development at the grassroots level.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best defines a civil society organisation (CSO)?",
+    "options": [
+      "A branch of the government",
+      "A non-governmental group that represents citizens' interests",
+      "A private company seeking profit",
+      "A political party"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Civil society organisations are independent, non-governmental groups (such as NGOs, advocacy groups and community associations) that represent public interests, promote participation and hold government accountable.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which obligation is primarily the duty of a citizen in a democracy?",
+    "options": [
+      "To obey unjust laws blindly",
+      "To participate in civic duties like voting and obeying lawful regulations",
+      "To avoid paying taxes",
+      "To rely entirely on others for political participation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Citizens in a democracy are expected to exercise duties such as voting, obeying the law, paying taxes and participating in community life to sustain democratic governance and social order.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which institution is specifically charged with combating economic and financial crimes in Nigeria?",
+    "options": [
+      "The Central Bank of Nigeria (CBN)",
+      "The Economic and Financial Crimes Commission (EFCC)",
+      "The Nigerian Police Force",
+      "The National Health Insurance Scheme"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Economic and Financial Crimes Commission (EFCC) is the agency tasked with investigating and prosecuting economic and financial crimes such as money laundering, advance fee fraud and corruption in Nigeria.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best expresses the meaning of \"rule of law\"?",
+    "options": [
+      "Leaders are above the law",
+      "Law applies equally to all persons and institutions",
+      "Only the executive should make laws",
+      "Laws should not be written"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Rule of law means that laws govern the nation and apply equally to everyone, including government officials. It ensures fairness, accountability, and that power is exercised according to established legal rules.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of these is a primary function of political parties in a democratic system?",
+    "options": [
+      "To prevent citizens from voting",
+      "To nominate candidates and aggregate interests for public office",
+      "To act as courts",
+      "To run the police"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Political parties recruit and nominate candidates, formulate policies, mobilize voters and aggregate various interests to provide choices for leadership in a democratic electoral process.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best describes sustainable development?",
+    "options": [
+      "Economic growth with no regard for future generations",
+      "Development that meets present needs without compromising future generations",
+      "Declining use of resources irrespective of human needs",
+      "Only preserving forests and stopping all development"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sustainable development balances economic growth, social inclusion and environmental protection so present needs are met without jeopardizing the ability of future generations to meet their own needs.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is a legitimate way for citizens to seek redress when their fundamental rights are breached?",
+    "options": [
+      "Taking the law into their own hands",
+      "Filing a suit in a competent court",
+      "Ignoring the breach",
+      "Encouraging others to disobey the law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Seeking redress through the courts is the lawful and proper method for enforcing fundamental rights. Courts provide impartial adjudication to ensure rights are protected and remedies provided.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following correctly describes the procedure for amending the Nigerian Constitution?",
+    "options": [
+      "Presidential decree is sufficient",
+      "Simple majority in the National Assembly only",
+      "Two-thirds majority in each House of the National Assembly and approval by two-thirds of State Houses of Assembly",
+      "Approval only by the Supreme Court"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Constitutional amendment requires broad consensus: a two-thirds majority in both Houses of the National Assembly and supporting resolutions in at least two-thirds of the State Houses of Assembly, ensuring federal buy-in.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is NOT a national symbol of Nigeria?",
+    "options": [
+      "The Green-White-Green flag",
+      "The National Coat of Arms",
+      "The National Anthem",
+      "The Presidential library emblem"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "National symbols include the flag, coat of arms and national anthem. A presidential library emblem is not recognized as an official national symbol representing the country.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which form of citizenship is acquired when a foreigner goes through a legal process to become a Nigerian citizen?",
+    "options": [
+      "Citizenship by birth",
+      "Citizenship by descent",
+      "Citizenship by naturalization",
+      "Citizenship by compulsory service"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Citizenship by naturalization is granted to foreigners who meet statutory requirements and complete the legal process to become citizens, unlike citizenship by birth or descent which are inherited.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best illustrates a key advantage of federalism in Nigeria?",
+    "options": [
+      "Complete uniformity of local policies across all regions",
+      "Concentration of all power at the centre",
+      "Accommodation of diversity through shared rule and local self-government",
+      "A single national language imposed on all states"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Federalism allows different regions to govern local affairs while sharing power with the central government, helping to accommodate ethnic, cultural and regional diversity and reduce conflicts over central control.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  },
+  {
+    "text": "Which international organization primarily provides a forum for resolving conflicts peacefully among member states and promoting human rights globally?",
+    "options": [
+      "World Trade Organization (WTO)",
+      "United Nations (UN)",
+      "Organization of Petroleum Exporting Countries (OPEC)",
+      "International Monetary Fund (IMF)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The United Nations (UN) provides diplomatic mechanisms, peacekeeping, and human rights frameworks to prevent and resolve conflicts peacefully, promote development and protect human rights globally.",
+    "subject": "Civic Education",
+    "examType": "WAEC",
+    "examYear": 2016
+  }
+]

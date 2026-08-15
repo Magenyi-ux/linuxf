@@ -1,0 +1,352 @@
+[
+  {
+    "text": "Government is best defined as the",
+    "options": [
+      "body that makes laws only",
+      "machinery through which the will of the state is formulated and implemented",
+      "group of people who rule by force",
+      "organization that conducts elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Government is the institution through which state policies are made and enforced.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The state is distinguished from government because the state is",
+    "options": [
+      "temporary",
+      "permanent while government changes",
+      "elected",
+      "appointed"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The state is permanent; governments change periodically.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The theory of separation of powers was propounded by",
+    "options": [
+      "John Locke",
+      "Baron de Montesquieu",
+      "Jean-Jacques Rousseau",
+      "Thomas Hobbes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Montesquieu articulated the separation of powers in 'The Spirit of the Laws'.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The three arms of government are the",
+    "options": [
+      "federal, state, and local",
+      "executive, legislature, and judiciary",
+      "president, governor, and chairman",
+      "army, police, and civil defence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Government is divided into executive, legislature, and judiciary.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "Judicial review is the power of the judiciary to",
+    "options": [
+      "make laws",
+      "interpret and nullify unconstitutional actions",
+      "appoint the president",
+      "dissolve parliament"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Judicial review ensures laws and actions comply with the constitution.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "A written constitution is one that",
+    "options": [
+      "exists only in documents",
+      "is contained in a single document or set of documents",
+      "is unwritten",
+      "is based on customs"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Written constitutions are codified in formal documents.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a type of democracy?",
+    "options": [
+      "Direct democracy",
+      "Oligarchy",
+      "Theocracy",
+      "Monarchy"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Direct democracy involves citizens deciding directly; representative democracy is the other type.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "A major feature of democracy is",
+    "options": [
+      "one-party rule",
+      "free and fair elections",
+      "military control",
+      "hereditary succession"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Free and fair elections are essential to democracy.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "A federal system of government is characterized by",
+    "options": [
+      "concentration of power at the centre",
+      "division of powers between central and regional governments",
+      "one-party rule",
+      "a unitary legislature"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Federalism shares power between central and constituent units.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The presidential system of government is characterized by",
+    "options": [
+      "fusion of powers",
+      "separation of powers and a fixed term for the executive",
+      "parliamentary supremacy",
+      "collective responsibility"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Presidentialism separates powers and gives the executive a fixed term.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The concept of collective responsibility applies to the",
+    "options": [
+      "judiciary",
+      "cabinet in a parliamentary system",
+      "legislature",
+      "civil service"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cabinet members collectively support decisions.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a feature of the 1999 Nigerian Constitution?",
+    "options": [
+      "Unitary system",
+      "Federal system",
+      "Parliamentary system",
+      "Confederal system"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The 1999 Constitution establishes a federal system.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The head of the judiciary in Nigeria is the",
+    "options": [
+      "Attorney General",
+      "Chief Justice of Nigeria",
+      "President of the Court of Appeal",
+      "Minister of Justice"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Chief Justice of Nigeria heads the judiciary.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The Independent National Electoral Commission (INEC) is responsible for",
+    "options": [
+      "making laws",
+      "conducting elections",
+      "interpreting laws",
+      "appointing judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "INEC conducts and supervises elections.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "A pressure group seeks to",
+    "options": [
+      "form government",
+      "influence government policies",
+      "make laws",
+      "conduct elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Pressure groups advocate for specific interests without seeking office.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The mass media influences government by",
+    "options": [
+      "making laws",
+      "shaping public opinion and holding government accountable",
+      "appointing judges",
+      "collecting taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The media informs, educates, and critiques government.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "Universal adult suffrage means",
+    "options": [
+      "only men can vote",
+      "all qualified adults can vote regardless of gender or class",
+      "only the rich can vote",
+      "only educated people vote"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Universal adult suffrage enfranchises all eligible adults.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "Electoral malpractice includes",
+    "options": [
+      "free and fair voting",
+      "vote buying and ballot stuffing",
+      "transparent counting",
+      "impartial umpires"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Malpractice involves illegal manipulation of elections.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "Proportional representation aims to",
+    "options": [
+      "over-represent large parties",
+      "allocate seats based on vote share",
+      "elect only independents",
+      "favour the military"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "PR matches seat allocation to the proportion of votes received.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "A manifesto is",
+    "options": [
+      "a ballot paper",
+      "a political party's programme of action",
+      "a voter's card",
+      "an election result"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A manifesto outlines a party's policies and promises.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "An electoral constituency is",
+    "options": [
+      "a political party",
+      "a geographic area represented by an elected official",
+      "the presidency",
+      "the judiciary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A constituency is a district whose voters elect a representative.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "A coalition government is formed when",
+    "options": [
+      "one party wins an absolute majority",
+      "no single party wins a majority",
+      "the president dissolves parliament",
+      "the military intervenes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Parties ally to form a majority coalition.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The first military coup in Nigeria occurred in",
+    "options": [
+      "1960",
+      "1966",
+      "1975",
+      "1983"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The first coup was on 15 January 1966.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The Nigerian Civil War lasted from",
+    "options": [
+      "1960-1963",
+      "1966-1970",
+      "1967-1970",
+      "1970-1975"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The civil war was fought from 1967 to 1970.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  },
+  {
+    "text": "The current Nigerian Constitution was enacted in",
+    "options": [
+      "1960",
+      "1979",
+      "1989",
+      "1999"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The 1999 Constitution is currently in force.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2015
+  }
+]

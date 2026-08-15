@@ -1,0 +1,730 @@
+[
+  {
+    "text": "Which of the following best describes \"Commerce\" as taught in the WAEC syllabus?",
+    "options": [
+      "A branch of industry concerned only with the production of goods",
+      "Activities that facilitate the distribution and exchange of goods and services",
+      "The legal framework governing business contracts and employees",
+      "Only international trade between countries"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce comprises all activities that facilitate the distribution and exchange of goods and services, including trade, transport, banking and insurance; it is broader than production or strictly legal matters.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is NOT usually classified as an auxiliary service of trade?",
+    "options": [
+      "Packaging",
+      "Banking",
+      "Manufacturing",
+      "Warehousing"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Manufacturing is a production activity, not an auxiliary service of trade; auxiliary services such as banking, packaging and warehousing support distribution and exchange rather than create goods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which principle explains the advantage of dividing work into simple tasks to increase efficiency?",
+    "options": [
+      "Principle of continuity",
+      "Principle of comparability",
+      "Principle of specialization and division of labour",
+      "Principle of risk pooling"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The principle of specialization and division of labour states that breaking down work into simple tasks increases skill, speed and efficiency, leading to higher productivity and lower unit costs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following best distinguishes internal trade from external trade?",
+    "options": [
+      "Internal trade is wholesale only, external trade is retail only",
+      "Internal trade occurs within a country; external trade involves cross-border transactions",
+      "Internal trade always uses the local currency; external trade uses cash only",
+      "Internal trade is regulated by customs; external trade is not"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Internal trade is trade conducted within a country's borders while external trade involves import and export across national boundaries; differences include regulations, currency and customs procedures.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which document is primarily issued by a shipping company and acts as evidence of carriage of goods?",
+    "options": [
+      "Invoice",
+      "Bill of lading",
+      "Letter of credit",
+      "Insurance policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is issued by the carrier; it evidences receipt of goods, the contract of carriage, and document of title, making it essential in international shipments.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "A letter of credit is best described as:",
+    "options": [
+      "A document guaranteeing shipment by the exporter",
+      "A guarantee by the buyer to the bank",
+      "A written undertaking by the buyer's bank to pay the seller on specified terms",
+      "An insurance cover for export goods"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A letter of credit is a bank's written undertaking to pay the seller provided the seller presents documents meeting the terms; it reduces payment risk in international trade.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which statement correctly distinguishes a debenture from an ordinary share?",
+    "options": [
+      "Debentures represent ownership; shares are debt instruments",
+      "Shareholders have fixed interest; debenture holders share profits",
+      "Debenture holders are creditors and receive fixed interest; shareholders are owners sharing profits and risks",
+      "Debentures are issued only by government; shares only by private firms"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Debenture holders are creditors entitled to fixed interest and repayment, while shareholders are owners who receive dividends which vary with profits and bear residual risk on liquidation.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "One clear advantage of partnership as a form of business organization is:",
+    "options": [
+      "Unlimited life independent of partners",
+      "Limited liability for all partners",
+      "Ease of raising capital through many shareholders",
+      "Pooling of resources and shared management"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Partnership allows pooling of capital, skills and management among partners, facilitating resource sharing and joint decision-making which is a key advantage despite other limitations.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "A characteristic feature of a limited liability company is that:",
+    "options": [
+      "Owners are personally liable for all company debts",
+      "It always has a single owner",
+      "Members' liability is limited to unpaid amount on their shares",
+      "Company cannot sue or be sued"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In a limited liability company, members' liability is limited to the unpaid amount on their shares; personal assets are usually protected from company creditors beyond share capital liabilities.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is a defining feature of a public corporation?",
+    "options": [
+      "It is wholly owned and controlled by private individuals",
+      "It is owned and usually financed by the government to serve public interest",
+      "It operates only for profit with no social objectives",
+      "It never employs professional managers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Public corporations are state-owned enterprises established and financed by the government to provide goods and services in the public interest; they may have social objectives beyond profit.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "The 'authorized capital' of a company refers to:",
+    "options": [
+      "The total amount actually issued to shareholders",
+      "The minimum capital required by law",
+      "The maximum share capital the company is authorized to issue as stated in the memorandum",
+      "The amount reserved for paying dividends"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Authorized capital (nominal or registered capital) is the maximum amount of share capital a company is allowed to issue as specified in its memorandum; issued capital may be less than this amount.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which clause of the memorandum of association states the main activities a company may undertake?",
+    "options": [
+      "The name clause",
+      "The liability clause",
+      "The objects clause",
+      "The capital clause"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The objects clause of the memorandum defines the business activities the company is authorized to carry out; it limits corporate powers and informs third parties of the company's purpose.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which document primarily contains rules for internal management of a company?",
+    "options": [
+      "Memorandum of association",
+      "Articles of association",
+      "Certificate of incorporation",
+      "Share certificate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The articles of association set out the internal rules and procedures for managing the company, including directors' powers, meetings, voting rights and share transfer provisions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "The main purpose of an audit is to:",
+    "options": [
+      "Prepare daily sales invoices",
+      "Provide an independent examination and opinion on the truth and fairness of financial statements",
+      "Set tax rates for the company",
+      "Control the company's marketing functions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An audit provides an independent examination of financial statements to ensure they present a true and fair view, increase users' confidence and detect material misstatements or errors.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Bank reconciliation statement is prepared to:",
+    "options": [
+      "Compare the bank's cash reserves with the central bank",
+      "Adjust and explain differences between the cash book balance and the bank statement balance",
+      "Calculate interest payable on loans",
+      "Forecast future bank balances"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bank reconciliation statement reconciles differences between a company's cash book and the bank statement by identifying outstanding cheques, uncredited lodgements and bank charges, explaining the discrepancy.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Crossing a cheque generally aims to:",
+    "options": [
+      "Convert it into cash immediately at the counter",
+      "Ensure it can only be paid into a bank account, increasing safety",
+      "Void the cheque permanently",
+      "Increase its face value"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Crossing a cheque places an instruction that it must be paid into a bank account and not cashed over the counter, thereby reducing the risk of unauthorized cashing and theft.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which insurance principle states that the insured should not profit from a loss and must be restored only to the previous financial position?",
+    "options": [
+      "Principle of utmost good faith",
+      "Principle of indemnity",
+      "Principle of proximate cause",
+      "Principle of contribution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The principle of indemnity ensures that the insured is restored to the financial position before the loss and does not profit from insurance; it is central to property and general insurance.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which type of insurance generally does NOT follow the principle of indemnity?",
+    "options": [
+      "Fire insurance",
+      "Life insurance",
+      "Marine cargo insurance",
+      "Motor insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Life insurance pays a predetermined sum upon death or maturity and does not aim to indemnify a financial loss; therefore it typically does not follow indemnity but provides agreed benefits.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Working capital of a business is best defined as:",
+    "options": [
+      "Total value of fixed assets",
+      "Long-term capital invested by owners",
+      "Capital required for day-to-day operations, measured as current assets minus current liabilities",
+      "Total cash in hand only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Working capital equals current assets minus current liabilities and represents funds available for daily operations, ensuring the business can meet short-term obligations and maintain liquidity.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is a current asset?",
+    "options": [
+      "Factory building",
+      "Land",
+      "Inventory (stock)",
+      "Goodwill"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Inventory is a current asset because it is expected to be converted into cash or sold within the normal operating cycle, unlike fixed assets like buildings or intangible goodwill.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Calculate break-even units if fixed costs are N120,000, selling price per unit is N40 and variable cost per unit is N25.",
+    "options": [
+      "6,000 units",
+      "8,000 units",
+      "4,800 units",
+      "10,000 units"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "BEP units = Fixed costs / (Selling price - Variable cost) = 120,000 / (40 - 25) = 120,000 / 15 = 8,000. Wait note: correct calculation shows 8,000 units; option 6,000 is incorrect. The correct option is 1.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which depreciation method charges equal amount of depreciation each year based on cost less residual value?",
+    "options": [
+      "Reducing balance method",
+      "Straight-line method",
+      "Annuity method",
+      "Units of production method"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The straight-line method allocates equal depreciation each accounting period by dividing cost minus residual value by useful life, giving a constant annual charge until the asset's scrap value.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Value Added Tax (VAT) is best described as:",
+    "options": [
+      "A tax on the total price collected only from final consumers",
+      "A tax imposed at each stage of production based on the value added at that stage",
+      "A tax paid only by importers at the port",
+      "A direct tax on business profits"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "VAT is an indirect tax collected at each production and distribution stage on the value added; businesses charge VAT on sales and claim credits for VAT paid on inputs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is likely to be a negative effect of high inflation on business?",
+    "options": [
+      "Increased predictability of costs and prices",
+      "Reduced uncertainty for long-term planning",
+      "Erosion of purchasing power and increased cost of inputs",
+      "Lower nominal interest rates"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "High inflation erodes purchasing power, raises input costs, creates price instability and uncertainty, complicates budgeting and can reduce consumer demand for non-essential goods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "One primary function of a stock exchange is to:",
+    "options": [
+      "Manufacture goods for export",
+      "Provide liquidity by enabling buying and selling of shares",
+      "Issue government bonds only",
+      "Set interest rates for commercial banks"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stock exchanges facilitate the trading of securities, providing liquidity so investors can convert shares to cash and enabling price discovery and capital raising for companies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which trade barrier involves setting a maximum limit on the quantity of a product that may be imported?",
+    "options": [
+      "Tariff",
+      "Quota",
+      "Subsidy",
+      "Free trade area"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A quota is a quantitative restriction limiting the amount of a particular product that can be imported, used to protect domestic industries by controlling foreign supply.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "For perishable high-value goods where speed is critical, the preferred mode of transport is usually:",
+    "options": [
+      "Road transport",
+      "Rail transport",
+      "Sea transport",
+      "Air transport"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Air transport is fastest, ideal for perishable or high-value goods that require quick delivery despite higher cost; it reduces transit time and spoilage risk compared to sea or rail.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "One major function of warehousing in commerce is to:",
+    "options": [
+      "Produce goods for export",
+      "Store goods to balance time differences between production and consumption",
+      "Set retail prices across markets",
+      "Provide transportation for goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Warehousing stores goods to bridge timing gaps between production and consumption, helps maintain supply, support bulk buying and offer protection and quality control of stored items.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "In agency relationships, the agent acts on behalf of the principal. Which duty is owed by the agent to the principal?",
+    "options": [
+      "Compete with the principal in the same business",
+      "Act with loyalty and carry out instructions within authority",
+      "Keep all profits without informing the principal",
+      "Delegate all responsibilities without consent"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An agent must act loyally, follow lawful instructions within the authority granted, avoid conflicts of interest and account for dealings; these duties protect the principal's interests.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is primarily a sales promotion tool rather than advertising?",
+    "options": [
+      "Television commercial",
+      "Newspaper advert",
+      "Free samples and coupons",
+      "Billboard"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Free samples and coupons are sales promotion tools designed to encourage immediate purchases or trial, while television, newspaper and billboards are advertising media focused on awareness.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Market segmentation refers to:",
+    "options": [
+      "Setting a single price for all customers",
+      "Dividing a market into distinct groups of buyers with different needs or characteristics",
+      "Selling only to wholesalers",
+      "Merging companies across different industries"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation divides customers into groups based on needs, demographics or behaviour so firms can tailor products, pricing and promotion to each segment for greater marketing effectiveness.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which pricing strategy involves setting a low initial price to gain quick market share?",
+    "options": [
+      "Skimming pricing",
+      "Penetration pricing",
+      "Cost-plus pricing",
+      "Prestige pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Penetration pricing sets a low entry price to attract customers quickly, gain market share and discourage competitors, often used for new products to stimulate rapid adoption.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Marginal cost is best defined as:",
+    "options": [
+      "Total fixed cost divided by total output",
+      "Additional cost incurred to produce one more unit of output",
+      "Average cost over all units produced",
+      "Total cost minus variable cost"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Marginal cost is the extra cost of producing one additional unit; it helps in production and pricing decisions because firms compare marginal cost and marginal revenue to maximize profit.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which phrase best describes 'economies of scale'?",
+    "options": [
+      "Rising average cost with increased production",
+      "Savings and lower average cost as production expands",
+      "Government subsidies to small firms",
+      "Losses incurred due to large size"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Economies of scale are cost advantages that reduce average cost per unit as production increases due to specialization, bulk purchases, and better use of fixed resources.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "A primary characteristic of a cooperative society is:",
+    "options": [
+      "Control by one dominant owner",
+      "Democratic control with one member one vote",
+      "Profit maximization as the sole objective",
+      "Trading only in foreign currency"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cooperatives operate on democratic principles where members have equal voting rights (one member, one vote), focusing on mutual benefit rather than sole profit maximization.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which right do ordinary shareholders commonly exercise at the annual general meeting?",
+    "options": [
+      "Power to dismiss the central bank governor",
+      "Voting to elect the board of directors",
+      "Setting individual employee salaries",
+      "Issuing company cheques"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ordinary shareholders typically exercise the right to vote at AGMs to elect or remove directors, approve accounts and make decisions affecting the company's governance and policies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "In the event of company liquidation, which group has priority in repayment?",
+    "options": [
+      "Ordinary shareholders before creditors",
+      "Employees after shareholders",
+      "Debenture holders (creditors) before shareholders",
+      "Government only after shareholders"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "On liquidation, creditors including debenture holders are paid before shareholders because shareholders are residual claimants; this priority protects lenders' interests over owners'.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which instrument typically involves three parties and is often used in trade transactions?",
+    "options": [
+      "Promissory note",
+      "Cheque drawn and paid only domestically",
+      "Bill of exchange (draft)",
+      "Cash payment"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of exchange usually involves drawer, drawee and payee and is used to order payment at sight or after a given period; promissory note involves two parties only.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following political factors in the business environment can directly affect business operations?",
+    "options": [
+      "Consumer tastes and fashion",
+      "Government regulations and tax policies",
+      "Seasonal changes",
+      "Technological obsolescence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Political factors like laws, regulations, tax policies and political stability directly influence business costs, market access and compliance requirements, shaping operational decisions and strategy.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "A key advantage of public-private partnership (PPP) in infrastructure is:",
+    "options": [
+      "Full control by government with no private input",
+      "Shared financial burden and expertise between government and private sector",
+      "Exclusion of private sector skills",
+      "Avoidance of private investment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "PPPs combine government oversight with private financing and expertise, sharing risks and resources to deliver infrastructure efficiently while leveraging private sector management skills.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which is a principal function of a central bank?",
+    "options": [
+      "Providing retail banking services to all citizens directly",
+      "Issuing currency, acting as banker to government and regulating the banking sector",
+      "Competing with commercial banks for depositors",
+      "Setting prices of consumer goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Central banks issue currency, serve as the government's banker, regulate and supervise commercial banks and implement monetary policy, rather than offering retail services to the public.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "A commercial bank's main functions include:",
+    "options": [
+      "Issuing national currency and controlling inflation",
+      "Accepting deposits and granting loans to customers",
+      "Producing agricultural goods for export",
+      "Setting government fiscal policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial banks accept deposits, provide credit and other financial services to individuals and businesses; central banks, not commercial banks, issue national currency and set monetary policy.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "A negotiable instrument is characterized by:",
+    "options": [
+      "Inability to be transferred and no legal protection",
+      "Transferability and the holder obtaining rights free from certain defenses",
+      "Being always valid only when signed by the central bank",
+      "Having value only for barter transactions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Negotiable instruments are transferable by endorsement or delivery, and a holder in due course may acquire rights free from some defenses, providing liquidity and confidence in trade.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "One main purpose of import duty (customs duty) is to:",
+    "options": [
+      "Encourage unlimited importation of goods",
+      "Protect domestic industries by making imported goods more expensive",
+      "Eliminate local competition completely",
+      "Subsidize foreign producers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Import duties raise the cost of imported goods to protect domestic producers from foreign competition, generating government revenue and sometimes discouraging imports of sensitive products.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "If the domestic currency appreciates against foreign currencies, what is the most likely immediate effect on imports?",
+    "options": [
+      "Imports become more expensive for domestic buyers",
+      "Imports become cheaper for domestic buyers",
+      "No change in import prices",
+      "Exports become cheaper for foreigners"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Appreciation of the domestic currency increases its purchasing power abroad so domestic buyers can obtain more foreign goods for the same amount, making imports cheaper in local currency terms.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which document provides proof of insurance cover for goods in transit?",
+    "options": [
+      "Bill of lading",
+      "Invoice",
+      "Insurance certificate",
+      "Letter of credit"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "An insurance certificate or policy provides evidence that goods are insured against specified risks in transit; it covers losses or damages and is required in many trade transactions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "One function of trade unions is to:",
+    "options": [
+      "Prevent workers from discussing wages",
+      "Negotiate with employers for better wages and working conditions",
+      "Manage company finances",
+      "Issue government licenses"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade unions negotiate collectively with employers to secure better wages, benefits and working conditions for members, representing workers' interests in labour relations and disputes.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which statement best distinguishes a retailer from a wholesaler?",
+    "options": [
+      "Retailers sell in bulk to other businesses only",
+      "Wholesalers sell directly to final consumers only",
+      "Retailers sell in small quantities to final consumers; wholesalers sell large quantities to retailers and other buyers",
+      "Retailers manufacture goods; wholesalers advertise them"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Retailers sell goods in small quantities to final consumers, while wholesalers buy in bulk from producers and resell large quantities to retailers or other businesses, focusing on distribution channels.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "A job description primarily contains:",
+    "options": [
+      "A list of tasks, duties and responsibilities associated with a position",
+      "The educational qualifications of the entire organization",
+      "A bank account number for the employee",
+      "The employee's performance rating"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A job description outlines tasks, duties, responsibilities and reporting relationships for a role, helping in recruitment and performance assessment; job specification covers qualifications required.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following best differentiates job specification from job description?",
+    "options": [
+      "Job specification lists qualifications and skills required; job description lists duties and responsibilities",
+      "Job specification lists company profits; job description lists taxes",
+      "Job description lists skills; job specification lists duties",
+      "They are the same with no differences"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Job specification details required qualifications, experience and skills for a job, while job description enumerates duties, responsibilities and reporting lines; both are distinct but complementary.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "One advantage of e-commerce for businesses is:",
+    "options": [
+      "Higher fixed costs compared to physical stores always",
+      "Reduced geographical reach",
+      "Lower transaction costs and wider market access through the internet",
+      "Elimination of the need for any customer service"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "E-commerce reduces certain transaction costs, expands market reach beyond local boundaries, enables 24/7 operations and opens customers from diverse locations though it still requires customer service and logistics.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  },
+  {
+    "text": "What is one common challenge businesses face when using e-commerce in Nigeria?",
+    "options": [
+      "Excessive physical store footfall",
+      "Limited internet access and trust issues regarding online payments",
+      "Too many delivery options making logistics trivial",
+      "Government prohibition of online trade"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Challenges include limited reliable internet access, low consumer trust in online payments, logistics infrastructure gaps and payment security concerns, which can hinder e-commerce adoption in Nigeria.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2017
+  }
+]

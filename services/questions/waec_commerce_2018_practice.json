@@ -1,0 +1,702 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' as a field of study?",
+    "options": [
+      "The study of buying and selling of goods only",
+      "The study of business activities that facilitate the distribution of goods and services",
+      "The study of production processes and factory systems",
+      "The political regulation of trade between nations"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce covers all business activities that assist in the distribution and exchange of goods and services, including trade, transport, banking, insurance and warehousing, not just buying and selling or production alone.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a feature of sole proprietorship?",
+    "options": [
+      "Limited liability for owners",
+      "Ownership by state",
+      "Profits taxed separately from owner",
+      "Unlimited liability of the owner"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "In a sole proprietorship the owner has unlimited liability, meaning personal assets can be used to meet business debts. This contrasts with limited liability in corporations or limited companies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which instrument is commonly used for domestic payments and provides safety against theft of cash?",
+    "options": [
+      "Promissory note",
+      "Cheque",
+      "Bill of lading",
+      "Letter of credit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cheque is an instrument used for domestic payments drawn on a bank that moves funds without cash; it reduces risks associated with carrying cash and provides a traceable payment method.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is NOT a function of transport in commerce?",
+    "options": [
+      "Overcoming time and distance",
+      "Increasing utility of goods",
+      "Changing the form of goods",
+      "Distributing goods to consumers"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Transport moves goods from place to place, overcoming distance and time, and increasing place and possession utility. It does not change the form of goods, which is the function of processing or manufacturing.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which aspect of insurance involves the pooling of risks among many insured persons?",
+    "options": [
+      "Indemnity",
+      "Utmost good faith",
+      "Subrogation",
+      "Risk sharing"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Risk sharing refers to the pooling concept in insurance where many insured individuals contribute premiums to create a fund used to compensate the few who suffer losses, spreading the financial burden.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which marketing mix element is primarily concerned with methods of getting a product to the consumer?",
+    "options": [
+      "Product",
+      "Promotion",
+      "Price",
+      "Place (Distribution)"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Place or distribution in the marketing mix deals with channels, logistics and methods used to deliver the product to consumers, ensuring availability at the right place and time.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of these documents acts as evidence of ownership of goods shipped by sea?",
+    "options": [
+      "Invoice",
+      "Bill of lading",
+      "Certificate of insurance",
+      "Delivery note"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is a legal document issued by a carrier to a shipper, serving as receipt for goods, contract of carriage and document of title, thus evidencing ownership for sea shipments.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best explains 'opportunity cost' in business decisions?",
+    "options": [
+      "The monetary price paid for an item",
+      "The benefit foregone from the next best alternative",
+      "The total cost of production",
+      "The accounting cost recorded in books"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Opportunity cost is the value of the next best alternative foregone when a decision is made; it captures the benefits missed by choosing one option over another, central to economic decision-making.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which form of business organization is characterized by ownership by shareholders and limited liability?",
+    "options": [
+      "Partnership",
+      "Sole proprietorship",
+      "Cooperative society",
+      "Limited liability company"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A limited liability company (corporation) is owned by shareholders whose liability is limited to the value of their shares, separating personal assets from company debts and enabling capital raising.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is the primary objective of advertising in commerce?",
+    "options": [
+      "To eliminate competition",
+      "To inform, persuade and remind consumers about products",
+      "To regulate prices in the market",
+      "To manage internal operations of a firm"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising aims to inform potential customers about products, persuade them to buy, and remind them of a brand, thereby stimulating demand and building brand awareness and preference.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a reason governments impose tariffs on imported goods?",
+    "options": [
+      "To reduce domestic production",
+      "To make imported goods cheaper",
+      "To protect local industries from foreign competition",
+      "To eliminate all foreign trade"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Tariffs are taxes on imports used to raise the price of foreign goods, protecting domestic industries from foreign competition, encouraging local production and generating government revenue.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "A trader sells goods bought for N30,000 at a 20% profit. What is the selling price?",
+    "options": [
+      "N36,000",
+      "N26,000",
+      "N30,600",
+      "N32,000"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Selling price = cost + profit. Profit at 20% of N30,000 = N6,000. Therefore selling price = N30,000 + N6,000 = N36,000. This straightforward profit calculation yields N36,000.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which form of transport is most suitable for bulky, heavy goods over long land distances in Nigeria?",
+    "options": [
+      "Air transport",
+      "Water transport (coastal)",
+      "Rail transport",
+      "Pipeline transport"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Rail transport is ideal for bulky, heavy goods over long land distances as it carries large volumes at lower cost per ton, providing efficiency and capacity advantages compared to road or air.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is an advantage of a partnership over a sole proprietorship?",
+    "options": [
+      "Unlimited liability for owners",
+      "Easier to raise capital due to multiple partners",
+      "Profits are taxed at the personal rate only",
+      "No conflict between owners"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Partnerships can raise capital more easily than sole proprietorships because partners can pool resources, skills and contacts. However, they may still face liability and potential conflicts among partners.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best describes a cheque crossing?",
+    "options": [
+      "Writing the cheque without a date",
+      "Writing 'not negotiable' on the cheque",
+      "Specifying that the cheque must be paid through a bank and not cashed over the counter",
+      "Issuing a cheque payable to cash"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Crossing a cheque places two parallel lines or words like 'Account Payee' indicating it must be paid into a bank account and not cashed over the counter, increasing security and traceability.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which inventory system requires continuous recording of stock levels and ordering when stock reaches a reorder point?",
+    "options": [
+      "Periodic inventory system",
+      "Economic order quantity (EOQ) only",
+      "Perpetual inventory system",
+      "Just-in-case inventory system"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A perpetual inventory system continuously records stock movements and signals reordering when inventory falls to the reorder point, enabling accurate, real-time control of stock levels.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a primary market activity?",
+    "options": [
+      "Purchasing raw materials",
+      "Bank lending to consumers",
+      "Buying shares on the stock exchange",
+      "Retail sales to final consumers"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Primary market activities involve production-related tasks like purchasing raw materials for manufacturing. Retail sales are final distribution, while buying shares is a secondary financial market activity.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which financial statement shows a firm's financial position at a specific point in time?",
+    "options": [
+      "Income statement (Profit & Loss)",
+      "Cash flow statement",
+      "Balance sheet (Statement of financial position)",
+      "Budget report"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The balance sheet presents assets, liabilities and owners' equity at a specific date, reflecting the firm's financial position at that point, unlike income statements which cover a period.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of these is NOT a type of commercial bank account?",
+    "options": [
+      "Savings account",
+      "Current account",
+      "Fixed deposit account",
+      "Production account"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Production account is an accounting record, not a type of bank account. Commercial banks typically offer savings, current (checking), and fixed deposit accounts among others.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which term refers to goods imported into a country for resale without significant transformation?",
+    "options": [
+      "Raw materials",
+      "Final goods",
+      "Intermediate goods",
+      "Provisional goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Final goods are imported ready for consumer use or resale without further processing. Raw materials and intermediate goods usually require transformation in production.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which measure would a business use to encourage immediate purchase and create short-term sales boost?",
+    "options": [
+      "Brand positioning",
+      "Sales promotion",
+      "Market segmentation",
+      "Corporate governance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sales promotion includes limited-time offers, discounts, coupons and other incentives to stimulate quick purchases and boost short-term sales, differing from long-term branding strategies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is an example of a non-tariff barrier to trade?",
+    "options": [
+      "Import duty",
+      "Quota restrictions",
+      "Export subsidy",
+      "Customs valuation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Quota restrictions limit quantities of imports and are non-tariff barriers. They restrict market access without directly imposing taxes, unlike import duties which are tariff barriers.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of these terms describes specialization in production where individuals focus on specific tasks to increase efficiency?",
+    "options": [
+      "Diversification",
+      "Division of labour",
+      "Centralization",
+      "Horizontal integration"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Division of labour involves assigning specific tasks to workers to increase skill and efficiency, leading to higher productivity compared with each worker doing all tasks alone.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which accounting principle requires that expenses be matched with the revenues they help to generate?",
+    "options": [
+      "Going concern",
+      "Matching principle",
+      "Prudence",
+      "Historical cost"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The matching principle dictates that expenses should be recorded in the same accounting period as the revenues they relate to, ensuring accurate measurement of profit for the period.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best describes a cooperative society?",
+    "options": [
+      "A profit-maximizing private limited company",
+      "A business owned and run jointly by members for their mutual benefit",
+      "A government-owned enterprise",
+      "A single-owner business with unlimited liability"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cooperative is formed by members who pool resources and operate democratically to meet common economic needs, focusing on mutual benefit rather than maximizing profit for external owners.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which pricing method involves adding a fixed percentage to the cost price to set selling price?",
+    "options": [
+      "Competitive pricing",
+      "Cost plus pricing (mark-up)",
+      "Penetration pricing",
+      "Skimming pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cost-plus pricing or mark-up sets the selling price by adding a fixed percentage or amount to the cost, ensuring a margin over cost but not necessarily reflecting market demand.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following documents is prepared by a seller showing goods sold, prices and terms of sale to the buyer?",
+    "options": [
+      "Purchase order",
+      "Invoice",
+      "Shipping note",
+      "Bank statement"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An invoice is issued by a seller detailing goods sold, quantities, prices and terms for payment. It serves as a request for payment and evidence of the sale transaction.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which business objective focuses on ensuring long-term survival and growth rather than immediate profits?",
+    "options": [
+      "Profit maximization",
+      "Size maximization",
+      "Growth and survival objective",
+      "Sales minimization"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The growth and survival objective prioritizes reinvestment and strategic decisions that ensure the firm's long-term existence and expansion, even if short-term profits are sacrificed.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a characteristic of e-commerce?",
+    "options": [
+      "Transactions require physical presence only",
+      "Limited to domestic trade",
+      "Use of internet to buy and sell goods and services",
+      "Excludes digital products"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "E-commerce uses the internet and electronic systems to conduct buying and selling of goods and services, enabling remote transactions, cross-border trade, and digital product delivery.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which practice improves customer retention by customizing products or services to individual preferences?",
+    "options": [
+      "Mass marketing",
+      "Standardization",
+      "Personalization",
+      "Price skimming"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Personalization tailors products or services to individual customer preferences, improving satisfaction and loyalty, and distinguishing offerings from mass-market standardized approaches.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which type of insurance provides compensation for loss resulting from death of the insured?",
+    "options": [
+      "Fire insurance",
+      "Life insurance",
+      "Marine insurance",
+      "Crop insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Life insurance pays a benefit to designated beneficiaries upon the insured person's death, offering financial protection and fulfilling long-term commitments unlike property-specific insurances.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is an example of indirect tax?",
+    "options": [
+      "Personal income tax",
+      "Corporate tax",
+      "Value Added Tax (VAT)",
+      "Capital gains tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "VAT is an indirect tax levied on goods and services at each stage of production and distribution but ultimately borne by the final consumer, unlike direct taxes on income or profit.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which risk management technique involves transferring the risk to another party, usually an insurance company?",
+    "options": [
+      "Risk retention",
+      "Risk avoidance",
+      "Risk transfer",
+      "Risk exploitation"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Risk transfer shifts the financial consequences of a risk to another party, commonly through insurance, where the insurer assumes the risk in return for premium payments.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best explains 'market segmentation'?",
+    "options": [
+      "Dividing a market into distinct groups of buyers with similar needs or characteristics",
+      "Merging with competitors to dominate a market",
+      "Setting a single price for all customers",
+      "Expanding to new geographic regions only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Market segmentation divides a market into groups with similar characteristics or needs so that firms can target marketing mixes effectively, improving appeal and resource allocation.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a function of a wholesaler?",
+    "options": [
+      "Buying in small quantities from producers",
+      "Breaking bulk and supplying retailers",
+      "Selling directly to final consumers",
+      "Manufacturing finished goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wholesalers buy goods in large quantities from producers and break bulk into smaller quantities for retailers, facilitating distribution and reducing transaction costs for producers.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which document initiates an international shipment by giving instructions to a carrier to deliver goods to the consignee?",
+    "options": [
+      "Insurance policy",
+      "Commercial invoice",
+      "Bill of lading",
+      "Credit note"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of lading is issued by a carrier and acts as a contract and receipt for shipped goods, providing instructions for delivery to the consignee and documentation for international trade.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best describes 'liquidity' in a business context?",
+    "options": [
+      "Ability to generate profit over long term",
+      "Ease with which assets can be converted into cash to meet short-term obligations",
+      "Total amount of debt a company holds",
+      "Market share percentage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Liquidity refers to the firm's ability to meet short-term obligations by converting assets to cash quickly without significant loss in value, crucial for operational stability and solvency.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is an advantage of advertising through radio in Nigeria?",
+    "options": [
+      "High production and airtime cost",
+      "Limited reach to rural areas",
+      "Ability to reach illiterate audiences and broad geographic coverage",
+      "No possibility of repeated exposure"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Radio has wide reach, is relatively affordable, and can reach illiterate or rural audiences, offering frequent repetition and flexibility, making it effective for mass communication in Nigeria.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following strategies would a firm use to enter a market with the lowest price to attract customers quickly?",
+    "options": [
+      "Price skimming",
+      "Penetration pricing",
+      "Premium pricing",
+      "Cost-plus pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Penetration pricing sets low initial prices to attract customers, gain market share quickly and discourage competitors, often used for new product introductions or price-sensitive markets.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which action best illustrates 'stocktaking' in inventory management?",
+    "options": [
+      "Setting reorder levels",
+      "Physically counting items and reconciling with records",
+      "Determining economic order quantity",
+      "Issuing purchase orders"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stocktaking involves physically counting inventory items and comparing counts with records to identify discrepancies, losses or errors, ensuring accurate records and control of stock levels.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a characteristic of a private limited liability company in Nigeria?",
+    "options": [
+      "Shares are freely transferable to the public",
+      "Unlimited number of members",
+      "Limited liability and restrictions on share transfer",
+      "Owned and controlled by the state"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A private limited company commonly features limited liability for shareholders and restrictions on share transfer to outsiders, preventing public trading of shares and protecting ownership structure.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which type of retail outlet operates for extended hours and offers convenience items at higher prices?",
+    "options": [
+      "Department store",
+      "Supermarket",
+      "Convenience store",
+      "Wholesale club"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Convenience stores operate long hours, are located for easy access, and sell everyday items at slightly higher prices for the convenience they offer compared to supermarkets or department stores.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which practice is unethical in commerce and can damage a firm's reputation if discovered?",
+    "options": [
+      "Transparent financial reporting",
+      "False advertising and deceptive claims",
+      "Quality control and consumer safety",
+      "Fair trade practices"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "False advertising misleads consumers about product features or benefits. It is unethical, legally risky, and can harm reputation and customer trust when exposed, unlike transparent practices.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best describes 'working capital'?",
+    "options": [
+      "Long-term investments of the firm",
+      "Capital used to purchase fixed assets",
+      "Current assets minus current liabilities used in day-to-day operations",
+      "Total shareholders' equity"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Working capital is the difference between current assets and current liabilities and represents funds available for daily operations such as inventory, receivables and short-term payments.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best explains 'subrogation' in insurance?",
+    "options": [
+      "The insured must disclose all material facts",
+      "An insurer steps into the shoes of the insured to recover from a third party who caused the loss",
+      "The policyholder pays a deductible",
+      "A contract cannot be transferred"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Subrogation allows an insurer who has indemnified the insured to pursue recovery from a responsible third party, preventing the insured from receiving double compensation and protecting insurer interests.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which economic term describes when a country exports more than it imports?",
+    "options": [
+      "Trade deficit",
+      "Trade surplus",
+      "Balance of payments deficit",
+      "Current account deficit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A trade surplus occurs when the value of exports exceeds imports, improving net exports and potentially strengthening a country's economy and foreign exchange position.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a limitation of debt financing for a business?",
+    "options": [
+      "Dilution of ownership",
+      "Mandatory interest payments that reduce cash flow",
+      "Provides long-term equity capital",
+      "Elimination of financial risk"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Debt financing requires regular interest and principal repayments, which can strain cash flow and increase financial risk, unlike equity which does not require fixed payments but dilutes ownership.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which term refers to the legal right to sell a product or service under a brand and system established by another business?",
+    "options": [
+      "Licensing",
+      "Franchising",
+      "Mergers",
+      "Joint venture"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Franchising grants the franchisee rights to operate under an established brand and business model of the franchisor, including use of trademarks, systems and ongoing support, in exchange for fees.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following documents authorizes a bank to pay a specified sum to a named person on demand and is guaranteed by the bank?",
+    "options": [
+      "Traveler's cheque",
+      "Cashier's cheque (banker's draft)",
+      "Bearer cheque",
+      "Promissory note"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cashier's cheque or banker's draft is drawn by the bank on itself and guaranteed by the issuing bank to pay a specified sum to the named payee, providing secure guaranteed payment.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a core purpose of packaging in commerce?",
+    "options": [
+      "To increase production costs unnecessarily",
+      "To conceal product origin",
+      "To protect goods, provide information and promote the product",
+      "To replace advertising entirely"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Packaging protects goods from damage, provides necessary information like ingredients and usage, and serves promotional purposes by attracting consumers and differentiating the product in the market.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2018
+  }
+]

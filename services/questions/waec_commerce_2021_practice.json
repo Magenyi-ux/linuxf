@@ -1,0 +1,758 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' in the context of the secondary school syllabus?",
+    "options": [
+      "The production of goods and services for consumption.",
+      "The exchange activities that facilitate distribution of goods from producers to consumers.",
+      "The legal regulation of private businesses by government.",
+      "The process of converting raw materials into finished goods."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce refers to activities that facilitate distribution and exchange of goods and services between producers and consumers. It covers trade, transport, banking, insurance and warehousing which support buying and selling, not production itself.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which form of business ownership is characterised by unlimited liability, single ownership and sole control?",
+    "options": [
+      "Partnership",
+      "Public limited company",
+      "Sole proprietorship",
+      "Cooperative society"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A sole proprietorship is owned by one person who has full control but bears unlimited liability. It contrasts with companies and cooperatives which have limited liability or collective ownership arrangements.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is NOT a primary function of a commercial bank?",
+    "options": [
+      "Accepting deposits",
+      "Granting loans and advances",
+      "Issuing educational certificates",
+      "Facilitating payment services"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Issuing educational certificates is unrelated to banking. Commercial banks primarily accept deposits, provide loans and facilitate payments. Educational certification is a function of educational institutions, not banks.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which document is used by a buyer to instruct their bank to pay a certain sum to a seller at sight?",
+    "options": [
+      "Promissory note",
+      "Bill of exchange (draft)",
+      "Invoice",
+      "Delivery note"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of exchange is an order written by the drawer instructing the drawee (often a bank) to pay a specified sum to the payee on demand or at a future date. It facilitates payment in trade.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which type of insurance protects a business against loss from fire and related perils?",
+    "options": [
+      "Life insurance",
+      "Fire insurance",
+      "Marine insurance",
+      "Health insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fire insurance specifically indemnifies the insured against loss or damage to property from fire and related risks. Marine insurance covers goods in transit; life and health insurance cover people, not property.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "If a trader sells goods on credit, which accounting entry increases?",
+    "options": [
+      "Cash in hand",
+      "Accounts receivable (debtors)",
+      "Accounts payable (creditors)",
+      "Bank overdraft"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "When goods are sold on credit, the purchaser becomes a debtor; accounts receivable increases. Cash does not increase until payment is received, and payables or overdraft are unaffected by the sale.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best defines 'wholesaling'?",
+    "options": [
+      "Selling goods directly to the final consumer.",
+      "Selling large quantities of goods to retailers or other traders.",
+      "Selling only imported goods to domestic buyers.",
+      "Transporting goods from producer to the market."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wholesaling involves selling goods in bulk to middlemen such as retailers or other businesses rather than final consumers. It bridges production and retail distribution by buying large quantities and breaking bulk.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which transport mode is generally most suitable for perishable goods requiring rapid delivery over long distances?",
+    "options": [
+      "Road transport",
+      "Rail transport",
+      "Air transport",
+      "Sea transport"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Air transport is fastest and therefore most suitable for perishable goods requiring quick delivery over long distances. Although costly, speed and reliability reduce spoilage compared with road, rail or sea.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which business document provides details of goods despatched and serves as evidence of delivery?",
+    "options": [
+      "Invoice",
+      "Receipt",
+      "Delivery note",
+      "Purchase order"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A delivery note accompanies goods and lists items despatched; when signed by the receiver it becomes evidence of delivery. Invoices record amounts payable, receipts acknowledge payment, and purchase orders request goods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "In a partnership, which document regulates rights and obligations of partners if they want clarity beyond the Partnership Act?",
+    "options": [
+      "Articles of association",
+      "Partnership agreement (deed)",
+      "Memorandum of association",
+      "Statement of account"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A partnership agreement (deed) sets out partners' rights, duties, profit sharing and dispute resolution. It complements statutory provisions and provides clarity beyond default rules of the Partnership Act.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which pricing method involves setting a low initial price to attract buyers and gain market share quickly?",
+    "options": [
+      "Price skimming",
+      "Penetration pricing",
+      "Cost-plus pricing",
+      "Psychological pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Penetration pricing uses low initial prices to attract buyers and rapidly obtain market share. Price skimming uses high initial prices, while cost-plus and psychological pricing follow different principles.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is an example of 'impersonal trade'?",
+    "options": [
+      "A customer buying in open market from a retailer.",
+      "A manufacturer selling goods through an agent.",
+      "A shopkeeper selling directly to a neighbor.",
+      "Producers selling through e-commerce platforms to consumers."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Impersonal trade occurs where buyers and sellers do not meet face-to-face; e-commerce platforms enable such transactions. Selling through an agent involves an intermediary but can still be personal trade when parties interact directly.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which document serves as proof that the buyer has received goods and has agreed to the terms shown on the seller's invoice?",
+    "options": [
+      "Credit note",
+      "Debit note",
+      "Receipt",
+      "Advice note"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A receipt acknowledges payment and indicates the buyer has received goods or services. It supports the invoice and serves as proof of transaction and transfer of goods for accounting and legal purposes.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best explains 'stocktaking' in a business?",
+    "options": [
+      "Ordering new goods from suppliers.",
+      "Counting and valuing goods held in inventory at a given date.",
+      "Transporting goods between warehouses.",
+      "Advertising goods to increase sales."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stocktaking is the periodic counting and valuation of inventory at a particular date to ascertain closing stock. It ensures accuracy of book records, identifies losses, and helps in financial reporting and reorder decisions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of these is a characteristic of a public limited company (PLC)?",
+    "options": [
+      "Shares cannot be offered to the public.",
+      "Shareholders have unlimited liability.",
+      "Shares are freely transferable and can be listed on a stock exchange.",
+      "Owned and controlled by a single person."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A PLC issues shares to the public and its shares are freely transferable and may be quoted on a stock exchange. Shareholders enjoy limited liability and ownership is dispersed, not held by one person.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which monetary instrument immediately withdraws money from the payer\u2019s account when presented by the payee?",
+    "options": [
+      "Bearer cheque",
+      "Order cheque",
+      "Post-dated cheque",
+      "Promissory note"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A bearer cheque is payable to whoever presents it and is cashed immediately, causing funds to be withdrawn. Order cheques require endorsement, post-dated cheques are dated for the future, and promissory notes are promises to pay.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best describes a 'trade union' role in commerce?",
+    "options": [
+      "Organising producers to export goods.",
+      "Protecting workers' rights and negotiating wages and conditions.",
+      "Regulating inter-state commerce on behalf of government.",
+      "Managing warehouses for retail stores."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade unions organise workers to protect labour rights, negotiate wages, improve working conditions and represent members in disputes. They do not manage warehouses or regulate interstate commerce, which are government or business roles.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "In international trade, which term refers to the price of one country's currency expressed in terms of another?",
+    "options": [
+      "Tariff",
+      "Balance of trade",
+      "Exchange rate",
+      "Licensing fee"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The exchange rate is the value of one currency expressed in terms of another and determines how much one must pay to buy foreign currency. It affects import costs, export competitiveness and international transactions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is an advantage of specialization in production?",
+    "options": [
+      "Reduced dependence on market demand.",
+      "Lower output per worker due to monotony.",
+      "Increased efficiency and higher productivity.",
+      "Higher training costs with no productivity gains."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Specialization allows workers or firms to focus on specific tasks, improving skill, speed and efficiency which increases overall productivity. While there may be downsides, the primary advantage is greater efficiency and output.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which government policy instrument is used to restrict imports by raising their prices?",
+    "options": [
+      "Subsidy",
+      "Tariff",
+      "Grant",
+      "Export promotion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A tariff is a tax on imported goods that raises their cost and discourages imports, protecting domestic industries. Subsidies lower local producers' costs, while grants and export promotion encourage production and sales abroad.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which term describes the additional money paid to shareholders out of company profits?",
+    "options": [
+      "Dividend",
+      "Interest",
+      "Salary",
+      "Rent"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A dividend is the distribution of a company's profits to its shareholders in proportion to their shareholding. Interest is payment for borrowed money; salary and rent are payments to employees and for property respectively.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a key function of a warehouse in commerce?",
+    "options": [
+      "Producing finished goods.",
+      "Advertising goods to consumers.",
+      "Storing and protecting goods until required.",
+      "Collecting taxes on goods sold."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Warehouses store, protect and manage goods until they are needed by retailers or consumers. They assist in balancing supply and demand and facilitate distribution. Production, advertising and tax collection are not primary warehouse functions.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best explains 'agent' in commerce?",
+    "options": [
+      "A person who manufactures goods on commission.",
+      "A person who buys, sells or negotiates on behalf of another for a commission.",
+      "A person who stores goods for a fee.",
+      "A person who issues licenses for trade."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An agent acts on behalf of another (principal) to buy, sell or negotiate transactions for a commission. They represent principals in trade, unlike manufacturers, warehousemen or licensing authorities.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which pricing strategy uses prices ending in .99 or .95 to influence buyer perception?",
+    "options": [
+      "Cost-plus pricing",
+      "Competitive pricing",
+      "Psychological pricing",
+      "Penetration pricing"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Psychological pricing involves setting prices that have a psychological impact, such as using .99 to make prices appear lower. It influences consumer perception rather than reflecting cost or competitor-based strategies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is true of a 'credit note' issued by a seller?",
+    "options": [
+      "It increases the buyer's payable balance.",
+      "It acknowledges overpayment or reduction in amount owed and reduces the buyer's debt.",
+      "It is used to demand payment from a buyer.",
+      "It records the physical delivery of goods."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A credit note is issued to reduce the buyer's outstanding balance when goods are returned, overcharged, or discounts granted. It decreases the debtor's liability, unlike invoices which demand payment.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which trade term indicates that the seller's responsibility ends when goods are placed on board a ship at the port of shipment?",
+    "options": [
+      "FOB (Free On Board)",
+      "CIF (Cost, Insurance and Freight)",
+      "DDP (Delivered Duty Paid)",
+      "EXW (Ex Works)"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "FOB means the seller's obligation ends when goods pass the ship's rail at the port of shipment; thereafter the buyer bears risk and cost of carriage. CIF includes cost, insurance and freight to destination.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best describes 'economies of scale'?",
+    "options": [
+      "Increased unit cost as output expands due to inefficiency.",
+      "Reduced unit cost of production as scale of output increases.",
+      "Government subsidies to small firms to encourage growth.",
+      "The effect of inflation on business operations."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Economies of scale occur when increased production leads to lower average costs per unit due to spreading fixed costs and improved efficiencies. It benefits larger scale operations, not increased unit costs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a disadvantage of a sole proprietorship?",
+    "options": [
+      "Easy decision-making",
+      "Difficulty in raising large capital",
+      "Close personal relationship with customers",
+      "Full control of business operations"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sole proprietorships often find it hard to raise large capital due to reliance on the owner's resources. While decision-making and control are advantages, capital limitation is a serious disadvantage.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which promotional method uses short-term incentives such as discounts or coupons to stimulate immediate sales?",
+    "options": [
+      "Public relations",
+      "Personal selling",
+      "Sales promotion",
+      "Advertising"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Sales promotion uses short-term incentives like discounts, coupons or free samples to induce immediate purchases. Advertising and PR build long-term awareness, while personal selling involves interpersonal persuasion.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which accounting principle requires business transactions to be recorded at their original cost?",
+    "options": [
+      "Matching principle",
+      "Historical cost principle",
+      "Going concern principle",
+      "Accrual principle"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The historical cost principle states assets and transactions should be recorded at their original purchase price. This provides reliable, verifiable data though it may not reflect current market values.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following types of cooperative is formed mainly to supply goods and services to its members?",
+    "options": [
+      "Credit cooperative",
+      "Consumer cooperative",
+      "Producer cooperative",
+      "Marketing cooperative"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A consumer cooperative purchases and supplies goods and services to its members at reasonable prices. Producer cooperatives produce and market goods, while credit cooperatives offer financial services.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following describes 'balance of trade'?",
+    "options": [
+      "Difference between a country's exports and imports of goods only.",
+      "Total value of all services exported by a country.",
+      "Sum of exports, imports and capital flows.",
+      "Government budget surplus or deficit."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Balance of trade is the difference between the monetary value of goods exported and imported. It excludes services and capital flows. A surplus occurs when exports exceed imports, and vice versa.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following statements best describes 'franchise' as a form of business expansion?",
+    "options": [
+      "A franchisor grants a franchisee the right to operate using its brand and methods for a fee.",
+      "A franchise is a government licence to export goods.",
+      "Franchising involves merging two equal companies into one.",
+      "It is a form of short-term loan to small businesses."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Franchising is a business arrangement where the franchisor allows the franchisee to use its trade name, business model and support in return for fees or royalties. It is a method of rapid expansion without full ownership.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of these is a primary function of an insurance company when it pools risks?",
+    "options": [
+      "To guarantee profits for shareholders by avoiding claims.",
+      "To collect premiums and spread the financial consequences of individual loss among many policyholders.",
+      "To manufacture goods for export markets.",
+      "To provide banking loans exclusively to policyholders."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Insurance companies collect premiums from many policyholders and pool resources to pay claims, spreading risk. They do not guarantee profits by avoiding claims, nor are they primarily manufacturers or exclusive lenders.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best indicates 'working capital' in a trading business?",
+    "options": [
+      "Fixed assets such as buildings and machinery.",
+      "Long-term borrowings used to expand capacity.",
+      "Short-term funds used for day-to-day operations like buying stock and paying wages.",
+      "Capital invested by shareholders for initial setup only."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Working capital refers to short-term funds required for daily operations such as purchasing stock, paying wages and meeting short-term obligations. Fixed assets and long-term borrowings relate to capital structure, not working capital.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which market structure is characterised by many sellers offering homogenous products with easy entry and exit?",
+    "options": [
+      "Perfect competition",
+      "Monopoly",
+      "Oligopoly",
+      "Monopolistic competition"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Perfect competition involves many sellers, homogenous products and free entry and exit, leading to price-taking behaviour. Monopolies and oligopolies involve fewer firms and differentiated market power.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a reason governments encourage exports?",
+    "options": [
+      "To reduce foreign exchange earnings.",
+      "To increase imports dependence.",
+      "To earn foreign exchange and stimulate domestic industries.",
+      "To discourage domestic production."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Governments encourage exports to earn foreign exchange, expand markets for domestic producers, stimulate production and create employment. Export promotion strengthens national income rather than reducing it or discouraging production.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which practice involves selling the same product in different markets at different prices?",
+    "options": [
+      "Price discrimination",
+      "Loss-leading",
+      "Cost-plus pricing",
+      "Predatory pricing"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Price discrimination is charging different prices for identical products in different markets or to different consumer groups, based on willingness to pay. Loss-leading sets low prices to attract customers, not to segment markets.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which ledger records in detail all transactions relating to customers who owe money to the business?",
+    "options": [
+      "General ledger",
+      "Sales ledger (debtors ledger)",
+      "Purchase ledger (creditors ledger)",
+      "Cash book"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The sales ledger, or debtors ledger, contains individual accounts for each customer who owes the business, recording credit sales and receipts. The purchase ledger records creditors, while the general ledger summarises all.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best defines 'advertising' as a component of marketing?",
+    "options": [
+      "Personal persuasion by a salesperson.",
+      "Paid, non-personal communication to inform or persuade target customers about products or services.",
+      "The process of setting product prices.",
+      "Distribution of goods to wholesalers."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising is paid, non-personal communication through media to inform or influence target audiences about products or services. It differs from personal selling and is part of the promotional mix, not pricing or distribution.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following would be classified as 'fixed capital' in a business?",
+    "options": [
+      "Cash in till for daily sales.",
+      "Stock of finished goods for sale.",
+      "Machinery used for production.",
+      "Short-term bank loan for working capital."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Fixed capital includes long-term assets like machinery, buildings and equipment used over several accounting periods in production. Cash and stock are current assets; short-term loans are part of working capital financing.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a feature of e-commerce?",
+    "options": [
+      "Transactions require face-to-face contact at all times.",
+      "Trade conducted via electronic networks like the internet, enabling remote transactions.",
+      "Only physical goods can be sold through e-commerce platforms.",
+      "E-commerce eliminates the need for any form of payment."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "E-commerce involves buying and selling via electronic networks such as the internet, allowing remote transactions of both goods and services, with electronic payment systems. It does not require face-to-face contact and still needs payment methods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best describes 'trade barrier'?",
+    "options": [
+      "Policies that facilitate free movement of goods between countries.",
+      "Measures such as tariffs, quotas and licensing that restrict international trade.",
+      "Investment incentives for foreign firms.",
+      "A system to encourage imports by offering subsidies."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade barriers include tariffs, quotas, licensing and non-tariff measures designed to restrict imports and protect domestic industries. They are opposite to policies facilitating free trade, and not incentives for foreign investment.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of these is the correct order of documents normally used in an international sale transaction?",
+    "options": [
+      "Invoice \u2192 Purchase order \u2192 Bill of lading",
+      "Purchase order \u2192 Invoice \u2192 Bill of lading",
+      "Bill of lading \u2192 Purchase order \u2192 Invoice",
+      "Invoice \u2192 Bill of lading \u2192 Purchase order"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Typically a buyer issues a purchase order; the seller supplies goods and issues an invoice; when goods are shipped a bill of lading is issued as evidence of carriage. This sequence reflects contractual flow and shipping documentation.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best describes 'microeconomics' as part of commerce study?",
+    "options": [
+      "Study of government fiscal and monetary policy effects on the whole economy.",
+      "Study of individual consumer and firm behaviour and market mechanisms.",
+      "Study of international trade agreements only.",
+      "Analysis of national income and aggregate demand only."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Microeconomics examines behaviour of individual consumers, firms and markets, including supply, demand and price formation. Macroeconomics, in contrast, deals with aggregate national issues like fiscal policy and national income.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best explains 'trade credit' as a source of business financing?",
+    "options": [
+      "Loans taken from a commercial bank with collateral.",
+      "Advance payment required by suppliers before goods are delivered.",
+      "Suppliers allow buyers to purchase now and pay later.",
+      "Public issue of shares to raise long-term capital."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Trade credit occurs when suppliers deliver goods and allow the buyer to pay at a later agreed date, effectively providing short-term finance. It is common in business-to-business transactions and helps working capital management.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which document is primarily used by importers to claim ownership of goods from carriers at destination ports?",
+    "options": [
+      "Packing list",
+      "Bill of lading",
+      "Quotation",
+      "Pro-forma invoice"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is a document issued by a carrier acknowledging receipt of goods for shipment; it functions as title to goods and is presented to claim goods at destination, after fulfilling payment or terms.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is an example of vertical integration in business?",
+    "options": [
+      "A bakery buying a fleet of delivery vans.",
+      "A clothing retailer opening additional retail branches.",
+      "A car manufacturer acquiring a tire-producing firm.",
+      "Two competing banks merging into one."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Vertical integration occurs when a firm acquires or merges with another at a different stage of production or supply chain, for example a car maker acquiring a tire producer. Buying vans is related but not a different production stage.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following statements about 'credit rating' is correct?",
+    "options": [
+      "It assesses a person's social standing in their community.",
+      "It evaluates the creditworthiness of individuals or firms for lending decisions.",
+      "It is used only by insurance companies to set premiums.",
+      "It guarantees that a borrower will repay loans."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A credit rating assesses an individual or firm's ability and willingness to repay debts, guiding lenders' decisions. It does not guarantee repayment, nor is it social status; insurers may use it but it is not limited to them.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which financial statement shows the financial position of a business at a specific date?",
+    "options": [
+      "Income statement (profit and loss account)",
+      "Statement of retained earnings",
+      "Balance sheet (statement of financial position)",
+      "Cash flow statement"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The balance sheet presents assets, liabilities and owners' equity at a specific date, showing financial position. Income statements cover performance over a period, while cash flow shows movements in cash for a period.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of these is an advantage of using intermediaries in distribution?",
+    "options": [
+      "Increased time and cost to reach consumers always.",
+      "They reduce market reach by limiting outlets.",
+      "They provide wider market access, breaking bulk and providing market information.",
+      "They eliminate need for any promotion by manufacturers."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Intermediaries, such as wholesalers and retailers, offer benefits like wider distribution, breaking bulk, grading and providing market information and credit. They do not necessarily increase promotion needs nor always increase costs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a reason for government to establish public corporations?",
+    "options": [
+      "To provide essential services where private firms may not invest due to low profit.",
+      "To reduce employment opportunities in the economy.",
+      "To ensure all businesses operate at loss.",
+      "To privatize all strategic industries."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Public corporations are established to provide essential services, ensure national development, or operate strategic industries that private investors avoid due to low immediate profits. They aim to serve public interest and national goals.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best explains 'gross profit' for a trading business?",
+    "options": [
+      "Sales revenue minus operating expenses.",
+      "Sales revenue minus cost of goods sold.",
+      "Net profit after tax and interest.",
+      "Total assets minus total liabilities."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Gross profit equals sales revenue less cost of goods sold (COGS). It indicates trading margin before operating expenses, taxes and interest are deducted. Net profit and balance sheet figures are different measures.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is the main purpose of 'advertising agencies' in commerce?",
+    "options": [
+      "To produce goods for manufacturers.",
+      "To provide specialized services in designing and placing advertisements for clients.",
+      "To regulate advertising laws for the government.",
+      "To underwrite insurance policies for advertisers."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising agencies offer professional services in creating, planning and placing adverts across media for clients to reach target markets effectively. They are not manufacturers, regulators or insurers.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2021
+  }
+]

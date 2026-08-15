@@ -1,0 +1,772 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' in economic terms?",
+    "options": [
+      "A system of buying and selling goods only",
+      "Activities that facilitate the exchange of goods and services between producers and consumers",
+      "Production of goods for local consumption",
+      "Storage of goods for future use"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce comprises all activities that facilitate exchange between producers and consumers, including transport, banking, insurance, warehousing, and advertising. It is broader than mere buying and selling and enables distribution and movement of goods and services.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which document is primarily used by an exporter to instruct a carrier to convey goods and serve as title to the goods?",
+    "options": [
+      "Commercial invoice",
+      "Bill of lading",
+      "Proforma invoice",
+      "Insurance policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is a transport document issued by a carrier to the shipper; it acknowledges receipt of goods, serves as a contract of carriage, and acts as a document of title enabling transfer of ownership during shipment.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of these is a feature of a sole proprietorship?",
+    "options": [
+      "Limited liability of owners",
+      "Ownership by shareholders",
+      "Single owner who has unlimited liability",
+      "Managed by a board of directors"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A sole proprietorship is owned by one person who has unlimited liability; the owner is personally responsible for business debts. It lacks shareholder ownership and has no board of directors, distinguishing it from companies.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which instrument is defined as an unconditional written order directing a person to pay a specified sum to a named person or bearer?",
+    "options": [
+      "Promissory note",
+      "Cheque",
+      "Bill of exchange",
+      "Invoice"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of exchange is an unconditional written order from one person directing another to pay a specified sum to a third person or bearer. It differs from a promissory note (promise to pay) and from cheques (drawn on banks).",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'working capital'?",
+    "options": [
+      "Long-term finance invested in fixed assets",
+      "Cash reserves kept for emergency only",
+      "Funds used for day-to-day operations of a business",
+      "Capital invested by owners only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Working capital refers to funds required for daily operations such as purchasing stock, paying wages and meeting short-term obligations. It is current assets minus current liabilities and not limited to owner contributions or fixed asset financing.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which one of the following is NOT a function of commercial banks?",
+    "options": [
+      "Acceptance of deposits",
+      "Granting loans and advances",
+      "Underwriting insurance policies",
+      "Issuing letters of credit"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Commercial banks accept deposits, grant loans, and issue letters of credit. Underwriting insurance policies is primarily a function of insurance companies, not commercial banks, though banks may sell insurance as agents.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which pricing method involves setting prices based on competitors' prices rather than on internal costs?",
+    "options": [
+      "Cost-plus pricing",
+      "Penetration pricing",
+      "Competition-based pricing",
+      "Price skimming"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Competition-based pricing sets prices by considering competitors' prices and market rates. It contrasts with cost-plus (based on costs), penetration (low initial price), and skimming (high initial price then lower).",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best explains 'bill of exchange' when used in international trade?",
+    "options": [
+      "A document stating goods dispatched",
+      "An insurance document covering shipment risks",
+      "A negotiable instrument used to demand payment from the importer",
+      "A certificate of origin"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In international trade, a bill of exchange is a negotiable instrument drawn by the exporter (drawer) on the importer (drawee) requiring payment at sight or at a future date. It facilitates credit and payment settlements across borders.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which one of these is an example of direct marketing?",
+    "options": [
+      "Advertising on national television",
+      "Personal selling door-to-door",
+      "Billboard advertisement on highways",
+      "Sponsorship of a sport event"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Direct marketing involves direct personal contact between seller and potential buyer, such as door-to-door personal selling. Mass media advertising and sponsorship are indirect marketing methods aimed at large audiences.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which document is issued by a seller to a buyer indicating quantity, description, and price of goods delivered and requesting payment?",
+    "options": [
+      "Delivery note",
+      "Invoice",
+      "Credit note",
+      "Packing list"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An invoice is issued by the seller to the buyer specifying goods supplied, their quantities, prices, and the amount due for payment. A delivery note acknowledges delivery, while a credit note corrects a previous invoice.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'liquidity' of a business?",
+    "options": [
+      "Ability to earn profit over time",
+      "Ability to meet long-term obligations",
+      "Ability to meet short-term obligations as they fall due",
+      "Ability to expand operations"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Liquidity refers to a firm's ability to meet its short-term obligations promptly. It is measured by ratios like current ratio and quick ratio, and ensures smooth operations without cash crisis, unlike profitability or solvency measures.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a feature of a partnership business?",
+    "options": [
+      "Management by a board of directors appointed by shareholders",
+      "Unlimited number of owners with limited liability",
+      "Two or more persons sharing profits and losses",
+      "Ownership interests represented by transferable shares"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A partnership is formed by two or more persons who agree to share profits and losses. It typically has fewer formalities than a company and lacks transferable shares and shareholder-elected boards characteristic of corporations.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following transport modes is most suitable for perishable goods requiring fast delivery over short to medium distances?",
+    "options": [
+      "Rail transport",
+      "Road transport",
+      "Maritime shipping",
+      "Pipeline transport"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Road transport is flexible and fast for short to medium distances and is especially suitable for perishables needing door-to-door delivery. Rail and maritime are slower and pipeline is limited to liquids/gases.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "What is the main purpose of warehousing in commerce?",
+    "options": [
+      "To manufacture goods for resale",
+      "To create advertising space for products",
+      "To store goods to balance supply and demand",
+      "To provide credit to customers"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Warehousing stores goods until needed, helping to balance supply and demand, protect goods against damage, and facilitate distribution. It does not involve manufacturing, advertising, or providing credit directly.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which type of insurance covers loss or damage to goods while in transit?",
+    "options": [
+      "Life insurance",
+      "Marine insurance",
+      "Health insurance",
+      "Fire insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Marine insurance covers goods in transit by sea and, in some contexts, by road, rail, or air. It protects against perils of the sea and transport-related risks, unlike life, health, or fire insurance.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "In stock control, which method assumes the first goods purchased are the first sold?",
+    "options": [
+      "LIFO (Last In, First Out)",
+      "FIFO (First In, First Out)",
+      "Weighted average cost",
+      "Specific identification"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FIFO assumes the earliest purchased items are sold first, thus older costs are matched with current revenues. This affects inventory valuation and cost of goods sold differently than LIFO or weighted average methods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes a 'public corporation' in Nigeria?",
+    "options": [
+      "A business owned by a single private individual",
+      "An organization owned and managed by private shareholders",
+      "An enterprise owned and controlled by the government",
+      "A partnership registered under Nigerian law"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A public corporation is an enterprise owned and operated by the government to provide public goods or services. It differs from privately owned companies and partnerships which are under private ownership and control.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is NOT a primary function of advertising?",
+    "options": [
+      "Informing consumers about products",
+      "Encouraging brand loyalty",
+      "Providing after-sale technical service",
+      "Persuading consumers to buy"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Advertising informs, persuades, and reminds consumers, building brand loyalty. Providing after-sale technical service is not an advertising function; it is part of customer service and product support operations.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which tax is charged on the value added to goods and services at each stage of production and distribution?",
+    "options": [
+      "Company income tax",
+      "Pay As You Earn (PAYE)",
+      "Value Added Tax (VAT)",
+      "Customs duty"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Value Added Tax (VAT) is levied on the added value of goods and services at each production or distribution stage and is finally borne by the consumer. It differs from income tax, PAYE, and customs duties.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which document is used to amend or reduce the amount owed by a buyer because of returned goods or overcharging?",
+    "options": [
+      "Debit note",
+      "Delivery order",
+      "Credit note",
+      "Bill of exchange"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A credit note is issued by a seller to a buyer to reduce the buyer's account due to returns, allowances, or overcharging. A debit note is the buyer's request; delivery orders and bills of exchange serve other purposes.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best defines 'franchising'?",
+    "options": [
+      "A form of partnership between two companies",
+      "A licensing arrangement where one party allows another to use its brand and business model",
+      "A government takeover of private enterprises",
+      "A type of joint venture for international trade"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Franchising is a licensing arrangement where the franchisor grants the franchisee rights to use its brand, trademarks, and business model in exchange for fees or royalties; it is not a partnership or government takeover.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "In commerce, 'agents' differ from 'brokers' mainly because agents:",
+    "options": [
+      "Make markets for goods by advertising",
+      "Act on behalf of principals and have ongoing authority to sell",
+      "Always take title to the goods they sell",
+      "Provide capital to importers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Agents act on behalf of principals and often have authority to sell or manage transactions over time. Brokers typically bring buyers and sellers together for a commission without ongoing authority or taking title to goods.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which international payment method gives the exporter the highest degree of security that payment will be made?",
+    "options": [
+      "Open account",
+      "Consignment sales",
+      "Documentary credit (Letter of Credit)",
+      "Cash on delivery"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A documentary credit, or letter of credit, involves the importer's bank guaranteeing payment to the exporter upon presentation of required documents, offering high payment security compared with open accounts or consignment.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a disadvantage of a partnership?",
+    "options": [
+      "Easy to form and fewer formalities",
+      "Unlimited liability of partners",
+      "Profits taxed only once at the partner level",
+      "Shared decision-making among partners"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A key disadvantage of partnerships is unlimited liability: partners may be personally liable for the firm's debts. Other items listed are either advantages or neutral features rather than disadvantages.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following ratios is most commonly used to measure a firm's solvency?",
+    "options": [
+      "Current ratio",
+      "Gross profit margin",
+      "Debt to equity ratio",
+      "Inventory turnover"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Debt to equity ratio measures solvency by comparing total debt to shareholders' equity, indicating the extent of financing by creditors versus owners. Current ratio measures liquidity, while gross profit margin and inventory turnover measure profitability and efficiency.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which marketing element refers to the ways a product is communicated and promoted to customers?",
+    "options": [
+      "Product",
+      "Price",
+      "Place",
+      "Promotion"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Promotion is the marketing mix element concerned with communicating product benefits and persuading customers, using advertising, sales promotion, personal selling, and public relations, distinct from product, price, and place.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best explains 'venture capital' as a source of finance?",
+    "options": [
+      "Short-term bank overdraft for working capital",
+      "Equity finance provided to high-risk start-ups in exchange for ownership",
+      "Government grant repayable with interest",
+      "Trade credit from suppliers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Venture capital is equity finance provided by investors to high-potential, high-risk start-ups in exchange for shares and possibly managerial input. It is not a short-term bank overdraft, government grant, or supplier credit.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'consignment' in trade?",
+    "options": [
+      "Sale where goods are immediately paid for by buyer",
+      "Shipment of goods where the consignee sells on behalf of the consignor and pays later",
+      "Direct export under a letter of credit",
+      "Goods sold with title transferred at dispatch"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consignment involves sending goods to a consignee who sells them on behalf of the consignor; payment is made only when the goods are sold. Title often remains with consignor until sale, unlike immediate sale.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is TRUE about preference shares compared with ordinary shares?",
+    "options": [
+      "Preference shareholders usually have voting rights greater than ordinary shareholders",
+      "Preference shareholders receive fixed dividends before ordinary shareholders receive any dividend",
+      "Preference shares guarantee capital appreciation",
+      "Preference shareholders are last to be paid on liquidation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Preference shareholders typically receive fixed dividends before ordinary shareholders. They usually have limited voting rights, do not guarantee capital appreciation, and are paid before ordinary shareholders on liquidation.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best defines 'trade union' in the context of commerce?",
+    "options": [
+      "An association of consumers protecting consumer interests",
+      "An organization of employees formed to protect their rights and negotiate terms",
+      "A government agency regulating international trade",
+      "A group of employers coordinating prices"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A trade union is an organization of workers formed to protect employees' rights, negotiate wages and conditions, and represent members in industrial relations. It is distinct from consumer associations or employer groups.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is an objective of channels of distribution?",
+    "options": [
+      "To increase production costs",
+      "To ensure goods reach consumers at the right time and place",
+      "To reduce the number of customers",
+      "To eliminate advertising"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An effective distribution channel ensures goods reach consumers at the right time, place, and in suitable quantities, minimizing costs and maximizing customer satisfaction. It does not aim to increase costs or reduce customers.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is NOT a role of the Central Bank of Nigeria (CBN)?",
+    "options": [
+      "Issuing legal tender currency",
+      "Administering monetary policy",
+      "Regulating and supervising banks",
+      "Providing direct retail banking services to all customers"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The CBN issues currency, administers monetary policy, and regulates banks. However, it does not normally provide direct retail banking services to the general public; licensed commercial banks do that.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which one of the following best describes 'market segmentation'?",
+    "options": [
+      "Dividing total demand into groups of customers with similar needs",
+      "Setting prices below cost to eliminate competition",
+      "Mass marketing to all customers simultaneously",
+      "Selling products only online"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Market segmentation divides the market into distinct groups with similar needs or characteristics to tailor marketing strategies effectively. It differs from mass marketing, predatory pricing, or distribution channel selection.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following statements about 'credit note' and 'debit note' is correct?",
+    "options": [
+      "Debit note is issued by seller to reduce buyer's liability; credit note increases it",
+      "Credit note increases buyer's liability; debit note reduces it",
+      "Credit note reduces buyer's liability; debit note is raised by buyer to request credit",
+      "Both notes are used only in cash transactions"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A credit note reduces the buyer's liability (issued by the seller when goods are returned or overcharged). A debit note is typically raised by the buyer to request a credit or by the seller to request additional payment.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best explains 'trade protection' policies like tariffs?",
+    "options": [
+      "Policies removing all barriers to trade",
+      "Measures to protect domestic industries by making imports more expensive",
+      "Subsidies that encourage imports",
+      "Free distribution of foreign goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade protection policies such as tariffs are designed to shield domestic industries by increasing the cost of imports, thereby making local products more competitive. They do not remove trade barriers or subsidize imports.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a primary function of office management in a commercial organization?",
+    "options": [
+      "To manufacture goods efficiently",
+      "To coordinate clerical activities and ensure smooth flow of information",
+      "To provide banking services",
+      "To negotiate international treaties"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Office management coordinates clerical tasks, record-keeping and information flow to support business operations. It is not involved in manufacturing, banking operations, or international treaty negotiations.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which term describes the total value of goods and services produced within a country during a year?",
+    "options": [
+      "Balance of trade",
+      "Gross Domestic Product (GDP)",
+      "Net national income",
+      "Balance of payments"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Gross Domestic Product (GDP) measures the total value of goods and services produced within a country's borders in a year. It differs from balance of trade (exports-imports) and balance of payments (overall transactions).",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which one of the following statements is true about 'import licence'?",
+    "options": [
+      "It is issued by exporters to permit export of goods",
+      "It is a permit required by some governments to control specific imports",
+      "It is issued by carriers to clear goods at the port",
+      "It is a commercial invoice used in export"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An import licence is issued by a government's relevant authority to control the entry of certain goods for reasons such as safety, quotas, or protection of local industry. It is not issued by exporters or carriers.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is NOT a feature of a public limited company (plc)?",
+    "options": [
+      "Shares are freely transferable",
+      "Limited liability for shareholders",
+      "Ownership by the government only",
+      "Ability to raise capital from the public"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A public limited company has transferable shares, limited liability, and can raise capital publicly. It is not necessarily owned by the government; private individuals or institutions typically own plcs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best explains 'bank overdraft'?",
+    "options": [
+      "A long-term loan for purchasing fixed assets",
+      "A facility allowing account holders to withdraw more than their credit balance up to an agreed limit",
+      "A document used to transfer funds internationally",
+      "A form of equity financing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bank overdraft is a short-term borrowing facility allowing customers to withdraw beyond their account balance up to an approved limit, usually repayable on demand and used to finance working capital needs.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which concept explains when price rises due to general increase in money supply and demand outpacing supply?",
+    "options": [
+      "Deflation",
+      "Inflation",
+      "Stagflation",
+      "Disinflation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Inflation is a sustained general rise in prices often due to excess money supply or demand exceeding supply. Deflation is falling prices; stagflation mixes inflation with stagnation, while disinflation is a slowdown in inflation rate.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is an advantage of departmentalization in a large trading firm?",
+    "options": [
+      "All decisions are centralized in one person",
+      "Improved specialization and efficiency in each department",
+      "Reduced need for coordination",
+      "Elimination of management layers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Departmentalization groups activities by function or product, promoting specialization and efficiency within departments. It does not centralize all decisions to one person or eliminate management layers; coordination needs may increase across departments.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which document acts as evidence of debt and includes an unconditional promise to pay a certain sum at a future date?",
+    "options": [
+      "Invoice",
+      "Promissory note",
+      "Waybill",
+      "Delivery note"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A promissory note is a written and signed unconditional promise by one party to pay a specified sum to another at a future date. It serves as evidence of a debt, different from invoices or transport documents.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'market research'?",
+    "options": [
+      "Manufacturing products before identifying customers",
+      "Systematic gathering, recording and analysis of data about customers and competitors",
+      "Preparing annual financial statements",
+      "A form of direct selling"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market research systematically collects and analyses data on consumers, market needs, and competitors to inform marketing decisions and strategies. It is not manufacturing, financial reporting, or direct selling.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is NOT a characteristic of money?",
+    "options": [
+      "Medium of exchange",
+      "Store of value",
+      "Unit of account",
+      "Physical portability only (cannot be electronic)"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Money functions as a medium of exchange, store of value, and unit of account. The statement that money is only physically portable and cannot be electronic is false, because modern money includes electronic forms.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following stages in product life cycle typically sees highest promotional spending to build market share?",
+    "options": [
+      "Decline stage",
+      "Introduction stage",
+      "Maturity stage",
+      "Withdrawal stage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "During the introduction stage, heavy promotional spending is common to create awareness and stimulate trial to build market share. Maturity may maintain promotion; decline/withdrawal see reduced promotion.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a primary motive for forming co-operative societies among traders or farmers?",
+    "options": [
+      "To maximize individual profit at expense of others",
+      "To eliminate competition entirely",
+      "To pool resources and obtain better bargaining power and services",
+      "To create a monopoly protected by law"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Cooperatives are formed to pool members' resources for mutual benefit, improving bargaining power, accessing services, and marketing. They are not intended to monopolize markets or exploit others for individual gain.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'trade credit'?",
+    "options": [
+      "Credit granted by banks to businesses",
+      "Short-term credit extended by suppliers allowing delayed payment for goods supplied",
+      "Long-term loan for capital projects",
+      "A government-backed loan scheme"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade credit is short-term credit where suppliers allow buyers to take goods and pay at a later date, aiding working capital management. It is distinct from bank loans or government loan schemes.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a commercial document used to instruct the bank to pay a stated sum from the drawer's account?",
+    "options": [
+      "Promissory note",
+      "Cheque",
+      "Invoice",
+      "Delivery note"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cheque is a written order from an account holder instructing their bank to pay a specified amount to a named person or bearer from the account. It is a common negotiable instrument for payment.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is a benefit of advertising for a manufacturer?",
+    "options": [
+      "Increases unit production cost invariably",
+      "Creates product awareness and stimulates demand",
+      "Reduces the need for a distribution network",
+      "Eliminates competition"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising creates awareness about products, informs potential customers of benefits, and stimulates demand. It does not necessarily increase production costs, eliminate the need for distribution, or remove competition.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best defines 'multinational company' (MNC)?",
+    "options": [
+      "A company owned by government to operate domestically only",
+      "A firm that has production or operations in two or more countries",
+      "A small family-run business operating in one city",
+      "A business that only exports goods but has no foreign operations"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A multinational company operates and invests in multiple countries, possessing subsidiaries or production facilities abroad. It differs from domestic government enterprises, small local businesses, or exporters without foreign presence.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following measures would most directly improve a firm's inventory turnover ratio?",
+    "options": [
+      "Increase credit period for customers",
+      "Reduce slow-moving stock and improve stock control",
+      "Decrease sales promotions",
+      "Hire more administrative staff"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Improving stock control and reducing slow-moving items increases inventory turnover by ensuring faster sales relative to average inventory. Increasing credit periods or hiring admin staff do not directly affect turnover positively.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following best describes 'sole agent' in international trade?",
+    "options": [
+      "An agent appointed to sell products in a specified territory with exclusive rights",
+      "An agent that owns the goods being sold",
+      "A bank that finances exports",
+      "A government official issuing export licences"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A sole agent is granted exclusive rights by the principal to market and sell products in a designated territory, preventing the principal from appointing other agents there. They do not own goods nor are they banks or officials.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following is most likely to be a fixed cost for a trading firm?",
+    "options": [
+      "Purchases for resale",
+      "Wages of casual sales staff paid per hour",
+      "Rent for shop premises paid monthly",
+      "Sales commission based on turnover"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Rent for shop premises is typically a fixed cost because it remains constant regardless of output or sales volume, unlike purchases, hourly wages, or sales commissions which vary with activity.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  },
+  {
+    "text": "Which of the following trade terms indicates that the seller is responsible for delivering goods to the named place of destination and bears all risks until delivery?",
+    "options": [
+      "Ex-works (EXW)",
+      "Free on Board (FOB)",
+      "Cost Insurance and Freight (CIF)",
+      "Delivered Duty Paid (DDP)"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Delivered Duty Paid (DDP) requires the seller to deliver goods to the buyer's named place of destination, bearing all costs and risks including delivery and customs duties. It places maximum obligation on the seller.",
+    "subject": "Commerce",
+    "examType": "WAEC",
+    "examYear": 2015
+  }
+]

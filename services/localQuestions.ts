@@ -299,6 +299,11 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2022`]: "./questions/jamb_physics_2022_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2022`]: "./questions/waec_physics_2022_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2022`]: "./questions/neco_physics_2022_practice.json",
+  [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2015`]: "./questions/jamb_government_2015_practice.json",
+  [`${ExamType.WAEC}:${Subject.GOVERNMENT}:2015`]: "./questions/waec_government_2015_practice.json",
+  [`${ExamType.NECO}:${Subject.GOVERNMENT}:2015`]: "./questions/neco_government_2015_practice.json",
+  [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2016`]: "./questions/jamb_government_2016_practice.json",
+  [`${ExamType.WAEC}:${Subject.GOVERNMENT}:2016`]: "./questions/waec_government_2016_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2021`]: "./questions/jamb_physics_2021_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2021`]: "./questions/waec_physics_2021_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2021`]: "./questions/neco_physics_2021_practice.json",
@@ -368,6 +373,20 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.JAMB}:${Subject.IRS}:2015`]: "./questions/jamb_irs_2015_practice.json",
   [`${ExamType.WAEC}:${Subject.IRS}:2015`]: "./questions/waec_irs_2015_practice.json",
   [`${ExamType.NECO}:${Subject.IRS}:2015`]: "./questions/neco_irs_2015_practice.json",
+  // Commerce (Mapped to the consolidated file for all years)
+  ...Array.from({ length: 16 }, (_, i) => 2011 + i).reduce((acc, year) => ({
+    ...acc,
+    [`${ExamType.JAMB}:${Subject.COMMERCE}:${year}`]: "./questions/commerce_questions.json",
+    [`${ExamType.WAEC}:${Subject.COMMERCE}:${year}`]: "./questions/commerce_questions.json",
+    [`${ExamType.NECO}:${Subject.COMMERCE}:${year}`]: "./questions/commerce_questions.json",
+  }), {}),
+  // Further Mathematics
+  ...Array.from({ length: 10 }, (_, i) => 2011 + i).reduce((acc, year) => ({
+    ...acc,
+    [`${ExamType.JAMB}:${Subject.FURTHER_MATHS}:${year}`]: "./questions/further-mathematics_questions.json",
+    [`${ExamType.WAEC}:${Subject.FURTHER_MATHS}:${year}`]: "./questions/further-mathematics_questions.json",
+    [`${ExamType.NECO}:${Subject.FURTHER_MATHS}:${year}`]: "./questions/further-mathematics_questions.json",
+  }), {}),
 };
 
 const optionKeys = ["a", "b", "c", "d", "A", "B", "C", "D"] as const;
