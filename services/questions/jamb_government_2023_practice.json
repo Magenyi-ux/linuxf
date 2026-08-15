@@ -1,0 +1,702 @@
+[
+  {
+    "text": "The right to life can be deprived in",
+    "options": [
+      "no circumstance",
+      "execution of a court sentence",
+      "peaceful protest",
+      "civil cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Life may be taken in execution of a death sentence by a competent court.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The right to freedom of movement can be restricted during",
+    "options": [
+      "elections",
+      "public holidays",
+      "state of emergency or curfew",
+      "weekends"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Movement may be restricted for public safety and order.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "A writ of habeas corpus requires",
+    "options": [
+      "payment of debt",
+      "production of a detained person before a court",
+      "arrest of a judge",
+      "dissolution of parliament"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Habeas corpus protects against unlawful detention.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The fundamental right to dignity of the human person prohibits",
+    "options": [
+      "free speech",
+      "torture and inhuman treatment",
+      "voting",
+      "fair hearing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Section 34 prohibits torture and degrading treatment.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Freedom of association allows citizens to",
+    "options": [
+      "commit crimes",
+      "form or join political parties and trade unions",
+      "disobey the law",
+      "destroy public property"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Citizens may freely associate and form organizations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The right to fair hearing includes",
+    "options": [
+      "trial in secret",
+      "trial within a reasonable time by an impartial court",
+      "punishment without trial",
+      "self-help"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fair hearing guarantees impartial justice without undue delay.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The right against discrimination is guaranteed under",
+    "options": [
+      "Section 42",
+      "Section 33",
+      "Section 39",
+      "Section 45"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Section 42 prohibits discrimination on grounds of ethnicity, religion, sex, etc.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "A citizen whose right has been breached can seek",
+    "options": [
+      "revenge",
+      "redress in court",
+      "migration",
+      "bribery"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The judiciary provides remedy for rights violations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Fundamental Rights Enforcement Procedure Rules allow",
+    "options": [
+      "slow trial",
+      "speedy hearing of human rights cases",
+      "discrimination",
+      "unlawful detention"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FREP Rules ensure quick determination of rights violation cases.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Nigerian Constitution is described as rigid because",
+    "options": [
+      "it cannot be amended",
+      "its amendment requires a special procedure",
+      "it is flexible",
+      "it is unwritten"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A rigid constitution requires a special, often difficult, amendment process.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The preamble to the constitution states that sovereignty belongs to",
+    "options": [
+      "the president",
+      "the people of Nigeria",
+      "the military",
+      "the judiciary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The constitution declares that sovereignty resides in the people.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The term 'constitutional democracy' means",
+    "options": [
+      "rule by the military",
+      "government according to the provisions of the constitution",
+      "absolute monarchy",
+      "dictatorship"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Constitutional democracy operates within the limits set by the constitution.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Federal Capital Territory (FCT) is headed by a",
+    "options": [
+      "Governor",
+      "Minister",
+      "President",
+      "Senator"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The FCT is administered by a Minister appointed by the President.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "State creation in Nigeria requires approval by",
+    "options": [
+      "the President alone",
+      "two-thirds of the National Assembly and two-thirds of states",
+      "a referendum",
+      "the Supreme Court"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Creating a new state requires a supermajority at both federal and state levels.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The revenue allocation formula is determined by the",
+    "options": [
+      "President",
+      "Revenue Mobilization Allocation and Fiscal Commission",
+      "Senate only",
+      "Governors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "RMAFC recommends the formula for sharing federal revenue.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The federation account is shared among",
+    "options": [
+      "federal government only",
+      "federal, state, and local governments",
+      "state governments only",
+      "local governments only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Revenue is shared vertically among the three tiers of government.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The principle of derivation in revenue allocation ensures",
+    "options": [
+      "equal sharing",
+      "producing states receive a percentage of revenue from their resources",
+      "all revenue goes to the centre",
+      "states keep all revenue"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Derivation principle allocates a proportion to the area of origin.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The primary source of government revenue in Nigeria is",
+    "options": [
+      "agriculture",
+      "crude oil exports",
+      "tourism",
+      "manufacturing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Oil accounts for the majority of Nigeria's government revenue.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Tax evasion is",
+    "options": [
+      "lawful avoidance of tax",
+      "illegal failure to pay taxes",
+      "payment of taxes",
+      "tax refund"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tax evasion is the illegal non-payment or underpayment of taxes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Federal Inland Revenue Service (FIRS) is responsible for",
+    "options": [
+      "state tax collection",
+      "federal tax assessment and collection",
+      "local government revenue",
+      "printing money"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FIRS administers federal taxes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Value Added Tax (VAT) is a tax on",
+    "options": [
+      "income",
+      "goods and services",
+      "property",
+      "imports only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "VAT is a consumption tax on goods and services.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The body that investigates and prosecutes corrupt practices is the",
+    "options": [
+      "NAFDAC",
+      "EFCC and ICPC",
+      "NYSC",
+      "NOA"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "EFCC and ICPC are anti-corruption agencies.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Freedom of Information Act was enacted in Nigeria in",
+    "options": [
+      "1999",
+      "2007",
+      "2011",
+      "2015"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The FOI Act was signed into law in 2011.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The primary objective of the FOI Act is to",
+    "options": [
+      "restrict information",
+      "make public records accessible",
+      "increase secrecy",
+      "punish journalists"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Act promotes transparency by granting access to public information.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The National Identity Management Commission (NIMC) issues",
+    "options": [
+      "international passport",
+      "national identity card",
+      "driver's licence",
+      "voter's card"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NIMC manages the national identity database and issues ID cards.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Nigerian Security and Civil Defence Corps (NSCDC) is primarily responsible for",
+    "options": [
+      "military operations",
+      "protection of critical infrastructure",
+      "election conduct",
+      "tax collection"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NSCDC protects pipelines, government assets, and critical infrastructure.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The National Emergency Management Agency (NEMA) responds to",
+    "options": [
+      "elections",
+      "disasters and emergencies",
+      "tax issues",
+      "criminal cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NEMA coordinates disaster response and management.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Consumer Protection Council protects",
+    "options": [
+      "government agencies",
+      "consumers from unfair trade practices",
+      "politicians",
+      "foreign investors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The CPC ensures consumer rights and fair market practices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The National Agency for Food and Drug Administration and Control (NAFDAC) regulates",
+    "options": [
+      "elections",
+      "food, drugs, and cosmetics",
+      "oil and gas",
+      "education"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NAFDAC ensures safety and quality of consumable products.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Standards Organisation of Nigeria (SON) sets",
+    "options": [
+      "political standards",
+      "quality standards for products",
+      "educational curriculum",
+      "military standards"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "SON develops and enforces industrial standards.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The National Assembly can override a presidential veto with",
+    "options": [
+      "simple majority",
+      "two-thirds majority",
+      "unanimous vote",
+      "presidential consent"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A two-thirds majority in both chambers can override a veto.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "A vote of no confidence can lead to",
+    "options": [
+      "promotion of the executive",
+      "removal of the executive in a parliamentary system",
+      "declaration of war",
+      "amendment of the constitution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In parliamentary systems, a no-confidence vote forces government resignation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The term 'lobbying' refers to",
+    "options": [
+      "voting in elections",
+      "seeking to influence legislators on specific issues",
+      "protesting violently",
+      "running for office"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Lobbying involves advocacy to persuade lawmakers.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The 'spoils system' in government refers to",
+    "options": [
+      "merit-based appointments",
+      "giving government jobs to political supporters",
+      "competitive exams",
+      "civil service neutrality"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The spoils system rewards loyalists with public offices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The merit system in civil service emphasizes",
+    "options": [
+      "nepotism",
+      "qualification and competence",
+      "political loyalty",
+      "ethnicity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The merit system promotes based on ability and qualifications.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Administrative Tribunal handles",
+    "options": [
+      "criminal cases",
+      "disputes between citizens and government agencies",
+      "election petitions",
+      "constitutional amendments"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tribunals adjudicate administrative grievances.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The National Industrial Court handles",
+    "options": [
+      "criminal cases",
+      "labour and employment disputes",
+      "election petitions",
+      "constitutional cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The NIC has jurisdiction over labour and industrial relations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Sharia Court of Appeal handles cases involving",
+    "options": [
+      "all Nigerians",
+      "Islamic personal law",
+      "Christian law",
+      "criminal cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sharia Courts apply Islamic law to personal matters for Muslims.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Customary Court of Appeal deals with",
+    "options": [
+      "federal law",
+      "customary law matters",
+      "international law",
+      "military law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It handles appeals on customary law issues.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The armed forces consist of the",
+    "options": [
+      "Army, Navy, and Air Force",
+      "Police and Civil Defence",
+      "Customs and Immigration",
+      "FRSC and NAFDAC"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The military comprises the Army, Navy, and Air Force.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The para-military agencies in Nigeria include",
+    "options": [
+      "Army and Navy",
+      "Customs, Immigration, and Prisons",
+      "Senate and House",
+      "EFCC and ICPC"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Para-military agencies enforce specific laws and regulations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Nigeria Prisons Service is now called",
+    "options": [
+      "Nigeria Police",
+      "Nigeria Correctional Service",
+      "Nigeria Army",
+      "Nigeria Immigration"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It was renamed to reflect a focus on correction and rehabilitation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Federal Road Safety Corps (FRSC) is responsible for",
+    "options": [
+      "air travel safety",
+      "road traffic administration and safety",
+      "railway safety",
+      "maritime safety"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FRSC regulates and enforces road safety laws.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Nigerian Immigration Service issues",
+    "options": [
+      "driver's licence",
+      "international passport and visa",
+      "national ID card",
+      "voter's card"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Immigration manages passports, visas, and border control.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Nigerian Customs Service is responsible for",
+    "options": [
+      "tax collection",
+      "border protection and revenue from imports",
+      "road safety",
+      "prison management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Customs enforces import/export regulations and collects duties.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The National Boundary Commission handles",
+    "options": [
+      "election boundaries only",
+      "interstate and international boundary disputes",
+      "constituency delineation",
+      "local government creation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It resolves boundary issues between states and with other countries.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Independent Corrupt Practices Commission (ICPC) was established in",
+    "options": [
+      "1999",
+      "2000",
+      "2003",
+      "2010"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "ICPC was created by the Corrupt Practices and Other Related Offences Act 2000.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The primary role of the media in a democracy is to",
+    "options": [
+      "promote government propaganda",
+      "inform, educate, and hold government accountable",
+      "entertain only",
+      "support only the ruling party"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The media serves as the watchdog of society and informs citizens.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "The Nigerian Press Council regulates",
+    "options": [
+      "social media",
+      "the conduct of journalists and media ethics",
+      "government policies",
+      "election results"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It ensures ethical standards in journalism.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  },
+  {
+    "text": "Censorship of the media refers to",
+    "options": [
+      "supporting the media",
+      "restricting or suppressing information",
+      "training journalists",
+      "funding newspapers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Censorship limits freedom of expression.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2023
+  }
+]
