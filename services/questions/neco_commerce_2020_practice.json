@@ -1,0 +1,730 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' as a field of study?",
+    "options": [
+      "The production of goods and raw materials",
+      "The buying and selling of goods and services including all activities that facilitate trade",
+      "The study of agricultural practices and techniques",
+      "The legal aspects of company formation only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce covers buying and selling of goods and services and includes facilitating activities such as transport, communication, banking, insurance and warehousing. It is broader than production or legal formation alone.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which type of trade involves the exchange of goods between different countries?",
+    "options": [
+      "Internal trade",
+      "Home trade",
+      "International trade",
+      "Retail trade"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "International trade refers to transactions of goods and services across national borders, involving imports and exports, tariffs, exchange rates and customs procedures unlike internal or retail trade.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a primary function of a warehouse in commerce?",
+    "options": [
+      "To change the form of goods",
+      "To facilitate storage and preserve goods until needed",
+      "To sell goods directly to consumers",
+      "To create market demand through advertising"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Warehouses primarily provide storage and preservation of goods until required, helping to balance supply and demand and reduce seasonal shortages; they are not primarily for direct selling or form conversion.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which document is issued by a carrier acknowledging receipt of goods for shipment?",
+    "options": [
+      "Invoice",
+      "Bill of lading",
+      "Insurance policy",
+      "Proforma invoice"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading is a carrier-issued document acknowledging receipt of goods for transport, serving as a contract of carriage and a document of title; invoices and policies serve different purposes.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best defines 'wholesaling'?",
+    "options": [
+      "Selling goods directly to final consumers",
+      "Buying in bulk from producers and selling in large quantities to retailers",
+      "Manufacturing finished products from raw materials",
+      "Providing financial services to retailers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wholesaling involves purchasing goods in bulk from producers and reselling them in large quantities to retailers or other businesses, acting as an intermediary between producers and retailers.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which form of business ownership has limited liability and perpetual succession?",
+    "options": [
+      "Sole proprietorship",
+      "Partnership",
+      "Co-operative society",
+      "Limited liability company (incorporated company)"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "A limited liability company (incorporated) provides shareholders limited liability and perpetual succession; owners are not personally liable beyond their investments, unlike sole proprietorships or partnerships.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "In insurance, what is the principle of 'utmost good faith' (uberrima fides)?",
+    "options": [
+      "Both parties must conceal material facts",
+      "The insured must disclose all material facts; the insurer must be honest about policy terms",
+      "The insurer must misrepresent risks to increase premiums",
+      "Claims should be paid without evidence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Utmost good faith requires the insured to disclose material facts affecting risk and the insurer to honestly disclose policy terms and conditions. Failure to disclose can void the contract.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which among the following is not a function of advertising?",
+    "options": [
+      "Informing customers about products",
+      "Persuading customers to buy",
+      "Eliminating the need for distribution channels",
+      "Building and maintaining brand image"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Advertising informs, persuades and helps build brand image but cannot eliminate the need for distribution channels, which are essential for getting products to consumers.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a feature of a partnership business?",
+    "options": [
+      "Full limited liability for all partners",
+      "Management decisions are made by a single owner",
+      "Partners share profits and losses according to agreement",
+      "It cannot be formed without government approval"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In a partnership, partners agree to share profits and losses, and management is shared; liability may be unlimited unless a limited partnership exists; government approval is not always required.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which instrument allows a bank customer to instruct the bank to pay a specified sum to a named person or bearer?",
+    "options": [
+      "Promissory note",
+      "Cheque",
+      "Bill of exchange",
+      "Debit note"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cheque is a written order from an account holder instructing the bank to pay a specified sum to a named payee or bearer. Bills of exchange and promissory notes function differently.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which one of the following is an advantage of 'specialization' in commerce?",
+    "options": [
+      "Increased costs due to duplication of effort",
+      "Reduced productivity due to monotony",
+      "Economies of scale and improved efficiency",
+      "Complete elimination of competition"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Specialization allows workers or firms to focus on narrow tasks, leading to economies of scale, improved efficiency and higher productivity; it does not eliminate competition or always increase costs.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'retailing'?",
+    "options": [
+      "Selling goods to other businesses in bulk",
+      "Buying raw materials for production",
+      "Selling goods in small quantities directly to the final consumer",
+      "Transporting goods between cities"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Retailing involves selling goods in small quantities directly to end consumers for personal use. Wholesaling sells in bulk to businesses, while retailing interacts directly with the final buyer.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is NOT a role of banks in commerce?",
+    "options": [
+      "Accepting deposits",
+      "Granting loans and advances",
+      "Issuing currency notes",
+      "Facilitating remittances and payments"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Banks accept deposits, grant loans and facilitate payments and remittances, but issuing legal tender currency notes is typically the monopoly of a central bank, not commercial banks.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "When goods are purchased and sold on credit, which document is commonly issued by the seller to request payment?",
+    "options": [
+      "Receipt",
+      "Invoice",
+      "Waybill",
+      "Delivery note"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An invoice is issued by the seller to the buyer indicating goods supplied, prices, quantities and amount payable. Receipts are for payment received; delivery notes accompany goods.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a characteristic of limited liability companies?",
+    "options": [
+      "Owners are fully liable for business debts with personal assets",
+      "Shares can be transferred subject to company rules",
+      "They cannot enter into contracts",
+      "They always have only two members"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Limited liability companies allow transfer of shares subject to company rules; owners' liability is limited to capital invested. They can enter contracts and membership varies by company type.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which payment instrument guarantees payment by a bank on behalf of a customer and is often used in international transactions?",
+    "options": [
+      "Open cheque",
+      "Letter of credit",
+      "Bearer cheque",
+      "Promissory note"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A letter of credit is a bank guarantee to the seller that payment will be made if conditions are met; it is commonly used in international trade to reduce credit risk.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is an example of 'auxiliary service of commerce'?",
+    "options": [
+      "Manufacturing of textiles",
+      "Retail sale of groceries",
+      "Banking and insurance services",
+      "Primary agriculture"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Auxiliary services of commerce include banking, insurance, transport and warehousing that support the flow of goods. Manufacturing and primary agriculture are production activities, not auxiliary services.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'consumer cooperative society'?",
+    "options": [
+      "An organization of producers selling goods collectively",
+      "A group of consumers pooling resources to purchase goods in bulk at lower prices",
+      "A government agency distributing essential goods",
+      "A sole proprietor managing discount stores"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consumer cooperatives are associations of consumers who pool purchasing power to buy goods in bulk, securing lower prices and better quality control; they are member-owned, not government agencies.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a disadvantage of road transport compared with rail transport?",
+    "options": [
+      "Limited door-to-door service",
+      "Higher flexibility in routes",
+      "Higher cost per ton-kilometre and lower capacity for heavy bulk goods",
+      "Easier for perishable goods"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Road transport is more flexible and offers door-to-door service, but for heavy bulk goods it tends to be more expensive per ton-kilometre and has lower capacity than rail, a key disadvantage.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "In international trade, 'export' refers to which activity?",
+    "options": [
+      "Bringing goods into a country for local sale",
+      "Selling goods produced in one country to buyers in another country",
+      "Smuggling goods across borders",
+      "Buying raw materials domestically"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Exporting is the sale of domestically produced goods or services to foreign buyers. Imports are goods brought into a country; smuggling is illegal movement of goods.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains 'price discrimination' in marketing?",
+    "options": [
+      "Charging the same price to all customers",
+      "Charging different prices to different customers for the same product where costs are similar",
+      "Increasing prices uniformly across products",
+      "Offering discounts only during off-season sales"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Price discrimination occurs when a seller charges different customers different prices for the same product despite similar costs, often based on willingness to pay, market segment or purchase quantity.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following statements about 'agency' in commerce is true?",
+    "options": [
+      "An agent acts on behalf of a principal to create legal relations with third parties",
+      "An agent always becomes the owner of goods handled",
+      "Agency is only used in banking transactions",
+      "An agent cannot be paid for services"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "An agent acts for and on behalf of a principal to negotiate or conclude contracts with third parties; agents do not generally become owners of principal's goods and can be remunerated.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which pricing method sets prices by adding a fixed percentage to the cost of a product?",
+    "options": [
+      "Penetration pricing",
+      "Cost-plus pricing (markup pricing)",
+      "Predatory pricing",
+      "Dynamic pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cost-plus (markup) pricing involves determining product cost and adding a fixed percentage margin to set the selling price. It ensures coverage of costs and a predetermined profit margin.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is an objective of stock (inventory) control in commerce?",
+    "options": [
+      "Maximize holding costs to promote investment",
+      "Ensure uninterrupted supply while minimizing costs of holding stock",
+      "Eliminate the need for suppliers",
+      "Avoid ordering by relying on emergency purchases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Stock control aims to balance sufficient inventory to prevent stockouts with minimizing holding and ordering costs. It does not seek to maximize holding costs or replace suppliers with emergency buys.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which one of the following best describes 'barter system' of trade?",
+    "options": [
+      "Use of money as medium of exchange",
+      "Direct exchange of goods and services without a medium like money",
+      "Credit purchase of goods with bill of exchange",
+      "Trade conducted only within cities"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The barter system is direct exchange of goods and services for other goods and services without using money, often limited by the need for double coincidence of wants and difficulty in valuation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which type of bank account typically allows unlimited withdrawals and is meant for regular business transactions?",
+    "options": [
+      "Fixed deposit account",
+      "Savings account with notice",
+      "Current (cheque) account",
+      "Dormant account"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A current (cheque) account is designed for frequent transactions with unlimited withdrawals and cheque facilities, typically used by businesses for daily operations unlike fixed deposit accounts.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a major disadvantage of sole proprietorship?",
+    "options": [
+      "Complex legal formation",
+      "Unlimited liability of the owner",
+      "Double taxation",
+      "Inability to make quick decisions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A key disadvantage of a sole proprietorship is unlimited liability, meaning the owner is personally responsible for business debts. Legal formation is simple and decision-making is generally quick.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which tariff is imposed to protect domestic industries by raising the price of imported goods?",
+    "options": [
+      "Revenue tariff aimed at raising government revenue",
+      "Protective tariff aimed at protecting local industries",
+      "Export tariff charged on goods leaving a country",
+      "Transit tariff on goods in transit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A protective tariff increases the price of imports to make local products more competitive and protect domestic industries. Revenue tariffs aim to raise funds rather than protect industries.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains 'savings' in commercial banking context?",
+    "options": [
+      "Money put aside in a bank account to earn interest and for future use",
+      "Borrowed funds to finance immediate consumption",
+      "Immediate expenditure on current needs",
+      "Money used exclusively by large corporations"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Savings involve setting aside income in bank accounts to earn interest and provide funds for future needs. Savings differ from borrowed funds and are available to individuals and organizations alike.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "In commerce, 'market segmentation' refers to what practice?",
+    "options": [
+      "Selling the same product to the entire market at one price",
+      "Dividing a market into distinct groups of buyers with different needs or characteristics",
+      "Removing competition by merging firms",
+      "Standardizing products across all markets"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation divides a market into distinct groups of consumers with similar needs, allowing firms to target products and marketing strategies more effectively to each segment.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a document used to demand payment from a buyer by a seller after credit sale?",
+    "options": [
+      "Debit note",
+      "Credit note",
+      "Statement of account",
+      "Order note"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A debit note is issued by a seller (or buyer) to indicate money owed or to request payment adjustment; it is used to correct or demand payment. A credit note reduces amounts owed.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'economies of scale'?",
+    "options": [
+      "Increase in average cost as production increases",
+      "Decrease in average cost as production increases",
+      "No change in cost with production",
+      "Only relevant to small businesses"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Economies of scale occur when average costs fall as production volume increases due to spreading fixed costs and gaining operational efficiencies. It benefits large-scale production, not just small businesses.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is the main purpose of a tariff quota system in international trade?",
+    "options": [
+      "Allow unlimited duty-free imports",
+      "Combine tariff and quota to allow limited imports at lower duties and apply higher duties beyond threshold",
+      "Ban all imports permanently",
+      "Provide subsidies to exporters only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A tariff quota allows a limited quantity of imports at lower or zero duty; imports beyond the quota attract higher duties. It balances protection for domestic producers and controlled imports.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'brand loyalty'?",
+    "options": [
+      "Customers always switch to the cheapest brand",
+      "Customers consistently prefer and repurchase the same brand over time",
+      "Customers avoid well-known brands",
+      "Businesses change their brand frequently"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Brand loyalty is the tendency of customers to repeatedly buy a particular brand because of satisfaction, trust or preference. It is valuable for firms due to repeat purchases and lower marketing costs.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a common financial document used to show that goods have been delivered to a buyer?",
+    "options": [
+      "Delivery note",
+      "Insurance policy",
+      "Price list",
+      "Letter of credit"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A delivery note accompanies goods and is signed by the buyer upon receipt, serving as evidence of delivery. Insurance policies and letters of credit perform different functions in trade.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains 'free on board (FOB)' in shipping terms?",
+    "options": [
+      "Seller pays freight and bears risk until destination port",
+      "Buyer assumes risk and cost once goods pass the ship's rail at port of shipment",
+      "Seller has no obligation to load goods",
+      "Buyer pays customs duties at origin"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FOB means the seller delivers goods on board the vessel, and risk transfers to the buyer once goods pass the ship's rail at port of shipment. Costs and responsibilities vary by incoterm.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following marketing mix elements is most directly concerned with the methods used to make a product available to customers?",
+    "options": [
+      "Product",
+      "Price",
+      "Place (distribution)",
+      "Promotion"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Place refers to distribution channels and methods used to make a product available to customers, such as retail outlets, wholesalers, and logistics. It focuses on getting products to buyers.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a primary function of an insurance company?",
+    "options": [
+      "To manufacture goods",
+      "To provide financial compensation against specified losses in exchange for premiums",
+      "To offer retail services",
+      "To regulate banks"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Insurance companies assume financial risk by offering compensation for specified losses in exchange for premiums paid by policyholders, thus providing risk protection and indemnity.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best illustrates 'counter trade' in international commerce?",
+    "options": [
+      "Payment for goods in fully convertible currency only",
+      "Barter or partial barter arrangements where goods are exchanged for goods or services",
+      "Use of letters of credit exclusively",
+      "Selling goods without any payment terms"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Counter trade includes barter or barter-like arrangements where part or all payment is in goods or services instead of fully convertible currency, useful when hard currency is scarce.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which one of the following is an objective of advertising for a new product?",
+    "options": [
+      "To reduce production capacity",
+      "To create awareness and stimulate demand among potential buyers",
+      "To guarantee immediate profits without marketing",
+      "To eliminate the need for branding"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising a new product aims to inform potential customers, create awareness, stimulate interest and demand, and help establish the product in the market; it does not directly reduce capacity.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains 'working capital' in a business?",
+    "options": [
+      "Long-term investments in fixed assets",
+      "Funds required for day-to-day operations such as buying inventories and meeting short-term obligations",
+      "Capital used only for paying dividends",
+      "Money invested by shareholders exclusively in machinery"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Working capital represents current assets minus current liabilities and is used for daily operations like purchasing inventory and paying wages; it differs from long-term fixed asset investments.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following statements is true about 'credit note'?",
+    "options": [
+      "It increases the amount owed by the buyer",
+      "It reduces the amount a buyer owes due to returned goods or overcharge",
+      "It is issued to request payment for goods delivered",
+      "It transfers ownership of goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A credit note is issued to reduce the buyer's liability when goods are returned or overcharged; it effectively amends the earlier invoice and decreases the amount payable.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best defines 'markup' in pricing?",
+    "options": [
+      "The discount given to wholesalers",
+      "The percentage or amount added to the cost price to obtain the selling price",
+      "The sales tax applied to goods",
+      "The loss incurred during sales"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Markup is the amount or percentage added to the cost price of a product to determine its selling price, ensuring coverage of expenses and generation of profit margin.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is NOT normally a feature of a cooperative society?",
+    "options": [
+      "Democratic control by members (one member, one vote)",
+      "Surplus distribution to members based on transactions",
+      "Profit maximization for external shareholders over members' welfare",
+      "Voluntary membership and mutual help"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Cooperative societies emphasize member welfare, democratic control and surplus distribution based on patronage; prioritizing external shareholders' profit over members contradicts cooperative principles.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'just-in-time (JIT)' inventory management?",
+    "options": [
+      "Keeping very high stock levels to avoid shortages",
+      "Ordering and receiving inventory only as needed for production or sales to minimize holding costs",
+      "Always producing to stock without regard to demand",
+      "Using manual records only for inventory control"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "JIT aims to order and receive inventory only when needed, reducing holding costs and waste. It requires reliable suppliers and accurate demand forecasting to avoid stockouts.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best explains 'fixed capital' of a business?",
+    "options": [
+      "Funds invested in current assets like stock and cash",
+      "Long-term funds invested in fixed assets like land, buildings and machinery",
+      "Temporary loans for seasonal operations",
+      "Capital used exclusively for paying salaries"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fixed capital refers to long-term funds invested in fixed assets such as buildings, machinery and equipment that provide services over several accounting periods, unlike working capital.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following customs documents is required for clearing imported goods through customs?",
+    "options": [
+      "Insurance policy only",
+      "Customs entry or import declaration form",
+      "Sales invoice to domestic customers",
+      "Credit note issued by supplier"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Customs entry or import declaration is required to clear goods, declaring their nature, value and duty payable. Other documents like invoices and bills of lading support the entry.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'market share'?",
+    "options": [
+      "The absolute size of a company's workforce",
+      "A company's sales as a proportion of total market sales for the product",
+      "The number of retail outlets owned by a firm",
+      "Total assets divided by liabilities"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market share measures a company's sales relative to total sales in the market for that product, indicating competitive position and success compared to rivals.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is the major function of 'advertising agencies'?",
+    "options": [
+      "Manufacturing advertising materials only",
+      "Planning, creating and placing advertising campaigns on behalf of clients",
+      "Direct selling of products to consumers",
+      "Issuing insurance policies"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising agencies specialize in planning, developing creative content and placing advertisements across media for clients, helping to communicate messages and reach target audiences effectively.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following is a disadvantage of hiring external agents for distribution?",
+    "options": [
+      "Agents provide local market knowledge",
+      "Agents may take large commission and reduce producer control over sales",
+      "Agents guarantee fixed sales volumes without costs",
+      "Agents eliminate the need for promotion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Using agents can reduce control over sales methods and brand representation and involve significant commission costs. However, agents often offer local market knowledge and networks.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which method of payment reduces seller's risk by guaranteeing payment upon presentation of documents through a bank?",
+    "options": [
+      "Open account with long credit",
+      "Documentary letter of credit",
+      "Cash on delivery only within same city",
+      "Personal promise without bank involvement"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A documentary letter of credit issued by a bank guarantees payment to the seller upon presentation of specified documents, reducing seller's credit risk in international trade.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  },
+  {
+    "text": "Which of the following best describes 'commercial bank'?",
+    "options": [
+      "An institution that only lends to governments",
+      "A financial institution that accepts deposits, grants loans and provides payment services",
+      "A facility for storing agricultural produce only",
+      "A company that sells insurance products exclusively"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial banks accept deposits, provide loans, facilitate payments and offer other financial services to individuals and businesses; they do not exclusively lend to governments or sell insurance only.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2020
+  }
+]

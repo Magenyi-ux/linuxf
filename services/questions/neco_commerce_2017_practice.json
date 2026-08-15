@@ -1,0 +1,730 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' in the context of trade?",
+    "options": [
+      "The production of goods and services for domestic consumption",
+      "All activities that facilitate the exchange of goods and services between producers and consumers",
+      "The legal ownership of factories and machinery",
+      "Government regulation of foreign trade"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce comprises activities that facilitate exchange between producers and consumers, such as transport, insurance, warehousing, and banking. It is broader than production or regulation and focuses on supporting trade and distribution activities.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which document serves as evidence of ownership of goods in transit and is commonly used in international trade?",
+    "options": [
+      "Commercial invoice",
+      "Certificate of origin",
+      "Bill of lading",
+      "Proforma invoice"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of lading is a document issued by a carrier acknowledging receipt of cargo and serves as evidence of ownership and contract of carriage. It is crucial in international shipping and can be negotiable or non-negotiable.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is NOT a function of commercial banks?",
+    "options": [
+      "Accepting deposits",
+      "Issuing of passports",
+      "Granting loans and advances",
+      "Issuing letters of credit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Issuing passports is a governmental function, not a role of commercial banks. Banks accept deposits, grant loans, and issue letters of credit to facilitate domestic and international trade transactions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which form of business ownership provides the owners with limited liability and is suitable for large capital needs?",
+    "options": [
+      "Sole proprietorship",
+      "Partnership at will",
+      "Private limited liability company",
+      "Informal cooperative society"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A private limited liability company provides shareholders with limited liability and allows capital to be raised from many investors. It is more suitable for larger capital requirements than sole proprietorships or informal cooperatives.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which insurance policy protects a trader against loss of goods in transit by road?",
+    "options": [
+      "Life assurance",
+      "Fire insurance",
+      "Marine cargo insurance",
+      "Motor third-party insurance"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Marine cargo insurance covers goods in transit, including by road, sea, or air, protecting traders against loss or damage. It is specifically designed for goods transported from one place to another.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which trade term indicates that the seller delivers goods to the buyer's location and bears all transportation risks and costs?",
+    "options": [
+      "Ex Works (EXW)",
+      "Free on Board (FOB)",
+      "Delivered Duty Paid (DDP)",
+      "Carriage Paid To (CPT)"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Delivered Duty Paid (DDP) requires the seller to deliver goods to the buyer's location and pay all transport costs and import duties. It places maximum responsibility on the seller compared with EXW or FOB.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "In the context of pricing, what does 'markup' refer to?",
+    "options": [
+      "The percentage increase of cost to arrive at selling price",
+      "A discount offered to bulk buyers",
+      "The time period for paying suppliers",
+      "A sales promotion technique"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Markup is the percentage or amount added to the cost price to determine the selling price. It ensures profit margin over cost and differs from discounts or payment terms.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is an example of fiscal policy instrument that affects commerce?",
+    "options": [
+      "Change in bank reserve requirements",
+      "Adjustment of interest rates by the central bank",
+      "Increase in import tariffs",
+      "Introduction of a new payment technology"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Import tariffs are fiscal policy tools (taxation) used by governments to influence trade, protect local industries, and generate revenue. Reserve requirements and interest rates are monetary policy tools, not fiscal.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which  document is evidence of a debt and lists goods sold on credit with their prices and terms?",
+    "options": [
+      "Delivery note",
+      "Credit note",
+      "Invoice",
+      "Receipt"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "An invoice is issued by a seller to a buyer listing goods or services provided on credit, showing quantities, prices, total amount due, and payment terms. It serves as a request for payment.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which mode of transport is generally most suitable for carrying perishable agricultural produce over short distances within Nigeria?",
+    "options": [
+      "Rail transport",
+      "Pipeline transport",
+      "Road transport",
+      "Sea transport"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Road transport is most suitable for short-distance, time-sensitive perishable goods in Nigeria because it offers flexibility, door-to-door delivery, and speed compared with rail or sea which may be slower or less accessible.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "If a wholesaler buys 100 units at N120 each and sells them at N160 each, what is the percentage profit on cost?",
+    "options": [
+      "25%",
+      "33.3%",
+      "20%",
+      "40%"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Profit per unit = 160 - 120 = N40. Percentage profit on cost = (40/120) x 100 = 33.333...% approximately. This shows the markup related to cost price, not selling price.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which pricing strategy involves setting a low initial price to gain market share quickly?",
+    "options": [
+      "Price skimming",
+      "Penetration pricing",
+      "Premium pricing",
+      "Cost-plus pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Penetration pricing sets a low initial price to attract customers and gain market share quickly. Price skimming does the opposite by setting high initial prices to capture consumer surplus.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which body in Nigeria is primarily responsible for regulating banking operations and issuing banking licenses?",
+    "options": [
+      "Federal Inland Revenue Service (FIRS)",
+      "Corporate Affairs Commission (CAC)",
+      "Central Bank of Nigeria (CBN)",
+      "Nigerian Stock Exchange (NSE)"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The Central Bank of Nigeria regulates banking operations, issues banking licenses, supervises financial institutions, and formulates monetary policy, while CAC registers companies and FIRS handles taxation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following best defines 'working capital' for a trading business?",
+    "options": [
+      "Total fixed assets minus total liabilities",
+      "Current assets minus current liabilities",
+      "Total capital invested by owners",
+      "Annual profit after tax"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Working capital equals current assets minus current liabilities and measures the firm's short-term liquidity and ability to meet day-to-day operations and obligations without raising external funds.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which international organisation promotes free trade and settles trade disputes between member countries?",
+    "options": [
+      "World Trade Organization (WTO)",
+      "International Monetary Fund (IMF)",
+      "United Nations (UN)",
+      "World Bank"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The World Trade Organization (WTO) sets rules for international trade, promotes free trade, and provides a forum for negotiating agreements and settling trade disputes among member nations.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which term describes a sale where goods are sold subject to the buyer being able to return them if unsatisfactory?",
+    "options": [
+      "Sale on approval",
+      "Sale by sample",
+      "Consignment sale",
+      "Sale or return"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Sale or return allows the buyer to return unsold or unsatisfactory goods within an agreed time. It differs from sale on approval and consignment, which have distinct legal meanings and conditions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is a primary function of a marketing mix?",
+    "options": [
+      "To regulate international trade",
+      "To coordinate product, price, place and promotion decisions",
+      "To determine company legal structure",
+      "To audit financial statements"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The marketing mix involves coordinating product, price, place (distribution) and promotion decisions to satisfy target customers. It is central to marketing strategy and market positioning.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which document is used by a seller to reduce the amount owed by a buyer because of returned goods or overcharging?",
+    "options": [
+      "Invoice",
+      "Credit note",
+      "Delivery note",
+      "Statement of account"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A credit note is issued by a seller to a buyer to reduce the buyer's outstanding balance due to returned goods, overcharging, or allowances. It adjusts the buyer's account accordingly.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which form of promotion provides immediate incentive to buyers to encourage purchase and can include coupons or discounts?",
+    "options": [
+      "Public relations",
+      "Personal selling",
+      "Sales promotion",
+      "Advertising"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Sales promotion offers short-term incentives like coupons, discounts, samples, or contests to stimulate immediate sales. It complements advertising and personal selling in the promotional mix.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "What is the principal objective of a warehousing facility in commerce?",
+    "options": [
+      "Reducing product quality",
+      "Minimising time-to-sales by immediate disposal of goods",
+      "Storing goods to ensure continuous supply and stabilize prices",
+      "Issuing bank loans to traders"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Warehousing stores goods to ensure continuous supply, protect goods from damage, support seasonal production, and help stabilize prices by smoothing availability across time and locations.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following best explains 'counter trade'?",
+    "options": [
+      "Trading using only domestic currency",
+      "Trade where goods are exchanged for other goods or services instead of cash",
+      "Trade conducted exclusively via online platforms",
+      "Importation of luxury goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Counter trade involves barter-like arrangements where goods or services are exchanged partly or wholly instead of cash. It is used when currency restrictions or lack of convertible currency hinder normal trade.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "A trader sold goods for N4200 which represented a 20% profit on cost. What was the cost price?",
+    "options": [
+      "N3500",
+      "N3600",
+      "N3000",
+      "N2800"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Let cost = C. Selling price = C + 20% of C = 1.2C. Given 1.2C = 4200, so C = 4200/1.2 = N3500. Basic reverse percentage calculation finds original cost price.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following best describes 'retailer' in the distribution chain?",
+    "options": [
+      "A producer who manufactures goods",
+      "An intermediary who sells goods directly to final consumers in small quantities",
+      "A firm that provides wholesale credit",
+      "A government agency controlling prices"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A retailer purchases goods from wholesalers or producers and sells them directly to final consumers in small quantities. Retailers serve as the final link in the distribution chain enabling consumer access.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is an advantage of taking goods on consignment for the consignee?",
+    "options": [
+      "Immediate ownership of the goods",
+      "Reduced cash outlay until goods are sold",
+      "Higher risk of unsold goods for the consignor only",
+      "Guaranteed profit margin"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consignment allows the consignee to hold goods and sell them without immediate payment to the consignor, reducing cash outlay and inventory risk. Ownership typically remains with consignor until sale.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following trade barriers is most likely to be used to protect local industry while still allowing some imports?",
+    "options": [
+      "Complete ban on imports",
+      "Imposition of quotas and tariffs",
+      "Free trade agreement",
+      "Export subsidies"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Quotas and tariffs restrict the quantity and increase cost of imports, thus protecting domestic industries while still permitting some level of import activity, unlike a complete ban or free trade agreements.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which accounting book records day-to-day transactions in chronological order before posting to ledger accounts?",
+    "options": [
+      "Ledger",
+      "Journal (Day Book)",
+      "Trial balance",
+      "Balance sheet"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The journal, often called the day book, records transactions chronologically as they occur. Entries are later posted to individual ledger accounts for summarisation and preparation of trial balances.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is a core responsibility of a consumer protection agency?",
+    "options": [
+      "Setting interest rates for banks",
+      "Protecting consumers against unfair trade practices and unsafe products",
+      "Regulating stock exchange listings",
+      "Issuing trade licenses to importers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consumer protection agencies protect consumers from unfair practices, false advertising and unsafe products, ensure product safety standards, and offer mechanisms for complaints and redress, not banking or stock regulation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which type of cooperative society is primarily formed to help members buy goods at lower cost through bulk purchase?",
+    "options": [
+      "Credit cooperative",
+      "Producer cooperative",
+      "Consumer cooperative",
+      "Housing cooperative"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Consumer cooperatives are formed to purchase goods in bulk and resell to members at lower prices, leveraging collective buying power to reduce retail costs and improve access to commodities.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is a primary motive for foreign direct investment (FDI) into Nigeria?",
+    "options": [
+      "To avoid domestic taxes entirely",
+      "To acquire natural resources, access markets, and reduce production costs",
+      "To decrease domestic employment",
+      "To centralize global operations in other countries only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FDI motives include access to raw materials, new markets, lower production costs, and strategic assets. Investors seek local advantages, not necessarily tax avoidance or reducing employment in the host country.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which market structure is characterised by many sellers offering differentiated products and some control over price?",
+    "options": [
+      "Perfect competition",
+      "Monopoly",
+      "Monopolistic competition",
+      "Oligopoly"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Monopolistic competition describes markets with many sellers offering differentiated products, providing them some price-setting power. It differs from perfect competition (homogeneous goods) and monopoly (single seller).",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which instrument is commonly used by importers to guarantee payment to exporters through banks?",
+    "options": [
+      "Insurance policy",
+      "Banker's draft",
+      "Letter of credit",
+      "Promissory note"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A letter of credit (L/C) issued by a bank guarantees payment to the exporter when documentary conditions are met, reducing payment risk in international trade for both importer and exporter.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which advertisement medium is best for achieving targeted local reach at low cost for small retailers in Nigeria?",
+    "options": [
+      "National television commercials",
+      "Local radio and flyers",
+      "Billboard in other states",
+      "International magazines"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Local radio and printed flyers are cost-effective for small retailers to reach targeted local customers, providing geographic focus and affordability compared with expensive national or international media.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following best describes 'overdraft' facility from a commercial bank?",
+    "options": [
+      "A long-term loan for buying fixed assets",
+      "A payment card for ATM withdrawals",
+      "A short-term borrowing allowing withdrawal beyond account balance up to an agreed limit",
+      "A government grant to small businesses"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "An overdraft permits a customer to withdraw more than the available account balance up to an agreed limit for short-term cash needs. Interest is charged on the overdrawn amount until repaid.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which costing method values closing inventory at cost of most recent purchases or production?",
+    "options": [
+      "FIFO (First-in, first-out)",
+      "LIFO (Last-in, first-out)",
+      "Weighted average cost",
+      "Specific identification"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "LIFO values closing inventory using costs of the most recent purchases (last-in) and assumes those latest costs are matched against sales first. It contrasts with FIFO and weighted average methods.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which pricing method sets price by adding a standard markup to the unit cost?",
+    "options": [
+      "Competitive pricing",
+      "Penetration pricing",
+      "Cost-plus pricing",
+      "Psychological pricing"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Cost-plus pricing involves adding a fixed percentage or amount (markup) to unit cost to determine selling price. It ensures coverage of cost and a targeted profit margin.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following would most likely increase the supply of a product in the market, ceteris paribus?",
+    "options": [
+      "An increase in the price of raw materials",
+      "Introduction of a subsidy for producers",
+      "A decrease in the number of producers",
+      "Higher business taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A subsidy lowers producers' costs, encouraging increased production and supply. Higher input prices, fewer producers, or higher taxes would reduce supply rather than increase it.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which international payment method involves immediate payment by the buyer through his bank on presentation of shipping documents?",
+    "options": [
+      "Open account",
+      "Cash in advance",
+      "Documents against payment (D/P)",
+      "Consignment"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Documents against payment (D/P) requires the buyer to pay when the bank presents shipping documents; goods are released only upon payment. This reduces exporter risk compared to open account terms.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following best explains 'agglomeration economies' in business location decisions?",
+    "options": [
+      "Higher taxes near city centres",
+      "Benefits firms obtain by locating near other firms, such as shared services and skilled labour",
+      "Restrictions on industrial zones",
+      "Random selection of business location"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Agglomeration economies refer to advantages firms gain by clustering geographically, like shared infrastructure, suppliers, customer base, and skilled labour pools, reducing costs and increasing efficiency.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which legal document establishes a company and provides details like objectives and share capital?",
+    "options": [
+      "Memorandum of Association",
+      "Share certificate",
+      "Auditor's report",
+      "Purchase order"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The Memorandum of Association is a company's foundational legal document stating its objectives, registered office, shareholder details, and authorized share capital. It is required for company registration and incorporation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which cost is considered a 'sunk cost' when making future business decisions?",
+    "options": [
+      "A past research expense already incurred",
+      "Expected future advertising expense",
+      "Projected cost of raw materials for next month",
+      "Estimated future loan interest"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Sunk costs are past expenditures that cannot be recovered and should not influence current decisions. Past research expenses are sunk, unlike expected future costs which are relevant to decisions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of these best exemplifies ethical business practice in commerce?",
+    "options": [
+      "Selling counterfeit goods at lower prices",
+      "Concealing product defects from buyers",
+      "Honest advertising and transparent pricing",
+      "Bribing officials to obtain contracts"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Ethical business practices include honest advertising, transparent pricing, fair dealing with stakeholders, and compliance with laws. Counterfeiting, concealment of defects, or bribery violate ethical norms and legal standards.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which financial ratio measures a firm's ability to meet short-term obligations using its most liquid assets (excluding inventories)?",
+    "options": [
+      "Current ratio",
+      "Debt-equity ratio",
+      "Quick (acid-test) ratio",
+      "Gross profit margin"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The quick (acid-test) ratio measures short-term liquidity using liquid assets (cash, receivables) excluding inventories, to assess if a firm can meet immediate liabilities without selling inventory.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is the main advantage of decentralisation in a trading organisation?",
+    "options": [
+      "Central control of all decisions",
+      "Quicker local decision-making and responsiveness to market needs",
+      "Increased bureaucracy",
+      "Uniform decisions irrespective of local conditions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Decentralisation delegates authority to local managers, allowing quicker decisions tailored to local market conditions and increased responsiveness, unlike centralisation which may be slower and less adaptive.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following best describes 'just-in-time' (JIT) inventory system for merchants?",
+    "options": [
+      "Holding maximum possible stock at all times",
+      "Ordering and receiving inventory only as needed to meet demand",
+      "Storing goods in long-term cold storage",
+      "Selling only on credit to trusted customers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "JIT inventory management aims to reduce holding costs by ordering and receiving goods only as required for production or sale, minimising stock levels and waste while relying on reliable supply chains.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which term refers to the difference between the exchange rate at which a currency can be sold and bought in the foreign exchange market?",
+    "options": [
+      "Currency parity",
+      "Exchange spread or bid-ask spread",
+      "Inflation differential",
+      "Purchasing power parity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The bid-ask spread is the difference between the buying (bid) and selling (ask) prices of a currency in the foreign exchange market. It represents transaction cost and market liquidity.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "A wholesaler grants trade discount of 10% to a retailer on list price of N5,000 and allows a further 2% cash discount for prompt payment. What amount does the retailer pay if he pays promptly?",
+    "options": [
+      "N4,410",
+      "N4,500",
+      "N4,900",
+      "N4,410.00"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "First apply 10% trade discount: 5000 - 10% = 4500. Then 2% cash discount on 4500 = 90. Amount payable = 4500 - 90 = N4,410. This shows sequential discounts are multiplicative.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of these is a characteristic of a monopoly market structure?",
+    "options": [
+      "Many sellers and easy entry",
+      "Single seller with unique product and high barriers to entry",
+      "Products are perfect substitutes",
+      "Firms are price takers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A monopoly features a single seller offering a unique product with high barriers to entry, allowing the monopolist to influence price. This contrasts with perfect competition where firms are price takers.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which government policy would most directly encourage export growth?",
+    "options": [
+      "Increase import tariffs on raw materials",
+      "Provide export subsidies and tax relief to exporters",
+      "Impose strict foreign exchange controls",
+      "Ban exports of manufactured goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Export subsidies and tax relief lower exporters' costs and improve competitiveness in foreign markets, directly encouraging export growth. Tariffs or bans would restrict trade rather than promote exports.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following best describes 'market segmentation' as a marketing strategy?",
+    "options": [
+      "Selling identical products to entire market",
+      "Dividing a market into distinct groups with similar needs to target them effectively",
+      "Increasing prices for all consumers uniformly",
+      "Reducing production to increase scarcity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation divides the market into groups with common characteristics (age, income, location) enabling firms to tailor products and marketing to specific needs and improve effectiveness and customer satisfaction.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following statements is true about 'trade credit' offered by suppliers?",
+    "options": [
+      "It is a long-term fixed rate loan from a bank",
+      "It allows buyers to receive goods and pay later, improving short-term liquidity",
+      "It requires collateral like land or buildings",
+      "It is only available for international transactions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade credit permits buyers to obtain goods and defer payment to a later date, aiding cash flow. It is typically short-term, unsecured by collateral, and used in domestic and international trade.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which of the following is the best reason a business would use branding?",
+    "options": [
+      "To make products indistinguishable",
+      "To differentiate products and build customer loyalty",
+      "To increase production costs intentionally",
+      "To avoid customer feedback"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Branding differentiates products, builds recognition and customer loyalty, and can justify premium pricing. It creates an identity and perceived value that distinguishes offerings from competitors.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  },
+  {
+    "text": "Which economic indicator would most likely show an improvement if national exports rise significantly?",
+    "options": [
+      "Balance of trade",
+      "Domestic consumption only",
+      "Unemployment rate automatically falls to zero",
+      "Inflation rate falls instantly"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "An increase in exports improves the balance of trade by increasing export revenues relative to imports. While employment and other indicators can be affected, balance of trade is the most directly impacted.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2017
+  }
+]

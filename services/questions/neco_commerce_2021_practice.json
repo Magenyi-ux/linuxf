@@ -1,0 +1,716 @@
+[
+  {
+    "text": "Which of the following best distinguishes 'commerce' from 'trade' in business studies?",
+    "options": [
+      "Commerce includes trade plus all auxiliaries like transport and insurance; trade is the buying and selling of goods only.",
+      "Commerce is only concerned with export and import while trade deals with local buying and selling.",
+      "Commerce is the study of company law while trade refers to professional occupations.",
+      "Commerce and trade are the same and the terms are completely interchangeable."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Commerce is broader than trade: it covers trade (buying and selling) plus auxiliary services such as transport, warehousing, insurance, banking and advertising that facilitate exchange and distribution of goods and services.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is NOT an auxiliary service of commerce?",
+    "options": [
+      "Marketing research",
+      "Warehousing",
+      "Manufacturing of goods",
+      "Insurance"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Auxiliary services support the flow of goods from producer to consumer; manufacturing is a production activity, not an auxiliary service that facilitates trade or distribution.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which type of wholesaler specializes in buying large quantities from producers and breaking them into small lots for retailers?",
+    "options": [
+      "Agent wholesaler",
+      "Merchant wholesaler",
+      "Bulk-breaking wholesaler",
+      "Commission wholesaler"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Bulk-breaking wholesalers purchase in bulk from producers and subdivide into consignments suitable for retailers; this function helps match producer output with retailer demand and aids distribution.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which document issued by a carrier acknowledges receipt of goods for shipment and can act as a document of title?",
+    "options": [
+      "Commercial invoice",
+      "Packing list",
+      "Bill of lading",
+      "Certificate of origin"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of lading is issued by the carrier upon receiving goods for shipment; it acknowledges receipt, details shipment terms and can serve as a document of title enabling transfer of ownership.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which term describes a trade contract where the seller bears the cost, insurance and freight to the buyer's port?",
+    "options": [
+      "FOB (Free on Board)",
+      "CIF (Cost, Insurance and Freight)",
+      "Ex-works",
+      "FAS (Free Alongside Ship)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "CIF means the seller pays cost, insurance and freight to bring goods to the buyer's named port; the seller arranges and pays transport and insurance to that destination.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Under marine insurance, which principle states that an insured should not profit from a loss but be placed in the same financial position as before the loss?",
+    "options": [
+      "Utmost good faith",
+      "Indemnity",
+      "Contribution",
+      "Subrogation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The principle of indemnity ensures an insured is compensated to restore them to the financial position before the loss, preventing profiteering from insurance claims and maintaining fairness.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "When a cheque is crossed generally with 'Account Payee Only', this crossing implies that the cheque will be:",
+    "options": [
+      "Paid only at the counter to the bearer",
+      "Paid into the account of the payee named on the cheque",
+      "Endorsable and transferable by any holder",
+      "Payable only in cash at any bank"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An 'Account Payee Only' crossing restricts payment to the bank account of the named payee, preventing negotiation or payment to a bearer and enhancing security of the cheque transaction.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is the best advantage of e-commerce for small businesses?",
+    "options": [
+      "Unlimited staff requirements",
+      "Reduced market reach",
+      "Lower entry cost and wider market access",
+      "Greater need for physical storefronts"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "E-commerce lowers entry costs by removing the need for large physical premises and enables small businesses to reach broader markets online, increasing customer access and potential sales opportunities.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which characteristic is typical of a sole proprietorship?",
+    "options": [
+      "Limited liability for owners",
+      "Ownership is by the state",
+      "Single owner who bears unlimited liability",
+      "Owned by many shareholders with transferable shares"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A sole proprietorship is owned by one person who has unlimited liability, meaning personal assets can be used to settle business debts; it is not a separate legal entity from the owner.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following correctly contrasts a partnership from a limited liability company?",
+    "options": [
+      "Partners have limited liability; company owners have unlimited liability.",
+      "Partnerships are governed by company law; limited companies are informal agreements.",
+      "Partners typically have unlimited liability; company shareholders have limited liability.",
+      "Partnerships always have more capital than limited companies."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "In a partnership, partners often have unlimited liability exposing personal assets to business debts, while shareholders of a limited liability company are liable only to the extent of unpaid shares, protecting personal assets.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a defining feature of a cooperative society?",
+    "options": [
+      "One-member-one-vote democratic control",
+      "Profit maximization for external shareholders",
+      "Absolute reliance on government capital",
+      "Ownership by multinational investors only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Cooperatives operate on democratic principles where each member typically has one vote regardless of capital contribution. They focus on member welfare rather than maximizing profits for external shareholders.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which financial source is most appropriate for meeting a firm's short-term working capital needs?",
+    "options": [
+      "Long-term debentures",
+      "Equity capital",
+      "Bank overdraft",
+      "Issuing preference shares"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bank overdraft provides short-term, flexible funds to meet working capital needs; it allows withdrawal beyond account balance up to an agreed limit and is repayable on demand.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is an example of indirect taxation?",
+    "options": [
+      "Personal income tax",
+      "Company income tax",
+      "Value Added Tax (VAT)",
+      "Capital gains tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Indirect taxes like VAT are collected by intermediaries (sellers) from buyers and passed to the government; they are levied on goods and services rather than on individual incomes directly.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "If the domestic currency depreciates against foreign currencies, what is the immediate likely effect on imports?",
+    "options": [
+      "Imports become cheaper in local currency",
+      "Imports become more expensive in local currency",
+      "No change in import prices",
+      "Exports become illegal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Currency depreciation makes foreign goods cost more in domestic terms because more local currency is required to buy the same amount of foreign currency, increasing the local price of imports.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a trade barrier that directly restricts the quantity of goods allowed into a country?",
+    "options": [
+      "Tariff",
+      "Subsidy",
+      "Quota",
+      "Free trade agreement"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A quota is a non-tariff barrier that sets a physical limit on the quantity of specific goods that may be imported into a country, directly restricting import volumes.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "What is the principal purpose of licensing as a government control of business activities?",
+    "options": [
+      "To guarantee unlimited production",
+      "To restrict all imports permanently",
+      "To regulate activity, protect consumers and maintain standards",
+      "To eliminate local businesses"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Licensing allows government to control who may operate in certain trades, ensure compliance with standards, protect consumers and public interest, and regulate entry into sensitive industries.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which document used in international trade provides a detailed statement of goods, their value and terms of sale between exporter and importer?",
+    "options": [
+      "Bill of exchange",
+      "Commercial invoice",
+      "Delivery note",
+      "Insurance policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A commercial invoice is prepared by the exporter and details goods shipped, their prices, total value and terms of sale; it is essential for customs clearance and payment processes.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Who is the drawer of a bill of exchange?",
+    "options": [
+      "The bank paying on behalf of the drawer",
+      "The person who orders the payment (creditor)",
+      "The person who accepts to pay the bill",
+      "The drawee who draws the bill on another"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The drawer is the party that writes or draws the bill of exchange ordering the drawee to pay a specified sum to the payee; typically the creditor or seller draws the bill on the buyer.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which party in a bill of exchange is primarily responsible for payment when the bill is presented?",
+    "options": [
+      "Drawer",
+      "Drawee (after acceptance)",
+      "Payee",
+      "Endorser"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The drawee is the person on whom the bill is drawn and who, upon accepting the bill, becomes primarily responsible for making payment to the payee when the bill matures.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "A trader borrows N10,000 at simple interest rate of 5% per annum for 2 years. What is the interest payable?",
+    "options": [
+      "N500",
+      "N1,000",
+      "N1,500",
+      "N2,000"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Simple interest = Principal \u00d7 Rate \u00d7 Time = 10,000 \u00d7 0.05 \u00d7 2 = 1,000. Therefore interest payable over 2 years at 5% is N1,000, making this the correct option.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best describes the role of advertising in marketing?",
+    "options": [
+      "To increase product supply only",
+      "To inform and persuade potential customers about products",
+      "To replace personal selling completely",
+      "To reduce product quality"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Advertising serves to inform consumers about product features, create awareness and persuade them to buy; it complements other marketing activities but does not replace personal selling entirely.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which component of the marketing mix deals with how a product is distributed and where it is sold?",
+    "options": [
+      "Product",
+      "Price",
+      "Place (distribution)",
+      "Promotion"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Place (distribution) concerns the channels and methods used to make products available to consumers, including physical locations, logistics, wholesalers and retailers.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a primary objective of consumer protection laws and agencies?",
+    "options": [
+      "To shield producers from competition",
+      "To punish all business owners indefinitely",
+      "To safeguard consumer rights, ensure safety and truthful information",
+      "To increase product prices"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Consumer protection aims to protect consumers from unsafe products, false advertising and unfair practices, ensuring safety, accurate information and redress mechanisms for grievances.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following actions would most likely improve a firm's liquidity position?",
+    "options": [
+      "Converting current assets quickly into cash",
+      "Replacing current liabilities with long-term debt without changing assets",
+      "Purchasing more fixed assets",
+      "Increasing shareholders' dividends"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Improving liquidity is achieved by quickly converting current assets into cash or reducing short-term obligations; this increases the firm's ability to meet immediate liabilities and operating needs.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best describes a public corporation?",
+    "options": [
+      "Privately owned with unlimited liability",
+      "Owned and controlled by the government to provide public services",
+      "A small partnership with family members only",
+      "An informal group without legal status"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Public corporations are enterprises owned or controlled by the government, established to provide public goods or services, often with separate legal identity and statutory charters.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which statement best describes a joint venture?",
+    "options": [
+      "A long-term merger where two companies become one",
+      "A short-term collaboration between two or more parties for a specific project",
+      "An arrangement where employees own the company",
+      "A sole proprietorship that hires a partner temporarily"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A joint venture involves two or more parties combining resources for a defined project or business activity, sharing risks, costs and profits for the specific venture before dissolution or extension.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Franchising as a form of business expansion typically involves:",
+    "options": [
+      "The franchisor granting rights to a franchisee to use its brand and business model for a fee",
+      "Complete transfer of company ownership to customers",
+      "Government taking over private businesses",
+      "Free use of trademarks without any payment"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "In franchising, a franchisor allows a franchisee to operate using its brand, systems and support in return for initial fees and ongoing royalties, enabling rapid expansion with local operators.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best defines working capital?",
+    "options": [
+      "Funds used to purchase fixed assets like land and machinery",
+      "Net cash profit at the end of the year",
+      "Capital required for day-to-day running of business, measured by current assets minus current liabilities",
+      "Total long-term debts only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Working capital is the capital needed for daily operations and expense payment; it equals current assets less current liabilities and indicates short-term financial health and operating efficiency.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which scenario is an example of overstocking risk for a business?",
+    "options": [
+      "Holding inventory beyond demand leading to increased storage costs and possible obsolescence",
+      "Running out of stock frequently and losing sales",
+      "Ordering too little stock to take advantage of bulk discounts",
+      "Keeping accurate stock control records"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Overstocking means holding more inventory than demand requires, causing extra storage costs, capital tie-up, risk of spoilage or obsolescence and reduced liquidity for the business.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best describes the role of middlemen in commerce?",
+    "options": [
+      "They always manufacture goods before selling",
+      "They connect producers and consumers and provide services like breaking bulk, storage and risk bearing",
+      "They prevent goods from reaching the consumer",
+      "They collect taxes for the government"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Middlemen (agents, wholesalers, retailers) bridge producers and consumers by facilitating distribution, providing storage, breaking bulk, bearing risk and often promoting and financing goods movement.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which type of retailer specializes in narrow product lines and deep assortments, serving customers seeking expertise?",
+    "options": [
+      "Convenience store",
+      "Specialty store",
+      "Department store",
+      "Supermarket"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Specialty stores focus on a narrow product range with deep assortments and specialized service, attracting customers looking for expert advice and specific product varieties in that category.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which security measure is most essential for safe online transactions in e-commerce?",
+    "options": [
+      "Encryption of transmitted data",
+      "Posting prices publicly on social media",
+      "Use of plain HTTP instead of HTTPS",
+      "Sharing account passwords via email"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Encryption protects data exchanged between buyer and seller by converting it into unreadable form for unauthorized parties, ensuring confidentiality and integrity of online transactions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is NOT normally considered a consumer right?",
+    "options": [
+      "Right to safety",
+      "Right to choose",
+      "Right to be deceived",
+      "Right to information"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Consumer rights include safety, choice and accurate information; the 'right to be deceived' contradicts consumer protection principles and is never a recognized consumer right.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which practice would best reflect good business ethics?",
+    "options": [
+      "Concealing product defects to maintain sales",
+      "Falsifying financial records to show profit",
+      "Honest advertising and fair treatment of customers and employees",
+      "Ignoring laws to gain competitive advantage"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Good business ethics involve honesty, fairness and compliance with laws: truthful advertising, fair treatment of stakeholders and integrity in transactions build reputation and sustainable success.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "What does the break-even point for a business indicate?",
+    "options": [
+      "Level of sales at which total revenue equals total cost with no profit or loss",
+      "The maximum possible profit level",
+      "A point where fixed costs are zero",
+      "The minimum wage payable to workers"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Break-even point is where total revenues equal total costs, meaning the business neither makes profit nor incurs loss; it helps managers set sales targets needed to cover costs.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a negotiable instrument payable to bearer rather than to order?",
+    "options": [
+      "Order cheque with payee's name",
+      "Bearer cheque",
+      "A cheque crossed 'Account Payee Only'",
+      "Certified cheque payable to 'XYZ Ltd.'"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bearer cheque is payable to whoever presents it, making it negotiable by delivery. Order cheques and crossed or named payee cheques restrict transferability.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best distinguishes a bank loan from an overdraft facility?",
+    "options": [
+      "An overdraft is for a fixed long term while a loan is always short term",
+      "Loan provides a lump sum repayable on schedule; overdraft allows flexible short-term borrowing up to an agreed limit",
+      "Loans cannot be repaid; overdrafts are forgiven",
+      "Overdrafts are issued only to governments"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Loans provide a specific sum repayable over fixed terms, while overdrafts allow current account holders to withdraw beyond their balance up to a limit for short-term liquidity with flexible repayment.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which document issued by a warehouse acknowledges receipt of goods and may serve as a document of title?",
+    "options": [
+      "Purchase order",
+      "Warehouse receipt",
+      "Sales invoice",
+      "Waybill"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A warehouse receipt is issued by the warehouse manager when goods are stored; it records possession and can be used as evidence of title or for raising finance against stored goods.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following factors would a business most likely consider when choosing a mode of transport?",
+    "options": [
+      "Color of the transport vehicle",
+      "Speed required, cost, nature of goods and distance",
+      "Number of employees' family members",
+      "Owner's birthday"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Choice of transport depends on practical factors like speed needs, cost, goods' nature (perishable or heavy), reliability and distance; irrelevant social factors do not determine choice.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following pairs correctly matches a shipping document with its primary purpose?",
+    "options": [
+      "Packing list \u2014 shows insurance coverage details",
+      "Insurance policy \u2014 certifies country of origin",
+      "Certificate of origin \u2014 verifies goods' country of manufacture",
+      "Bill of lading \u2014 lists employees of the shipping company"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A certificate of origin confirms where goods were produced, important for customs and preferential tariff treatment. Packing lists and bills of lading serve different specific purposes.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which pricing strategy involves setting a low initial price to quickly penetrate the market and attract customers?",
+    "options": [
+      "Price skimming",
+      "Penetration pricing",
+      "Prestige pricing",
+      "Cost-plus pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Penetration pricing sets low initial prices to attract customers, gain market share quickly and deter competitors; it contrasts with skimming which sets high initial prices to maximize margins.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following is a common reason governments provide subsidies to local producers?",
+    "options": [
+      "To make imports cheaper than local goods",
+      "To support local industries, reduce production costs and encourage competitiveness",
+      "To increase foreign exchange outflow",
+      "To punish local producers by increasing their taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Subsidies lower producers' costs, support infant industries, promote exports and improve competitiveness against imports; they are a form of government assistance to achieve economic objectives.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of these best describes 'trade credit' as a source of finance?",
+    "options": [
+      "Cash paid immediately at purchase",
+      "Short-term credit extended by suppliers allowing delayed payment",
+      "Bank loan collateralized by fixed assets",
+      "Sale of a company\u2019s shares to the public"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade credit is supplier-provided short-term financing where goods are delivered with payment deferred for an agreed period. It helps firms manage working capital without immediate cash outlay.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "What is meant by the term 'commercial invoice' in export transactions?",
+    "options": [
+      "A document prepared by the carrier to list passengers",
+      "A financial document from exporter stating goods sold, price, terms and total amount payable",
+      "An internal memo with staff attendance",
+      "A certificate issued by customs to allow import"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A commercial invoice is issued by the exporter and states the goods sold, unit prices, total value and terms of sale; it is used for customs clearance and calculating duties and taxes.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best explains the term 'market segmentation'?",
+    "options": [
+      "Dividing a market into distinct groups of buyers with similar needs or characteristics",
+      "Combining all customers into one homogeneous group",
+      "Eliminating small customer groups to save costs",
+      "Setting different prices for the same product randomly"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Market segmentation divides a market into groups of buyers with similar needs or characteristics, enabling firms to target products and marketing efforts more effectively to each segment.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which action by a business would most directly improve its competitiveness in international markets?",
+    "options": [
+      "Ignoring quality standards and reducing packaging",
+      "Improving product quality, complying with standards and reducing delivery times",
+      "Raising prices arbitrarily without value addition",
+      "Refusing to enter export documentation procedures"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Competitiveness in international markets is improved by enhancing product quality, meeting international standards and ensuring timely delivery, which builds buyer confidence and strengthens market position.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best explains 'subrogation' in insurance?",
+    "options": [
+      "Insurer's right to pursue third parties after indemnifying the insured",
+      "A clause that cancels policy on expiry",
+      "A guarantee to always pay double the loss",
+      "Requirement for insured to under-declare assets"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Subrogation allows the insurer, after indemnifying the insured for a loss, to step into the insured's shoes and recover the loss from any third party responsible for causing it, protecting insurer interests.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best describes 'warehouse as agent' arrangement?",
+    "options": [
+      "Warehouse acts on behalf of the owner and stores goods for sale, issuing warehouse receipts",
+      "Warehouse seizes goods and sells them without records",
+      "Warehouse manufactures goods on behalf of the owner",
+      "Warehouse refuses to accept any liability for goods stored"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "When a warehouse acts as agent, it stores goods on behalf of the owner, issues receipted documents (warehouse receipts) and can sell or release goods only according to the owner's instructions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best describes the effect of inflation on consumers' purchasing power?",
+    "options": [
+      "Inflation increases purchasing power because prices fall",
+      "Inflation reduces purchasing power because the same money buys fewer goods",
+      "Inflation has no effect on purchasing power",
+      "Inflation only affects producers, not consumers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Inflation means a general rise in prices; as prices increase, the same amount of money buys fewer goods and services, thereby reducing consumers' real purchasing power over time.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of the following best explains 'subcontracting' in production and service delivery?",
+    "options": [
+      "Hiring external firms to perform tasks the main firm cannot or chooses not to do",
+      "Firing permanent staff permanently",
+      "Selling company assets to competitors",
+      "Combining two businesses into one legal entity"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Subcontracting involves contracting out parts of production or services to external firms, allowing the main firm to access specialized skills, reduce costs or increase capacity without expanding internal resources.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  },
+  {
+    "text": "Which of these is an advantage of registering a business (formal registration)?",
+    "options": [
+      "Access to legal recognition, protection, ability to enter contracts and easier access to formal credit",
+      "Immediate exemption from all taxes",
+      "Requirement to close business during holidays",
+      "Automatic guarantee of unlimited profits"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Formal registration gives legal identity, enables contracting, provides limited liability protections (in some forms), improves credibility and makes it easier to obtain loans from formal lenders.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2021
+  }
+]

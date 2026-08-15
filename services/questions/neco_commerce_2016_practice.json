@@ -1,0 +1,772 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' as taught in the NECO Commerce syllabus?",
+    "options": [
+      "The production of goods and services only",
+      "The buying and selling of goods and services including auxiliary services that facilitate trade",
+      "The provision of services only",
+      "The legal regulation of businesses by the government"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce encompasses both trade (buying and selling of goods and services) and all auxiliary services such as transport, insurance, banking and warehousing that facilitate distribution. It is broader than mere production or legal regulation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of these is an example of internal trade?",
+    "options": [
+      "Export of cocoa from Nigeria to UK",
+      "Importation of rice into Nigeria",
+      "Sale of yam in Lagos market to a local trader",
+      "Transit trade through Nigerian ports"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Internal trade refers to buying and selling activities within the borders of a country. Selling yams in a Lagos market to a local trader occurs within Nigeria, whereas export/import and transit trade involve cross-border movements.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is NOT considered a function of a wholesaler?",
+    "options": [
+      "Breaking bulk",
+      "Providing credit facilities to retailers",
+      "Manufacturing goods for consumers",
+      "Storage of goods"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Wholesalers buy in bulk and break into smaller units, provide credit and store goods. Manufacturing goods is the function of producers or manufacturers, not wholesalers, so that option is not a wholesaler's function.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "A cheque is best described as which type of instrument?",
+    "options": [
+      "A bearer bond",
+      "A promissory note",
+      "An order to pay drawn on a bank",
+      "A negotiable bill of lading"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A cheque is an order drawn by an account holder instructing their bank to pay a specified amount to a person or bearer. It is not a promissory note, bond or bill of lading, but is a negotiable banking instrument.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which principle of insurance requires the insured to disclose all material facts to the insurer?",
+    "options": [
+      "Indemnity",
+      "Contribution",
+      "Utmost good faith (uberrimae fidei)",
+      "Proximate cause"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Utmost good faith obliges both parties, especially the insured, to disclose all material facts that could affect the insurer's decision. Failure to disclose can make the policy void, distinguishing this principle from indemnity or contribution.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which type of insurance provides compensation only when actual financial loss is suffered, not more than the loss?",
+    "options": [
+      "Life insurance",
+      "Indemnity insurance",
+      "Personal accident insurance",
+      "Endowment insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Indemnity insurance aims to restore the insured to the same financial position as before the loss; it does not allow profit from a claim. Life and endowment insurances are not strictly indemnity-based, while personal accident pays specified benefits.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "What is 'breaking bulk' in wholesaling?",
+    "options": [
+      "Combining small packages into large consignments",
+      "Dividing large quantities into smaller lots for resale",
+      "Transporting goods from producer to consumer",
+      "Providing insurance for goods in transit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Breaking bulk is the wholesaler's activity of dividing large consignments into smaller units suitable for retailers or end-users. It facilitates distribution by matching supply sizes with market demand, not combining or transporting goods.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "A bill of lading primarily serves which of the following purposes in international trade?",
+    "options": [
+      "It is a document of title, a receipt for goods and a contract of carriage",
+      "It calculates import duties and taxes",
+      "It is a credit instrument issued by banks to importers",
+      "It guarantees insurance cover for exported goods"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A bill of lading functions as a receipt for shipped goods, evidence of the contract of carriage between shipper and carrier, and a document of title enabling transfer of ownership. It does not compute duties or act as a bank credit instrument.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of these is a direct tax commonly collected in Nigeria?",
+    "options": [
+      "Customs duty",
+      "Value Added Tax (VAT)",
+      "Personal income tax",
+      "Import levy"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Personal income tax is a direct tax paid by individuals based on earnings. Customs duty and import levy are indirect taxes on goods, while VAT is an indirect consumption tax collected at point of sale.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which transport mode is most suitable for perishable goods requiring quick delivery over long distances?",
+    "options": [
+      "Road transport",
+      "Rail transport",
+      "Air transport",
+      "Sea transport"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Air transport offers the highest speed, making it ideal for perishable goods that must reach distant markets quickly. Road or rail may be used for shorter distances; sea transport is slower and less suitable for perishables.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "A sole trader has unlimited liability. What does this imply?",
+    "options": [
+      "The trader's liability is limited to the capital invested",
+      "The trader can transfer liability to the government",
+      "The trader's personal assets can be used to pay business debts",
+      "The trader cannot borrow from banks"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Unlimited liability means the sole trader is personally responsible for business debts. If business assets are insufficient, personal assets may be used to settle liabilities. It does not limit liability to capital nor transfer liability to the government.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of these best describes 'markup' in merchandising?",
+    "options": [
+      "The percentage discount given to customers",
+      "The difference between selling price and cost price expressed as percentage of cost or selling price",
+      "Tax added by the government on goods",
+      "Interest charged by banks on loans to traders"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Markup is the amount or percentage added to the cost price to determine the selling price; it is a measure of pricing above cost. It is not a government tax, bank interest, or customer discount.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "If a trader buys an item for N800 and desires a 25% markup on cost, what should be the selling price?",
+    "options": [
+      "N1000",
+      "N1020",
+      "N900",
+      "N1200"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Markup on cost of 25% on N800 equals N800 \u00d7 25% = N200. Selling price = cost + markup = N800 + N200 = N1000. This calculation uses percentage of cost, not selling price.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which document is commonly issued by a seller to a buyer, specifying goods sold, prices and terms, for payment or record?",
+    "options": [
+      "Invoice",
+      "Waybill",
+      "Policy document",
+      "Certificate of origin"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "An invoice itemizes goods supplied, prices, total amount due and payment terms. Waybills are transport documents, policy documents relate to insurance, and certificate of origin certifies where goods were produced.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is an advantage of specialization in production and trade?",
+    "options": [
+      "Increased variety of products but with lower efficiency",
+      "Lower productivity due to monotony",
+      "Higher output and expert skill due to focus on tasks",
+      "Reduced trade and exchange of goods"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Specialization allows workers or firms to concentrate on limited tasks, improving skill, efficiency and output. This often leads to increased productivity and more trade, not reduced trade or lower efficiency.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "What is 'consignment' in commercial terms?",
+    "options": [
+      "Transfer of goods to an agent for sale, with payment remitted only when sold",
+      "Goods sold outright with immediate payment",
+      "Goods imported for personal use without sale",
+      "A credit note issued by a supplier"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Consignment involves sending goods to an agent or consignee to sell on behalf of the consignor, with proceeds remitted after sale. The consignor retains ownership until goods are sold, distinguishing it from outright sale.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best explains 'stock exchange'?",
+    "options": [
+      "A fixed deposit facility at banks",
+      "A marketplace where government and corporate securities are bought and sold",
+      "A warehouse for storing goods",
+      "A system for exchanging foreign currencies"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A stock exchange is an organized market where shares, bonds and other securities are traded between investors, facilitating capital raising and liquidity. It is not a bank deposit facility, warehouse, or foreign exchange system.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is an example of indirect taxation?",
+    "options": [
+      "Personal income tax",
+      "Company income tax",
+      "Value Added Tax (VAT)",
+      "Property tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Indirect taxes are levied on goods and services and can be shifted to consumers; VAT is an indirect consumption tax. Personal income, company income and property taxes are direct taxes imposed on individuals or entities.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is NOT a function of commercial banks?",
+    "options": [
+      "Accepting deposits",
+      "Issuing currency notes",
+      "Granting loans and overdrafts",
+      "Providing money transfer services"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commercial banks accept deposits, grant loans and provide payment services, but issuing currency is the exclusive function of the central bank (e.g., Central Bank of Nigeria), not commercial banks.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which contract of agency is created when a principal gives an agent authority in writing for a specific transaction?",
+    "options": [
+      "General agency",
+      "Special agency",
+      "Universal agency",
+      "Sub-agency"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A special agency is created when an agent is authorized to perform a specific act or transaction for the principal, usually in writing. General agency covers ongoing duties; universal agency is broad authority.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of these is the main purpose of warehousing in commerce?",
+    "options": [
+      "To create products",
+      "To provide long-term capital to traders",
+      "To store goods safely and regulate supply",
+      "To control bank interest rates"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Warehousing provides storage for goods, helps maintain quality, allows accumulation and break-down of bulk, and assists in regulating supply to match demand. It does not create products or influence bank interest rates directly.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "In a partnership, which of the following statements is TRUE regarding profit sharing if not otherwise agreed?",
+    "options": [
+      "Profits are shared according to capital contribution only",
+      "Profits are shared equally among partners",
+      "Profit sharing is based on seniority",
+      "Profits are shared according to amount of liabilities"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Where partners have not agreed on profit-sharing ratios, the default rule under many partnership laws is equal division of profits among partners, not according to capital, seniority or liabilities.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best describes 'counter trade'?",
+    "options": [
+      "Trade based entirely on international aid",
+      "Barter-like trade where goods are exchanged for goods or services instead of cash",
+      "Trading only within a country's borders",
+      "A transaction insured against non-payment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Counter trade involves reciprocal trading arrangements where exports are paid for with goods or services rather than cash, commonly used when foreign exchange is scarce. It is not domestic trade, aid, or insurance.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which marketing function involves identifying and grouping customers according to similar needs?",
+    "options": [
+      "Promotion",
+      "Market segmentation",
+      "Distribution",
+      "Product packaging"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation is the process of dividing a broad market into sub-groups of consumers with similar needs and characteristics. It helps firms target products and promotions effectively, distinct from distribution or packaging.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is an example of a contingent liability in insurance?",
+    "options": [
+      "Life policy matured and paid",
+      "Possible claim by a third party under a fire policy if damage occurs",
+      "Premium already collected",
+      "Fixed long-term loan"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A contingent liability arises from uncertain future events, such as a potential claim under an insurance policy if a specified loss occurs. It is not a matured payout, collected premium, or a fixed loan obligation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which term best describes goods sold without alteration in form directly to the consumer?",
+    "options": [
+      "Raw materials",
+      "Retail goods",
+      "Intermediate goods",
+      "Finished consumer goods"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Finished consumer goods are final products sold to consumers for direct use without further processing. Retail goods may be finished, but the precise term for such goods ready for consumption is finished consumer goods.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is a negative effect of inflation on commerce?",
+    "options": [
+      "It encourages saving and investment",
+      "It stabilizes prices and purchasing power",
+      "It erodes consumers' purchasing power and increases uncertainty in business planning",
+      "It reduces cost of production"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Inflation reduces the real value of money, eroding consumers' purchasing power and creating uncertainty for businesses, making planning and pricing difficult. It does not stabilize prices or reduce production costs.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of these documents is required by customs to determine the origin of exported goods?",
+    "options": [
+      "Invoice",
+      "Packing list",
+      "Certificate of origin",
+      "Insurance policy"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A certificate of origin certifies where goods were manufactured or produced and is required by customs to determine trade preferences, duties or restrictions. Invoices and packing lists support shipments but don't certify origin.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best explains 'trade discount'?",
+    "options": [
+      "A reduction allowed on the list price to customers in the distribution chain",
+      "A tax levied on imports",
+      "An interest charged by banks",
+      "A penalty for late payment"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Trade discount is a reduction from the list or catalogue price offered by manufacturers to wholesalers or retailers as an incentive for buying in bulk; it is not a tax, interest charge or penalty.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "An agent receives 5% commission on sales. If sales amount to N120,000, what is the commission?",
+    "options": [
+      "N6,000",
+      "N600",
+      "N24,000",
+      "N12,000"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Commission = 5% of N120,000 = 0.05 \u00d7 120,000 = N6,000. This straightforward percentage calculation yields N6,000, not the higher or lower amounts listed as distractors.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "The main aim of import licensing is to:",
+    "options": [
+      "Increase the inflow of foreign exchange",
+      "Restrict and control imports to protect domestic industry",
+      "Lower prices of foreign goods",
+      "Provide free goods to consumers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Import licensing is used by governments to regulate and restrict imports to protect domestic industries, conserve foreign exchange, and control the quality or quantity of certain imported goods. It is not meant to provide free goods.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is a reason why firms keep buffer stock in inventory?",
+    "options": [
+      "To prevent stock-outs due to demand fluctuations or supply delays",
+      "To increase spoilage and obsolescence",
+      "To decrease holding costs",
+      "To ensure perishable goods are always stored long-term"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Buffer stock is held to guard against uncertainties in demand or supply delays, minimizing the risk of stock-outs. It increases holding costs rather than decreases and is not intended to increase spoilage or store perishables long-term.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of these best defines 'franchising' in commerce?",
+    "options": [
+      "A legal merger of two companies",
+      "The sale of shares on the stock exchange",
+      "A contractual arrangement where one party grants another the right to use its trade name and business model",
+      "Exporting goods without paying duties"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Franchising is a business arrangement in which the franchisor grants the franchisee the right to operate under its trade name and system in exchange for fees or royalties. It is distinct from mergers, share sale or duty-free export.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is a primary function of an insurance company?",
+    "options": [
+      "To provide legal representation to businesses",
+      "To pool risks and provide compensation against specified losses",
+      "To store goods for traders",
+      "To regulate stock market activities"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Insurance companies collect premiums from many policyholders to pool risk and compensate those who suffer specified losses, spreading the financial burden. They do not act as legal representatives, warehouses, or stock market regulators.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best expresses the concept of 'market equilibrium'?",
+    "options": [
+      "When supply exceeds demand significantly",
+      "When demand exceeds supply and prices fall",
+      "When quantity supplied equals quantity demanded at a particular price",
+      "When government fixes all prices"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Market equilibrium occurs where the quantity supplied equals quantity demanded at a certain price, resulting in no surplus or shortage. It is not a situation of excess supply or demand or government price fixing.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following actions would most likely improve a country's balance of trade?",
+    "options": [
+      "Increasing imports without changing exports",
+      "Decreasing exports significantly",
+      "Promoting export growth and reducing unnecessary imports",
+      "Keeping trade policies unchanged forever"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Balance of trade improves when exports increase and unnecessary imports are reduced, as exports bring foreign exchange while reduced imports lower outflows. Increasing imports or decreasing exports worsens the balance.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is an example of a non-tariff barrier to trade?",
+    "options": [
+      "Import duty",
+      "Quotas and embargoes",
+      "Export subsidies",
+      "Lowering of tariffs"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Non-tariff barriers include quotas, embargoes, licensing requirements and standards that restrict trade without using tariffs. Import duties are tariffs; export subsidies and lowering tariffs are not non-tariff barriers.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best describes 'subrogation' in insurance?",
+    "options": [
+      "The insurer's right to take over the insured's legal rights against third parties after paying a claim",
+      "The insurer's refusal to pay a valid claim",
+      "A principle that increases the insured's profit after loss",
+      "The process of issuing a premium receipt"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Subrogation allows the insurer, after compensating the insured, to step into the insured's shoes and recover loss from the third party responsible. This prevents the insured from receiving double compensation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of these is a major disadvantage of sole proprietorship?",
+    "options": [
+      "Complex legal formalities for formation",
+      "Unlimited liabilities and difficulty in raising capital",
+      "Shared decision-making process",
+      "Regulation by many authorities"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sole proprietorships face unlimited liability and often struggle to raise large capital since they rely on the owner's resources. They have simple formation, individual decision-making, and less regulatory complexity than some other forms.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following statements about 'VAT' is correct?",
+    "options": [
+      "VAT is charged only on imported capital goods",
+      "VAT is a multi-stage tax collected at each stage of production and distribution with credit for tax paid on inputs",
+      "VAT is the same as customs duty",
+      "VAT cannot be passed on to consumers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "VAT is a consumption tax levied at each stage of production and distribution, but businesses can deduct VAT paid on inputs (input tax credit), ensuring the tax burden rests on the final consumer. It differs from customs duty.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best describes the role of an importer?",
+    "options": [
+      "A person who manufactures goods for export",
+      "A person who buys goods from abroad for resale or use within the country",
+      "A person who only transports goods internationally",
+      "A person who regulates foreign trade"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An importer purchases goods from foreign countries for resale or domestic use. They facilitate the inflow of goods. They are not necessarily manufacturers, transporters or regulatory authorities.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which pricing method is based on adding a fixed percentage to the cost of a product?",
+    "options": [
+      "Penetration pricing",
+      "Cost-plus pricing (markup pricing)",
+      "Psychological pricing",
+      "Dynamic pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cost-plus pricing (markup pricing) sets selling price by adding a fixed percentage over cost. Penetration pricing sets low initial prices to enter a market, while psychological and dynamic pricing use other strategies.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "An importer pays CIF price for cargo. What does CIF include?",
+    "options": [
+      "Cost, Insurance, and Freight to the named port of destination",
+      "Custom duty only",
+      "Cost and insurance only without freight",
+      "Payment after arrival without any charges"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "CIF (Cost, Insurance and Freight) means the seller pays the cost of goods, insurance, and freight to the named destination port. The buyer takes delivery thereafter and handles customs clearance and import duties.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best explains a 'letter of credit' used in international trade?",
+    "options": [
+      "An insurance policy for goods in transit",
+      "A bank document guaranteeing payment to the exporter if conditions of the credit are met",
+      "A warehouse receipt",
+      "A customs clearance certificate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A letter of credit is a bank instrument guaranteeing payment to the exporter once documentary conditions specified in the credit are fulfilled, thus reducing payment risk in international transactions. It is distinct from insurance or clearance documents.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is the most liquid asset for a business?",
+    "options": [
+      "Furniture and fittings",
+      "Inventories",
+      "Cash in hand",
+      "Debtors (accounts receivable)"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Cash in hand is the most liquid asset because it is already in money form and can be used immediately for payments. Other assets like inventories or receivables need conversion to cash and are less liquid.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is an advantage of department stores for consumers?",
+    "options": [
+      "Limited product variety",
+      "Convenient variety of goods under one roof with standard after-sales services",
+      "Higher prices due to monopolistic practices only",
+      "No return or exchange policy"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Department stores offer convenience with many product lines under one roof, standardized services and easy returns, enhancing shopping experience. They typically offer variety rather than limiting it, and have formal return policies.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is true about 'credit notes' issued by a seller to a buyer?",
+    "options": [
+      "They increase the buyer's outstanding debt",
+      "They confirm that the buyer owes more money",
+      "They reduce the buyer's outstanding debt because goods were returned or overcharged",
+      "They are used to register ownership of goods"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Credit notes are issued when goods are returned, overcharged or discounts are allowed after invoicing; they reduce the buyer's outstanding balance. They do not increase debt or register ownership.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best explains 'depreciation' in the context of business assets?",
+    "options": [
+      "An increase in asset value over time",
+      "The allocation of the cost of a tangible asset over its useful life due to wear and tear",
+      "A tax rebate on fixed assets",
+      "Profit earned from selling an asset"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Depreciation is the systematic allocation of the cost of a tangible fixed asset over its expected useful life to account for wear, tear or obsolescence. It reduces book value, not increases it or a tax rebate.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best captures the meaning of 'credit sales'?",
+    "options": [
+      "Sales where payment is made immediately in cash",
+      "Sales where goods are returned upon delivery",
+      "Sales where goods are sold and payment is deferred to a later date",
+      "Sales that are never recorded in the books"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Credit sales occur when goods are delivered but payment is deferred to a future date, creating an account receivable for the seller. Cash sales involve immediate payment; credit sales are recorded in books.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following would most likely improve customer loyalty in commerce?",
+    "options": [
+      "Consistently poor after-sales service",
+      "High product prices with no value",
+      "Consistent quality products and reliable after-sales service",
+      "Random discounts with unpredictable stock"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Customer loyalty builds from consistent product quality, reliable service and trust. Good after-sales support and value encourage repeat business. Poor service, unpredictable stock or arbitrary pricing damage loyalty.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best defines 'merchant bank' services compared with commercial banks?",
+    "options": [
+      "Merchant banks only accept savings deposits",
+      "Merchant banks provide services like underwriting, project financing and advisory to corporations",
+      "Merchant banks issue currency",
+      "Merchant banks only handle petty trade transactions"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Merchant banks specialize in corporate finance services such as underwriting, project finance, mergers and advisory. They do not issue currency or focus exclusively on small transactions; commercial banks provide basic deposit services.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is most likely a reason governments grant export subsidies?",
+    "options": [
+      "To reduce domestic production",
+      "To promote export growth, make local goods competitive internationally, and earn foreign exchange",
+      "To increase import dependency",
+      "To discourage foreign investment"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Export subsidies are used to encourage exports by lowering costs for exporters, helping domestic firms compete internationally and earn foreign exchange. They are not meant to reduce production or discourage investment.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best describes 'e-commerce'?",
+    "options": [
+      "Traditional market trading only at stalls",
+      "Any commercial transaction conducted electronically over the internet or other networks",
+      "Selling only via telephone",
+      "A government-run trading platform"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "E-commerce refers to buying and selling goods and services electronically, primarily over the internet, including online retail, digital payments and electronic auctions. It is broader than telephone sales and not government-specific.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following is an effect of poor transport infrastructure on commerce?",
+    "options": [
+      "Reduced cost of distribution",
+      "Improved market accessibility",
+      "Increased cost of distribution, delays and spoilage",
+      "Higher export volumes"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Poor transport infrastructure raises distribution costs, causes delays, increases spoilage for perishables and limits market reach. This harms trade and reduces competitiveness rather than improving access or lowering costs.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  },
+  {
+    "text": "Which of the following best explains 'parallel imports'?",
+    "options": [
+      "Importing goods via official distributors with manufacturer consent only",
+      "Importing genuine branded goods through unofficial channels without the trademark owner's consent for resale",
+      "Importing counterfeit goods exclusively",
+      "Importing only raw materials"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Parallel imports are genuine branded goods brought into a country through channels not authorized by the trademark owner, often sold more cheaply. They are distinct from counterfeit goods which are fake products.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2016
+  }
+]

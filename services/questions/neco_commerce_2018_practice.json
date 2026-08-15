@@ -1,0 +1,758 @@
+[
+  {
+    "text": "Which of the following best describes 'commerce' in a business context?",
+    "options": [
+      "The production of goods and services",
+      "The sum total of activities that facilitate the exchange of goods and services",
+      "The legal framework governing business organisations",
+      "The retailing of goods in local markets only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Commerce refers to all activities that facilitate exchange of goods and services between producers and consumers, including transport, banking, insurance, warehousing and advertising. It is broader than production or retailing and includes supportive services enabling trade.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is an auxiliary service to trade?",
+    "options": [
+      "Manufacturing",
+      "Banking",
+      "Retailing",
+      "Fishing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Banking is an auxiliary service to trade because it provides financial intermediation, credit, payment facilities and other services that facilitate buying and selling. Auxiliary services support trade rather than produce the core goods.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "A bill of lading primarily serves as which of the following in international trade?",
+    "options": [
+      "A certificate of insurance",
+      "A document of title and receipt for goods",
+      "An advertisement for goods",
+      "A customs valuation form"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill of lading acts as a receipt issued by a carrier for goods received for shipment and as a document of title which entitles the holder to possession of the goods. It is essential in international shipping and trade documentation.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which form of business organisation provides limited liability to its shareholders?",
+    "options": [
+      "Sole proprietorship",
+      "Partnership",
+      "Private limited company",
+      "Cooperative society"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A private limited company provides limited liability to shareholders, meaning their financial responsibility is limited to the unpaid amount on shares. This protects personal assets, unlike sole proprietorships or general partnerships.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of these is a primary function of the Central Bank of Nigeria (CBN)?",
+    "options": [
+      "To grant retail loans to the general public",
+      "To control the money supply and maintain price stability",
+      "To manage private corporations",
+      "To operate supermarket chains"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Central Bank controls money supply, issues currency, manages monetary policy, and aims to ensure price stability and a stable financial system. It does not provide retail loans nor run private businesses.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which document is normally used to open a letter of credit in international trade?",
+    "options": [
+      "Commercial invoice",
+      "Request from importer to his bank",
+      "Bill of exchange payable on demand",
+      "Cargo manifest"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A letter of credit is opened when an importer requests his bank to issue it in favour of an exporter. The bank then commits to pay the exporter upon presentation of stipulated documents.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best defines 'market segmentation'?",
+    "options": [
+      "Selling goods in many markets",
+      "Dividing a market into distinct groups of buyers with different needs",
+      "Merging several products into one",
+      "Setting one price for all consumers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Market segmentation involves dividing a market into groups of buyers with distinct needs, characteristics or behaviours who might require separate products or marketing mixes. This allows for targeted marketing strategies and better customer satisfaction.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a characteristic of a partnership?",
+    "options": [
+      "Unlimited life",
+      "Limited number of partners (often), shared ownership and unlimited liability for general partners",
+      "Shares are freely transferable on the stock exchange",
+      "Owners never participate in management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A partnership typically has shared ownership among partners, who usually have unlimited liability (except for limited partners). Partnerships may have limited life and partners often participate in management, unlike companies with transferable shares.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "What is 'depreciation' in accounting terms?",
+    "options": [
+      "The increase in value of an asset over time",
+      "Allocation of the cost of a fixed asset over its useful life",
+      "A form of inventory loss due to theft only",
+      "Cash payment to shareholders"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Depreciation is the systematic allocation of the cost of a tangible fixed asset over its useful life to match expense with revenue earned. It reduces asset book value and recognises wear, obsolescence, or usage.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following instruments is NOT typically negotiable?",
+    "options": [
+      "Bearer cheque",
+      "Promissory note",
+      "Personal IOU (informal)",
+      "Bill of exchange"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A personal IOU is an informal acknowledgement of debt and usually lacks formal features required for negotiability such as signature formalities and clear payment terms. Negotiable instruments include cheques, bills of exchange and promissory notes.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which type of insurance covers loss or damage to goods during sea transport?",
+    "options": [
+      "Life insurance",
+      "Marine insurance",
+      "Fire insurance",
+      "Liability insurance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Marine insurance specifically covers loss or damage to goods while being transported by sea (and sometimes other modes). It protects merchants and shippers against perils of the sea and related maritime risks.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which pricing method sets price based on the cost of production plus a markup?",
+    "options": [
+      "Penetration pricing",
+      "Cost-plus pricing",
+      "Psychological pricing",
+      "Predatory pricing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Cost-plus pricing involves calculating the cost of producing a product and adding a predetermined markup (profit margin) to arrive at the selling price. It ensures costs are covered and a profit is included.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a primary market activity?",
+    "options": [
+      "Trading in existing shares on the stock exchange",
+      "Issuing fresh shares to the public for the first time",
+      "Buying Treasury bills in secondary market",
+      "Speculative trading of derivatives"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The primary market deals with the issuance of new securities, including initial public offerings (IPOs) and fresh share issues directly from companies to investors. Secondary markets involve trading of existing securities among investors.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which transport mode is most suitable for bulky, low-value goods over long distances within a country?",
+    "options": [
+      "Air transport",
+      "Road transport",
+      "Rail transport",
+      "Pipeline transport"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Rail transport is most suitable for moving bulky, low-value goods over long inland distances because it offers economies of scale, lower cost per ton-kilometre than road or air, and reliable scheduled services for heavy cargo.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is NOT a function of advertising in marketing?",
+    "options": [
+      "Informing consumers about new products",
+      "Persuading consumers to buy a product",
+      "Ensuring products are delivered on time to customers",
+      "Reinforcing brand image"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Advertising informs, persuades and reinforces brand image, but it does not physically ensure product delivery. Distribution and logistics functions handle the actual delivery of goods to customers, not advertising.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which document serves as evidence of a debt and contains an unconditional order to pay at a future date?",
+    "options": [
+      "Invoice",
+      "Cheque",
+      "Bill of exchange",
+      "Delivery note"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "A bill of exchange is a written, unconditional order by one person directing another to pay a specified sum at a future date to a third party. It is commonly used in trade to evidence and settle credit transactions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best describes 'wholesaling'?",
+    "options": [
+      "Selling goods directly to end consumers",
+      "Buying goods in small quantities for personal use",
+      "Selling goods in bulk to retailers or other businesses",
+      "Manufacturing finished products"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Wholesaling involves buying goods in large quantities from producers and reselling them in bulk to retailers, industrial users or other wholesalers. Wholesalers facilitate distribution and do not typically sell directly to end consumers.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a disadvantage of sole proprietorship?",
+    "options": [
+      "Ease of formation",
+      "Unlimited liability",
+      "Owner keeps all profits",
+      "Quick decision-making"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Unlimited liability is a key disadvantage of a sole proprietorship because the owner is personally liable for all business debts, risking personal assets. Other options are advantages, not disadvantages.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which Nigerian agency is primarily responsible for registering companies and business names?",
+    "options": [
+      "Standards Organisation of Nigeria (SON)",
+      "Corporate Affairs Commission (CAC)",
+      "Customs Service",
+      "National Insurance Commission (NAICOM)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Corporate Affairs Commission (CAC) in Nigeria is charged with the registration and regulation of companies and business names. SON deals with standards while NAICOM regulates insurance and Customs handles border duties.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which inventory valuation method results in lowest taxable profit during periods of rising prices?",
+    "options": [
+      "First-In, First-Out (FIFO)",
+      "Last-In, First-Out (LIFO)",
+      "Specific identification",
+      "Weighted average cost"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "LIFO (Last-In, First-Out) charges the most recent higher costs to cost of sales during rising prices, producing higher cost of goods sold, lower net income and thus lower taxable profit compared to FIFO or average methods.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is an objective of marketing?",
+    "options": [
+      "Maximising production at all costs",
+      "Satisfying customer needs profitably",
+      "Eliminating competition through laws",
+      "Reducing product quality to lower costs"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Marketing aims to identify and satisfy customer needs and wants profitably by creating value, building relationships and achieving organisational goals. It does not condone reducing quality or illegal elimination of competition.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "A 'trading account' in accounting is prepared to determine which of the following?",
+    "options": [
+      "Net cash flow for the period",
+      "Gross profit or gross loss on sales",
+      "Capital employed in the business",
+      "Total shareholders' equity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The trading account is prepared to calculate gross profit or gross loss by matching net sales against cost of goods sold (opening stock, purchases, direct expenses and closing stock). It does not show net cash flow or owners' equity.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best describes 'break-even point'?",
+    "options": [
+      "The level of output where total revenue equals total costs",
+      "The maximum possible profit level",
+      "The point of maximum production capacity",
+      "The minimum price allowable by law"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Break-even point is where total revenue equals total costs, meaning no profit or loss is made. It helps managers determine the sales volume required to cover fixed and variable costs before earning profit.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of these is a function of packaging in marketing?",
+    "options": [
+      "Increasing distribution costs always",
+      "Protecting the product and enhancing its appeal",
+      "Replacing advertising entirely",
+      "Ensuring products cannot be resold"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Packaging protects products during storage and transport, provides information, and enhances visual appeal to attract consumers. It complements but does not replace advertising and often supports distribution rather than always increasing costs.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best describes 'economies of scale'?",
+    "options": [
+      "Higher average cost with increased output",
+      "Costs per unit fall as production increases",
+      "Restriction of production to small firms",
+      "Government price controls"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Economies of scale occur when average cost per unit decreases as production expands, due to spreading fixed costs, specialised labour and bulk buying. This leads to lower unit costs and competitive pricing for large-scale producers.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a feature of a cooperative society?",
+    "options": [
+      "Profit maximisation regardless of members",
+      "Voluntary membership and democratic control",
+      "Owners have unlimited liability individually",
+      "Shares traded on stock exchange"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A cooperative society features voluntary membership, democratic control (one member, one vote), and serves members' needs rather than pure profit. Members often have limited liability and cooperatives do not list shares on the stock exchange.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which tariff is designed to protect domestic industries by making imported goods more expensive?",
+    "options": [
+      "Revenue tariff",
+      "Protective tariff",
+      "Specific tariff for weight only",
+      "Export tariff"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A protective tariff is imposed to raise the price of imported goods, making domestically produced goods more competitive. Revenue tariffs, by contrast, mainly aim to raise government revenue rather than protect local industries.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following statements about 'credit policy' of a firm is correct?",
+    "options": [
+      "It determines the firm's public relations strategy only",
+      "It sets terms for granting credit to customers and managing receivables",
+      "It decides the firm's advertising budget",
+      "It only applies to imports and exports"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Credit policy establishes terms and conditions under which credit is granted to customers, credit period, discounts, collection procedures and management of accounts receivable, thereby affecting sales, cash flow and bad debts.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of these is an example of direct tax in Nigeria?",
+    "options": [
+      "Customs duty",
+      "Value Added Tax (VAT)",
+      "Personal Income Tax",
+      "Sales tax collected at point of sale"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Personal Income Tax is a direct tax paid by individuals on their earnings and is borne by the taxpayer. VAT and customs duties are indirect taxes collected from consumers or importers and passed on to government.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which accounting book is used to record transactions in chronological order first?",
+    "options": [
+      "Ledger",
+      "Journal",
+      "Trial balance",
+      "Income statement"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The journal (books of prime entry) records transactions in chronological order and includes details like date, accounts affected, amount and narration. Entries are then posted to the ledger for classification by account.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best explains 'working capital'?",
+    "options": [
+      "Total fixed assets of a company",
+      "Difference between current assets and current liabilities",
+      "Long-term funds used for expansion",
+      "Money spent on purchasing machinery"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Working capital is the difference between current assets and current liabilities and measures the firm's short-term liquidity and ability to meet operational expenses. It is not the same as fixed assets or long-term funds.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of these is NOT a characteristic of money?",
+    "options": [
+      "Medium of exchange",
+      "Store of value",
+      "Measure of value",
+      "Always perishable"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Money must be durable, not perishable. Its main characteristics include being a medium of exchange, store of value, unit/measure of account and standard of deferred payment. Perishability is not a characteristic of money.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is an advantage of public limited liability companies over sole proprietorships?",
+    "options": [
+      "More complicated management structure only",
+      "Ability to raise large capital through sale of shares",
+      "Owners have unlimited liability",
+      "They do not have to comply with statutory regulations"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Public limited companies can raise large capital by offering shares to the public, enabling expansion and diversification. They also provide limited liability to shareholders and are subject to statutory regulations, unlike sole proprietorships.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best explains 'just-in-time' (JIT) inventory system?",
+    "options": [
+      "Holding maximum inventory at all times",
+      "Purchasing and producing only as needed to reduce inventory costs",
+      "Ordering once a year regardless of demand",
+      "Ignoring stockouts to save cost"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "JIT inventory aims to minimise inventory by receiving goods only as they are needed in production or sales, thereby reducing storage costs and waste. It requires accurate demand forecasting and reliable suppliers.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following describes a 'bearer cheque'?",
+    "options": [
+      "Payable to a specified person only",
+      "Payable to whoever presents it at the bank",
+      "Non-transferable cheque",
+      "Cheque requiring two signatures"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bearer cheque is payable to whoever holds or presents it at the bank. It requires no endorsement, making it easily negotiable but risky if lost or stolen. It differs from order or crossed cheques.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which one of the following is a function of wholesalers?",
+    "options": [
+      "Providing personal services to consumers",
+      "Breaking bulk and providing storage facilities",
+      "Formulating monetary policy",
+      "Issuing trade licenses"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Wholesalers buy in bulk from producers and break bulk into smaller quantities for retailers, provide storage and sometimes offer credit and transport facilities. They do not perform governmental functions like licensing or monetary policy.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is correct about 'franchising'?",
+    "options": [
+      "Franchisor purchases a franchise from franchisee",
+      "Franchisee pays fees and royalties to franchisor for business format",
+      "Franchising means government ownership of business",
+      "Franchise agreements are always verbal and never written"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In franchising the franchisee obtains the right to operate under the franchisor's brand and business system and pays fees and ongoing royalties. The franchisor supplies training, trademarks and support under a written agreement.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of these is a social responsibility of business?",
+    "options": [
+      "Maximising pollution to reduce costs",
+      "Paying fair wages and ensuring safe working conditions",
+      "Avoiding taxes by illegal means",
+      "Discriminating against certain customers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Social responsibility requires businesses to act ethically by paying fair wages, providing safe working conditions, protecting the environment and obeying laws. These practices build goodwill and are contrary to illegal tax avoidance or discrimination.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which marketing mix element involves decisions about how a product is communicated to consumers?",
+    "options": [
+      "Product",
+      "Place",
+      "Promotion",
+      "Price"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Promotion covers all communication methods used to inform, persuade and remind customers about products, including advertising, sales promotion, public relations and personal selling. It is distinct from product, price and distribution decisions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is true about 'liquidity' of an asset?",
+    "options": [
+      "Liquidity means the asset is profitable",
+      "Liquidity refers to ease and speed of converting an asset into cash without significant loss",
+      "Illiquid assets always have higher market value",
+      "Liquid assets cannot be used for settling short-term obligations"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Liquidity refers to how quickly and easily an asset can be converted into cash at or near its market value. Highly liquid assets, like cash or bank deposits, help businesses meet short-term obligations without loss.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is an example of indirect tax?",
+    "options": [
+      "Company income tax",
+      "Personal income tax",
+      "Value Added Tax (VAT)",
+      "Capital gains tax"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Value Added Tax (VAT) is an indirect tax collected by sellers from buyers and remitted to government, shifting the tax burden to consumers. Direct taxes like personal or company income tax are paid by individuals or companies.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best describes 'fringe benefits'?",
+    "options": [
+      "Mandatory government taxes on salaries",
+      "Non-wage compensations such as housing, transport or medical allowances provided to employees",
+      "Penalties for employees for lateness",
+      "Payments to suppliers for goods"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Fringe benefits are non-wage compensations given to employees in addition to wages or salaries, such as housing allowances, company cars, insurance or medical coverage. They enhance employee welfare and total compensation package.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best explains 'balance of trade'?",
+    "options": [
+      "Difference between total imports and total exports of goods only",
+      "Difference between all financial inflows and outflows",
+      "Government budget surplus",
+      "Total domestic production of a country"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Balance of trade measures the difference between a country's exports and imports of goods. A trade surplus occurs when exports exceed imports; a deficit arises when imports exceed exports. It excludes services and capital flows.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a reason businesses use warehousing?",
+    "options": [
+      "To increase the perishability of goods",
+      "To provide storage, ensure steady supply and protect goods from damage",
+      "To eliminate the need for transportation",
+      "To prevent product sales"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Warehousing stores goods until needed, ensures steady supply to meet demand fluctuations, protects goods from damage, allows bulk buying and supports distribution. It does not increase perishability or eliminate transport needs.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which banking product is most suitable for a customer who needs to earn interest and still have access to their funds frequently?",
+    "options": [
+      "Fixed deposit with long lock-in",
+      "Savings account offering interest and withdrawals",
+      "Dormant account with no transactions allowed",
+      "Collateral for a loan"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A savings account typically offers interest on deposits while allowing customers to withdraw funds relatively freely, making it suitable for those needing both interest earnings and access to funds for regular transactions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best explains 'consumer sovereignty' in economics?",
+    "options": [
+      "Producers determine what consumers should buy",
+      "Consumers' preferences determine the production of goods and services",
+      "Government decides all consumer purchases",
+      "Retailers control consumer tastes solely"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Consumer sovereignty means consumers, through their purchasing choices, determine what goods and services are produced. Producers respond to demand signals; consumers' preferences thus guide resource allocation in a market economy.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "In double-entry bookkeeping, which principle requires that every debit entry must have a corresponding credit entry?",
+    "options": [
+      "Realisation principle",
+      "Matching principle",
+      "Duality principle",
+      "Conservatism principle"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The duality principle (double-entry) states that every business transaction affects at least two accounts with equal debits and credits, ensuring the accounting equation remains balanced and providing a complete record of transactions.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following would not normally appear in a statement of financial position (balance sheet)?",
+    "options": [
+      "Buildings owned by the business",
+      "Outstanding creditors",
+      "Sales revenue for the year",
+      "Owner's capital"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Sales revenue is an income statement item, not a balance sheet item. The balance sheet shows assets (like buildings), liabilities (like creditors) and owner's equity (capital) at a point in time.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is most likely to increase demand for a normal good?",
+    "options": [
+      "Decrease in consumer income",
+      "Increase in consumer income",
+      "Increase in price of the good",
+      "Technological obsolescence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "For a normal good, demand increases when consumer income rises because consumers have greater purchasing power and will buy more. A price increase or income decrease would typically reduce quantity demanded.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best describes 'price discrimination'?",
+    "options": [
+      "Charging the same price to all customers",
+      "Charging different prices for the same product to different customers based on willingness to pay",
+      "Setting price according to production cost only",
+      "Reducing price to zero during promotion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Price discrimination involves selling the same product at different prices to different customers based on factors like willingness to pay, purchase location or timing, with the aim of maximising revenue. It requires market segmentation and some market power.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of these best describes a 'current liability'?",
+    "options": [
+      "A debt payable after ten years",
+      "An obligation due within one year",
+      "An asset expected to be converted to cash",
+      "A capital investment by owners"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Current liabilities are obligations a business expects to settle within one year or the operating cycle, such as trade payables, short-term loans and accrued expenses. Long-term debts are non-current liabilities.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following methods depreciates an asset by the same monetary amount each year?",
+    "options": [
+      "Reducing balance method",
+      "Sum-of-the-years'-digits method",
+      "Straight-line method",
+      "Units-of-production method"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The straight-line method charges equal depreciation expense each accounting period by dividing the depreciable amount by the asset's useful life. Other methods allocate varying amounts depending on usage or time.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following is a legally enforceable contract requirement?",
+    "options": [
+      "Mutual consent, consideration, capacity and lawful object",
+      "Promise without acceptance",
+      "Agreement with minors for illegal purposes",
+      "Verbal agreement to commit a crime"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A legally enforceable contract requires offer and acceptance (mutual consent), consideration (something of value), capacity of parties and a lawful object. Contracts missing these elements or involving illegal acts are unenforceable.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  },
+  {
+    "text": "Which of the following best explains 'import quota'?",
+    "options": [
+      "A tax on exported goods",
+      "A limit on the quantity of a good that can be imported",
+      "A subsidy to local exporters",
+      "A method of promoting free trade"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "An import quota restricts the quantity of a specific good that can be imported into a country during a set period, used to protect domestic industries. It is a non-tariff barrier and not a tax or subsidy.",
+    "subject": "Commerce",
+    "examType": "NECO",
+    "examYear": 2018
+  }
+]

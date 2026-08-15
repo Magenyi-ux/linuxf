@@ -152,5 +152,551 @@
     "subject": "Government",
     "examType": "JAMB",
     "examYear": 2020
+  },
+  {
+    "text": "The National Agency for Food and Drug Administration and Control (NAFDAC) regulates",
+    "options": [
+      "elections",
+      "food, drugs, and cosmetics",
+      "oil and gas",
+      "education"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NAFDAC ensures safety and quality of consumable products.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Standards Organisation of Nigeria (SON) sets",
+    "options": [
+      "political standards",
+      "quality standards for products",
+      "educational curriculum",
+      "military standards"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "SON develops and enforces industrial standards.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The National Assembly can override a presidential veto with",
+    "options": [
+      "simple majority",
+      "two-thirds majority",
+      "unanimous vote",
+      "presidential consent"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A two-thirds majority in both chambers can override a veto.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "A vote of no confidence can lead to",
+    "options": [
+      "promotion of the executive",
+      "removal of the executive in a parliamentary system",
+      "declaration of war",
+      "amendment of the constitution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In parliamentary systems, a no-confidence vote forces government resignation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The term 'lobbying' refers to",
+    "options": [
+      "voting in elections",
+      "seeking to influence legislators on specific issues",
+      "protesting violently",
+      "running for office"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Lobbying involves advocacy to persuade lawmakers.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The 'spoils system' in government refers to",
+    "options": [
+      "merit-based appointments",
+      "giving government jobs to political supporters",
+      "competitive exams",
+      "civil service neutrality"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The spoils system rewards loyalists with public offices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The merit system in civil service emphasizes",
+    "options": [
+      "nepotism",
+      "qualification and competence",
+      "political loyalty",
+      "ethnicity"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The merit system promotes based on ability and qualifications.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Administrative Tribunal handles",
+    "options": [
+      "criminal cases",
+      "disputes between citizens and government agencies",
+      "election petitions",
+      "constitutional amendments"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Tribunals adjudicate administrative grievances.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The National Industrial Court handles",
+    "options": [
+      "criminal cases",
+      "labour and employment disputes",
+      "election petitions",
+      "constitutional cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The NIC has jurisdiction over labour and industrial relations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Sharia Court of Appeal handles cases involving",
+    "options": [
+      "all Nigerians",
+      "Islamic personal law",
+      "Christian law",
+      "criminal cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sharia Courts apply Islamic law to personal matters for Muslims.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Customary Court of Appeal deals with",
+    "options": [
+      "federal law",
+      "customary law matters",
+      "international law",
+      "military law"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It handles appeals on customary law issues.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The armed forces consist of the",
+    "options": [
+      "Army, Navy, and Air Force",
+      "Police and Civil Defence",
+      "Customs and Immigration",
+      "FRSC and NAFDAC"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The military comprises the Army, Navy, and Air Force.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The para-military agencies in Nigeria include",
+    "options": [
+      "Army and Navy",
+      "Customs, Immigration, and Prisons",
+      "Senate and House",
+      "EFCC and ICPC"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Para-military agencies enforce specific laws and regulations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Nigeria Prisons Service is now called",
+    "options": [
+      "Nigeria Police",
+      "Nigeria Correctional Service",
+      "Nigeria Army",
+      "Nigeria Immigration"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It was renamed to reflect a focus on correction and rehabilitation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Federal Road Safety Corps (FRSC) is responsible for",
+    "options": [
+      "air travel safety",
+      "road traffic administration and safety",
+      "railway safety",
+      "maritime safety"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "FRSC regulates and enforces road safety laws.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Nigerian Immigration Service issues",
+    "options": [
+      "driver's licence",
+      "international passport and visa",
+      "national ID card",
+      "voter's card"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Immigration manages passports, visas, and border control.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Nigerian Customs Service is responsible for",
+    "options": [
+      "tax collection",
+      "border protection and revenue from imports",
+      "road safety",
+      "prison management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Customs enforces import/export regulations and collects duties.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The National Boundary Commission handles",
+    "options": [
+      "election boundaries only",
+      "interstate and international boundary disputes",
+      "constituency delineation",
+      "local government creation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It resolves boundary issues between states and with other countries.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Independent Corrupt Practices Commission (ICPC) was established in",
+    "options": [
+      "1999",
+      "2000",
+      "2003",
+      "2010"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "ICPC was created by the Corrupt Practices and Other Related Offences Act 2000.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The primary role of the media in a democracy is to",
+    "options": [
+      "promote government propaganda",
+      "inform, educate, and hold government accountable",
+      "entertain only",
+      "support only the ruling party"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The media serves as the watchdog of society and informs citizens.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Nigerian Press Council regulates",
+    "options": [
+      "social media",
+      "the conduct of journalists and media ethics",
+      "government policies",
+      "election results"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It ensures ethical standards in journalism.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "Censorship of the media refers to",
+    "options": [
+      "supporting the media",
+      "restricting or suppressing information",
+      "training journalists",
+      "funding newspapers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Censorship limits freedom of expression.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The right to peaceful assembly and protest is guaranteed under",
+    "options": [
+      "Section 33",
+      "Section 40",
+      "Section 34",
+      "Section 38"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Section 40 guarantees the right to assemble freely and form associations.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "A protest becomes unlawful when",
+    "options": [
+      "it is peaceful",
+      "it turns violent and breaches public order",
+      "it is announced",
+      "it is political"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Protests must be peaceful; violence renders them illegal.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "Trade unions are formed to",
+    "options": [
+      "promote political candidates",
+      "protect workers' rights and interests",
+      "support employers",
+      "collect taxes"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Trade unions advocate for better working conditions and wages.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Academic Staff Union of Universities (ASUU) is a",
+    "options": [
+      "political party",
+      "trade union",
+      "government agency",
+      "student union"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "ASUU is a trade union representing university lecturers.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The right to form or join a trade union is a",
+    "options": [
+      "political right",
+      "economic right",
+      "social right",
+      "fundamental right"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "Section 40 of the constitution protects the right to associate, including unions.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "A strike action by workers involves",
+    "options": [
+      "working overtime",
+      "withdrawal of labour to press for demands",
+      "promotion of employees",
+      "supporting management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A strike is a collective work stoppage to enforce demands.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Trade Disputes Act provides for",
+    "options": [
+      "banning all unions",
+      "resolution of industrial disputes",
+      "appointment of judges",
+      "election of governors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Act establishes procedures for settling trade disputes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The National Industrial Court has jurisdiction over",
+    "options": [
+      "criminal cases",
+      "trade disputes and labour matters",
+      "election petitions",
+      "divorce cases"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "NIC adjudicates labour and employment-related disputes.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The minimum wage in Nigeria is set by the",
+    "options": [
+      "President alone",
+      "National Assembly",
+      "Trade Unions",
+      "National Minimum Wage Act"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The National Minimum Wage Act, passed by the National Assembly and assented by the President, sets the minimum wage.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The principle of 'equal pay for equal work' promotes",
+    "options": [
+      "discrimination",
+      "fairness in remuneration",
+      "nepotism",
+      "gender bias"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It ensures workers receive equal pay for work of equal value.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "Gender discrimination in the workplace is prohibited by",
+    "options": [
+      "the constitution and labour laws",
+      "tradition",
+      "custom",
+      "religious law"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Section 42 of the constitution prohibits sex-based discrimination.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The National Gender Policy aims to",
+    "options": [
+      "promote male dominance",
+      "achieve gender equality and women empowerment",
+      "exclude women from politics",
+      "encourage early marriage"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The policy promotes equal opportunities for all genders.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Violence Against Persons (Prohibition) Act addresses",
+    "options": [
+      "tax evasion",
+      "gender-based violence",
+      "electoral fraud",
+      "drug abuse"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The VAPP Act criminalizes domestic violence, rape, and harmful practices.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "Child trafficking is a violation of",
+    "options": [
+      "property rights",
+      "human rights",
+      "animal rights",
+      "economic rights"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Child trafficking violates fundamental human dignity and rights.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The Child Rights Act was enacted in Nigeria in",
+    "options": [
+      "1999",
+      "2003",
+      "2007",
+      "2011"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Child Rights Act was passed in 2003 to protect children.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "The minimum age for marriage under the Child Rights Act is",
+    "options": [
+      "16 years",
+      "18 years",
+      "21 years",
+      "15 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Act sets 18 as the minimum age for marriage.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
+  },
+  {
+    "text": "Child labour refers to",
+    "options": [
+      "children helping at home",
+      "exploitation of children through work that harms them",
+      "children going to school",
+      "children playing"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Child labour deprives children of their childhood and education.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2020
   }
 ]
