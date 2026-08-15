@@ -124,5 +124,579 @@
     "subject": "Government",
     "examType": "JAMB",
     "examYear": 2022
+  },
+  {
+    "text": "The term 'federalism' refers to",
+    "options": [
+      "concentration of power at the centre",
+      "division of powers between central and regional governments",
+      "one-party rule",
+      "military government"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Federalism divides power between a central authority and constituent units.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "A major feature of federalism is",
+    "options": [
+      "a written constitution",
+      "a unitary legislature",
+      "a strong central government only",
+      "the absence of a judiciary"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Federal systems typically have written constitutions delineating powers.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The division of powers in a federal system includes",
+    "options": [
+      "exclusive, concurrent, and residual lists",
+      "only exclusive list",
+      "only concurrent list",
+      "only residual list"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Powers are divided among exclusive, concurrent, and residual lists.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Exclusive powers in Nigeria are exercised by the",
+    "options": [
+      "state governments",
+      "federal government",
+      "local governments",
+      "traditional rulers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Exclusive powers belong only to the federal government.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Concurrent powers in Nigeria are shared between",
+    "options": [
+      "federal and state governments",
+      "state and local governments",
+      "federal and local governments",
+      "all three tiers"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Concurrent powers are shared by federal and state governments.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Residual powers in Nigeria belong to the",
+    "options": [
+      "federal government",
+      "state governments",
+      "local governments",
+      "judiciary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Residual powers are those not listed and belong to states.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The revenue allocation formula is determined by the",
+    "options": [
+      "President",
+      "Revenue Mobilization Allocation and Fiscal Commission",
+      "Senate only",
+      "Governors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "RMAFC recommends the formula for sharing federal revenue.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The federation account is shared among",
+    "options": [
+      "federal government only",
+      "federal, state, and local governments",
+      "state governments only",
+      "local governments only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Revenue is shared vertically among the three tiers of government.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The principle of derivation in revenue allocation ensures",
+    "options": [
+      "equal sharing",
+      "producing states receive a percentage of revenue from their resources",
+      "all revenue goes to the centre",
+      "states keep all revenue"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Derivation principle allocates a proportion to the area of origin.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "State creation in Nigeria requires approval by",
+    "options": [
+      "the President alone",
+      "two-thirds of the National Assembly and two-thirds of states",
+      "a referendum",
+      "the Supreme Court"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Creating a new state requires a supermajority at both federal and state levels.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Local government chairmen are elected for a term of",
+    "options": [
+      "2 years",
+      "3 years",
+      "4 years",
+      "5 years"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Local government officials serve four-year terms as stipulated by state laws.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The Federal Capital Territory (FCT) is headed by a",
+    "options": [
+      "Governor",
+      "Minister",
+      "President",
+      "Senator"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The FCT is administered by a Minister appointed by the President.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The armed forces are under the control of the",
+    "options": [
+      "Chief Justice",
+      "President as Commander-in-Chief",
+      "Senate President",
+      "Speaker"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President is the Commander-in-Chief of the Armed Forces.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The police force is headed by the",
+    "options": [
+      "Chief of Army Staff",
+      "Inspector General of Police",
+      "Chief Justice",
+      "Minister of Defence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Inspector General of Police heads the Nigeria Police Force.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The National Security Adviser is appointed by the",
+    "options": [
+      "Senate",
+      "President",
+      "Chief of Defence Staff",
+      "National Assembly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President appoints the National Security Adviser.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The body that hears election petition cases is the",
+    "options": [
+      "Supreme Court",
+      "Election Petition Tribunal",
+      "Federal High Court",
+      "Sharia Court"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Election Petition Tribunals adjudicate disputes arising from elections.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Voter registration is important because it",
+    "options": [
+      "prevents citizens from voting",
+      "enables eligible citizens to vote",
+      "allows foreigners to vote",
+      "is optional"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Registration qualifies a citizen to exercise their voting right.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "A credible election is characterized by",
+    "options": [
+      "vote buying",
+      "free, fair, and transparent process",
+      "manipulation of results",
+      "intimidation of voters"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Credible elections are free, fair, transparent, and reflect the will of the people.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The concept of 'One Man, One Vote' implies",
+    "options": [
+      "only men can vote",
+      "all votes have equal weight",
+      "the rich have more votes",
+      "women cannot vote"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It ensures political equality regardless of status.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The secret ballot system ensures",
+    "options": [
+      "public voting",
+      "voter intimidation",
+      "privacy and freedom of choice",
+      "vote buying"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Secret ballot protects voters from coercion.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "An electoral constituency is",
+    "options": [
+      "a political party office",
+      "a geographic area represented by an elected official",
+      "the president's office",
+      "the national assembly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A constituency is a district whose voters elect a representative.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The returning officer in an election is responsible for",
+    "options": [
+      "voting on behalf of citizens",
+      "announcing election results",
+      "campaigning for candidates",
+      "printing ballot papers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The returning officer declares the official results.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "A coalition government is formed when",
+    "options": [
+      "one party wins majority",
+      "no party wins an absolute majority",
+      "the president dissolves parliament",
+      "the military takes over"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Parties form a coalition to achieve a working majority.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The opposition in a democracy serves to",
+    "options": [
+      "support all government policies",
+      "criticize and check the government",
+      "form a parallel government",
+      "dissolve the legislature"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The opposition provides alternative views and holds government accountable.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The doctrine of separation of powers is practiced to prevent",
+    "options": [
+      "efficiency",
+      "dictatorship",
+      "development",
+      "elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "It prevents concentration of power in one branch.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The executive can check the legislature through",
+    "options": [
+      "judicial review",
+      "veto power",
+      "impeachment",
+      "elections"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The president can veto bills passed by the legislature.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The legislature checks the executive through",
+    "options": [
+      "making appointments",
+      "confirmation of appointments and impeachment",
+      "commanding the army",
+      "declaring war"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Senate confirms key appointments and can impeach the president.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Delegated legislation refers to laws made by",
+    "options": [
+      "the legislature only",
+      "authorized bodies or individuals under powers given by the legislature",
+      "the president alone",
+      "judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Ministers, agencies, and local authorities may make regulations under an enabling Act.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The Attorney General of the Federation is also the",
+    "options": [
+      "Chief Justice",
+      "Minister of Justice",
+      "Inspector General of Police",
+      "Head of Civil Service"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Attorney General serves as the chief law officer and Minister of Justice.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The civil service is expected to be",
+    "options": [
+      "partisan",
+      "neutral and permanent",
+      "political",
+      "temporary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Civil servants serve the government of the day impartially.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The head of the civil service is appointed by the",
+    "options": [
+      "Senate",
+      "President",
+      "Chief Justice",
+      "Public Service Commission"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President appoints the Head of the Civil Service of the Federation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Red-tapism in the civil service refers to",
+    "options": [
+      "efficiency",
+      "excessive bureaucracy and delay",
+      "quick service",
+      "transparency"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Red-tapism involves rigid adherence to rules causing delays.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The public service includes",
+    "options": [
+      "only civil servants",
+      "all government employees in ministries, agencies, and parastatals",
+      "only political appointees",
+      "only military personnel"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Public service encompasses all employed by the government to deliver services.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "A parastatal is",
+    "options": [
+      "a private company",
+      "a government-owned corporation",
+      "a religious organization",
+      "a political party"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Parastatals are state-owned enterprises providing public services.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The National Assembly has the power to",
+    "options": [
+      "execute laws",
+      "appropriate funds",
+      "interpret laws",
+      "command the army"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The legislature controls public spending through appropriation.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "A bill becomes law after",
+    "options": [
+      "first reading",
+      "presidential assent",
+      "committee stage",
+      "publication in newspapers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A bill passed by the National Assembly requires presidential assent to become law.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The doctrine of covering the field applies when",
+    "options": [
+      "state laws conflict with federal laws",
+      "the president is absent",
+      "the courts are on strike",
+      "the legislature is dissolved"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Federal law prevails over state law in areas of concurrent jurisdiction.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Citizenship can be acquired in Nigeria through",
+    "options": [
+      "birth, registration, and naturalization",
+      "only birth",
+      "purchase",
+      "marriage only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The 1999 Constitution provides for citizenship by birth, registration, and naturalization.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "Dual citizenship in Nigeria is allowed for",
+    "options": [
+      "citizens by birth",
+      "naturalized citizens",
+      "all citizens",
+      "only the president"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Citizens by birth can hold dual nationality; naturalized citizens must renounce other citizenship.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The right to education is classified as a",
+    "options": [
+      "political right",
+      "social and economic right",
+      "legal right",
+      "natural right"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Education is a socio-economic right under Chapter II of the constitution.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
+  },
+  {
+    "text": "The fundamental rights are contained in which chapter of the 1999 Constitution?",
+    "options": [
+      "Chapter I",
+      "Chapter II",
+      "Chapter IV",
+      "Chapter VI"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Chapter IV of the constitution guarantees fundamental rights.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2022
   }
 ]
