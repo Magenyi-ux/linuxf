@@ -26,5 +26,89 @@
     "subject": "Government",
     "examType": "JAMB",
     "examYear": 2016
+  },
+  {
+    "text": "Which of the following is a feature of a sovereign state?",
+    "options": [
+      "Dependence on another state",
+      "Supremacy over internal affairs",
+      "Control by a foreign power",
+      "Lack of defined territory"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sovereignty implies supreme internal authority and independence.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Traditional legitimacy is based on",
+    "options": [
+      "elections",
+      "customs and traditions",
+      "the constitution",
+      "military decrees"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Traditional legitimacy derives from long-established customs.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Charismatic authority is based on",
+    "options": [
+      "legal rules",
+      "the personal qualities of a leader",
+      "tradition",
+      "wealth"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Charismatic authority rests on a leader's exceptional personal appeal.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Legal-rational authority is associated with",
+    "options": [
+      "traditional rulers",
+      "modern bureaucratic states",
+      "military regimes",
+      "monarchies"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Legal-rational authority is based on law and established procedures.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "The concept of 'power' in politics refers to",
+    "options": [
+      "the ability to influence or control behaviour",
+      "only military strength",
+      "wealth only",
+      "popularity"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Power is the capacity to affect outcomes and behaviour.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
+  },
+  {
+    "text": "Authority differs from power because authority",
+    "options": [
+      "is illegal",
+      "is accepted as legitimate",
+      "relies on force only",
+      "is always temporary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Authority is legitimate power recognized by the governed.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2016
   }
 ]
