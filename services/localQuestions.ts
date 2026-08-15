@@ -312,6 +312,7 @@ const boardQuestionFiles: Record<string, string> = {
   [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2022`]: "./questions/jamb_government_2022_practice.json",
   [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2023`]: "./questions/jamb_government_2023_practice.json",
   [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2024`]: "./questions/jamb_government_2024_practice.json",
+  [`${ExamType.JAMB}:${Subject.GOVERNMENT}:2025`]: "./questions/jamb_government_2025_practice.json",
   [`${ExamType.JAMB}:${Subject.PHYSICS}:2021`]: "./questions/jamb_physics_2021_practice.json",
   [`${ExamType.WAEC}:${Subject.PHYSICS}:2021`]: "./questions/waec_physics_2021_practice.json",
   [`${ExamType.NECO}:${Subject.PHYSICS}:2021`]: "./questions/neco_physics_2021_practice.json",

@@ -1,0 +1,562 @@
+[
+  {
+    "text": "The Legal Aid Council of Nigeria was established to",
+    "options": [
+      "prosecute all cases",
+      "provide legal assistance to the poor",
+      "train judges",
+      "write the constitution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Legal Aid Council was established to provide free or subsidized legal services to indigent Nigerians who cannot afford legal representation. It does not prosecute all cases (A), train judges (C), or write the constitution (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Alternative Dispute Resolution (ADR) includes",
+    "options": [
+      "only litigation",
+      "mediation, arbitration, and conciliation",
+      "military trials",
+      "legislative hearings"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "ADR refers to methods of resolving disputes outside the traditional court system. These include mediation (a neutral third party helps parties reach agreement), arbitration (a neutral third party makes a binding decision), and conciliation. Litigation (A) is the formal court process, not ADR. Military trials (C) and legislative hearings (D) are not dispute resolution mechanisms.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Arbitration involves",
+    "options": [
+      "a judge deciding a case",
+      "a neutral third party making a binding decision",
+      "the president intervening",
+      "public voting"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Arbitration is a private dispute resolution process where parties agree to submit their dispute to a neutral third party (arbitrator) whose decision is binding. A judge (A) decides cases in court, not arbitration. The president (C) does not intervene in arbitration. Public voting (D) is not a dispute resolution method.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Mediation differs from arbitration because",
+    "options": [
+      "it is more expensive",
+      "the mediator does not impose a decision",
+      "it requires a judge",
+      "it is always public"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "In mediation, the mediator facilitates negotiation and helps parties reach their own agreement, but does not impose a decision. In arbitration, the arbitrator makes a binding decision. Mediation is generally less expensive (A), does not require a judge (C), and is usually private, not public (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The Multi-Door Courthouse concept promotes",
+    "options": [
+      "only litigation",
+      "multiple dispute resolution options",
+      "only arbitration",
+      "only mediation"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Multi-Door Courthouse is a concept that offers litigants multiple dispute resolution options\u2014including mediation, arbitration, conciliation, and litigation\u2014under one roof. It is not limited to litigation (A), arbitration (C), or mediation (D) alone.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The National Human Rights Commission can",
+    "options": [
+      "make laws",
+      "investigate human rights violations",
+      "conduct elections",
+      "appoint judges"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The National Human Rights Commission (NHRC) is empowered to investigate complaints of human rights violations, recommend remedies, and promote human rights awareness. It cannot make laws (A), conduct elections (C), or appoint judges (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The Public Defender's Office provides",
+    "options": [
+      "legal representation for the government",
+      "free legal services to indigent persons",
+      "prosecution services",
+      "prison management"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Public Defender's Office offers pro bono legal defence and representation to persons who cannot afford private lawyers. It does not represent the government (A), prosecute cases (C), or manage prisons (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The concept of 'innocent until proven guilty' is known as",
+    "options": [
+      "presumption of guilt",
+      "presumption of innocence",
+      "judicial bias",
+      "executive privilege"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The presumption of innocence is a fundamental legal principle that an accused person is considered innocent until proven guilty in a court of law. Presumption of guilt (A) is the opposite. Judicial bias (C) is an unfair leaning by a judge. Executive privilege (D) relates to the executive's right to withhold information.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Double jeopardy means",
+    "options": [
+      "being tried twice for different offences",
+      "being tried again for the same offence after acquittal",
+      "appealing a conviction",
+      "plea bargaining"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Double jeopardy is the constitutional prohibition against trying a person a second time for the same offence after they have been acquitted or convicted. It does not apply to different offences (A). Appeal (C) is a legal right to challenge a conviction. Plea bargaining (D) is negotiation between prosecution and defence.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The term 'sub judice' refers to",
+    "options": [
+      "a concluded case",
+      "a matter under judicial consideration",
+      "an executive order",
+      "a legislative debate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sub judice is a Latin term meaning 'under judgment'. It refers to a matter that is currently before a court and therefore should not be publicly discussed to avoid prejudicing the outcome. A concluded case (A) is no longer sub judice. An executive order (C) and legislative debate (D) are unrelated.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Contempt of court includes",
+    "options": [
+      "obeying court orders",
+      "disobeying or disrespecting the court",
+      "praising the judiciary",
+      "filing a lawsuit"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Contempt of court is any act that disobeys, disrespects, or undermines the authority or dignity of a court. Obeying court orders (A) is lawful. Praising the judiciary (C) is not contempt. Filing a lawsuit (D) is a legal right.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The Chief Judge of a state is appointed by the",
+    "options": [
+      "President",
+      "Governor on recommendation of NJC",
+      "Senate",
+      "House of Assembly"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Governor appoints the state Chief Judge on the recommendation of the National Judicial Council (NJC), subject to confirmation by the state House of Assembly. The President (A) appoints federal judges. The Senate (C) confirms federal appointments. The House of Assembly (D) confirms state appointments but does not initiate them.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The Grand Khadi of the Sharia Court of Appeal is appointed by the",
+    "options": [
+      "President",
+      "Governor",
+      "Chief Justice",
+      "Senate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Governor of a state appoints the Grand Khadi of the Sharia Court of Appeal on the recommendation of the NJC, subject to confirmation by the state House of Assembly. This applies to states that operate Sharia law.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The President of the Customary Court of Appeal is appointed by the",
+    "options": [
+      "Senate",
+      "Governor",
+      "President",
+      "Local Government Chairman"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Governor appoints the President of the Customary Court of Appeal on the recommendation of the NJC, subject to confirmation by the state House of Assembly.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Judges of the Supreme Court retire at the age of",
+    "options": [
+      "60",
+      "65",
+      "70",
+      "75"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Judges of the Supreme Court retire at 70 years of age as stipulated by the Nigerian Constitution. Court of Appeal and High Court judges retire at 65.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Judges of the Court of Appeal and High Court retire at",
+    "options": [
+      "60 years",
+      "65 years",
+      "70 years",
+      "75 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Court of Appeal and High Court judges retire at 65 years of age. Supreme Court justices retire at 70.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The judiciary is independent when it is",
+    "options": [
+      "controlled by the executive",
+      "free from interference by other arms of government",
+      "subject to military control",
+      "funded by private individuals"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Judicial independence means the judiciary is free from interference by the executive and legislature in the performance of its functions. Control by the executive (A), military (C), or private funders (D) compromises independence.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The National Judicial Institute (NJI) trains",
+    "options": [
+      "police officers",
+      "judicial officers",
+      "soldiers",
+      "civil servants"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The National Judicial Institute (NJI) provides continuing education and training for judges, magistrates, and other judicial officers to enhance their capacity.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The body that disciplines erring judges is the",
+    "options": [
+      "EFCC",
+      "National Judicial Council",
+      "Police",
+      "Senate"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The National Judicial Council (NJC) is constitutionally empowered to investigate and recommend disciplinary action against erring judicial officers. The EFCC (A) investigates financial crimes. The Police (C) enforce laws generally. The Senate (D) confirms appointments and may approve removal.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The NJC is chaired by the",
+    "options": [
+      "President",
+      "Chief Justice of Nigeria",
+      "Attorney General",
+      "Senate President"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The National Judicial Council is chaired by the Chief Justice of Nigeria (CJN), who is the head of the judiciary.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The constitution guarantees security of tenure for judges to",
+    "options": [
+      "allow political interference",
+      "ensure judicial independence",
+      "reduce their salaries",
+      "allow easy removal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Security of tenure protects judges from arbitrary removal, ensuring they can adjudicate without fear or favour. This is a key guarantee of judicial independence.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A judicial officer can be removed for",
+    "options": [
+      "making fair judgments",
+      "gross misconduct or incapacity",
+      "being impartial",
+      "upholding the constitution"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "A judicial officer can only be removed for gross misconduct, incapacity, or inability to perform the functions of office. Fair judgments (A), impartiality (C), and upholding the constitution (D) are duties, not grounds for removal.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The rule of law requires that",
+    "options": [
+      "the president is above the law",
+      "laws are applied equally to all",
+      "only the rich are protected",
+      "judges make all laws"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The rule of law means that all persons and institutions are subject to the law, and laws are applied equally to all without discrimination. The president is not above the law (A). Laws do not protect only the rich (C). Judges interpret, not make laws (D).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The principle of natural justice demands",
+    "options": [
+      "trial without defence",
+      "fair hearing and absence of bias",
+      "conviction without evidence",
+      "secret proceedings"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Natural justice requires fair hearing (audi alteram partem) and absence of bias (nemo judex in causa sua). Trial without defence (A), conviction without evidence (C), and secret proceedings (D) violate natural justice.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The concept of 'audi alteram partem' means",
+    "options": [
+      "hear the other side",
+      "judge alone",
+      "ignore the accused",
+      "punish without trial"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "'Audi alteram partem' is a Latin maxim meaning 'hear the other side'. It requires that no person be judged without being given an opportunity to present their case.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The principle 'nemo judex in causa sua' means",
+    "options": [
+      "a person can judge their own case",
+      "no one should be a judge in their own cause",
+      "judges are above the law",
+      "the president is the final judge"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "'Nemo judex in causa sua' means 'no one should be a judge in their own cause'. It ensures impartiality by preventing conflicts of interest in adjudication.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The term 'federalism' refers to",
+    "options": [
+      "concentration of power at the centre",
+      "division of powers between central and regional governments",
+      "one-party rule",
+      "military government"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Federalism is a system of government in which power is constitutionally divided between a central government and regional (state) governments, each autonomous in its sphere.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "A major feature of federalism is",
+    "options": [
+      "a written constitution",
+      "a unitary legislature",
+      "a strong central government only",
+      "the absence of a judiciary"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Federal systems typically have written constitutions that delineate the division of powers between the central and regional governments. A unitary legislature (B) is a feature of a unitary system. Federalism shares power rather than concentrating it (C). A judiciary is essential in federalism (D is incorrect).",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The division of powers in a federal system includes",
+    "options": [
+      "exclusive, concurrent, and residual lists",
+      "only exclusive list",
+      "only concurrent list",
+      "only residual list"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "In a federal system, powers are divided into exclusive (federal only), concurrent (shared by federal and state), and residual (state only) lists.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Exclusive powers in Nigeria are exercised by the",
+    "options": [
+      "state governments",
+      "federal government",
+      "local governments",
+      "traditional rulers"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Exclusive powers (e.g., defence, foreign affairs, currency, customs) are exercised solely by the federal government as listed in the Constitution.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Concurrent powers in Nigeria are shared between",
+    "options": [
+      "federal and state governments",
+      "state and local governments",
+      "federal and local governments",
+      "all three tiers"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Concurrent powers (e.g., education, health, agriculture) are shared between the federal and state governments. Where conflict arises, federal law prevails.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Residual powers in Nigeria belong to the",
+    "options": [
+      "federal government",
+      "state governments",
+      "local governments",
+      "judiciary"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Residual powers are those not listed in the exclusive or concurrent lists and therefore belong to the state governments.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The revenue allocation formula is determined by the",
+    "options": [
+      "President",
+      "Revenue Mobilization Allocation and Fiscal Commission",
+      "Senate only",
+      "Governors"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Revenue Mobilization Allocation and Fiscal Commission (RMAFC) is constitutionally empowered to recommend the formula for sharing federal revenue among the three tiers of government.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The federation account is shared among",
+    "options": [
+      "federal government only",
+      "federal, state, and local governments",
+      "state governments only",
+      "local governments only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Revenue in the federation account is shared vertically among the federal, state, and local governments according to the approved formula.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The principle of derivation in revenue allocation ensures",
+    "options": [
+      "equal sharing",
+      "producing states receive a percentage of revenue from their resources",
+      "all revenue goes to the centre",
+      "states keep all revenue"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The derivation principle allocates a percentage (currently 13%) of revenue from natural resources to the state or region where the resources are extracted.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "State creation in Nigeria requires approval by",
+    "options": [
+      "the President alone",
+      "two-thirds of the National Assembly and two-thirds of states",
+      "a referendum",
+      "the Supreme Court"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Creating a new state requires a supermajority: approval by at least two-thirds of the National Assembly and two-thirds of the state Houses of Assembly.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "Local government chairmen are elected for a term of",
+    "options": [
+      "2 years",
+      "3 years",
+      "4 years",
+      "5 years"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Local government chairmen are elected for a four-year term, as stipulated by state laws in line with the Constitution.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The Federal Capital Territory (FCT) is headed by a",
+    "options": [
+      "Governor",
+      "Minister",
+      "President",
+      "Senator"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The FCT is administered by a Minister appointed by the President. It does not have a governor (A). The President (C) appoints the Minister but does not directly administer. A Senator (D) represents the FCT in the National Assembly.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The armed forces are under the control of the",
+    "options": [
+      "Chief Justice",
+      "President as Commander-in-Chief",
+      "Senate President",
+      "Speaker"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The President is the Commander-in-Chief of the Armed Forces of Nigeria, exercising supreme command over the military.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  },
+  {
+    "text": "The police force is headed by the",
+    "options": [
+      "Chief of Army Staff",
+      "Inspector General of Police",
+      "Chief Justice",
+      "Minister of Defence"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The Nigeria Police Force is headed by the Inspector General of Police (IGP), who is appointed by the President.",
+    "subject": "Government",
+    "examType": "JAMB",
+    "examYear": 2025
+  }
+]
