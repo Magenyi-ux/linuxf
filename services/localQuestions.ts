@@ -1,8 +1,10 @@
 import { ExamType, Question, Subject } from "../types";
 import { visualQuestionsBySubject } from "./visualQuestions";
 
-// Import all JSON files from the questions directory.
-const questionFiles = import.meta.glob("./questions/*.json", { eager: true });
+// Question banks are fetched at runtime from GitHub instead of being bundled into the main app.
+// This keeps the production bundle small and lets question updates ship independently of the website.
+const QUESTIONS_REPO_RAW_BASE = "https://raw.githubusercontent.com/Magenyi-ux/linuxf/main/services/questions";
+const QUESTION_CACHE_NAME = "examply-question-bank-v1";
 
 type RawOptions = Record<string, string | undefined> | string[];
 
@@ -438,23 +440,60 @@ const parseCorrectOptionIndex = (question: RawQuestion): number | null => {
   return Number.isInteger(numeric) && numeric >= 0 && numeric <= 3 ? numeric : null;
 };
 
-/** Loads and adapts complete questions from local JSON files. */
-export const getLocalQuestions = (
+/**
+ * Loads and adapts a complete question pack from GitHub.
+ * The Cache API provides an offline fallback after a successful online fetch.
+ */
+const readQuestionFile = async (filePath: string): Promise<RawQuestion[] | null> => {
+  const filename = filePath.replace(/^\.\/questions\//, "");
+  const url = `${QUESTIONS_REPO_RAW_BASE}/${filename}`;
+  const cache = typeof caches !== "undefined" ? await caches.open(QUESTION_CACHE_NAME) : null;
+
+  try {
+    const response = await fetch(url, {
+      cache: "no-store",
+      headers: { Accept: "application/json", "Cache-Control": "no-cache" },
+    });
+    if (!response.ok) throw new Error(`Question bank request failed: ${response.status}`);
+
+    if (cache) {
+      await cache.put(url, response.clone());
+    }
+
+    const data = await response.json();
+    return Array.isArray(data) ? (data as RawQuestion[]) : null;
+  } catch (networkError) {
+    console.warn(`GitHub question bank unavailable for ${filename}; trying offline cache.`, networkError);
+    if (!cache) return null;
+
+    try {
+      const cachedResponse = await cache.match(url);
+      if (!cachedResponse) return null;
+      const cachedData = await cachedResponse.json();
+      return Array.isArray(cachedData) ? (cachedData as RawQuestion[]) : null;
+    } catch (cacheError) {
+      console.warn(`Offline question cache could not be read for ${filename}.`, cacheError);
+      return null;
+    }
+  }
+};
+
+export const getLocalQuestions = async (
   subject: Subject,
   year: string,
   count: number = 10,
   examType?: ExamType,
-): { questions: Question[]; sources: string[] } | null => {
+): Promise<{ questions: Question[]; sources: string[] } | null> => {
   const filename = subjectToFilename[subject];
   if (!filename) return null;
 
   const filePath = boardQuestionFiles[`${examType ?? ""}:${subject}:${year}`] ?? `./questions/${filename}_questions.json`;
-  const fileData = (questionFiles[filePath] as { default?: RawQuestion[] } | undefined)?.default;
+  const fileData = await readQuestionFile(filePath);
 
   if (!fileData || !Array.isArray(fileData)) {
     if (subject === Subject.ECONOMICS) {
       const altPath = "./questions/myschool_economics_questions.json";
-      const altData = (questionFiles[altPath] as { default?: RawQuestion[] } | undefined)?.default;
+      const altData = await readQuestionFile(altPath);
       if (altData && Array.isArray(altData)) return processRawData(altData, year, count, subject);
     }
     return null;

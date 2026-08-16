@@ -78,8 +78,8 @@ export const fetchExamQuestions = async (
   year: string,
   count: number = 10
 ): Promise<{ questions: Question[], sources: string[] }> => {
-  // 1. Try Local Question Bank (JSON files)
-  const localQuestions = getLocalQuestions(subject, year, count, examType);
+  // 1. Try the GitHub-hosted question bank. The loader caches successful downloads for offline use.
+  const localQuestions = await getLocalQuestions(subject, year, count, examType);
   if (localQuestions && localQuestions.questions.length > 0) {
       return localQuestions;
   }
