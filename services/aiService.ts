@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { ExamType, Subject, Question } from "../types";
-import { getLocalQuestions } from "./localQuestions";
+import { getQuestionsFromIcnApi } from "./icnQuestionApi";
 
 const openai = new OpenAI({
     apiKey: 'pk-this-is-a-placeholder-the-proxy-handles-auth',
@@ -79,7 +79,7 @@ export const fetchExamQuestions = async (
   count: number = 10
 ): Promise<{ questions: Question[], sources: string[] }> => {
   // 1. Try the GitHub-hosted question bank. The loader caches successful downloads for offline use.
-  const localQuestions = await getLocalQuestions(subject, year, count, examType);
+  const localQuestions = await getQuestionsFromIcnApi(examType, subject, year, count);
   if (localQuestions && localQuestions.questions.length > 0) {
       return localQuestions;
   }
