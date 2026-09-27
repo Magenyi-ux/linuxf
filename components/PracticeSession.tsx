@@ -191,23 +191,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
           </div>
       )}
 
-      {sources.length > 0 && (
-          <div className="mb-12 p-8 bg-white border border-gray-200 rounded-3xl text-xs text-gray-400">
-              <h4 className="font-bold mb-4 uppercase tracking-widest text-gray-900">Sources:</h4>
-              <ul className="space-y-2">
-                  {sources.map((src, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                          <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
-                          <a href={src} target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline break-all font-bold">
-                              {src}
-                          </a>
-                      </li>
-                  ))}
-              </ul>
-          </div>
-      )}
-
-      {/* Footer Actions */}
+          {/* Footer Actions */}
       <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-100 p-6 z-40">
           <div className="max-w-4xl mx-auto flex items-center justify-between gap-6">
               {mode === 'STUDY' && !isAnswered ? (
