@@ -32,7 +32,7 @@ const professorOpenAI = new OpenAI({
 const cleanAndParseJson = (text: string): any[] => {
     if (!text) return [];
 
-    let cleaned = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    let cleaned = text.replace(/\`\`\`json/g, '').replace(/\`\`\`/g, '').trim();
 
     const splitIndex = cleaned.indexOf('][');
     if (splitIndex !== -1) {
@@ -82,7 +82,13 @@ export const fetchExamQuestions = async (
   // 1. Try the GitHub-hosted question bank. The loader caches successful downloads for offline use.
   const localQuestions = await getQuestionsFromIcnApi(examType, subject, year, count);
   if (localQuestions && localQuestions.questions.length > 0) {
-      const questionsWithSupabaseExplanations = await attachSupabaseExplanations(\n          localQuestions.questions,\n          examType,\n          subject,\n          year\n      );\n      return { ...localQuestions, questions: questionsWithSupabaseExplanations };
+      const questionsWithSupabaseExplanations = await attachSupabaseExplanations(
+          localQuestions.questions,
+          examType,
+          subject,
+          year
+      );
+      return { ...localQuestions, questions: questionsWithSupabaseExplanations };
   }
 
   // If no local pack is available, use the configured server-side AI proxy.
