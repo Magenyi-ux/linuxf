@@ -12,7 +12,7 @@ import { Auth } from './components/Auth';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
 import { getRemoteAchievementKeys, getRemoteProgressTotals, syncUserData } from './services/syncService';
-import { fetchExamQuestions } from './services/aiService';
+import { fetchExamQuestions } from './services/questionService';
 import { trackEvent } from './services/analytics';
 import { captureReferralKeyFromUrl, fetchMyReferralSummary, type ReferralSummary } from './services/referralService';
 import { 
