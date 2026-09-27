@@ -63,7 +63,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({
     if (isOpen) {
       trackEvent('feature_used', { name: 'chatbot_open' });
       if (!chatSessionRef.current) {
-        chatSessionRef.current = createTutorChatSession();
+        chatSessionRef.current = createExternalAiSession();
       }
     }
   }, [isOpen]);
@@ -188,7 +188,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({
       });
 
       if (!chatSessionRef.current) {
-        chatSessionRef.current = createTutorChatSession();
+        chatSessionRef.current = createExternalAiSession();
       }
 
       const result = await chatSessionRef.current.sendMessage(userMessage || "Please analyze this image.", imageToUpload);
@@ -205,9 +205,9 @@ export const ChatBot: React.FC<ChatBotProps> = ({
 
   const resetChat = () => {
     if (confirm("Reset conversation?")) {
-      chatSessionRef.current = createTutorChatSession();
+      chatSessionRef.current = createExternalAiSession();
       setMessages([
-        { role: 'model', content: "Hello! I'm **Professor**, your AI study tutor. How can I help you prepare for your exams today?" }
+        { role: 'model', content: "Hello! I can help you prepare a question for an external AI assistant." }
       ]);
     }
   };
