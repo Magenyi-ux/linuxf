@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Lock, User, ArrowRight, GraduationCap, ArrowLeft, Eye, EyeOff, Gift } from 'lucide-react';
+import { Mail, Lock, User, ArrowRight, ArrowLeft, Eye, EyeOff, Gift } from 'lucide-react';
 import type { UserProfile } from '../types';
 import { useAuth } from '../contexts/AuthContext';
 import { trackEvent } from '../services/analytics';
@@ -81,7 +81,7 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
       <div className="bg-white p-8 md:p-10 rounded-[40px] border border-gray-100 shadow-2xl shadow-gray-200/50">
         <div className="flex flex-col items-center text-center mb-10">
           <div className="bg-primary-600 p-4 rounded-3xl mb-6 shadow-xl shadow-primary-500/20">
-            <GraduationCap className="w-10 h-10 text-white" />
+            <img src="/examply-logo.svg" alt="Examply" className="w-10 h-10 object-contain" />
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-2">
             {mode === 'SIGN_IN' ? 'Welcome Back!' : 'Join Examply'}
