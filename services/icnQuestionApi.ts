@@ -53,7 +53,7 @@ const fetchJson = async <T>(url: string, cacheName: string): Promise<T | null> =
   try {
     const response = await fetch(url, {
       cache: "no-store",
-      headers: { Accept: "application/json", "Cache-Control": "no-cache" },
+      headers: { Accept: "application/json" },
     });
     if (!response.ok) throw new Error(`ICN question API returned ${response.status}`);
     if (cache) await cache.put(url, response.clone());
