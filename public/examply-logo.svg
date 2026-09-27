@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-labelledby="title desc">
+  <title id="title">Examply logo</title>
+  <desc id="desc">SphereLearn Examply graduation cap and open book inside a sphere</desc>
+  <path fill="#fff" fill-rule="evenodd" d="M54 19c-19.3 0-35 15.7-35 35s15.7 35 35 35 35-15.7 35-35S73.3 19 54 19Zm0 4c17.1 0 31 13.9 31 31S71.1 85 54 85 23 71.1 23 54s13.9-31 31-31Z"/>
+  <path fill="#fff" d="M54 30l17 6-17 6-17-6 17-6Zm-9 7.5v4.5c0 3 18 3 18 0v-4.5h-4v4.25c-1.84.61-8.16.61-10 0V37.5h-4Z"/>
+  <path fill="#fff" d="M54 48c-7-3-16-3-23 0v18c7-3 16-3 23 0 7-3 16-3 23 0V48c-7-3-16-3-23 0Z"/>
+  <path stroke="#000" stroke-width="1" d="M54 49v17"/>
+</svg>
