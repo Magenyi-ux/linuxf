@@ -513,7 +513,7 @@ const AppShell: React.FC = () => {
         <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer group" onClick={resetApp}>
             <div className="bg-primary-600 p-2.5 rounded-xl transition-transform">
-                <GraduationCap className="w-7 h-7 text-white" />
+                <img src="/examply-logo.svg" alt="Examply" className="w-7 h-7 object-contain" />
             </div>
             <div className="flex flex-col">
               <span className={`text-xl font-bold leading-tight tracking-tight ${offlineStudySurface ? 'text-slate-100' : 'text-gray-900'}`}>Examply</span>
