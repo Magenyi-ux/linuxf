@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Question, Subject, ExamType } from '../types';
 import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search } from 'lucide-react';
 import { MathText } from './MathText';
+import { cleanQuestionText } from '../utils/questionTextPresentation';
 
 interface PracticeSessionProps {
   questions: Question[];
@@ -90,7 +91,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
 
       <div className="mb-5 sm:mb-7 bg-white p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-[32px] border border-gray-100 shadow-sm">
         <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-gray-900 leading-snug">
-          <MathText text={currentQuestion.text} />
+          <MathText text={cleanQuestionText(currentQuestion.text)} />
         </h2>
         {currentQuestion.imageUrl && (
           <div className="mt-4 rounded-2xl overflow-hidden border border-gray-100 bg-gray-50 flex justify-center">
@@ -152,7 +153,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
             <button
               onClick={() => {
                 const event = new CustomEvent('dive-deep', {
-                  detail: { context: `Question: ${currentQuestion.text}\nExplanation: ${currentQuestion.explanation}` }
+                  detail: { context: `Question: ${cleanQuestionText(currentQuestion.text)}\nExplanation: ${currentQuestion.explanation}` }
                 });
                 window.dispatchEvent(event);
               }}
