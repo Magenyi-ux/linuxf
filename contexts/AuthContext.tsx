@@ -17,6 +17,7 @@ interface AuthContextValue {
   profile: UserProfile | null;
   loading: boolean;
   signIn: (email: string, password: string) => Promise<UserProfile>;
+  sendPasswordResetEmail: (email: string) => Promise<void>;
   signUp: (name: string, email: string, password: string) => Promise<{ needsEmailConfirmation: boolean; profile?: UserProfile }>;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
@@ -116,6 +117,13 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
         console.warn('Referral attribution was not completed after sign-in:', referralError);
       }
       return buildProfile(data.user, row);
+    },
+    sendPasswordResetEmail: async (email) => {
+      if (!isSupabaseConfigured) throw new Error('Authentication is not configured yet.');
+      const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), {
+        redirectTo: 'https://spherelearn.name.ng/reset-password',
+      });
+      if (error) throw error;
     },
     signUp: async (name, email, password) => {
       if (!isSupabaseConfigured) throw new Error('Authentication is not configured yet.');
