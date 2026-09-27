@@ -160,61 +160,75 @@ export const fetchExamQuestions = async (
 export const createTutorChatSession = (initialContext?: string) => {
   const history: { role: "user" | "assistant" | "system", content: any }[] = [
     {
-        role: "system",
-        content: `You are 'Professor', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO).
-        Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams.
-        Be concise, use local context where appropriate for Nigerian students, and always be supportive.
-        When explaining topics, perform deep research, use 'Simplified Method' logic, and provide Markdown images from Wikipedia or Unsplash to aid understanding.
-        Example image: ![Topic Image](https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=400)
-        You have vision capabilities and can understand images provided via OCR or visual analysis.`
+      role: "system",
+      content: `You are 'Professor', a wise and encouraging tutor specializing in West African exams (WAEC, JAMB, NECO).
+      Your goal is to help students understand difficult concepts, solve math problems, and prepare for their exams.
+      Be concise, use local context where appropriate for Nigerian students, and always be supportive.
+      When explaining topics, use a simplified method and clear step-by-step reasoning.`
     }
   ];
 
   if (initialContext) {
     history.push({ role: "user", content: `CONTEXT FOR RESEARCH: ${initialContext}` });
-    history.push({ role: "assistant", content: "I've analyzed the question and explanation. I'm ready to 'Dive Deep' and help you master this topic. What would you like to explore first? I can provide diagrams, prove concepts, or explain specific steps." });
+    history.push({
+      role: "assistant",
+      content: "I've analyzed the question and explanation. I'm ready to help you master this topic."
+    });
   }
 
   return {
     sendMessage: async (message: string, imageBase64?: string) => {
-      let content: any = message;
+      // Professor is browser-bridged to the student's own Gemini session.
+      // No Gemini API key or SphereLearn AI inference is used here.
+      const promptParts = [
+        "You are helping a Nigerian student prepare for WAEC, JAMB, or NECO.",
+        "Act as Professor: explain clearly, use simple step-by-step reasoning, and focus on teaching rather than just giving an answer.",
+      ];
+
+      if (initialContext) {
+        promptParts.push(`Question/context from Examply: ${initialContext}`);
+      }
+
+      const previousMessages = history
+        .filter((item) => item.role === "user" || item.role === "assistant")
+        .slice(-8)
+        .map((item) => `${item.role === "user" ? "Student" : "Professor"}: ${typeof item.content === "string" ? item.content : ""}`)
+        .filter(Boolean);
+
+      if (previousMessages.length > 0) {
+        promptParts.push("Relevant conversation context:", previousMessages.join("\\n"));
+      }
+
+      promptParts.push(`Student's new question: ${message}`);
 
       if (imageBase64) {
-        content = [
-          { type: "text", text: message },
-          { type: "image_url", image_url: { url: `data:image/jpeg;base64,${imageBase64}` } }
-        ];
+        promptParts.push(
+          "The student also attached an image in Examply. Ask the student to attach the same image in Gemini because the browser bridge cannot transfer the image automatically."
+        );
       }
 
-      history.push({ role: "user", content });
+      const geminiPrompt = promptParts.join("\\n\\n");
 
-      let responseText = "";
-      let lastError = null;
-
-      // Randomize the order of models for load balancing/variety
-      const shuffledModels = [...PROFESSOR_MODELS].sort(() => Math.random() - 0.5);
-
-      // Failover logic: Try models one by one
-      for (const model of shuffledModels) {
-          try {
-              console.log(`Trying Professor model: ${model}`);
-              const response = await professorOpenAI.chat.completions.create({
-                  model: model,
-                  messages: history as any,
-                  temperature: 0.7,
-                  max_tokens: 1024,
-              });
-              responseText = response.choices[0]?.message?.content || "";
-              if (responseText) break; // Success!
-          } catch (err) {
-              console.warn(`Model ${model} failed, trying next...`, err);
-              lastError = err;
-          }
+      // Open Gemini immediately so mobile browsers are less likely to block the new tab/window.
+      if (typeof window !== "undefined") {
+        window.open("https://gemini.google.com/app", "_blank", "noopener,noreferrer");
       }
 
-      if (!responseText && lastError) {
-          throw lastError;
+      let copied = false;
+      if (typeof navigator !== "undefined" && navigator.clipboard?.writeText) {
+        try {
+          await navigator.clipboard.writeText(geminiPrompt);
+          copied = true;
+        } catch (error) {
+          console.warn("Could not copy the Professor prompt to the clipboard:", error);
+        }
       }
+
+      history.push({ role: "user", content: message });
+
+      const responseText = copied
+        ? "Gemini has been opened in your browser. Your Professor prompt was copied to the clipboard—paste it into Gemini to continue."
+        : "Gemini has been opened in your browser. Copy your question into Gemini to continue.";
 
       history.push({ role: "assistant", content: responseText });
 
