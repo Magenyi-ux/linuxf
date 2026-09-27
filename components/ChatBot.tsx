@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { MessageCircle, X, Send, Bot, User, Minimize2, Maximize2, RotateCcw, Image as ImageIcon, Search } from 'lucide-react';
-import { createTutorChatSession } from '../services/aiService';
+import { createExternalAiSession } from '../services/externalAiService';
 import { trackEvent } from '../services/analytics';
 import { MathText } from './MathText';
 
@@ -25,7 +25,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({
   const [isOverHideZone, setIsOverHideZone] = useState(false);
   const dragRef = useRef<{ startX: number, startY: number, initialX: number, initialY: number } | null>(null);
   const [messages, setMessages] = useState<{ role: 'user' | 'model'; content: string }[]>([
-    { role: 'model', content: "Hello! I'm **Professor**, your AI study tutor. How can I help you prepare for your exams today?" }
+    { role: 'model', content: "Hello! I can help you prepare a question for an external AI assistant." }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -40,16 +40,16 @@ export const ChatBot: React.FC<ChatBotProps> = ({
         setIsOpen(true);
         setIsMinimized(false);
         setMessages([
-            { role: 'model', content: "Initializing deep research mode... analyzing your question context." }
+            { role: 'model', content: "Preparing your question for an external AI assistant..." }
         ]);
-        chatSessionRef.current = createTutorChatSession(context);
+        chatSessionRef.current = createExternalAiSession(context);
         setIsLoading(true);
 
         // Mocking the initial response from the new session
         setTimeout(() => {
             setMessages(prev => [
                 ...prev,
-                { role: 'model', content: "I've analyzed the question and explanation. I'm ready to **'Dive Deep'** and help you master this topic. I can provide diagrams, prove concepts, or explain specific steps. What would you like to explore first?" }
+                { role: 'model', content: "Your question context is ready. Send a message to open the external AI assistant." }
             ]);
             setIsLoading(false);
         }, 1500);
@@ -197,7 +197,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({
       setMessages(prev => [...prev, { role: 'model', content: responseText }]);
     } catch (error) {
       console.error("Chat failed:", error);
-      setMessages(prev => [...prev, { role: 'model', content: "Sorry, I'm having trouble connecting right now. Please check your internet or try again later." }]);
+      setMessages(prev => [...prev, { role: 'model', content: "The external AI assistant could not be opened. Please check your browser and try again." }]);
     } finally {
       setIsLoading(false);
     }
@@ -235,7 +235,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({
             <MessageCircle className="w-8 h-8" />
             {!isDragging && (
                 <span className="absolute right-full mr-4 bg-gray-900 text-white px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                    Ask Professor
+                    Ask AI
                 </span>
             )}
         </button>
@@ -273,10 +273,10 @@ export const ChatBot: React.FC<ChatBotProps> = ({
                 <Bot className="w-5 h-5" />
             </div>
             <div>
-                <h3 className="font-black text-sm">Professor</h3>
+                <h3 className="font-black text-sm">AI Assistant</h3>
                 <div className="flex items-center gap-1.5">
                     <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-[10px] font-bold opacity-80 uppercase tracking-widest">Always Learning</span>
+                    <span className="text-[10px] font-bold opacity-80 uppercase tracking-widest">External AI</span>
                 </div>
             </div>
         </div>
@@ -358,7 +358,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                        placeholder="Ask or upload an image..."
+                        placeholder="Ask a question..."
                         className="w-full pl-5 pr-14 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:bg-white outline-none transition-all text-sm font-medium"
                     />
                     <button
