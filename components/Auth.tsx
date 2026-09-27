@@ -19,7 +19,7 @@ const friendlyAuthError = (error: unknown): string => {
 };
 
 export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
-  const { user, profile, signIn, signUp } = useAuth();
+  const { user, profile, signIn, signUp, sendPasswordResetEmail } = useAuth();
   const [mode, setMode] = useState<'SIGN_IN' | 'SIGN_UP'>('SIGN_IN');
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -27,6 +27,7 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
   const [loading, setLoading] = useState(false);
+  const [resetLoading, setResetLoading] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -154,6 +155,31 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
               {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
             </button>
           </div>
+
+          {mode === 'SIGN_IN' && (
+            <div className="flex justify-end -mt-2">
+              <button
+                type="button"
+                disabled={resetLoading || loading || !formData.email.trim()}
+                onClick={async () => {
+                  setError('');
+                  setNotice('');
+                  setResetLoading(true);
+                  try {
+                    await sendPasswordResetEmail(formData.email);
+                    setNotice('Password reset email sent. Open the email and follow the link to change your password.');
+                  } catch (resetError) {
+                    setError(friendlyAuthError(resetError));
+                  } finally {
+                    setResetLoading(false);
+                  }
+                }}
+                className="text-sm font-bold text-primary-600 hover:underline disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {resetLoading ? 'Sending reset email...' : 'Forgot password?'}
+              </button>
+            </div>
+          )}
 
           <button type="submit" disabled={loading} className="w-full py-4 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-xl shadow-primary-500/30 transition-all flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed group">
             {loading ? <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" /> : <>{mode === 'SIGN_IN' ? 'SIGN IN' : 'CREATE ACCOUNT'}<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></>}
