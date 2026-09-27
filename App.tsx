@@ -661,8 +661,7 @@ const AppShell: React.FC = () => {
                     <DownloadCloud className="w-5 h-5 text-emerald-400" />
                   </div>
                   <div className="text-left">
-                    <div className="text-[10px] font-black uppercase tracking-widest text-gray-400 leading-none mb-1">Android App</div>
-                    <div className="text-sm">Download APK {apkMetadata?.version && `v${apkMetadata.version}`}</div>
+                    <div className="text-sm">DOWNLOAD EXAMPLY</div>
                   </div>
                 </a>
                 <button 
