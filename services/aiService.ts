@@ -1,6 +1,7 @@
 import OpenAI from "openai";
 import { ExamType, Subject, Question } from "../types";
 import { getQuestionsFromIcnApi } from "./icnQuestionApi";
+import { attachSupabaseExplanations } from "./explanationService";
 
 const openai = new OpenAI({
     apiKey: 'pk-this-is-a-placeholder-the-proxy-handles-auth',
@@ -81,7 +82,7 @@ export const fetchExamQuestions = async (
   // 1. Try the GitHub-hosted question bank. The loader caches successful downloads for offline use.
   const localQuestions = await getQuestionsFromIcnApi(examType, subject, year, count);
   if (localQuestions && localQuestions.questions.length > 0) {
-      return localQuestions;
+      const questionsWithSupabaseExplanations = await attachSupabaseExplanations(\n          localQuestions.questions,\n          examType,\n          subject,\n          year\n      );\n      return { ...localQuestions, questions: questionsWithSupabaseExplanations };
   }
 
   // If no local pack is available, use the configured server-side AI proxy.
