@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import './index.css';
 import 'katex/dist/katex.min.css';
 import { initPostHog } from './services/posthogClient';
+import { AuthGate } from './components/AuthGate';
 
 initPostHog();
 
@@ -14,7 +14,7 @@ if (!rootElement) {
 
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
-    <App />
+    <AuthGate />
   </React.StrictMode>
 );
 
