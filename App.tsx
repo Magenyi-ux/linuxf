@@ -7,7 +7,6 @@ import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
 import { Profile } from './components/Profile';
 import { AdminDashboard } from './components/AdminDashboard';
-import { ChatBot } from './components/ChatBot';
 import { Auth } from './components/Auth';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
@@ -119,6 +118,40 @@ const AppShell: React.FC = () => {
       return false;
     }
   });
+  const [deferredInstallPrompt, setDeferredInstallPrompt] = useState<any>(null);
+  const [isInstalled, setIsInstalled] = useState(false);
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (event: Event) => {
+      event.preventDefault();
+      setDeferredInstallPrompt(event);
+    };
+
+    const handleAppInstalled = () => {
+      setIsInstalled(true);
+      setDeferredInstallPrompt(null);
+    };
+
+    setIsInstalled(
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (window.navigator as any).standalone === true
+    );
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    window.addEventListener('appinstalled', handleAppInstalled);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      window.removeEventListener('appinstalled', handleAppInstalled);
+    };
+  }, []);
+
+  const handleInstallApp = async () => {
+    if (!deferredInstallPrompt) return;
+    deferredInstallPrompt.prompt();
+    await deferredInstallPrompt.userChoice;
+    setDeferredInstallPrompt(null);
+  };
 
   const offlineStudySurface = offlineDarkMode && !['AUTH', 'ADMIN', 'PROFILE'].includes(screen);
 
@@ -534,6 +567,15 @@ const AppShell: React.FC = () => {
              >
                 My Library
              </button>
+             {isLoggedIn && deferredInstallPrompt && !isInstalled && (
+               <button
+                  onClick={handleInstallApp}
+                  className="flex items-center gap-2 px-4 py-2.5 bg-primary-50 text-primary-700 rounded-xl text-sm font-bold hover:bg-primary-100 transition-all border border-primary-100"
+                  title="Install Examply on your home screen"
+               >
+                  <DownloadCloud className="w-4 h-4" /> Install App
+               </button>
+             )}
              <button
                 onClick={() => setOfflineDarkMode((previous) => !previous)}
                 className={`inline-flex items-center justify-center w-9 h-9 rounded-xl border transition-colors ${offlineStudySurface ? 'bg-slate-800 border-slate-700 text-amber-300' : 'bg-gray-50 border-gray-100 text-gray-500 hover:text-primary-600'}`}
@@ -574,6 +616,16 @@ const AppShell: React.FC = () => {
           </div>
 
           <div className="md:hidden flex items-center gap-2">
+            {isLoggedIn && deferredInstallPrompt && !isInstalled && (
+              <button
+                onClick={handleInstallApp}
+                className="p-2.5 rounded-xl bg-primary-600 text-white shadow-lg shadow-primary-500/20"
+                title="Install Examply on your home screen"
+                aria-label="Install Examply on your home screen"
+              >
+                <DownloadCloud className="w-5 h-5" />
+              </button>
+            )}
             <button
               onClick={() => setOfflineDarkMode((previous) => !previous)}
               className={`p-2.5 rounded-xl relative border transition-colors ${offlineStudySurface ? 'bg-slate-800 border-slate-700 text-amber-300' : 'bg-gray-50 border-gray-100 text-gray-600'}`}
@@ -1057,13 +1109,6 @@ const AppShell: React.FC = () => {
           />
         )}
       </main>
-
-      <ChatBot
-        showChatBot={userProfile.showChatBot !== false}
-        savedPosition={userProfile.chatBotPosition}
-        onPositionChange={(pos) => setUserProfile(prev => ({ ...prev, chatBotPosition: pos }))}
-        onHide={() => setUserProfile(prev => ({ ...prev, showChatBot: false }))}
-      />
 
       {/* Library Modal */}
       {showLibrary && (
