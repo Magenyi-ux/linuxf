@@ -110,6 +110,12 @@ const AppShell: React.FC = () => {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [referralSummary, setReferralSummary] = useState<ReferralSummary | null>(null);
+  const [cloudProgress, setCloudProgress] = useState({
+    xp: 0,
+    attempted: 0,
+    correct: 0,
+    streak: 0,
+  });
   const [apkMetadata, setApkMetadata] = useState<{ version: string; updatedAt: string } | null>(null);
   const [offlineDarkMode, setOfflineDarkMode] = useState(() => {
     try {
@@ -332,10 +338,12 @@ const AppShell: React.FC = () => {
           setBooks(mergedBooks);
         }
 
+        setCloudProgress(totals);
         setUserProfile((previous) => ({
           ...previous,
-          xp: Math.max(previous.xp, totals.xp),
-          level: Math.floor(Math.max(previous.xp, totals.xp) / 1000) + 1,
+          xp: totals.xp,
+          level: Math.floor(totals.xp / 1000) + 1,
+          streak: totals.streak,
         }));
       } catch (error) {
         console.warn('Progress sync deferred until the next connection:', error);
@@ -598,7 +606,7 @@ const AppShell: React.FC = () => {
       console.warn('Supabase sign-out failed:', error);
     }
     localStorage.removeItem('waExamPrep_session');
-    setIsLoggedIn(false);
+    setCloudProgress({ xp: 0, attempted: 0, correct: 0, streak: 0 });
     setUserProfile({
       level: 1,
       xp: 0,
@@ -1095,6 +1103,7 @@ const AppShell: React.FC = () => {
                 user={userProfile}
                 books={books}
                 isLoggedIn={isLoggedIn}
+                cloudProgress={cloudProgress}
                 onDeleteBook={deleteBook}
                 onBack={resetApp}
                 onLogout={handleLogout}
@@ -1183,7 +1192,6 @@ const AppShell: React.FC = () => {
           <Auth
             onAuthComplete={(profile) => {
               setUserProfile(profile);
-              setIsLoggedIn(true);
               setScreen('HOME');
             }}
             onBack={() => setScreen('HOME')}
