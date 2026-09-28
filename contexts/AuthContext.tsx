@@ -64,11 +64,24 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
     }
 
     if (!navigator.onLine) {
-      // A signed-in Supabase session is persisted locally. Do not make a profile
-      // request while offline; the cached session is enough to enter the app.
+      // Offline entry is allowed only for a browser that previously completed
+      // a real sign-in and received an offline session marker.
+      if (!hasOfflineSession(nextSession.user.id)) {
+        setSession(null);
+        setProfile(null);
+        void supabase.auth.signOut({ scope: 'local' });
+        return;
+      }
+
+      // Do not make a profile request while offline; the cached session is enough
+      // to enter the app and continue using locally cached study content.
       setProfile(buildProfile(nextSession.user));
       return;
     }
+
+    // A session restored while online is a valid opportunity to create/migrate
+    // the offline marker for users who were already signed in before this feature.
+    activateOfflineSession(nextSession.user.id);
 
     try {
       const row = await getProfileRow(nextSession.user.id);
