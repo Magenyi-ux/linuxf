@@ -9,7 +9,14 @@ export async function attachSupabaseExplanations(
   subject: Subject,
   year: string
 ): Promise<Question[]> {
-  // Explanations are already bundled with the cached ICN question data.\n  // Never wait on Supabase while the learner is offline.\n  if (!navigator.onLine || !isSupabaseConfigured || questions.length === 0 || !/^\d{4}$/.test(year)) {
+  // Explanations are already bundled with the cached ICN question data.
+  // Never wait on Supabase while the learner is offline.
+  if (
+    !navigator.onLine ||
+    !isSupabaseConfigured ||
+    questions.length === 0 ||
+    !/^\d{4}$/.test(year)
+  ) {
     return questions;
   }
 
@@ -20,20 +27,32 @@ export async function attachSupabaseExplanations(
     .eq("subject", subject)
     .eq("exam_type", examType)
     .eq("exam_year", numericYear)
-    .in("question_text", questions.map((question) => question.text));
+    .in(
+      "question_text",
+      questions.map((question) => question.text)
+    );
 
   if (error) {
-    console.warn("Supabase explanations unavailable; keeping ICN explanations:", error.message);
+    console.warn(
+      "Supabase explanations unavailable; keeping ICN explanations:",
+      error.message
+    );
     return questions;
   }
 
   const explanationByQuestion = new Map(
     (data ?? [])
-      .filter((row) => typeof row.explanation === "string" && row.explanation.trim().length >= 20)
+      .filter(
+        (row) =>
+          typeof row.explanation === "string" &&
+          row.explanation.trim().length >= 20
+      )
       .map((row) => [normalize(row.question_text), row.explanation.trim()])
   );
 
-  if (explanationByQuestion.size === 0) return questions;
+  if (explanationByQuestion.size === 0) {
+    return questions;
+  }
 
   return questions.map((question) => {
     const explanation = explanationByQuestion.get(normalize(question.text));
