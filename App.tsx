@@ -10,7 +10,7 @@ import { AdminDashboard } from './components/AdminDashboard';
 import { Auth } from './components/Auth';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
-import { getRemoteAchievementKeys, getRemoteProgressTotals, syncUserData } from './services/syncService';
+import { deleteRemoteStudyPack, getRemoteAchievementKeys, getRemoteProgressTotals, getRemoteStudyPacks, syncUserData, upsertRemoteStudyPack } from './services/syncService';
 import { fetchExamQuestions } from './services/questionService';
 import { trackEvent } from './services/analytics';
 import { captureReferralKeyFromUrl, fetchMyReferralSummary, type ReferralSummary } from './services/referralService';
@@ -254,9 +254,10 @@ const AppShell: React.FC = () => {
     const reconcile = async () => {
       try {
         await syncUserData(supabaseUser.id);
-        const [totals, remoteAchievementKeys] = await Promise.all([
+        const [totals, remoteAchievementKeys, remotePacks] = await Promise.all([
           getRemoteProgressTotals(supabaseUser.id),
           getRemoteAchievementKeys(supabaseUser.id),
+          getRemoteStudyPacks(supabaseUser.id),
         ]);
         if (!active) return;
 
@@ -264,6 +265,54 @@ const AppShell: React.FC = () => {
         const localAchievementKeys = JSON.parse(localStorage.getItem(achievementStorageKey) || '[]') as string[];
         const mergedAchievementKeys = Array.from(new Set([...localAchievementKeys, ...remoteAchievementKeys]));
         localStorage.setItem(achievementStorageKey, JSON.stringify(mergedAchievementKeys));
+
+        // Restore cloud-saved study packs on a new phone. Question content is fetched
+        // from the same question service, while scores/attempt counts come from Supabase.
+        if (remotePacks.length > 0) {
+          const localBookKey = `waExamPrep_books_${authProfile?.email || supabaseUser.email || supabaseUser.id}`;
+          const existingBooks = JSON.parse(localStorage.getItem(localBookKey) || '{}') as Record<string, Book>;
+          const mergedBooks = { ...existingBooks };
+
+          for (const remotePack of remotePacks) {
+            const existing = mergedBooks[remotePack.packId];
+            if (existing) {
+              mergedBooks[remotePack.packId] = {
+                ...existing,
+                bestScore: Math.max(existing.bestScore || 0, remotePack.bestScore),
+                lastScore: remotePack.lastScore,
+                attempts: Math.max(existing.attempts || 0, remotePack.attempts),
+                dateCreated: Math.min(existing.dateCreated || remotePack.dateCreated, remotePack.dateCreated),
+              };
+              continue;
+            }
+
+            try {
+              const result = await fetchExamQuestions(
+                remotePack.examType as ExamType,
+                remotePack.subject as Subject,
+                String(remotePack.examYear),
+                remotePack.examType === ExamType.JAMB && remotePack.subject === Subject.ENGLISH ? 60 : 50
+              );
+              mergedBooks[remotePack.packId] = {
+                id: remotePack.packId,
+                examType: remotePack.examType as ExamType,
+                subject: remotePack.subject as Subject,
+                year: String(remotePack.examYear),
+                questions: result.questions,
+                sources: result.sources,
+                dateCreated: remotePack.dateCreated,
+                bestScore: remotePack.bestScore,
+                lastScore: remotePack.lastScore,
+                attempts: remotePack.attempts,
+              };
+            } catch (error) {
+              console.warn(`Could not restore study pack ${remotePack.packId} yet:`, error);
+            }
+          }
+
+          localStorage.setItem(localBookKey, JSON.stringify(mergedBooks));
+          setBooks(mergedBooks);
+        }
 
         setUserProfile((previous) => ({
           ...previous,
@@ -328,6 +377,19 @@ const AppShell: React.FC = () => {
       setBooks(newBooks);
       const bookKey = isLoggedIn && userProfile.email ? `waExamPrep_books_${userProfile.email}` : 'waExamPrep_books';
       localStorage.setItem(bookKey, JSON.stringify(newBooks));
+
+      if (supabaseUser) {
+        void upsertRemoteStudyPack(supabaseUser.id, {
+          packId: book.id,
+          examType: String(book.examType),
+          subject: String(book.subject),
+          examYear: Number(book.year),
+          bestScore: book.bestScore || 0,
+          lastScore: book.lastScore || 0,
+          attempts: book.attempts || 0,
+          dateCreated: book.dateCreated,
+        }).catch((error) => console.warn('Study pack cloud sync deferred:', error));
+      }
     } catch (e) {
       alert("Storage Full! Your device storage is full. Please delete some old question packs from the Library to save new ones.");
     }
@@ -338,6 +400,9 @@ const AppShell: React.FC = () => {
     setBooks(rest);
     const bookKey = isLoggedIn && userProfile.email ? `waExamPrep_books_${userProfile.email}` : 'waExamPrep_books';
     localStorage.setItem(bookKey, JSON.stringify(rest));
+    if (supabaseUser) {
+      void deleteRemoteStudyPack(supabaseUser.id, bookId).catch((error) => console.warn('Study pack cloud delete deferred:', error));
+    }
   };
 
   const getBookId = (exam: ExamType, subject: Subject, year: string) => `${exam}-${subject}-${year}`;
