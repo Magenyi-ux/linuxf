@@ -5,10 +5,13 @@
 export function cleanQuestionText(value: string): string {
   let cleaned = value.trim();
 
-  // Remove one or more bracketed metadata labels at the beginning, e.g.
-  // [Practice item 10] [JAMB 2026 practice variant]
-  while (/^\s*\[[^\]]+\]\s*/.test(cleaned)) {
-    cleaned = cleaned.replace(/^\s*\[[^\]]+\]\s*/, "");
+  // Practice-bank metadata is for internal/source labeling only. Never show
+  // labels such as "[Practice item 37]" or "[NECO 2024 practice variant]"
+  // in the question presented to the learner.
+  const metadataPrefix = /^\s*\[(?:Practice\s+item\s+\d+|(?:JAMB|WAEC|NECO)\s+\d{4}\s+practice\s+variant)\]\s*/i;
+
+  while (metadataPrefix.test(cleaned)) {
+    cleaned = cleaned.replace(metadataPrefix, "");
   }
 
   // Also handle legacy unbracketed prefixes.
