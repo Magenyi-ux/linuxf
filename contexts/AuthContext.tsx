@@ -4,6 +4,7 @@ import type { UserProfile } from '../types';
 import { isSupabaseConfigured, supabase } from '../services/supabaseClient';
 import { capturePostHogEvent } from '../services/posthogClient';
 import { attributeStoredReferral } from '../services/referralService';
+import { activateOfflineSession, clearOfflineSession, hasOfflineSession } from '../services/offlineSession';
 
 interface ProfileRow {
   id: string;
@@ -62,6 +63,13 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
       return;
     }
 
+    if (!navigator.onLine) {
+      // A signed-in Supabase session is persisted locally. Do not make a profile
+      // request while offline; the cached session is enough to enter the app.
+      setProfile(buildProfile(nextSession.user));
+      return;
+    }
+
     try {
       const row = await getProfileRow(nextSession.user.id);
       setProfile(buildProfile(nextSession.user, row));
@@ -107,6 +115,7 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
       if (!isSupabaseConfigured) throw new Error('Authentication is not configured yet.');
       const { data, error } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
       if (error) throw error;
+      if (data.user) activateOfflineSession(data.user.id);
       const row = await getProfileRow(data.user.id).catch((profileError) => {
         console.warn('Could not load profile immediately after sign-in:', profileError);
         return null;
@@ -134,6 +143,7 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
       });
       if (error) throw error;
       if (!data.session || !data.user) return { needsEmailConfirmation: true };
+      activateOfflineSession(data.user.id);
 
       const row = await getProfileRow(data.user.id).catch((profileError) => {
         console.warn('Could not load profile immediately after sign-up:', profileError);
@@ -148,8 +158,9 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
     },
     signOut: async () => {
       if (!isSupabaseConfigured) return;
-      const { error } = await supabase.auth.signOut();
+      const { error } = await supabase.auth.signOut({ scope: 'local' });
       if (error) throw error;
+      clearOfflineSession();
       capturePostHogEvent('sign_out');
     },
     refreshProfile: async () => {
