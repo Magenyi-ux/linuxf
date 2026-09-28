@@ -9,7 +9,7 @@ export async function attachSupabaseExplanations(
   subject: Subject,
   year: string
 ): Promise<Question[]> {
-  if (!isSupabaseConfigured || questions.length === 0 || !/^\d{4}$/.test(year)) {
+  // Explanations are already bundled with the cached ICN question data.\n  // Never wait on Supabase while the learner is offline.\n  if (!navigator.onLine || !isSupabaseConfigured || questions.length === 0 || !/^\d{4}$/.test(year)) {
     return questions;
   }
 
