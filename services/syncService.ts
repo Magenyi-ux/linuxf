@@ -14,6 +14,23 @@ export interface SyncResult {
 }
 
 const sendItem = async (item: OfflineQueueItem): Promise<void> => {
+  if (item.kind === 'question_attempt') {
+    const { error } = await supabase.rpc('record_question_attempt', {
+      p_id: item.id,
+      p_user_id: item.userId,
+      p_question_id: item.payload.questionId,
+      p_subject_id: item.payload.subjectId,
+      p_topic_id: item.payload.topicId,
+      p_answer: item.payload.answer,
+      p_correct: item.payload.correct,
+      p_attempted_at: item.payload.attemptedAt,
+      p_version: item.payload.version,
+      p_updated_at: item.payload.attemptedAt,
+    });
+    if (error) throw error;
+    return;
+  }
+
   if (item.kind === 'progress') {
     const { error } = await supabase.rpc('record_progress_event', {
       p_event_id: item.id,
