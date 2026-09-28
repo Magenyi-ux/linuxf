@@ -20,6 +20,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string | number, number>>({});
   const [showExplanation, setShowExplanation] = useState(false);
+  const [jumpInput, setJumpInput] = useState('1');
 
   const currentQuestion = questions[currentIndex];
   const totalQuestions = questions.length;
@@ -31,10 +32,27 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     if (mode === 'STUDY') setShowExplanation(true);
   };
 
+  const goToQuestion = (questionNumber: number) => {
+    if (!Number.isInteger(questionNumber) || questionNumber < 1 || questionNumber > totalQuestions) return;
+    const nextIndex = questionNumber - 1;
+    setCurrentIndex(nextIndex);
+    setJumpInput(String(questionNumber));
+    setShowExplanation(answers[questions[nextIndex]?.id] !== undefined);
+  };
+
+  const handleJumpSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    const questionNumber = Number(jumpInput);
+    if (Number.isInteger(questionNumber) && questionNumber >= 1 && questionNumber <= totalQuestions) {
+      goToQuestion(questionNumber);
+    } else {
+      setJumpInput(String(currentIndex + 1));
+    }
+  };
+
   const handleNext = () => {
     if (currentIndex < totalQuestions - 1) {
-      setCurrentIndex(prev => prev + 1);
-      setShowExplanation(false);
+      goToQuestion(currentIndex + 2);
     } else {
       let score = 0;
       questions.forEach(q => {
@@ -74,13 +92,30 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
         <button onClick={onBack} className="p-2 sm:p-2.5 bg-white border border-gray-200 rounded-xl text-gray-400 hover:text-primary-600 transition-all">
           <ArrowLeft className="w-5 h-5" />
         </button>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center min-w-0">
           <span className="text-[9px] sm:text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-0.5">
             {mode === 'STUDY' ? 'Study Mode' : 'Practice Test'}
           </span>
-          <div className="bg-white px-4 py-1 sm:px-5 sm:py-1.5 rounded-full border border-gray-100 shadow-sm font-bold text-gray-900 text-base sm:text-lg">
-            {currentIndex + 1} <span className="text-gray-300 mx-1">/</span> {totalQuestions}
-          </div>
+          <form onSubmit={handleJumpSubmit} className="flex items-center gap-1.5">
+            <input
+              aria-label="Go to question number"
+              type="number"
+              min={1}
+              max={totalQuestions}
+              value={jumpInput}
+              onChange={(event) => setJumpInput(event.target.value)}
+              onFocus={(event) => event.currentTarget.select()}
+              className="w-16 sm:w-20 bg-white px-2 py-1 sm:py-1.5 rounded-lg border border-gray-200 shadow-sm font-bold text-gray-900 text-center text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-primary-200 focus:border-primary-500"
+            />
+            <span className="text-gray-300 font-bold">/</span>
+            <span className="font-bold text-gray-500 text-sm sm:text-base">{totalQuestions}</span>
+            <button
+              type="submit"
+              className="px-2.5 py-1.5 bg-primary-600 text-white rounded-lg text-xs sm:text-sm font-bold hover:bg-primary-700 transition-colors"
+            >
+              Go
+            </button>
+          </form>
         </div>
         <div className="w-9 sm:w-12" />
       </div>
