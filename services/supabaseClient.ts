@@ -10,34 +10,30 @@ if (!supabaseUrl || !supabaseAnonKey) {
 }
 
 /**
- * The anon/publishable key is safe for browser use only when RLS is enabled on
- * every user-data table. A service_role key must never be bundled here.
+ * Supabase Auth uses browser localStorage so the full session survives PWA
+ * reloads reliably. Cookie storage can exceed browser cookie size limits for
+ * Supabase sessions and can silently lose the session on reload.
  */
-// Custom cookie-based storage for 14-day persistence and cross-subdomain support
-const cookieStorage = {
+const authStorage = {
   getItem: (key: string) => {
-    const name = key + "=";
-    const decodedCookie = decodeURIComponent(document.cookie);
-    const ca = decodedCookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) === ' ') c = c.substring(1);
-      if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+    try {
+      return window.localStorage.getItem(key);
+    } catch {
+      return null;
     }
-    return null;
   },
   setItem: (key: string, value: string) => {
-    const date = new Date();
-    // Let Supabase Auth control session validity; the browser storage must not\n    // expire first, otherwise a user can lose offline access while the Auth\n    // session itself is still valid.\n    date.setTime(date.getTime() + (10 * 365 * 24 * 60 * 60 * 1000)); // ~10 years
-    const expires = "; expires=" + date.toUTCString();
-    // Use domain: ".spherelearn.name.ng" to allow cross-subdomain auth if needed
-    const domain = window.location.hostname.includes('spherelearn.name.ng') ? "; domain=.spherelearn.name.ng" : "";
-    document.cookie = key + "=" + (value || "") + expires + "; path=/" + domain + "; SameSite=Lax; Secure";
+    try {
+      window.localStorage.setItem(key, value);
+    } catch (error) {
+      console.error('Could not persist Supabase session:', error);
+    }
   },
   removeItem: (key: string) => {
-    document.cookie = key + "=; Max-Age=-99999999; path=/; SameSite=Lax; Secure";
-    if (window.location.hostname.includes('spherelearn.name.ng')) {
-      document.cookie = key + "=; Max-Age=-99999999; path=/; domain=.spherelearn.name.ng; SameSite=Lax; Secure";
+    try {
+      window.localStorage.removeItem(key);
+    } catch {
+      // Ignore storage cleanup failures.
     }
   },
 };
@@ -51,7 +47,7 @@ export const supabase = createClient(
       autoRefreshToken: true,
       detectSessionInUrl: true,
       storageKey: 'examply-supabase-auth',
-      storage: cookieStorage,
+      storage: authStorage,
     },
   }
 );
