@@ -15,6 +15,12 @@ interface ProfileProps {
   onLogin: () => void;
   onUpdateSettings: (settings: Partial<UserProfile>) => void;
   referralSummary?: ReferralSummary | null;
+  cloudProgress?: {
+    xp: number;
+    attempted: number;
+    correct: number;
+    streak: number;
+  };
 }
 
 export const Profile: React.FC<ProfileProps> = ({
@@ -27,11 +33,16 @@ export const Profile: React.FC<ProfileProps> = ({
   onDeleteAccount,
   onLogin,
   onUpdateSettings,
-  referralSummary
+  referralSummary,
+  cloudProgress
 }) => {
   const bookList = Object.values(books).sort((a, b) => b.dateCreated - a.dateCreated);
   const totalQuestions = bookList.reduce((acc, b) => acc + b.questions.length, 0);
-  const totalAttempts = bookList.reduce((acc, b) => acc + (b.attempts || 0), 0);
+  const localAttempts = bookList.reduce((acc, b) => acc + (b.attempts || 0), 0);
+  const totalAttempts = isLoggedIn ? (cloudProgress?.attempted ?? 0) : localAttempts;
+  const totalCorrect = isLoggedIn ? (cloudProgress?.correct ?? 0) : 0;
+  const totalXp = isLoggedIn ? (cloudProgress?.xp ?? user.xp) : user.xp;
+  const currentStreak = isLoggedIn ? (cloudProgress?.streak ?? user.streak) : user.streak;
 
   return (
     <div className="animate-fade-in max-w-4xl mx-auto pb-12">
@@ -62,10 +73,10 @@ export const Profile: React.FC<ProfileProps> = ({
             {user.level}
           </div>
           <h2 className="text-2xl font-black text-gray-900 mb-1">Scholar Level {user.level}</h2>
-          <p className="text-gray-400 font-bold text-xs uppercase tracking-widest mb-6">{user.xp} Total XP</p>
+          <p className="text-gray-400 font-bold text-xs uppercase tracking-widest mb-6">{totalXp} Total XP</p>
 
           <div className="w-full bg-gray-100 h-3 rounded-full overflow-hidden mb-8">
-            <div className="bg-primary-600 h-full transition-all duration-1000" style={{ width: `${(user.xp % 1000) / 10}%` }}></div>
+            <div className="bg-primary-600 h-full transition-all duration-1000" style={{ width: `${(totalXp % 1000) / 10}%` }}></div>
           </div>
 
           <div className="grid grid-cols-3 gap-4 w-full">
@@ -73,7 +84,7 @@ export const Profile: React.FC<ProfileProps> = ({
               <div className="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-500 mb-2">
                 <Flame className="w-6 h-6" />
               </div>
-              <span className="text-xl font-black text-gray-900">{user.streak}</span>
+              <span className="text-xl font-black text-gray-900">{currentStreak}</span>
               <span className="text-[10px] font-bold text-gray-400 uppercase">Streak</span>
             </div>
             <div className="flex flex-col items-center">
@@ -81,16 +92,16 @@ export const Profile: React.FC<ProfileProps> = ({
                 <Target className="w-6 h-6" />
               </div>
               <span className="text-xl font-black text-gray-900">{totalAttempts}</span>
-              <span className="text-[10px] font-bold text-gray-400 uppercase">Sessions</span>
+              <span className="text-[10px] font-bold text-gray-400 uppercase">Answered</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 bg-green-50 rounded-2xl flex items-center justify-center text-green-500 mb-2">
                 <Trophy className="w-6 h-6" />
               </div>
               <span className="text-xl font-black text-gray-900">
-                {bookList.filter(b => b.bestScore && b.bestScore === b.questions.length).length}
+                {isLoggedIn ? totalCorrect : bookList.filter(b => b.bestScore && b.bestScore === b.questions.length).length}
               </span>
-              <span className="text-[10px] font-bold text-gray-400 uppercase">Perfect</span>
+              <span className="text-[10px] font-bold text-gray-400 uppercase">Correct</span>
             </div>
           </div>
         </div>
