@@ -1,0 +1,1 @@
+Vercel deployment trigger for the latest main branch. This file is intentionally harmless and can be removed after deployment verification.
