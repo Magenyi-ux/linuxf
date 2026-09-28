@@ -169,24 +169,23 @@ export const getRemoteStudyPacks = async (userId: string): Promise<RemoteStudyPa
   }));
 };
 
-export const getRemoteProgressTotals = async (userId: string): Promise<{
+export interface RemoteProgressTotals {
   xp: number;
   attempted: number;
   correct: number;
-}> => {
-  const { data, error } = await supabase
-    .from('user_progress')
-    .select('questions_attempted, questions_correct, xp_earned')
-    .eq('user_id', userId);
+  streak: number;
+}
+
+export const getRemoteProgressTotals = async (userId: string): Promise<RemoteProgressTotals> => {
+  const { data, error } = await supabase.rpc('get_my_progress_summary');
 
   if (error) throw error;
 
-  return (data || []).reduce(
-    (totals, row) => ({
-      xp: totals.xp + Number(row.xp_earned || 0),
-      attempted: totals.attempted + Number(row.questions_attempted || 0),
-      correct: totals.correct + Number(row.questions_correct || 0),
-    }),
-    { xp: 0, attempted: 0, correct: 0 }
-  );
+  const summary = (data ?? {}) as Record<string, unknown>;
+  return {
+    xp: Number(summary.xp || 0),
+    attempted: Number(summary.attempted || 0),
+    correct: Number(summary.correct || 0),
+    streak: Number(summary.streak || 0),
+  };
 };
