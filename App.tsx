@@ -577,7 +577,20 @@ const AppShell: React.FC = () => {
           }
         }
 
-        if (navigator.onLine) void syncUserData(supabaseUser.id);
+        if (navigator.onLine) {
+          void syncUserData(supabaseUser.id)
+            .then(async () => {
+              const totals = await getRemoteProgressTotals(supabaseUser.id);
+              setCloudProgress(totals);
+              setUserProfile((previous) => ({
+                ...previous,
+                xp: totals.xp,
+                level: Math.floor(totals.xp / 1000) + 1,
+                streak: totals.streak,
+              }));
+            })
+            .catch((error) => console.warn('Post-practice cloud progress refresh deferred:', error));
+        }
       }
       
       trackEvent('practice_finish', {
