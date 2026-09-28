@@ -109,6 +109,66 @@ export const getRemoteAchievementKeys = async (userId: string): Promise<string[]
     .filter((key): key is string => typeof key === 'string' && key.length > 0);
 };
 
+export interface RemoteStudyPack {
+  packId: string;
+  examType: string;
+  subject: string;
+  examYear: number;
+  bestScore: number;
+  lastScore: number;
+  attempts: number;
+  dateCreated: number;
+}
+
+export const upsertRemoteStudyPack = async (userId: string, pack: RemoteStudyPack): Promise<void> => {
+  const { error } = await supabase.from('user_study_packs').upsert(
+    {
+      user_id: userId,
+      pack_id: pack.packId,
+      exam_type: pack.examType,
+      subject: pack.subject,
+      exam_year: pack.examYear,
+      best_score: pack.bestScore,
+      last_score: pack.lastScore,
+      attempts: pack.attempts,
+      date_created: pack.dateCreated,
+      updated_at: new Date().toISOString(),
+    },
+    { onConflict: 'user_id,pack_id' }
+  );
+  if (error) throw error;
+};
+
+export const deleteRemoteStudyPack = async (userId: string, packId: string): Promise<void> => {
+  const { error } = await supabase
+    .from('user_study_packs')
+    .delete()
+    .eq('user_id', userId)
+    .eq('pack_id', packId);
+  if (error) throw error;
+};
+
+export const getRemoteStudyPacks = async (userId: string): Promise<RemoteStudyPack[]> => {
+  const { data, error } = await supabase
+    .from('user_study_packs')
+    .select('pack_id, exam_type, subject, exam_year, best_score, last_score, attempts, date_created')
+    .eq('user_id', userId)
+    .order('date_created', { ascending: false });
+
+  if (error) throw error;
+
+  return (data ?? []).map((row) => ({
+    packId: String(row.pack_id),
+    examType: String(row.exam_type),
+    subject: String(row.subject),
+    examYear: Number(row.exam_year),
+    bestScore: Number(row.best_score || 0),
+    lastScore: Number(row.last_score || 0),
+    attempts: Number(row.attempts || 0),
+    dateCreated: Number(row.date_created || Date.now()),
+  }));
+};
+
 export const getRemoteProgressTotals = async (userId: string): Promise<{
   xp: number;
   attempted: number;
