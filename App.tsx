@@ -106,7 +106,7 @@ const AppShell: React.FC = () => {
     showChatBot: true,
     chatBotPosition: null
   });
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const isLoggedIn = Boolean(supabaseUser);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [referralSummary, setReferralSummary] = useState<ReferralSummary | null>(null);
@@ -218,7 +218,6 @@ const AppShell: React.FC = () => {
     if (authLoading) return;
 
     if (supabaseUser) {
-      setIsLoggedIn(true);
       if (authProfile) {
         setUserProfile((previous) => ({ ...previous, ...authProfile }));
       } else {
@@ -227,7 +226,6 @@ const AppShell: React.FC = () => {
       return;
     }
 
-    setIsLoggedIn(false);
     setUserProfile((previous) => ({
       ...previous,
       id: undefined,
