@@ -3,6 +3,8 @@ import { Question, Subject, ExamType } from '../types';
 import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search } from 'lucide-react';
 import { MathText } from './MathText';
 import { cleanQuestionText } from '../utils/questionTextPresentation';
+import { useAuth } from '../contexts/AuthContext';
+import { enqueueQuestionAttempt } from '../services/offlineQueue';
 
 interface PracticeSessionProps {
   questions: Question[];
@@ -17,6 +19,7 @@ interface PracticeSessionProps {
 export const PracticeSession: React.FC<PracticeSessionProps> = ({
   questions, sources = [], examType, subject, mode, onFinish, onBack
 }) => {
+  const { user: supabaseUser } = useAuth();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string | number, number>>({});
   const [showExplanation, setShowExplanation] = useState(false);
@@ -29,6 +32,20 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   const handleOptionSelect = (optionIndex: number) => {
     if (answers[currentQuestion.id] !== undefined) return;
     setAnswers(prev => ({ ...prev, [currentQuestion.id]: optionIndex }));
+
+    if (supabaseUser) {
+      const attemptedAt = new Date().toISOString();
+      enqueueQuestionAttempt(supabaseUser.id, {
+        questionId: String(currentQuestion.id),
+        subjectId: String(subject),
+        topicId: null,
+        answer: String.fromCharCode(65 + optionIndex),
+        correct: optionIndex === currentQuestion.correctOptionIndex,
+        attemptedAt,
+        version: 1,
+      });
+    }
+
     if (mode === 'STUDY') setShowExplanation(true);
   };
 
