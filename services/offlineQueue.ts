@@ -12,6 +12,16 @@ export interface AchievementPayload {
   earnedAt: string;
 }
 
+export interface QuestionAttemptPayload {
+  questionId: string;
+  subjectId: string;
+  topicId: string | null;
+  answer: string;
+  correct: boolean;
+  attemptedAt: string;
+  version: number;
+}
+
 export type OfflineQueueItem =
   | {
       id: string;
@@ -26,6 +36,13 @@ export type OfflineQueueItem =
       kind: 'achievement';
       createdAt: string;
       payload: AchievementPayload;
+    }
+  | {
+      id: string;
+      userId: string;
+      kind: 'question_attempt';
+      createdAt: string;
+      payload: QuestionAttemptPayload;
     };
 
 const STORAGE_KEY = 'examply_offline_sync_queue_v1';
@@ -67,6 +84,18 @@ export const enqueueProgress = (userId: string, payload: ProgressPayload): strin
     id: createId(),
     userId,
     kind: 'progress',
+    createdAt: new Date().toISOString(),
+    payload,
+  };
+  writeQueue([...readQueue(), item]);
+  return item.id;
+};
+
+export const enqueueQuestionAttempt = (userId: string, payload: QuestionAttemptPayload): string => {
+  const item: OfflineQueueItem = {
+    id: createId(),
+    userId,
+    kind: 'question_attempt',
     createdAt: new Date().toISOString(),
     payload,
   };
