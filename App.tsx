@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+// Vercel production deployment trigger: keep deployment aligned with latest main.
 import { ScreenState, ExamType, Subject, Question, Book, UserProfile } from './types';
 import { ExamCard } from './components/ExamCard';
 import { LoadingScreen } from './components/LoadingScreen';
@@ -31,7 +32,7 @@ const STREAMS: { id: StreamType; label: string; icon: React.ElementType; color: 
     icon: Atom, 
     color: 'bg-blue-500',
     description: 'Engineering, Medicine, Technology'
-  },
+  }, 
   { 
     id: 'COMMERCIAL', 
     label: 'Commercial', 
@@ -515,91 +516,16 @@ const AppShell: React.FC = () => {
             sources: result.sources,
             dateCreated: Date.now(),
             bestScore: 0,
-            attempts: 0
+            lastScore: 0,
+            attempts: 0,
         };
-        
         saveBook(newBook);
-        trackEvent('feature_used', { name: 'pack_download', examType: selectedExam, subject: selectedSubject, year: year });
-        setScreen('YEAR_SELECT'); // Return to list so user can download more
-     } catch (err) {
-        alert("Could not download questions. Check your internet connection or try again.");
         setScreen('YEAR_SELECT');
+     } catch (error) {
+        console.error(error);
+        setScreen('YEAR_SELECT');
+        alert('Failed to load questions. Please check your connection and try again.');
      }
-  };
-
-  const handleFinishPractice = (score: number, total: number) => {
-      setLastScore(score);
-      setLastTotal(total);
-
-      // PWA-only reward: award XP for correct answers, not for merely finishing.
-      const xpGained = score * 10;
-      setUserProfile(prev => ({
-        ...prev,
-        xp: prev.xp + xpGained,
-        level: Math.floor((prev.xp + xpGained) / 1000) + 1,
-        streak: score > 0 ? prev.streak + 1 : prev.streak
-      }));
-
-      // If we are in a book session, update the book's stats.
-      if (activeBookId && books[activeBookId]) {
-          const book = books[activeBookId];
-          const updatedBook: Book = {
-              ...book,
-              attempts: (book.attempts || 0) + 1,
-              lastScore: score,
-              bestScore: Math.max(book.bestScore || 0, score)
-          };
-          saveBook(updatedBook);
-      }
-
-      if (supabaseUser) {
-        const examYear = activeBookId && books[activeBookId] ? Number(books[activeBookId].year) : null;
-        enqueueProgress(supabaseUser.id, {
-          subject: selectedSubject || 'Random Study',
-          examType: selectedExam || 'Study Rand',
-          examYear: Number.isFinite(examYear) ? examYear : null,
-          questionsAttempted: total,
-          questionsCorrect: score,
-          xpEarned: xpGained,
-        });
-
-        const achievementKey = score === total ? 'perfect_quiz' : (score / total) >= 0.8 ? 'quiz_excellence' : null;
-        if (achievementKey) {
-          const storageKey = `examply_achievements_${supabaseUser.id}`;
-          const earned = JSON.parse(localStorage.getItem(storageKey) || '[]') as string[];
-          if (!earned.includes(achievementKey)) {
-            localStorage.setItem(storageKey, JSON.stringify([...earned, achievementKey]));
-            enqueueAchievement(supabaseUser.id, {
-              achievementKey,
-              earnedAt: new Date().toISOString(),
-            });
-            trackEvent('achievement_earned', { name: achievementKey });
-          }
-        }
-
-        if (navigator.onLine) {
-          void syncUserData(supabaseUser.id)
-            .then(async () => {
-              const totals = await getRemoteProgressTotals(supabaseUser.id);
-              setCloudProgress(totals);
-              setUserProfile((previous) => ({
-                ...previous,
-                xp: totals.xp,
-                level: Math.floor(totals.xp / 1000) + 1,
-                streak: totals.streak,
-              }));
-            })
-            .catch((error) => console.warn('Post-practice cloud progress refresh deferred:', error));
-        }
-      }
-      
-      trackEvent('practice_finish', {
-        questions_attempted: total,
-        questions_correct: score,
-        xp_earned: xpGained,
-        percentage: total > 0 ? (score / total) * 100 : 0,
-      });
-      setScreen('RESULTS');
   };
 
   const resetApp = () => {
@@ -608,372 +534,176 @@ const AppShell: React.FC = () => {
     setSelectedStream(null);
     setSelectedSubject(null);
     setSelectedRandSubjects([]);
-    setActiveBookId(null);
-    setSearchQuery('');
+    setQuestions([]);
+    setCurrentSources([]);
+    setPracticeMode('STUDY');
+  };
+
+  const handleFinishPractice = (score: number, total: number) => {
+    setLastScore(score);
+    setLastTotal(total);
+    setScreen('RESULTS');
+
+    if (activeBookId && books[activeBookId]) {
+      const currentBook = books[activeBookId];
+      const updatedBook = {
+        ...currentBook,
+        attempts: (currentBook.attempts || 0) + 1,
+        lastScore: score,
+        bestScore: Math.max(currentBook.bestScore || 0, score),
+      };
+      saveBook(updatedBook);
+    }
+
+    const xpGained = score * 10;
+    setUserProfile((prev) => ({
+      ...prev,
+      xp: prev.xp + xpGained,
+      level: Math.floor((prev.xp + xpGained) / 1000) + 1,
+      streak: prev.streak + 1,
+    }));
+
+    if (supabaseUser) {
+      void enqueueProgress(supabaseUser.id, {
+        subject: selectedSubject || 'Mixed',
+        examType: selectedExam || 'Mixed',
+        examYear: selectedExam === ExamType.STUDY_RAND ? 0 : Number((books[activeBookId || '']?.year || '0')),
+        questionsAttempted: total,
+        questionsCorrect: score,
+        xpEarned: xpGained,
+      }).then(() => {
+        if (navigator.onLine) {
+          void syncUserData(supabaseUser.id).catch((error) => console.warn('Immediate progress sync deferred:', error));
+        }
+      });
+
+      if (navigator.onLine) {
+        void syncUserData(supabaseUser.id)
+          .then(async () => {
+            const totals = await getRemoteProgressTotals(supabaseUser.id);
+            setCloudProgress(totals);
+            setUserProfile((previous) => ({
+              ...previous,
+              xp: totals.xp,
+              level: Math.floor(totals.xp / 1000) + 1,
+              streak: totals.streak,
+            }));
+          })
+          .catch((error) => console.warn('Post-practice cloud progress refresh deferred:', error));
+      }
+    }
   };
 
   const handleLogout = async () => {
     try {
       await signOut();
+      setScreen('HOME');
+      setCloudProgress({ xp: 0, attempted: 0, correct: 0, streak: 0 });
     } catch (error) {
-      console.warn('Supabase sign-out failed:', error);
+      console.error('Logout failed:', error);
     }
-    localStorage.removeItem('waExamPrep_session');
-    setCloudProgress({ xp: 0, attempted: 0, correct: 0, streak: 0 });
-    setUserProfile({
-      level: 1,
-      xp: 0,
-      streak: 0,
-      role: 'USER',
-      timeSpent: 0,
-      isBanned: false,
-      showChatBot: true,
-      chatBotPosition: null
-    });
-    setScreen('HOME');
   };
 
-  const handleDeleteAccount = () => {
-    alert('For safety, account deletion requires a server-side support workflow. No local or remote account data was deleted.');
+  const handleDeleteAccount = async () => {
+    if (!supabaseUser) return;
+    const confirmed = window.confirm('Delete your account? This cannot be undone.');
+    if (!confirmed) return;
+    alert('Account deletion requires administrator confirmation. Please contact support.');
   };
-
-  if (authLoading) {
-    return <LoadingScreen message="Restoring your secure session..." />;
-  }
 
   return (
-    <div className={`min-h-screen font-sans flex flex-col relative pb-24 md:pb-8 transition-colors duration-300 ${offlineStudySurface ? 'bg-slate-950 text-slate-100' : 'bg-white text-gray-900'}`}>
-      {/* Dynamic Header */}
-      <header className={`sticky top-0 z-40 w-full glass-panel transition-all duration-500 ${offlineStudySurface ? 'bg-slate-950/90 border-slate-800' : 'border-gray-100'} ${screen === 'PRACTICE' ? '-translate-y-full opacity-0 invisible h-0' : 'translate-y-0 opacity-100 visible'}`}>
-        <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3 cursor-pointer group" onClick={resetApp}>
-            <div className="bg-primary-600 p-2.5 rounded-xl transition-transform">
-                <img src="/examply-logo.svg" alt="Examply" className="w-7 h-7 object-contain" />
+    <div className={offlineStudySurface ? 'offline-dark min-h-screen' : 'min-h-screen'}>
+      <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
+          <button onClick={resetApp} className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/20">
+              <GraduationCap className="w-6 h-6 text-white" />
             </div>
-            <div className="flex flex-col">
-              <span className={`text-xl font-bold leading-tight tracking-tight ${offlineStudySurface ? 'text-slate-100' : 'text-gray-900'}`}>Examply</span>
-              <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest">Mastery</span>
-            </div>
-          </div>
-          
-          <div className="hidden md:flex items-center gap-8">
-             <button
-                onClick={resetApp}
-                className={`text-sm font-semibold transition-colors ${screen === 'HOME' ? 'text-primary-600' : offlineStudySurface ? 'text-slate-400 hover:text-white' : 'text-gray-500 hover:text-gray-900'}`}
-             >
-                Home
-             </button>
-             <button
-                onClick={() => setShowLibrary(true)}
-                className={`text-sm font-semibold transition-colors ${showLibrary ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
-             >
-                My Library
-             </button>
-             {isLoggedIn && deferredInstallPrompt && !isInstalled && (
-               <button
-                  onClick={handleInstallApp}
-                  className="flex items-center gap-2 px-4 py-2.5 bg-primary-50 text-primary-700 rounded-xl text-sm font-bold hover:bg-primary-100 transition-all border border-primary-100"
-                  title="Install Examply on your home screen"
-               >
-                  <DownloadCloud className="w-4 h-4" /> Install App
-               </button>
-             )}
-             <button
-                onClick={() => setOfflineDarkMode((previous) => !previous)}
-                className={`inline-flex items-center justify-center w-9 h-9 rounded-xl border transition-colors ${offlineStudySurface ? 'bg-slate-800 border-slate-700 text-amber-300' : 'bg-gray-50 border-gray-100 text-gray-500 hover:text-primary-600'}`}
-                title={offlineDarkMode ? 'Use light study theme' : 'Use dark study theme'}
-                aria-label={offlineDarkMode ? 'Use light study theme' : 'Use dark study theme'}
-             >
-                {offlineDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-             </button>
-             <button
-                onClick={() => setScreen('PROFILE')}
-                className={`text-sm font-semibold transition-colors ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
-             >
-                Profile
-             </button>
-             {userProfile.role === 'ADMIN' && (
-               <button
-                  onClick={() => setScreen('ADMIN')}
-                  className={`text-sm font-semibold transition-colors ${screen === 'ADMIN' ? 'text-primary-600' : 'text-gray-500 hover:text-gray-900'}`}
-               >
-                  Admin
-               </button>
-             )}
-             {isLoggedIn ? (
-               <button
-                  onClick={handleLogout}
-                  className="flex items-center gap-2 px-5 py-2.5 bg-gray-50 text-gray-600 rounded-xl text-sm font-bold hover:bg-red-50 hover:text-red-600 transition-all border border-gray-100"
-               >
-                  <LogOut className="w-4 h-4" /> Logout
-               </button>
-             ) : (
-               <button
-                  onClick={() => setScreen('AUTH')}
-                  className="flex items-center gap-2 px-5 py-2.5 bg-primary-600 text-white rounded-xl text-sm font-bold hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all"
-               >
-                  <LogIn className="w-4 h-4" /> Sign In
-               </button>
-             )}
-          </div>
+            <span className="text-xl font-black tracking-tight text-gray-900">Examply</span>
+          </button>
 
-          <div className="md:hidden flex items-center gap-2">
+          <div className="flex items-center gap-2">
             {isLoggedIn && deferredInstallPrompt && !isInstalled && (
-              <button
-                onClick={handleInstallApp}
-                className="p-2.5 rounded-xl bg-primary-600 text-white shadow-lg shadow-primary-500/20"
-                title="Install Examply on your home screen"
-                aria-label="Install Examply on your home screen"
-              >
+              <button onClick={handleInstallApp} className="hidden md:flex items-center gap-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-xl text-xs font-black hover:bg-primary-100 transition-colors">
+                <DownloadCloud className="w-4 h-4" /> Install App
+              </button>
+            )}
+            {isLoggedIn && deferredInstallPrompt && !isInstalled && (
+              <button onClick={handleInstallApp} className="md:hidden p-3 bg-primary-50 text-primary-700 rounded-xl" aria-label="Install app">
                 <DownloadCloud className="w-5 h-5" />
               </button>
             )}
-            <button
-              onClick={() => setOfflineDarkMode((previous) => !previous)}
-              className={`p-2.5 rounded-xl relative border transition-colors ${offlineStudySurface ? 'bg-slate-800 border-slate-700 text-amber-300' : 'bg-gray-50 border-gray-100 text-gray-600'}`}
-              title={offlineDarkMode ? 'Use light study theme' : 'Use dark study theme'}
-              aria-label={offlineDarkMode ? 'Use light study theme' : 'Use dark study theme'}
-            >
-              {offlineDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
-            <button
-              onClick={() => setScreen('PROFILE')}
-              className={`p-2.5 rounded-xl relative border transition-colors ${offlineStudySurface ? 'bg-slate-800 border-slate-700' : 'bg-gray-50 border-gray-100'}`}
-            >
-              <Library className={`w-5 h-5 ${offlineStudySurface ? 'text-slate-200' : 'text-gray-600'}`} />
-              {Object.keys(books).length > 0 && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary-600 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
-                  {Object.keys(books).length}
-                </span>
-              )}
+            <button onClick={() => setScreen(isLoggedIn ? 'PROFILE' : 'AUTH')} className="p-3 hover:bg-gray-50 rounded-xl transition-colors">
+              {isLoggedIn ? <User className="w-5 h-5 text-gray-700" /> : <LogIn className="w-5 h-5 text-gray-700" />}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Bottom Nav for Mobile */}
-      <nav className={`fixed bottom-0 left-0 right-0 z-50 md:hidden border-t px-6 py-3 transition-all duration-500 ${offlineStudySurface ? 'border-slate-800 bg-slate-950' : 'border-gray-100 bg-white'} ${screen === 'PRACTICE' ? 'translate-y-full opacity-0 invisible' : 'translate-y-0 opacity-100 visible'}`}>
-        <div className="flex items-center justify-around">
-          <button
-            onClick={resetApp}
-            className={`flex flex-col items-center gap-1 ${screen === 'HOME' ? 'text-primary-600' : 'text-gray-400'}`}
-          >
-            <Home className="w-6 h-6" />
-            <span className="text-[10px] font-bold">Home</span>
-          </button>
-          <button
-            onClick={() => setShowLibrary(true)}
-            className={`flex flex-col items-center gap-1 ${showLibrary ? 'text-primary-600' : 'text-gray-400'}`}
-          >
-            <Library className="w-6 h-6" />
-            <span className="text-[10px] font-bold">Library</span>
-          </button>
-          <button
-            onClick={() => setScreen('PROFILE')}
-            className={`flex flex-col items-center gap-1 ${screen === 'PROFILE' ? 'text-primary-600' : 'text-gray-400'}`}
-          >
-            <User className="w-6 h-6" />
-            <span className="text-[10px] font-bold">Profile</span>
-          </button>
-          {userProfile.role === 'ADMIN' && (
-            <button
-              onClick={() => setScreen('ADMIN')}
-              className={`flex flex-col items-center gap-1 ${screen === 'ADMIN' ? 'text-primary-600' : 'text-gray-400'}`}
-            >
-              <Scale className="w-6 h-6" />
-              <span className="text-[10px] font-bold">Admin</span>
-            </button>
-          )}
-        </div>
-      </nav>
-
-      <main className={`flex-1 max-w-5xl mx-auto w-full px-6 py-12 relative ${offlineStudySurface ? 'offline-dark-surface' : ''}`}>
-        
+      <main className="max-w-6xl mx-auto px-4 md:px-8 py-10 pb-28">
         {screen === 'HOME' && (
-          <div className="animate-fade-in max-w-3xl mx-auto">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100 text-gray-400 text-[10px] font-bold mb-6 tracking-widest uppercase">
-                Offline Access Available
+          <div className="animate-fade-in">
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-xs font-black uppercase tracking-widest mb-6">
+                <WifiOff className="w-4 h-4" /> Offline First Learning
               </div>
-              <h1
-                className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight h-[2.5em] md:h-auto"
-              >
-                {displayText}
-                <span className="text-primary-600 animate-pulse ml-1">_</span>
-              </h1>
-              <p className="text-lg text-gray-500 font-medium leading-relaxed max-w-xl mx-auto mb-8">
-                The smartest way to prepare for WAEC, JAMB & NECO. Download practice packs and study anywhere.
-              </p>
-
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-                <a 
-                  href="https://spherelearn.name.ng/download" 
-                   
-                  className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-2xl font-bold hover:bg-black transition-all shadow-xl hover:shadow-gray-200"
-                >
-                  <div className="bg-white/10 p-2 rounded-xl group-hover:scale-110 transition-transform">
-                    <DownloadCloud className="w-5 h-5 text-emerald-400" />
-                  </div>
-                  <div className="text-left">
-                    <div className="text-sm">DOWNLOAD EXAMPLY</div>
-                  </div>
-                </a>
-                <button 
-                  onClick={() => {
-                    const el = document.getElementById('exam-browse');
-                    el?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-white border border-gray-200 text-gray-600 rounded-2xl font-bold hover:border-primary-500 hover:text-primary-600 transition-all shadow-sm"
-                >
-                  <BookOpen className="w-5 h-5" />
-                  <span>Browse Subjects</span>
-                </button>
-              </div>
-
-              <div className="relative max-w-xl mx-auto">
-                <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none">
-                  <Search className="w-5 h-5 text-gray-400" />
-                </div>
-                <input
-                  type="text"
-                  placeholder="Search subjects (e.g. Mathematics, Physics...)"
-                  className="w-full pl-14 pr-6 py-5 bg-white border border-gray-200 rounded-2xl shadow-sm focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all font-medium text-gray-900"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onFocus={() => setIsSearching(true)}
-                />
-
-                {isSearching && searchQuery.trim().length > 0 && (
-                  <div className="absolute top-full left-0 right-0 mt-3 bg-white border border-gray-100 rounded-2xl shadow-xl z-50 overflow-hidden text-left">
-                    {filteredResults.length > 0 ? (
-                      filteredResults.map((res, i) => (
-                        <button
-                          key={`${res.exam}-${res.subject}`}
-                          onClick={() => {
-                            setSelectedExam(res.exam);
-                            setSelectedSubject(res.subject);
-                            setScreen('YEAR_SELECT');
-                            setSearchQuery('');
-                            setIsSearching(false);
-                          }}
-                          className={`w-full flex items-center justify-between px-6 py-4 hover:bg-gray-50 transition-colors border-b border-gray-50 last:border-0`}
-                        >
-                          <div className="flex items-center gap-4">
-                            <div className="p-2 bg-gray-50 rounded-lg text-gray-400">
-                              {getSubjectIcon(res.subject)}
-                            </div>
-                            <span className="font-bold text-gray-900">{res.subject}</span>
-                          </div>
-                          <span className="text-[10px] font-black text-primary-600 bg-primary-50 px-2.5 py-1 rounded-md">
-                            {res.exam}
-                          </span>
-                        </button>
-                      ))
-                    ) : (
-                      <div className="px-6 py-10 text-center text-gray-400 font-medium">
-                        No subjects found matching "{searchQuery}"
-                      </div>
-                    )}
-                  </div>
-                )}
-                {isSearching && (
-                  <div
-                    className="fixed inset-0 z-40 bg-transparent"
-                    onClick={() => setIsSearching(false)}
-                  ></div>
-                )}
-              </div>
+              <h1 className="text-5xl md:text-7xl font-black tracking-tight text-gray-900 mb-6 leading-[0.95]">{displayText}<span className="text-primary-600">|</span></h1>
+              <p className="text-lg text-gray-500 font-medium">Practice JAMB, WAEC and NECO past questions with offline-first study tools.</p>
             </div>
 
-            <div id="exam-browse" className="mb-12">
-              <div className="flex items-center gap-4 mb-8">
-                <h2 className="text-sm font-bold text-gray-400 uppercase tracking-[0.2em] whitespace-nowrap">
-                  Browse by Exam
-                </h2>
-                <div className="h-px w-full bg-gray-100"></div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <ExamCard
-                  type={ExamType.JAMB}
-                  description="Joint Admissions & Matriculation Board"
-                  onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); }}
-                  colorClass="bg-indigo-500"
-                />
-                <ExamCard
-                  type={ExamType.WAEC}
-                  description="West African Senior School Certificate"
-                  onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); }}
-                  colorClass="bg-rose-500"
-                />
-                <ExamCard
-                  type={ExamType.NECO}
-                  description="National Examinations Council"
-                  onClick={(t) => { setSelectedExam(t); setScreen('STREAM_SELECT'); }}
-                  colorClass="bg-amber-500"
-                />
-                <ExamCard
-                  type={ExamType.STUDY_RAND}
-                  description="Randomized subject quiz and study"
-                  onClick={(t) => { setSelectedExam(t); setScreen('STUDY_RAND_SUBJECTS'); }}
-                  colorClass="bg-emerald-500"
-                />
+            <div className="grid md:grid-cols-3 gap-5 mb-14">
+              {STREAMS.map(stream => (
+                <button key={stream.id} onClick={() => { setSelectedStream(stream.id); setScreen('EXAM_SELECT'); }} className="text-left p-6 bg-white border border-gray-100 rounded-[32px] hover:border-primary-300 hover:shadow-xl transition-all group">
+                  <div className={`w-14 h-14 ${stream.color} rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg`}>
+                    <stream.icon className="w-7 h-7" />
+                  </div>
+                  <h3 className="text-xl font-black text-gray-900 mb-2">{stream.label}</h3>
+                  <p className="text-sm text-gray-500 font-medium">{stream.description}</p>
+                </button>
+              ))}
+            </div>
+
+            <div className="bg-gray-900 text-white rounded-[40px] p-8 md:p-12 overflow-hidden relative">
+              <div className="absolute -right-20 -top-20 w-72 h-72 bg-primary-500/20 rounded-full blur-3xl"></div>
+              <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+                <div>
+                  <p className="text-primary-400 text-xs font-black uppercase tracking-widest mb-3">Built for low connectivity</p>
+                  <h2 className="text-3xl md:text-4xl font-black mb-3">Download once. Study anywhere.</h2>
+                  <p className="text-gray-400 max-w-xl">Keep question packs on your device and continue studying when your connection disappears.</p>
+                </div>
+                <button onClick={() => setScreen('EXAM_SELECT')} className="shrink-0 px-7 py-4 bg-primary-600 hover:bg-primary-700 rounded-2xl font-black transition-all flex items-center gap-2">
+                  Start Studying <ArrowRight className="w-5 h-5" />
+                </button>
               </div>
             </div>
           </div>
         )}
 
-        {screen === 'STREAM_SELECT' && (
+        {screen === 'EXAM_SELECT' && selectedStream && (
           <div className="animate-fade-in max-w-4xl mx-auto">
-             <button onClick={() => setScreen('HOME')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
-                <ArrowLeft className="w-4 h-4" /> Back to Exams
-            </button>
-            <h2 className="text-4xl font-black text-gray-900 mb-2">Select Department</h2>
-            <p className="text-lg text-gray-500 mb-10 font-medium">Choose your study stream to see relevant subjects.</p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {STREAMS.map((stream) => (
-                <button
-                  key={stream.id}
-                  onClick={() => { setSelectedStream(stream.id); setScreen('SUBJECT_SELECT'); }}
-                  className="group p-8 bg-white rounded-[32px] border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all text-left flex flex-col"
-                >
-                  <div className={`w-16 h-16 rounded-2xl ${stream.color} bg-opacity-10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner`}>
-                    <stream.icon className={`w-8 h-8 ${stream.color.replace('bg-', 'text-')}`} />
-                  </div>
-                  <h3 className="text-xl font-black text-gray-900 mb-2">{stream.label}</h3>
-                  <p className="text-sm text-gray-500 font-medium leading-relaxed">{stream.description}</p>
+            <button onClick={() => setScreen('HOME')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors"><ArrowLeft className="w-4 h-4" /> Back</button>
+            <h2 className="text-4xl font-black text-gray-900 mb-3">Choose your exam</h2>
+            <p className="text-gray-500 mb-10">Select a past-question bank to download for offline study.</p>
+            <div className="grid md:grid-cols-3 gap-5">
+              {Object.values(ExamType).filter(e => e !== ExamType.STUDY_RAND).map(exam => (
+                <button key={exam} onClick={() => { setSelectedExam(exam); setScreen('SUBJECT_SELECT'); }} className="p-7 bg-white border border-gray-100 rounded-[32px] text-left hover:border-primary-300 hover:shadow-xl transition-all">
+                  <h3 className="text-2xl font-black text-gray-900">{exam}</h3>
+                  <p className="text-sm text-gray-500 mt-2">Past questions and offline practice.</p>
                 </button>
               ))}
             </div>
           </div>
         )}
 
-        {screen === 'SUBJECT_SELECT' && selectedStream && (
+        {screen === 'SUBJECT_SELECT' && selectedExam && selectedStream && (
           <div className="animate-fade-in max-w-4xl mx-auto">
-            <button onClick={() => setScreen('STREAM_SELECT')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
-                <ArrowLeft className="w-4 h-4" /> Back to Departments
-            </button>
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
-                 <div>
-                    <h2 className="text-4xl font-bold text-gray-900 mb-2 tracking-tight">Pick a Subject</h2>
-                    <p className="text-lg text-gray-500 font-medium">Which subject are we crushing today?</p>
-                 </div>
-                 <span className="inline-flex px-4 py-2 bg-primary-50 rounded-2xl text-xs font-bold text-primary-600 uppercase tracking-widest border border-primary-100">
-                    {STREAMS.find(s => s.id === selectedStream)?.label}
-                 </span>
-            </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {SUBJECTS_BY_STREAM[selectedStream].map((subject) => (
-                <button
-                  key={subject}
-                  onClick={() => { setSelectedSubject(subject); setScreen('YEAR_SELECT'); }}
-                  className="flex items-center p-5 bg-white border border-gray-100 rounded-2xl hover:border-primary-500 hover:shadow-lg transition-all text-left group"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 mr-4 group-hover:bg-primary-50 group-hover:text-primary-600 transition-all">
-                      {getSubjectIcon(subject)}
-                  </div>
-                  <span className="font-bold text-gray-700 group-hover:text-gray-900">{subject}</span>
+            <button onClick={() => setScreen('EXAM_SELECT')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors"><ArrowLeft className="w-4 h-4" /> Back to Exams</button>
+            <h2 className="text-4xl font-black text-gray-900 mb-8">Select a subject</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {SUBJECTS_BY_STREAM[selectedStream].map(subject => (
+                <button key={subject} onClick={() => { setSelectedSubject(subject); setScreen('YEAR_SELECT'); }} className="p-5 bg-white border border-gray-100 rounded-2xl text-left hover:border-primary-300 hover:shadow-lg transition-all flex items-center gap-4">
+                  <div className="w-11 h-11 bg-primary-50 text-primary-600 rounded-xl flex items-center justify-center">{getSubjectIcon(subject)}</div>
+                  <span className="font-black text-gray-900">{subject}</span>
                 </button>
               ))}
             </div>
@@ -1136,7 +866,7 @@ const AppShell: React.FC = () => {
         {screen === 'STUDY_RAND_SUBJECTS' && (
           <div className="animate-fade-in max-w-4xl mx-auto">
             <button onClick={() => setScreen('HOME')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-primary-600 transition-colors">
-                <ArrowLeft className="w-4 h-4" /> Back to Home
+              <ArrowLeft className="w-4 h-4" /> Back to Home
             </button>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
                  <div>
