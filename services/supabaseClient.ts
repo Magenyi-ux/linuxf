@@ -28,7 +28,7 @@ const cookieStorage = {
   },
   setItem: (key: string, value: string) => {
     const date = new Date();
-    date.setTime(date.getTime() + (14 * 24 * 60 * 60 * 1000)); // 14 days
+    // Let Supabase Auth control session validity; the browser storage must not\n    // expire first, otherwise a user can lose offline access while the Auth\n    // session itself is still valid.\n    date.setTime(date.getTime() + (10 * 365 * 24 * 60 * 60 * 1000)); // ~10 years
     const expires = "; expires=" + date.toUTCString();
     // Use domain: ".spherelearn.name.ng" to allow cross-subdomain auth if needed
     const domain = window.location.hostname.includes('spherelearn.name.ng') ? "; domain=.spherelearn.name.ng" : "";
