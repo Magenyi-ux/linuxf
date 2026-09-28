@@ -254,7 +254,7 @@ const AppShell: React.FC = () => {
     const reconcile = async () => {
       try {
         await syncUserData(supabaseUser.id);
-        const [totals, remoteAchievementKeys, remotePacks] = await Promise.all([
+        const [totals, remoteAchievementKeys, fetchedRemotePacks] = await Promise.all([
           getRemoteProgressTotals(supabaseUser.id),
           getRemoteAchievementKeys(supabaseUser.id),
           getRemoteStudyPacks(supabaseUser.id),
@@ -266,10 +266,28 @@ const AppShell: React.FC = () => {
         const mergedAchievementKeys = Array.from(new Set([...localAchievementKeys, ...remoteAchievementKeys]));
         localStorage.setItem(achievementStorageKey, JSON.stringify(mergedAchievementKeys));
 
+        let remotePacks = fetchedRemotePacks;
+
+        // Backfill packs downloaded before cloud library sync existed.
+        const localBookKey = `waExamPrep_books_${userProfile.email || supabaseUser.email || supabaseUser.id}`;
+        const localBooks = JSON.parse(localStorage.getItem(localBookKey) || '{}') as Record<string, Book>;
+        if (Object.keys(localBooks).length > 0) {
+          await Promise.all(Object.values(localBooks).map((book) => upsertRemoteStudyPack(supabaseUser.id, {
+            packId: book.id,
+            examType: String(book.examType),
+            subject: String(book.subject),
+            examYear: Number(book.year),
+            bestScore: book.bestScore || 0,
+            lastScore: book.lastScore || 0,
+            attempts: book.attempts || 0,
+            dateCreated: book.dateCreated,
+          }).catch((error) => console.warn('Could not backfill study pack:', error))));
+          remotePacks = await getRemoteStudyPacks(supabaseUser.id);
+        }
+
         // Restore cloud-saved study packs on a new phone. Question content is fetched
         // from the same question service, while scores/attempt counts come from Supabase.
         if (remotePacks.length > 0) {
-          const localBookKey = `waExamPrep_books_${authProfile?.email || supabaseUser.email || supabaseUser.id}`;
           const existingBooks = JSON.parse(localStorage.getItem(localBookKey) || '{}') as Record<string, Book>;
           const mergedBooks = { ...existingBooks };
 
