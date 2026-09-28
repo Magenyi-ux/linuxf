@@ -107,11 +107,11 @@
 }
 
 .offline-dark-surface .bg-primary-50 {
-  background-color: rgb(79 70 229 / 0.18) !important;
+  background-color: rgb(20 184 166 / 0.18) !important;
 }
 
 .offline-dark-surface .text-primary-900 {
-  color: #e0e7ff !important;
+  color: #ccfbf1 !important;
 }
 
 .offline-dark-surface .sidebar-scrollbar::-webkit-scrollbar-thumb {
