@@ -19,12 +19,12 @@ const EDUCATIONAL_SYSTEM_PROMPT = [
 ].join(" ");
 
 const BLOCKED_PROGRAMMING_PATTERNS = [
-  /\b(write|generate|create|build|make)\s+(me\s+)?(some\s+)?code\\b/i,
-  /\b(code|script)\s+(in|using)\s+(python|javascript|typescript|java|kotlin|c\+\+|c#|rust|go|php|ruby|swift)\\b/i,
-  /\b(debug|fix|refactor)\s+(this\s+)?(code|program|script|function)\\b/i,
-  /\b(build|create|make)\s+(a|an|the)?\s*(website|web\s*app|mobile\s*app|api|software)\\b/i,
-  /\b(react|next\.js|node\.js|django|flask|spring boot)\s+(code|app|project|component)\\b/i,
-  /\b(sql|html|css|javascript|typescript|python)\s+(query|script|code|function)\\b/i,
+  /\b(write|generate|create|build|make)\s+(me\s+)?(some\s+)?code\b/i,
+  /\b(code|script)\s+(in|using)\s+(python|javascript|typescript|java|kotlin|c\+\+|c#|rust|go|php|ruby|swift)\b/i,
+  /\b(debug|fix|refactor)\s+(this\s+)?(code|program|script|function)\b/i,
+  /\b(build|create|make)\s+(a|an|the)?\s*(website|web\s*app|mobile\s*app|api|software)\b/i,
+  /\b(react|next\.js|node\.js|django|flask|spring boot)\s+(code|app|project|component)\b/i,
+  /\b(sql|html|css|javascript|typescript|python)\s+(query|script|code|function)\b/i,
 ];
 
 async function authenticateUser(req: VercelRequest) {
