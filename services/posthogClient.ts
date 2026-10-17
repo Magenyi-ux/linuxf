@@ -21,6 +21,12 @@ export const initPostHog = (): void => {
   });
 
   initialised = true;
+
+  // Track the online entry page explicitly without sending query-string values
+  // such as referral parameters into analytics.
+  posthog.capture('$pageview', {
+    $current_url: `${window.location.origin}${window.location.pathname}`,
+  });
 };
 
 export const identifyPostHogUser = (userId: string): void => {
