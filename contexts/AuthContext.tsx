@@ -126,14 +126,26 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
 
     const { data: listener } = supabase.auth.onAuthStateChange((event, nextSession) => {
       if (!mounted) return;
+
       if (event === 'INITIAL_SESSION') {
         if (initialSessionResolved) return;
         initialSessionResolved = true;
         setLoading(false);
-        void loadSessionProfile(nextSession);
-        return;
       }
-      void loadSessionProfile(nextSession);
+
+      // Do not make Supabase profile requests inside its auth-state callback.
+      // Publish the session immediately, then hydrate profile/offline state in a
+      // later task so auth events cannot be held up by the profile query.
+      setSession(nextSession);
+      if (nextSession?.user) {
+        identifyPostHogUser(nextSession.user.id);
+      } else {
+        setProfile(null);
+      }
+
+      window.setTimeout(() => {
+        if (mounted) void loadSessionProfile(nextSession);
+      }, 0);
     });
 
     return () => {
