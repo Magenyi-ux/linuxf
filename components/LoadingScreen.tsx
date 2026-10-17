@@ -13,7 +13,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ message }) => {
       aria-live="polite"
     >
       <div className="flex w-full max-w-sm flex-col items-center">
-        <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-midnight-900 text-primary-500">
+        <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-midnight-900 text-white">
           <Loader2 className="h-6 w-6 animate-spin" aria-hidden="true" />
         </div>
 
