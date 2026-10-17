@@ -571,10 +571,6 @@ const AppShell: React.FC = () => {
         questionsAttempted: total,
         questionsCorrect: score,
         xpEarned: xpGained,
-      }).then(() => {
-        if (navigator.onLine) {
-          void syncUserData(supabaseUser.id).catch((error) => console.warn('Immediate progress sync deferred:', error));
-        }
       });
 
       if (navigator.onLine) {
