@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useMemo, useState } from '
 import type { Session, User } from '@supabase/supabase-js';
 import type { UserProfile } from '../types';
 import { isSupabaseConfigured, supabase } from '../services/supabaseClient';
-import { capturePostHogEvent } from '../services/posthogClient';
+import { capturePostHogEvent, identifyPostHogUser, resetPostHog } from '../services/posthogClient';
 import { attributeStoredReferral } from '../services/referralService';
 import { activateOfflineSession, clearOfflineSession, hasOfflineSession } from '../services/offlineSession';
 
@@ -63,6 +63,10 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
       return;
     }
 
+    // Identify the account as soon as Supabase restores it. Profile hydration stays
+    // asynchronous and must not hold the app behind the session loading screen.
+    identifyPostHogUser(nextSession.user.id);
+
     if (!navigator.onLine) {
       // Offline entry is allowed only for a browser that previously completed
       // a real sign-in and received an offline session marker.
@@ -101,15 +105,28 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
 
     let mounted = true;
 
+    let initialSessionResolved = false;
+
+    // Restore the persisted session first, then release the gate immediately.
+    // Any online profile lookup continues in the background.
     void supabase.auth.getSession().then(({ data: { session: initialSession } }) => {
       if (!mounted) return;
-      void loadSessionProfile(initialSession).finally(() => {
-        if (mounted) setLoading(false);
-      });
+      initialSessionResolved = true;
+      setLoading(false);
+      void loadSessionProfile(initialSession);
+    }).catch((error) => {
+      if (!mounted) return;
+      console.warn('Could not restore the saved session:', error);
+      setSession(null);
+      setProfile(null);
+      setLoading(false);
     });
 
-    const { data: listener } = supabase.auth.onAuthStateChange((_event, nextSession) => {
+    const { data: listener } = supabase.auth.onAuthStateChange((event, nextSession) => {
       if (!mounted) return;
+      // The initial event is covered by getSession above. Ignore it if it arrives
+      // before that promise, avoiding duplicate profile fetches during startup.
+      if (event === 'INITIAL_SESSION' && !initialSessionResolved) return;
       void loadSessionProfile(nextSession);
     });
 
@@ -175,6 +192,7 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
       if (error) throw error;
       clearOfflineSession();
       capturePostHogEvent('sign_out');
+      resetPostHog();
     },
     refreshProfile: async () => {
       if (!session?.user) return;
