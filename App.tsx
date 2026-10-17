@@ -9,7 +9,6 @@ import { PracticeSession } from './components/PracticeSession';
 import { Profile } from './components/Profile';
 import { AdminDashboard } from './components/AdminDashboard';
 import { Auth } from './components/Auth';
-import { SwissStudyDiagrams } from './components/SwissStudyDiagrams';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
 import { deleteRemoteStudyPack, getRemoteAchievementKeys, getRemoteProgressTotals, getRemoteStudyPacks, syncUserData, upsertRemoteStudyPack } from './services/syncService';
@@ -31,21 +30,21 @@ const STREAMS: { id: StreamType; label: string; icon: React.ElementType; color: 
     id: 'SCIENCE', 
     label: 'Science', 
     icon: Atom, 
-    color: 'bg-brand-700',
+    color: 'bg-blue-500',
     description: 'Engineering, Medicine, Technology'
   }, 
   { 
     id: 'COMMERCIAL', 
     label: 'Commercial', 
     icon: TrendingUp, 
-    color: 'bg-brand-700',
+    color: 'bg-orange-500',
     description: 'Business, Accounting, Economics' 
   },
   { 
     id: 'ARTS', 
     label: 'Arts & Humanities', 
     icon: Feather, 
-    color: 'bg-brand-700',
+    color: 'bg-pink-500',
     description: 'Law, History, Languages' 
   }
 ];
@@ -445,7 +444,7 @@ const AppShell: React.FC = () => {
       case Subject.PHYSICS: return <Atom className="w-5 h-5" />;
       case Subject.CHEMISTRY: return <FlaskConical className="w-5 h-5" />;
       case Subject.BIOLOGY: return <Dna className="w-5 h-5" />;
-      case Subject.FURTHER_MATHS: return <Calculator className="w-5 h-5 text-brand-700" />;
+      case Subject.FURTHER_MATHS: return <Calculator className="w-5 h-5 text-indigo-500" />;
       case Subject.AGRIC_SCIENCE: return <Leaf className="w-5 h-5" />;
       case Subject.GEOGRAPHY: return <Map className="w-5 h-5" />;
       
@@ -614,13 +613,13 @@ const AppShell: React.FC = () => {
 
   return (
     <div className={offlineStudySurface ? 'offline-dark min-h-screen' : 'min-h-screen'}>
-      <header className="sticky top-0 z-40 bg-white border-b border-brand-200">
+      <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
-          <button onClick={resetApp} className="flex items-center gap-3" aria-label="Examply home">
-            <div className="w-10 h-10 bg-brand-50 border border-brand-200 rounded-xl flex items-center justify-center">
-              <img src="/examply-logo.svg" alt="" className="w-8 h-8 object-contain" />
+          <button onClick={resetApp} className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/20">
+              <GraduationCap className="w-6 h-6 text-white" />
             </div>
-            <span className="text-xl font-bold tracking-tight text-gray-900">Examply</span>
+            <span className="text-xl font-black tracking-tight text-gray-900">Examply</span>
           </button>
 
           <div className="flex items-center gap-2">
@@ -652,12 +651,10 @@ const AppShell: React.FC = () => {
               <p className="text-lg text-gray-500 font-medium">Practice JAMB, WAEC and NECO past questions with offline-first study tools.</p>
             </div>
 
-            <SwissStudyDiagrams className="mb-14" />
-
             <div className="grid md:grid-cols-3 gap-5 mb-14">
               {STREAMS.map(stream => (
-                <button key={stream.id} onClick={() => { setSelectedStream(stream.id); setScreen('EXAM_SELECT'); }} className="text-left p-6 bg-white border border-gray-100 rounded-xl hover:border-primary-300 hover: transition-all group">
-                  <div className={`w-14 h-14 ${stream.color} rounded-2xl flex items-center justify-center text-white mb-6 `}>
+                <button key={stream.id} onClick={() => { setSelectedStream(stream.id); setScreen('EXAM_SELECT'); }} className="text-left p-6 bg-white border border-gray-100 rounded-[32px] hover:border-primary-300 hover:shadow-xl transition-all group">
+                  <div className={`w-14 h-14 ${stream.color} rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg`}>
                     <stream.icon className="w-7 h-7" />
                   </div>
                   <h3 className="text-xl font-black text-gray-900 mb-2">{stream.label}</h3>
@@ -666,14 +663,15 @@ const AppShell: React.FC = () => {
               ))}
             </div>
 
-            <div className="bg-[#20252B] text-[#F1F2EE] border border-[#3A4148] rounded-2xl p-8 md:p-12">
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div className="bg-gray-900 text-white rounded-[40px] p-8 md:p-12 overflow-hidden relative">
+              <div className="absolute -right-20 -top-20 w-72 h-72 bg-primary-500/20 rounded-full blur-3xl"></div>
+              <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
                 <div>
-                  <p className="text-[#A8AFB5] text-xs font-semibold uppercase tracking-[0.16em] mb-3">Built for low connectivity</p>
-                  <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Download once. Study anywhere.</h2>
-                  <p className="text-[#C3C8CC] max-w-xl">Keep question packs on your device and continue studying when your connection disappears.</p>
+                  <p className="text-primary-400 text-xs font-black uppercase tracking-widest mb-3">Built for low connectivity</p>
+                  <h2 className="text-3xl md:text-4xl font-black mb-3">Download once. Study anywhere.</h2>
+                  <p className="text-gray-400 max-w-xl">Keep question packs on your device and continue studying when your connection disappears.</p>
                 </div>
-                <button onClick={() => setScreen('EXAM_SELECT')} className="shrink-0 px-7 py-4 bg-[#F1F2EE] text-[#25282B] hover:bg-white rounded-xl font-semibold transition-colors flex items-center gap-2">
+                <button onClick={() => setScreen('EXAM_SELECT')} className="shrink-0 px-7 py-4 bg-primary-600 hover:bg-primary-700 rounded-2xl font-black transition-all flex items-center gap-2">
                   Start Studying <ArrowRight className="w-5 h-5" />
                 </button>
               </div>
@@ -688,7 +686,7 @@ const AppShell: React.FC = () => {
             <p className="text-gray-500 mb-10">Select a past-question bank to download for offline study.</p>
             <div className="grid md:grid-cols-3 gap-5">
               {Object.values(ExamType).filter(e => e !== ExamType.STUDY_RAND).map(exam => (
-                <button key={exam} onClick={() => { setSelectedExam(exam); setScreen('SUBJECT_SELECT'); }} className="p-7 bg-white border border-gray-100 rounded-xl text-left hover:border-primary-300 hover: transition-all">
+                <button key={exam} onClick={() => { setSelectedExam(exam); setScreen('SUBJECT_SELECT'); }} className="p-7 bg-white border border-gray-100 rounded-[32px] text-left hover:border-primary-300 hover:shadow-xl transition-all">
                   <h3 className="text-2xl font-black text-gray-900">{exam}</h3>
                   <p className="text-sm text-gray-500 mt-2">Past questions and offline practice.</p>
                 </button>
@@ -703,7 +701,7 @@ const AppShell: React.FC = () => {
             <h2 className="text-4xl font-black text-gray-900 mb-8">Select a subject</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {SUBJECTS_BY_STREAM[selectedStream].map(subject => (
-                <button key={subject} onClick={() => { setSelectedSubject(subject); setScreen('YEAR_SELECT'); }} className="p-5 bg-white border border-gray-100 rounded-2xl text-left hover:border-primary-300 hover: transition-all flex items-center gap-4">
+                <button key={subject} onClick={() => { setSelectedSubject(subject); setScreen('YEAR_SELECT'); }} className="p-5 bg-white border border-gray-100 rounded-2xl text-left hover:border-primary-300 hover:shadow-lg transition-all flex items-center gap-4">
                   <div className="w-11 h-11 bg-primary-50 text-primary-600 rounded-xl flex items-center justify-center">{getSubjectIcon(subject)}</div>
                   <span className="font-black text-gray-900">{subject}</span>
                 </button>
@@ -718,8 +716,9 @@ const AppShell: React.FC = () => {
                     <ArrowLeft className="w-4 h-4" /> Back to Subjects
                 </button>
 
-                <div className="bg-[#20252B] text-[#F1F2EE] border border-[#3A4148] p-8 rounded-2xl mb-10">
-                    <div className="flex items-center justify-between">
+                <div className="bg-gradient-to-r from-primary-600 to-primary-900 p-8 rounded-[40px] mb-10 shadow-2xl shadow-primary-500/20 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+                    <div className="relative z-10 flex items-center justify-between">
                         <div>
                             <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-lg text-[10px] font-black text-white uppercase tracking-widest mb-3">
                                 {selectedExam} Question Bank
@@ -759,7 +758,7 @@ const AppShell: React.FC = () => {
                         const book = books[bookId];
 
                         return (
-                            <div key={year} className="group bg-white p-5 rounded-xl border border-gray-100 hover:border-primary-200 hover: transition-all flex items-center justify-between">
+                            <div key={year} className="group bg-white p-5 rounded-[32px] border border-gray-100 hover:border-primary-200 hover:shadow-xl transition-all flex items-center justify-between">
                                 <div className="flex items-center gap-5">
                                     <div className={`w-14 h-14 rounded-2xl flex items-center justify-center font-black text-xl shadow-inner ${isDownloaded ? 'bg-primary-50 text-primary-600' : 'bg-gray-50 text-gray-300'}`}>
                                         {year.slice(2)}
@@ -788,7 +787,7 @@ const AppShell: React.FC = () => {
                                         <>
                                             <button 
                                                 onClick={() => handleStart(bookId)}
-                                                className="px-6 py-3 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700  shadow-primary-500/20 transition-all flex items-center gap-2"
+                                                className="px-6 py-3 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all flex items-center gap-2"
                                             >
                                                 <Play className="w-4 h-4 fill-current" /> START
                                             </button>
@@ -924,7 +923,7 @@ const AppShell: React.FC = () => {
                     setPracticeMode('TEST');
                     setScreen('PRACTICE');
                   }}
-                  className="px-12 py-5 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700  shadow-primary-500/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3 scale-110"
+                  className="px-12 py-5 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-2xl shadow-primary-500/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3 scale-110"
                >
                   START RANDOM QUIZ <ArrowRight className="w-5 h-5" />
                </button>
@@ -946,7 +945,7 @@ const AppShell: React.FC = () => {
       {/* Library Modal */}
       {showLibrary && (
         <div className="fixed inset-0 bg-gray-900/60 backdrop-blur-md z-50 flex items-center justify-center p-6 animate-fade-in" onClick={(e) => { if(e.target === e.currentTarget) setShowLibrary(false); }}>
-            <div className={`${offlineStudySurface ? 'offline-dark-surface bg-slate-900 border-slate-800' : 'bg-[#fafafa] border-white'} rounded-2xl w-full max-w-xl max-h-[85vh] flex flex-col shadow-[0_0_50px_rgba(0,0,0,0.1)] overflow-hidden animate-scale-in border`}>
+            <div className={`${offlineStudySurface ? 'offline-dark-surface bg-slate-900 border-slate-800' : 'bg-[#fafafa] border-white'} rounded-[40px] w-full max-w-xl max-h-[85vh] flex flex-col shadow-[0_0_50px_rgba(0,0,0,0.1)] overflow-hidden animate-scale-in border`}>
                 <div className="px-8 py-6 border-b border-gray-100 flex justify-between items-center bg-white">
                     <div className="flex items-center gap-4">
                         <div className="bg-primary-50 p-3 rounded-2xl">
@@ -965,7 +964,7 @@ const AppShell: React.FC = () => {
                 <div className="overflow-y-auto px-8 py-6 space-y-4 flex-1 sidebar-scrollbar bg-gray-50/50">
                     {Object.keys(books).length === 0 ? (
                         <div className="text-center text-gray-400 py-16 flex flex-col items-center">
-                            <div className="bg-white p-6 rounded-xl mb-4 shadow-sm">
+                            <div className="bg-white p-6 rounded-[32px] mb-4 shadow-sm">
                                  <Library className="w-12 h-12 text-gray-200" />
                             </div>
                             <p className="text-lg font-black text-gray-900">Your library is empty.</p>
@@ -973,7 +972,7 @@ const AppShell: React.FC = () => {
                         </div>
                     ) : (
                         (Object.values(books) as Book[]).sort((a,b) => b.dateCreated - a.dateCreated).map((book) => (
-                            <div key={book.id} className="flex items-center justify-between p-5 bg-white border border-gray-100 rounded-xl hover:border-primary-300 transition-all shadow-sm hover: group">
+                            <div key={book.id} className="flex items-center justify-between p-5 bg-white border border-gray-100 rounded-[32px] hover:border-primary-300 transition-all shadow-sm hover:shadow-xl group">
                                 <div className="flex items-center gap-5">
                                     <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center text-gray-300 font-black text-lg group-hover:bg-primary-50 group-hover:text-primary-600 transition-all relative">
                                         {book.year.slice(2)}
@@ -997,7 +996,7 @@ const AppShell: React.FC = () => {
                                 <div className="flex gap-3">
                                     <button 
                                         onClick={() => { handleStart(book.id); setShowLibrary(false); }} 
-                                        className="p-3.5 bg-primary-600 text-white rounded-2xl hover:bg-primary-700  shadow-primary-500/20 transition-all"
+                                        className="p-3.5 bg-primary-600 text-white rounded-2xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all"
                                         title="Start Practice"
                                     >
                                         <Play className="w-4 h-4 fill-current" />
