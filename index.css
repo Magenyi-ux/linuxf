@@ -1,9 +1,35 @@
 @import "tailwindcss";
 @config "./tailwind.config.js";
 
+/* Examply design tokens: keep the interface simple, consistent and easy to maintain. */
+:root {
+  color-scheme: light;
+  --examply-midnight: #101827;
+  --examply-midnight-raised: #18243a;
+  --examply-page: #f4f7fb;
+  --examply-surface: #ffffff;
+  --examply-text: #172033;
+  --examply-muted: #64748b;
+  --examply-border: #e2e8f0;
+  --examply-yellow: #f7c948;
+}
+
 @layer base {
   body {
     @apply bg-white text-brand-900 font-sans;
+    background-color: var(--examply-page);
+    color: var(--examply-text);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--examply-yellow);
+    outline-offset: 3px;
+  }
+
+  button, input, textarea, select {
+    font: inherit;
   }
 }
 
@@ -41,30 +67,31 @@
   }
 }
 
-
-/* Offline/study dark theme. The scope is applied only by AppShell, so auth,
-   profile, and admin screens keep their dedicated light layouts. */
+/* Scoped dark surfaces remain opt-in so existing auth and admin screens are not
+   unexpectedly recoloured while the rest of the interface is being updated. */
 .offline-dark-surface {
   color-scheme: dark;
+  background-color: var(--examply-midnight);
+  color: #f8fafc;
 }
 
 .offline-dark-surface .bg-white {
-  background-color: #0f172a !important;
+  background-color: var(--examply-midnight-raised) !important;
 }
 
 .offline-dark-surface .bg-gray-50,
 .offline-dark-surface .bg-gray-50\/50 {
-  background-color: #111827 !important;
+  background-color: #141e30 !important;
 }
 
 .offline-dark-surface .bg-gray-100 {
-  background-color: #1f2937 !important;
+  background-color: #202c40 !important;
 }
 
 .offline-dark-surface .border-gray-50,
 .offline-dark-surface .border-gray-100,
 .offline-dark-surface .border-gray-200 {
-  border-color: #263449 !important;
+  border-color: #2b394f !important;
 }
 
 .offline-dark-surface .text-gray-900,
@@ -91,29 +118,38 @@
 .offline-dark-surface textarea,
 .offline-dark-surface select {
   color: #f8fafc !important;
-  background-color: #0f172a !important;
+  background-color: var(--examply-midnight) !important;
   border-color: #334155 !important;
 }
 
 .offline-dark-surface input::placeholder,
 .offline-dark-surface textarea::placeholder {
-  color: #64748b !important;
+  color: #94a3b8 !important;
 }
 
 .offline-dark-surface .shadow-sm,
 .offline-dark-surface .shadow-xl,
 .offline-dark-surface .shadow-2xl {
-  --tw-shadow-color: rgb(2 6 23 / 0.65);
+  --tw-shadow-color: rgb(2 6 23 / 0.35);
 }
 
 .offline-dark-surface .bg-primary-50 {
-  background-color: rgb(20 184 166 / 0.18) !important;
+  background-color: rgb(247 201 72 / 0.12) !important;
 }
 
 .offline-dark-surface .text-primary-900 {
-  color: #ccfbf1 !important;
+  color: #fde68a !important;
 }
 
 .offline-dark-surface .sidebar-scrollbar::-webkit-scrollbar-thumb {
   background: #334155;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
