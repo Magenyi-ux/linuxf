@@ -9,6 +9,7 @@ import { PracticeSession } from './components/PracticeSession';
 import { Profile } from './components/Profile';
 import { AdminDashboard } from './components/AdminDashboard';
 import { Auth } from './components/Auth';
+import { SwissStudyDiagrams } from './components/SwissStudyDiagrams';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
 import { deleteRemoteStudyPack, getRemoteAchievementKeys, getRemoteProgressTotals, getRemoteStudyPacks, syncUserData, upsertRemoteStudyPack } from './services/syncService';
@@ -30,21 +31,21 @@ const STREAMS: { id: StreamType; label: string; icon: React.ElementType; color: 
     id: 'SCIENCE', 
     label: 'Science', 
     icon: Atom, 
-    color: 'bg-blue-500',
+    color: 'bg-brand-700',
     description: 'Engineering, Medicine, Technology'
   }, 
   { 
     id: 'COMMERCIAL', 
     label: 'Commercial', 
     icon: TrendingUp, 
-    color: 'bg-orange-500',
+    color: 'bg-brand-700',
     description: 'Business, Accounting, Economics' 
   },
   { 
     id: 'ARTS', 
     label: 'Arts & Humanities', 
     icon: Feather, 
-    color: 'bg-pink-500',
+    color: 'bg-brand-700',
     description: 'Law, History, Languages' 
   }
 ];
@@ -651,6 +652,8 @@ const AppShell: React.FC = () => {
               <p className="text-lg text-gray-500 font-medium">Practice JAMB, WAEC and NECO past questions with offline-first study tools.</p>
             </div>
 
+            <SwissStudyDiagrams className="mb-14" />
+
             <div className="grid md:grid-cols-3 gap-5 mb-14">
               {STREAMS.map(stream => (
                 <button key={stream.id} onClick={() => { setSelectedStream(stream.id); setScreen('EXAM_SELECT'); }} className="text-left p-6 bg-white border border-gray-100 rounded-[32px] hover:border-primary-300 hover:shadow-xl transition-all group">
@@ -663,15 +666,14 @@ const AppShell: React.FC = () => {
               ))}
             </div>
 
-            <div className="bg-gray-900 text-white rounded-[40px] p-8 md:p-12 overflow-hidden relative">
-              <div className="absolute -right-20 -top-20 w-72 h-72 bg-primary-500/20 rounded-full blur-3xl"></div>
-              <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div className="bg-[#20252B] text-[#F1F2EE] border border-[#3A4148] rounded-2xl p-8 md:p-12">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
                 <div>
-                  <p className="text-primary-400 text-xs font-black uppercase tracking-widest mb-3">Built for low connectivity</p>
-                  <h2 className="text-3xl md:text-4xl font-black mb-3">Download once. Study anywhere.</h2>
-                  <p className="text-gray-400 max-w-xl">Keep question packs on your device and continue studying when your connection disappears.</p>
+                  <p className="text-[#A8AFB5] text-xs font-semibold uppercase tracking-[0.16em] mb-3">Built for low connectivity</p>
+                  <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Download once. Study anywhere.</h2>
+                  <p className="text-[#C3C8CC] max-w-xl">Keep question packs on your device and continue studying when your connection disappears.</p>
                 </div>
-                <button onClick={() => setScreen('EXAM_SELECT')} className="shrink-0 px-7 py-4 bg-primary-600 hover:bg-primary-700 rounded-2xl font-black transition-all flex items-center gap-2">
+                <button onClick={() => setScreen('EXAM_SELECT')} className="shrink-0 px-7 py-4 bg-[#F1F2EE] text-[#25282B] hover:bg-white rounded-xl font-semibold transition-colors flex items-center gap-2">
                   Start Studying <ArrowRight className="w-5 h-5" />
                 </button>
               </div>
@@ -716,9 +718,8 @@ const AppShell: React.FC = () => {
                     <ArrowLeft className="w-4 h-4" /> Back to Subjects
                 </button>
 
-                <div className="bg-gradient-to-r from-primary-600 to-primary-900 p-8 rounded-[40px] mb-10 shadow-2xl shadow-primary-500/20 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
-                    <div className="relative z-10 flex items-center justify-between">
+                <div className="bg-[#20252B] text-[#F1F2EE] border border-[#3A4148] p-8 rounded-2xl mb-10">
+                    <div className="flex items-center justify-between">
                         <div>
                             <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-lg text-[10px] font-black text-white uppercase tracking-widest mb-3">
                                 {selectedExam} Question Bank
