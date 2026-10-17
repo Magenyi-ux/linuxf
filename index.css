@@ -1,73 +1,15 @@
 @import "tailwindcss";
 @config "./tailwind.config.js";
 
-:root {
-  color-scheme: light;
-  --sl-paper: #F5F5F3;
-  --sl-white: #FFFFFF;
-  --sl-graphite: #25282B;
-  --sl-ink: #454B50;
-  --sl-muted: #666B70;
-  --sl-border: #E1E3E3;
-  --sl-midnight: #20252B;
-  --sl-midnight-card: #292F36;
-  --sl-chalk: #F1F2EE;
-  --sl-dark-border: #3A4148;
-  --sl-dark-muted: #A8AFB5;
-}
-
 @layer base {
   body {
     @apply bg-white text-brand-900 font-sans;
-    background-color: var(--sl-paper);
-    color: var(--sl-graphite);
-    font-feature-settings: "ss01" on;
-    text-rendering: optimizeLegibility;
-  }
-
-  ::selection {
-    color: var(--sl-chalk);
-    background: var(--sl-ink);
-  }
-
-  :focus-visible {
-    outline: 2px solid var(--sl-ink);
-    outline-offset: 3px;
   }
 }
 
 @layer components {
   .glass-panel {
-    @apply bg-white border;
-    border-color: var(--sl-border);
-    box-shadow: none;
-  }
-
-  .swiss-card {
-    background: var(--sl-white);
-    border: 1px solid var(--sl-border);
-    border-radius: 0.75rem;
-    box-shadow: none;
-  }
-
-  .swiss-grid {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .swiss-diagram {
-    color: var(--sl-ink);
-    background-color: var(--sl-paper);
-    border: 1px solid var(--sl-border);
-    border-radius: 0.75rem;
-  }
-
-  .swiss-diagram line,
-  .swiss-diagram path,
-  .swiss-diagram circle,
-  .swiss-diagram rect {
-    vector-effect: non-scaling-stroke;
+    @apply bg-white border border-brand-200;
   }
 
   .sidebar-scrollbar::-webkit-scrollbar {
@@ -79,8 +21,7 @@
   }
 
   .sidebar-scrollbar::-webkit-scrollbar-thumb {
-    background: var(--sl-border);
-    border-radius: 999px;
+    @apply bg-brand-200 rounded-full;
   }
 
   .math-content ul {
@@ -96,112 +37,83 @@
   }
 
   .math-content strong {
-    @apply font-bold;
-    color: var(--sl-graphite);
+    @apply font-bold text-gray-800;
   }
 }
 
-/* Midnight & Chalk. Scoped to the study experience so existing account and
-   administration screens keep their light layouts until they opt into dark mode. */
-.offline-dark,
+
+/* Offline/study dark theme. The scope is applied only by AppShell, so auth,
+   profile, and admin screens keep their dedicated light layouts. */
 .offline-dark-surface {
   color-scheme: dark;
-  background: var(--sl-midnight);
-  color: var(--sl-chalk);
 }
 
-.offline-dark .bg-white,
 .offline-dark-surface .bg-white {
-  background-color: var(--sl-midnight-card) !important;
+  background-color: #0f172a !important;
 }
 
-.offline-dark .bg-gray-50,
-.offline-dark .bg-gray-50\/50,
 .offline-dark-surface .bg-gray-50,
 .offline-dark-surface .bg-gray-50\/50 {
-  background-color: var(--sl-midnight) !important;
+  background-color: #111827 !important;
 }
 
-.offline-dark .bg-gray-100,
 .offline-dark-surface .bg-gray-100 {
-  background-color: #30363D !important;
+  background-color: #1f2937 !important;
 }
 
-.offline-dark .border-gray-50,
-.offline-dark .border-gray-100,
-.offline-dark .border-gray-200,
 .offline-dark-surface .border-gray-50,
 .offline-dark-surface .border-gray-100,
 .offline-dark-surface .border-gray-200 {
-  border-color: var(--sl-dark-border) !important;
+  border-color: #263449 !important;
 }
 
-.offline-dark .text-gray-900,
-.offline-dark .text-brand-900,
 .offline-dark-surface .text-gray-900,
 .offline-dark-surface .text-brand-900 {
-  color: var(--sl-chalk) !important;
+  color: #f8fafc !important;
 }
 
-.offline-dark .text-gray-800,
-.offline-dark .text-gray-700,
-.offline-dark .text-gray-600,
 .offline-dark-surface .text-gray-800,
 .offline-dark-surface .text-gray-700,
 .offline-dark-surface .text-gray-600 {
-  color: #D1D5D7 !important;
+  color: #cbd5e1 !important;
 }
 
-.offline-dark .text-gray-500,
-.offline-dark .text-gray-400,
 .offline-dark-surface .text-gray-500,
 .offline-dark-surface .text-gray-400 {
-  color: var(--sl-dark-muted) !important;
+  color: #94a3b8 !important;
 }
 
-.offline-dark .text-gray-300,
 .offline-dark-surface .text-gray-300 {
-  color: #818A91 !important;
+  color: #64748b !important;
 }
 
-.offline-dark input,
-.offline-dark textarea,
-.offline-dark select,
 .offline-dark-surface input,
 .offline-dark-surface textarea,
 .offline-dark-surface select {
-  color: var(--sl-chalk) !important;
-  background-color: var(--sl-midnight) !important;
-  border-color: var(--sl-dark-border) !important;
+  color: #f8fafc !important;
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
 }
 
-.offline-dark input::placeholder,
-.offline-dark textarea::placeholder,
 .offline-dark-surface input::placeholder,
 .offline-dark-surface textarea::placeholder {
-  color: #818A91 !important;
+  color: #64748b !important;
 }
 
-.offline-dark .shadow-sm,
-.offline-dark .shadow-xl,
-.offline-dark .shadow-2xl,
 .offline-dark-surface .shadow-sm,
 .offline-dark-surface .shadow-xl,
 .offline-dark-surface .shadow-2xl {
-  --tw-shadow-color: rgb(0 0 0 / 0.18);
+  --tw-shadow-color: rgb(2 6 23 / 0.65);
 }
 
-.offline-dark .bg-primary-50,
 .offline-dark-surface .bg-primary-50 {
-  background-color: #343B40 !important;
+  background-color: rgb(20 184 166 / 0.18) !important;
 }
 
-.offline-dark .text-primary-900,
 .offline-dark-surface .text-primary-900 {
-  color: var(--sl-chalk) !important;
+  color: #ccfbf1 !important;
 }
 
-.offline-dark .sidebar-scrollbar::-webkit-scrollbar-thumb,
 .offline-dark-surface .sidebar-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--sl-dark-border);
+  background: #334155;
 }

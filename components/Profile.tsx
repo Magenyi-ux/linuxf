@@ -52,7 +52,7 @@ export const Profile: React.FC<ProfileProps> = ({
 
       <div className="flex flex-col md:flex-row gap-8 mb-12">
         {/* User Card */}
-        <div className="flex-1 bg-white p-8 rounded-[40px] border border-brand-200 shadow-sm flex flex-col items-center text-center relative overflow-hidden">
+        <div className="flex-1 bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm flex flex-col items-center text-center relative overflow-hidden">
           {!isLoggedIn && (
             <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center p-6 text-center">
                <div className="bg-primary-50 p-4 rounded-3xl mb-4">
@@ -108,8 +108,8 @@ export const Profile: React.FC<ProfileProps> = ({
 
         {/* Stats Summary */}
         <div className="flex-1 space-y-4">
-            <div className="bg-white p-6 rounded-[32px] border border-brand-200 shadow-sm flex items-center gap-6">
-                <div className="w-14 h-14 bg-brand-50 rounded-2xl flex items-center justify-center text-brand-700">
+            <div className="bg-white p-6 rounded-[32px] border border-gray-100 shadow-sm flex items-center gap-6">
+                <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600">
                     <BookOpen className="w-7 h-7" />
                 </div>
                 <div>
@@ -117,7 +117,7 @@ export const Profile: React.FC<ProfileProps> = ({
                     <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">Downloaded Packs</div>
                 </div>
             </div>
-            <div className="bg-white p-6 rounded-[32px] border border-brand-200 shadow-sm flex items-center gap-6">
+            <div className="bg-white p-6 rounded-[32px] border border-gray-100 shadow-sm flex items-center gap-6">
                 <div className="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600">
                     <Clock className="w-7 h-7" />
                 </div>
@@ -139,12 +139,12 @@ export const Profile: React.FC<ProfileProps> = ({
                 <p className="text-xs font-medium text-primary-100">Attributed to your referral key. Totals update from the server.</p>
               </div>
             )}
-            <div className="bg-white p-8 rounded-[40px] border border-brand-200 shadow-sm">
+            <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
                 <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
                    <Settings className="w-4 h-4" /> App Settings
                 </h3>
 
-                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-brand-200 mb-4">
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100 mb-4">
                     <div className="flex items-center gap-4">
                         <div className="bg-white p-2.5 rounded-xl text-primary-600">
                             <MessageSquare className="w-5 h-5" />
@@ -173,12 +173,12 @@ export const Profile: React.FC<ProfileProps> = ({
             </div>
 
             {isLoggedIn ? (
-              <div className="bg-white p-8 rounded-[40px] border border-brand-200 shadow-sm">
+              <div className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
                 <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
                    <User className="w-4 h-4" /> Account Settings
                 </h3>
 
-                <div className="flex items-center gap-4 mb-8 p-4 bg-gray-50 rounded-2xl border border-brand-200">
+                <div className="flex items-center gap-4 mb-8 p-4 bg-gray-50 rounded-2xl border border-gray-100">
                     <div className="bg-white p-2.5 rounded-xl text-gray-400">
                         <Mail className="w-5 h-5" />
                     </div>
@@ -231,7 +231,7 @@ export const Profile: React.FC<ProfileProps> = ({
           </div>
         ) : (
           bookList.map((book) => (
-            <div key={book.id} className="flex items-center justify-between p-5 bg-white border border-brand-200 rounded-[32px] hover:border-primary-300 transition-all group">
+            <div key={book.id} className="flex items-center justify-between p-5 bg-white border border-gray-100 rounded-[32px] hover:border-primary-300 transition-all group">
               <div className="flex items-center gap-5">
                 <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-gray-300 font-black text-lg group-hover:bg-primary-50 group-hover:text-primary-600 transition-all">
                   {book.year.slice(2)}
