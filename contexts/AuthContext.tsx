@@ -108,15 +108,17 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
     let initialSessionResolved = false;
 
     // Restore the persisted session first, then release the gate immediately.
-    // Any online profile lookup continues in the background.
+    // Any online profile lookup continues in the background. The auth listener
+    // can deliver INITIAL_SESSION before or after getSession, so accept it once.
     void supabase.auth.getSession().then(({ data: { session: initialSession } }) => {
-      if (!mounted) return;
+      if (!mounted || initialSessionResolved) return;
       initialSessionResolved = true;
       setLoading(false);
       void loadSessionProfile(initialSession);
     }).catch((error) => {
-      if (!mounted) return;
+      if (!mounted || initialSessionResolved) return;
       console.warn('Could not restore the saved session:', error);
+      initialSessionResolved = true;
       setSession(null);
       setProfile(null);
       setLoading(false);
@@ -124,9 +126,13 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
 
     const { data: listener } = supabase.auth.onAuthStateChange((event, nextSession) => {
       if (!mounted) return;
-      // The initial event is covered by getSession above. Ignore it if it arrives
-      // before that promise, avoiding duplicate profile fetches during startup.
-      if (event === 'INITIAL_SESSION' && !initialSessionResolved) return;
+      if (event === 'INITIAL_SESSION') {
+        if (initialSessionResolved) return;
+        initialSessionResolved = true;
+        setLoading(false);
+        void loadSessionProfile(nextSession);
+        return;
+      }
       void loadSessionProfile(nextSession);
     });
 
