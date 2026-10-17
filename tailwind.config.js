@@ -26,28 +26,28 @@ export default {
         'scale-in': 'scale-in 0.3s ease-out forwards'
       },
       fontFamily: {
-        sans: ['Inter', 'Arial', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'sans-serif'],
       },
       colors: {
         brand: {
-          50: '#F5F5F3',
-          100: '#EDEDEA',
-          200: '#E1E3E3',
-          500: '#788087',
-          600: '#596168',
-          700: '#454B50',
-          900: '#25282B',
+          50: '#FFF9E8',
+          100: '#FFF1BF',
+          200: '#FDE68A',
+          500: '#F7C948',
+          600: '#D9A514',
+          700: '#9A6B00',
+          900: '#1F1B12',
         },
         primary: {
-          50: '#F5F5F3',
-          100: '#E9EAE8',
-          500: '#788087',
-          600: '#454B50',
-          700: '#30363B',
+          50: '#FFF9E8',
+          100: '#FFF1BF',
+          500: '#F7C948',
+          600: '#E5B51B',
+          700: '#B8860B',
         },
         accent: {
-          500: '#454B50',
-          600: '#25282B',
+          500: '#1F1B12',
+          600: '#11100B',
         }
       }
     }
