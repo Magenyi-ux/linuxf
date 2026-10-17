@@ -11,7 +11,6 @@
   --examply-text: #172033;
   --examply-muted: #64748b;
   --examply-border: #e2e8f0;
-  --examply-yellow: #f7c948;
 }
 
 @layer base {
@@ -24,7 +23,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--examply-yellow);
+    outline: 2px solid var(--examply-midnight);
     outline-offset: 3px;
   }
 
@@ -35,7 +34,7 @@
 
 @layer components {
   .glass-panel {
-    @apply bg-white border border-brand-200;
+    @apply bg-white border border-light-200;
   }
 
   .sidebar-scrollbar::-webkit-scrollbar {
@@ -47,7 +46,7 @@
   }
 
   .sidebar-scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-brand-200 rounded-full;
+    @apply bg-light-200 rounded-full;
   }
 
   .math-content ul {
@@ -134,11 +133,11 @@
 }
 
 .offline-dark-surface .bg-primary-50 {
-  background-color: rgb(247 201 72 / 0.12) !important;
+  background-color: #243249 !important;
 }
 
 .offline-dark-surface .text-primary-900 {
-  color: #fde68a !important;
+  color: #f8fafc !important;
 }
 
 .offline-dark-surface .sidebar-scrollbar::-webkit-scrollbar-thumb {
