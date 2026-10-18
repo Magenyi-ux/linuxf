@@ -105,7 +105,8 @@ set search_path = public
 as $$
 declare
   v_count integer;
-  v_added integer;
+  v_added integer := 0;
+  v_premium boolean := false;
 begin
   if auth.uid() is null then
     raise exception 'Authentication required' using errcode = '28000';
@@ -113,12 +114,34 @@ begin
   if p_question_id is null or char_length(p_question_id) < 1 or char_length(p_question_id) > 200 then
     raise exception 'Invalid question identifier' using errcode = '22023';
   end if;
+
+  -- Serialize updates per user so two simultaneous requests cannot exceed the cap.
+  perform pg_advisory_xact_lock(hashtext(auth.uid()::text));
+  select (upper(p.role) = 'ADMIN') or coalesce(e.premium_enabled and (e.expires_at is null or e.expires_at > now()), false)
+    into v_premium
+    from public.profiles p
+    left join public.user_entitlements e on e.user_id = p.id
+    where p.id = auth.uid();
+  if coalesce(v_premium, false) then
+    return jsonb_build_object('allowed', true, 'distinct_count', null, 'limit', 200, 'new_question', false, 'premium', true);
+  end if;
+
+  if exists (select 1 from public.lifetime_question_usage where user_id = auth.uid() and question_id = p_question_id) then
+    select count(*) into v_count from public.lifetime_question_usage where user_id = auth.uid();
+    return jsonb_build_object('allowed', true, 'distinct_count', v_count, 'limit', 200, 'new_question', false);
+  end if;
+
+  select count(*) into v_count from public.lifetime_question_usage where user_id = auth.uid();
+  if v_count >= 200 then
+    return jsonb_build_object('allowed', false, 'distinct_count', v_count, 'limit', 200, 'new_question', false);
+  end if;
+
   insert into public.lifetime_question_usage(user_id, question_id)
   values (auth.uid(), p_question_id)
   on conflict (user_id, question_id) do nothing;
   get diagnostics v_added = row_count;
   select count(*) into v_count from public.lifetime_question_usage where user_id = auth.uid();
-  return jsonb_build_object('allowed', (v_count <= 200), 'distinct_count', v_count, 'limit', 200, 'new_question', (v_added = 1));
+  return jsonb_build_object('allowed', true, 'distinct_count', v_count, 'limit', 200, 'new_question', (v_added = 1));
 end;
 $$;
 revoke all on function public.record_distinct_question(text) from public;
