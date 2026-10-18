@@ -1,7 +1,20 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 const NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions";
-const NVIDIA_MODEL = "z-ai/glm-5-3-flash";
+// Keep this list aligned with NVIDIA's live API catalog. Override without a code change via
+// NVIDIA_NIM_MODELS="model-a,model-b,model-c" in Vercel Production.
+const DEFAULT_NVIDIA_MODELS = [
+  "z-ai/glm-5-3-flash",
+  "openai/gpt-oss-20b",
+  "nvidia/nemotron-3.5-lightning-30b-a3b",
+];
+const getNvidiaModels = () => {
+  const configured = process.env.NVIDIA_NIM_MODELS
+    ?.split(",")
+    .map((model) => model.trim())
+    .filter(Boolean);
+  return configured?.length ? configured : DEFAULT_NVIDIA_MODELS;
+};
 const MAX_QUESTION_LENGTH = 2000;
 const MAX_SUBJECT_LENGTH = 80;
 
@@ -138,54 +151,102 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       ].filter(Boolean).join("\n\n")
     : `Subject context: ${subject || "General school subject"}\n\nStudent question: ${question}`;
 
-  try {
-    const response = await fetch(NVIDIA_URL, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model: NVIDIA_MODEL,
-        messages: [
-          { role: "system", content: mode === "deep-dive" ? deepDiveSystemPrompt : EDUCATIONAL_SYSTEM_PROMPT },
-          { role: "user", content: userContent },
-        ],
-        max_tokens: mode === "deep-dive" ? 1600 : 1024,
-        temperature: mode === "deep-dive" ? 0.35 : 0.2,
-        stream: false,
-      }),
-    });
+  const models = getNvidiaModels();
+  let lastProviderStatus = 502;
+  let lastProviderError = "Unable to reach AI provider";
 
-    const text = await response.text();
+  for (let index = 0; index < models.length; index += 1) {
+    const model = models[index];
 
-    if (!response.ok) {
-      console.error("NVIDIA NIM request failed:", response.status, text.slice(0, 500));
-      return res.status(response.status).json({
-        error: "AI provider request failed",
-        providerStatus: response.status,
-      });
-    }
-
-    let data: any;
     try {
-      data = JSON.parse(text);
-    } catch {
-      return res.status(502).json({ error: "AI provider returned an invalid response" });
-    }
+      const response = await fetch(NVIDIA_URL, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          model,
+          messages: [
+            { role: "system", content: mode === "deep-dive" ? deepDiveSystemPrompt : EDUCATIONAL_SYSTEM_PROMPT },
+            { role: "user", content: userContent },
+          ],
+          max_tokens: mode === "deep-dive" ? 1600 : 1024,
+          temperature: mode === "deep-dive" ? 0.35 : 0.2,
+          stream: false,
+        }),
+        signal: AbortSignal.timeout(45000),
+      });
 
-    const answer = data?.choices?.[0]?.message?.content;
-    if (typeof answer !== "string" || !answer.trim()) {
-      return res.status(502).json({ error: "AI provider returned an empty answer" });
-    }
+      const providerText = await response.text();
 
-    return res.status(200).json({
-      answer: answer.trim(),
-      rejected: false,
-    });
-  } catch (error) {
-    console.error("NVIDIA NIM request error:", error);
-    return res.status(502).json({ error: "Unable to reach AI provider" });
+      if (!response.ok) {
+        lastProviderStatus = response.status;
+        lastProviderError = "AI provider request failed";
+        const canFailOver = response.status === 404
+          || response.status === 410
+          || response.status === 429
+          || response.status >= 500
+          || (response.status === 400 && /model|endpoint|not available|unsupported/i.test(providerText));
+
+        console.error("NVIDIA NIM model request failed:", {
+          model,
+          status: response.status,
+          willTryFallback: canFailOver && index < models.length - 1,
+          detail: providerText.slice(0, 300),
+        });
+
+        if (canFailOver && index < models.length - 1) continue;
+
+        return res.status(response.status >= 400 && response.status < 500 && response.status !== 429
+          ? response.status
+          : 502).json({
+          error: "AI provider request failed",
+          providerStatus: response.status,
+          modelsAttempted: index + 1,
+        });
+      }
+
+      let data: any;
+      try {
+        data = JSON.parse(providerText);
+      } catch {
+        lastProviderStatus = 502;
+        lastProviderError = "AI provider returned an invalid response";
+        if (index < models.length - 1) continue;
+        return res.status(502).json({ error: lastProviderError, modelsAttempted: index + 1 });
+      }
+
+      const answer = data?.choices?.[0]?.message?.content;
+      if (typeof answer !== "string" || !answer.trim()) {
+        lastProviderStatus = 502;
+        lastProviderError = "AI provider returned an empty answer";
+        console.error("NVIDIA NIM returned an empty answer:", { model });
+        if (index < models.length - 1) continue;
+        return res.status(502).json({ error: lastProviderError, modelsAttempted: index + 1 });
+      }
+
+      return res.status(200).json({
+        answer: answer.trim(),
+        rejected: false,
+        modelUsed: model,
+        fallbackUsed: index > 0,
+      });
+    } catch (error) {
+      lastProviderStatus = 502;
+      lastProviderError = error instanceof Error && error.name === "TimeoutError"
+        ? "AI provider request timed out"
+        : "Unable to reach AI provider";
+      console.error("NVIDIA NIM model request error:", {
+        model,
+        message: error instanceof Error ? error.message : "Unknown error",
+        willTryFallback: index < models.length - 1,
+      });
+      if (index < models.length - 1) continue;
+    }
   }
+
+  return res.status(lastProviderStatus === 401 || lastProviderStatus === 403 ? lastProviderStatus : 502)
+    .json({ error: lastProviderError, modelsAttempted: models.length });
 }
