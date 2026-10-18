@@ -19,7 +19,10 @@ interface PracticeSessionProps {
 export const PracticeSession: React.FC<PracticeSessionProps> = ({
   questions, sources = [], examType, subject, mode, onFinish, onBack
 }) => {
-  const { user: supabaseUser } = useAuth();
+  const { user: supabaseUser, session } = useAuth();
+  const [deepDiveLoading, setDeepDiveLoading] = useState(false);
+  const [deepDiveAnswer, setDeepDiveAnswer] = useState('');
+  const [deepDiveError, setDeepDiveError] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string | number, number>>({});
   const [showExplanation, setShowExplanation] = useState(false);
@@ -53,6 +56,8 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     if (!Number.isInteger(questionNumber) || questionNumber < 1 || questionNumber > totalQuestions) return;
     const nextIndex = questionNumber - 1;
     setCurrentIndex(nextIndex);
+    setDeepDiveAnswer('');
+    setDeepDiveError('');
     setJumpInput(String(questionNumber));
     setShowExplanation(answers[questions[nextIndex]?.id] !== undefined);
   };
@@ -89,6 +94,56 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   };
 
   const isAnswered = answers[currentQuestion.id] !== undefined;
+
+  const handleDeepDive = async () => {
+    if (deepDiveLoading) return;
+    if (!session?.access_token) {
+      setDeepDiveError('Sign in to use Deep Dive & Research.');
+      setDeepDiveAnswer('');
+      return;
+    }
+    if (!navigator.onLine) {
+      setDeepDiveError('Deep Dive & Research needs an internet connection. Your regular explanation is still available offline.');
+      setDeepDiveAnswer('');
+      return;
+    }
+
+    setDeepDiveLoading(true);
+    setDeepDiveError('');
+    setDeepDiveAnswer('');
+    try {
+      const response = await fetch('/api/nvidia', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${session.access_token}`,
+        },
+        body: JSON.stringify({
+          mode: 'deep-dive',
+          subject: String(subject),
+          question: cleanQuestionText(currentQuestion.text),
+          options: currentQuestion.options,
+          correctAnswer: currentQuestion.options[currentQuestion.correctOptionIndex] ?? '',
+          explanation: currentQuestion.explanation,
+        }),
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        if (response.status === 401) throw new Error('Your session may have expired. Sign in again and retry.');
+        if (response.status === 429) throw new Error('Too many requests right now. Wait a moment and try again.');
+        throw new Error(data?.error || 'Deep Dive could not generate an explanation. Try again shortly.');
+      }
+      if (data?.rejected) throw new Error(data.answer || 'This request could not be processed.');
+      if (typeof data?.answer !== 'string' || !data.answer.trim()) {
+        throw new Error('The AI returned an empty explanation. Please try again.');
+      }
+      setDeepDiveAnswer(data.answer.trim());
+    } catch (error) {
+      setDeepDiveError(error instanceof Error ? error.message : 'Unable to reach Deep Dive & Research.');
+    } finally {
+      setDeepDiveLoading(false);
+    }
+  };
 
   const getOptionStyle = (idx: number) => {
     const baseStyle = "w-full text-left p-3 sm:p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group relative overflow-hidden";
@@ -203,17 +258,29 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
               <MathText text={currentQuestion.explanation} />
             </div>
             <button
-              onClick={() => {
-                const event = new CustomEvent('dive-deep', {
-                  detail: { context: `Question: ${cleanQuestionText(currentQuestion.text)}\nExplanation: ${currentQuestion.explanation}` }
-                });
-                window.dispatchEvent(event);
-              }}
-              className="flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 bg-primary-600 text-white rounded-2xl font-bold hover:bg-primary-700 transition-all shadow-lg shadow-primary-500/20 active:scale-95 group text-sm sm:text-base"
+              onClick={handleDeepDive}
+              disabled={deepDiveLoading}
+              className="flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 bg-primary-600 text-white rounded-2xl font-bold hover:bg-primary-700 transition-all shadow-lg shadow-primary-500/20 active:scale-95 group text-sm sm:text-base disabled:opacity-60 disabled:cursor-wait"
             >
-              <Search className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              Dive Deep & Research
+              <Search className={`w-5 h-5 ${deepDiveLoading ? 'animate-pulse' : 'group-hover:scale-110 transition-transform'}`} />
+              {deepDiveLoading ? 'Exploring the concept…' : 'Dive Deep & Research'}
             </button>
+            {deepDiveError && (
+              <p role="alert" className="mt-4 rounded-xl border border-red-200 bg-red-50 p-3 text-sm font-medium text-red-700">
+                {deepDiveError}
+              </p>
+            )}
+            {deepDiveAnswer && (
+              <section aria-live="polite" className="mt-5 rounded-2xl border border-primary-100 bg-white p-4 sm:p-6">
+                <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-primary-700">Deeper explanation</h3>
+                <div className="whitespace-pre-wrap break-words text-gray-700 leading-relaxed text-sm sm:text-base">
+                  {deepDiveAnswer}
+                </div>
+                <p className="mt-4 border-t border-gray-100 pt-3 text-xs text-gray-400">
+                  AI-generated study guidance. This feature does not perform live web research.
+                </p>
+              </section>
+            )}
           </div>
         </div>
       )}
