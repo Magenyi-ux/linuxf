@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Streamdown } from 'streamdown';
 import { Question, Subject, ExamType } from '../types';
-import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search, Bookmark, BookmarkCheck } from 'lucide-react';
+import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search, Bookmark, BookmarkCheck, ShieldCheck } from 'lucide-react';
 import { MathText } from './MathText';
 import { cleanQuestionText } from '../utils/questionTextPresentation';
 import { useAuth } from '../contexts/AuthContext';
@@ -32,10 +32,37 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   const [answers, setAnswers] = useState<Record<string | number, number>>({});
   const [showExplanation, setShowExplanation] = useState(false);
   const [jumpInput, setJumpInput] = useState('1');
+  const [questionAccessStatus, setQuestionAccessStatus] = useState<'checking' | 'allowed' | 'blocked' | 'error'>(() => supabaseUser && typeof navigator !== 'undefined' && navigator.onLine ? 'checking' : 'allowed');
+  const [accessCheckAttempt, setAccessCheckAttempt] = useState(0);
 
   const currentQuestion = questions[currentIndex];
   const totalQuestions = questions.length;
   const progress = ((currentIndex + 1) / totalQuestions) * 100;
+
+  useEffect(() => {
+    if (!supabaseUser || !isSupabaseConfigured || !currentQuestion || !navigator.onLine) {
+      setQuestionAccessStatus('allowed');
+      return;
+    }
+    let cancelled = false;
+    setQuestionAccessStatus('checking');
+    supabase.rpc('record_distinct_question', { p_question_id: `${String(subject)}:${String(currentQuestion.id)}` })
+      .then(({ data, error }) => {
+        if (cancelled) return;
+        if (error || !data || typeof data.allowed !== 'boolean') {
+          console.error('Question limit verification failed:', error);
+          setQuestionAccessStatus('error');
+        } else {
+          setQuestionAccessStatus(data.allowed ? 'allowed' : 'blocked');
+        }
+      })
+      .catch(error => {
+        if (cancelled) return;
+        console.error('Question limit verification failed:', error);
+        setQuestionAccessStatus('error');
+      });
+    return () => { cancelled = true; };
+  }, [supabaseUser?.id, session?.access_token, currentQuestion?.id, subject, accessCheckAttempt]);
 
   const handleOptionSelect = (optionIndex: number) => {
     if (answers[currentQuestion.id] !== undefined) return;
