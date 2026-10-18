@@ -220,6 +220,14 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     return baseStyle + " border-gray-100 opacity-50";
   };
 
+  if (questionAccessStatus === 'checking') {
+    return <div className="mx-auto flex min-h-[55vh] max-w-xl flex-col items-center justify-center p-6 text-center"><div className="mb-4 h-8 w-8 animate-spin rounded-full border-4 border-primary-200 border-t-primary-600" /><h2 className="text-xl font-bold text-gray-900">Checking study access</h2><p className="mt-2 text-sm text-gray-500">Verifying your lifetime question allowance.</p></div>;
+  }
+  if (questionAccessStatus === 'blocked' || questionAccessStatus === 'error') {
+    const blocked = questionAccessStatus === 'blocked';
+    return <div className="mx-auto flex min-h-[55vh] max-w-xl flex-col items-center justify-center p-6 text-center"><div className="mb-4 rounded-2xl bg-amber-50 p-4 text-amber-700"><ShieldCheck className="h-8 w-8" /></div><h2 className="text-2xl font-black text-gray-900">{blocked ? 'Free question limit reached' : 'Could not verify study access'}</h2><p className="mt-3 text-sm leading-relaxed text-gray-600">{blocked ? 'Your account has used its 200 distinct-question lifetime allowance. Repeated attempts do not use extra slots. Upgrade to premium for continued access.' : 'We could not verify your question allowance. Check your connection and try again.'}</p><div className="mt-6 flex flex-wrap justify-center gap-3"><button onClick={onBack} className="rounded-xl bg-gray-100 px-5 py-3 text-sm font-bold text-gray-700">Back</button>{!blocked && <button onClick={() => setAccessCheckAttempt(n => n + 1)} className="rounded-xl bg-primary-600 px-5 py-3 text-sm font-bold text-white">Retry check</button>}</div></div>;
+  }
+
   return (
     <div className="w-full max-w-4xl mx-auto px-3 sm:px-6 pb-24">
       <div className="flex items-center justify-between mb-4 sm:mb-6">
