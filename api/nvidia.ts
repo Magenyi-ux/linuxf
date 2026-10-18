@@ -91,6 +91,36 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(auth.status).json({ error: auth.error });
   }
 
+  // Premium access is checked server-side; a client-side button state is not authorization.
+  const supabaseUrl = process.env.VITE_SUPABASE_URL;
+  const supabaseAnonKey = process.env.VITE_SUPABASE_ANON_KEY;
+  if (!supabaseUrl || !supabaseAnonKey) {
+    return res.status(503).json({ error: "Access control is not configured" });
+  }
+  try {
+    const accessResponse = await fetch(`${supabaseUrl}/rest/v1/rpc/check_feature_access`, {
+      method: "POST",
+      headers: {
+        apikey: supabaseAnonKey,
+        Authorization: req.headers.authorization as string,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ p_feature: "chatbot" }),
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!accessResponse.ok) {
+      console.error("Feature access check failed with status", accessResponse.status);
+      return res.status(503).json({ error: "Could not verify your plan. Please try again later." });
+    }
+    const hasAccess = await accessResponse.json();
+    if (hasAccess !== true) {
+      return res.status(403).json({ error: "Ask Professor and Deep Dive require a premium plan." });
+    }
+  } catch (error) {
+    console.error("Feature access verification failed:", error);
+    return res.status(503).json({ error: "Could not verify your plan. Please try again later." });
+  }
+
   const apiKey = process.env.NVIDIA_NIM_API_KEY;
   if (!apiKey) {
     console.error("NVIDIA_NIM_API_KEY environment variable is not configured");
