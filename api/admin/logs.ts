@@ -1,15 +1,31 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { timingSafeEqual } from 'node:crypto';
 import { kv } from '@vercel/kv';
 
+function isAuthorized(header: string | string[] | undefined, configuredToken: string | undefined): boolean {
+  if (!configuredToken || !header || Array.isArray(header)) return false;
+  const prefix = 'Bearer ';
+  if (!header.startsWith(prefix)) return false;
+  const supplied = Buffer.from(header.slice(prefix.length));
+  const expected = Buffer.from(configuredToken);
+  return supplied.length === expected.length && timingSafeEqual(supplied, expected);
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  // Simple Basic Auth check
-  const authHeader = req.headers.authorization;
+  res.setHeader('Cache-Control', 'no-store');
 
-  // We expect "Basic " + base64(admin@magenyi:magenyi123)
-  // admin@magenyi:magenyi123 in base64 is YWRtaW5AbWFnZW55aTptYWdlbnlpMTIz
-  const expectedAuth = 'Basic YWRtaW5AbWFnZW55aTptYWdlbnlpMTIz';
+  if (req.method !== 'GET') {
+    res.setHeader('Allow', 'GET');
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
 
-  if (!authHeader || authHeader !== expectedAuth) {
+  const configuredToken = process.env.ADMIN_LOGS_TOKEN;
+  if (!configuredToken) {
+    console.error('ADMIN_LOGS_TOKEN is not configured');
+    return res.status(503).json({ error: 'Admin logs are not configured' });
+  }
+
+  if (!isAuthorized(req.headers.authorization, configuredToken)) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
@@ -18,13 +34,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const featureUsage = await kv.hgetall('examply_feature_usage');
     const stats = await kv.hgetall('examply_stats');
 
-    res.status(200).json({
+    return res.status(200).json({
       events: events.map(e => typeof e === 'string' ? JSON.parse(e) : e),
       featureUsage,
       stats
     });
   } catch (error) {
     console.error('Error fetching logs:', error);
-    res.status(500).json({ error: 'Failed to fetch logs' });
+    return res.status(500).json({ error: 'Failed to fetch logs' });
   }
 }
