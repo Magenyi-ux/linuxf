@@ -12,6 +12,8 @@ import {
   ShieldCheck,
   UserCheck,
   Users,
+  Power,
+  SlidersHorizontal,
 } from 'lucide-react';
 import type { UserProfile } from '../types';
 import { trackEvent } from '../services/analytics';
@@ -27,7 +29,7 @@ interface AdminDashboardProps {
   onBack: () => void;
 }
 
-type AdminSection = 'OVERVIEW' | 'USERS' | 'REFERRAL';
+type AdminSection = 'OVERVIEW' | 'USERS' | 'REFERRAL' | 'CONTROLS';
 type AdminUserRow = {
   id: string;
   display_name: string | null;
@@ -45,7 +47,7 @@ const roleClasses = (role: string | null | undefined): string =>
 const formatId = (id: string): string => `${id.slice(0, 8)}…${id.slice(-4)}`;
 
 export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
-  const { profile: authProfile } = useAuth();
+  const { profile: authProfile, user: authUser } = useAuth();
   const [section, setSection] = useState<AdminSection>('OVERVIEW');
   const [users, setUsers] = useState<AdminUserRow[]>([]);
   const [referralSummary, setReferralSummary] = useState<AdminReferralCodeSummary>({
@@ -57,6 +59,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
+  const [emergencyEnabled, setEmergencyEnabled] = useState(true);
+  const [featureControls, setFeatureControls] = useState<Record<string, boolean>>({ chatbot: true, 'deep-dive': true, 'question-practice': true });
+  const [premiumUserIds, setPremiumUserIds] = useState<string[]>([]);
+  const [entitlementBusy, setEntitlementBusy] = useState<string | null>(null);
 
   const isAdmin = authProfile?.role === 'ADMIN';
 
@@ -77,6 +83,20 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       if (profileResult.error) throw profileResult.error;
       setReferralSummary(summary);
       setUsers((profileResult.data || []) as AdminUserRow[]);
+
+      // Controls/entitlements are loaded separately so a missing migration does not hide the core admin dashboard.
+      const [globalResult, featureResult, entitlementResult] = await Promise.all([
+        supabase.from('app_control_settings').select('emergency_enabled').eq('singleton', true).maybeSingle(),
+        supabase.from('feature_controls').select('feature_key,enabled'),
+        supabase.from('user_entitlements').select('user_id,premium_enabled,expires_at'),
+      ]);
+      if (!globalResult.error && globalResult.data) setEmergencyEnabled(Boolean(globalResult.data.emergency_enabled));
+      if (!featureResult.error && featureResult.data) {
+        setFeatureControls(Object.fromEntries(featureResult.data.map((item: { feature_key: string; enabled: boolean }) => [item.feature_key, item.enabled])));
+      }
+      if (!entitlementResult.error && entitlementResult.data) {
+        setPremiumUserIds(entitlementResult.data.filter((item: { user_id: string; premium_enabled: boolean; expires_at: string | null }) => item.premium_enabled && (!item.expires_at || new Date(item.expires_at).getTime() > Date.now())).map((item: { user_id: string }) => item.user_id));
+      }
       trackEvent('admin_dashboard_refresh', { total_profiles: profileResult.data?.length || 0 });
     } catch (fetchError) {
       console.error('Failed to load admin dashboard:', fetchError);
@@ -107,6 +127,39 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
       return matchesRole && matchesQuery;
     });
   }, [roleFilter, userSearch, users]);
+
+  const updateEmergencySwitch = async (enabled: boolean) => {
+    if (!authUser) return;
+    setError('');
+    const { error: updateError } = await supabase.from('app_control_settings').update({ emergency_enabled: enabled, updated_at: new Date().toISOString(), updated_by: authUser.id }).eq('singleton', true);
+    if (updateError) { setError('Could not update the emergency switch. Apply supabase/admin_controls_entitlements.sql and retry.'); return; }
+    setEmergencyEnabled(enabled);
+  };
+
+  const updateFeatureSwitch = async (feature: string, enabled: boolean) => {
+    if (!authUser) return;
+    setError('');
+    const { error: updateError } = await supabase.from('feature_controls').update({ enabled, updated_at: new Date().toISOString(), updated_by: authUser.id }).eq('feature_key', feature);
+    if (updateError) { setError(`Could not update ${feature}. Apply the admin controls migration and retry.`); return; }
+    setFeatureControls(current => ({ ...current, [feature]: enabled }));
+  };
+
+  const togglePremium = async (user: AdminUserRow) => {
+    setEntitlementBusy(user.id);
+    setError('');
+    const grant = !premiumUserIds.includes(user.id);
+    const { error: updateError } = await supabase.from('user_entitlements').upsert({
+      user_id: user.id,
+      premium_enabled: grant,
+      expires_at: null,
+      note: grant ? 'Granted by admin portal' : 'Revoked by admin portal',
+      updated_at: new Date().toISOString(),
+      updated_by: authUser?.id ?? null,
+    }, { onConflict: 'user_id' });
+    if (updateError) setError('Could not update premium access. Apply supabase/admin_controls_entitlements.sql and check admin permissions.');
+    else setPremiumUserIds(current => grant ? [...current, user.id] : current.filter(id => id !== user.id));
+    setEntitlementBusy(null);
+  };
 
   const copyReferralCode = async () => {
     try {
@@ -182,6 +235,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
           ['OVERVIEW', 'Overview', Activity],
           ['USERS', 'Users', Users],
           ['REFERRAL', 'Referral', Share2],
+          ['CONTROLS', 'Controls & Premium', SlidersHorizontal],
         ] as const).map(([value, label, Icon]) => (
           <button
             key={value}
@@ -197,6 +251,51 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         <div className="mb-5 flex items-start gap-3 p-4 rounded-2xl bg-amber-50 border border-amber-100 text-amber-800 text-xs font-bold">
           <span className="mt-0.5">!</span>
           <span>{error}</span>
+        </div>
+      )}
+
+      {section === 'CONTROLS' && (
+        <div className="space-y-5">
+          <section className="rounded-[28px] border border-red-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-start gap-3">
+                <div className="rounded-2xl bg-red-50 p-3 text-red-700"><Power className="h-5 w-5" /></div>
+                <div><h2 className="text-lg font-black text-gray-900">Emergency kill switch</h2><p className="mt-1 max-w-xl text-sm text-gray-500">Disables premium AI feature access server-side for non-admin users. Admin accounts remain available for recovery.</p></div>
+              </div>
+              <button onClick={() => void updateEmergencySwitch(!emergencyEnabled)} className={`shrink-0 rounded-xl px-4 py-3 text-sm font-black ${emergencyEnabled ? 'bg-emerald-100 text-emerald-800' : 'bg-red-600 text-white'}`}>{emergencyEnabled ? 'SYSTEM ENABLED · TURN OFF' : 'EMERGENCY STOP ACTIVE · TURN ON'}</button>
+            </div>
+          </section>
+          <section className="rounded-[28px] border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="text-lg font-black text-gray-900">Per-feature switches</h2>
+            <p className="mb-4 mt-1 text-sm text-gray-500">Changes are stored in Supabase and checked by the API; they do not require a new deployment.</p>
+            <div className="space-y-3">
+              {(['chatbot', 'deep-dive', 'question-practice'] as const).map(feature => (
+                <div key={feature} className="flex items-center justify-between gap-4 rounded-2xl border border-gray-100 p-4">
+                  <div><p className="font-bold text-gray-800">{feature === 'chatbot' ? 'Ask Professor / AI' : feature === 'deep-dive' ? 'Deep Dive & Research' : 'Question practice'}</p><p className="text-xs text-gray-500">Key: {feature}</p></div>
+                  <button onClick={() => void updateFeatureSwitch(feature, !featureControls[feature])} className={`rounded-xl px-4 py-2 text-xs font-black ${featureControls[feature] ? 'bg-emerald-100 text-emerald-800' : 'bg-gray-200 text-gray-700'}`}>{featureControls[feature] ? 'ENABLED' : 'DISABLED'}</button>
+                </div>
+              ))}
+            </div>
+          </section>
+          <section className="rounded-[28px] border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="text-lg font-black text-gray-900">Grant or revoke premium</h2>
+            <p className="mb-4 mt-1 text-sm text-gray-500">Premium is checked by the server. Search for an account, then change its entitlement.</p>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[520px] text-left text-sm">
+                <thead><tr className="border-b border-gray-100 text-[10px] uppercase tracking-widest text-gray-400"><th className="px-3 py-3">Student</th><th className="px-3 py-3">Account ID</th><th className="px-3 py-3">Premium</th><th className="px-3 py-3">Action</th></tr></thead>
+                <tbody>{filteredUsers.map(user => {
+                  const hasPremium = premiumUserIds.includes(user.id);
+                  return <tr key={user.id} className="border-b border-gray-50">
+                    <td className="px-3 py-3 font-semibold text-gray-800">{user.display_name || 'Student'}</td>
+                    <td className="px-3 py-3 font-mono text-xs text-gray-500">{formatId(user.id)}</td>
+                    <td className="px-3 py-3"><span className={`rounded-lg px-2 py-1 text-xs font-bold ${hasPremium ? 'bg-emerald-50 text-emerald-700' : 'bg-gray-100 text-gray-500'}`}>{hasPremium ? 'ACTIVE' : 'INACTIVE'}</span></td>
+                    <td className="px-3 py-3"><button disabled={entitlementBusy === user.id} onClick={() => void togglePremium(user)} className={`rounded-lg px-3 py-2 text-xs font-bold disabled:opacity-50 ${hasPremium ? 'bg-red-50 text-red-700' : 'bg-primary-50 text-primary-700'}`}>{entitlementBusy === user.id ? 'Saving…' : hasPremium ? 'Revoke' : 'Grant premium'}</button></td>
+                  </tr>;
+                })}</tbody>
+              </table>
+              {filteredUsers.length === 0 && <p className="py-8 text-center text-sm text-gray-400">No accounts match the current search/filter.</p>}
+            </div>
+          </section>
         </div>
       )}
 
