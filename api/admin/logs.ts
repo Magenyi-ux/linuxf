@@ -35,7 +35,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const stats = await kv.hgetall('examply_stats');
 
     return res.status(200).json({
-      events: events.map(e => typeof e === 'string' ? JSON.parse(e) : e),
+      events: events.map((e: unknown) => typeof e === 'string' ? JSON.parse(e) : e),
       featureUsage,
       stats
     });
