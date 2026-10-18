@@ -81,13 +81,14 @@ declare
   v_premium boolean;
 begin
   if auth.uid() is null then return false; end if;
-  select upper(role) into v_role from public.profiles where id = auth.uid();
-  if v_role = 'ADMIN' then return true; end if;
   select coalesce(emergency_enabled, false) into v_enabled
     from public.app_control_settings where singleton = true;
+  -- The emergency stop is global, including administrator requests.
   if coalesce(v_enabled, false) = false then return false; end if;
   select enabled into v_enabled from public.feature_controls where feature_key = p_feature;
   if coalesce(v_enabled, false) = false then return false; end if;
+  select upper(role) into v_role from public.profiles where id = auth.uid();
+  if v_role = 'ADMIN' then return true; end if;
   select (premium_enabled and (expires_at is null or expires_at > now()))
     into v_premium from public.user_entitlements where user_id = auth.uid();
   return coalesce(v_premium, false);
