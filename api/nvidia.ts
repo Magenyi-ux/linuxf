@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 const NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions";
-const NVIDIA_MODEL = "meta/llama-3.1-8b-instruct";
+const NVIDIA_MODEL = "z-ai/glm-5-3-flash";
 const MAX_QUESTION_LENGTH = 2000;
 const MAX_SUBJECT_LENGTH = 80;
 
