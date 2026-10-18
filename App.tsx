@@ -8,6 +8,7 @@ import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
 import { Profile } from './components/Profile';
 import { AdminDashboard } from './components/AdminDashboard';
+import { StudyNotesLibrary } from './components/StudyNotesLibrary';
 import { Auth } from './components/Auth';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
@@ -17,7 +18,7 @@ import { trackEvent } from './services/analytics';
 import { captureReferralKeyFromUrl, fetchMyReferralSummary, type ReferralSummary } from './services/referralService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
-  Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
+  Trash2, Calculator, BookA, Atom, FlaskConical, Dna, Bookmark, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
   Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Sun, Map, X, Trophy, Home, ArrowLeft, Search, User, LogOut, LogIn
 } from 'lucide-react';
@@ -89,6 +90,7 @@ const AppShell: React.FC = () => {
   const [currentSources, setCurrentSources] = useState<string[]>([]);
   const [practiceMode, setPracticeMode] = useState<'STUDY' | 'TEST'>('STUDY');
   const [showLibrary, setShowLibrary] = useState(false);
+  const [showSavedNotes, setShowSavedNotes] = useState(false);
   const [activeBookId, setActiveBookId] = useState<string | null>(null);
   const [isSearching, setIsSearching] = useState(false);
   
@@ -633,6 +635,7 @@ const AppShell: React.FC = () => {
                 <DownloadCloud className="w-5 h-5" />
               </button>
             )}
+            {isLoggedIn && <button onClick={() => setShowSavedNotes(true)} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Saved study notes" title="Saved study notes"><Bookmark className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Study notes</span></button>}
             <button onClick={() => setScreen(isLoggedIn ? 'PROFILE' : 'AUTH')} className="p-3 hover:bg-gray-50 rounded-xl transition-colors">
               {isLoggedIn ? <User className="w-5 h-5 text-gray-700" /> : <LogIn className="w-5 h-5 text-gray-700" />}
             </button>
@@ -941,6 +944,8 @@ const AppShell: React.FC = () => {
           />
         )}
       </main>
+
+      {showSavedNotes && <StudyNotesLibrary onClose={() => setShowSavedNotes(false)} />}
 
       {/* Library Modal */}
       {showLibrary && (
