@@ -60,7 +60,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
   const [emergencyEnabled, setEmergencyEnabled] = useState(true);
-  const [featureControls, setFeatureControls] = useState<Record<string, boolean>>({ chatbot: true, 'deep-dive': true, 'question-practice': true });
+  const [featureControls, setFeatureControls] = useState<Record<string, boolean>>({ chatbot: true, 'deep-dive': true });
   const [premiumUserIds, setPremiumUserIds] = useState<string[]>([]);
   const [entitlementBusy, setEntitlementBusy] = useState<string | null>(null);
 
@@ -269,7 +269,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
             <h2 className="text-lg font-black text-gray-900">Per-feature switches</h2>
             <p className="mb-4 mt-1 text-sm text-gray-500">Changes are stored in Supabase and checked by the API; they do not require a new deployment.</p>
             <div className="space-y-3">
-              {(['chatbot', 'deep-dive', 'question-practice'] as const).map(feature => (
+              {(['chatbot', 'deep-dive'] as const).map(feature => (
                 <div key={feature} className="flex items-center justify-between gap-4 rounded-2xl border border-gray-100 p-4">
                   <div><p className="font-bold text-gray-800">{feature === 'chatbot' ? 'Ask Professor / AI' : feature === 'deep-dive' ? 'Deep Dive & Research' : 'Question practice'}</p><p className="text-xs text-gray-500">Key: {feature}</p></div>
                   <button onClick={() => void updateFeatureSwitch(feature, !featureControls[feature])} className={`rounded-xl px-4 py-2 text-xs font-black ${featureControls[feature] ? 'bg-emerald-100 text-emerald-800' : 'bg-gray-200 text-gray-700'}`}>{featureControls[feature] ? 'ENABLED' : 'DISABLED'}</button>
