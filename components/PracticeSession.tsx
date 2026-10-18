@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { Streamdown } from 'streamdown';
 import { Question, Subject, ExamType } from '../types';
-import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search } from 'lucide-react';
+import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search, Bookmark, BookmarkCheck } from 'lucide-react';
 import { MathText } from './MathText';
 import { cleanQuestionText } from '../utils/questionTextPresentation';
 import { useAuth } from '../contexts/AuthContext';
 import { enqueueQuestionAttempt } from '../services/offlineQueue';
+import { supabase, isSupabaseConfigured } from '../services/supabaseClient';
 
 interface PracticeSessionProps {
   questions: Question[];
@@ -23,6 +25,9 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   const [deepDiveLoading, setDeepDiveLoading] = useState(false);
   const [deepDiveAnswer, setDeepDiveAnswer] = useState('');
   const [deepDiveError, setDeepDiveError] = useState('');
+  const [savingNote, setSavingNote] = useState(false);
+  const [noteSaved, setNoteSaved] = useState(false);
+  const [saveNoteError, setSaveNoteError] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string | number, number>>({});
   const [showExplanation, setShowExplanation] = useState(false);
@@ -58,6 +63,8 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     setCurrentIndex(nextIndex);
     setDeepDiveAnswer('');
     setDeepDiveError('');
+    setNoteSaved(false);
+    setSaveNoteError('');
     setJumpInput(String(questionNumber));
     setShowExplanation(answers[questions[nextIndex]?.id] !== undefined);
   };
@@ -95,6 +102,32 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
 
   const isAnswered = answers[currentQuestion.id] !== undefined;
 
+  const handleSaveDeepDiveNote = async () => {
+    if (savingNote || noteSaved || !deepDiveAnswer) return;
+    if (!supabaseUser || !session?.access_token || !isSupabaseConfigured) {
+      setSaveNoteError('Sign in to save this explanation to your study notes.');
+      return;
+    }
+    setSavingNote(true);
+    setSaveNoteError('');
+    try {
+      const { error } = await supabase.from('study_notes').insert({
+        user_id: supabaseUser.id,
+        title: `Deep Dive: ${cleanQuestionText(currentQuestion.text).slice(0, 120)}`,
+        subject: String(subject),
+        question: cleanQuestionText(currentQuestion.text),
+        content: deepDiveAnswer,
+      });
+      if (error) throw error;
+      setNoteSaved(true);
+    } catch (error) {
+      console.error('Could not save study note:', error);
+      setSaveNoteError('Could not save this note. Please try again later.');
+    } finally {
+      setSavingNote(false);
+    }
+  };
+
   const handleDeepDive = async () => {
     if (deepDiveLoading) return;
     if (!session?.access_token) {
@@ -111,6 +144,8 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     setDeepDiveLoading(true);
     setDeepDiveError('');
     setDeepDiveAnswer('');
+    setNoteSaved(false);
+    setSaveNoteError('');
     try {
       const response = await fetch('/api/nvidia', {
         method: 'POST',
@@ -273,8 +308,15 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
             {deepDiveAnswer && (
               <section aria-live="polite" className="mt-5 rounded-2xl border border-primary-100 bg-white p-4 sm:p-6">
                 <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-primary-700">Deeper explanation</h3>
-                <div className="whitespace-pre-wrap break-words text-gray-700 leading-relaxed text-sm sm:text-base">
-                  {deepDiveAnswer}
+                <div className="deep-dive-markdown min-w-0 break-words text-gray-700 text-sm sm:text-base">
+                  <Streamdown>{deepDiveAnswer}</Streamdown>
+                </div>
+                <div className="mt-4 flex flex-wrap items-center gap-3">
+                  <button type="button" onClick={handleSaveDeepDiveNote} disabled={savingNote || noteSaved} className="inline-flex items-center gap-2 rounded-xl border border-primary-200 px-4 py-2 text-sm font-semibold text-primary-700 transition hover:bg-primary-50 disabled:cursor-not-allowed disabled:opacity-60">
+                    {noteSaved ? <BookmarkCheck className="h-4 w-4" /> : <Bookmark className="h-4 w-4" />}
+                    {savingNote ? 'Saving note…' : noteSaved ? 'Saved to study notes' : 'Save explanation'}
+                  </button>
+                  {saveNoteError && <p role="alert" className="text-sm text-red-600">{saveNoteError}</p>}
                 </div>
                 <p className="mt-4 border-t border-gray-100 pt-3 text-xs text-gray-400">
                   AI-generated study guidance. This feature does not perform live web research.
