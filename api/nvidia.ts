@@ -137,7 +137,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const subject = typeof body.subject === "string" ? body.subject.trim() : "";
   const explanation = typeof body.explanation === "string" ? body.explanation.trim() : "";
   const correctAnswer = typeof body.correctAnswer === "string" ? body.correctAnswer.trim() : "";
-  const options = Array.isArray(body.options)
+  const options: string[] = Array.isArray(body.options)
     ? body.options.filter((option: unknown): option is string => typeof option === "string").slice(0, 8)
     : [];
 
