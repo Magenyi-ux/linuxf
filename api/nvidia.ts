@@ -105,7 +105,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         Authorization: req.headers.authorization as string,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ p_feature: "chatbot" }),
+      body: JSON.stringify({ p_feature: req.body?.mode === "deep-dive" ? "deep-dive" : "chatbot" }),
       signal: AbortSignal.timeout(8000),
     });
     if (!accessResponse.ok) {
