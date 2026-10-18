@@ -17,8 +17,7 @@ create table if not exists public.feature_controls (
 );
 insert into public.feature_controls(feature_key, enabled) values
   ('chatbot', true),
-  ('deep-dive', true),
-  ('question-practice', true)
+  ('deep-dive', true)
 on conflict (feature_key) do nothing;
 
 create table if not exists public.user_entitlements (
