@@ -117,3 +117,71 @@
 .offline-dark-surface .sidebar-scrollbar::-webkit-scrollbar-thumb {
   background: #334155;
 }
+
+
+/* Readable, responsive Markdown for AI-generated study explanations. */
+.deep-dive-markdown {
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.deep-dive-markdown > * + * { margin-top: 0.85rem; }
+.deep-dive-markdown h1,
+.deep-dive-markdown h2,
+.deep-dive-markdown h3,
+.deep-dive-markdown h4 {
+  color: #111827;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-top: 1.35rem;
+}
+.deep-dive-markdown h1 { font-size: 1.5rem; }
+.deep-dive-markdown h2 { font-size: 1.25rem; }
+.deep-dive-markdown h3 { font-size: 1.1rem; }
+.deep-dive-markdown p { margin: 0.75rem 0; }
+.deep-dive-markdown ul,
+.deep-dive-markdown ol { padding-left: 1.5rem; margin: 0.75rem 0; }
+.deep-dive-markdown ul { list-style: disc; }
+.deep-dive-markdown ol { list-style: decimal; }
+.deep-dive-markdown li { padding-left: 0.2rem; margin: 0.25rem 0; }
+.deep-dive-markdown blockquote {
+  border-left: 3px solid #94a3b8;
+  color: #475569;
+  margin: 1rem 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+}
+.deep-dive-markdown pre {
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 0.75rem;
+  background: #111827;
+  color: #f9fafb;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+.deep-dive-markdown code {
+  overflow-wrap: anywhere;
+  border-radius: 0.25rem;
+  background: #f3f4f6;
+  padding: 0.1rem 0.25rem;
+  font-size: 0.9em;
+}
+.deep-dive-markdown pre code { background: transparent; padding: 0; }
+.deep-dive-markdown table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  white-space: normal;
+  font-size: 0.875rem;
+}
+.deep-dive-markdown th,
+.deep-dive-markdown td {
+  border: 1px solid #e5e7eb;
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  min-width: 6rem;
+}
+.deep-dive-markdown th { background: #f9fafb; color: #111827; font-weight: 700; }
+.deep-dive-markdown a { color: #2563eb; text-decoration: underline; }
+.deep-dive-markdown hr { border-color: #e5e7eb; margin: 1.25rem 0; }
