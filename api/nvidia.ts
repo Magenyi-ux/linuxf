@@ -19,6 +19,11 @@ const getNvidiaModels = () => {
 const MAX_QUESTION_LENGTH = 2000;
 const MAX_SUBJECT_LENGTH = 80;
 
+function getAuthorization(req: ApiRequest): string | undefined {
+  const value = req.headers.authorization;
+  return Array.isArray(value) ? value[0] : value;
+}
+
 const EDUCATIONAL_SYSTEM_PROMPT = [
   "You are Ask Professor inside Examply by SphereLearn.",
   "Your only purpose is educational question answering and tutoring.",
@@ -42,7 +47,7 @@ const BLOCKED_PROGRAMMING_PATTERNS = [
 ];
 
 async function authenticateUser(req: ApiRequest) {
-  const authorization = req.headers.authorization;
+  const authorization = getAuthorization(req);
   const supabaseUrl = process.env.VITE_SUPABASE_URL;
   const supabaseAnonKey = process.env.VITE_SUPABASE_ANON_KEY;
 
@@ -103,7 +108,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
       method: "POST",
       headers: {
         apikey: supabaseAnonKey,
-        Authorization: req.headers.authorization as string,
+        Authorization: getAuthorization(req) ?? "",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ p_feature: req.body?.mode === "deep-dive" ? "deep-dive" : "chatbot" }),
