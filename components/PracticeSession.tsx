@@ -182,6 +182,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
         },
         body: JSON.stringify({
           mode: 'deep-dive',
+          stream: true,
           subject: String(subject),
           question: cleanQuestionText(currentQuestion.text),
           options: currentQuestion.options,
@@ -189,18 +190,79 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
           explanation: currentQuestion.explanation,
         }),
       });
-      const data = await response.json().catch(() => ({}));
       if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
         if (response.status === 401) throw new Error('Your session may have expired. Sign in again and retry.');
         if (response.status === 429) throw new Error('Too many requests right now. Wait a moment and try again.');
         throw new Error(data?.error || 'Deep Dive could not generate an explanation. Try again shortly.');
       }
-      if (data?.rejected) throw new Error(data.answer || 'This request could not be processed.');
-      if (typeof data?.answer !== 'string' || !data.answer.trim()) {
-        throw new Error('The AI returned an empty explanation. Please try again.');
+
+      // Keep compatibility with an older deployment that may still return JSON.
+      if (!response.headers.get('content-type')?.includes('text/event-stream')) {
+        const data = await response.json().catch(() => ({}));
+        if (data?.rejected) throw new Error(data.answer || 'This request could not be processed.');
+        if (typeof data?.answer !== 'string' || !data.answer.trim()) {
+          throw new Error('The AI returned an empty explanation. Please try again.');
+        }
+        setDeepDiveAnswer(data.answer.trim());
+      } else {
+        if (!response.body) throw new Error('Streaming is not supported by this connection. Please retry.');
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+        let streamedAnswer = '';
+        let streamError = '';
+        try {
+          while (true) {
+            const { value, done } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+            const lines = buffer.split('\\n');
+            buffer = lines.pop() ?? '';
+            for (const rawLine of lines) {
+              const line = rawLine.trim();
+              if (!line.startsWith('data:')) continue;
+              const payload = line.slice(5).trim();
+              if (!payload) continue;
+              let event: { delta?: unknown; done?: boolean; error?: string };
+              try {
+                event = JSON.parse(payload);
+              } catch {
+                continue;
+              }
+              if (typeof event.error === 'string') {
+                streamError = event.error;
+                break;
+              }
+              if (typeof event.delta === 'string' && event.delta) {
+                streamedAnswer += event.delta;
+                setDeepDiveAnswer(streamedAnswer);
+              }
+            }
+            if (streamError) break;
+          }
+          if (streamError) throw new Error(streamError);
+          buffer += decoder.decode();
+          const finalLine = buffer.trim();
+          if (finalLine.startsWith('data:')) {
+            try {
+              const event = JSON.parse(finalLine.slice(5).trim());
+              if (typeof event.error === 'string') throw new Error(event.error);
+              if (typeof event.delta === 'string' && event.delta) {
+                streamedAnswer += event.delta;
+                setDeepDiveAnswer(streamedAnswer);
+              }
+            } catch (error) {
+              if (error instanceof Error && error.message !== 'Unexpected end of JSON input') throw error;
+            }
+          }
+          if (!streamedAnswer.trim()) throw new Error('The AI returned an empty explanation. Please try again.');
+        } finally {
+          reader.releaseLock();
+        }
       }
-      setDeepDiveAnswer(data.answer.trim());
     } catch (error) {
+      setDeepDiveAnswer('');
       setDeepDiveError(error instanceof Error ? error.message : 'Unable to reach Deep Dive & Research.');
     } finally {
       setDeepDiveLoading(false);
