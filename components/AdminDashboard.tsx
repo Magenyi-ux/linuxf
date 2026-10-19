@@ -64,7 +64,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
   const [premiumUserIds, setPremiumUserIds] = useState<string[]>([]);
   const [entitlementBusy, setEntitlementBusy] = useState<string | null>(null);
 
-  const isAdmin = authProfile?.role === 'ADMIN';
+  const isAdmin = authProfile?.role?.toUpperCase() === 'ADMIN';
 
   const fetchAdminData = useCallback(async () => {
     if (!isAdmin || !isSupabaseConfigured) return;
