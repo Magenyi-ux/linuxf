@@ -8,6 +8,7 @@ import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
 import { Profile } from './components/Profile';
 import { AdminDashboard } from './components/AdminDashboard';
+import { StudyNotesLibrary } from './components/StudyNotesLibrary';
 import { Auth } from './components/Auth';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
@@ -17,7 +18,7 @@ import { trackEvent } from './services/analytics';
 import { captureReferralKeyFromUrl, fetchMyReferralSummary, type ReferralSummary } from './services/referralService';
 import { 
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
-  Trash2, Calculator, BookA, Atom, FlaskConical, Dna, 
+  Trash2, Calculator, BookA, Atom, FlaskConical, Dna, Bookmark, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
   Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Sun, Map, X, Trophy, Home, ArrowLeft, Search, User, LogOut, LogIn
 } from 'lucide-react';
@@ -89,6 +90,7 @@ const AppShell: React.FC = () => {
   const [currentSources, setCurrentSources] = useState<string[]>([]);
   const [practiceMode, setPracticeMode] = useState<'STUDY' | 'TEST'>('STUDY');
   const [showLibrary, setShowLibrary] = useState(false);
+  const [showSavedNotes, setShowSavedNotes] = useState(false);
   const [activeBookId, setActiveBookId] = useState<string | null>(null);
   const [isSearching, setIsSearching] = useState(false);
   
@@ -633,6 +635,7 @@ const AppShell: React.FC = () => {
                 <DownloadCloud className="w-5 h-5" />
               </button>
             )}
+            {isLoggedIn && <button onClick={() => setShowSavedNotes(true)} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Saved study notes" title="Saved study notes"><Bookmark className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Study notes</span></button>}
             <button onClick={() => setScreen(isLoggedIn ? 'PROFILE' : 'AUTH')} className="p-3 hover:bg-gray-50 rounded-xl transition-colors">
               {isLoggedIn ? <User className="w-5 h-5 text-gray-700" /> : <LogIn className="w-5 h-5 text-gray-700" />}
             </button>
@@ -642,40 +645,88 @@ const AppShell: React.FC = () => {
 
       <main className="max-w-6xl mx-auto px-4 md:px-8 py-10 pb-28">
         {screen === 'HOME' && (
-          <div className="animate-fade-in">
-            <div className="text-center max-w-3xl mx-auto mb-14">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-xs font-black uppercase tracking-widest mb-6">
-                <WifiOff className="w-4 h-4" /> Offline First Learning
-              </div>
-              <h1 className="text-5xl md:text-7xl font-black tracking-tight text-gray-900 mb-6 leading-[0.95]">{displayText}<span className="text-primary-600">|</span></h1>
-              <p className="text-lg text-gray-500 font-medium">Practice JAMB, WAEC and NECO past questions with offline-first study tools.</p>
-            </div>
+          <div className="mx-auto max-w-5xl animate-fade-in space-y-6 sm:space-y-8">
+            <section className="px-1 py-1">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary-700">SphereLearn · Education Beyond Connectivity</p>
+              <h1 className="mt-2 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
+                Good {new Date().getHours() < 12 ? 'morning' : new Date().getHours() < 17 ? 'afternoon' : 'evening'}{isLoggedIn && supabaseUser?.email ? `, ${supabaseUser.email.split('@')[0]}` : ''}
+              </h1>
+              <p className="mt-1 text-sm text-slate-500">Let's make progress today.</p>
+            </section>
 
-            <div className="grid md:grid-cols-3 gap-5 mb-14">
-              {STREAMS.map(stream => (
-                <button key={stream.id} onClick={() => { setSelectedStream(stream.id); setScreen('EXAM_SELECT'); }} className="text-left p-6 bg-white border border-gray-100 rounded-[32px] hover:border-primary-300 hover:shadow-xl transition-all group">
-                  <div className={`w-14 h-14 ${stream.color} rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg`}>
-                    <stream.icon className="w-7 h-7" />
+            <section className="overflow-hidden rounded-3xl bg-primary-600 p-6 text-white shadow-lg shadow-blue-900/10 sm:p-8">
+              <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+                <div className="max-w-xl">
+                  <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold text-white">
+                    <WifiOff className="h-4 w-4" /> OFFLINE-FIRST LEARNING
                   </div>
-                  <h3 className="text-xl font-black text-gray-900 mb-2">{stream.label}</h3>
-                  <p className="text-sm text-gray-500 font-medium">{stream.description}</p>
-                </button>
-              ))}
-            </div>
-
-            <div className="bg-gray-900 text-white rounded-[40px] p-8 md:p-12 overflow-hidden relative">
-              <div className="absolute -right-20 -top-20 w-72 h-72 bg-primary-500/20 rounded-full blur-3xl"></div>
-              <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
-                <div>
-                  <p className="text-primary-400 text-xs font-black uppercase tracking-widest mb-3">Built for low connectivity</p>
-                  <h2 className="text-3xl md:text-4xl font-black mb-3">Download once. Study anywhere.</h2>
-                  <p className="text-gray-400 max-w-xl">Keep question packs on your device and continue studying when your connection disappears.</p>
+                  <h2 className="text-2xl font-extrabold leading-tight sm:text-3xl">{Object.keys(books).length ? 'Continue studying' : 'Start your preparation'}</h2>
+                  <p className="mt-2 max-w-lg text-sm leading-relaxed text-white/85 sm:text-base">
+                    {Object.keys(books).length ? 'Pick up with your downloaded question packs and keep learning, even without data.' : 'Build your first study session with JAMB, WAEC and NECO past questions.'}
+                  </p>
                 </div>
-                <button onClick={() => setScreen('EXAM_SELECT')} className="shrink-0 px-7 py-4 bg-primary-600 hover:bg-primary-700 rounded-2xl font-black transition-all flex items-center gap-2">
-                  Start Studying <ArrowRight className="w-5 h-5" />
+                <button onClick={() => setScreen('EXAM_SELECT')} className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-primary-700 transition hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600">
+                  Practice now <ArrowRight className="h-4 w-4" />
                 </button>
               </div>
-            </div>
+            </section>
+
+            <section className="grid grid-cols-2 gap-3 sm:gap-4" aria-label="Study statistics">
+              <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5">
+                <p className="text-xs font-semibold text-slate-500">Accuracy</p>
+                <p className="mt-2 text-2xl font-extrabold text-slate-900">{cloudProgress.attempted ? `${Math.round((cloudProgress.correct / cloudProgress.attempted) * 100)}%` : '—'}</p>
+                <p className="mt-1 text-xs text-slate-500">Across synced attempts</p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5">
+                <p className="text-xs font-semibold text-slate-500">Study streak</p>
+                <p className="mt-2 text-2xl font-extrabold text-slate-900">{cloudProgress.streak}<span className="ml-1 text-sm font-semibold text-slate-500">days</span></p>
+                <p className="mt-1 text-xs text-slate-500">Keep your routine going</p>
+              </div>
+            </section>
+
+            <section className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6">
+              <div className="flex items-start gap-3">
+                <div className="rounded-xl bg-primary-50 p-3 text-primary-700"><BookOpen className="h-5 w-5" /></div>
+                <div className="min-w-0 flex-1">
+                  <h2 className="font-bold text-slate-900">Today's focus</h2>
+                  <p className="mt-1 text-sm leading-relaxed text-slate-500">Build confidence through consistent practice. Download question packs once, then study offline whenever you need them.</p>
+                  <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-slate-600">
+                    <span className="rounded-full bg-slate-100 px-3 py-1.5">{Object.keys(books).length} saved packs</span>
+                    <span className="rounded-full bg-slate-100 px-3 py-1.5">{cloudProgress.attempted} questions attempted</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div className="mb-3 flex items-end justify-between gap-3">
+                <div><h2 className="text-lg font-extrabold text-slate-900">Quick start</h2><p className="mt-1 text-sm text-slate-500">Jump straight into your next study session.</p></div>
+              </div>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+                <button onClick={() => setScreen('EXAM_SELECT')} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-left transition hover:border-primary-300 hover:shadow-sm">
+                  <span className="rounded-xl bg-primary-50 p-3 text-primary-700"><BookOpen className="h-5 w-5" /></span><span><span className="block font-bold text-slate-900">Past questions</span><span className="mt-1 block text-xs text-slate-500">JAMB · WAEC · NECO</span></span>
+                </button>
+                <button onClick={() => setShowLibrary(true)} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-left transition hover:border-primary-300 hover:shadow-sm">
+                  <span className="rounded-xl bg-primary-50 p-3 text-primary-700"><Library className="h-5 w-5" /></span><span><span className="block font-bold text-slate-900">My library</span><span className="mt-1 block text-xs text-slate-500">Your downloaded packs</span></span>
+                </button>
+                <button onClick={() => setScreen('STUDY_RAND_SUBJECTS')} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-left transition hover:border-primary-300 hover:shadow-sm">
+                  <span className="rounded-xl bg-primary-50 p-3 text-primary-700"><GraduationCap className="h-5 w-5" /></span><span><span className="block font-bold text-slate-900">Random practice</span><span className="mt-1 block text-xs text-slate-500">Mix your subjects</span></span>
+                </button>
+              </div>
+            </section>
+
+            <section>
+              <div className="mb-3"><h2 className="text-lg font-extrabold text-slate-900">Choose your stream</h2><p className="mt-1 text-sm text-slate-500">Find the question packs for your subjects.</p></div>
+              <div className="grid gap-3 sm:grid-cols-3">
+                {STREAMS.map(stream => (
+                  <button key={stream.id} onClick={() => { setSelectedStream(stream.id); setScreen('EXAM_SELECT'); }} className="group rounded-2xl border border-slate-200 bg-white p-5 text-left transition hover:border-primary-300 hover:shadow-md">
+                    <div className={`mb-4 flex h-11 w-11 items-center justify-center rounded-xl ${stream.color} text-white`}><stream.icon className="h-5 w-5" /></div>
+                    <h3 className="font-bold text-slate-900">{stream.label}</h3>
+                    <p className="mt-1 text-xs leading-relaxed text-slate-500">{stream.description}</p>
+                  </button>
+                ))}
+              </div>
+            </section>
           </div>
         )}
 
@@ -941,6 +992,8 @@ const AppShell: React.FC = () => {
           />
         )}
       </main>
+
+      {showSavedNotes && <StudyNotesLibrary onClose={() => setShowSavedNotes(false)} />}
 
       {/* Library Modal */}
       {showLibrary && (

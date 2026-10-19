@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Streamdown } from 'streamdown';
 import { Question, Subject, ExamType } from '../types';
-import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search } from 'lucide-react';
+import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search, Bookmark, BookmarkCheck, ShieldCheck } from 'lucide-react';
 import { MathText } from './MathText';
 import { cleanQuestionText } from '../utils/questionTextPresentation';
 import { useAuth } from '../contexts/AuthContext';
 import { enqueueQuestionAttempt } from '../services/offlineQueue';
+import { supabase, isSupabaseConfigured } from '../services/supabaseClient';
 
 interface PracticeSessionProps {
   questions: Question[];
@@ -23,14 +25,44 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   const [deepDiveLoading, setDeepDiveLoading] = useState(false);
   const [deepDiveAnswer, setDeepDiveAnswer] = useState('');
   const [deepDiveError, setDeepDiveError] = useState('');
+  const [savingNote, setSavingNote] = useState(false);
+  const [noteSaved, setNoteSaved] = useState(false);
+  const [saveNoteError, setSaveNoteError] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string | number, number>>({});
   const [showExplanation, setShowExplanation] = useState(false);
   const [jumpInput, setJumpInput] = useState('1');
+  const [questionAccessStatus, setQuestionAccessStatus] = useState<'checking' | 'allowed' | 'blocked' | 'error'>(() => supabaseUser && typeof navigator !== 'undefined' && navigator.onLine ? 'checking' : 'allowed');
+  const [accessCheckAttempt, setAccessCheckAttempt] = useState(0);
 
   const currentQuestion = questions[currentIndex];
   const totalQuestions = questions.length;
   const progress = ((currentIndex + 1) / totalQuestions) * 100;
+
+  useEffect(() => {
+    if (!supabaseUser || !isSupabaseConfigured || !currentQuestion || !navigator.onLine) {
+      setQuestionAccessStatus('allowed');
+      return;
+    }
+    let cancelled = false;
+    setQuestionAccessStatus('checking');
+    supabase.rpc('record_distinct_question', { p_question_id: `${String(subject)}:${String(currentQuestion.id)}` })
+      .then(({ data, error }) => {
+        if (cancelled) return;
+        if (error || !data || typeof data.allowed !== 'boolean') {
+          console.error('Question limit verification failed:', error);
+          setQuestionAccessStatus('error');
+        } else {
+          setQuestionAccessStatus(data.allowed ? 'allowed' : 'blocked');
+        }
+      })
+      .catch(error => {
+        if (cancelled) return;
+        console.error('Question limit verification failed:', error);
+        setQuestionAccessStatus('error');
+      });
+    return () => { cancelled = true; };
+  }, [supabaseUser?.id, session?.access_token, currentQuestion?.id, subject, accessCheckAttempt]);
 
   const handleOptionSelect = (optionIndex: number) => {
     if (answers[currentQuestion.id] !== undefined) return;
@@ -58,6 +90,8 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     setCurrentIndex(nextIndex);
     setDeepDiveAnswer('');
     setDeepDiveError('');
+    setNoteSaved(false);
+    setSaveNoteError('');
     setJumpInput(String(questionNumber));
     setShowExplanation(answers[questions[nextIndex]?.id] !== undefined);
   };
@@ -95,6 +129,32 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
 
   const isAnswered = answers[currentQuestion.id] !== undefined;
 
+  const handleSaveDeepDiveNote = async () => {
+    if (savingNote || noteSaved || !deepDiveAnswer) return;
+    if (!supabaseUser || !session?.access_token || !isSupabaseConfigured) {
+      setSaveNoteError('Sign in to save this explanation to your study notes.');
+      return;
+    }
+    setSavingNote(true);
+    setSaveNoteError('');
+    try {
+      const { error } = await supabase.from('study_notes').insert({
+        user_id: supabaseUser.id,
+        title: `Deep Dive: ${cleanQuestionText(currentQuestion.text).slice(0, 120)}`,
+        subject: String(subject),
+        question: cleanQuestionText(currentQuestion.text),
+        content: deepDiveAnswer,
+      });
+      if (error) throw error;
+      setNoteSaved(true);
+    } catch (error) {
+      console.error('Could not save study note:', error);
+      setSaveNoteError('Could not save this note. Please try again later.');
+    } finally {
+      setSavingNote(false);
+    }
+  };
+
   const handleDeepDive = async () => {
     if (deepDiveLoading) return;
     if (!session?.access_token) {
@@ -111,6 +171,8 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     setDeepDiveLoading(true);
     setDeepDiveError('');
     setDeepDiveAnswer('');
+    setNoteSaved(false);
+    setSaveNoteError('');
     try {
       const response = await fetch('/api/nvidia', {
         method: 'POST',
@@ -120,6 +182,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
         },
         body: JSON.stringify({
           mode: 'deep-dive',
+          stream: true,
           subject: String(subject),
           question: cleanQuestionText(currentQuestion.text),
           options: currentQuestion.options,
@@ -127,18 +190,79 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
           explanation: currentQuestion.explanation,
         }),
       });
-      const data = await response.json().catch(() => ({}));
       if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
         if (response.status === 401) throw new Error('Your session may have expired. Sign in again and retry.');
         if (response.status === 429) throw new Error('Too many requests right now. Wait a moment and try again.');
         throw new Error(data?.error || 'Deep Dive could not generate an explanation. Try again shortly.');
       }
-      if (data?.rejected) throw new Error(data.answer || 'This request could not be processed.');
-      if (typeof data?.answer !== 'string' || !data.answer.trim()) {
-        throw new Error('The AI returned an empty explanation. Please try again.');
+
+      // Keep compatibility with an older deployment that may still return JSON.
+      if (!response.headers.get('content-type')?.includes('text/event-stream')) {
+        const data = await response.json().catch(() => ({}));
+        if (data?.rejected) throw new Error(data.answer || 'This request could not be processed.');
+        if (typeof data?.answer !== 'string' || !data.answer.trim()) {
+          throw new Error('The AI returned an empty explanation. Please try again.');
+        }
+        setDeepDiveAnswer(data.answer.trim());
+      } else {
+        if (!response.body) throw new Error('Streaming is not supported by this connection. Please retry.');
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+        let streamedAnswer = '';
+        let streamError = '';
+        try {
+          while (true) {
+            const { value, done } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+            const lines = buffer.split('\n');
+            buffer = lines.pop() ?? '';
+            for (const rawLine of lines) {
+              const line = rawLine.trim();
+              if (!line.startsWith('data:')) continue;
+              const payload = line.slice(5).trim();
+              if (!payload) continue;
+              let event: { delta?: unknown; done?: boolean; error?: string };
+              try {
+                event = JSON.parse(payload);
+              } catch {
+                continue;
+              }
+              if (typeof event.error === 'string') {
+                streamError = event.error;
+                break;
+              }
+              if (typeof event.delta === 'string' && event.delta) {
+                streamedAnswer += event.delta;
+                setDeepDiveAnswer(streamedAnswer);
+              }
+            }
+            if (streamError) break;
+          }
+          if (streamError) throw new Error(streamError);
+          buffer += decoder.decode();
+          const finalLine = buffer.trim();
+          if (finalLine.startsWith('data:')) {
+            try {
+              const event = JSON.parse(finalLine.slice(5).trim());
+              if (typeof event.error === 'string') throw new Error(event.error);
+              if (typeof event.delta === 'string' && event.delta) {
+                streamedAnswer += event.delta;
+                setDeepDiveAnswer(streamedAnswer);
+              }
+            } catch (error) {
+              if (error instanceof Error && error.message !== 'Unexpected end of JSON input') throw error;
+            }
+          }
+          if (!streamedAnswer.trim()) throw new Error('The AI returned an empty explanation. Please try again.');
+        } finally {
+          reader.releaseLock();
+        }
       }
-      setDeepDiveAnswer(data.answer.trim());
     } catch (error) {
+      setDeepDiveAnswer('');
       setDeepDiveError(error instanceof Error ? error.message : 'Unable to reach Deep Dive & Research.');
     } finally {
       setDeepDiveLoading(false);
@@ -157,6 +281,14 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     if (answers[currentQuestion.id] === idx) return baseStyle + " border-red-500 bg-red-50 text-red-900";
     return baseStyle + " border-gray-100 opacity-50";
   };
+
+  if (questionAccessStatus === 'checking') {
+    return <div className="mx-auto flex min-h-[55vh] max-w-xl flex-col items-center justify-center p-6 text-center"><div className="mb-4 h-8 w-8 animate-spin rounded-full border-4 border-primary-200 border-t-primary-600" /><h2 className="text-xl font-bold text-gray-900">Checking study access</h2><p className="mt-2 text-sm text-gray-500">Verifying your lifetime question allowance.</p></div>;
+  }
+  if (questionAccessStatus === 'blocked' || questionAccessStatus === 'error') {
+    const blocked = questionAccessStatus === 'blocked';
+    return <div className="mx-auto flex min-h-[55vh] max-w-xl flex-col items-center justify-center p-6 text-center"><div className="mb-4 rounded-2xl bg-amber-50 p-4 text-amber-700"><ShieldCheck className="h-8 w-8" /></div><h2 className="text-2xl font-black text-gray-900">{blocked ? 'Free question limit reached' : 'Could not verify study access'}</h2><p className="mt-3 text-sm leading-relaxed text-gray-600">{blocked ? 'Your account has used its 200 distinct-question lifetime allowance. Repeated attempts do not use extra slots. Upgrade to premium for continued access.' : 'We could not verify your question allowance. Check your connection and try again.'}</p><div className="mt-6 flex flex-wrap justify-center gap-3"><button onClick={onBack} className="rounded-xl bg-gray-100 px-5 py-3 text-sm font-bold text-gray-700">Back</button>{!blocked && <button onClick={() => setAccessCheckAttempt(n => n + 1)} className="rounded-xl bg-primary-600 px-5 py-3 text-sm font-bold text-white">Retry check</button>}</div></div>;
+  }
 
   return (
     <div className="w-full max-w-4xl mx-auto px-3 sm:px-6 pb-24">
@@ -273,8 +405,15 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
             {deepDiveAnswer && (
               <section aria-live="polite" className="mt-5 rounded-2xl border border-primary-100 bg-white p-4 sm:p-6">
                 <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-primary-700">Deeper explanation</h3>
-                <div className="whitespace-pre-wrap break-words text-gray-700 leading-relaxed text-sm sm:text-base">
-                  {deepDiveAnswer}
+                <div className="deep-dive-markdown min-w-0 break-words text-gray-700 text-sm sm:text-base">
+                  <Streamdown>{deepDiveAnswer}</Streamdown>
+                </div>
+                <div className="mt-4 flex flex-wrap items-center gap-3">
+                  <button type="button" onClick={handleSaveDeepDiveNote} disabled={savingNote || noteSaved} className="inline-flex items-center gap-2 rounded-xl border border-primary-200 px-4 py-2 text-sm font-semibold text-primary-700 transition hover:bg-primary-50 disabled:cursor-not-allowed disabled:opacity-60">
+                    {noteSaved ? <BookmarkCheck className="h-4 w-4" /> : <Bookmark className="h-4 w-4" />}
+                    {savingNote ? 'Saving note…' : noteSaved ? 'Saved to study notes' : 'Save explanation'}
+                  </button>
+                  {saveNoteError && <p role="alert" className="text-sm text-red-600">{saveNoteError}</p>}
                 </div>
                 <p className="mt-4 border-t border-gray-100 pt-3 text-xs text-gray-400">
                   AI-generated study guidance. This feature does not perform live web research.
