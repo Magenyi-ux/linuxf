@@ -1,5 +1,5 @@
 type ApiRequest = { method?: string; headers: Record<string, string | string[] | undefined>; body?: any };
-type ApiResponse = { status(code: number): ApiResponse; json(value: unknown): ApiResponse; setHeader(name: string, value: string): void };
+type ApiResponse = { status(code: number): ApiResponse; json(value: unknown): ApiResponse; setHeader(name: string, value: string): void; write(chunk: string): boolean; end(): void };
 
 const NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions";
 // Keep this list aligned with NVIDIA's live API catalog. Override without a code change via
@@ -18,6 +18,10 @@ const getNvidiaModels = () => {
 };
 const MAX_QUESTION_LENGTH = 2000;
 const MAX_SUBJECT_LENGTH = 80;
+
+function writeSse(res: ApiResponse, payload: unknown) {
+  res.write(`data: ${JSON.stringify(payload)}\n\n`);
+}
 
 function cleanPromptText(value: string, maxLength: number): string {
   return value
@@ -202,6 +206,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
       ].filter(Boolean).join("\n\n")
     : `Subject context: ${subject || "General school subject"}\n\nStudent question: ${question}`;
 
+  const wantsStream = mode === "deep-dive" && body.stream === true;
   const models = getNvidiaModels();
   let lastProviderStatus = 502;
   let lastProviderError = "Unable to reach AI provider";
@@ -225,12 +230,12 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
           ],
           max_tokens: mode === "deep-dive" ? 850 : 1024,
           temperature: mode === "deep-dive" ? 0.35 : 0.2,
-          stream: false,
+          stream: wantsStream,
         }),
         signal: AbortSignal.timeout(mode === "deep-dive" ? 25000 : 45000),
       });
 
-      const providerText = await response.text();
+      const providerText = response.ok && wantsStream ? "" : await response.text();
 
       if (!response.ok) {
         lastProviderStatus = response.status;
@@ -257,6 +262,84 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
           providerStatus: response.status,
           modelsAttempted: index + 1,
         });
+      }
+
+      if (wantsStream) {
+        if (!response.body) {
+          lastProviderStatus = 502;
+          lastProviderError = "AI provider did not return a readable stream";
+          if (index < models.length - 1) continue;
+          return res.status(502).json({ error: lastProviderError, modelsAttempted: index + 1 });
+        }
+
+        res.status(200);
+        res.setHeader("Content-Type", "text/event-stream; charset=utf-8");
+        res.setHeader("Cache-Control", "no-cache, no-transform");
+        res.setHeader("Connection", "keep-alive");
+        res.setHeader("X-Accel-Buffering", "no");
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = "";
+        let streamedText = "";
+        try {
+          while (true) {
+            const { value, done } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+            const lines = buffer.split("\n");
+            buffer = lines.pop() ?? "";
+            for (const rawLine of lines) {
+              const line = rawLine.trim();
+              if (!line.startsWith("data:")) continue;
+              const payload = line.slice(5).trim();
+              if (!payload || payload === "[DONE]") continue;
+              try {
+                const event = JSON.parse(payload);
+                const delta = event?.choices?.[0]?.delta?.content;
+                if (typeof delta === "string" && delta) {
+                  streamedText += delta;
+                  writeSse(res, { delta });
+                }
+                if (event?.error) throw new Error("AI provider stream failed");
+              } catch (error) {
+                if (error instanceof SyntaxError) continue;
+                throw error;
+              }
+            }
+          }
+          buffer += decoder.decode();
+          if (buffer.trim().startsWith("data:")) {
+            const payload = buffer.trim().slice(5).trim();
+            if (payload && payload !== "[DONE]") {
+              try {
+                const event = JSON.parse(payload);
+                const delta = event?.choices?.[0]?.delta?.content;
+                if (typeof delta === "string" && delta) {
+                  streamedText += delta;
+                  writeSse(res, { delta });
+                }
+              } catch { /* Ignore a truncated final provider event. */ }
+            }
+          }
+          if (!streamedText.trim()) {
+            writeSse(res, { error: "AI provider returned an empty answer" });
+          } else {
+            writeSse(res, { done: true, modelUsed: model, fallbackUsed: index > 0 });
+          }
+          res.end();
+          return;
+        } catch (error) {
+          console.error("NVIDIA NIM stream failed:", {
+            model,
+            message: error instanceof Error ? error.message : "Unknown stream error",
+          });
+          writeSse(res, { error: "The explanation stream was interrupted. Please retry." });
+          res.end();
+          return;
+        } finally {
+          reader.releaseLock();
+        }
       }
 
       let data: any;
