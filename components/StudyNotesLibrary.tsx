@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Bookmark, BookmarkX, LoaderCircle, Trash2, X } from 'lucide-react';
-import { Streamdown } from 'streamdown';
+import { MathMarkdown } from './MathMarkdown';
 import { useAuth } from '../contexts/AuthContext';
 import { isSupabaseConfigured, supabase } from '../services/supabaseClient';
 
@@ -84,7 +84,7 @@ export const StudyNotesLibrary: React.FC<StudyNotesLibraryProps> = ({ onClose })
                 <summary className="cursor-pointer text-sm font-semibold text-gray-600">Original question</summary>
                 <p className="mt-2 whitespace-pre-wrap break-words text-sm text-gray-600">{note.question}</p>
               </details>
-              <div className="deep-dive-markdown min-w-0 break-words text-sm text-gray-700"><Streamdown>{note.content}</Streamdown></div>
+              <div className="deep-dive-markdown min-w-0 break-words text-sm text-gray-700"><MathMarkdown content={note.content} /></div>
             </article>
           ))}
         </div>
