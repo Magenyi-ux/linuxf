@@ -50,15 +50,28 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
   }
 
   try {
-    const [events, featureUsage, stats] = await Promise.all([
+    const [events, featureUsageRaw, statsRaw] = await Promise.all([
       redisCommand<unknown[]>(kvUrl, kvToken, ["LRANGE", "examply_events", 0, 100]),
-      redisCommand<Record<string, string>>(kvUrl, kvToken, ["HGETALL", "examply_feature_usage"]),
-      redisCommand<Record<string, string>>(kvUrl, kvToken, ["HGETALL", "examply_stats"]),
+      redisCommand<unknown>(kvUrl, kvToken, ["HGETALL", "examply_feature_usage"]),
+      redisCommand<unknown>(kvUrl, kvToken, ["HGETALL", "examply_stats"]),
     ]);
+    const toHash = (value: unknown): Record<string, string> => {
+      if (Array.isArray(value)) {
+        const result: Record<string, string> = {};
+        for (let index = 0; index + 1 < value.length; index += 2) {
+          result[String(value[index])] = String(value[index + 1]);
+        }
+        return result;
+      }
+      return value && typeof value === "object" ? value as Record<string, string> : {};
+    };
     return res.status(200).json({
-      events: (events ?? []).map((event) => typeof event === "string" ? JSON.parse(event) : event),
-      featureUsage: featureUsage ?? {},
-      stats: stats ?? {},
+      events: (events ?? []).map((event) => {
+        if (typeof event !== "string") return event;
+        try { return JSON.parse(event); } catch { return event; }
+      }),
+      featureUsage: toHash(featureUsageRaw),
+      stats: toHash(statsRaw),
     });
   } catch (error) {
     console.error("Error fetching logs:", error);
