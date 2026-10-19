@@ -1,4 +1,5 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
+type ApiRequest = { method?: string; headers: Record<string, string | string[] | undefined>; body?: any };
+type ApiResponse = { status(code: number): ApiResponse; json(value: unknown): ApiResponse; setHeader(name: string, value: string): void };
 
 const NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions";
 // Keep this list aligned with NVIDIA's live API catalog. Override without a code change via
@@ -40,7 +41,7 @@ const BLOCKED_PROGRAMMING_PATTERNS = [
   /\b(sql|html|css|javascript|typescript|python)\s+(query|script|code|function)\b/i,
 ];
 
-async function authenticateUser(req: VercelRequest) {
+async function authenticateUser(req: ApiRequest) {
   const authorization = req.headers.authorization;
   const supabaseUrl = process.env.VITE_SUPABASE_URL;
   const supabaseAnonKey = process.env.VITE_SUPABASE_ANON_KEY;
@@ -80,7 +81,7 @@ async function authenticateUser(req: VercelRequest) {
   }
 }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req: ApiRequest, res: ApiResponse) {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
     return res.status(405).json({ error: "Method not allowed" });
