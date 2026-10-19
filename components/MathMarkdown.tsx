@@ -9,12 +9,12 @@ interface MathMarkdownProps {
 
 /**
  * Render Markdown normally while typesetting complete LaTeX expressions with KaTeX.
- * Supports inline $...$ and \\(...\\), display $$...$$ and \\[...\\],
+ * Supports inline $...$ and \( ... \), display $$...$$ and \[...\],
  * plus square-bracket math delimiters commonly HTML-escaped by AI output.
  */
 export const MathMarkdown: React.FC<MathMarkdownProps> = ({ content }) => {
-  const normalized = content.replace(/&#91;([\\s\\S]*?)&#93;/gi, (_match, formula: string) => `\\\\[${formula}\\\\]`);
-  const expression = /(\\$\\$[\\s\\S]+?\\$\\$|\\\\\\[[\\s\\S]+?\\\\\\]|\\\\\\([\\s\\S]+?\\\\\\)|\\$[^$\\n]+\\$)/g;
+  const normalized = content.replace(/&#91;([\s\S]*?)&#93;/gi, (_match, formula: string) => '\\[' + formula + '\\]');
+  const expression = /(\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\$[^$\n]+\$)/g;
   const parts = normalized.split(expression).filter(part => part.length > 0);
 
   return (
@@ -26,10 +26,10 @@ export const MathMarkdown: React.FC<MathMarkdownProps> = ({ content }) => {
         if (part.startsWith('$$') && part.endsWith('$$')) {
           formula = part.slice(2, -2);
           displayMode = true;
-        } else if (part.startsWith('\\\\[') && part.endsWith('\\\\]')) {
+        } else if (part.startsWith('\\[') && part.endsWith('\\]')) {
           formula = part.slice(2, -2);
           displayMode = true;
-        } else if (part.startsWith('\\\\(') && part.endsWith('\\\\)')) {
+        } else if (part.startsWith('\\(') && part.endsWith('\\)')) {
           formula = part.slice(2, -2);
         } else if (part.startsWith('$') && part.endsWith('$')) {
           formula = part.slice(1, -1);
