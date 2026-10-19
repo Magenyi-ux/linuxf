@@ -37,7 +37,7 @@ export const MathMarkdown: React.FC<MathMarkdownProps> = ({ content }) => {
 
         if (formula !== null) {
           try {
-            const html = katex.renderToString(formula.trim(), {
+            const html = katex.renderToString(formula.trim().replace(/₦/g, '\\text{₦}'), {
               displayMode,
               throwOnError: false,
               strict: 'ignore',
