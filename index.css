@@ -3,7 +3,8 @@
 
 @layer base {
   body {
-    @apply bg-white text-brand-900 font-sans;
+    @apply text-brand-900 font-sans;
+    background: #F5F7FB;
   }
 }
 
@@ -107,11 +108,16 @@
 }
 
 .offline-dark-surface .bg-primary-50 {
-  background-color: rgb(20 184 166 / 0.18) !important;
+  background-color: rgb(69 153 255 / 0.16) !important;
 }
 
 .offline-dark-surface .text-primary-900 {
-  color: #ccfbf1 !important;
+  color: #dce9ff !important;
+}
+
+.offline-dark-surface .text-primary-700,
+.offline-dark-surface .text-primary-600 {
+  color: #8ab4f8 !important;
 }
 
 .offline-dark-surface .sidebar-scrollbar::-webkit-scrollbar-thumb {
@@ -185,3 +191,36 @@
 .deep-dive-markdown th { background: #f9fafb; color: #111827; font-weight: 700; }
 .deep-dive-markdown a { color: #2563eb; text-decoration: underline; }
 .deep-dive-markdown hr { border-color: #e5e7eb; margin: 1.25rem 0; }
+
+/* Keep the web palette aligned with ICN's shared SphereLearn design tokens. */
+:root {
+  --spherelearn-bg: #F5F7FB;
+  --spherelearn-surface: #FFFFFF;
+  --spherelearn-surface-muted: #EEF2F7;
+  --spherelearn-border: #E2E8F0;
+  --spherelearn-text: #0F172A;
+  --spherelearn-text-muted: #475569;
+  --spherelearn-primary: #0866FF;
+  --spherelearn-primary-hover: #1B74E4;
+}
+
+body { background-color: var(--spherelearn-bg); }
+
+.offline-dark-surface .deep-dive-markdown h1,
+.offline-dark-surface .deep-dive-markdown h2,
+.offline-dark-surface .deep-dive-markdown h3,
+.offline-dark-surface .deep-dive-markdown h4 {
+  color: #f1f5f9;
+}
+.offline-dark-surface .deep-dive-markdown blockquote { color: #a3aebf; }
+.offline-dark-surface .deep-dive-markdown code:not(pre code) {
+  background: #1a2436;
+  color: #dbeafe;
+}
+.offline-dark-surface .deep-dive-markdown th {
+  background: #1a2436;
+  color: #f1f5f9;
+}
+.offline-dark-surface .deep-dive-markdown th,
+.offline-dark-surface .deep-dive-markdown td { border-color: #334155; }
+.offline-dark-surface .deep-dive-markdown hr { border-color: #334155; }
