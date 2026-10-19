@@ -665,7 +665,7 @@ const AppShell: React.FC = () => {
                     {Object.keys(books).length ? 'Pick up with your downloaded question packs and keep learning, even without data.' : 'Build your first study session with JAMB, WAEC and NECO past questions.'}
                   </p>
                 </div>
-                <button onClick={() => setScreen('EXAM_SELECT')} className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-primary-700 transition hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600">
+                <button onClick={() => setScreen('STREAM_SELECT')} className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-primary-700 transition hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600">
                   Practice now <ArrowRight className="h-4 w-4" />
                 </button>
               </div>
@@ -727,6 +727,23 @@ const AppShell: React.FC = () => {
                 ))}
               </div>
             </section>
+          </div>
+        )}
+
+        {screen === 'STREAM_SELECT' && (
+          <div className="animate-fade-in mx-auto max-w-4xl">
+            <button onClick={() => setScreen('HOME')} className="mb-8 flex items-center gap-2 text-sm font-bold text-gray-400 transition-colors hover:text-primary-600"><ArrowLeft className="h-4 w-4" /> Back to Home</button>
+            <h2 className="mb-3 text-3xl font-black text-gray-900 sm:text-4xl">Choose your stream</h2>
+            <p className="mb-8 text-gray-500">Choose your subject group to find the right exam question packs.</p>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {STREAMS.map(stream => (
+                <button key={stream.id} onClick={() => { setSelectedStream(stream.id); setScreen('EXAM_SELECT'); }} className="rounded-2xl border border-gray-100 bg-white p-6 text-left transition-all hover:border-primary-300 hover:shadow-lg">
+                  <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-xl ${stream.color} text-white`}><stream.icon className="h-6 w-6" /></div>
+                  <h3 className="font-black text-gray-900">{stream.label}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-500">{stream.description}</p>
+                </button>
+              ))}
+            </div>
           </div>
         )}
 
