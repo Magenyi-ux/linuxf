@@ -1,46 +1,67 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { timingSafeEqual } from 'node:crypto';
-import { kv } from '@vercel/kv';
+import { timingSafeEqual } from "node:crypto";
+
+type ApiRequest = { method?: string; headers: Record<string, string | string[] | undefined> };
+type ApiResponse = { status(code: number): ApiResponse; json(value: unknown): ApiResponse; setHeader(name: string, value: string): void };
 
 function isAuthorized(header: string | string[] | undefined, configuredToken: string | undefined): boolean {
   if (!configuredToken || !header || Array.isArray(header)) return false;
-  const prefix = 'Bearer ';
+  const prefix = "Bearer ";
   if (!header.startsWith(prefix)) return false;
   const supplied = Buffer.from(header.slice(prefix.length));
   const expected = Buffer.from(configuredToken);
   return supplied.length === expected.length && timingSafeEqual(supplied, expected);
 }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
-  res.setHeader('Cache-Control', 'no-store');
+async function redisCommand<T>(url: string, token: string, command: (string | number)[]): Promise<T> {
+  const response = await fetch(url, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+    body: JSON.stringify(command),
+    signal: AbortSignal.timeout(8000),
+  });
+  if (!response.ok) throw new Error(`KV request failed with status ${response.status}`);
+  const payload = await response.json() as { result?: T; error?: string };
+  if (payload.error) throw new Error(payload.error);
+  return payload.result as T;
+}
 
-  if (req.method !== 'GET') {
-    res.setHeader('Allow', 'GET');
-    return res.status(405).json({ error: 'Method not allowed' });
+export default async function handler(req: ApiRequest, res: ApiResponse) {
+  res.setHeader("Cache-Control", "no-store");
+
+  if (req.method !== "GET") {
+    res.setHeader("Allow", "GET");
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
   const configuredToken = process.env.ADMIN_LOGS_TOKEN;
   if (!configuredToken) {
-    console.error('ADMIN_LOGS_TOKEN is not configured');
-    return res.status(503).json({ error: 'Admin logs are not configured' });
+    console.error("ADMIN_LOGS_TOKEN is not configured");
+    return res.status(503).json({ error: "Admin logs are not configured" });
+  }
+  if (!isAuthorized(req.headers.authorization, configuredToken)) {
+    return res.status(401).json({ error: "Unauthorized" });
   }
 
-  if (!isAuthorized(req.headers.authorization, configuredToken)) {
-    return res.status(401).json({ error: 'Unauthorized' });
+  const kvUrl = process.env.KV_REST_API_URL;
+  const kvToken = process.env.KV_REST_API_TOKEN;
+  if (!kvUrl || !kvToken) {
+    console.error("KV_REST_API_URL or KV_REST_API_TOKEN is not configured");
+    return res.status(503).json({ error: "Admin logs storage is not configured" });
   }
 
   try {
-    const events = await kv.lrange('examply_events', 0, 100);
-    const featureUsage = await kv.hgetall('examply_feature_usage');
-    const stats = await kv.hgetall('examply_stats');
-
+    const [events, featureUsage, stats] = await Promise.all([
+      redisCommand<unknown[]>(kvUrl, kvToken, ["LRANGE", "examply_events", 0, 100]),
+      redisCommand<Record<string, string>>(kvUrl, kvToken, ["HGETALL", "examply_feature_usage"]),
+      redisCommand<Record<string, string>>(kvUrl, kvToken, ["HGETALL", "examply_stats"]),
+    ]);
     return res.status(200).json({
-      events: events.map((e: unknown) => typeof e === 'string' ? JSON.parse(e) : e),
-      featureUsage,
-      stats
+      events: (events ?? []).map((event) => typeof event === "string" ? JSON.parse(event) : event),
+      featureUsage: featureUsage ?? {},
+      stats: stats ?? {},
     });
   } catch (error) {
-    console.error('Error fetching logs:', error);
-    return res.status(500).json({ error: 'Failed to fetch logs' });
+    console.error("Error fetching logs:", error);
+    return res.status(500).json({ error: "Failed to fetch logs" });
   }
 }
