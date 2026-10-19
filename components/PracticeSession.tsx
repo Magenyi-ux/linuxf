@@ -107,6 +107,10 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   };
 
   const handleNext = () => {
+    if (mode === 'TEST' && isAnswered && !showExplanation) {
+      setShowExplanation(true);
+      return;
+    }
     if (currentIndex < totalQuestions - 1) {
       goToQuestion(currentIndex + 2);
     } else {
@@ -138,18 +142,19 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     setSavingNote(true);
     setSaveNoteError('');
     try {
-      const { error } = await supabase.from('study_notes').insert({
+      const { data, error } = await supabase.from('study_notes').insert({
         user_id: supabaseUser.id,
-        title: `Deep Dive: ${cleanQuestionText(currentQuestion.text).slice(0, 120)}`,
-        subject: String(subject),
-        question: cleanQuestionText(currentQuestion.text),
-        content: deepDiveAnswer,
-      });
+        title: `Deep Dive: ${cleanQuestionText(currentQuestion.text).slice(0, 120)}`.slice(0, 180),
+        subject: String(subject).slice(0, 80) || 'General',
+        question: cleanQuestionText(currentQuestion.text).slice(0, 2000),
+        content: deepDiveAnswer.slice(0, 20000),
+      }).select('id').single();
       if (error) throw error;
+      if (!data?.id) throw new Error('The database did not confirm that the note was saved.');
       setNoteSaved(true);
     } catch (error) {
       console.error('Could not save study note:', error);
-      setSaveNoteError('Could not save this note. Please try again later.');
+      setSaveNoteError(error instanceof Error && error.message ? `Could not save this note: ${error.message}` : 'Could not save this note. Please try again later.');
     } finally {
       setSavingNote(false);
     }
@@ -273,6 +278,12 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     const baseStyle = "w-full text-left p-3 sm:p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group relative overflow-hidden";
     if (!isAnswered) return baseStyle + " border-gray-100 hover:border-primary-200 hover:bg-primary-50";
     if (mode === 'TEST') {
+      if (showExplanation && idx === currentQuestion.correctOptionIndex) {
+        return baseStyle + " border-green-500 bg-green-50 text-green-900";
+      }
+      if (showExplanation && answers[currentQuestion.id] === idx && idx !== currentQuestion.correctOptionIndex) {
+        return baseStyle + " border-red-500 bg-red-50 text-red-900";
+      }
       return answers[currentQuestion.id] === idx
         ? baseStyle + " border-primary-500 bg-primary-50 text-primary-900"
         : baseStyle + " border-gray-100 opacity-50";
@@ -356,6 +367,8 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
               <span className={`w-9 h-9 sm:w-11 sm:h-11 flex items-center justify-center rounded-lg sm:rounded-xl text-base sm:text-lg font-bold flex-shrink-0 border-2 transition-all ${
                 isAnswered && mode === 'STUDY' && idx === currentQuestion.correctOptionIndex ? 'bg-green-600 border-green-600 text-white shadow-md' :
                 isAnswered && mode === 'STUDY' && answers[currentQuestion.id] === idx ? 'bg-red-600 border-red-600 text-white shadow-md' :
+                isAnswered && mode === 'TEST' && showExplanation && idx === currentQuestion.correctOptionIndex ? 'bg-green-600 border-green-600 text-white shadow-md' :
+                isAnswered && mode === 'TEST' && showExplanation && answers[currentQuestion.id] === idx && idx !== currentQuestion.correctOptionIndex ? 'bg-red-600 border-red-600 text-white shadow-md' :
                 isAnswered && mode === 'TEST' && answers[currentQuestion.id] === idx ? 'bg-primary-600 border-primary-600 text-white shadow-md' :
                 'bg-gray-50 border-gray-100 text-gray-400 group-hover:border-primary-200 group-hover:text-primary-600'
               }`}>
@@ -365,11 +378,11 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
                 <MathText text={option} />
               </span>
             </div>
-            {mode === 'STUDY' && isAnswered && idx === currentQuestion.correctOptionIndex && (
+            {isAnswered && (mode === 'STUDY' || showExplanation) && idx === currentQuestion.correctOptionIndex && (
               <CheckCircle2 className="w-6 h-6 sm:w-7 sm:h-7 text-green-600 z-10 shrink-0" />
             )}
-            {mode === 'STUDY' && isAnswered && answers[currentQuestion.id] === idx && idx !== currentQuestion.correctOptionIndex && (
-              <XCircle className="w-6 h-6 sm:w-7 sm:h-7 text-primary-700 z-10 shrink-0" />
+            {isAnswered && (mode === 'STUDY' || showExplanation) && answers[currentQuestion.id] === idx && idx !== currentQuestion.correctOptionIndex && (
+              <XCircle className="w-6 h-6 sm:w-7 sm:h-7 text-red-600 z-10 shrink-0" />
             )}
           </button>
         ))}
@@ -443,7 +456,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
               onClick={handleNext}
               className="flex-1 py-3 sm:py-4 bg-primary-600 text-white font-bold rounded-xl hover:bg-primary-700 shadow-lg shadow-primary-500/20 transition-all flex items-center justify-center gap-2 sm:gap-3 active:scale-95 text-sm sm:text-base"
             >
-              {currentIndex === totalQuestions - 1 ? 'Complete Session' : 'Next Question'}
+              {mode === 'TEST' && isAnswered && !showExplanation ? 'Show Answer' : currentIndex === totalQuestions - 1 ? 'Complete Session' : 'Next Question'}
               <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
           ) : (
