@@ -169,7 +169,8 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
         content: cleanPromptText(message.content, 1200),
       })).filter((message: { content: string }) => message.content.length > 0)
     : [];
-  const transcript = typeof body.transcript === "string" ? cleanPromptText(body.transcript, 10000) : "";\n  const topic = typeof body.topic === "string" ? cleanPromptText(body.topic, 2000) : "";
+  const transcript = typeof body.transcript === "string" ? cleanPromptText(body.transcript, 10000) : "";
+  const topic = typeof body.topic === "string" ? cleanPromptText(body.topic, 2000) : "";
   const question = typeof body.question === "string"
     ? cleanPromptText(body.question, MAX_QUESTION_LENGTH)
     : mode === "study-chat" ? cleanPromptText(chatMessages.filter(message => message.role === "user").at(-1)?.content || "", MAX_QUESTION_LENGTH) : "";
