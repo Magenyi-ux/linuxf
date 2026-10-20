@@ -14,6 +14,39 @@ interface StudyChatProps {
 
 const SUBJECT_OPTIONS = ['General', ...Object.values(Subject)];
 
+async function consumeAIStream(response: Response, onDelta: (delta: string) => void): Promise<void> {
+  if (!response.ok) {
+    let message = 'The AI could not respond. Please try again.';
+    try { message = (await response.json()).error || message; } catch { /* Keep fallback message. */ }
+    throw new Error(message);
+  }
+  if (!response.body) throw new Error('Streaming is unavailable. Please try again.');
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '';
+  let receivedText = false;
+  try {
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop() ?? '';
+      for (const rawLine of lines) {
+        const line = rawLine.trim();
+        if (!line.startsWith('data:')) continue;
+        const payload = line.slice(5).trim();
+        if (!payload || payload === '[DONE]') continue;
+        let event: any;
+        try { event = JSON.parse(payload); } catch { continue; }
+        if (event.error) throw new Error(event.error);
+        if (typeof event.delta === 'string' && event.delta) { receivedText = true; onDelta(event.delta); }
+      }
+    }
+  } finally { reader.releaseLock(); }
+  if (!receivedText) throw new Error('The AI returned an empty answer. Please retry.');
+}
+
 export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
   const { user } = useAuth();
   const [subject, setSubject] = useState('General');
@@ -38,20 +71,25 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
     try {
       const { data: { session } } = await supabase.auth.getSession();
       if (!session?.access_token) throw new Error('Your session has expired. Sign in again.');
+      setMessages(current => [...current, { role: 'assistant', content: '' }]);
       const response = await fetch('/api/nvidia', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + session.access_token },
-        body: JSON.stringify({ mode: 'study-chat', subject, messages: nextMessages }),
+        body: JSON.stringify({ mode: 'study-chat', subject, messages: nextMessages, stream: true }),
       });
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.error || 'The AI could not respond. Please try again.');
-      const answer = typeof result.answer === 'string' ? result.answer.trim() : '';
-      if (!answer) throw new Error('The AI returned an empty answer. Please retry.');
-      setMessages(current => [...current, { role: 'assistant', content: answer }]);
+      await consumeAIStream(response, delta => {
+        setMessages(current => {
+          const updated = [...current];
+          const last = updated[updated.length - 1];
+          if (last?.role === 'assistant') updated[updated.length - 1] = { ...last, content: last.content + delta };
+          return updated;
+        });
+      });
     } catch (caught) {
       setMessages(current => {
-        const last = current[current.length - 1];
-        return last?.role === 'user' && last.content === text ? current.slice(0, -1) : current;
+        const updated = [...current];
+        if (updated[updated.length - 1]?.role === 'assistant' && !updated[updated.length - 1].content) updated.pop();
+        return updated;
       });
       setInput(text);
       setError(caught instanceof Error ? caught.message : 'Could not reach the AI. Check your connection and try again.');
