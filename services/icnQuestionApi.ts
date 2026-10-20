@@ -4,6 +4,7 @@ const API_BASE = "https://spherelearn.name.ng/api/question-bank";
 const MANIFEST_URL = `${API_BASE}/manifest-v1.json`;
 const MANIFEST_CACHE = "examply-icn-question-manifest-v1";
 const FILE_CACHE = "examply-icn-question-files-v1";
+const STRUCTURAL_PRACTICE_URL = `${API_BASE}/v1/chemistry-structural-practice/all-years.json`;
 
 type ManifestEntry = {
   subject: string;
@@ -30,6 +31,8 @@ type IcnQuestion = {
   correctAnswer?: string;
   explanation?: string;
   imageAsset?: string | null;
+  examType?: string;
+  examYear?: string | number;
 };
 
 const text = (value: unknown) =>
@@ -157,20 +160,42 @@ export const getQuestionsFromIcnApi = async (
   if (entries.length === 0) return null;
 
   const selectedEntries =
-    year === "Random" ? [entries[Math.floor(Math.random() * entries.length)]] : [entries[0]];
-
+    year === "Random" ? [entries[Math.floor(Math.random() * entries.length)]] : entries;
   const sets = await Promise.all(selectedEntries.map(readQuestionSet));
-  const questions = sets.flatMap((set) =>
-    set ? transformQuestions(set, subject, count) : []
-  );
+  const baseData = sets.flatMap((set) => set ?? []);
+
+  let structuralData: IcnQuestion[] = [];
+  if (normalizeSubject(subject) === "chemistry") {
+    const supplemental = await fetchJson<unknown>(STRUCTURAL_PRACTICE_URL, FILE_CACHE);
+    const selectedYear = Number(year === "Random" ? selectedEntries[0]?.examYear : year);
+    if (Array.isArray(supplemental)) {
+      structuralData = (supplemental as IcnQuestion[]).filter(
+        (item) =>
+          normalizeExam(text(item.examType)) === normalizeExam(examType) &&
+          Number(item.examYear) === selectedYear
+      );
+    }
+  }
+
+  // Reserve roughly 30% of a Chemistry practice set for structural organic questions
+  // so learners actually encounter formulas, functional groups, isomerism and reactions.
+  const structuralCount =
+    structuralData.length > 0 ? Math.min(structuralData.length, Math.max(1, Math.floor(count * 0.3))) : 0;
+  const baseCount = Math.max(0, count - structuralCount);
+  const baseQuestions = transformQuestions(baseData, subject, baseCount);
+  const structuralQuestions = transformQuestions(structuralData, subject, structuralCount);
+  const questions = [...baseQuestions, ...structuralQuestions]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, count);
 
   if (questions.length === 0) return null;
 
   return {
-    questions: questions.slice(0, count),
+    questions,
     sources: [
       "SphereLearn ICN Question Bank API",
       `ICN bank version ${manifest.bankVersion}`,
+      ...(structuralQuestions.length > 0 ? ["Original organic structural practice (2011–2026)"] : []),
     ],
   };
 };
