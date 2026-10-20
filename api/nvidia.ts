@@ -157,8 +157,22 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
     return res.status(400).json({ error: "Invalid Ask Professor request" });
   }
 
-  const mode = body.mode === "deep-dive" ? "deep-dive" : "ask-professor";
-  const question = typeof body.question === "string" ? cleanPromptText(body.question, MAX_QUESTION_LENGTH) : "";
+  const mode = body.mode === "deep-dive" ? "deep-dive"
+    : body.mode === "study-chat" ? "study-chat"
+    : body.mode === "study-note" ? "study-note"
+    : "ask-professor";
+  const chatMessages: { role: "user" | "assistant"; content: string }[] = Array.isArray(body.messages)
+    ? body.messages.slice(-12).filter((message: any) =>
+        message && (message.role === "user" || message.role === "assistant") && typeof message.content === "string"
+      ).map((message: any) => ({
+        role: message.role,
+        content: cleanPromptText(message.content, 1200),
+      })).filter((message: { content: string }) => message.content.length > 0)
+    : [];
+  const transcript = typeof body.transcript === "string" ? cleanPromptText(body.transcript, 10000) : "";
+  const question = typeof body.question === "string"
+    ? cleanPromptText(body.question, MAX_QUESTION_LENGTH)
+    : mode === "study-chat" ? cleanPromptText(chatMessages.filter(message => message.role === "user").at(-1)?.content || "", MAX_QUESTION_LENGTH) : "";
   const subject = typeof body.subject === "string" ? body.subject.trim() : "";
   const explanation = typeof body.explanation === "string" ? cleanPromptText(body.explanation, 1000) : "";
   const correctAnswer = typeof body.correctAnswer === "string" ? cleanPromptText(body.correctAnswer, 300) : "";
@@ -179,7 +193,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
     return res.status(413).json({ error: "Question context is too long" });
   }
 
-  if (mode !== "deep-dive" && BLOCKED_PROGRAMMING_PATTERNS.some((pattern) => pattern.test(question))) {
+  if (!["deep-dive", "study-note"].includes(mode) && BLOCKED_PROGRAMMING_PATTERNS.some((pattern) => pattern.test(question))) {
     return res.status(200).json({
       answer: "Ask Professor is for educational questions and tutoring. Please ask a school-subject, exam-preparation, or factual learning question instead.",
       rejected: true,
@@ -232,7 +246,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
           temperature: mode === "deep-dive" ? 0.35 : 0.2,
           stream: wantsStream,
         }),
-        signal: AbortSignal.timeout(mode === "deep-dive" ? 25000 : 45000),
+        signal: AbortSignal.timeout(mode === "deep-dive" || mode === "study-note" ? 35000 : 45000),
       });
 
       const providerText = response.ok && wantsStream ? "" : await response.text();
