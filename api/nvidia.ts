@@ -267,7 +267,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
             { role: "system", content: mode === "deep-dive" ? deepDiveSystemPrompt : mode === "study-chat" ? studyChatSystemPrompt : mode === "study-note" ? studyNoteSystemPrompt : EDUCATIONAL_SYSTEM_PROMPT },
             { role: "user", content: userContent },
           ],
-          max_tokens: mode === "study-note" ? 1800 : mode === "deep-dive" ? 850 : 1200,
+          max_tokens: mode === "study-note" ? 4096 : mode === "deep-dive" ? 1200 : 1200,
           temperature: mode === "study-note" ? 0.25 : mode === "deep-dive" ? 0.35 : 0.2,
           stream: wantsStream,
         }),
@@ -391,11 +391,25 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
         return res.status(502).json({ error: lastProviderError, modelsAttempted: index + 1 });
       }
 
-      const answer = data?.choices?.[0]?.message?.content;
-      if (typeof answer !== "string" || !answer.trim()) {
+      // OpenAI-compatible providers do not all serialize assistant output identically.
+      // Some reasoning models place their visible answer in reasoning_content, and some
+      // return content as an array of text blocks rather than a plain string.
+      const message = data?.choices?.[0]?.message;
+      const rawAnswer = message?.content ?? message?.reasoning_content ?? message?.reasoning;
+      const answer = typeof rawAnswer === "string"
+        ? rawAnswer
+        : Array.isArray(rawAnswer)
+          ? rawAnswer.map((part: any) => typeof part === "string" ? part : typeof part?.text === "string" ? part.text : "").join("\\n")
+          : "";
+      if (!answer.trim()) {
         lastProviderStatus = 502;
         lastProviderError = "AI provider returned an empty answer";
-        console.error("NVIDIA NIM returned an empty answer:", { model });
+        console.error("NVIDIA NIM returned an empty answer:", {
+          model,
+          finishReason: data?.choices?.[0]?.finish_reason ?? null,
+          hasReasoning: typeof message?.reasoning_content === "string" && !!message.reasoning_content.trim(),
+          responseKeys: Object.keys(data ?? {}),
+        });
         if (index < models.length - 1) continue;
         return res.status(502).json({ error: lastProviderError, modelsAttempted: index + 1 });
       }
