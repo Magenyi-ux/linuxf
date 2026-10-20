@@ -245,7 +245,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
           ].filter(Boolean).join("\n\n")
         : `Subject context: ${subject || "General school subject"}\n\nStudent question: ${question}`;
 
-  const wantsStream = mode === "deep-dive" && body.stream === true;
+  const wantsStream = body.stream === true;
   const models = getNvidiaModels();
   let lastProviderStatus = 502;
   let lastProviderError = "Unable to reach AI provider";
