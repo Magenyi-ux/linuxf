@@ -231,17 +231,17 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
   const userContent = mode === "study-note"
     ? `Subject: ${subject || "General"}\n\nTutoring conversation to turn into a note:\n${transcript}\n\nCreate the structured study note now.`
     : mode === "study-chat"
-      ? [`Subject: ${subject || "General"}`, "Conversation so far:", ...chatMessages.map(message => `${message.role === "user" ? "Student" : "Tutor"}: ${message.content}`), "Reply to the latest student message."].join("\\n\\n")
+      ? [`Subject: ${subject || "General"}`, "Conversation so far:", ...chatMessages.map(message => `${message.role === "user" ? "Student" : "Tutor"}: ${message.content}`), "Reply to the latest student message."].join("\n\n")
       : mode === "deep-dive"
         ? [
             `Subject: ${subject || "General school subject"}`,
             `Question: ${question}`,
-            options.length ? `Answer options:\\n${options.map((option: string, index: number) => `${String.fromCharCode(65 + index)}. ${option}`).join("\\n")}` : "",
+            options.length ? `Answer options:\n${options.map((option: string, index: number) => `${String.fromCharCode(65 + index)}. ${option}`).join("\n")}` : "",
             correctAnswer ? `Correct answer: ${correctAnswer}` : "",
             explanation ? `Existing explanation: ${explanation}` : "",
             "Teach the underlying concept briefly. Do not reproduce source labels or boilerplate from the existing explanation.",
-          ].filter(Boolean).join("\\n\\n")
-        : `Subject context: ${subject || "General school subject"}\\n\\nStudent question: ${question}`;
+          ].filter(Boolean).join("\n\n")
+        : `Subject context: ${subject || "General school subject"}\n\nStudent question: ${question}`;
 
   const wantsStream = mode === "deep-dive" && body.stream === true;
   const models = getNvidiaModels();
