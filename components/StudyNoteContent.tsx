@@ -44,9 +44,9 @@ const Diagram: React.FC<{ source: string }> = ({ source }) => {
 };
 
 export const StudyNoteContent: React.FC<StudyNoteContentProps> = ({ content }) => {
-  const fence = new RegExp('(\\x60\\x60\\x60diagram\\\\s*[\\\\s\\\\S]*?\\x60\\x60\\x60)', 'g');
+  const fence = new RegExp('(\\x60\\x60\\x60diagram\\s*[\\s\\S]*?\\x60\\x60\\x60)', 'g');
   const blocks = content.split(fence);
-  const diagramBlock = new RegExp('^\\x60\\x60\\x60diagram\\\\s*\\\\n?([\\\\s\\\\S]*?)\\\\n?\\x60\\x60\\x60$');
+  const diagramBlock = new RegExp('^\\x60\\x60\\x60diagram\\s*\\n?([\\s\\S]*?)\\n?\\x60\\x60\\x60$');
   return <>{blocks.map((block, index) => {
     const match = block.match(diagramBlock);
     if (match) return <Diagram key={index} source={match[1]} />;
