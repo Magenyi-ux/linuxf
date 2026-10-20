@@ -10,6 +10,7 @@ import { Profile } from './components/Profile';
 import { AdminDashboard } from './components/AdminDashboard';
 import { StudyNotesLibrary } from './components/StudyNotesLibrary';
 import { StudyChat } from './components/StudyChat';
+import { StudyNoteGenerator } from './components/StudyNoteGenerator';
 import { Auth } from './components/Auth';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
@@ -21,7 +22,7 @@ import {
   GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, MessageCircle, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, Bookmark, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
-  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Sun, Map, X, Trophy, Home, ArrowLeft, Search, User, LogOut, LogIn
+  Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Sun, Map, X, Trophy, Home, ArrowLeft, Search, User, LogOut, LogIn, FileText
 } from 'lucide-react';
 
 // Stream Definitions
@@ -637,6 +638,7 @@ const AppShell: React.FC = () => {
               </button>
             )}
             {<button onClick={() => setScreen('STUDY_CHAT')} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Study Chat" title="Study Chat"><MessageCircle className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Study Chat</span></button>}
+            {<button onClick={() => setScreen('NOTE_GENERATOR')} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Note Generator" title="Note Generator"><FileText className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Note Generator</span></button>}
             {isLoggedIn && <button onClick={() => setShowSavedNotes(true)} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Saved study notes" title="Saved study notes"><Bookmark className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Study notes</span></button>}
             <button onClick={() => setScreen(isLoggedIn ? 'PROFILE' : 'AUTH')} className="p-3 hover:bg-gray-50 rounded-xl transition-colors">
               {isLoggedIn ? <User className="w-5 h-5 text-gray-700" /> : <LogIn className="w-5 h-5 text-gray-700" />}
@@ -1009,6 +1011,10 @@ const AppShell: React.FC = () => {
             onBack={resetApp}
             onSignIn={() => setScreen('AUTH')}
           />
+        )}
+
+        {screen === 'NOTE_GENERATOR' && (
+          <StudyNoteGenerator onBack={resetApp} onSignIn={() => setScreen('AUTH')} />
         )}
 
         {screen === 'AUTH' && (

@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Bookmark, BookmarkX, LoaderCircle, Trash2, X } from 'lucide-react';
-import { MathMarkdown } from './MathMarkdown';
+import { StudyNoteContent } from './StudyNoteContent';
 import { useAuth } from '../contexts/AuthContext';
 import { isSupabaseConfigured, supabase } from '../services/supabaseClient';
 
@@ -69,7 +69,7 @@ export const StudyNotesLibrary: React.FC<StudyNotesLibraryProps> = ({ onClose })
         <div className="min-h-0 flex-1 space-y-4 overflow-y-auto bg-gray-50/60 p-4 sm:p-6">
           {loading && <div className="flex items-center justify-center gap-2 py-12 text-sm text-gray-500"><LoaderCircle className="h-5 w-5 animate-spin" /> Loading notes…</div>}
           {!loading && error && <p role="alert" className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">{error}</p>}
-          {!loading && !error && notes.length === 0 && <div className="py-14 text-center"><BookmarkX className="mx-auto mb-3 h-10 w-10 text-gray-300" /><h3 className="font-bold text-gray-800">No saved explanations yet</h3><p className="mt-1 text-sm text-gray-500">Use “Save explanation” after a Deep Dive response.</p></div>}
+          {!loading && !error && notes.length === 0 && <div className="py-14 text-center"><BookmarkX className="mx-auto mb-3 h-10 w-10 text-gray-300" /><h3 className="font-bold text-gray-800">No saved explanations yet</h3><p className="mt-1 text-sm text-gray-500">Create a note with Note Generator to see your saved notes here.</p></div>}
           {!loading && notes.map(note => (
             <article key={note.id} className="rounded-2xl border border-gray-200 bg-white p-4 sm:p-5">
               <div className="mb-3 flex items-start justify-between gap-3">
@@ -84,7 +84,7 @@ export const StudyNotesLibrary: React.FC<StudyNotesLibraryProps> = ({ onClose })
                 <summary className="cursor-pointer text-sm font-semibold text-gray-600">Original question</summary>
                 <p className="mt-2 whitespace-pre-wrap break-words text-sm text-gray-600">{note.question}</p>
               </details>
-              <div className="deep-dive-markdown min-w-0 break-words text-sm text-gray-700"><MathMarkdown content={note.content} /></div>
+              <div className="deep-dive-markdown min-w-0 break-words text-sm text-gray-700"><StudyNoteContent content={note.content} /></div>
             </article>
           ))}
         </div>
