@@ -9,6 +9,7 @@ import { PracticeSession } from './components/PracticeSession';
 import { Profile } from './components/Profile';
 import { AdminDashboard } from './components/AdminDashboard';
 import { StudyNotesLibrary } from './components/StudyNotesLibrary';
+import { StudyChat } from './components/StudyChat';
 import { Auth } from './components/Auth';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { enqueueAchievement, enqueueProgress } from './services/offlineQueue';
@@ -17,7 +18,7 @@ import { fetchExamQuestions } from './services/questionService';
 import { trackEvent } from './services/analytics';
 import { captureReferralKeyFromUrl, fetchMyReferralSummary, type ReferralSummary } from './services/referralService';
 import { 
-  GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, 
+  GraduationCap, ArrowRight, Library, DownloadCloud, BookOpen, MessageCircle, 
   Trash2, Calculator, BookA, Atom, FlaskConical, Dna, Bookmark, 
   TrendingUp, Landmark, Feather, WifiOff, Play,
   Leaf, Briefcase, Globe, Scale, ScrollText, BookHeart, Moon, Sun, Map, X, Trophy, Home, ArrowLeft, Search, User, LogOut, LogIn
@@ -635,6 +636,7 @@ const AppShell: React.FC = () => {
                 <DownloadCloud className="w-5 h-5" />
               </button>
             )}
+            {<button onClick={() => setScreen('STUDY_CHAT')} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Study Chat" title="Study Chat"><MessageCircle className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Study Chat</span></button>}
             {isLoggedIn && <button onClick={() => setShowSavedNotes(true)} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Saved study notes" title="Saved study notes"><Bookmark className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Study notes</span></button>}
             <button onClick={() => setScreen(isLoggedIn ? 'PROFILE' : 'AUTH')} className="p-3 hover:bg-gray-50 rounded-xl transition-colors">
               {isLoggedIn ? <User className="w-5 h-5 text-gray-700" /> : <LogIn className="w-5 h-5 text-gray-700" />}
@@ -702,7 +704,7 @@ const AppShell: React.FC = () => {
               <div className="mb-3 flex items-end justify-between gap-3">
                 <div><h2 className="text-lg font-extrabold text-slate-900">Quick start</h2><p className="mt-1 text-sm text-slate-500">Jump straight into your next study session.</p></div>
               </div>
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 <button onClick={() => setScreen('EXAM_SELECT')} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-left transition hover:border-primary-300 hover:shadow-sm">
                   <span className="rounded-xl bg-primary-50 p-3 text-primary-700"><BookOpen className="h-5 w-5" /></span><span><span className="block font-bold text-slate-900">Past questions</span><span className="mt-1 block text-xs text-slate-500">JAMB · WAEC · NECO</span></span>
                 </button>
@@ -711,6 +713,9 @@ const AppShell: React.FC = () => {
                 </button>
                 <button onClick={() => setScreen('STUDY_RAND_SUBJECTS')} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-left transition hover:border-primary-300 hover:shadow-sm">
                   <span className="rounded-xl bg-primary-50 p-3 text-primary-700"><GraduationCap className="h-5 w-5" /></span><span><span className="block font-bold text-slate-900">Random practice</span><span className="mt-1 block text-xs text-slate-500">Mix your subjects</span></span>
+                </button>
+                <button onClick={() => setScreen('STUDY_CHAT')} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-left transition hover:border-primary-300 hover:shadow-sm">
+                  <span className="rounded-xl bg-primary-50 p-3 text-primary-700"><MessageCircle className="h-5 w-5" /></span><span><span className="block font-bold text-slate-900">Study Chat</span><span className="mt-1 block text-xs text-slate-500">Chat with AI and create notes</span></span>
                 </button>
               </div>
             </section>
@@ -997,6 +1002,13 @@ const AppShell: React.FC = () => {
                </button>
             </div>
           </div>
+        )}
+
+        {screen === 'STUDY_CHAT' && (
+          <StudyChat
+            onBack={resetApp}
+            onSignIn={() => setScreen('AUTH')}
+          />
         )}
 
         {screen === 'AUTH' && (
