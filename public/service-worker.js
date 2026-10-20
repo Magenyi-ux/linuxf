@@ -39,20 +39,14 @@ self.addEventListener("fetch", (event) => {
   // These may contain private account data and must not be cached by this worker.
   if (url.origin !== self.location.origin || url.pathname.startsWith("/api/")) return;
 
-  // SPA navigations should open the cached app shell if the device is offline.
+  // SPA navigations should open the cached app shell if the network is unavailable.
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request).then((response) => {
-        if (response && response.ok) {
-          const copy = response.clone();
-          event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put("/index.html", copy)));
-        }
-        return response;
-      }).catch(async () => {
+      fetch(request).catch(async () => {
         return (await caches.match(request)) ||
           (await caches.match("/index.html")) ||
           new Response(
-            "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Examply offline</title><body><main><h1>You’re offline</h1><p>Reconnect to the internet and reopen Examply. Previously cached study content may still be available.</p></main></body></html>",
+            "<!doctype html><html lang=\\\"en\\\"><meta charset=\\\"utf-8\\\"><meta name=\\\"viewport\\\" content=\\\"width=device-width,initial-scale=1\\\"><title>Examply offline</title><body><main><h1>You’re offline</h1><p>Reconnect to the internet and reopen Examply. Previously cached study content may still be available.</p></main></body></html>",
             { headers: { "Content-Type": "text/html; charset=utf-8" }, status: 503 }
           );
       })
@@ -60,19 +54,19 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Cache-first for previously fetched same-origin assets; update cache in the
-  // background after a successful network response. This preserves the last
-  // downloaded app assets when connectivity drops.
+  // Cache-first for public same-origin assets. Fetch and cache on a miss; do not
+  // call waitUntil from inside a later promise callback, where the event may have
+  // already closed. API and cross-origin requests remain excluded above.
   event.respondWith(
     caches.match(request).then((cached) => {
-      const networkUpdate = fetch(request).then((response) => {
+      if (cached) return cached;
+      return fetch(request).then((response) => {
         if (response && response.ok && response.type === "basic") {
           const copy = response.clone();
-          event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)));
+          return caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)).then(() => response);
         }
         return response;
-      });
-      return cached || networkUpdate.catch(() => new Response("", { status: 503, statusText: "Offline" }));
+      }).catch(() => new Response("", { status: 503, statusText: "Offline" }));
     })
   );
 });
