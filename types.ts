@@ -73,4 +73,4 @@ export interface UserProfile {
   chatBotPosition?: { x: number; y: number } | null;
 }
 
-export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'PROFILE' | 'CHAT' | 'AUTH' | 'ADMIN' | 'STUDY_RAND_SUBJECTS';
+export type ScreenState = 'HOME' | 'STREAM_SELECT' | 'SUBJECT_SELECT' | 'YEAR_SELECT' | 'LOADING' | 'PRACTICE' | 'RESULTS' | 'PROFILE' | 'CHAT' | 'AUTH' | 'ADMIN' | 'STUDY_RAND_SUBJECTS' | 'STUDY_CHAT';
