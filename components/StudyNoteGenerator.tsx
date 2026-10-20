@@ -12,6 +12,39 @@ interface StudyNoteGeneratorProps {
 
 const SUBJECT_OPTIONS = ['General', ...Object.values(Subject)];
 
+async function consumeAIStream(response: Response, onDelta: (delta: string) => void): Promise<void> {
+  if (!response.ok) {
+    let message = 'Could not generate the study note.';
+    try { message = (await response.json()).error || message; } catch { /* Keep fallback message. */ }
+    throw new Error(message);
+  }
+  if (!response.body) throw new Error('Streaming is unavailable. Please try again.');
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '';
+  let receivedText = false;
+  try {
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop() ?? '';
+      for (const rawLine of lines) {
+        const line = rawLine.trim();
+        if (!line.startsWith('data:')) continue;
+        const payload = line.slice(5).trim();
+        if (!payload || payload === '[DONE]') continue;
+        let event: any;
+        try { event = JSON.parse(payload); } catch { continue; }
+        if (event.error) throw new Error(event.error);
+        if (typeof event.delta === 'string' && event.delta) { receivedText = true; onDelta(event.delta); }
+      }
+    }
+  } finally { reader.releaseLock(); }
+  if (!receivedText) throw new Error('The AI returned an empty note. Please try again.');
+}
+
 export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, onSignIn }) => {
   const { user } = useAuth();
   const [subject, setSubject] = useState('Physics');
@@ -41,13 +74,9 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
       const response = await fetch('/api/nvidia', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + session.access_token },
-        body: JSON.stringify({ mode: 'study-note', subject, topic: requestedTopic + (extraFocus.trim() ? '\nAdditional focus: ' + extraFocus.trim() : '') }),
+        body: JSON.stringify({ mode: 'study-note', subject, topic: requestedTopic + (extraFocus.trim() ? '\nAdditional focus: ' + extraFocus.trim() : ''), stream: true }),
       });
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.error || 'Could not generate the study note.');
-      const content = typeof result.answer === 'string' ? result.answer.trim() : '';
-      if (!content) throw new Error('The AI returned an empty note. Please try again.');
-      setNote(content);
+      await consumeAIStream(response, delta => setNote(current => current + delta));
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : 'Could not generate the note. Check your connection and try again.');
     } finally {
@@ -119,12 +148,12 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
       {error && <p role="alert" className="rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700">{error}{!user && <button type="button" onClick={onSignIn} className="ml-2 font-bold underline">Sign in</button>}</p>}
       {notice && <p role="status" className="rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-800">{notice}</p>}
 
-      {note && <article className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
+      {(note || generating) && <article className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
         <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
           <div><p className="text-xs font-bold uppercase tracking-wide text-primary-700">{subject}</p><p className="mt-1 text-xs text-slate-400">Generated study material</p></div>
           <button type="button" onClick={() => void saveNote()} disabled={saving} className="inline-flex items-center gap-2 rounded-xl border border-primary-200 px-4 py-2.5 text-sm font-bold text-primary-700 hover:bg-primary-50 disabled:opacity-50">{saving ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}{saving ? 'Saving…' : 'Save to Study notes'}</button>
         </div>
-        <div className="deep-dive-markdown min-w-0 break-words text-sm leading-relaxed text-slate-800"><StudyNoteContent content={note} /></div>
+        <div className="deep-dive-markdown min-w-0 break-words text-sm leading-relaxed text-slate-800">{note ? <StudyNoteContent content={note} /> : <p className="text-sm text-slate-500">Preparing your note…</p>}</div>
       </article>}
     </section>
   );
