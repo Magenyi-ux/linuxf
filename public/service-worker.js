@@ -1,9 +1,11 @@
-const CACHE_NAME = "examply-cache-v4";
+const CACHE_NAME = "examply-cache-v5";
 const APP_SHELL = [
   "/",
   "/index.html",
   "/manifest.json",
   "/examply-logo.svg",
+  "/examply-icon-192.svg",
+  "/examply-icon-512.svg",
   "/question-assets/physics-vector.svg",
   "/question-assets/biology-cell.svg",
   "/question-assets/contour-map.svg"
@@ -46,7 +48,7 @@ self.addEventListener("fetch", (event) => {
         return (await caches.match(request)) ||
           (await caches.match("/index.html")) ||
           new Response(
-            "<!doctype html><html lang=\\\"en\\\"><meta charset=\\\"utf-8\\\"><meta name=\\\"viewport\\\" content=\\\"width=device-width,initial-scale=1\\\"><title>Examply offline</title><body><main><h1>You’re offline</h1><p>Reconnect to the internet and reopen Examply. Previously cached study content may still be available.</p></main></body></html>",
+            "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Examply offline</title><body><main><h1>You’re offline</h1><p>Reconnect to the internet and reopen Examply. Previously cached study content may still be available.</p></main></body></html>",
             { headers: { "Content-Type": "text/html; charset=utf-8" }, status: 503 }
           );
       })
