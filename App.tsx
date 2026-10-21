@@ -131,6 +131,10 @@ const AppShell: React.FC = () => {
   });
   const [deferredInstallPrompt, setDeferredInstallPrompt] = useState<any>(null);
   const [isInstalled, setIsInstalled] = useState(false);
+  const [dismissInstallHelp, setDismissInstallHelp] = useState(() => {
+    try { return localStorage.getItem('examply_install_help_dismissed') === 'true'; } catch { return false; }
+  });
+  const isIOSDevice = /iphone|ipad|ipod/i.test(window.navigator.userAgent);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (event: Event) => {
@@ -162,6 +166,11 @@ const AppShell: React.FC = () => {
     deferredInstallPrompt.prompt();
     await deferredInstallPrompt.userChoice;
     setDeferredInstallPrompt(null);
+  };
+
+  const dismissInstallBanner = () => {
+    setDismissInstallHelp(true);
+    try { localStorage.setItem('examply_install_help_dismissed', 'true'); } catch { /* storage may be unavailable */ }
   };
 
   const offlineStudySurface = offlineDarkMode && !['AUTH', 'ADMIN', 'PROFILE'].includes(screen);
@@ -627,16 +636,6 @@ const AppShell: React.FC = () => {
           </button>
 
           <div className="flex items-center gap-2">
-            {isLoggedIn && deferredInstallPrompt && !isInstalled && (
-              <button onClick={handleInstallApp} className="hidden md:flex items-center gap-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-xl text-xs font-black hover:bg-primary-100 transition-colors">
-                <DownloadCloud className="w-4 h-4" /> Install App
-              </button>
-            )}
-            {isLoggedIn && deferredInstallPrompt && !isInstalled && (
-              <button onClick={handleInstallApp} className="md:hidden p-3 bg-primary-50 text-primary-700 rounded-xl" aria-label="Install app">
-                <DownloadCloud className="w-5 h-5" />
-              </button>
-            )}
             {<button onClick={() => setScreen('STUDY_CHAT')} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Study Chat" title="Study Chat"><MessageCircle className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Study Chat</span></button>}
             {<button onClick={() => setScreen('NOTE_GENERATOR')} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Note Generator" title="Note Generator"><FileText className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Note Generator</span></button>}
             {isLoggedIn && <button onClick={() => setShowSavedNotes(true)} className="flex items-center gap-2 rounded-xl p-3 text-primary-700 transition-colors hover:bg-primary-50" aria-label="Saved study notes" title="Saved study notes"><Bookmark className="h-5 w-5" /><span className="hidden text-sm font-semibold sm:inline">Study notes</span></button>}
@@ -646,6 +645,32 @@ const AppShell: React.FC = () => {
           </div>
         </div>
       </header>
+
+      {!isInstalled && !dismissInstallHelp && (
+        <aside className="mx-auto mt-4 max-w-6xl px-4 md:px-8" aria-label="Install Examply">
+          <div className="flex items-start gap-3 rounded-2xl border border-primary-100 bg-primary-50 p-4 text-primary-950">
+            <DownloadCloud className="mt-1 h-5 w-5 shrink-0 text-primary-700" />
+            <div className="min-w-0 flex-1">
+              <p className="font-bold">Install Examply on your phone</p>
+              <p className="mt-1 text-sm text-primary-900">
+                {deferredInstallPrompt
+                  ? 'Add Examply to your home screen for quicker access.'
+                  : isIOSDevice
+                    ? 'In Safari, tap Share, then choose “Add to Home Screen”.'
+                    : 'In your browser menu (⋮), choose “Install app” or “Add to Home screen”. The wording varies by browser.'}
+              </p>
+              {deferredInstallPrompt && (
+                <button onClick={handleInstallApp} className="mt-3 rounded-xl bg-primary-700 px-4 py-2 text-sm font-bold text-white hover:bg-primary-800">
+                  Install Examply
+                </button>
+              )}
+            </div>
+            <button onClick={dismissInstallBanner} className="rounded-lg p-1 text-primary-700 hover:bg-primary-100" aria-label="Dismiss install instructions">
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+        </aside>
+      )}
 
       <main className="max-w-6xl mx-auto px-4 md:px-8 py-10 pb-28">
         {screen === 'HOME' && (
