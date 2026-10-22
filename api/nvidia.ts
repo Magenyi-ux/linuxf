@@ -313,16 +313,27 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
           return res.status(502).json({ error: lastProviderError, modelsAttempted: index + 1 });
         }
 
-        res.status(200);
-        res.setHeader("Content-Type", "text/event-stream; charset=utf-8");
-        res.setHeader("Cache-Control", "no-cache, no-transform");
-        res.setHeader("Connection", "keep-alive");
-        res.setHeader("X-Accel-Buffering", "no");
-
         const reader = response.body.getReader();
         const decoder = new TextDecoder();
         let buffer = "";
         let streamedText = "";
+        let headersSent = false;
+
+        const sendDelta = (delta: string) => {
+          // Delay committing the response as SSE until the provider actually
+          // emits content. That lets us try the next model on empty/broken streams.
+          if (!headersSent) {
+            res.status(200);
+            res.setHeader("Content-Type", "text/event-stream; charset=utf-8");
+            res.setHeader("Cache-Control", "no-cache, no-transform");
+            res.setHeader("Connection", "keep-alive");
+            res.setHeader("X-Accel-Buffering", "no");
+            headersSent = true;
+          }
+          streamedText += delta;
+          writeSse(res, { delta });
+        };
+
         try {
           while (true) {
             const { value, done } = await reader.read();
@@ -338,10 +349,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
               try {
                 const event = JSON.parse(payload);
                 const delta = event?.choices?.[0]?.delta?.content;
-                if (typeof delta === "string" && delta) {
-                  streamedText += delta;
-                  writeSse(res, { delta });
-                }
+                if (typeof delta === "string" && delta) sendDelta(delta);
                 if (event?.error) throw new Error("AI provider stream failed");
               } catch (error) {
                 if (error instanceof SyntaxError) continue;
@@ -356,25 +364,43 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
               try {
                 const event = JSON.parse(payload);
                 const delta = event?.choices?.[0]?.delta?.content;
-                if (typeof delta === "string" && delta) {
-                  streamedText += delta;
-                  writeSse(res, { delta });
-                }
-              } catch { /* Ignore a truncated final provider event. */ }
+                if (typeof delta === "string" && delta) sendDelta(delta);
+                if (event?.error) throw new Error("AI provider stream failed");
+              } catch (error) {
+                if (!(error instanceof SyntaxError)) throw error;
+                // A truncated final provider event can be ignored.
+              }
             }
           }
+
           if (!streamedText.trim()) {
-            writeSse(res, { error: "AI provider returned an empty answer" });
-          } else {
-            writeSse(res, { done: true, modelUsed: model, fallbackUsed: index > 0 });
+            lastProviderStatus = 502;
+            lastProviderError = "AI provider returned an empty answer";
+            console.error("NVIDIA NIM returned an empty stream:", { model });
+            if (index < models.length - 1) continue;
+            return res.status(502).json({ error: lastProviderError, modelsAttempted: index + 1 });
           }
+
+          writeSse(res, { done: true, modelUsed: model, fallbackUsed: index > 0 });
           res.end();
           return;
         } catch (error) {
           console.error("NVIDIA NIM stream failed:", {
             model,
-            message: error instanceof Error ? error.message : "Unknown stream error",
+            message: error instanceof Error ? error.message : "Unknown error",
+            hasPartialAnswer: Boolean(streamedText.trim()),
           });
+          if (!streamedText.trim() && index < models.length - 1) {
+            lastProviderStatus = 502;
+            lastProviderError = "AI provider stream failed before returning content";
+            continue;
+          }
+          if (!headersSent) {
+            return res.status(502).json({
+              error: "The explanation stream was interrupted. Please retry.",
+              modelsAttempted: index + 1,
+            });
+          }
           writeSse(res, { error: "The explanation stream was interrupted. Please retry." });
           res.end();
           return;
