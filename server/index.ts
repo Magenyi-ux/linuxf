@@ -5,6 +5,8 @@ import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const NVIDIA_VIDEO_ENDPOINT =
+  process.env.NVIDIA_VIDEO_API_URL || "https://ai.api.nvidia.com/v1/cosmos/nvidia/cosmos3-nano";
 
 async function startServer() {
   const app = express();
@@ -15,23 +17,24 @@ async function startServer() {
   // Report configuration without exposing credentials or the upstream URL.
   app.get("/api/video/status", (_req, res) => {
     res.setHeader("Cache-Control", "no-store");
+    const apiKey = process.env.NVIDIA_NIM_API_KEY || process.env.NVIDIA_API_KEY;
     res.json({
-      configured: Boolean(process.env.NVIDIA_VIDEO_API_URL && process.env.NVIDIA_API_KEY),
-      model: "wan-ai/wan2.2",
-      maxSeconds: 4,
+      configured: Boolean(apiKey),
+      model: "nvidia/cosmos3-nano",
+      maxSeconds: 1,
+      endpointConfigured: true,
     });
   });
 
-  // A deliberately small, single-clip test endpoint. The API key remains server-side.
+  // Short, low-resolution test. The API key remains server-side.
   app.post("/api/video/generate", async (req, res) => {
     res.setHeader("Cache-Control", "no-store");
     const prompt = typeof req.body?.prompt === "string" ? req.body.prompt.trim() : "";
-    const endpoint = process.env.NVIDIA_VIDEO_API_URL;
-    const apiKey = process.env.NVIDIA_API_KEY;
+    const apiKey = process.env.NVIDIA_NIM_API_KEY || process.env.NVIDIA_API_KEY;
 
-    if (!endpoint || !apiKey) {
+    if (!apiKey) {
       return res.status(503).json({
-        error: "Video generation is not configured yet. Add NVIDIA_VIDEO_API_URL and NVIDIA_API_KEY to the server environment first. No paid request was made.",
+        error: "NVIDIA_NIM_API_KEY is not configured in this deployment. No paid request was made.",
       });
     }
 
@@ -40,7 +43,7 @@ async function startServer() {
     }
 
     try {
-      const upstream = await fetch(endpoint, {
+      const upstream = await fetch(NVIDIA_VIDEO_ENDPOINT, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${apiKey}`,
@@ -48,10 +51,13 @@ async function startServer() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          model: "wan-ai/wan2.2",
+          model_mode: "text2video",
           prompt,
-          size: "832x480",
-          seconds: 4,
+          resolution: "480_16_9",
+          num_frames: 25,
+          num_inference_steps: 35,
+          fps: 24,
+          seed: 42,
         }),
         signal: AbortSignal.timeout(300_000),
       });
@@ -60,31 +66,28 @@ async function startServer() {
       if (!upstream.ok) {
         const message =
           typeof payload?.detail === "string" ? payload.detail :
+          typeof payload?.title === "string" ? payload.title :
           typeof payload?.message === "string" ? payload.message :
-          `NVIDIA endpoint returned HTTP ${upstream.status}.`;
+          `NVIDIA endpoint returned HTTP ${upstream.status}. Check API access and model availability.`;
         return res.status(upstream.status >= 500 ? 502 : upstream.status).json({
           error: message.slice(0, 500),
         });
       }
 
-      const first = Array.isArray(payload?.data) ? payload.data[0] : payload?.data;
-      const videoBase64 =
-        typeof first?.b64_json === "string" ? first.b64_json :
-        typeof payload?.b64_json === "string" ? payload.b64_json : "";
-
+      const videoBase64 = typeof payload?.b64_video === "string" ? payload.b64_video : "";
       if (!videoBase64) {
         return res.status(502).json({
-          error: "The endpoint responded but did not return an MP4 base64 payload. Check the selected NVIDIA model's response format.",
+          error: "NVIDIA responded without a b64_video payload; the response format was unexpected.",
         });
       }
 
-      return res.json({ videoBase64 });
+      return res.json({ videoBase64, model: "nvidia/cosmos3-nano" });
     } catch (error) {
       const message = error instanceof Error ? error.message : "Unknown upstream error";
       return res.status(502).json({
-        error: message.includes("timeout")
-          ? "The video request timed out. No automatic retry was attempted."
-          : "Could not reach the configured video endpoint. Check its URL and server logs.",
+        error: message.toLowerCase().includes("timeout")
+          ? "The video request timed out. It may still have completed upstream; no automatic retry was attempted."
+          : "Could not reach NVIDIA's hosted video endpoint. Check deployment logs and API access.",
       });
     }
   });
