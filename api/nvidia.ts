@@ -45,12 +45,12 @@ function isModelIdentityQuestion(value: string): boolean {
   if (!text || text.length > 300) return false;
 
   return [
-    /\\b(which|what)\\s+(ai\\s+)?model\\s+(do you use|are you using|powers you|runs you|is this|does examply use)\\b/i,
-    /\\b(what|which)\\s+(ai\\s+)?model\\s+(are you|is examply|do i talk to)\\b/i,
-    /\\bwhat\\s+(ai\\s+)?(model|llm)\\s+(is behind|powers|runs)\\s+(you|examply|this app)\\b/i,
-    /\\b(what|which)\\s+(ai\\s+)?(model|llm)\\s+(is being used|do you run on)\\b/i,
-    /\\bwho\\s+(made|built|created|developed|trained)\\s+you\\b/i,
-    /\\bwho\\s+(made|built|created|developed)\\s+(examply|this ai|this assistant)\\b/i,
+    /\b(which|what)\s+(ai\s+)?model\s+(do you use|are you using|powers you|runs you|is this|does examply use)\b/i,
+    /\b(what|which)\s+(ai\s+)?model\s+(are you|is examply|do i talk to)\b/i,
+    /\bwhat\s+(ai\s+)?(model|llm)\s+(is behind|powers|runs)\s+(you|examply|this app)\b/i,
+    /\b(what|which)\s+(ai\s+)?(model|llm)\s+(is being used|do you run on)\b/i,
+    /\bwho\s+(made|built|created|developed|trained)\s+you\b/i,
+    /\bwho\s+(made|built|created|developed)\s+(examply|this ai|this assistant)\b/i,
   ].some((pattern) => pattern.test(text));
 }
 
