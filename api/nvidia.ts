@@ -5,7 +5,9 @@ const NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions";
 // Keep this list aligned with NVIDIA's live API catalog. Override without a code change via
 // NVIDIA_NIM_MODELS="model-a,model-b,model-c" in Vercel Production.
 const DEFAULT_NVIDIA_MODELS = [
-  "z-ai/glm-5-3-flash",
+  // Keep a model confirmed in NVIDIA's current catalog first. The former
+  // z-ai/glm-5-3-flash endpoint returned HTTP 404 in production and added
+  // avoidable latency to every request before fallback could begin.
   "openai/gpt-oss-20b",
   "nvidia/nemotron-3.5-lightning-30b-a3b",
 ];
