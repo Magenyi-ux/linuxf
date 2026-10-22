@@ -51,10 +51,23 @@ async function consumeAIStream(response: Response, onDelta: (delta: string) => v
 
 function sectionLooksComplete(stage: 'foundation' | 'technical' | 'revision', content: string): boolean {
   const text = content.toLowerCase();
-  if (content.trim().length < 350) return false;
-  if (stage === 'foundation') return /learning objectives/.test(text) && /key terms|definitions/.test(text) && /explanation/.test(text);
-  if (stage === 'technical') return /worked example/.test(text) && /formula|principle|classification/.test(text);
-  return /summary/.test(text) && /question/.test(text) && /answer/.test(text);
+  if (content.trim().length < 300) return false;
+  if (stage === 'foundation') {
+    // Models phrase headings differently. Validate equivalent learning content, not exact wording.
+    const hasObjectives = /learning objectives|objectives|what you will learn|learning outcomes|by the end/.test(text);
+    const hasTerms = /key terms|terms and definitions|definitions|important terms|glossary|meaning of terms/.test(text);
+    const hasTeachingContent = /explanation|overview|introduction|what is|refers to|is the process|are disorders|is a condition|causes|functions/.test(text);
+    return hasObjectives && hasTerms && hasTeachingContent;
+  }
+  if (stage === 'technical') {
+    const hasExample = /worked example|worked examples|example|case study|application/.test(text);
+    const hasConcept = /formula|principle|classification|classifications|types|features|causes|symptoms|treatment|prevention/.test(text);
+    return hasExample && hasConcept;
+  }
+  const hasSummary = /summary|in summary|key points|remember/.test(text);
+  const hasQuestion = /question|self-check|check your understanding|quiz/.test(text);
+  const hasAnswer = /answer key|answers|answer:/.test(text);
+  return hasSummary && hasQuestion && hasAnswer;
 }
 
 export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, onSignIn }) => {
@@ -125,7 +138,7 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
               setNote(completedNote + stageText);
             });
             if (!sectionLooksComplete(stage.id, stageText)) {
-              throw new Error(stage.label + ' was incomplete. Retrying this section.');
+              throw new Error(stage.label + ' did not include all required learning elements. Retrying this section.');
             }
             savedSections = [...savedSections, stageText.trim()];
             completedNote = savedSections.join('\n\n');
@@ -146,15 +159,15 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
         }
       }
       const requiredSections = [
-        /learning objectives/i,
-        /key terms|definitions/i,
-        /worked examples/i,
-        /common mistakes|misconceptions/i,
-        /summary/i,
-        /answers to self-check|answer key|answers/i,
+        /learning objectives|objectives|what you will learn|learning outcomes/i,
+        /key terms|terms and definitions|definitions|important terms|glossary/i,
+        /worked examples|worked example|examples|case study|application/i,
+        /common mistakes|misconceptions|common errors/i,
+        /summary|key points|in summary/i,
+        /answers to self-check|answer key|answers|answer:/i,
       ];
       if (!requiredSections.every(pattern => pattern.test(completedNote))) {
-        // Keep the foundation and technical sections, then regenerate only the revision section on retry.
+        // Preserve finished sections and retry only the revision section.
         savedSections = savedSections.slice(0, 2);
         setCompletedSections(savedSections);
         setNote(savedSections.join('\n\n'));
