@@ -65,6 +65,8 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
   const [generating, setGenerating] = useState(false);
   const [saving, setSaving] = useState(false);
   const [note, setNote] = useState('');
+  const [completedSections, setCompletedSections] = useState<string[]>([]);
+  const [progressKey, setProgressKey] = useState('');
   const [noteComplete, setNoteComplete] = useState(false);
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
@@ -80,8 +82,16 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
     setGenerating(true);
     setError('');
     setNotice('');
-    setNote('');
     setNoteComplete(false);
+    const fullTopic = requestedTopic + (extraFocus.trim() ? '\nAdditional focus: ' + extraFocus.trim() : '');
+    const currentProgressKey = subject + '|' + fullTopic;
+    const resumeExisting = progressKey === currentProgressKey && completedSections.length > 0;
+    let savedSections = resumeExisting ? [...completedSections] : [];
+    if (!resumeExisting) {
+      setNote('');
+      setCompletedSections([]);
+      setProgressKey(currentProgressKey);
+    }
     try {
       const { data: { session } } = await supabase.auth.getSession();
       if (!session?.access_token) throw new Error('Your session has expired. Sign in again.');
@@ -90,9 +100,8 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
         { id: 'technical' as const, label: 'Formulas and worked examples' },
         { id: 'revision' as const, label: 'Summary and revision questions' },
       ];
-      let completedNote = '';
-      const fullTopic = requestedTopic + (extraFocus.trim() ? '\nAdditional focus: ' + extraFocus.trim() : '');
-      for (const stage of stages) {
+      let completedNote = savedSections.join('\n\n');
+      for (const stage of stages.slice(savedSections.length)) {
         let stageCompleted = false;
         let lastError: unknown;
         for (let attempt = 0; attempt < 2 && !stageCompleted; attempt += 1) {
@@ -118,7 +127,9 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
             if (!sectionLooksComplete(stage.id, stageText)) {
               throw new Error(stage.label + ' was incomplete. Retrying this section.');
             }
-            completedNote += (completedNote ? '\n\n' : '') + stageText.trim();
+            savedSections = [...savedSections, stageText.trim()];
+            completedNote = savedSections.join('\n\n');
+            setCompletedSections(savedSections);
             setNote(completedNote);
             stageCompleted = true;
           } catch (caught) {
@@ -143,8 +154,12 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
         /answers to self-check|answer key|answers/i,
       ];
       if (!requiredSections.every(pattern => pattern.test(completedNote))) {
+        // Keep the foundation and technical sections, then regenerate only the revision section on retry.
+        savedSections = savedSections.slice(0, 2);
+        setCompletedSections(savedSections);
+        setNote(savedSections.join('\n\n'));
         setNoteComplete(false);
-        throw new Error('The note was generated but failed the completeness check. Please retry to finish the missing sections.');
+        throw new Error('The final note needs a completeness repair. Select Generate note to retry the revision section.');
       }
       setNoteComplete(true);
     } catch (caught) {
