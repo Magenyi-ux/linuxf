@@ -1,14 +1,15 @@
 import React from 'react';
 import App from '../App';
 import { Auth } from './Auth';
-import { LoadingScreen } from './LoadingScreen';
 import { AuthProvider, useAuth } from '../contexts/AuthContext';
 
 const AuthGateContent: React.FC = () => {
   const { user, loading } = useAuth();
 
   if (loading) {
-    return <LoadingScreen message="Checking your secure session..." />;
+    // Restore the persisted session in the background without exposing a blocking
+    // preparation screen. Keep the auth gate closed until restoration completes.
+    return null;
   }
 
   if (!user) {
