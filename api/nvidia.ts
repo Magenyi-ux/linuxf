@@ -295,11 +295,11 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
             { role: "system", content: mode === "deep-dive" ? deepDiveSystemPrompt : mode === "study-chat" ? studyChatSystemPrompt : mode === "study-note" ? studyNoteSystemPrompt : EDUCATIONAL_SYSTEM_PROMPT },
             { role: "user", content: userContent },
           ],
-          max_tokens: mode === "study-note" ? 1800 : mode === "deep-dive" ? 850 : 1200,
+          max_tokens: mode === "study-note" ? 2400 : mode === "deep-dive" ? 850 : 1200,
           temperature: mode === "study-note" ? 0.25 : mode === "deep-dive" ? 0.35 : 0.2,
           stream: wantsStream,
         }),
-        signal: AbortSignal.timeout(mode === "deep-dive" || mode === "study-note" ? 35000 : 45000),
+        signal: AbortSignal.timeout(mode === "study-note" ? 55000 : mode === "deep-dive" ? 35000 : 45000),
       });
 
       const providerText = response.ok && wantsStream ? "" : await response.text();
