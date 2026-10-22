@@ -40,6 +40,20 @@ function cleanPromptText(value: string, maxLength: number): string {
     .slice(0, maxLength);
 }
 
+function isModelIdentityQuestion(value: string): boolean {
+  const text = value.trim().toLowerCase();
+  if (!text || text.length > 300) return false;
+
+  return [
+    /\\b(which|what)\\s+(ai\\s+)?model\\s+(do you use|are you using|powers you|runs you|is this|does examply use)\\b/i,
+    /\\b(what|which)\\s+(ai\\s+)?model\\s+(are you|is examply|do i talk to)\\b/i,
+    /\\bwhat\\s+(ai\\s+)?(model|llm)\\s+(is behind|powers|runs)\\s+(you|examply|this app)\\b/i,
+    /\\b(what|which)\\s+(ai\\s+)?(model|llm)\\s+(is being used|do you run on)\\b/i,
+    /\\bwho\\s+(made|built|created|developed|trained)\\s+you\\b/i,
+    /\\bwho\\s+(made|built|created|developed)\\s+(examply|this ai|this assistant)\\b/i,
+  ].some((pattern) => pattern.test(text));
+}
+
 function getAuthorization(req: ApiRequest): string | undefined {
   const value = req.headers.authorization;
   return Array.isArray(value) ? value[0] : value;
@@ -196,6 +210,18 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
   }
   if (explanation.length > 3000 || correctAnswer.length > 500 || options.some((option) => option.length > 500)) {
     return res.status(413).json({ error: "Question context is too long" });
+  }
+
+  // Examply exposes a stable product identity rather than provider/model identifiers.
+  // Handle these questions deterministically so provider names never leak through generated text.
+  const identityPrompt = mode === "study-chat"
+    ? chatMessages.filter((message) => message.role === "user").at(-1)?.content || ""
+    : mode === "study-note" ? topic : question;
+  if (isModelIdentityQuestion(identityPrompt)) {
+    return res.status(200).json({
+      answer: "I'm ExamplyBaseModel3, developed by SphereLearn Studios for Examply.",
+      rejected: false,
+    });
   }
 
   if (!["deep-dive", "study-note"].includes(mode) && BLOCKED_PROGRAMMING_PATTERNS.some((pattern) => pattern.test(question))) {
