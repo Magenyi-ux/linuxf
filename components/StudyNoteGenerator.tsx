@@ -12,7 +12,7 @@ interface StudyNoteGeneratorProps {
 
 const SUBJECT_OPTIONS = ['General', ...Object.values(Subject)];
 
-async function consumeAIStream(response: Response, onDelta: (delta: string) => void): Promise<void> {
+async function consumeAIStream(response: Response, onDelta: (delta: string) => void): Promise<string> {
   if (!response.ok) {
     let message = 'Could not generate the study note.';
     try { message = (await response.json()).error || message; } catch { /* Keep fallback message. */ }
@@ -22,7 +22,7 @@ async function consumeAIStream(response: Response, onDelta: (delta: string) => v
   const reader = response.body.getReader();
   const decoder = new TextDecoder();
   let buffer = '';
-  let receivedText = false;
+  let generated = '';
   try {
     while (true) {
       const { value, done } = await reader.read();
@@ -38,11 +38,23 @@ async function consumeAIStream(response: Response, onDelta: (delta: string) => v
         let event: any;
         try { event = JSON.parse(payload); } catch { continue; }
         if (event.error) throw new Error(event.error);
-        if (typeof event.delta === 'string' && event.delta) { receivedText = true; onDelta(event.delta); }
+        if (typeof event.delta === 'string' && event.delta) {
+          generated += event.delta;
+          onDelta(event.delta);
+        }
       }
     }
   } finally { reader.releaseLock(); }
-  if (!receivedText) throw new Error('The AI returned an empty note. Please try again.');
+  if (!generated.trim()) throw new Error('The AI returned an empty note. Please try again.');
+  return generated;
+}
+
+function sectionLooksComplete(stage: 'foundation' | 'technical' | 'revision', content: string): boolean {
+  const text = content.toLowerCase();
+  if (content.trim().length < 350) return false;
+  if (stage === 'foundation') return /learning objectives/.test(text) && /key terms|definitions/.test(text) && /explanation/.test(text);
+  if (stage === 'technical') return /worked example/.test(text) && /formula|principle|classification/.test(text);
+  return /summary/.test(text) && /question/.test(text) && /answer/.test(text);
 }
 
 export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, onSignIn }) => {
@@ -53,6 +65,7 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
   const [generating, setGenerating] = useState(false);
   const [saving, setSaving] = useState(false);
   const [note, setNote] = useState('');
+  const [noteComplete, setNoteComplete] = useState(false);
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
 
@@ -68,15 +81,72 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
     setError('');
     setNotice('');
     setNote('');
+    setNoteComplete(false);
     try {
       const { data: { session } } = await supabase.auth.getSession();
       if (!session?.access_token) throw new Error('Your session has expired. Sign in again.');
-      const response = await fetch('/api/nvidia', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + session.access_token },
-        body: JSON.stringify({ mode: 'study-note', subject, topic: requestedTopic + (extraFocus.trim() ? '\nAdditional focus: ' + extraFocus.trim() : ''), stream: true }),
-      });
-      await consumeAIStream(response, delta => setNote(current => current + delta));
+      const stages = [
+        { id: 'foundation' as const, label: 'Core explanation' },
+        { id: 'technical' as const, label: 'Formulas and worked examples' },
+        { id: 'revision' as const, label: 'Summary and revision questions' },
+      ];
+      let completedNote = '';
+      const fullTopic = requestedTopic + (extraFocus.trim() ? '\nAdditional focus: ' + extraFocus.trim() : '');
+      for (const stage of stages) {
+        let stageCompleted = false;
+        let lastError: unknown;
+        for (let attempt = 0; attempt < 2 && !stageCompleted; attempt += 1) {
+          let stageText = '';
+          setNote(completedNote);
+          try {
+            const response = await fetch('/api/nvidia', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + session.access_token },
+              body: JSON.stringify({
+                mode: 'study-note',
+                subject,
+                topic: fullTopic,
+                noteStage: stage.id,
+                previousNote: completedNote,
+                stream: true,
+              }),
+            });
+            stageText = await consumeAIStream(response, delta => {
+              stageText += delta;
+              setNote(completedNote + stageText);
+            });
+            if (!sectionLooksComplete(stage.id, stageText)) {
+              throw new Error(stage.label + ' was incomplete. Retrying this section.');
+            }
+            completedNote += (completedNote ? '\n\n' : '') + stageText.trim();
+            setNote(completedNote);
+            stageCompleted = true;
+          } catch (caught) {
+            lastError = caught;
+            // Discard only this failed attempt; previously completed sections remain intact.
+            setNote(completedNote);
+          }
+        }
+        if (!stageCompleted) {
+          throw new Error(
+            (lastError instanceof Error ? lastError.message : 'AI generation failed') +
+            ' Earlier completed sections have been preserved. Select Generate note to try again.'
+          );
+        }
+      }
+      const requiredSections = [
+        /learning objectives/i,
+        /key terms|definitions/i,
+        /worked examples/i,
+        /common mistakes|misconceptions/i,
+        /summary/i,
+        /answers to self-check|answer key|answers/i,
+      ];
+      if (!requiredSections.every(pattern => pattern.test(completedNote))) {
+        setNoteComplete(false);
+        throw new Error('The note was generated but failed the completeness check. Please retry to finish the missing sections.');
+      }
+      setNoteComplete(true);
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : 'Could not generate the note. Check your connection and try again.');
     } finally {
@@ -90,6 +160,10 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
       return;
     }
     if (!note) return;
+    if (!noteComplete) {
+      setError('This note is incomplete and cannot be saved yet. Finish generation first.');
+      return;
+    }
     if (!isSupabaseConfigured) {
       setError('Cloud notes are not configured right now.');
       return;
@@ -151,7 +225,7 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
       {(note || generating) && <article className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
         <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
           <div><p className="text-xs font-bold uppercase tracking-wide text-primary-700">{subject}</p><p className="mt-1 text-xs text-slate-400">Generated study material</p></div>
-          <button type="button" onClick={() => void saveNote()} disabled={saving} className="inline-flex items-center gap-2 rounded-xl border border-primary-200 px-4 py-2.5 text-sm font-bold text-primary-700 hover:bg-primary-50 disabled:opacity-50">{saving ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}{saving ? 'Saving…' : 'Save to Study notes'}</button>
+          <button type="button" onClick={() => void saveNote()} disabled={saving || generating || !noteComplete} className="inline-flex items-center gap-2 rounded-xl border border-primary-200 px-4 py-2.5 text-sm font-bold text-primary-700 hover:bg-primary-50 disabled:opacity-50">{saving ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}{saving ? 'Saving…' : !noteComplete ? 'Complete note to save' : 'Save to Study notes'}</button>
         </div>
         <div className="deep-dive-markdown min-w-0 break-words text-sm leading-relaxed text-slate-800">{note ? <StudyNoteContent content={note} /> : <p className="text-sm text-slate-500">Preparing your note…</p>}</div>
       </article>}
