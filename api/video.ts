@@ -82,8 +82,11 @@ export default async function handler(req: Request, res: Response) {
       return res.status(upstream.status >= 500 ? 502 : upstream.status).json({ error: safeMessage });
     }
 
-    const b64 = result?.data?.[0]?.b64_json || result?.b64_video || result?.artifacts?.[0]?.base64;
-    const url = result?.data?.[0]?.url || result?.video_url;
+    // NVIDIA's documented WAN 2.2 response uses data.b64_json (an object),
+    // while some compatible wrappers return data as an array. Accept both.
+    const dataItem = Array.isArray(result?.data) ? result.data[0] : result?.data;
+    const b64 = dataItem?.b64_json || dataItem?.b64_video || result?.b64_video || result?.artifacts?.[0]?.base64;
+    const url = dataItem?.url || result?.video_url || result?.url;
     if (typeof b64 === "string" && b64.length > 0) return res.status(200).json({ b64_json: b64 });
     if (typeof url === "string" && /^https:\/\//i.test(url)) return res.status(200).json({ videoUrl: url });
     console.error("NVIDIA video response had no recognized video payload", JSON.stringify(result).slice(0, 1000));
