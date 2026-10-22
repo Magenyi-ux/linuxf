@@ -17,7 +17,7 @@ export default function VideoStudio() {
     fetch("/api/video/status")
       .then((response) => response.json())
       .then((data: VideoStatus) => setStatus(data))
-      .catch(() => setStatus({ configured: false, model: "wan-ai/wan2.2", maxSeconds: 4 }));
+      .catch(() => setStatus({ configured: false, model: "nvidia/cosmos3-nano", maxSeconds: 1 }));
     return () => {
       if (videoUrl) URL.revokeObjectURL(videoUrl);
     };
@@ -32,7 +32,7 @@ export default function VideoStudio() {
       const response = await fetch("/api/video/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt, seconds: 4 }),
+        body: JSON.stringify({ prompt }),
       });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || "Video generation failed.");
@@ -63,16 +63,16 @@ export default function VideoStudio() {
             <Film size={14} /> EXPERIMENTAL VIDEO GENERATION
           </div>
           <h1 className="max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl">Turn a scene into a cinematic clip.</h1>
-          <p className="max-w-xl leading-7 text-white/60">A small, controlled test of NVIDIA's Wan2.2 video API. This prototype generates one short clip; longer films are assembled from multiple shots.</p>
+          <p className="max-w-xl leading-7 text-white/60">A controlled test of NVIDIA's hosted Cosmos3-Nano video API. The first test is intentionally tiny: 25 frames at 24 fps, around one second at 480p. Longer scenes can be explored after access and quality are confirmed.</p>
           <label htmlFor="video-prompt" className="block text-sm font-medium text-white/80">Describe your scene</label>
           <textarea id="video-prompt" value={prompt} onChange={(event) => setPrompt(event.target.value)} maxLength={4000} rows={8} className="w-full resize-y rounded-2xl border border-white/15 bg-white/[0.04] p-4 text-sm leading-6 outline-none transition focus:border-white/40" />
-          <div className="flex items-center justify-between text-xs text-white/45"><span>{prompt.length}/4000 characters</span><span>4 seconds · 832 × 480 target</span></div>
+          <div className="flex items-center justify-between text-xs text-white/45"><span>{prompt.length}/4000 characters</span><span>~1 second · 480p</span></div>
           {error && <div role="alert" className="rounded-xl border border-red-400/30 bg-red-400/10 p-3 text-sm text-red-200">{error}</div>}
           <button onClick={generateVideo} disabled={loading || prompt.trim().length < 8} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-black transition hover:bg-white/85 disabled:cursor-not-allowed disabled:opacity-50">
             {loading ? <LoaderCircle size={17} className="animate-spin" /> : <WandSparkles size={17} />}
             {loading ? "Generating clip…" : "Generate test clip"}
           </button>
-          <p className="text-xs leading-5 text-white/45">One short request per click. Generation stays disabled at the API level until the server-side NVIDIA endpoint and key are configured.</p>
+          <p className="text-xs leading-5 text-white/45">Each click sends one hosted API request and may consume trial quota or incur charges according to NVIDIA's terms. The key is used only on the server and is never sent to the browser. Do not retry automatically after a timeout.</p>
         </section>
         <aside className="space-y-4">
           <div className="flex aspect-video items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035]">
@@ -81,11 +81,11 @@ export default function VideoStudio() {
           <div className="rounded-2xl border border-white/10 bg-white/[0.025] p-5">
             <div className="flex items-center gap-2 text-sm font-medium"><ShieldCheck size={17} /> Test configuration</div>
             <div className="mt-4 space-y-3 text-sm">
-              <div className="flex justify-between gap-3"><span className="text-white/50">Model</span><span className="font-mono text-xs">wan-ai/wan2.2</span></div>
-              <div className="flex justify-between gap-3"><span className="text-white/50">API configuration</span><span className={status?.configured ? "text-emerald-300" : "text-amber-200"}>{status ? (status.configured ? "Configured" : "Not configured") : "Checking…"}</span></div>
-              <div className="flex justify-between gap-3"><span className="text-white/50">Initial clip length</span><span>4 seconds</span></div>
+              <div className="flex justify-between gap-3"><span className="text-white/50">Model</span><span className="font-mono text-xs">nvidia/cosmos3-nano</span></div>
+              <div className="flex justify-between gap-3"><span className="text-white/50">API key</span><span className={status?.configured ? "text-emerald-300" : "text-amber-200"}>{status ? (status.configured ? "Found on server" : "Missing") : "Checking…"}</span></div>
+              <div className="flex justify-between gap-3"><span className="text-white/50">Output target</span><span>480p · 25 frames</span></div>
             </div>
-            {!status?.configured && <p className="mt-4 rounded-xl bg-amber-300/10 p-3 text-xs leading-5 text-amber-100/80">No API call will be made until NVIDIA_VIDEO_API_URL and NVIDIA_API_KEY are added to the server environment. Do not put the key in browser code.</p>}
+            {!status?.configured && <p className="mt-4 rounded-xl bg-amber-300/10 p-3 text-xs leading-5 text-amber-100/80">Set NVIDIA_NIM_API_KEY in the Vercel server environment. Do not put the key in browser code.</p>}
           </div>
         </aside>
       </div>
