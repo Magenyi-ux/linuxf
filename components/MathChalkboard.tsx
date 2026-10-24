@@ -129,6 +129,7 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
   const [includeQuestion, setIncludeQuestion] = useState(true);
   const [online, setOnline] = useState(() => typeof navigator === 'undefined' ? true : navigator.onLine);
   const [savedLocally, setSavedLocally] = useState(false);
+  const [loadedStorageKey, setLoadedStorageKey] = useState('');
   const [aiAnswer, setAiAnswer] = useState('');
   const [aiBusy, setAiBusy] = useState(false);
   const [aiError, setAiError] = useState('');
@@ -156,14 +157,16 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
         if (typeof parsed.expression === 'string') setExpression(parsed.expression);
         setSavedLocally(Boolean(saved));
       } else { setStrokes([]); setExpression(''); setSavedLocally(false); }
-    } catch { /* Storage can be unavailable in private browsing; board still works in memory. */ }
+      setLoadedStorageKey(storageKey);
+    } catch { /* Storage can be unavailable in private browsing; board still works in memory. */ setLoadedStorageKey(storageKey); }
   }, [storageKey]);
   useEffect(() => {
+    if (loadedStorageKey !== storageKey) return;
     try {
       localStorage.setItem(storageKey, JSON.stringify({ strokes, expression }));
       setSavedLocally(true);
     } catch { setSavedLocally(false); }
-  }, [storageKey, strokes, expression]);
+  }, [storageKey, loadedStorageKey, strokes, expression]);
   useEffect(() => {
     setResult(null);
     setRevealedSteps(1);
@@ -329,7 +332,6 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
               <div className="flex flex-wrap items-center justify-between gap-2"><label className="text-xs font-semibold text-slate-300" htmlFor="chalkboard-expression">Type a calculation or supported linear equation</label><button type="button" onClick={() => setIncludeQuestion(v => !v)} aria-pressed={includeQuestion} className={'rounded-lg px-2 py-1 text-[11px] ' + (includeQuestion ? 'bg-emerald-400/15 text-emerald-200' : 'bg-white/5 text-slate-400')}>Include exam question {includeQuestion ? '✓' : ''}</button></div>
               <input id="chalkboard-expression" value={expression} onChange={event => setExpression(event.target.value)} placeholder="e.g. 2x + 5 = 13 or sqrt(81) + 4^2" className="w-full rounded-xl border border-white/15 bg-[#111613] px-3 py-2.5 text-sm text-white outline-none focus:border-emerald-400" />
               {mode === 'STUDY' && result && <div aria-live="polite" className="rounded-xl border border-emerald-400/20 bg-black/20 p-3 text-sm"><div className="mb-1 flex items-center gap-2 font-bold text-emerald-300"><Calculator className="h-4 w-4" /> Local solution</div>{result.steps.slice(0, revealedSteps).map((step, index) => <p key={index} className="mt-1 text-xs leading-relaxed text-slate-300">{index + 1}. {step}</p>)}{revealedSteps >= result.steps.length ? <div className="mt-2 border-t border-white/10 pt-2 text-base font-bold text-white">Answer: {result.result}</div> : <button type="button" onClick={() => setRevealedSteps(v => Math.min(result.steps.length, v + 1))} className="mt-2 rounded-lg bg-emerald-400 px-3 py-2 text-xs font-bold text-[#122018]">Show next step</button>}<button type="button" onClick={() => setShowHint(v => !v)} className="ml-2 mt-2 inline-flex items-center gap-1 rounded-lg border border-white/15 px-3 py-2 text-xs"><Lightbulb className="h-3.5 w-3.5" />{showHint ? 'Hide hint' : 'Hint'}</button>{showHint && <p className="mt-2 rounded-lg bg-white/5 p-2 text-xs text-amber-100">{result.steps.length > 1 ? result.steps[Math.min(revealedSteps, result.steps.length - 1)] : 'Check the order of operations and verify that your expression is complete.'}</p>}</div>}
-              {mode === 'STUDY' && expression.trim() && !result && <p className="text-[11px] text-slate-500" aria-live="polite">No solution shown unless the local checker recognises a supported, valid expression.</p>}
               <p className="text-[10px] text-slate-500">Handwriting recognition is not enabled yet; finger drawing is currently a scratchpad.</p>
             </div>
             <div className="flex min-h-48 flex-col rounded-xl border border-white/10 bg-[#191e1b] p-3">
