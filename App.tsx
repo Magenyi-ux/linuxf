@@ -577,17 +577,13 @@ const AppShell: React.FC = () => {
     }));
 
     if (supabaseUser) {
-      void enqueueProgress(supabaseUser.id, {
+      enqueueProgress(supabaseUser.id, {
         subject: selectedSubject || 'Mixed',
         examType: selectedExam || 'Mixed',
         examYear: selectedExam === ExamType.STUDY_RAND ? 0 : Number((books[activeBookId || '']?.year || '0')),
         questionsAttempted: total,
         questionsCorrect: score,
         xpEarned: xpGained,
-      }).then(() => {
-        if (navigator.onLine) {
-          void syncUserData(supabaseUser.id).catch((error) => console.warn('Immediate progress sync deferred:', error));
-        }
       });
 
       if (navigator.onLine) {
