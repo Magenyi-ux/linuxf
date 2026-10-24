@@ -21,6 +21,7 @@ function evaluateMath(source: string): { result: string; steps: string[] } | nul
   const tokens = input.match(/\d*\.?\d+(?:e[+-]?\d+)?|[a-zA-Z_]+|[=()+\-*/^%,]/gi);
   if (!tokens || tokens.join('').replace(/\s/g, '') !== input.replace(/\s/g, '')) return null;
   let pos = 0;
+  const calculationSteps: string[] = [];
   const peek = () => tokens[pos];
   const take = () => tokens[pos++];
   const parsePrimary = (): number => {
@@ -41,43 +42,57 @@ function evaluateMath(source: string): { result: string; steps: string[] } | nul
       if (peek() === '(') take();
       const arg = parseAdd();
       if (peek() === ')') take();
-      if (name === 'sqrt') return Math.sqrt(arg);
-      if (name === 'abs') return Math.abs(arg);
-      if (name === 'log') return Math.log10(arg);
-      if (name === 'ln') return Math.log(arg);
-      const radians = arg * Math.PI / 180;
-      if (name === 'sin') return Math.sin(radians);
-      if (name === 'cos') return Math.cos(radians);
-      return Math.tan(radians);
+      let value: number;
+      if (name === 'sqrt') value = Math.sqrt(arg);
+      else if (name === 'abs') value = Math.abs(arg);
+      else if (name === 'log') value = Math.log10(arg);
+      else if (name === 'ln') value = Math.log(arg);
+      else {
+        const radians = arg * Math.PI / 180;
+        value = name === 'sin' ? Math.sin(radians) : name === 'cos' ? Math.cos(radians) : Math.tan(radians);
+      }
+      calculationSteps.push(name + '(' + arg + ') = ' + Number(value.toPrecision(10)));
+      return value;
     }
     throw new Error('Unknown symbol');
   };
   const parsePower = (): number => {
     let value = parsePrimary();
-    if (peek() === '^') { take(); value = Math.pow(value, parsePower()); }
+    if (peek() === '^') {
+      take(); const base = value; const exponent = parsePower(); value = Math.pow(base, exponent);
+      calculationSteps.push(base + '^' + exponent + ' = ' + Number(value.toPrecision(10)));
+    }
     return value;
   };
   const parseMul = (): number => {
     let value = parsePower();
     while (['*', '/', '%'].includes(peek())) {
-      const op = take(); const right = parsePower();
+      const op = take(); const right = parsePower(); const left = value;
       if ((op === '/' || op === '%') && right === 0) throw new Error('Division by zero');
       value = op === '*' ? value * right : op === '/' ? value / right : value % right;
+      calculationSteps.push(left + ' ' + (op === '*' ? '×' : op === '/' ? '÷' : 'mod') + ' ' + right + ' = ' + Number(value.toPrecision(10)));
     }
     return value;
   };
   const parseAdd = (): number => {
     let value = parseMul();
     while (peek() === '+' || peek() === '-') {
-      const op = take(); const right = parseMul();
+      const op = take(); const right = parseMul(); const left = value;
       value = op === '+' ? value + right : value - right;
+      calculationSteps.push(left + ' ' + op + ' ' + right + ' = ' + Number(value.toPrecision(10)));
     }
     return value;
   };
   try {
     if (input.includes('=')) {
       const sides = input.split('=');
-      if (sides.length !== 2 || !sides.every(Boolean) || !sides.join('').toLowerCase().includes('x')) return null;
+      if (sides.length !== 2 || !sides.every(Boolean)) return null;
+      if (!sides.join('').toLowerCase().includes('x')) {
+        const left = evaluateMath(sides[0]); const right = evaluateMath(sides[1]);
+        if (!left || !right) return null;
+        const equal = Number(left.result) === Number(right.result);
+        return { result: equal ? 'True — both sides equal ' + left.result : 'False — the sides are ' + left.result + ' and ' + right.result, steps: ['Evaluate the left side: ' + left.result, 'Evaluate the right side: ' + right.result, equal ? 'Both sides are equal.' : 'The two sides are not equal.'] };
+      }
       const affine = (expr: string): [number, number] => {
         const parts = expr.match(/[+-]?[^+-]+/g);
         if (!parts) throw new Error('Unsupported equation');
@@ -108,7 +123,7 @@ function evaluateMath(source: string): { result: string; steps: string[] } | nul
     const result = parseAdd();
     if (pos !== tokens.length || !Number.isFinite(result)) return null;
     const rounded = Number(result.toPrecision(12));
-    return { result: String(rounded), steps: ['Expression: ' + input, 'Apply brackets and powers first, then multiplication/division, then addition/subtraction.', 'Result: ' + rounded] };
+    return { result: String(rounded), steps: ['Expression: ' + input, ...calculationSteps, 'Result: ' + rounded] };
   } catch { return null; }
 }
 
