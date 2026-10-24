@@ -17,8 +17,8 @@ type Stroke = { points: Point[]; colour: string; width: number; erase?: boolean 
 
 function evaluateMath(source: string): { result: string; steps: string[] } | null {
   const input = source.trim().replace(/×/g, '*').replace(/÷/g, '/').replace(/π/g, 'pi').replace(/−/g, '-');
-  if (!input || input.length > 180 || !/^[0-9a-zA-Z_+\-*/^().,%\s]+$/.test(input)) return null;
-  const tokens = input.match(/\d*\.?\d+(?:e[+-]?\d+)?|[a-zA-Z_]+|[()+\-*/^%,]/gi);
+  if (!input || input.length > 180 || !/^[0-9a-zA-Z_+\-*/^().,=%\s]+$/.test(input)) return null;
+  const tokens = input.match(/\d*\.?\d+(?:e[+-]?\d+)?|[a-zA-Z_]+|[=()+\-*/^%,]/gi);
   if (!tokens || tokens.join('').replace(/\s/g, '') !== input.replace(/\s/g, '')) return null;
   let pos = 0;
   const peek = () => tokens[pos];
