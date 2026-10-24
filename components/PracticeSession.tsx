@@ -3,6 +3,7 @@ import { MathMarkdown } from './MathMarkdown';
 import { Question, Subject, ExamType } from '../types';
 import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Lightbulb, HelpCircle, Search, Bookmark, BookmarkCheck, ShieldCheck } from 'lucide-react';
 import { MathText } from './MathText';
+import { MathChalkboard } from './MathChalkboard';
 import { cleanQuestionText } from '../utils/questionTextPresentation';
 import { useAuth } from '../contexts/AuthContext';
 import { enqueueQuestionAttempt } from '../services/offlineQueue';
@@ -466,6 +467,11 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
           )}
         </div>
       </div>
+      <MathChalkboard
+        question={cleanQuestionText(currentQuestion.text)}
+        subject={String(subject)}
+        mode={mode}
+      />
     </div>
   );
 };
