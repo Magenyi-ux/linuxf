@@ -128,9 +128,13 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
   const [aiError, setAiError] = useState('');
   const [writeSpeed, setWriteSpeed] = useState(1);
   const [paused, setPaused] = useState(false);
+  const pausedRef = useRef(false);
+  const speedRef = useRef(1);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const drawingRef = useRef(false);
   const result = evaluateMath(expression);
+  useEffect(() => { pausedRef.current = paused; }, [paused]);
+  useEffect(() => { speedRef.current = writeSpeed; }, [writeSpeed]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -191,7 +195,8 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
   };
 
   const explainWithAI = async () => {
-    if (aiBusy) { setPaused(value => !value); return; }
+    if (aiBusy) { setPaused(value => { pausedRef.current = !value; return !value; }); return; }
+    if (mode === 'TEST') { setAiError('AI solutions are disabled in practice-test mode. Switch to study mode to reveal worked solutions.'); return; }
     if (!navigator.onLine) { setAiError('AI explanations need internet. The local calculator and chalkboard remain available offline.'); return; }
     if (!session?.access_token) { setAiError('Sign in to use AI step-by-step explanations.'); return; }
     setAiBusy(true); setAiError(''); setAiAnswer(''); setPaused(false);
@@ -220,8 +225,8 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
         if (animating) return;
         animating = true;
         while (animationQueue.length) {
-          if (paused) { await new Promise(resolve => setTimeout(resolve, 100)); continue; }
-          const count = Math.max(1, Math.round(writeSpeed * 3));
+          if (pausedRef.current) { await new Promise(resolve => setTimeout(resolve, 100)); continue; }
+          const count = Math.max(1, Math.round(speedRef.current * 3));
           accumulated += animationQueue.slice(0, count);
           animationQueue = animationQueue.slice(count);
           setAiAnswer(accumulated);
@@ -280,14 +285,14 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
               <canvas ref={canvasRef} onPointerDown={beginStroke} onPointerMove={moveStroke} onPointerUp={endStroke} onPointerCancel={endStroke} className="min-h-32 w-full flex-1 touch-none rounded-xl border border-white/10 bg-[#202522]" aria-label="Draw maths with your finger" />
               <label className="text-xs font-semibold text-slate-300" htmlFor="chalkboard-expression">Type a calculation or linear equation</label>
               <input id="chalkboard-expression" value={expression} onChange={event => setExpression(event.target.value)} placeholder="e.g. 2x + 5 = 13 or sqrt(81) + 4^2" className="w-full rounded-xl border border-white/15 bg-[#111613] px-3 py-2.5 text-sm text-white outline-none focus:border-emerald-400" />
-              {result && <div aria-live="polite" className="rounded-xl border border-emerald-400/20 bg-black/20 p-3 text-sm"><div className="mb-1 flex items-center gap-2 font-bold text-emerald-300"><Calculator className="h-4 w-4" /> Auto-solution</div><div className="text-base font-bold text-white">{result.result}</div>{result.steps.map((step, index) => <p key={index} className="mt-1 text-xs leading-relaxed text-slate-300">{index + 1}. {step}</p>)}</div>}
+              {mode === 'STUDY' && result && <div aria-live="polite" className="rounded-xl border border-emerald-400/20 bg-black/20 p-3 text-sm"><div className="mb-1 flex items-center gap-2 font-bold text-emerald-300"><Calculator className="h-4 w-4" /> Auto-solution</div><div className="text-base font-bold text-white">{result.result}</div>{result.steps.map((step, index) => <p key={index} className="mt-1 text-xs leading-relaxed text-slate-300">{index + 1}. {step}</p>)}</div>}
             </div>
             <div className="flex min-h-48 flex-col rounded-xl border border-white/10 bg-[#191e1b] p-3">
               <div className="mb-2 flex flex-wrap items-center justify-between gap-2"><div className="flex items-center gap-2 text-sm font-bold"><Sparkles className="h-4 w-4 text-emerald-300" /> AI live writing</div><div className="flex items-center gap-1"><button type="button" onClick={() => setWriteSpeed(v => Math.max(0.5, v - 0.5))} className="rounded-lg px-2 py-1 text-xs hover:bg-white/10">−</button><span className="text-xs text-slate-400">{writeSpeed}×</span><button type="button" onClick={() => setWriteSpeed(v => Math.min(4, v + 0.5))} className="rounded-lg px-2 py-1 text-xs hover:bg-white/10">+</button></div></div>
               <div aria-live="polite" className="deep-dive-markdown min-h-20 flex-1 overflow-y-auto whitespace-pre-wrap break-words text-sm leading-relaxed text-slate-100"><MathMarkdown content={aiAnswer} />{aiBusy && <span className="ml-1 inline-block h-3 w-1 animate-pulse bg-emerald-300 align-middle" />}</div>
               {aiError && <p role="alert" className="mt-2 rounded-lg bg-red-950/60 p-2 text-xs text-red-200">{aiError}</p>}
-              <div className="mt-3 flex flex-wrap gap-2"><button type="button" onClick={explainWithAI} disabled={!aiBusy && !navigator.onLine} className="inline-flex items-center gap-2 rounded-xl bg-emerald-400 px-3 py-2 text-xs font-extrabold text-[#122018] disabled:opacity-50">{aiBusy ? (paused ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />) : <Sparkles className="h-4 w-4" />}{aiBusy ? (paused ? 'Resume writing' : 'Pause writing') : 'Explain with AI'}</button><button type="button" onClick={() => { setAiAnswer(''); setAiError(''); }} className="rounded-xl border border-white/15 px-3 py-2 text-xs font-semibold hover:bg-white/10">Clear AI</button></div>
-              <p className="mt-2 text-[10px] text-slate-500">AI requires internet. Local typed calculations work offline. In test mode, AI solutions are hidden to preserve exam conditions.</p>
+              <div className="mt-3 flex flex-wrap gap-2"><button type="button" onClick={explainWithAI} disabled={mode === 'TEST' || (!aiBusy && !navigator.onLine)} className="inline-flex items-center gap-2 rounded-xl bg-emerald-400 px-3 py-2 text-xs font-extrabold text-[#122018] disabled:opacity-50">{aiBusy ? (paused ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />) : <Sparkles className="h-4 w-4" />}{aiBusy ? (paused ? 'Resume writing' : 'Pause writing') : 'Explain with AI'}</button><button type="button" onClick={() => { setAiAnswer(''); setAiError(''); }} className="rounded-xl border border-white/15 px-3 py-2 text-xs font-semibold hover:bg-white/10">Clear AI</button></div>
+              <p className="mt-2 text-[10px] text-slate-500">AI requires internet. Local typed calculations work offline. Practice-test mode keeps solution reveals disabled.</p>
             </div>
           </div>
         </section>
