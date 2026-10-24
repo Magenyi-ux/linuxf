@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { evaluateMath } from './MathChalkboard';
+import { evaluateMath } from './mathEvaluator';
 
 describe('evaluateMath', () => {
   it('respects multiplication precedence and records calculation steps', () => {
