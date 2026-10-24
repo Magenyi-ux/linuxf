@@ -15,7 +15,7 @@ const CHALK: ChalkColour[] = [
 type Point = { x: number; y: number };
 type Stroke = { points: Point[]; colour: string; width: number; erase?: boolean };
 
-function evaluateMath(source: string): { result: string; steps: string[] } | null {
+export function evaluateMath(source: string): { result: string; steps: string[] } | null {
   const input = source.trim().replace(/×/g, '*').replace(/÷/g, '/').replace(/π/g, 'pi').replace(/−/g, '-');
   if (!input || input.length > 180 || !/^[0-9a-zA-Z_+\-*/^().,=%\s]+$/.test(input)) return null;
   const tokens = input.match(/\d*\.?\d+(?:e[+-]?\d+)?|[a-zA-Z_]+|[=()+\-*/^%,]/gi);
