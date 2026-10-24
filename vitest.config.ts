@@ -5,7 +5,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: /^katex\\/dist\\/katex\\.min\\.css$/,
+        find: 'katex/dist/katex.min.css',
         replacement: path.resolve(process.cwd(), 'test-empty.css'),
       },
     ],
