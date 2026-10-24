@@ -32,7 +32,7 @@ const Diagram: React.FC<{ source: string }> = ({ source }) => {
                 {index > 0 && <line x1={x - gap + 2} y1={y + nodeHeight / 2} x2={x - 8} y2={y + nodeHeight / 2} stroke="#2563eb" strokeWidth="2" markerEnd="url(#study-arrow)" />}
                 <rect x={x} y={y} width={nodeWidth} height={nodeHeight} rx="10" fill="#ffffff" stroke="#93c5fd" strokeWidth="1.5" />
                 <foreignObject x={x + 5} y={y + 3} width={nodeWidth - 10} height={nodeHeight - 6}>
-                  <div xmlns="http://www.w3.org/1999/xhtml" style={{display:'flex',alignItems:'center',justifyContent:'center',height:'100%',fontSize:'12px',fontWeight:600,lineHeight:1.2,textAlign:'center',color:'#1e3a8a',overflowWrap:'anywhere'}}>{label}</div>
+                  <div style={{display:'flex',alignItems:'center',justifyContent:'center',height:'100%',fontSize:'12px',fontWeight:600,lineHeight:1.2,textAlign:'center',color:'#1e3a8a',overflowWrap:'anywhere'}}>{label}</div>
                 </foreignObject>
               </g>;
             })}
