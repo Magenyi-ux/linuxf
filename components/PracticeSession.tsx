@@ -47,7 +47,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     }
     let cancelled = false;
     setQuestionAccessStatus('checking');
-    supabase.rpc('record_distinct_question', { p_question_id: `${String(subject)}:${String(currentQuestion.id)}` })
+    Promise.resolve(supabase.rpc('record_distinct_question', { p_question_id: `${String(subject)}:${String(currentQuestion.id)}` }))
       .then(({ data, error }) => {
         if (cancelled) return;
         if (error || !data || typeof data.allowed !== 'boolean') {
