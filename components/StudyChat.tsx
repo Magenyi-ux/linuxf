@@ -118,7 +118,8 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
         const answer = currentMessages[currentMessages.length - 1]?.content ?? '';
         if (!answerLooksIncomplete(answer)) break;
         setContinuing(true);
-        const history = currentMessages.slice(0, -1);
+        // Include the partial assistant answer so the model can continue from its actual stopping point.
+        const history = [...currentMessages];
         history.push({ role: 'user', content: 'Continue from the exact stopping point of your previous answer. Do not repeat existing text. Complete the unfinished sentence, formula, table, worked example, or section.' });
         await streamRequest(session.access_token, history, true);
       }
