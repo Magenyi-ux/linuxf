@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, Eraser, Sparkles, Undo2, Trash2, Pencil, Calculator, X, Pause, Play, Minus, Plus, Lightbulb, Save, Wifi, WifiOff } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Eraser, Sparkles, Undo2, Trash2, Pencil, Calculator, X, Pause, Play, Lightbulb, Save } from 'lucide-react';
 import { MathMarkdown } from './MathMarkdown';
 import { evaluateMath } from './mathEvaluator';
 import { useAuth } from '../contexts/AuthContext';
@@ -24,7 +24,6 @@ interface Props { question: string; subject: string; mode: 'STUDY' | 'TEST'; }
 export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => {
   const { session } = useAuth();
   const [open, setOpen] = useState(false);
-  const [height, setHeight] = useState(45);
   const [colour, setColour] = useState(CHALK[0].value);
   const [tool, setTool] = useState<'chalk' | 'eraser'>('chalk');
   const [strokes, setStrokes] = useState<Stroke[]>([]);
