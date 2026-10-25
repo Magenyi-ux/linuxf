@@ -111,7 +111,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
     try {
       const { data: { session } } = await supabase.auth.getSession();
       if (!session?.access_token) throw new Error('Your session has expired. Sign in again.');
-      await streamRequest(session.access_token, nextMessages.slice(0, -1));
+      await streamRequest(session.access_token, nextMessages);
       // Background completeness check: retry at most twice to prevent runaway generation.
       for (let attempt = 0; attempt < 2; attempt += 1) {
         const currentMessages = await new Promise<ChatMessage[]>(resolve => { setMessages(current => { resolve(current); return current; }); });
