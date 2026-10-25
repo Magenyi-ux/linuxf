@@ -20,7 +20,7 @@ function answerLooksIncomplete(answer: string): boolean {
   if (!text) return false;
   const fences = (text.match(/```/g) || []).length;
   if (fences % 2 === 1) return true;
-  if (/[=:→+×÷*/\\,;\-]\s*$/.test(text)) return true;
+  if (/[=:→+×÷*\/\\,;\-]\s*$/.test(text)) return true;
   if (/\b(?:and|or|but|because|which|that|with|for|to|of|including|where|when|at|by|from|is|are|the)\s*$/i.test(text)) return true;
   if (/\b(?:we get|we have|substituting|therefore|hence|for example|the formula is)\s*[:,-]?$/i.test(text)) return true;
   if (/\b(?:MA|F|m|a|η|efficiency)\s*=\s*$/i.test(text)) return true;
