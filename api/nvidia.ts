@@ -185,7 +185,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
       ).map((message: any) => {
         const allowedImageRefs = Array.isArray(message.images) ? message.images.slice(0, MAX_CHAT_IMAGES).filter((image: unknown): image is string => {
           if (typeof image !== "string" || image.length > MAX_IMAGE_REFERENCE_LENGTH) return false;
-          const inlineImage = /^data:image\\/(?:jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(image);
+          const inlineImage = /^data:image\/(?:jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(image);
           const storageImage = typeof supabaseUrl === "string" && image.startsWith(`${supabaseUrl}/storage/v1/object/sign/study-chat-images/`);
           return inlineImage || storageImage;
         }) : [];
