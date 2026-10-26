@@ -47,7 +47,7 @@ async function consumeAIStream(response: Response, onDelta: (delta: string) => v
 
 async function prepareStudyImage(file: File): Promise<{ dataUrl: string; blob: Blob }> {
   const bitmap = await createImageBitmap(file);
-  const scale = Math.min(1, 1400 / Math.max(bitmap.width, bitmap.height));
+  const scale = Math.min(1, 1200 / Math.max(bitmap.width, bitmap.height));
   const canvas = document.createElement('canvas');
   canvas.width = Math.max(1, Math.round(bitmap.width * scale));
   canvas.height = Math.max(1, Math.round(bitmap.height * scale));
@@ -55,8 +55,8 @@ async function prepareStudyImage(file: File): Promise<{ dataUrl: string; blob: B
   if (!context) throw new Error('Could not process this image. Please try another picture.');
   context.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
   bitmap.close();
-  const blob = await new Promise<Blob>((resolve, reject) => canvas.toBlob(value => value ? resolve(value) : reject(new Error('Could not compress this image.')), 'image/jpeg', 0.82));
-  if (blob.size > 5 * 1024 * 1024) throw new Error('This image is still too large after compression. Please choose a smaller picture.');
+  const blob = await new Promise<Blob>((resolve, reject) => canvas.toBlob(value => value ? resolve(value) : reject(new Error('Could not compress this image.')), 'image/jpeg', 0.72));
+  if (blob.size > 850 * 1024) throw new Error('This image is too detailed to send safely. Crop it closer to the question and try again.');
   return { blob, dataUrl: await new Promise<string>((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = () => typeof reader.result === 'string' ? resolve(reader.result) : reject(new Error('Could not read this image.'));
@@ -216,7 +216,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
   };
 
   return (
-    <section className="relative mx-auto flex h-[calc(100dvh-5.5rem)] min-h-[30rem] max-w-5xl flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg shadow-slate-900/5 sm:h-[min(860px,calc(100dvh-3rem))] sm:rounded-3xl">
+    <section className="relative mx-auto flex h-[calc(100dvh-4rem)] min-h-[30rem] w-full max-w-5xl flex-col overflow-hidden bg-white sm:h-[calc(100dvh-2rem)]">
       <header className="z-10 flex shrink-0 items-center gap-3 border-b border-slate-100 bg-white/95 px-3 py-3 backdrop-blur sm:px-5">
         <button type="button" onClick={onBack} aria-label="Back to home" className="rounded-xl p-2 text-slate-500 transition hover:bg-slate-100"><ArrowLeft className="h-5 w-5" /></button>
         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-primary-50 text-primary-700"><MessageCircle className="h-5 w-5" /></div>
@@ -242,7 +242,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
       </aside>}
 
       {saveNotice && <p role="status" className="shrink-0 border-b border-amber-100 bg-amber-50 px-4 py-2 text-xs text-amber-800 sm:px-5">{saveNotice}</p>}
-      <div ref={scrollRef} className="min-h-0 flex-1 space-y-5 overflow-y-auto overscroll-contain bg-slate-50/70 px-3 py-5 sm:px-6 sm:py-6" aria-live="polite">
+      <div ref={scrollRef} className="min-h-0 flex-1 space-y-5 overflow-y-auto overscroll-contain bg-white px-3 py-5 sm:px-8 sm:py-7" aria-live="polite">
         {messages.length === 0 && <div className="mx-auto flex min-h-full max-w-lg flex-col items-center justify-center py-8 text-center">
           <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-3xl border border-slate-200 bg-white text-primary-700 shadow-sm"><BookOpenText className="h-8 w-8" /></div>
           <h2 className="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">What are you learning today?</h2>
@@ -252,8 +252,8 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
           </div>
         </div>}
         {messages.map((message, index) => <article key={index} className={'flex ' + (message.role === 'user' ? 'justify-end' : 'justify-start')}>
-          <div className={'min-w-0 max-w-[96%] rounded-2xl px-4 py-3 sm:max-w-[86%] sm:px-5 ' + (message.role === 'user' ? 'rounded-br-md bg-primary-600 text-white shadow-sm' : 'rounded-bl-md border border-slate-200/90 bg-white text-slate-800 shadow-sm')}>
-            <p className={'mb-2 text-[10px] font-extrabold uppercase tracking-wider ' + (message.role === 'user' ? 'text-white/75' : 'text-primary-700')}>{message.role === 'user' ? 'You' : 'Examply AI'}</p>
+          <div className={'min-w-0 px-0 py-2 ' + (message.role === 'user' ? 'max-w-[90%] rounded-3xl rounded-br-lg bg-slate-100 px-4 py-3 text-slate-900 sm:max-w-[82%] sm:px-5' : 'w-full max-w-[96%] bg-transparent text-slate-800 sm:max-w-[92%]')}>
+            <p className={'mb-2 text-[10px] font-extrabold uppercase tracking-wider ' + (message.role === 'user' ? 'text-slate-500' : 'text-slate-500')}>{message.role === 'user' ? 'You' : 'Examply AI'}</p>
             {message.images?.length ? <div className="mb-3 flex flex-wrap gap-2">{message.images.map((src, imageIndex) => <img key={imageIndex} src={src} alt={`Attachment ${imageIndex + 1}`} className="max-h-64 max-w-full rounded-xl border border-slate-200 object-contain" loading="lazy" />)}</div> : null}
             {message.role === 'user' ? <p className="whitespace-pre-wrap break-words text-sm leading-6">{message.content}</p> : <div className="deep-dive-markdown min-w-0 break-words text-sm leading-7"><StudyRichContent content={message.content || (sending ? 'Thinking through your question…' : '')} /></div>}
           </div>
@@ -262,13 +262,13 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
       </div>
 
       {error && <p role="alert" className="mx-3 mt-2 shrink-0 rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700 sm:mx-5">{error}{!user && <button type="button" onClick={onSignIn} className="ml-2 font-bold underline">Sign in</button>}</p>}
-      <form onSubmit={sendMessage} className="z-10 shrink-0 border-t border-slate-200 bg-white px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 sm:px-5 sm:pt-4">
+      <form onSubmit={sendMessage} className="z-10 shrink-0 bg-white px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 sm:px-8 sm:pt-4">
         {pendingImages.length > 0 && <div className="mb-3 flex flex-wrap gap-2">{pendingImages.map((image, index) => <div key={image.preview} className="relative h-16 w-16 overflow-hidden rounded-xl border border-slate-200"><img src={image.preview} alt={`Selected attachment ${index + 1}`} className="h-full w-full object-cover" /><button type="button" aria-label="Remove image" onClick={() => { URL.revokeObjectURL(image.preview); setPendingImages(current => current.filter((_, itemIndex) => itemIndex !== index)); }} className="absolute right-1 top-1 rounded-full bg-slate-900/80 p-1 text-white"><X className="h-3 w-3" /></button></div>)}</div>}
         <input ref={imageInputRef} type="file" accept="image/jpeg,image/png,image/webp" multiple className="hidden" aria-label="Attach images" onChange={event => { const files = Array.from(event.target.files ?? []).filter(file => file.type.startsWith('image/')).slice(0, 3 - pendingImages.length); const tooLarge = files.find(file => file.size > 12 * 1024 * 1024); if (tooLarge) { setError('Each image must be smaller than 12 MB.'); event.target.value = ''; return; } setPendingImages(current => [...current, ...files].slice(0, 3).map((file, index) => index < current.length ? current[index] : { file, preview: URL.createObjectURL(file) })); event.target.value = ''; }} />
-        <div className="flex items-end gap-2 rounded-2xl border border-slate-200 bg-slate-50 p-2 transition focus-within:border-primary-400 focus-within:bg-white focus-within:ring-4 focus-within:ring-primary-100/70">
+        <div className="flex items-end gap-2 rounded-[1.75rem] border border-slate-200 bg-white p-2 shadow-sm transition focus-within:border-slate-400 focus-within:shadow-md">
           <button type="button" disabled={sending || pendingImages.length >= 3 || !user} onClick={() => imageInputRef.current?.click()} aria-label="Attach a picture" title="Attach a picture" className="mb-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-slate-600 transition hover:bg-slate-200 disabled:opacity-40"><ImagePlus className="h-5 w-5" /></button>
           <textarea value={input} onChange={event => setInput(event.target.value)} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); void sendMessage(); } }} rows={1} maxLength={2000} placeholder={user ? 'Ask a question or attach a picture…' : 'Sign in to start chatting…'} aria-label="Your message" className="max-h-36 min-h-11 flex-1 resize-none bg-transparent px-2 py-3 text-sm leading-5 text-slate-800 outline-none placeholder:text-slate-400" />
-          <button type="submit" disabled={sending || (!input.trim() && pendingImages.length === 0) || !user} aria-label="Send message" className="mb-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary-600 text-white shadow-sm transition hover:bg-primary-700 disabled:cursor-not-allowed disabled:opacity-40"><Send className="h-4 w-4" /></button>
+          <button type="submit" disabled={sending || (!input.trim() && pendingImages.length === 0) || !user} aria-label="Send message" className="mb-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-900 text-white shadow-sm transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-40"><Send className="h-4 w-4" /></button>
         </div>
         <p className="mt-2 flex items-center justify-center gap-1 text-center text-[10px] text-slate-400"><Sparkles className="h-3 w-3 shrink-0" /> AI can make mistakes. Verify important facts with trusted study materials.</p>
       </form>
