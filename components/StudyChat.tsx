@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
-import { ArrowLeft, BookOpenText, LoaderCircle, MessageCircle, Send, Sparkles } from 'lucide-react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { ArrowLeft, BookOpenText, LoaderCircle, MessageCircle, Plus, Send, Sparkles, Clock3 } from 'lucide-react';
 import { MathMarkdown } from './MathMarkdown';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../services/supabaseClient';
 import { Subject } from '../types';
 
 type ChatMessage = { role: 'user' | 'assistant'; content: string };
+type ChatRow = { id: string; title: string; subject: string; updated_at: string };
+type StoredMessage = { id: string; role: 'user' | 'assistant'; content: string; created_at: string };
 
-interface StudyChatProps {
-  onBack: () => void;
-  onSignIn: () => void;
-}
-
+interface StudyChatProps { onBack: () => void; onSignIn: () => void; }
 const SUBJECT_OPTIONS = ['General', ...Object.values(Subject)];
 
 async function consumeAIStream(response: Response, onDelta: (delta: string) => void): Promise<void> {
@@ -52,32 +50,100 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
   const [subject, setSubject] = useState('General');
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [conversations, setConversations] = useState<ChatRow[]>([]);
+  const [activeChatId, setActiveChatId] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
+  const [loadingHistory, setLoadingHistory] = useState(false);
   const [error, setError] = useState('');
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const [saveNotice, setSaveNotice] = useState('');
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const loadConversations = useCallback(async () => {
+    if (!user) { setConversations([]); setActiveChatId(null); setMessages([]); return; }
+    setLoadingHistory(true);
+    const { data, error: loadError } = await supabase.from('study_chat_conversations')
+      .select('id,title,subject,updated_at').eq('user_id', user.id)
+      .order('updated_at', { ascending: false }).limit(50);
+    setLoadingHistory(false);
+    if (loadError) {
+      setSaveNotice('Chat history sync is not enabled yet. Your current conversation remains available in this session.');
+      return;
+    }
+    setConversations((data ?? []) as ChatRow[]);
+    setSaveNotice('');
+  }, [user]);
+
+  useEffect(() => { void loadConversations(); }, [loadConversations]);
+  useEffect(() => {
+    const node = scrollRef.current;
+    if (node) node.scrollTo({ top: node.scrollHeight, behavior: 'smooth' });
+  }, [messages]);
+
+  const startNewChat = () => {
+    if (sending) return;
+    setActiveChatId(null); setMessages([]); setSubject('General'); setInput('');
+    setError(''); setSaveNotice(''); setHistoryOpen(false);
+  };
+
+  const openConversation = async (conversation: ChatRow) => {
+    if (sending) return;
+    setLoadingHistory(true); setError('');
+    const { data, error: queryError } = await supabase.from('study_chat_messages')
+      .select('id,role,content,created_at').eq('conversation_id', conversation.id)
+      .order('created_at', { ascending: true });
+    setLoadingHistory(false);
+    if (queryError) { setError('Could not load this conversation. Please try again.'); return; }
+    setActiveChatId(conversation.id);
+    setSubject(conversation.subject || 'General');
+    setMessages(((data ?? []) as StoredMessage[]).map(row => ({ role: row.role, content: row.content })));
+    setHistoryOpen(false);
+  };
+
+  const persistMessage = async (conversationId: string, role: ChatMessage['role'], content: string) => {
+    const { error: insertError } = await supabase.from('study_chat_messages').insert({
+      conversation_id: conversationId, user_id: user!.id, role, content,
+    });
+    if (insertError) throw insertError;
+  };
 
   const sendMessage = async (event?: React.FormEvent) => {
     event?.preventDefault();
     const text = input.trim();
     if (!text || sending) return;
-    if (!user) {
-      setError('Sign in to chat with the AI.');
-      return;
-    }
+    if (!user) { setError('Sign in to chat with Examply and save your conversation to your account.'); return; }
+
+    setInput(''); setSending(true); setError(''); setSaveNotice('');
+    let conversationId = activeChatId;
+    let userSaved = false;
+    let assistantContent = '';
     const nextMessages: ChatMessage[] = [...messages, { role: 'user', content: text }];
     setMessages(nextMessages);
-    setInput('');
-    setSending(true);
-    setError('');
+
     try {
+      if (!conversationId) {
+        const title = text.length > 64 ? text.slice(0, 61) + '…' : text;
+        const { data, error: createError } = await supabase.from('study_chat_conversations')
+          .insert({ user_id: user.id, title, subject }).select('id,title,subject,updated_at').single();
+        if (createError || !data) throw new Error('Could not create a saved chat. Check that chat history has been enabled.');
+        conversationId = data.id;
+        setActiveChatId(data.id);
+        setConversations(current => [data as ChatRow, ...current.filter(item => item.id !== data.id)]);
+      }
+
+      await persistMessage(conversationId, 'user', text);
+      userSaved = true;
       const { data: { session } } = await supabase.auth.getSession();
       if (!session?.access_token) throw new Error('Your session has expired. Sign in again.');
-      setMessages(current => [...current, { role: 'assistant', content: '' }]);
+
       const response = await fetch('/api/nvidia', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + session.access_token },
         body: JSON.stringify({ mode: 'study-chat', subject, messages: nextMessages, stream: true }),
       });
+      setMessages(current => [...current, { role: 'assistant', content: '' }]);
       await consumeAIStream(response, delta => {
+        assistantContent += delta;
         setMessages(current => {
           const updated = [...current];
           const last = updated[updated.length - 1];
@@ -85,60 +151,78 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
           return updated;
         });
       });
+
+      await persistMessage(conversationId, 'assistant', assistantContent);
+      const updatedAt = new Date().toISOString();
+      const { error: updateError } = await supabase.from('study_chat_conversations')
+        .update({ updated_at: updatedAt }).eq('id', conversationId).eq('user_id', user.id);
+      if (updateError) throw updateError;
+      setConversations(current => current.map(item => item.id === conversationId ? { ...item, updated_at: updatedAt } : item)
+        .sort((a, b) => b.updated_at.localeCompare(a.updated_at)));
     } catch (caught) {
-      setMessages(current => {
-        const updated = [...current];
-        if (updated[updated.length - 1]?.role === 'assistant' && !updated[updated.length - 1].content) updated.pop();
-        return updated;
-      });
-      setInput(text);
-      setError(caught instanceof Error ? caught.message : 'Could not reach the AI. Check your connection and try again.');
-    } finally {
-      setSending(false);
-    }
+      setError(caught instanceof Error ? caught.message : 'Could not send or save this message. Check your connection and try again.');
+      if (!userSaved) setInput(text);
+      if (assistantContent && conversationId) {
+        const { error: recoveryError } = await supabase.from('study_chat_messages').insert({
+          conversation_id: conversationId, user_id: user.id, role: 'assistant', content: assistantContent,
+        });
+        if (!recoveryError) setSaveNotice('The partial answer was saved to your chat history.');
+      } else if (userSaved) setSaveNotice('Your question was saved. The answer may not have completed; reopen this chat to continue.');
+    } finally { setSending(false); void loadConversations(); }
   };
 
   return (
-    <section className="mx-auto flex min-h-[68vh] max-w-4xl flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-      <header className="flex flex-wrap items-center gap-3 border-b border-slate-100 p-4 sm:p-5">
-        <button type="button" onClick={onBack} aria-label="Back to home" className="rounded-xl p-2 text-slate-500 hover:bg-slate-100"><ArrowLeft className="h-5 w-5" /></button>
-        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary-50 text-primary-700"><MessageCircle className="h-5 w-5" /></div>
-        <div><h1 className="font-extrabold text-slate-900">Study Chat</h1><p className="text-xs text-slate-500">A dedicated space to ask questions and understand concepts.</p></div>
+    <section className="relative mx-auto flex h-[calc(100dvh-5.5rem)] min-h-[30rem] max-w-5xl flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg shadow-slate-900/5 sm:h-[min(860px,calc(100dvh-3rem))] sm:rounded-3xl">
+      <header className="z-10 flex shrink-0 items-center gap-3 border-b border-slate-100 bg-white/95 px-3 py-3 backdrop-blur sm:px-5">
+        <button type="button" onClick={onBack} aria-label="Back to home" className="rounded-xl p-2 text-slate-500 transition hover:bg-slate-100"><ArrowLeft className="h-5 w-5" /></button>
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-primary-50 text-primary-700"><MessageCircle className="h-5 w-5" /></div>
+        <div className="min-w-0 flex-1"><h1 className="font-extrabold tracking-tight text-slate-900">Study Chat</h1><p className="truncate text-xs text-slate-500">{user ? 'Your questions, saved to your account' : 'Sign in to save your chat history'}</p></div>
+        <button type="button" onClick={() => setHistoryOpen(value => !value)} disabled={!user || sending} className="rounded-xl border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 transition hover:bg-slate-50 disabled:opacity-40"><Clock3 className="mr-1 inline h-4 w-4" /> History</button>
+        <button type="button" onClick={startNewChat} disabled={sending} aria-label="Start a new chat" className="inline-flex items-center gap-1 rounded-xl bg-primary-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-primary-700 disabled:opacity-40"><Plus className="h-4 w-4" /><span className="hidden sm:inline">New chat</span></button>
       </header>
 
-      <div className="border-b border-slate-100 bg-slate-50/70 px-4 py-3 sm:px-5">
-        <label htmlFor="study-chat-subject" className="mr-3 text-xs font-bold uppercase tracking-wide text-slate-500">Subject</label>
-        <select id="study-chat-subject" value={subject} onChange={event => setSubject(event.target.value)} className="max-w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none focus:border-primary-500">
+      <div className="flex shrink-0 items-center gap-3 border-b border-slate-100 bg-white px-4 py-2.5 sm:px-5">
+        <label htmlFor="study-chat-subject" className="text-xs font-bold text-slate-500">SUBJECT</label>
+        <select id="study-chat-subject" value={subject} onChange={event => setSubject(event.target.value)} className="min-w-0 max-w-[75%] rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-medium text-slate-800 outline-none transition focus:border-primary-500 focus:ring-2 focus:ring-primary-100">
           {SUBJECT_OPTIONS.map(option => <option key={option} value={option}>{option}</option>)}
         </select>
       </div>
 
-      <div className="flex-1 space-y-4 overflow-y-auto bg-slate-50/50 p-4 sm:p-5" aria-live="polite">
-        {messages.length === 0 && <div className="mx-auto max-w-md py-10 text-center">
-          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-primary-700 shadow-sm"><BookOpenText className="h-7 w-7" /></div>
-          <h2 className="text-lg font-extrabold text-slate-900">What are you learning today?</h2>
-          <p className="mt-2 text-sm leading-relaxed text-slate-500">Ask questions, request step-by-step explanations, or work through examples. For a complete note with diagrams, open Note Generator separately.</p>
-          <div className="mt-5 flex flex-wrap justify-center gap-2">
-            {['Explain a difficult concept simply', 'Give me a worked example', 'Test my understanding'].map(prompt => <button key={prompt} type="button" onClick={() => setInput(prompt)} className="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-600 hover:border-primary-300 hover:text-primary-700">{prompt}</button>)}
+      {historyOpen && <aside className="absolute inset-x-3 top-24 z-20 mx-auto max-w-2xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl sm:inset-x-auto sm:right-8 sm:top-28 sm:w-96" aria-label="Chat history">
+        <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3"><h2 className="font-bold text-slate-900">Your conversations</h2><button type="button" onClick={() => setHistoryOpen(false)} className="text-sm text-slate-500 hover:text-slate-900">Close</button></div>
+        <div className="max-h-72 overflow-y-auto p-2">
+          {loadingHistory && <p className="p-4 text-sm text-slate-500">Loading history…</p>}
+          {!loadingHistory && conversations.length === 0 && <p className="p-4 text-sm text-slate-500">Your saved chats will appear here.</p>}
+          {conversations.map(conversation => <button key={conversation.id} type="button" onClick={() => void openConversation(conversation)} className={'block w-full rounded-xl px-3 py-3 text-left transition hover:bg-slate-50 ' + (activeChatId === conversation.id ? 'bg-primary-50' : '')}><span className="block truncate text-sm font-semibold text-slate-800">{conversation.title}</span><span className="mt-1 block text-xs text-slate-500">{conversation.subject} · {new Date(conversation.updated_at).toLocaleDateString()}</span></button>)}
+        </div>
+      </aside>}
+
+      {saveNotice && <p role="status" className="shrink-0 border-b border-amber-100 bg-amber-50 px-4 py-2 text-xs text-amber-800 sm:px-5">{saveNotice}</p>}
+      <div ref={scrollRef} className="min-h-0 flex-1 space-y-5 overflow-y-auto overscroll-contain bg-slate-50/70 px-3 py-5 sm:px-6 sm:py-6" aria-live="polite">
+        {messages.length === 0 && <div className="mx-auto flex min-h-full max-w-lg flex-col items-center justify-center py-8 text-center">
+          <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-3xl border border-slate-200 bg-white text-primary-700 shadow-sm"><BookOpenText className="h-8 w-8" /></div>
+          <h2 className="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">What are you learning today?</h2>
+          <p className="mt-2 max-w-sm text-sm leading-6 text-slate-500">Ask a question, request a worked example, or practise explaining a difficult concept. Your saved chats stay with your account.</p>
+          <div className="mt-6 grid w-full max-w-md gap-2">
+            {['Explain a difficult concept simply', 'Give me a worked example', 'Test my understanding'].map((prompt, index) => <button key={prompt} type="button" onClick={() => setInput(prompt)} className="flex items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 text-left text-sm font-medium text-slate-700 transition hover:border-primary-300 hover:bg-primary-50/50"><span>{prompt}</span><span className="text-primary-600">{index === 0 ? 'Explain' : index === 1 ? 'Practise' : 'Quiz me'} →</span></button>)}
           </div>
         </div>}
         {messages.map((message, index) => <article key={index} className={'flex ' + (message.role === 'user' ? 'justify-end' : 'justify-start')}>
-          <div className={'max-w-[92%] rounded-2xl px-4 py-3 sm:max-w-[85%] ' + (message.role === 'user' ? 'bg-primary-600 text-white' : 'border border-slate-200 bg-white text-slate-800')}>
+          <div className={'min-w-0 max-w-[96%] rounded-2xl px-4 py-3 sm:max-w-[86%] sm:px-5 ' + (message.role === 'user' ? 'rounded-br-md bg-primary-600 text-white shadow-sm' : 'rounded-bl-md border border-slate-200/90 bg-white text-slate-800 shadow-sm')}>
             <p className={'mb-2 text-[10px] font-extrabold uppercase tracking-wider ' + (message.role === 'user' ? 'text-white/75' : 'text-primary-700')}>{message.role === 'user' ? 'You' : 'Examply AI'}</p>
-            {message.role === 'user' ? <p className="whitespace-pre-wrap break-words text-sm leading-relaxed">{message.content}</p> : <div className="deep-dive-markdown min-w-0 break-words text-sm leading-relaxed"><MathMarkdown content={message.content} /></div>}
+            {message.role === 'user' ? <p className="whitespace-pre-wrap break-words text-sm leading-6">{message.content}</p> : <div className="deep-dive-markdown min-w-0 break-words text-sm leading-7"><MathMarkdown content={message.content || (sending ? 'Thinking through your question…' : '')} /></div>}
           </div>
         </article>)}
-        {sending && <div className="flex items-center gap-2 text-sm text-slate-500"><LoaderCircle className="h-4 w-4 animate-spin" /> Thinking through your question…</div>}
+        {sending && messages[messages.length - 1]?.role !== 'assistant' && <div className="flex items-center gap-2 text-sm text-slate-500"><LoaderCircle className="h-4 w-4 animate-spin" /> Thinking through your question…</div>}
       </div>
 
-      {error && <p role="alert" className="mx-4 mt-3 rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700 sm:mx-5">{error}{!user && <button type="button" onClick={onSignIn} className="ml-2 font-bold underline">Sign in</button>}</p>}
-
-      <form onSubmit={sendMessage} className="border-t border-slate-100 bg-white p-3 sm:p-4">
-        <div className="flex items-end gap-2 rounded-2xl border border-slate-200 bg-white p-2 focus-within:border-primary-400 focus-within:ring-2 focus-within:ring-primary-100">
-          <textarea value={input} onChange={event => setInput(event.target.value)} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); void sendMessage(); } }} rows={1} maxLength={2000} placeholder={user ? 'Ask an academic question…' : 'Sign in to start chatting…'} aria-label="Your message" className="max-h-32 min-h-11 flex-1 resize-y bg-transparent px-2 py-3 text-sm text-slate-800 outline-none placeholder:text-slate-400" />
-          <button type="submit" disabled={sending || !input.trim()} aria-label="Send message" className="mb-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary-600 text-white hover:bg-primary-700 disabled:cursor-not-allowed disabled:opacity-40"><Send className="h-4 w-4" /></button>
+      {error && <p role="alert" className="mx-3 mt-2 shrink-0 rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700 sm:mx-5">{error}{!user && <button type="button" onClick={onSignIn} className="ml-2 font-bold underline">Sign in</button>}</p>}
+      <form onSubmit={sendMessage} className="z-10 shrink-0 border-t border-slate-200 bg-white px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 sm:px-5 sm:pt-4">
+        <div className="flex items-end gap-2 rounded-2xl border border-slate-200 bg-slate-50 p-2 transition focus-within:border-primary-400 focus-within:bg-white focus-within:ring-4 focus-within:ring-primary-100/70">
+          <textarea value={input} onChange={event => setInput(event.target.value)} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); void sendMessage(); } }} rows={1} maxLength={2000} placeholder={user ? 'Ask Examply anything about your studies…' : 'Sign in to start chatting…'} aria-label="Your message" className="max-h-36 min-h-11 flex-1 resize-none bg-transparent px-2 py-3 text-sm leading-5 text-slate-800 outline-none placeholder:text-slate-400" />
+          <button type="submit" disabled={sending || !input.trim() || !user} aria-label="Send message" className="mb-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary-600 text-white shadow-sm transition hover:bg-primary-700 disabled:cursor-not-allowed disabled:opacity-40"><Send className="h-4 w-4" /></button>
         </div>
-        <p className="mt-2 px-1 text-[11px] text-slate-400"><Sparkles className="mr-1 inline h-3 w-3" /> AI can make mistakes. Check important facts against your class notes or trusted textbooks.</p>
+        <p className="mt-2 flex items-center justify-center gap-1 text-center text-[10px] text-slate-400"><Sparkles className="h-3 w-3 shrink-0" /> AI can make mistakes. Verify important facts with trusted study materials.</p>
       </form>
     </section>
   );
