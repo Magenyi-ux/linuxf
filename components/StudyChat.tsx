@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { ArrowLeft, BookOpenText, LoaderCircle, MessageCircle, Plus, Send, Sparkles, Clock3, ImagePlus, X } from 'lucide-react';
-import { MathMarkdown } from './MathMarkdown';
+import { StudyRichContent } from './StudyRichContent';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../services/supabaseClient';
 import { Subject } from '../types';
@@ -113,7 +113,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
     if (sending) return;
     setLoadingHistory(true); setError('');
     const { data, error: queryError } = await supabase.from('study_chat_messages')
-      .select('id,role,content,created_at').eq('conversation_id', conversation.id)
+      .select('id,role,content,created_at,image_paths').eq('conversation_id', conversation.id)
       .order('created_at', { ascending: true });
     setLoadingHistory(false);
     if (queryError) { setError('Could not load this conversation. Please try again.'); return; }
@@ -173,6 +173,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
         uploadedImages.push({ dataUrl: prepared.dataUrl, path });
       }
       const imagePaths = uploadedImages.map(image => image.path);
+      setMessages(current => current.map((message, index) => index === current.length - 1 && message.role === 'user' ? { ...message, images: uploadedImages.map(image => image.dataUrl) } : message));
       await persistMessage(conversationId, 'user', questionText, imagePaths);
       pendingImages.forEach(image => URL.revokeObjectURL(image.preview)); setPendingImages([]);
       userSaved = true;
@@ -254,7 +255,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
           <div className={'min-w-0 max-w-[96%] rounded-2xl px-4 py-3 sm:max-w-[86%] sm:px-5 ' + (message.role === 'user' ? 'rounded-br-md bg-primary-600 text-white shadow-sm' : 'rounded-bl-md border border-slate-200/90 bg-white text-slate-800 shadow-sm')}>
             <p className={'mb-2 text-[10px] font-extrabold uppercase tracking-wider ' + (message.role === 'user' ? 'text-white/75' : 'text-primary-700')}>{message.role === 'user' ? 'You' : 'Examply AI'}</p>
             {message.images?.length ? <div className="mb-3 flex flex-wrap gap-2">{message.images.map((src, imageIndex) => <img key={imageIndex} src={src} alt={`Attachment ${imageIndex + 1}`} className="max-h-64 max-w-full rounded-xl border border-slate-200 object-contain" loading="lazy" />)}</div> : null}
-            {message.role === 'user' ? <p className="whitespace-pre-wrap break-words text-sm leading-6">{message.content}</p> : <div className="deep-dive-markdown min-w-0 break-words text-sm leading-7"><MathMarkdown content={message.content || (sending ? 'Thinking through your question…' : '')} /></div>}
+            {message.role === 'user' ? <p className="whitespace-pre-wrap break-words text-sm leading-6">{message.content}</p> : <div className="deep-dive-markdown min-w-0 break-words text-sm leading-7"><StudyRichContent content={message.content || (sending ? 'Thinking through your question…' : '')} /></div>}
           </div>
         </article>)}
         {sending && messages[messages.length - 1]?.role !== 'assistant' && <div className="flex items-center gap-2 text-sm text-slate-500"><LoaderCircle className="h-4 w-4 animate-spin" /> Thinking through your question…</div>}
