@@ -155,7 +155,8 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
 
     try {
       if (!conversationId) {
-        const title = text.length > 64 ? text.slice(0, 61) + '…' : text;
+        const titleSource = text || 'Image question';
+        const title = titleSource.length > 64 ? titleSource.slice(0, 61) + '…' : titleSource;
         const { data, error: createError } = await supabase.from('study_chat_conversations')
           .insert({ user_id: user.id, title, subject }).select('id,title,subject,updated_at').single();
         if (createError || !data) throw new Error('Could not create a saved chat. Check that chat history has been enabled.');
@@ -173,7 +174,11 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
         uploadedImages.push({ dataUrl: prepared.dataUrl, path });
       }
       const imagePaths = uploadedImages.map(image => image.path);
-      setMessages(current => current.map((message, index) => index === current.length - 1 && message.role === 'user' ? { ...message, images: uploadedImages.map(image => image.dataUrl) } : message));
+      const displayImages = await Promise.all(uploadedImages.map(async image => {
+        const { data: signedData } = await supabase.storage.from('study-chat-images').createSignedUrl(image.path, 3600);
+        return signedData?.signedUrl ?? image.dataUrl;
+      }));
+      setMessages(current => current.map((message, index) => index === current.length - 1 && message.role === 'user' ? { ...message, images: displayImages } : message));
       await persistMessage(conversationId, 'user', questionText, imagePaths);
       pendingImages.forEach(image => URL.revokeObjectURL(image.preview)); setPendingImages([]);
       userSaved = true;
