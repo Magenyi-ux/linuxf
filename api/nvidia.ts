@@ -256,6 +256,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
     "Stay focused on learning, explaining concepts, checking understanding, examples, calculations, and revision.",
     "Use the supplied conversation history to maintain context. Respond to the latest student message, do not repeat earlier answers unnecessarily, and ask a short clarifying question if the request is ambiguous.",
     "Use clear Markdown and age-appropriate language. Be accurate, show working for calculations, and clearly distinguish established facts from uncertainty.",
+    "For chemistry, typeset formulas and equations with KaTeX-compatible LaTeX, such as \\(\\mathrm{H_2O}\\), \\(\\mathrm{SO_4^{2-}}\\), and \\(\\rightarrow\\). Use proper subscripts, superscripts, ionic charges, state symbols and reaction arrows rather than flattened plain text.",
     "When the student attaches an image, inspect it carefully: transcribe readable question text, interpret diagrams/graphs, identify visible labels and chemical structures, and explain uncertainty if the image is blurry. Do not pretend to see details that are not visible.",
     "For useful mathematical graphs, output a fenced examply-chart JSON block with keys type (line or bar), title, xLabel, yLabel, and data (an array of {x,y} points). For molecular structures, output a fenced examply-molecule JSON block with title, formula, atoms [{id,element,x,y,label?}] and bonds [{from,to,order?}], using a 320x220 coordinate canvas. Only use these blocks when they materially help the explanation; otherwise use normal Markdown and LaTeX.",
     "Do not invent textbook titles, authors, editions, page numbers, quotations, or references. Do not claim to have browsed or checked a specific textbook.",
@@ -283,7 +284,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
               : "Create a complete illustrated study note. Include learning objectives, definitions, explanation, relevant formulas/classifications, worked examples, diagram, common mistakes, summary, 3-5 self-check questions and answers."
       ].filter(Boolean).join("\n\n")
     : mode === "study-chat"
-      ? [`Subject: ${subject || "General"}`, "Conversation so far:", ...chatMessages.map(message => `${message.role === "user" ? "Student" : "Tutor"}: ${message.content}`), "Reply to the latest student message."].join("\n\n")
+      ? [`Subject: ${subject || "General"}`, "Conversation so far:", ...chatMessages.map(message => `${message.role === "user" ? "Student" : "Tutor"}: ${message.content}${message.images?.length ? " [Image attachment(s) included with this message]" : ""}`), "Reply to the latest student message."].join("\n\n")
       : mode === "deep-dive"
         ? [
             `Subject: ${subject || "General school subject"}`,
@@ -296,10 +297,10 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
         : `Subject context: ${subject || "General school subject"}\n\nStudent question: ${question}`;
 
   const wantsStream = body.stream === true;
-  const lastUserImages = mode === "study-chat" ? (chatMessages.filter(message => message.role === "user").at(-1)?.images ?? []) : [];
+  const lastUserImages = mode === "study-chat" ? (chatMessages.filter(message => message.role === "user" && message.images?.length).at(-1)?.images ?? []) : [];
   const providerUserContent: string | Array<{ type: "text"; text: string } | { type: "image_url"; image_url: { url: string } }> = lastUserImages.length
     ? [
-        { type: "text", text: `${userContent}\n\nThe latest student message includes attached image(s). Inspect them and explain relevant visual details accurately.` },
+        { type: "text", text: `${userContent}\n\nThe conversation includes attached image(s) with a recent student message. Inspect them and explain relevant visual details accurately.` },
         ...lastUserImages.map(url => ({ type: "image_url" as const, image_url: { url } })),
       ]
     : userContent;
