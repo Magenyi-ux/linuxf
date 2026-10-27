@@ -163,7 +163,7 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
     const coalesced = nativeEvent.getCoalescedEvents?.() ?? [nativeEvent];
     const points = coalesced.map(point => {
       const rect = event.currentTarget.getBoundingClientRect();
-      return { x: point.clientX - rect.left, y: point.clientY - rect.top };
+      return { x: (point.clientX - rect.left - panOffset.x) / zoom, y: (point.clientY - rect.top - panOffset.y) / zoom };
     });
     setDraft(current => current ? { ...current, points: [...current.points, ...points] } : current);
   };
