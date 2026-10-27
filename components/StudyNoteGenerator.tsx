@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, BookOpenText, FileText, LoaderCircle, Save, Sparkles } from 'lucide-react';
+import { ArrowLeft, BookOpenText, FileText, LoaderCircle, Save } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { isSupabaseConfigured, supabase } from '../services/supabaseClient';
 import { Subject } from '../types';
@@ -240,7 +240,7 @@ export const StudyNoteGenerator: React.FC<StudyNoteGeneratorProps> = ({ onBack, 
           <textarea value={extraFocus} onChange={event => setExtraFocus(event.target.value)} maxLength={500} rows={2} placeholder="e.g. labelled structure, equations, JAMB-style examples" className="resize-y rounded-xl border border-slate-200 px-3 py-3 text-sm outline-none focus:border-primary-500" />
         </label>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <p className="max-w-xl text-xs leading-relaxed text-slate-500"><Sparkles className="mr-1 inline h-3.5 w-3.5" /> Notes use textbook-style explanations and original diagrams. AI-generated content should be checked against trusted class materials.</p>
+          <p className="max-w-xl text-xs leading-relaxed text-slate-500">Notes use textbook-style explanations and original diagrams. AI-generated content should be checked against trusted class materials.</p>
           <button type="submit" disabled={generating || !topic.trim()} className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary-600 px-5 py-3 text-sm font-bold text-white hover:bg-primary-700 disabled:cursor-not-allowed disabled:opacity-50">
             {generating ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <BookOpenText className="h-4 w-4" />}{generating ? 'Generating note…' : 'Generate note'}
           </button>
