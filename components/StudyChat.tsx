@@ -46,23 +46,57 @@ async function consumeAIStream(response: Response, onDelta: (delta: string) => v
 }
 
 async function prepareStudyImage(file: File): Promise<{ dataUrl: string; blob: Blob }> {
-  const bitmap = await createImageBitmap(file);
-  const scale = Math.min(1, 1200 / Math.max(bitmap.width, bitmap.height));
-  const canvas = document.createElement('canvas');
-  canvas.width = Math.max(1, Math.round(bitmap.width * scale));
-  canvas.height = Math.max(1, Math.round(bitmap.height * scale));
-  const context = canvas.getContext('2d');
-  if (!context) throw new Error('Could not process this image. Please try another picture.');
-  context.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
-  bitmap.close();
-  const blob = await new Promise<Blob>((resolve, reject) => canvas.toBlob(value => value ? resolve(value) : reject(new Error('Could not compress this image.')), 'image/jpeg', 0.72));
-  if (blob.size > 850 * 1024) throw new Error('This image is too detailed to send safely. Crop it closer to the question and try again.');
-  return { blob, dataUrl: await new Promise<string>((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => typeof reader.result === 'string' ? resolve(reader.result) : reject(new Error('Could not read this image.'));
-    reader.onerror = () => reject(new Error('Could not read this image.'));
-    reader.readAsDataURL(blob);
-  }) };
+  let source: CanvasImageSource;
+  let sourceWidth = 0;
+  let sourceHeight = 0;
+  let cleanup = () => {};
+
+  try {
+    const bitmap = await createImageBitmap(file);
+    source = bitmap;
+    sourceWidth = bitmap.width;
+    sourceHeight = bitmap.height;
+    cleanup = () => bitmap.close();
+  } catch {
+    // Some mobile browsers cannot decode certain image files through createImageBitmap.
+    // Try the browser's HTMLImageElement decoder before rejecting the attachment.
+    const objectUrl = URL.createObjectURL(file);
+    try {
+      const image = new Image();
+      image.decoding = 'async';
+      image.src = objectUrl;
+      await image.decode();
+      source = image;
+      sourceWidth = image.naturalWidth;
+      sourceHeight = image.naturalHeight;
+      if (!sourceWidth || !sourceHeight) throw new Error('Image has no readable dimensions.');
+      cleanup = () => URL.revokeObjectURL(objectUrl);
+    } catch {
+      URL.revokeObjectURL(objectUrl);
+      throw new Error('Examply could not read this image. Try taking a screenshot or saving it as JPG or PNG, then attach it again.');
+    }
+  }
+
+  try {
+    const scale = Math.min(1, 1200 / Math.max(sourceWidth, sourceHeight));
+    const canvas = document.createElement('canvas');
+    canvas.width = Math.max(1, Math.round(sourceWidth * scale));
+    canvas.height = Math.max(1, Math.round(sourceHeight * scale));
+    const context = canvas.getContext('2d');
+    if (!context) throw new Error('Could not process this image. Please try another picture.');
+    context.drawImage(source, 0, 0, canvas.width, canvas.height);
+    const blob = await new Promise<Blob>((resolve, reject) => canvas.toBlob(value => value ? resolve(value) : reject(new Error('Could not compress this image. Please try another picture.')), 'image/jpeg', 0.72));
+    if (blob.size > 850 * 1024) throw new Error('This image is too detailed to send safely. Crop it closer to the question and try again.');
+    const dataUrl = await new Promise<string>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => typeof reader.result === 'string' ? resolve(reader.result) : reject(new Error('Could not read this image.'));
+      reader.onerror = () => reject(new Error('Could not read this image.'));
+      reader.readAsDataURL(blob);
+    });
+    return { blob, dataUrl };
+  } finally {
+    cleanup();
+  }
 }
 
 export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
