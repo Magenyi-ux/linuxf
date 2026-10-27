@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowLeft, BookOpenText, LoaderCircle, MessageCircle, Plus, Send, Sparkles, Clock3, ImagePlus, X } from 'lucide-react';
+import { ArrowLeft, BookOpenText, LoaderCircle, MessageCircle, Plus, Send, Clock3, ImagePlus, X } from 'lucide-react';
 import { StudyRichContent } from './StudyRichContent';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../services/supabaseClient';
@@ -309,7 +309,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
           <textarea value={input} onChange={event => setInput(event.target.value)} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); void sendMessage(); } }} rows={1} maxLength={2000} placeholder={user ? 'Ask a question or attach a picture…' : 'Sign in to start chatting…'} aria-label="Your message" className="max-h-36 min-h-11 flex-1 resize-none bg-transparent px-2 py-3 text-sm leading-5 text-slate-800 outline-none placeholder:text-slate-400" />
           <button type="submit" disabled={sending || (!input.trim() && pendingImages.length === 0) || !user} aria-label="Send message" className="mb-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-900 text-white shadow-sm transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-40"><Send className="h-4 w-4" /></button>
         </div>
-        <p className="mt-2 flex items-center justify-center gap-1 text-center text-[10px] text-slate-400"><Sparkles className="h-3 w-3 shrink-0" /> AI can make mistakes. Verify important facts with trusted study materials.</p>
+        <p className="mt-2 text-center text-[10px] text-slate-400">AI can make mistakes. Verify important facts with trusted study materials.</p>
       </form>
     </section>
   );
