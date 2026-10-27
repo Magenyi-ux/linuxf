@@ -812,16 +812,15 @@ const AppShell: React.FC = () => {
                     <ArrowLeft className="w-4 h-4" /> Back to Subjects
                 </button>
 
-                <div className="bg-gradient-to-r from-primary-600 to-primary-900 p-8 rounded-[40px] mb-10 shadow-2xl shadow-primary-500/20 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
-                    <div className="relative z-10 flex items-center justify-between">
+                <div className="bg-primary-700 p-6 md:p-8 rounded-2xl mb-8 border border-primary-800">
+                    <div className="flex items-center justify-between gap-4">
                         <div>
                             <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-lg text-[10px] font-black text-white uppercase tracking-widest mb-3">
                                 {selectedExam} Question Bank
                             </span>
                             <h2 className="text-4xl font-black text-white">{selectedSubject}</h2>
                         </div>
-                        <div className="bg-white/20 backdrop-blur-md p-4 rounded-3xl border border-white/20">
+                        <div className="bg-white/10 p-3 rounded-xl">
                             <div className="text-white">
                                 {getSubjectIcon(selectedSubject)}
                             </div>
@@ -1019,7 +1018,7 @@ const AppShell: React.FC = () => {
                     setPracticeMode('TEST');
                     setScreen('PRACTICE');
                   }}
-                  className="px-12 py-5 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-2xl shadow-primary-500/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3 scale-110"
+                  className="px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3"
                >
                   START RANDOM QUIZ <ArrowRight className="w-5 h-5" />
                </button>
