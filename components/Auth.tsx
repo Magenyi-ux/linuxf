@@ -79,12 +79,9 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
         <ArrowLeft className="w-4 h-4" /> Back to Home
       </button>
 
-      <div className="bg-white p-8 md:p-10 rounded-[40px] border border-gray-100 shadow-2xl shadow-gray-200/50">
-        <div className="flex flex-col items-center text-center mb-10">
-          <div className="bg-primary-600 p-4 rounded-3xl mb-6 shadow-xl shadow-primary-500/20">
-            <img src="/examply-logo.svg" alt="Examply" className="w-10 h-10 object-contain" />
-          </div>
-          <h2 className="text-3xl font-black text-gray-900 mb-2">
+      <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-sm">
+        <div className="flex flex-col items-center text-center mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">
             {mode === 'SIGN_IN' ? 'Welcome Back!' : 'Join Examply'}
           </h2>
           <p className="text-gray-500 font-medium">
@@ -181,7 +178,7 @@ export const Auth: React.FC<AuthProps> = ({ onAuthComplete, onBack }) => {
             </div>
           )}
 
-          <button type="submit" disabled={loading} className="w-full py-4 bg-primary-600 text-white font-black rounded-2xl hover:bg-primary-700 shadow-xl shadow-primary-500/30 transition-all flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed group">
+          <button type="submit" disabled={loading} className="w-full py-3.5 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-colors flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed group">
             {loading ? <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" /> : <>{mode === 'SIGN_IN' ? 'SIGN IN' : 'CREATE ACCOUNT'}<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></>}
           </button>
         </form>
