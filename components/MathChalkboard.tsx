@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, Eraser, Sparkles, Undo2, Trash2, Pencil, Calculator, X, Pause, Play, Lightbulb, Save } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Eraser, Sparkles, Undo2, Trash2, Pencil, Calculator, X, Pause, Play, Lightbulb, Save, Maximize2, Minimize2, ZoomIn, ZoomOut, Hand } from 'lucide-react';
 import { MathMarkdown } from './MathMarkdown';
 import { evaluateMath } from './mathEvaluator';
 import { useAuth } from '../contexts/AuthContext';
@@ -24,6 +24,11 @@ interface Props { question: string; subject: string; mode: 'STUDY' | 'TEST'; }
 export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => {
   const { session } = useAuth();
   const [open, setOpen] = useState(false);
+  const [canvasExpanded, setCanvasExpanded] = useState(false);
+  const [zoom, setZoom] = useState(1);
+  const [panOffset, setPanOffset] = useState<Point>({ x: 0, y: 0 });
+  const [handMode, setHandMode] = useState(false);
+  const panRef = useRef<{ active: boolean; x: number; y: number; originX: number; originY: number }>({ active: false, x: 0, y: 0, originX: 0, originY: 0 });
   const [colour, setColour] = useState(CHALK[0].value);
   const [tool, setTool] = useState<'chalk' | 'eraser'>('chalk');
   const [strokes, setStrokes] = useState<Stroke[]>([]);
@@ -92,7 +97,6 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
     if (!canvas) return;
 
     const paint = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
-      ctx.clearRect(0, 0, width, height);
       [...strokes, ...(draft ? [draft] : [])].forEach(stroke => {
         if (!stroke.points.length) return;
         ctx.globalCompositeOperation = stroke.erase ? 'destination-out' : 'source-over';
@@ -118,7 +122,11 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
       canvas.height = Math.max(1, Math.round(rect.height * ratio));
       const ctx = canvas.getContext('2d');
       if (!ctx) return;
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      ctx.translate(panOffset.x, panOffset.y);
+      ctx.scale(zoom, zoom);
       paint(ctx, rect.width, rect.height);
     };
 
@@ -126,31 +134,41 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
     observer.observe(canvas);
     redraw();
     return () => observer.disconnect();
-  }, [strokes, draft]);
+  }, [strokes, draft, zoom, panOffset]);
 
   const pointFrom = (event: React.PointerEvent<HTMLCanvasElement>): Point => {
     const rect = event.currentTarget.getBoundingClientRect();
-    return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+    return { x: (event.clientX - rect.left - panOffset.x) / zoom, y: (event.clientY - rect.top - panOffset.y) / zoom };
   };
   const beginStroke = (event: React.PointerEvent<HTMLCanvasElement>) => {
     if (event.pointerType === 'mouse' && event.button !== 0) return;
     event.preventDefault();
     event.currentTarget.setPointerCapture(event.pointerId);
+    if (handMode || event.button === 1) {
+      panRef.current = { active: true, x: event.clientX, y: event.clientY, originX: panOffset.x, originY: panOffset.y };
+      return;
+    }
     drawingRef.current = true;
     setDraft({ points: [pointFrom(event)], colour, width: tool === 'eraser' ? 22 : 3.5, erase: tool === 'eraser' });
   };
   const moveStroke = (event: React.PointerEvent<HTMLCanvasElement>) => {
+    if (panRef.current.active) {
+      event.preventDefault();
+      setPanOffset({ x: panRef.current.originX + event.clientX - panRef.current.x, y: panRef.current.originY + event.clientY - panRef.current.y });
+      return;
+    }
     if (!drawingRef.current) return;
     event.preventDefault();
     const nativeEvent = event.nativeEvent as PointerEvent & { getCoalescedEvents?: () => PointerEvent[] };
     const coalesced = nativeEvent.getCoalescedEvents?.() ?? [nativeEvent];
     const points = coalesced.map(point => {
       const rect = event.currentTarget.getBoundingClientRect();
-      return { x: point.clientX - rect.left, y: point.clientY - rect.top };
+      return { x: (point.clientX - rect.left - panOffset.x) / zoom, y: (point.clientY - rect.top - panOffset.y) / zoom };
     });
     setDraft(current => current ? { ...current, points: [...current.points, ...points] } : current);
   };
   const endStroke = () => {
+    if (panRef.current.active) { panRef.current.active = false; return; }
     drawingRef.current = false;
     setDraft(current => { if (current) setStrokes(previous => [...previous, current]); return null; });
     setRedo([]);
@@ -264,11 +282,24 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
             <section className="flex min-h-[70dvh] flex-col border-b border-black/[0.06] p-3 sm:p-5 lg:min-h-0 lg:border-b-0 lg:border-r lg:p-6">
               <div className="mb-3 flex shrink-0 items-center justify-between gap-3">
                 <div><h3 className="text-sm font-semibold tracking-tight">Working area</h3><p className="mt-0.5 text-xs text-[#86868b]">Write or sketch your method</p></div>
-                <span className="rounded-full bg-white px-3 py-1.5 text-[11px] text-[#6e6e73] shadow-sm ring-1 ring-black/[0.04]">Finger or stylus</span>
+                <div className="flex items-center gap-1.5">
+                  <button type="button" onClick={() => setHandMode(v => !v)} aria-pressed={handMode} title={handMode ? 'Switch to drawing mode' : 'Pan canvas'} className={'flex h-9 w-9 items-center justify-center rounded-full border transition ' + (handMode ? 'border-[#0071e3] bg-[#e5f2ff] text-[#0066cc]' : 'border-black/[0.08] bg-white text-[#424245] hover:bg-[#f5f5f7]')}><Hand className="h-4 w-4" /></button>
+                  <button type="button" onClick={() => setZoom(v => Math.max(0.35, Math.round((v - 0.15) * 100) / 100))} aria-label="Zoom out" title="Zoom out" className="flex h-9 w-9 items-center justify-center rounded-full border border-black/[0.08] bg-white text-[#424245] hover:bg-[#f5f5f7]"><ZoomOut className="h-4 w-4" /></button>
+                  <button type="button" onClick={() => setZoom(1)} title="Reset zoom" className="min-w-12 rounded-full border border-black/[0.08] bg-white px-2 py-2 text-[11px] font-semibold tabular-nums text-[#424245]">{Math.round(zoom * 100)}%</button>
+                  <button type="button" onClick={() => setZoom(v => Math.min(3, Math.round((v + 0.15) * 100) / 100))} aria-label="Zoom in" title="Zoom in" className="flex h-9 w-9 items-center justify-center rounded-full border border-black/[0.08] bg-white text-[#424245] hover:bg-[#f5f5f7]"><ZoomIn className="h-4 w-4" /></button>
+                  <button type="button" onClick={() => setCanvasExpanded(v => !v)} aria-label={canvasExpanded ? 'Exit full-screen writing area' : 'Maximize writing area'} title={canvasExpanded ? 'Exit full screen' : 'Maximize writing area'} className="flex h-9 w-9 items-center justify-center rounded-full border border-black/[0.08] bg-white text-[#424245] transition hover:bg-[#f5f5f7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]">{canvasExpanded ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}</button>
+                </div>
               </div>
-              <div className="relative min-h-[34dvh] flex-1 overflow-hidden rounded-[18px] border border-black/10 bg-[#173322] shadow-[0_10px_28px_rgba(20,38,26,0.12)] lg:min-h-0">
+              <div className={'relative min-h-[34dvh] flex-1 overflow-hidden border border-black/10 bg-[#173322] shadow-[0_10px_28px_rgba(20,38,26,0.12)] lg:min-h-0 ' + (canvasExpanded ? 'fixed inset-0 z-[120] h-[100dvh] min-h-0 rounded-none' : 'rounded-[18px]')}>
                 <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-70" style={{ backgroundImage: 'radial-gradient(rgba(236, 244, 231, 0.12) 0.7px, transparent 0.7px)', backgroundSize: '16px 16px' }} />
-                <canvas ref={canvasRef} onPointerDown={beginStroke} onPointerMove={moveStroke} onPointerUp={endStroke} onPointerCancel={endStroke} onLostPointerCapture={endStroke} className="absolute inset-0 h-full w-full touch-none" aria-label="Draw maths with your finger" />
+                <canvas ref={canvasRef} onPointerDown={beginStroke} onPointerMove={moveStroke} onPointerUp={endStroke} onPointerCancel={endStroke} onLostPointerCapture={endStroke} className={'absolute inset-0 h-full w-full touch-none ' + (handMode ? 'cursor-grab active:cursor-grabbing' : 'cursor-crosshair')} aria-label={handMode ? 'Pan the maths canvas' : 'Draw maths with your finger or stylus'} />
+                {canvasExpanded && <div className="absolute right-3 top-3 z-10 flex items-center gap-1.5 rounded-2xl border border-white/15 bg-[#101814]/90 p-2 text-white shadow-xl backdrop-blur-xl sm:right-5 sm:top-5">
+                  <button type="button" onClick={() => setHandMode(v => !v)} aria-label={handMode ? 'Switch to drawing mode' : 'Pan canvas'} title={handMode ? 'Drawing mode' : 'Pan canvas'} className={'flex h-10 w-10 items-center justify-center rounded-xl ' + (handMode ? 'bg-white text-[#173322]' : 'text-white hover:bg-white/10')}><Hand className="h-4 w-4" /></button>
+                  <button type="button" onClick={() => setZoom(v => Math.max(0.35, Math.round((v - 0.15) * 100) / 100))} aria-label="Zoom out" className="flex h-10 w-10 items-center justify-center rounded-xl text-white hover:bg-white/10"><ZoomOut className="h-4 w-4" /></button>
+                  <button type="button" onClick={() => setZoom(1)} aria-label="Reset zoom" className="min-w-12 rounded-xl px-2 py-2 text-xs font-semibold tabular-nums hover:bg-white/10">{Math.round(zoom * 100)}%</button>
+                  <button type="button" onClick={() => setZoom(v => Math.min(3, Math.round((v + 0.15) * 100) / 100))} aria-label="Zoom in" className="flex h-10 w-10 items-center justify-center rounded-xl text-white hover:bg-white/10"><ZoomIn className="h-4 w-4" /></button>
+                  <button type="button" onClick={() => setCanvasExpanded(false)} aria-label="Exit full-screen writing area" title="Exit full screen" className="flex h-10 w-10 items-center justify-center rounded-xl text-white hover:bg-white/10"><Minimize2 className="h-4 w-4" /></button>
+                </div>}
                 {!strokes.length && !draft && <div className="pointer-events-none absolute inset-0 flex items-center justify-center"><div className="rounded-2xl border border-white/15 bg-black/10 px-5 py-4 text-center text-white/70 backdrop-blur-sm"><Pencil className="mx-auto mb-2 h-5 w-5 opacity-70" /><p className="text-sm font-medium">Start writing here</p><p className="mt-1 text-xs text-white/50">Your working stays on this device</p></div></div>}
               </div>
               <div className="mt-4 shrink-0">
