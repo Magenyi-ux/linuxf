@@ -5,11 +5,11 @@ const NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions";
 // Keep this list aligned with NVIDIA's live API catalog. Override without a code change via
 // NVIDIA_NIM_MODELS="model-a,model-b,model-c" in Vercel Production.
 const DEFAULT_NVIDIA_MODELS = [
-  // Prefer NVIDIA's currently listed DeepSeek V4.1 Flash endpoint. Keep the
-  // existing models as fallbacks so a provider/model failure can still recover.
-  "deepseek-ai/deepseek-v4.1-flash",
-  "openai/gpt-oss-20b",
-  "nvidia/nemotron-3.5-lightning-30b-a3b",
+  // Use models currently listed with free NVIDIA API endpoints. Keep the
+  // fastest compact model first and use two independent providers as fallbacks.
+  "nvidia/nemotron-3.5-bolt-e4b",
+  "minimaxai/minimax-m3.1-flash",
+  "z-ai/glm-5-3-flash",
 ];
 const getNvidiaModels = () => {
   const configured = process.env.NVIDIA_NIM_MODELS
