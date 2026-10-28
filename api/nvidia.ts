@@ -9,7 +9,7 @@ const DEFAULT_NVIDIA_MODELS = [
   // fastest compact model first and use two independent providers as fallbacks.
   "nvidia/nemotron-3.5-bolt-e4b",
   "minimaxai/minimax-m3.1-flash",
-  "z-ai/glm-5-3-flash",
+  "z-ai/glm-5.3-flash",
 ];
 const getNvidiaModels = () => {
   const configured = process.env.NVIDIA_NIM_MODELS
