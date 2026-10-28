@@ -7,7 +7,7 @@ const NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions";
 const DEFAULT_NVIDIA_MODELS = [
   // Prefer NVIDIA's currently listed DeepSeek V4.1 Flash endpoint. Keep the
   // existing models as fallbacks so a provider/model failure can still recover.
-  "nvidia/deepseek-v4.1-flash",
+  "deepseek-ai/deepseek-v4.1-flash",
   "openai/gpt-oss-20b",
   "nvidia/nemotron-3.5-lightning-30b-a3b",
 ];
