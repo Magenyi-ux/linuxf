@@ -238,7 +238,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
           ['USERS', 'Users', Users],
           ['REFERRAL', 'Referral', Share2],
           ['CONTROLS', 'Controls & Premium', SlidersHorizontal],
-          ['EMAIL', 'Email campaigns', Mail],\n          ['EMAIL', 'Email campaigns', Mail],
+          ['EMAIL', 'Email campaigns', Mail],
         ] as const).map(([value, label, Icon]) => (
           <button
             key={value}
@@ -257,7 +257,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         </div>
       )}
 
-      {section === 'EMAIL' && <AdminEmailCampaigns />}\n\n      {section === 'CONTROLS' && (
+      {section === 'EMAIL' && <AdminEmailCampaigns />}
+
+      {section === 'CONTROLS' && (
         <div className="space-y-5">
           <section className="rounded-[28px] border border-red-200 bg-white p-6 shadow-sm">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
