@@ -29,7 +29,7 @@ interface AdminDashboardProps {
   onBack: () => void;
 }
 
-type AdminSection = 'OVERVIEW' | 'USERS' | 'REFERRAL' | 'CONTROLS';
+type AdminSection = 'OVERVIEW' | 'USERS' | 'REFERRAL' | 'CONTROLS' | 'EMAIL';
 type AdminUserRow = {
   id: string;
   display_name: string | null;
@@ -235,7 +235,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
           ['OVERVIEW', 'Overview', Activity],
           ['USERS', 'Users', Users],
           ['REFERRAL', 'Referral', Share2],
-          ['CONTROLS', 'Controls & Premium', SlidersHorizontal],
+          ['CONTROLS', 'Controls & Premium', SlidersHorizontal],\n          ['EMAIL', 'Email campaigns', Mail],
         ] as const).map(([value, label, Icon]) => (
           <button
             key={value}
@@ -254,7 +254,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
         </div>
       )}
 
-      {section === 'CONTROLS' && (
+      {section === 'EMAIL' && <AdminEmailCampaigns />}\n\n      {section === 'CONTROLS' && (
         <div className="space-y-5">
           <section className="rounded-[28px] border border-red-200 bg-white p-6 shadow-sm">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
