@@ -14,8 +14,10 @@ import {
   Users,
   Power,
   SlidersHorizontal,
+  Mail,
 } from 'lucide-react';
 import type { UserProfile } from '../types';
+import { AdminEmailCampaigns } from './AdminEmailCampaigns';
 import { trackEvent } from '../services/analytics';
 import { useAuth } from '../contexts/AuthContext';
 import { isSupabaseConfigured, supabase } from '../services/supabaseClient';
@@ -235,7 +237,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
           ['OVERVIEW', 'Overview', Activity],
           ['USERS', 'Users', Users],
           ['REFERRAL', 'Referral', Share2],
-          ['CONTROLS', 'Controls & Premium', SlidersHorizontal],\n          ['EMAIL', 'Email campaigns', Mail],
+          ['CONTROLS', 'Controls & Premium', SlidersHorizontal],
+          ['EMAIL', 'Email campaigns', Mail],\n          ['EMAIL', 'Email campaigns', Mail],
         ] as const).map(([value, label, Icon]) => (
           <button
             key={value}
