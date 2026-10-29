@@ -59,6 +59,8 @@ export const AdminEmailCampaigns: React.FC = () => {
           if (result.campaign) setCampaign(result.campaign);
         }
         if (result.campaign) setCampaign(result.campaign);
+        const finalStatus = await invoke({ action: 'campaign_status', campaign_id: campaignId });
+        if (finalStatus.campaign) setCampaign(finalStatus.campaign);
         setNotice(result.done ? 'Campaign processing finished. Review sent and failed counts below.' : 'Processing paused after 100 batches. Press Continue sending to resume.');
       }
       await refreshHistory();
