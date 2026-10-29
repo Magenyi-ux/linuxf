@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="/examply-icon-192.svg">
     <title>Examply - West African Exam Prep</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
@@ -26,10 +26,53 @@
     "katex": "https://esm.sh/katex@0.16.9"
   }
 }
-</script>
-</head>
+    </script>
+    <style>
+      html, body { min-height: 100%; margin: 0; background: #050505; }
+      #root { min-height: 100vh; }
+      .boot-shell { min-height: 100vh; display: grid; place-items: center; padding: 24px; box-sizing: border-box; background: #050505; color: #f8fafc; font-family: system-ui, sans-serif; text-align: center; }
+      .boot-spinner { width: 30px; height: 30px; border: 3px solid #334155; border-top-color: #60a5fa; border-radius: 50%; animation: boot-spin .8s linear infinite; margin: 0 auto 16px; }
+      .boot-title { font-size: 18px; font-weight: 700; }
+      .boot-message { color: #94a3b8; font-size: 14px; line-height: 1.6; max-width: 340px; margin: 10px auto 0; }
+      .boot-retry { display: none; margin-top: 18px; border: 0; border-radius: 10px; padding: 11px 16px; background: #2563eb; color: white; font-weight: 700; }
+      @keyframes boot-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) { .boot-spinner { animation: none; } }
+    </style>
+    <script>
+      window.addEventListener('error', function (event) {
+        if (event.target && event.target.tagName === 'SCRIPT' && document.querySelector('.boot-shell')) {
+          showBootFailure();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function () {
+        if (document.querySelector('.boot-shell')) showBootFailure();
+      });
+      function showBootFailure() {
+        var shell = document.querySelector('.boot-shell');
+        if (!shell) return;
+        var message = shell.querySelector('.boot-message');
+        var spinner = shell.querySelector('.boot-spinner');
+        var retry = shell.querySelector('.boot-retry');
+        if (spinner) spinner.style.display = 'none';
+        if (message) message.textContent = 'Examply could not finish loading. Check your connection, then try again.';
+        if (retry) retry.style.display = 'inline-block';
+      }
+      window.setTimeout(function () {
+        if (document.querySelector('.boot-shell')) showBootFailure();
+      }, 12000);
+    </script>
+  </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main class="boot-shell" role="status" aria-live="polite">
+        <section>
+          <div class="boot-spinner" aria-hidden="true"></div>
+          <div class="boot-title">Loading Examply…</div>
+          <p class="boot-message">Preparing your study space.</p>
+          <button class="boot-retry" onclick="window.location.reload()">Reload Examply</button>
+        </section>
+      </main>
+    </div>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
