@@ -101,12 +101,26 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
 
     let mounted = true;
 
-    void supabase.auth.getSession().then(({ data: { session: initialSession } }) => {
-      if (!mounted) return;
-      void loadSessionProfile(initialSession).finally(() => {
+    // Prevent a slow or stalled session restore from keeping the app behind
+    // its auth gate indefinitely. A later auth-state event can still restore it.
+    const loadingFailsafe = window.setTimeout(() => {
+      if (mounted) {
+        console.warn('Session restoration took too long; releasing the loading gate.');
+        setLoading(false);
+      }
+    }, 8000);
+
+    void supabase.auth.getSession()
+      .then(({ data: { session: initialSession } }) => {
+        if (!mounted) return;
+        void loadSessionProfile(initialSession).finally(() => {
+          if (mounted) setLoading(false);
+        });
+      })
+      .catch((error) => {
+        console.error('Could not restore the Supabase session:', error);
         if (mounted) setLoading(false);
       });
-    });
 
     const { data: listener } = supabase.auth.onAuthStateChange((_event, nextSession) => {
       if (!mounted) return;
@@ -115,6 +129,7 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
 
     return () => {
       mounted = false;
+      window.clearTimeout(loadingFailsafe);
       listener.subscription.unsubscribe();
     };
   }, []);
