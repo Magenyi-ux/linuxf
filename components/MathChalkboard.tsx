@@ -20,8 +20,8 @@ export { evaluateMath } from './mathEvaluator';
 
 
 
-interface Props { question: string; subject: string; mode: 'STUDY' | 'TEST'; }
-export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => {
+interface Props { question: string; subject: string; mode: 'STUDY' | 'TEST'; options?: string[]; imageUrl?: string | null; }
+export const MathChalkboard: React.FC<Props> = ({ question, subject, mode, options = [], imageUrl }) => {
   const { session } = useAuth();
   const [open, setOpen] = useState(false);
   const [canvasExpanded, setCanvasExpanded] = useState(false);
@@ -278,7 +278,24 @@ export const MathChalkboard: React.FC<Props> = ({ question, subject, mode }) => 
             <span className="ml-auto hidden shrink-0 pr-1 text-[11px] text-[#86868b] sm:inline">Changes save on this device</span>
           </nav>
 
-          <main className="grid min-h-0 flex-1 grid-cols-1 overflow-y-auto lg:grid-cols-[minmax(0,1.15fr)_minmax(330px,0.85fr)] lg:overflow-hidden">
+          <main className="grid min-h-0 flex-1 grid-cols-1 overflow-y-auto lg:grid-cols-[minmax(190px,0.7fr)_minmax(0,1.15fr)_minmax(300px,0.85fr)] lg:overflow-hidden">
+            <section aria-label="Question space" className="flex max-h-[30dvh] min-h-0 flex-col gap-3 overflow-y-auto border-b border-black/[0.06] bg-[#fbfbfd] p-4 sm:p-5 lg:max-h-none lg:border-b-0 lg:border-r lg:p-5">
+              <div className="shrink-0">
+                <h3 className="text-sm font-semibold tracking-tight">Question space</h3>
+                <p className="mt-0.5 text-xs text-[#86868b]">Keep the current question in view while you solve it</p>
+              </div>
+              <div className="rounded-[14px] border border-black/[0.07] bg-white p-3.5 text-sm leading-relaxed text-[#1d1d1f] shadow-sm sm:p-4">
+                <MathMarkdown content={question || 'No question was provided for this workspace.'} />
+              </div>
+              {imageUrl && <div className="flex justify-center overflow-hidden rounded-[14px] border border-black/[0.07] bg-white p-2"><img src={imageUrl} alt="Question illustration" className="max-h-40 max-w-full object-contain" /></div>}
+              {options.length > 0 && <div className="space-y-2">
+                <p className="text-[11px] font-semibold uppercase tracking-wide text-[#86868b]">Answer options</p>
+                {options.map((option, index) => <div key={index} className="flex items-start gap-2.5 rounded-xl border border-black/[0.06] bg-white px-3 py-2.5 text-xs leading-relaxed text-[#424245]">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-[#f5f5f7] text-[10px] font-bold text-[#6e6e73]">{String.fromCharCode(65 + index)}</span>
+                  <div className="min-w-0"><MathMarkdown content={option} /></div>
+                </div>)}
+              </div>}
+            </section>
             <section className="flex min-h-[70dvh] flex-col border-b border-black/[0.06] p-3 sm:p-5 lg:min-h-0 lg:border-b-0 lg:border-r lg:p-6">
               <div className="mb-3 flex shrink-0 items-center justify-between gap-3">
                 <div><h3 className="text-sm font-semibold tracking-tight">Working area</h3><p className="mt-0.5 text-xs text-[#86868b]">Write or sketch your method</p></div>
