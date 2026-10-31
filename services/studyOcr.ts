@@ -18,9 +18,8 @@ let workerPromise: Promise<TesseractWorker> | null = null;
 async function getWorker(onProgress?: (progress: StudyOcrProgress) => void): Promise<TesseractWorker> {
   if (!workerPromise) {
     workerPromise = (async () => {
-      // Variable-based import keeps the remote browser module out of Vite's local bundle.
-      const loadModule = new Function('url', 'return import(url)') as (url: string) => Promise<TesseractModule>;
-      const tesseract = await loadModule(TESSERACT_MODULE_URL);
+      // Load the OCR engine in the browser without bundling its worker into the app.
+      const tesseract = await import(/* @vite-ignore */ TESSERACT_MODULE_URL) as unknown as TesseractModule;
       return tesseract.createWorker('eng', 1, {
         workerPath: TESSERACT_WORKER_URL,
         corePath: TESSERACT_CORE_URL,
@@ -47,7 +46,7 @@ export async function recognizeStudyImage(
 
   const worker = await getWorker(onProgress);
   const result = await worker.recognize(image);
-  const text = result.data.text.replace(/[ \\t]+/g, ' ').replace(/\\n{3,}/g, '\\n\\n').trim();
+  const text = result.data.text.replace(/[ \t]+/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
   if (!text) throw new Error('No readable text was found. Try a sharper, brighter photo or crop closer to the question.');
   return text;
 }
