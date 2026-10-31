@@ -142,7 +142,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
 
   const startNewChat = () => {
     if (sending) return;
-    setActiveChatId(null); setMessages([]); setSubject('General'); setInput('');
+    setActiveChatId(null); setMessages([]); setSubject('General'); setInput(''); setOcrTextOnly(false);
     pendingImages.forEach(image => URL.revokeObjectURL(image.preview)); setPendingImages([]);
     setError(''); setSaveNotice(''); setHistoryOpen(false);
   };
@@ -311,8 +311,8 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
           <button type="button" disabled={ocrBusy || sending} onClick={async () => {
             setOcrBusy(true); setOcrProgress({ status: 'Preparing OCR…', progress: 0 }); setError('');
             try {
-              const extracted = (await Promise.all(pendingImages.map(image => recognizeStudyImage(image.file, setOcrProgress)))).join('\\n\\n');
-              setInput(current => current.trim() ? current.trim() + '\\n\\n' + extracted : extracted);
+              const extracted = (await Promise.all(pendingImages.map(image => recognizeStudyImage(image.file, setOcrProgress)))).join('\n\n');
+              setInput(current => current.trim() ? current.trim() + '\n\n' + extracted : extracted);
               setOcrTextOnly(true);
               setSaveNotice('Text extracted on this device. Review and correct it before sending; the original image will not be sent unless you choose to include it.');
             } catch (caught) {
@@ -327,7 +327,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
           <p className="w-full text-xs text-slate-500">OCR runs in your browser. Check formulas, symbols and numbers before sending.</p>
         </div>}
         {pendingImages.length > 0 && <div className="mb-3 flex flex-wrap gap-2">{pendingImages.map((image, index) => <div key={image.preview} className="relative h-16 w-16 overflow-hidden rounded-xl border border-slate-200"><img src={image.preview} alt={`Selected attachment ${index + 1}`} className="h-full w-full object-cover" /><button type="button" aria-label="Remove image" onClick={() => { URL.revokeObjectURL(image.preview); setPendingImages(current => current.filter((_, itemIndex) => itemIndex !== index)); if (pendingImages.length <= 1) setOcrTextOnly(false); }} className="absolute right-1 top-1 rounded-full bg-slate-900/80 p-1 text-white"><X className="h-3 w-3" /></button></div>)}</div>}
-        <input ref={imageInputRef} type="file" accept="image/jpeg,image/png,image/webp" multiple className="hidden" aria-label="Attach images" onChange={event => { const files = Array.from(event.target.files ?? []).filter(file => file.type.startsWith('image/')).slice(0, 3 - pendingImages.length); const tooLarge = files.find(file => file.size > 12 * 1024 * 1024); if (tooLarge) { setError('Each image must be smaller than 12 MB.'); event.target.value = ''; return; } setPendingImages(current => [...current, ...files].slice(0, 3).map((file, index) => index < current.length ? current[index] : { file, preview: URL.createObjectURL(file) })); event.target.value = ''; }} />
+        <input ref={imageInputRef} type="file" accept="image/jpeg,image/png,image/webp" multiple className="hidden" aria-label="Attach images" onChange={event => { const files = Array.from(event.target.files ?? []).filter(file => file.type.startsWith('image/')).slice(0, 3 - pendingImages.length); const tooLarge = files.find(file => file.size > 12 * 1024 * 1024); if (tooLarge) { setError('Each image must be smaller than 12 MB.'); event.target.value = ''; return; } setPendingImages(current => [...current, ...files].slice(0, 3).map((file, index) => index < current.length ? current[index] : { file, preview: URL.createObjectURL(file) })); if (files.length) setOcrTextOnly(false); event.target.value = ''; }} />
         <div className="flex items-end gap-2 rounded-[1.75rem] border border-slate-200 bg-white p-2 shadow-sm transition focus-within:border-slate-400 focus-within:shadow-md">
           <button type="button" disabled={sending || pendingImages.length >= 3 || !user} onClick={() => imageInputRef.current?.click()} aria-label="Attach a picture" title="Attach a picture" className="mb-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-slate-600 transition hover:bg-slate-200 disabled:opacity-40"><ImagePlus className="h-5 w-5" /></button>
           <textarea value={input} onChange={event => setInput(event.target.value)} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); void sendMessage(); } }} rows={1} maxLength={2000} placeholder={user ? 'Ask a question or attach a picture…' : 'Sign in to start chatting…'} aria-label="Your message" className="max-h-36 min-h-11 flex-1 resize-none bg-transparent px-2 py-3 text-sm leading-5 text-slate-800 outline-none placeholder:text-slate-400" />
