@@ -305,8 +305,11 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
       ]
     : userContent;
   const configuredModels = getNvidiaModels();
-  // Image requests stay on the vision-capable primary model instead of falling back to text-only models.
-  const models = lastUserImages.length ? configuredModels.slice(0, 1) : configuredModels;
+  // The default first model (Nemotron Bolt E4B) is text-only. Route image requests
+  // to NVIDIA NIM's documented multimodal endpoint instead of sending images to a
+  // text-only model. Allow a deployment-specific vision model override.
+  const visionModel = process.env.NVIDIA_NIM_VISION_MODEL?.trim() || "z-ai/glm-5.3-flash";
+  const models = lastUserImages.length ? [visionModel] : configuredModels;
   let lastProviderStatus = 502;
   let lastProviderError = "Unable to reach AI provider";
 
@@ -332,6 +335,12 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
             : mode === "deep-dive" ? 850 : 1200,
           temperature: mode === "study-note" ? 0.2 : mode === "deep-dive" ? 0.35 : 0.2,
           stream: wantsStream,
+          ...(lastUserImages.length ? {
+            // Keep visual question answering responsive and avoid waiting on a long
+            // hidden reasoning trace before the student sees an explanation.
+            reasoning_effort: "low",
+            chat_template_kwargs: { clear_thinking: true },
+          } : {}),
         }),
         signal: AbortSignal.timeout(mode === "study-note" ? 45000 : mode === "deep-dive" ? 35000 : 45000),
       });
