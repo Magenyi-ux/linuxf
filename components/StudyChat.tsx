@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowLeft, BookOpenText, LoaderCircle, MessageCircle, Plus, Send, Sparkles, Clock3, ImagePlus, X } from 'lucide-react';
+import { ArrowLeft, BookOpenText, LoaderCircle, MessageCircle, Plus, Send, Sparkles, Clock3, ImagePlus, X, ScanText } from 'lucide-react';
+import { recognizeStudyImage, type StudyOcrProgress } from '../services/studyOcr';
 import { StudyRichContent } from './StudyRichContent';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../services/supabaseClient';
@@ -104,6 +105,9 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
   const [subject, setSubject] = useState('General');
   const [input, setInput] = useState('');
   const [pendingImages, setPendingImages] = useState<Array<{ file: File; preview: string }>>([]);
+  const [ocrBusy, setOcrBusy] = useState(false);
+  const [ocrProgress, setOcrProgress] = useState<StudyOcrProgress | null>(null);
+  const [ocrTextOnly, setOcrTextOnly] = useState(false);
   const imageInputRef = useRef<HTMLInputElement>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [conversations, setConversations] = useState<ChatRow[]>([]);
@@ -176,7 +180,8 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
   const sendMessage = async (event?: React.FormEvent) => {
     event?.preventDefault();
     const text = input.trim();
-    if ((!text && pendingImages.length === 0) || sending) return;
+    const imagesForRequest = ocrTextOnly ? [] : pendingImages;
+    if ((!text && imagesForRequest.length === 0) || sending || ocrBusy) return;
     if (!user) { setError('Sign in to chat with Examply and save your conversation to your account.'); return; }
 
     setInput(''); setSending(true); setError(''); setSaveNotice('');
@@ -184,7 +189,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
     let userSaved = false;
     let assistantContent = '';
     const questionText = text || 'Please explain the attached image(s).';
-    const nextMessages: ChatMessage[] = [...messages, { role: 'user', content: questionText, images: pendingImages.map(image => image.preview) }];
+    const nextMessages: ChatMessage[] = [...messages, { role: 'user', content: questionText, images: imagesForRequest.map(image => image.preview) }];
     setMessages(nextMessages);
 
     try {
@@ -200,7 +205,7 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
       }
 
       const uploadedImages: Array<{ dataUrl: string; path: string }> = [];
-      for (const image of pendingImages) {
+      for (const image of imagesForRequest) {
         const prepared = await prepareStudyImage(image.file);
         const path = `${user.id}/${conversationId}/${crypto.randomUUID()}.jpg`;
         const { error: uploadError } = await supabase.storage.from('study-chat-images').upload(path, prepared.blob, { contentType: 'image/jpeg', upsert: false });
@@ -302,12 +307,31 @@ export const StudyChat: React.FC<StudyChatProps> = ({ onBack, onSignIn }) => {
 
       {error && <p role="alert" className="mx-3 mt-2 shrink-0 rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700 sm:mx-5">{error}{!user && <button type="button" onClick={onSignIn} className="ml-2 font-bold underline">Sign in</button>}</p>}
       <form onSubmit={sendMessage} className="z-10 shrink-0 bg-white px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 sm:px-8 sm:pt-4">
-        {pendingImages.length > 0 && <div className="mb-3 flex flex-wrap gap-2">{pendingImages.map((image, index) => <div key={image.preview} className="relative h-16 w-16 overflow-hidden rounded-xl border border-slate-200"><img src={image.preview} alt={`Selected attachment ${index + 1}`} className="h-full w-full object-cover" /><button type="button" aria-label="Remove image" onClick={() => { URL.revokeObjectURL(image.preview); setPendingImages(current => current.filter((_, itemIndex) => itemIndex !== index)); }} className="absolute right-1 top-1 rounded-full bg-slate-900/80 p-1 text-white"><X className="h-3 w-3" /></button></div>)}</div>}
+        {pendingImages.length > 0 && <div className="mb-2 flex flex-wrap items-center gap-2">
+          <button type="button" disabled={ocrBusy || sending} onClick={async () => {
+            setOcrBusy(true); setOcrProgress({ status: 'Preparing OCR…', progress: 0 }); setError('');
+            try {
+              const extracted = (await Promise.all(pendingImages.map(image => recognizeStudyImage(image.file, setOcrProgress)))).join('\\n\\n');
+              setInput(current => current.trim() ? current.trim() + '\\n\\n' + extracted : extracted);
+              setOcrTextOnly(true);
+              setSaveNotice('Text extracted on this device. Review and correct it before sending; the original image will not be sent unless you choose to include it.');
+            } catch (caught) {
+              setError(caught instanceof Error ? caught.message : 'Could not extract text from this image.');
+            } finally { setOcrBusy(false); setOcrProgress(null); }
+          }} className="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50">
+            {ocrBusy ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <ScanText className="h-4 w-4" />}
+            {ocrBusy ? 'Reading text…' : 'Extract text on device'}
+          </button>
+          {ocrBusy && <span role="status" className="text-xs text-slate-500">{ocrProgress?.status || 'Preparing OCR'} {ocrProgress?.progress ? Math.round(ocrProgress.progress * 100) + '%' : ''}</span>}
+          {ocrTextOnly && <button type="button" onClick={() => setOcrTextOnly(false)} className="rounded-xl border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50">Include original image too</button>}
+          <p className="w-full text-xs text-slate-500">OCR runs in your browser. Check formulas, symbols and numbers before sending.</p>
+        </div>}
+        {pendingImages.length > 0 && <div className="mb-3 flex flex-wrap gap-2">{pendingImages.map((image, index) => <div key={image.preview} className="relative h-16 w-16 overflow-hidden rounded-xl border border-slate-200"><img src={image.preview} alt={`Selected attachment ${index + 1}`} className="h-full w-full object-cover" /><button type="button" aria-label="Remove image" onClick={() => { URL.revokeObjectURL(image.preview); setPendingImages(current => current.filter((_, itemIndex) => itemIndex !== index)); if (pendingImages.length <= 1) setOcrTextOnly(false); }} className="absolute right-1 top-1 rounded-full bg-slate-900/80 p-1 text-white"><X className="h-3 w-3" /></button></div>)}</div>}
         <input ref={imageInputRef} type="file" accept="image/jpeg,image/png,image/webp" multiple className="hidden" aria-label="Attach images" onChange={event => { const files = Array.from(event.target.files ?? []).filter(file => file.type.startsWith('image/')).slice(0, 3 - pendingImages.length); const tooLarge = files.find(file => file.size > 12 * 1024 * 1024); if (tooLarge) { setError('Each image must be smaller than 12 MB.'); event.target.value = ''; return; } setPendingImages(current => [...current, ...files].slice(0, 3).map((file, index) => index < current.length ? current[index] : { file, preview: URL.createObjectURL(file) })); event.target.value = ''; }} />
         <div className="flex items-end gap-2 rounded-[1.75rem] border border-slate-200 bg-white p-2 shadow-sm transition focus-within:border-slate-400 focus-within:shadow-md">
           <button type="button" disabled={sending || pendingImages.length >= 3 || !user} onClick={() => imageInputRef.current?.click()} aria-label="Attach a picture" title="Attach a picture" className="mb-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-slate-600 transition hover:bg-slate-200 disabled:opacity-40"><ImagePlus className="h-5 w-5" /></button>
           <textarea value={input} onChange={event => setInput(event.target.value)} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); void sendMessage(); } }} rows={1} maxLength={2000} placeholder={user ? 'Ask a question or attach a picture…' : 'Sign in to start chatting…'} aria-label="Your message" className="max-h-36 min-h-11 flex-1 resize-none bg-transparent px-2 py-3 text-sm leading-5 text-slate-800 outline-none placeholder:text-slate-400" />
-          <button type="submit" disabled={sending || (!input.trim() && pendingImages.length === 0) || !user} aria-label="Send message" className="mb-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-900 text-white shadow-sm transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-40"><Send className="h-4 w-4" /></button>
+          <button type="submit" disabled={sending || ocrBusy || (!input.trim() && (ocrTextOnly || pendingImages.length === 0)) || !user} aria-label="Send message" className="mb-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-900 text-white shadow-sm transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-40"><Send className="h-4 w-4" /></button>
         </div>
         <p className="mt-2 flex items-center justify-center gap-1 text-center text-[10px] text-slate-400"><Sparkles className="h-3 w-3 shrink-0" /> AI can make mistakes. Verify important facts with trusted study materials.</p>
       </form>
