@@ -1,19 +1,35 @@
-import { createWorker, type Worker } from 'tesseract.js';
+type StudyOcrProgress = { status: string; progress: number };
 
-export type StudyOcrProgress = {
-  status: string;
-  progress: number;
+type TesseractWorker = {
+  recognize: (image: Blob | File) => Promise<{ data: { text: string } }>;
+  terminate: () => Promise<void>;
+};
+type TesseractModule = {
+  createWorker: (language: string, oem?: number, options?: Record<string, unknown>) => Promise<TesseractWorker>;
 };
 
-let workerPromise: Promise<Worker> | null = null;
+const TESSERACT_MODULE_URL = 'https://cdn.jsdelivr.net/npm/tesseract.js@6.0.1/+esm';
+const TESSERACT_WORKER_URL = 'https://cdn.jsdelivr.net/npm/tesseract.js@6.0.1/dist/worker.min.js';
+const TESSERACT_CORE_URL = 'https://cdn.jsdelivr.net/npm/tesseract.js-core@6.0.0';
+const TESSERACT_LANGUAGE_URL = 'https://tessdata.projectnaptha.com/4.0.0';
 
-async function getWorker(onProgress?: (progress: StudyOcrProgress) => void): Promise<Worker> {
+let workerPromise: Promise<TesseractWorker> | null = null;
+
+async function getWorker(onProgress?: (progress: StudyOcrProgress) => void): Promise<TesseractWorker> {
   if (!workerPromise) {
-    workerPromise = createWorker('eng', undefined, {
-      logger: event => {
-        if (event.status) onProgress?.({ status: event.status, progress: event.progress ?? 0 });
-      },
-    }).catch(error => {
+    workerPromise = (async () => {
+      // Variable-based import keeps the remote browser module out of Vite's local bundle.
+      const loadModule = new Function('url', 'return import(url)') as (url: string) => Promise<TesseractModule>;
+      const tesseract = await loadModule(TESSERACT_MODULE_URL);
+      return tesseract.createWorker('eng', 1, {
+        workerPath: TESSERACT_WORKER_URL,
+        corePath: TESSERACT_CORE_URL,
+        langPath: TESSERACT_LANGUAGE_URL,
+        logger: (event: { status?: string; progress?: number }) => {
+          if (event.status) onProgress?.({ status: event.status, progress: event.progress ?? 0 });
+        },
+      });
+    })().catch(error => {
       workerPromise = null;
       throw error;
     });
@@ -21,12 +37,7 @@ async function getWorker(onProgress?: (progress: StudyOcrProgress) => void): Pro
   return workerPromise;
 }
 
-/**
- * Recognizes printed English text locally in the browser.
- * OCR output is untrusted input: students should review it before asking the AI.
- * The first run may need to download the OCR worker/language data; offline use
- * requires those assets to have been cached or bundled by the application.
- */
+/** Recognize printed English text locally in the browser. OCR output must be reviewed. */
 export async function recognizeStudyImage(
   image: Blob | File,
   onProgress?: (progress: StudyOcrProgress) => void,
@@ -36,22 +47,15 @@ export async function recognizeStudyImage(
 
   const worker = await getWorker(onProgress);
   const result = await worker.recognize(image);
-  const text = result.data.text.replace(/[ \t]+/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
-
+  const text = result.data.text.replace(/[ \\t]+/g, ' ').replace(/\\n{3,}/g, '\\n\\n').trim();
   if (!text) throw new Error('No readable text was found. Try a sharper, brighter photo or crop closer to the question.');
   return text;
 }
 
-/** Release OCR memory when the app explicitly shuts down the OCR session. */
 export async function terminateStudyOcr(): Promise<void> {
   const current = workerPromise;
   workerPromise = null;
   if (current) {
-    try {
-      const worker = await current;
-      await worker.terminate();
-    } catch {
-      // A failed worker is already unusable; allow the next request to retry.
-    }
+    try { await (await current).terminate(); } catch { /* Allow a later attempt to create a fresh worker. */ }
   }
 }
