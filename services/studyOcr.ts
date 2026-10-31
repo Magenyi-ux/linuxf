@@ -1,4 +1,4 @@
-type StudyOcrProgress = { status: string; progress: number };
+export type StudyOcrProgress = { status: string; progress: number };
 
 type TesseractWorker = {
   recognize: (image: Blob | File) => Promise<{ data: { text: string } }>;
