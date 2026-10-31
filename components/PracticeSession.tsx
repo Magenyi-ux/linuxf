@@ -471,6 +471,8 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
         question={cleanQuestionText(currentQuestion.text)}
         subject={String(subject)}
         mode={mode}
+        options={currentQuestion.options}
+        imageUrl={currentQuestion.imageUrl}
       />
     </div>
   );
