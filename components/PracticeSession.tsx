@@ -8,6 +8,7 @@ import { cleanQuestionText } from '../utils/questionTextPresentation';
 import { useAuth } from '../contexts/AuthContext';
 import { enqueueQuestionAttempt } from '../services/offlineQueue';
 import { supabase, isSupabaseConfigured } from '../services/supabaseClient';
+import { FailureRoom, saveFailedQuestion, type FailedQuestionRecord } from './FailureRoom';
 
 interface PracticeSessionProps {
   questions: Question[];
@@ -17,10 +18,11 @@ interface PracticeSessionProps {
   mode: 'STUDY' | 'TEST';
   onFinish: (score: number, total: number) => void;
   onBack: () => void;
+  onRetryFailedQuestion?: (record: FailedQuestionRecord) => void;
 }
 
 export const PracticeSession: React.FC<PracticeSessionProps> = ({
-  questions, sources = [], examType, subject, mode, onFinish, onBack
+  questions, sources = [], examType, subject, mode, onFinish, onBack, onRetryFailedQuestion
 }) => {
   const { user: supabaseUser, session } = useAuth();
   const [deepDiveLoading, setDeepDiveLoading] = useState(false);
@@ -68,6 +70,10 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
   const handleOptionSelect = (optionIndex: number) => {
     if (answers[currentQuestion.id] !== undefined) return;
     setAnswers(prev => ({ ...prev, [currentQuestion.id]: optionIndex }));
+
+    if (optionIndex !== currentQuestion.correctOptionIndex) {
+      saveFailedQuestion(currentQuestion, examType, subject, supabaseUser?.id);
+    }
 
     if (supabaseUser) {
       const attemptedAt = new Date().toISOString();
@@ -466,6 +472,13 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
             </div>
           )}
         </div>
+      </div>
+      <div className="mt-6 mb-28 sm:mb-32">
+        <FailureRoom
+          userId={supabaseUser?.id}
+          compact
+          onRetry={(record) => onRetryFailedQuestion?.(record)}
+        />
       </div>
       <MathChalkboard
         question={cleanQuestionText(currentQuestion.text)}
