@@ -13,6 +13,10 @@ export interface FailedQuestionRecord {
 }
 
 const storageKey = (userId?: string | null) => `examply_failure_room_v1_${userId || 'guest'}`;
+const reviewedKey = (userId?: string | null) => `examply_failure_room_reviewed_v1_${userId || 'guest'}`;
+const readReviewedIds = (userId?: string | null): Set<string> => {
+  try { return new Set(JSON.parse(localStorage.getItem(reviewedKey(userId)) || '[]') as string[]); } catch { return new Set(); }
+};
 
 export const readFailedQuestions = (userId?: string | null): FailedQuestionRecord[] => {
   try {
@@ -40,6 +44,9 @@ export const saveFailedQuestion = (
 ) => {
   const records = readFailedQuestions(userId);
   const id = `${String(examType)}:${String(subject)}:${String(question.id)}`;
+  const reviewed = readReviewedIds(userId);
+  reviewed.delete(id);
+  try { localStorage.setItem(reviewedKey(userId), JSON.stringify([...reviewed])); } catch { /* storage may be unavailable */ }
   const existing = records.find(record => record.id === id);
   const next: FailedQuestionRecord = existing
     ? records.map(record => record.id === id ? { ...record, question, failedAt: new Date().toISOString(), attempts: record.attempts + 1 } : record)
@@ -48,6 +55,9 @@ export const saveFailedQuestion = (
 };
 
 export const resolveFailedQuestion = (id: string, userId?: string | null) => {
+  const reviewed = readReviewedIds(userId);
+  reviewed.add(id);
+  try { localStorage.setItem(reviewedKey(userId), JSON.stringify([...reviewed])); } catch { /* storage may be unavailable */ }
   writeFailedQuestions(readFailedQuestions(userId).filter(record => record.id !== id), userId);
 };
 
@@ -91,19 +101,22 @@ export const FailureRoom: React.FC<FailureRoomProps> = ({ userId, onRetry, compa
 
         const availableBooks = Object.values(books);
         const remoteRecords: FailedQuestionRecord[] = [];
+        const resolvedIds = new Set<string>();
+        const reviewedIds = readReviewedIds(userId);
         for (const [key, latest] of latestByQuestion) {
-          if (latest.correct) continue;
           const book = availableBooks.find(candidate => String(candidate.subject) === latest.subject_id && candidate.questions.some(question => String(question.id) === latest.question_id));
           const question = book?.questions.find(candidate => String(candidate.id) === latest.question_id);
           if (!book || !question) continue;
+          const recordId = `${String(book.examType)}:${String(book.subject)}:${String(question.id)}`;
+          if (latest.correct) { resolvedIds.add(recordId); continue; }
+          if (reviewedIds.has(recordId)) continue;
           remoteRecords.push({
-            id: `${String(book.examType)}:${String(book.subject)}:${String(question.id)}`,
-            question, examType: book.examType, subject: book.subject, failedAt: latest.attempted_at, attempts: wrongCounts.get(key) || 1,
+            id: recordId, question, examType: book.examType, subject: book.subject, failedAt: latest.attempted_at, attempts: wrongCounts.get(key) || 1,
           });
         }
 
         const merged = new Map<string, FailedQuestionRecord>();
-        for (const record of localRecords) merged.set(record.id, record);
+        for (const record of localRecords) if (!resolvedIds.has(record.id) && !reviewedIds.has(record.id)) merged.set(record.id, record);
         for (const record of remoteRecords) {
           const existing = merged.get(record.id);
           merged.set(record.id, existing ? { ...existing, ...record, attempts: Math.max(existing.attempts, record.attempts) } : record);
