@@ -761,7 +761,7 @@ const AppShell: React.FC = () => {
               </div>
             </section>
 
-            <FailureRoom userId={supabaseUser?.id} compact onRetry={handleRetryFailedQuestion} />
+            <FailureRoom userId={supabaseUser?.id} books={books} compact onRetry={handleRetryFailedQuestion} />
 
             <section>
               <div className="mb-3"><h2 className="text-lg font-extrabold text-slate-900">Choose your stream</h2><p className="mt-1 text-sm text-slate-500">Find the question packs for your subjects.</p></div>
@@ -937,6 +937,7 @@ const AppShell: React.FC = () => {
         {screen === 'PRACTICE' && selectedExam && selectedSubject && (
             <PracticeSession 
                 questions={questions}
+                books={books}
                 onRetryFailedQuestion={handleRetryFailedQuestion}
                 sources={currentSources}
                 examType={selectedExam}
