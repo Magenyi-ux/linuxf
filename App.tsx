@@ -515,9 +515,9 @@ const AppShell: React.FC = () => {
     setSelectedExam(record.examType);
     setSelectedSubject(record.subject);
     setSelectedStream(
-      [Subject.PHYSICS, Subject.CHEMISTRY, Subject.BIOLOGY, Subject.FURTHER_MATHS, Subject.AGRIC_SCIENCE].includes(record.subject)
+      ([Subject.PHYSICS, Subject.CHEMISTRY, Subject.BIOLOGY, Subject.FURTHER_MATHS, Subject.AGRIC_SCIENCE] as Subject[]).includes(record.subject)
         ? 'SCIENCE'
-        : [Subject.ECONOMICS, Subject.COMMERCE].includes(record.subject)
+        : ([Subject.ECONOMICS, Subject.COMMERCE] as Subject[]).includes(record.subject)
           ? 'COMMERCIAL'
           : 'ARTS'
     );
@@ -937,6 +937,7 @@ const AppShell: React.FC = () => {
         {screen === 'PRACTICE' && selectedExam && selectedSubject && (
             <PracticeSession 
                 questions={questions}
+                onRetryFailedQuestion={handleRetryFailedQuestion}
                 sources={currentSources}
                 examType={selectedExam}
                 subject={selectedSubject}
