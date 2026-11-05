@@ -6,6 +6,7 @@ import { ExamCard } from './components/ExamCard';
 import { LoadingScreen } from './components/LoadingScreen';
 import { Results } from './components/Results';
 import { PracticeSession } from './components/PracticeSession';
+import { FailureRoom, type FailedQuestionRecord } from './components/FailureRoom';
 import { Profile } from './components/Profile';
 import { AdminDashboard } from './components/AdminDashboard';
 import { StudyNotesLibrary } from './components/StudyNotesLibrary';
@@ -510,6 +511,23 @@ const AppShell: React.FC = () => {
      }
   };
 
+  const handleRetryFailedQuestion = (record: FailedQuestionRecord) => {
+    setSelectedExam(record.examType);
+    setSelectedSubject(record.subject);
+    setSelectedStream(
+      ([Subject.PHYSICS, Subject.CHEMISTRY, Subject.BIOLOGY, Subject.FURTHER_MATHS, Subject.AGRIC_SCIENCE] as Subject[]).includes(record.subject)
+        ? 'SCIENCE'
+        : ([Subject.ECONOMICS, Subject.COMMERCE] as Subject[]).includes(record.subject)
+          ? 'COMMERCIAL'
+          : 'ARTS'
+    );
+    setQuestions([record.question]);
+    setCurrentSources([]);
+    setActiveBookId(null);
+    setPracticeMode('STUDY');
+    setScreen('PRACTICE');
+  };
+
   const handleDownload = async (year: string) => {
      if (!selectedExam || !selectedSubject) return;
      
@@ -743,6 +761,8 @@ const AppShell: React.FC = () => {
               </div>
             </section>
 
+            <FailureRoom userId={supabaseUser?.id} books={books} compact onRetry={handleRetryFailedQuestion} />
+
             <section>
               <div className="mb-3"><h2 className="text-lg font-extrabold text-slate-900">Choose your stream</h2><p className="mt-1 text-sm text-slate-500">Find the question packs for your subjects.</p></div>
               <div className="grid gap-3 sm:grid-cols-3">
@@ -917,6 +937,8 @@ const AppShell: React.FC = () => {
         {screen === 'PRACTICE' && selectedExam && selectedSubject && (
             <PracticeSession 
                 questions={questions}
+                books={books}
+                onRetryFailedQuestion={handleRetryFailedQuestion}
                 sources={currentSources}
                 examType={selectedExam}
                 subject={selectedSubject}
