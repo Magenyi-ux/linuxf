@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AlertCircle, CheckCircle2, RotateCcw, Trash2 } from 'lucide-react';
-import type { ExamType, Question, Subject } from '../types';
+import type { Book, ExamType, Question, Subject } from '../types';
+import { supabase, isSupabaseConfigured } from '../services/supabaseClient';
 
 export interface FailedQuestionRecord {
   id: string;
@@ -54,22 +55,79 @@ interface FailureRoomProps {
   userId?: string | null;
   onRetry: (record: FailedQuestionRecord) => void;
   compact?: boolean;
+  books?: Record<string, Book>;
 }
 
-export const FailureRoom: React.FC<FailureRoomProps> = ({ userId, onRetry, compact = false }) => {
+export const FailureRoom: React.FC<FailureRoomProps> = ({ userId, onRetry, compact = false, books = {} }) => {
   const [records, setRecords] = useState<FailedQuestionRecord[]>([]);
   const [showAll, setShowAll] = useState(!compact);
 
   useEffect(() => {
-    const refresh = () => setRecords(readFailedQuestions(userId));
-    refresh();
-    window.addEventListener('storage', refresh);
-    window.addEventListener('examply:failure-room-updated', refresh);
-    return () => {
-      window.removeEventListener('storage', refresh);
-      window.removeEventListener('examply:failure-room-updated', refresh);
+    let cancelled = false;
+    const refresh = async () => {
+      const localRecords = readFailedQuestions(userId);
+      if (!userId || !isSupabaseConfigured || !navigator.onLine) {
+        if (!cancelled) setRecords(localRecords);
+        return;
+      }
+      try {
+        const { data, error } = await supabase
+          .from('question_attempts')
+          .select('question_id, subject_id, correct, attempted_at')
+          .eq('user_id', userId)
+          .order('attempted_at', { ascending: false })
+          .limit(500);
+        if (error) throw error;
+
+        const latestByQuestion = new Map<string, { question_id: string; subject_id: string; correct: boolean; attempted_at: string }>();
+        const wrongCounts = new Map<string, number>();
+        for (const row of data ?? []) {
+          const key = `${String(row.subject_id)}:${String(row.question_id)}`;
+          if (!latestByQuestion.has(key)) {
+            latestByQuestion.set(key, { question_id: String(row.question_id), subject_id: String(row.subject_id), correct: Boolean(row.correct), attempted_at: String(row.attempted_at) });
+          }
+          if (!Boolean(row.correct)) wrongCounts.set(key, (wrongCounts.get(key) || 0) + 1);
+        }
+
+        const availableBooks = Object.values(books);
+        const remoteRecords: FailedQuestionRecord[] = [];
+        for (const [key, latest] of latestByQuestion) {
+          if (latest.correct) continue;
+          const book = availableBooks.find(candidate => String(candidate.subject) === latest.subject_id && candidate.questions.some(question => String(question.id) === latest.question_id));
+          const question = book?.questions.find(candidate => String(candidate.id) === latest.question_id);
+          if (!book || !question) continue;
+          remoteRecords.push({
+            id: `${String(book.examType)}:${String(book.subject)}:${String(question.id)}`,
+            question, examType: book.examType, subject: book.subject, failedAt: latest.attempted_at, attempts: wrongCounts.get(key) || 1,
+          });
+        }
+
+        const merged = new Map<string, FailedQuestionRecord>();
+        for (const record of localRecords) merged.set(record.id, record);
+        for (const record of remoteRecords) {
+          const existing = merged.get(record.id);
+          merged.set(record.id, existing ? { ...existing, ...record, attempts: Math.max(existing.attempts, record.attempts) } : record);
+        }
+        const combined = [...merged.values()].sort((a, b) => b.failedAt.localeCompare(a.failedAt));
+        if (!cancelled) setRecords(combined);
+      } catch (error) {
+        console.warn('Could not refresh synced Failure Room attempts; showing local records:', error);
+        if (!cancelled) setRecords(localRecords);
+      }
     };
-  }, [userId]);
+    void refresh();
+    const onOnline = () => { void refresh(); };
+    const onUpdated = () => setRecords(readFailedQuestions(userId));
+    window.addEventListener('storage', onUpdated);
+    window.addEventListener('examply:failure-room-updated', onUpdated);
+    window.addEventListener('online', onOnline);
+    return () => {
+      cancelled = true;
+      window.removeEventListener('storage', onUpdated);
+      window.removeEventListener('examply:failure-room-updated', onUpdated);
+      window.removeEventListener('online', onOnline);
+    };
+  }, [userId, books]);
 
   const visibleRecords = showAll ? records : records.slice(0, 3);
 
