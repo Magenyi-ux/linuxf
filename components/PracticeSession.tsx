@@ -73,7 +73,7 @@ export const PracticeSession: React.FC<PracticeSessionProps> = ({
     setAnswers(prev => ({ ...prev, [currentQuestion.id]: optionIndex }));
 
     if (optionIndex !== currentQuestion.correctOptionIndex) {
-      saveFailedQuestion(currentQuestion, examType, subject, supabaseUser?.id);
+      saveFailedQuestion(currentQuestion, examType, subject, supabaseUser?.id, optionIndex);
     }
 
     if (supabaseUser) {
