@@ -10,6 +10,7 @@ export interface FailedQuestionRecord {
   subject: Subject;
   failedAt: string;
   attempts: number;
+  selectedOptionIndex?: number;
 }
 
 const storageKey = (userId?: string | null) => `examply_failure_room_v1_${userId || 'guest'}`;
@@ -40,7 +41,8 @@ export const saveFailedQuestion = (
   question: Question,
   examType: ExamType,
   subject: Subject,
-  userId?: string | null
+  userId?: string | null,
+  selectedOptionIndex?: number
 ) => {
   const records = readFailedQuestions(userId);
   const id = `${String(examType)}:${String(subject)}:${String(question.id)}`;
@@ -49,8 +51,8 @@ export const saveFailedQuestion = (
   try { localStorage.setItem(reviewedKey(userId), JSON.stringify([...reviewed])); } catch { /* storage may be unavailable */ }
   const existing = records.find(record => record.id === id);
   const next: FailedQuestionRecord = existing
-    ? records.map(record => record.id === id ? { ...record, question, failedAt: new Date().toISOString(), attempts: record.attempts + 1 } : record)
-    : [{ id, question, examType, subject, failedAt: new Date().toISOString(), attempts: 1 }, ...records];
+    ? records.map(record => record.id === id ? { ...record, question, selectedOptionIndex, failedAt: new Date().toISOString(), attempts: record.attempts + 1 } : record)
+    : [{ id, question, examType, subject, selectedOptionIndex, failedAt: new Date().toISOString(), attempts: 1 }, ...records];
   writeFailedQuestions(next, userId);
 };
 
@@ -83,18 +85,18 @@ export const FailureRoom: React.FC<FailureRoomProps> = ({ userId, onRetry, compa
       try {
         const { data, error } = await supabase
           .from('question_attempts')
-          .select('question_id, subject_id, correct, attempted_at')
+          .select('question_id, subject_id, correct, attempted_at, answer')
           .eq('user_id', userId)
           .order('attempted_at', { ascending: false })
           .limit(500);
         if (error) throw error;
 
-        const latestByQuestion = new Map<string, { question_id: string; subject_id: string; correct: boolean; attempted_at: string }>();
+        const latestByQuestion = new Map<string, { question_id: string; subject_id: string; correct: boolean; attempted_at: string; answer?: string | null }>();
         const wrongCounts = new Map<string, number>();
         for (const row of data ?? []) {
           const key = `${String(row.subject_id)}:${String(row.question_id)}`;
           if (!latestByQuestion.has(key)) {
-            latestByQuestion.set(key, { question_id: String(row.question_id), subject_id: String(row.subject_id), correct: Boolean(row.correct), attempted_at: String(row.attempted_at) });
+            latestByQuestion.set(key, { question_id: String(row.question_id), subject_id: String(row.subject_id), correct: Boolean(row.correct), attempted_at: String(row.attempted_at), answer: typeof row.answer === 'string' ? row.answer : null });
           }
           if (!Boolean(row.correct)) wrongCounts.set(key, (wrongCounts.get(key) || 0) + 1);
         }
@@ -111,7 +113,7 @@ export const FailureRoom: React.FC<FailureRoomProps> = ({ userId, onRetry, compa
           if (latest.correct) { resolvedIds.add(recordId); continue; }
           if (reviewedIds.has(recordId)) continue;
           remoteRecords.push({
-            id: recordId, question, examType: book.examType, subject: book.subject, failedAt: latest.attempted_at, attempts: wrongCounts.get(key) || 1,
+            id: recordId, question, examType: book.examType, subject: book.subject, failedAt: latest.attempted_at, attempts: wrongCounts.get(key) || 1, selectedOptionIndex: latest.answer ? latest.answer.trim().toUpperCase().charCodeAt(0) - 65 : undefined,
           });
         }
 
@@ -166,16 +168,16 @@ export const FailureRoom: React.FC<FailureRoomProps> = ({ userId, onRetry, compa
             <article key={record.id} className="rounded-xl border border-slate-100 p-4">
               <div className="flex items-start gap-3">
                 <div className="min-w-0 flex-1">
-                  <p className="text-xs font-bold uppercase tracking-wide text-amber-700">{record.examType} · {record.subject}</p>
+                  <p className="text-xs font-bold uppercase tracking-wide text-amber-700">{record.examType} · {record.subject}{(() => { const book = Object.values(books).find(candidate => candidate.examType === record.examType && candidate.subject === record.subject && candidate.questions.some(question => String(question.id) === String(record.question.id))); return book?.year ? ` · ${book.year}` : ' · Year unknown'; })()}</p>
                   <p className="mt-1 line-clamp-3 text-sm font-semibold text-slate-900">{record.question.text}</p>
-                  <p className="mt-1 text-xs text-slate-500">Missed {record.attempts} {record.attempts === 1 ? 'time' : 'times'}</p>
+                  <p className="mt-1 text-xs text-slate-500">Missed {record.attempts} {record.attempts === 1 ? 'time' : 'times'} · {new Date(record.failedAt).toLocaleString()}</p>
                 </div>
                 <button type="button" onClick={() => onRetry(record)} className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-primary-600 px-3 py-2 text-xs font-bold text-white hover:bg-primary-700" aria-label="Retry question">
                   <RotateCcw className="h-3.5 w-3.5" /> Retry
                 </button>
               </div>
               <div className="mt-3 flex items-center justify-between gap-3 border-t border-slate-100 pt-3">
-                <span className="text-xs text-slate-500">Answer: {record.question.options[record.question.correctOptionIndex] || 'See explanation'}</span>
+                <div className="min-w-0 text-xs"><p className="text-rose-700">Your answer: {record.selectedOptionIndex !== undefined && record.selectedOptionIndex >= 0 ? record.question.options[record.selectedOptionIndex] || `Option ${String.fromCharCode(65 + record.selectedOptionIndex)}` : 'Not available in saved history'}</p><p className="mt-1 text-emerald-700">Correct answer: {record.question.options[record.question.correctOptionIndex] || 'See explanation'}</p></div>
                 <button type="button" onClick={() => { resolveFailedQuestion(record.id, userId); setRecords(readFailedQuestions(userId)); }} className="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-slate-900" aria-label="Mark reviewed">
                   <CheckCircle2 className="h-3.5 w-3.5" /> Mark reviewed <Trash2 className="ml-1 h-3.5 w-3.5" />
                 </button>
